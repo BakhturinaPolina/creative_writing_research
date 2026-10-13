@@ -1,0 +1,115 @@
+# Corpus protocol v0.9. See docs/scientific_readme.md section 2.
+
+definition: >
+  Books whose principal purpose is to teach, advise on, or systematically
+  discuss the production of literary narrative prose.
+
+corpus_type:
+  A: General creative-writing / fiction-writing manual
+  B: Novel-writing handbook
+  C: Specialized narrative-craft book (POV, scene, dialogue, character, ...)
+  D: Writer memoir with substantial craft instruction
+  E: Pedagogical creative-writing handbook (comparison / robustness)
+  F: Narratology / literary theory (comparison only)
+
+main_corpus_types: [A, B, C, D]
+
+# Nested datasets: membership is not exclusive (a book can be in A and B)
+datasets:
+  population: "Main quantitative corpus. NO POV requirement."
+  pov_development: "POV-positive material for lexicon/taxonomy/classifier. Overrepresents POV."
+  contextual: "Didactics, therapy, academic commentary, articles, videos. Not in prevalence statistics."
+
+decision_labels:
+  - include
+  - exclude
+  - uncertain
+
+# Automatic pre-screen output (never deletes records)
+eligibility_status:
+  - likely_primary
+  - likely_contextual
+  - likely_exclude
+  - uncertain
+  - screened_include
+  - screened_exclude
+
+# Required when decision == exclude
+exclusion_reasons:
+  - academic_study
+  - school_pedagogy
+  - children_handwriting
+  - poetry_only
+  - screenwriting_only
+  - academic_writing
+  - technical_writing
+  - copywriting
+  - grammar_style
+  - journalism
+  - therapy
+  - coaching
+  - narratology_theory
+  - not_instructional
+  - non_book
+  - out_of_language
+  - duplicate
+  - other
+
+# Provisional (DEC-002); decided after Ngram + publication-frequency analysis
+period_scope:
+  main_comparable: [1970, 2025]
+  historical_extension: [1880, 1969]
+  status: provisional
+
+languages:
+  corpus: [en, de]
+  translation_status: [original, translation, unknown]
+
+# Title/subtitle regex patterns for the automatic pre-screen (case-insensitive).
+prescreen_patterns:
+  likely_exclude:
+    children_handwriting:
+      - "buchstaben"
+      - "\\bzahlen\\b"
+      - "vorschul"
+      - "schreibschrift"
+      - "druckschrift"
+      - "grundschrift"
+      - "nachspur"
+      - "schwungübung"
+      - "kindergarten"
+      - "schreiben lernen.*(kinder|abc|klasse)"
+      - "\\babc\\b"
+      - "handwriting"
+      - "penmanship"
+      - "calligraph"
+    technical_academic_business:
+      - "wissenschaftlich"
+      - "bachelor|masterarbeit|hausarbeit|dissertation"
+      - "technical writing|technische dokumentation"
+      - "business writing|geschäftsbrief|bewerbung"
+      - "copywriting|werbetext"
+      - "academic writing|research paper|essay writing"
+  likely_contextual:
+    school_pedagogy:
+      - "schreibdidaktik"
+      - "aufsatz"
+      - "deutschunterricht"
+      - "unterricht"
+      - "grundschule|sekundarstufe|klasse \\d"
+      - "classroom|teaching writing|teachers"
+    therapy_coaching:
+      - "therapie|therapy|therapeut"
+      - "heilsam|healing"
+      - "autogenes training"
+      - "selbsterfahrung|self-discovery"
+      - "journal|tagebuch"
+  likely_primary:
+    fiction_craft:
+      - "roman(e)? schreiben"
+      - "geschichten schreiben|kurzgeschichte"
+      - "erzähl"
+      - "fiction|novel|short stor"
+      - "craft|storytelling"
+      - "point of view|viewpoint|perspektive"
+      - "plot|character|figur|dialog"

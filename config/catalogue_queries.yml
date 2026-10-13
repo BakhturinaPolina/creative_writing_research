@@ -1,0 +1,112 @@
+# Plain search phrases. Test each manually in the catalogue before harvesting.
+# Mapping to CQL (e.g. tit="...", sw="...") happens in src/<catalogue>.py or on the CLI.
+# Policy: retrieve broadly, classify afterwards (config/inclusion_rules.yml).
+
+german:
+  core:
+    - kreatives schreiben
+    - kreativ schreiben
+    - literarisches schreiben
+    - romane schreiben
+    - roman schreiben
+    - geschichten schreiben
+    - lehrbuch des kreativen schreibens
+    - freies schreiben
+  craft:
+    - schreibratgeber
+    - autorenratgeber
+    - schreibhandbuch
+    - schreibschule
+    - schreibwerkstatt
+    - erzählen schreiben
+    - kurzgeschichten schreiben
+    - schreibunterricht
+    - storytelling
+  pov_specific:
+    - erzählperspektive
+    - erzählperspektiven
+    - perspektive erzählen
+  historical:
+    - schriftstellerei
+    - erzählkunst
+    - dichtkunst
+    - romantechnik
+    - technik des romans
+    - technik des erzählens
+    - kunst des erzählens
+    - erzähltechnik
+
+english:
+  core:
+    - creative writing
+    - writing fiction
+    - fiction writing
+    - fiction writing handbook
+    - novel writing
+    - how to write a novel
+    - writing short stories
+    - story writing
+  craft:
+    - fiction technique
+    - writer's craft
+    - narrative craft
+    - craft of writing
+    - self-editing for fiction writers
+    - fiction writer's handbook
+  pov_specific:
+    - point of view in fiction
+    - viewpoint fiction writing
+  historical:
+    - art of fiction
+    - craft of fiction
+    - writing of fiction
+    - short story writing
+    - technique of the novel
+    - technique of fiction
+    - authorship fiction
+
+# Terms that mark contextual/excluded material. Do NOT use them as positive queries.
+# They are used to flag records during pre-screening.
+context_signals:
+  german:
+    - schreibdidaktik
+    - aufsatzunterricht
+    - aufsatz
+    - bewertung
+    - benotung
+    - deutschunterricht
+    - grundschule
+    - poesietherapie
+    - bibliotherapie
+    - schreibtherapie
+    - autogenes training
+    - wissenschaftliches schreiben
+  english:
+    - composition
+    - academic writing
+    - technical writing
+    - business writing
+    - copywriting
+    - screenwriting
+    - journal writing
+    - writing therapy
+    - classroom
+    - teaching writing
+
+# Starters from 2026-10-10 DNB practice (oai_dc subjects are mostly DDC-style labels).
+# Refine after MARC21 / GND subject harvests and HeBIS seed holdings.
+subject_headings:
+  dnb_gnd:
+    - Kreatives Schreiben
+    - Schriftstellerei
+    - Erzähltechnik
+    - Rhetorik
+  ddc:
+    - "800"   # Literatur, Rhetorik, Literaturwissenschaft (common on craft hits)
+    - "808"   # Rhetorik / literary technique (target for fiction-writing manuals)
+    - "830"   # Deutsche Literatur
+    - "370"   # Erziehung (often pedagogy noise — use for exclusion flags)
+  lcsh:
+    - Creative writing
+    - Fiction--Authorship
+    - Narration (Rhetoric)

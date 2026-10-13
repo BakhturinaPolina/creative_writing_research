@@ -1,0 +1,101 @@
+candidate_id,edition_language,author,title,match_status,matched_candidate_id,matched_source
+EN-001,en,Janet Burroway,Writing Fiction: A Guide to Narrative Craft,hit,colleague_openlibrary_en:OL20283W,colleague_openlibrary_en
+EN-002,en,Ursula K. Le Guin,Steering the Craft: A Twenty-First-Century Guide to Sailing the Sea of Story,hit,colleague_openlibrary_en:OL59830W,colleague_openlibrary_en
+EN-003,en,John Gardner,The Art of Fiction: Notes on Craft for Young Writers,hit,colleague_openlibrary_en:OL280272W,colleague_openlibrary_en
+EN-004,en,Jerome Stern,Making Shapely Fiction,hit,colleague_openlibrary_en:OL3338178W,colleague_openlibrary_en
+EN-005,en,Edith Wharton,The Writing of Fiction,hit,colleague_openlibrary_en:OL98557W,colleague_openlibrary_en
+EN-006,en,Madison Smartt Bell,"Narrative Design: Working with Imagination, Craft, and Form",hit,colleague_openlibrary_en:OL21752942W,colleague_openlibrary_en
+EN-007,en,Andrew Cowan,The Art of Writing Fiction,hit,colleague_openlibrary_en:OL16212281W,colleague_openlibrary_en
+EN-008,en,Alice LaPlante,The Making of a Story: A Norton Guide to Creative Writing,hit,colleague_openlibrary_en:OL11914408W,colleague_openlibrary_en
+EN-009,en,David Jauss,Alone with All That Could Happen: Rethinking Conventional Wisdom about the Craft of Fiction,miss,,
+EN-010,en,Orson Scott Card,Characters & Viewpoint,miss,,
+EN-011,en,Alicia Rasley,The Power of Point of View: Make Your Story Come to Life,miss,,
+EN-012,en,Rust Hills,Writing in General and the Short Story in Particular,hit,colleague_openlibrary_en:OL3919011W,colleague_openlibrary_en
+EN-013,en,Jesse Lee Kercheval,Building Fiction: How to Develop Plot and Structure,miss,,
+EN-014,en,Sarah Stone; Ron Nyren,Deepening Fiction: A Practical Guide for Intermediate and Advanced Writers,miss,,
+EN-015,en,Sandra Scofield,The Scene Book: A Primer for the Fiction Writer,miss,,
+EN-016,en,Mark Baechtel,Shaping the Story: A Step-by-Step Guide to Writing Short Fiction,miss,,
+EN-017,en,Ailsa Cox,Writing Short Stories,hit,colleague_openlibrary_en:OL5816120W,colleague_openlibrary_en
+EN-018,en,"Tom Bailey, ed.",On Writing Short Stories,miss,,
+EN-019,en,Tom Bailey,A Short Story Writer's Companion,miss,,
+EN-020,en,R. V. Cassill,Writing Fiction,hit,colleague_openlibrary_en:OL4640035W,colleague_openlibrary_en
+EN-021,en,"Alexander Steele, ed.",Writing Fiction: The Practical Guide from New York's Acclaimed Creative Writing School,miss,,
+EN-022,en,Marvin Diogenes; Clyde Moneyhun,"Crafting Fiction: In Theory, In Practice",miss,,
+EN-023,en,Fred Leebron; Andrew Levy,Creating Fiction: A Writer's Companion,hit,colleague_openlibrary_en:OL510861W,colleague_openlibrary_en
+EN-024,en,"Julie Checkoway, ed.",Creating Fiction,miss,,
+EN-025,en,Richard Cohen,Writer's Mind: Crafting Fiction,hit,colleague_openlibrary_en:OL3533864W,colleague_openlibrary_en
+EN-026,en,Ann Copeland,The ABC's of Writing Fiction,hit,colleague_openlibrary_en:OL2988674W,colleague_openlibrary_en
+EN-027,en,Nicholas Delbanco,The Sincerest Form: Writing Fiction by Imitation,hit,colleague_openlibrary_en:OL453299W,colleague_openlibrary_en
+EN-028,en,A. B. Guthrie Jr.,A Field Guide to Writing Fiction,miss,,
+EN-029,en,Carol Bly,"The Passionate, Accurate Story",hit,colleague_openlibrary_en:OL451193W,colleague_openlibrary_en
+EN-030,en,Brian Kiteley,The 3 A.M. Epiphany: Uncommon Writing Exercises That Transform Your Fiction,miss,,
+EN-031,en,Brian Kiteley,The 4 A.M. Breakthrough: Unconventional Writing Exercises That Transform Your Fiction,miss,,
+EN-032,en,Anne Bernays; Pamela Painter,What If? Writing Exercises for Fiction Writers,miss,,
+EN-033,en,"Bret Anthony Johnston, ed.",Naming the World: And Other Exercises for the Creative Writer,hit,colleague_openlibrary_en:OL6038171W,colleague_openlibrary_en
+EN-034,en,Michael Martone; Susan Neville,Rules of Thumb: 71 Authors Reveal Their Fiction Writing Fixations,miss,,
+EN-035,en,Robert Olmstead,Elements of the Writing Craft,miss,,
+EN-036,en,John Gardner,On Becoming a Novelist,miss,,
+EN-037,en,Dorothea Brande,Becoming a Writer,hit,colleague_openlibrary_en:OL11346626W,colleague_openlibrary_en
+EN-038,en,Sol Stein,Stein on Writing,miss,,
+EN-039,en,Sol Stein,How to Grow a Novel,hit,colleague_openlibrary_en:OL14854954W,colleague_openlibrary_en
+EN-040,en,Stephen King,On Writing: A Memoir of the Craft,hit,colleague_openlibrary_en:OL81601W,colleague_openlibrary_en
+EN-041,en,Anne Lamott,Bird by Bird: Some Instructions on Writing and Life,hit,colleague_openlibrary_en:OL489421W,colleague_openlibrary_en
+EN-042,en,Elizabeth George,Write Away: One Novelist's Approach to Fiction and the Writing Life,hit,colleague_openlibrary_en:OL456518W,colleague_openlibrary_en
+EN-043,en,James N. Frey,How to Write a Damn Good Novel,hit,colleague_openlibrary_en:OL3955738W,colleague_openlibrary_en
+EN-044,en,Robert Olen Butler,From Where You Dream: The Process of Writing Fiction,miss,,
+EN-045,en,Charles Baxter,Burning Down the House: Essays on Fiction,miss,,
+EN-046,en,Charles Baxter,The Art of Subtext: Beyond Plot,hit,colleague_openlibrary_en:OL12170784W,colleague_openlibrary_en
+EN-047,en,Renni Browne; Dave King,Self-Editing for Fiction Writers,miss,,
+EN-048,en,Janet Burroway,Imaginative Writing: The Elements of Craft,hit,colleague_openlibrary_en:OL20282W,colleague_openlibrary_en
+EN-049,en,"Julia Bell; Paul Magrs, eds.",The Creative Writing Coursebook,hit,colleague_openlibrary_en:OL20819284W,colleague_openlibrary_en
+EN-050,en,David Morley,The Cambridge Introduction to Creative Writing,hit,colleague_openlibrary_en:OL6560848W,colleague_openlibrary_en
+DE-001,de,Fritz Gesing,Kreativ schreiben: Handwerk und Techniken des Erzählens,miss,,
+DE-002,de,Fritz Gesing,Kreativ schreiben für Fortgeschrittene: Geheimnisse des Erfolgs,miss,,
+DE-003,de,Lutz von Werder,Einführung in das kreative Schreiben,miss,,
+DE-004,de,Lutz von Werder,Lehrbuch des Kreativen Schreibens,miss,,
+DE-005,de,Sibylle Knauss,Schule des Erzählens: Ein Leitfaden für Roman- und Drehbuchautoren,miss,,
+DE-006,de,Jesse Falzoi,Creative Writing: Texte und Bücher schreiben,miss,,
+DE-007,de,Otto Kruse,Storytelling: Kunst und Technik des Erzählens,miss,,
+DE-008,de,Stephan Waldscheidt,"Erzählperspektiven: Auktorial, personal, multiperspektivisch",miss,,
+DE-009,de,Stephan Waldscheidt,"Plot & Struktur: Dramaturgie, Szenen, dichteres Erzählen",miss,,
+DE-010,de,Stephan Waldscheidt,"Schreib den verd... Roman! Die simple Kunst, einen Bestseller zu verfassen",miss,,
+DE-011,de,Gustav Ernst; Karin Fleischanderl,"Romane schreiben: Geschichten entwickeln, Figuren zeichnen, Stil finden",miss,,
+DE-012,de,Anna Basener,Liebes- und Heftromane schreiben und veröffentlichen,miss,,
+DE-013,de,Patrick Baumgärtel,Krimis schreiben,miss,,
+DE-014,de,Sylvia Englert,Fantasy schreiben und veröffentlichen,miss,,
+DE-015,de,Sylvia Englert,Coole Texte schreiben und Autor/in werden,miss,,
+DE-016,de,Sylvia Englert,Handbuch für Kinder- und Jugendbuch-Autoren,miss,,
+DE-017,de,Hans Peter Roentgen,Vier Seiten für ein Halleluja,miss,,
+DE-018,de,Hans Peter Roentgen,Drei Seiten für ein Exposé,miss,,
+DE-019,de,Hans Peter Roentgen,Was dem Lektorat auffällt,miss,,
+DE-020,de,Hanns-Josef Ortheil,Mit dem Schreiben anfangen: Fingerübungen des kreativen Schreibens,miss,,
+DE-021,de,Hanns-Josef Ortheil,Schreiben dicht am Leben: Notieren und Skizzieren,miss,,
+DE-022,de,Hanns-Josef Ortheil; Klaus Siblewski,Wie Romane entstehen,miss,,
+DE-023,de,Hanns-Josef Ortheil,Schreiben über mich selbst: Spielformen des autobiografischen Schreibens,miss,,
+DE-024,de,Hanns-Josef Ortheil,Schreiben auf Reisen,miss,,
+DE-025,de,Christian Schärf,"Spannend schreiben: Krimi, Mord- und Schauergeschichten",miss,,
+DE-026,de,Christian Schärf,Schreiben Tag für Tag: Journal und Tagebuch,miss,,
+DE-027,de,Stephan Porombka,"Schreiben unter Strom: Experimentieren mit Twitter, Blogs, Facebook & Co.",miss,,
+DE-028,de,Ulla Mothes,Kreatives Schreiben,miss,,
+DE-029,de,Rüdiger Heins,Handbuch des Kreativen Schreibens,miss,,
+DE-030,de,"Valentin Merkelbach, ed.",Kreatives Schreiben,miss,,
+DE-031,de,James N. Frey,Wie man einen verdammt guten Roman schreibt,miss,,
+DE-032,de,James N. Frey,Wie man einen verdammt guten Roman schreibt 2,miss,,
+DE-033,de,Sol Stein,Über das Schreiben,miss,,
+DE-034,de,Sol Stein,Aufzucht und Pflege eines Romans,miss,,
+DE-035,de,Lajos Egri,Literarisches Schreiben,hit,colleague_openlibrary_de:OL16959552W,colleague_openlibrary_de
+DE-036,de,Lajos Egri,Dramatisches Schreiben,miss,,
+DE-037,de,Dorothea Brande,Schriftsteller werden,miss,,
+DE-038,de,Elizabeth George,"Wort für Wort oder Die Kunst, ein gutes Buch zu schreiben",miss,,
+DE-039,de,Elizabeth George,Meisterklasse: Wie aus einer guten Idee ein perfekter Roman wird,miss,,
+DE-040,de,Anne Bernays; Pamela Painter,"Was wäre, wenn...? Schreibübungen für Schriftsteller",miss,,
+DE-041,de,Bonni Goldberg,Raum zum Schreiben: Creative Writing mit 200 genialen Inspirationen,miss,,
+DE-042,de,Ronald B. Tobias,20 Masterplots: Die Basis des Story-Building in Roman und Film,miss,,
+DE-043,de,Patricia Highsmith,Suspense oder Wie man einen Thriller schreibt,miss,,
+DE-044,de,Natalie Goldberg,Schreiben in Cafés,miss,,
+DE-045,de,Natalie Goldberg,Wild Mind – Freies Schreiben,miss,,
+DE-046,de,Gabriele Lusser Rico,Garantiert schreiben lernen,hit,colleague_openlibrary_de:OL9047847M,colleague_openlibrary_de
+DE-047,de,Ray Bradbury,Zen in der Kunst des Schreibens: Kreativtechniken eines Schriftstellers von Weltrang,miss,,
+DE-048,de,Louise Doughty,Ein Roman in einem Jahr: Eine Anleitung in 52 Kapiteln,miss,,
+DE-049,de,Christopher Vogler,"Die Odyssee der Drehbuchschreiber, Romanautoren und Dramatiker",miss,,
+DE-050,de,Roy Peter Clark,Die 50 Werkzeuge für gutes Schreiben,miss,,

@@ -1,0 +1,255 @@
+# Bilingual POV lexicon v0
+# Source: derived from project notes and the taxonomy in "Creative writing corpus and taxonomy".
+# Pending: merge with "creative writing cue words (1).xlsx" (44 full / 14 reduced cues) -> v2.
+#
+# precision levels:
+#   high    = one match makes a passage a candidate
+#   medium  = useful, but more false positives; counts as a supporting cue
+#   context = never sufficient alone (voice, mode, distance, perspective, ...)
+# regex: optional case-insensitive patterns (stems catch German inflection).
+#
+# Retrieval rule (paragraph or 2-3 sentence window):
+#   candidate = any(high) OR count(medium + context) >= 2 OR semantic_similarity >= threshold
+
+version: 0.1
+retrieval_rule:
+  window: paragraph
+  min_supporting_cues: 2
+  semantic_threshold: null   # set after pilot calibration
+
+dimensions:
+
+  general_pov:
+    en:
+      high: [point of view, POV, viewpoint character, narrative perspective, narrative point of view]
+      medium: [viewpoint, perspective character]
+      context: [perspective, angle, lens]
+    de:
+      high: [Erzählperspektive, Erzählstandpunkt, Erzählhaltung, Erzählsituation]
+      medium: [Perspektivfigur, Blickwinkel]
+      context: [Perspektive, Sichtweise, Standpunkt]
+    regex:
+      en: ['\bpoint[- ]of[- ]view\b', '\bPOVs?\b', '\bviewpoints?\b']
+      de: ['\berzählperspektiv\w*', '\berzählstandpunkt\w*', '\berzählhaltung\w*', '\berzählsituation\w*']
+
+  person:
+    en:
+      high: [first-person narrator, first-person point of view, second-person point of view, third-person narrator, third-person point of view]
+      medium: [first person, second person, third person, first-person, second-person, third-person]
+      context: [I-narrator, he/she narration]
+    de:
+      high: [Ich-Erzähler, Ich-Erzählerin, Ich-Perspektive, Er-Erzähler, Sie-Erzähler]
+      medium: [erste Person, zweite Person, dritte Person, Du-Perspektive, Er/Sie-Perspektive]
+      context: []
+    regex:
+      en: ['\b(first|second|third)[- ]person\b']
+      de: ['\bich[- ]erzähl\w*', '\bich[- ]perspektiv\w*', '\b(er|sie)[-/ ]?(sie[- ])?erzähl\w*', '\bdu[- ]perspektiv\w*']
+
+  narrator_role:
+    en:
+      high: [witness narrator, observer narrator, participant narrator, protagonist narrator, peripheral narrator, first-person peripheral, first-person main character, first-person secondary character]
+      medium: [eyewitness, storyteller, narrator-agent]
+      context: [narrator, observer, witness]
+    de:
+      high: [Figurenerzähler, beteiligter Erzähler, unbeteiligter Erzähler, Beobachter-Erzähler]
+      medium: [Zeuge der Handlung, Protagonist als Erzähler, Nebenfigur als Erzähler]
+      context: [Erzähler, Erzählerin, Beobachter, Zeuge]
+    regex:
+      en: []
+      de: ['\bfigurenerzähl\w*', '\b(un)?beteiligte[nrs]? erzähl\w*']
+
+  knowledge_focalization:
+    en:
+      high: [omniscient narrator, omniscient point of view, third-person omniscient, limited omniscient, third-person limited, focalization, focalisation, internal focalization, external focalization, zero focalization, controlled omniscient]
+      medium: [omniscient, omniscience, limited third, all-knowing narrator, restricted point of view]
+      context: [knowledge, knows]
+    de:
+      high: [auktorialer Erzähler, auktoriale Erzählsituation, personaler Erzähler, personale Erzählsituation, allwissender Erzähler, Fokalisierung, interne Fokalisierung, externe Fokalisierung, Nullfokalisierung]
+      medium: [auktorial, personal erzählt, allwissend, Wissensstand]
+      context: [Wissen]
+    regex:
+      en: ['\bomniscien\w*', '\bfocali[sz]\w*', '\blimited (third|omniscien\w*)']
+      de: ['\bauktorial\w*', '\bpersonale[nrs]? (erzähl\w*|perspektiv\w*)', '\bfokalisier\w*', '\bnullfokalisier\w*', '\ballwissend\w*']
+
+  consciousness_access:
+    en:
+      high: [access to consciousness, interior access, access to thoughts, inside the character's head, inside the character's mind]
+      medium: [interiority, inner life, thoughts and feelings of the character, deep penetration, light penetration]
+      context: [consciousness, mind, thoughts]
+    de:
+      high: [Innensicht, Außensicht, Innenperspektive, Außenperspektive, Zugang zum Bewusstsein]
+      medium: [Innenleben, Gedankenwelt der Figur, in den Kopf der Figur]
+      context: [Bewusstsein, Gedanken, Gefühle]
+    regex:
+      en: ['\binteriority\b', '\binside (the|a|her|his|their) (character''s )?(head|mind)\b']
+      de: ['\binnensicht\w*', '\baußensicht\w*', '\binnenperspektiv\w*', '\baußenperspektiv\w*']
+
+  distance_depth:
+    en:
+      high: [deep POV, deep third, close third, close POV, psychic distance, narrative distance, intimate third-person, deep third-person point of view, close-focused third-person]
+      medium: [narrative closeness, zoom in, zoom out]
+      context: [distance, closeness, intimacy]
+    de:
+      high: [Erzähldistanz, narrative Distanz, Nähe und Distanz, Deep POV, tiefe Perspektive]
+      medium: [Erzählnähe, Erzählerdistanz]
+      context: [Distanz, Nähe]
+    regex:
+      en: ['\b(deep|close) (third|POV)\b', '\bpsychic distance\b', '\bnarrative distance\b']
+      de: ['\berzähl(er)?distanz\w*', '\bnarrative[nrs]? distanz\b', '\bnähe und distanz\b']
+
+  objective_mode:
+    en:
+      high: [camera eye, fly on the wall, objective narrator, objective point of view, dramatic point of view, cinematic view, direct third-person observer, detached third-person]
+      medium: [external perspective, dramatic mode, objective viewpoint]
+      context: [mode, camera, scene]
+    de:
+      high: [neutraler Erzähler, neutrale Erzählsituation, objektive Erzählweise, Kameraauge, Kameraperspektive]
+      medium: [szenisches Erzählen, Außensicht der Kamera]
+      context: [Kamera, szenisch]
+    regex:
+      en: ['\bcamera[- ]eye\b', '\bfly[- ]on[- ]the[- ]wall\b']
+      de: ['\bneutrale[nrs]? erzähl\w*', '\bkamera(auge|perspektiv\w*)\b']
+
+  involvement_voice:
+    en:
+      high: [detached narrator, involved narrator, intrusive narrator, narrative voice, narrator's voice]
+      medium: [narratorial intrusion, authorial intrusion]
+      context: [voice, tone]
+    de:
+      high: [Erzählstimme, Erzählerstimme, distanzierter Erzähler, eingreifender Erzähler, Erzählerkommentar]
+      medium: [Erzählton]
+      context: [Stimme, Ton]
+    regex:
+      en: ['\b(detached|involved|intrusive) narrator\w*']
+      de: ['\berzähle?r?stimme\w*']
+
+  multiplicity_switching:
+    en:
+      high: [multiple POV, multiple viewpoints, multiple points of view, alternating POV, POV switch, POV shift, viewpoint shift, head hopping, head-hopping, third-person multiple, multiple first-person narrative, first-person multiple]
+      medium: [perspective shift, switching heads, change viewpoint]
+      context: [switch, alternate]
+    de:
+      high: [Multiperspektivität, multiperspektivisch, Perspektivwechsel, Perspektivsprung, Head-Hopping]
+      medium: [Wechsel der Perspektive, mehrere Perspektiven]
+      context: [Wechsel]
+    regex:
+      en: ['\bhead[- ]hopping\b', '\b(POV|viewpoint|perspective) (switch|shift|change)\w*', '\bmultiple (POV|viewpoints?|points? of view)\b']
+      de: ['\bmultiperspektiv\w*', '\bperspektiv(en)?(wechsel|sprung)\w*']
+
+  reliability:
+    en:
+      high: [unreliable narrator, unreliable narration, unreliable first-person, reliable narrator]
+      medium: [untrustworthy narrator]
+      context: [reliable, unreliable]
+    de:
+      high: [unzuverlässiger Erzähler, unzuverlässiges Erzählen, unzuverlässige Erzählerin]
+      medium: [unglaubwürdiger Erzähler]
+      context: [zuverlässig]
+    regex:
+      en: ['\bunreliab\w* narra\w*']
+      de: ['\bunzuverlässig\w* erzähl\w*']
+
+  thought_representation:
+    en:
+      high: [free indirect discourse, free indirect style, free indirect speech, narrated monologue, interior monologue, stream of consciousness]
+      medium: [psycho-narration, direct thought, indirect thought]
+      context: []
+    de:
+      high: [erlebte Rede, innerer Monolog, Bewusstseinsstrom, Gedankenbericht]
+      medium: [Gedankenrede, stream of consciousness]
+      context: []
+    regex:
+      en: ['\bfree[- ]indirect (discourse|style|speech)\b', '\binterior monologue\b', '\bstream[- ]of[- ]consciousness\b']
+      de: ['\berlebte[nr]? rede\b', '\binnere[nr]? monolog\w*', '\bbewusstseinsstrom\w*']
+
+  information_control:
+    en:
+      high: [what the narrator knows, what the character knows, what the reader knows, restricted knowledge]
+      medium: [reveal information, withhold information, dramatic irony]
+      context: [information, reader, reveal]
+    de:
+      high: [Informationssteuerung, Informationsvergabe, was der Erzähler weiß, was die Figur weiß, was der Leser weiß]
+      medium: [Informationen vorenthalten, Wissensvorsprung, dramatische Ironie]
+      context: [Information, Leser]
+    regex:
+      en: ['\bwhat the (narrator|character|reader) (can )?knows?\b']
+      de: ['\bwas (der|die) (erzähler\w*|figur|leser\w*) weiß\b', '\binformations(steuerung|vergabe)\b']
+
+# Paraphrases of POV that avoid the terminology. Used as lexical patterns and as embedding seeds.
+implicit_patterns:
+  en:
+    - who tells the story
+    - who is telling the story
+    - who narrates
+    - who observes
+    - who sees the scene
+    - through whose eyes
+    - through her eyes
+    - through his eyes
+    - through the eyes of
+    - from the character's perspective
+    - stay with one character
+    - stay in one character's head
+    - enter another character's head
+    - switch between characters
+    - switch from one character to another
+    - the reader can only know
+    - the narrator knows everything
+    - access to the character's thoughts
+  de:
+    - durch ihre Augen
+    - durch seine Augen
+    - durch die Augen von
+    - aus der Sicht von
+    - aus Sicht der Figur
+    - aus der Perspektive von
+    - wer erzählt
+    - wer sieht
+    - wer nimmt wahr
+    - wer beobachtet
+    - bei einer Figur bleiben
+    - in den Kopf der Figur
+    - zwischen Figuren wechseln
+    - der Leser weiß nur
+
+semantic_prototypes:
+  en:
+    - This passage discusses who tells or perceives the story.
+    - This passage explains from whose perspective a fictional story should be narrated.
+    - This passage explains whose consciousness the reader can access.
+    - This passage discusses what the narrator or viewpoint character can know.
+    - This passage advises writers about switching from one character's perspective to another.
+    - This passage discusses narrative distance from a character's thoughts.
+    - This passage explains omniscient versus limited narration.
+    - This passage compares first-person and third-person narration.
+  de:
+    - Dieser Abschnitt erklärt, wer die Geschichte erzählt oder wahrnimmt.
+    - Dieser Abschnitt erklärt, aus wessen Perspektive eine Geschichte erzählt werden sollte.
+    - Dieser Abschnitt beschreibt, in wessen Bewusstsein der Leser Einblick erhält.
+    - Dieser Abschnitt behandelt, was der Erzähler oder die Perspektivfigur wissen kann.
+    - Dieser Abschnitt gibt Ratschläge zum Wechsel zwischen den Perspektiven verschiedener Figuren.
+    - Dieser Abschnitt behandelt die Distanz des Erzählers zu den Gedanken einer Figur.
+    - Dieser Abschnitt vergleicht auktoriales und personales Erzählen.
+    - Dieser Abschnitt vergleicht Ich-Erzählung und Er-/Sie-Erzählung.
+
+# Compound cues decompose into several dimensions (they are not separate POV classes).
+compound_mappings:
+  first-person peripheral: {person: first, narrator_role: witness}
+  first-person main character: {person: first, narrator_role: protagonist}
+  deep third-person point of view: {person: third, distance_depth: close, consciousness_access: internal}
+  intimate third-person point of view: {person: third, distance_depth: close, consciousness_access: internal}
+  camera eye: {objective_mode: objective, consciousness_access: none}
+  multiple first-person narrative: {person: first, multiplicity_switching: multiple}
+  third-person multiple: {person: third, multiplicity_switching: multiple}
+  limited third-person deep penetration: {knowledge_focalization: fixed, consciousness_access: high}
+  unreliable first-person: {person: first, reliability: unreliable}
+
+# Spelling normalization applied before matching (fixes for the cue spreadsheet).
+normalization:
+  "ponit of view": "point of view"
+  "free-indirect discourse": "free indirect discourse"
+  "third person": "third-person"
+  "first person": "first-person"
+  "second person": "second-person"
+  "pov": "POV"
+  "focalisation": "focalization"

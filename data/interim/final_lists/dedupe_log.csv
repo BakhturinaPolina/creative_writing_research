@@ -1,0 +1,19 @@
+edition_language,dedupe_key,kept_candidate_id,dropped_candidate_id,kept_source,dropped_source,title,author_name
+en,imaginative writing|burroway,seed:EN-048,filtered_ol:OL20282W,seed_corpus,filtered_openlibrary,Imaginative Writing,Janet Burroway
+en,the art of fiction|gardner,seed:EN-003,filtered_ol:OL280272W,seed_corpus,filtered_openlibrary,The Art of Fiction,John Gardner
+en,the art of writing fiction|cowan,seed:EN-007,filtered_ol:OL16212281W,seed_corpus,filtered_openlibrary,The Art of Writing Fiction,Andrew Cowan
+en,writing fiction|cassill,seed:EN-020,filtered_ol:OL4640035W,seed_corpus,filtered_openlibrary,Writing Fiction,R. V. Cassill
+en,the abc s of writing fiction|copeland,seed:EN-026,filtered_ol:OL2988674W,seed_corpus,filtered_openlibrary,The ABC's of Writing Fiction,Ann Copeland
+en,creating fiction|leebron,seed:EN-023,filtered_ol:OL510861W,seed_corpus,filtered_openlibrary,Creating Fiction,Fred Leebron
+en,slithery snakes and other aids to children s writing|petty,filtered_ol:OL16036730W,filtered_ol:OL3950661W,filtered_openlibrary,filtered_openlibrary,Slithery snakes and other aids to children's writing,Walter T. Petty
+en,models for writers|rosa,filtered_ol:OL18173308W,filtered_ol:OL19130634W,filtered_openlibrary,filtered_openlibrary,Models for writers,Alfred Rosa
+en,how to write stories that sell|fox,filtered_ol:OL7149397W,filtered_ol:OL13723192W,filtered_openlibrary,filtered_openlibrary,How to write stories that sell,Edward Seccomb Fox
+en,the new york times manual of style and usage|siegal,filtered_ol:OL115651W,filtered_ol:OL20031862W,filtered_openlibrary,filtered_openlibrary,The New York times manual of style and usage,Allan M. Siegal
+en,finding your writer s voice|frank,filtered_ol:OL15855293W,filtered_ol:OL13538064W,filtered_openlibrary,filtered_openlibrary,Finding your writer's voice,Thaisa Frank
+en,the awp official guide to writing programs|fenza,filtered_ol:OL18371438W,filtered_ol:OL45572484W,filtered_openlibrary,filtered_openlibrary,The AWP official guide to writing programs,D. W. Fenza
+en,creativity and the writing process|bertagnolli,filtered_ol:OL18450042W,filtered_ol:OL18529759W,filtered_openlibrary,filtered_openlibrary,Creativity and the writing process,Olivia Bertagnolli
+en,the way to write|fairfax,filtered_ol:OL6426847W,filtered_ol:OL7976544W,filtered_openlibrary,filtered_openlibrary,The way to write,John Fairfax
+en,creating nonfiction|bradway,filtered_ol:OL16160477W,filtered_ol:OL16160478W,filtered_openlibrary,filtered_openlibrary,Creating nonfiction,Becky Bradway
+en,writing fiction|anderson,filtered_ol:OL8101511W,filtered_ol:OL4885208W,filtered_openlibrary,filtered_openlibrary,Writing fiction,Linda Anderson
+en,alternative scriptwriting|dancyger,filtered_ol:OL2037866W,filtered_ol:OL19825828W,filtered_openlibrary,filtered_openlibrary,Alternative scriptwriting,Ken Dancyger
+de,rezeptbuch zum selberschreiben|kochbucher,filtered_ol:OL41794401W,filtered_ol:OL41795431W,filtered_openlibrary,filtered_openlibrary,Rezeptbuch Zum Selberschreiben,Kreativ Kochen Geschenk Kochbücher

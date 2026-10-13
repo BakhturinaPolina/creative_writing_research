@@ -1,0 +1,33 @@
+"Corpus fields, verification rules, and acquisition notes",Unnamed: 1,Unnamed: 2
+,,
+Field,Meaning,How to use it
+Corpus_ID,Stable seed-corpus identifier,Keep stable even if metadata is corrected later.
+Corpus_language,Language of the edition to be analyzed,Use for EN–DE comparisons.
+Author_editor,Author(s) or editor(s),Preserve editors because edited craft collections behave differently.
+Title,Title of selected corpus-language work/edition,Primary matching field for library searches.
+Original_title,Original title for translations,Needed to detect translated Anglophone craft discourse.
+First_year_corpus_language,Earliest located publication year in the corpus language,Do not confuse with the selected edition year.
+Selected_edition_year,Year attached to the ISBN selected for acquisition,Use this with ISBN when ordering or matching scans.
+Edition_note,Edition information,Important because craft textbooks are often substantially revised.
+ISBN_13 / ISBN_10,Edition-level identifiers,Primary keys for acquisition; do not use as work-level identifiers.
+Original_language,Language in which the work originated,Separates original German discourse from imported/translated discourse.
+Translation_status,Original vs translation,Use as a covariate in German-corpus analysis.
+Book_type,Operational genre within the writing-manual corpus,Useful for stratified sampling and robustness checks.
+Priority,Acquisition priority,"Tier 1 first, then Tier 2, Tier 3."
+POV_relevance,Expected relevance before full-text analysis,"This is a seed label, not a research result."
+POV_notes,Why a title is expected to be useful,Use to design positive/negative pilot samples.
+Full_text_status,Preliminary acquisition assessment,Must be replaced with verified access status during acquisition.
+Frankfurt_DNB_status,Holdings/access follow-up,Use HeBIS/Goethe UB and DNB/DNBLab for systematic checking.
+DNB_ID / OCLC_ID,Authority/catalog identifiers where already known,"Blank means not yet enriched, not absent."
+Rights_TDM_preliminary,Conservative rights note,Not legal advice; verify rights and lawful-access conditions per edition.
+Bibliographic_source_URL,Source used for current row metadata,Retain provenance when editing.
+Access_source_URL,Known catalogue/full-text/access lead,May be blank until acquisition stage.
+DNB_search_URL,Pre-built title search,Use for rapid DNB enrichment.
+Verification_status,Verified / Partial / Needs check,Partial means the row is usable as a lead but requires authority confirmation.
+Next_action,Formula-driven workflow instruction,Keeps bibliography operational as a corpus-building tracker.
+,,
+General corpus rule,A row represents a selected edition; conceptual analyses should deduplicate at work level when appropriate.,
+Translation rule,Do not compare all German-language books with all English books as if translations were independent German-origin discourse.,
+Rights rule,"For copyrighted texts, research TDM in Germany depends on lawful access and the applicable statutory/institutional conditions.",
+TDM legal reference,§60d UrhG,https://www.gesetze-im-internet.de/urhg/__60d.html
+DNB research access,DNBLab / research services,https://www.dnb.de/dnblab

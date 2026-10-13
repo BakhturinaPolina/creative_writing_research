@@ -1,0 +1,77 @@
+# Each group is one Ngram query; keep groups <= 12 terms (Viewer limit).
+# Run: python -m src.ngrams --group <key> --corpus en|de|eng_2019|ger_2019
+
+# Corpus-boundary terms: used to argue for the temporal range.
+english_corpus_terms:
+  - creative writing
+  - writing fiction
+  - fiction writing
+  - novel writing
+  - writing a novel
+  - craft of fiction
+  - art of fiction
+  - creative-writing course
+
+german_corpus_terms:
+  - kreatives Schreiben
+  - literarisches Schreiben
+  - Romane schreiben
+  - Roman schreiben
+  - Schreibschule
+  - Schreibwerkstatt
+  - Erzähltechnik
+  - Schriftstellerei
+
+# Older German labels for instructional writing discourse (pre-1970 prehistory).
+german_historical_terms:
+  - Technik des Erzählens
+  - Technik des Romans
+  - Erzählkunst
+  - Dichtkunst
+  - Romantechnik
+  - Schriftstellerei
+  - Schreibkunst
+
+# Compact sets for the headline validation figure (one per language).
+english_validation_set:
+  - creative writing
+  - fiction writing
+  - writing fiction
+  - the craft of fiction
+  - point of view
+  - narrative perspective
+  - viewpoint
+
+german_validation_set:
+  - kreatives Schreiben
+  - literarisches Schreiben
+  - Schreibwerkstatt
+  - Schreibschule
+  - Erzähltechnik
+  - Erzählperspektive
+  - Erzählsituation
+
+# POV terminology: kept separate to avoid circular period selection.
+english_pov_terms:
+  - point of view
+  - viewpoint
+  - narrative perspective
+  - first person narrator
+  - third person narrator
+  - omniscient narrator
+  - focalization
+  - free indirect discourse
+  - unreliable narrator
+  - narrative distance
+
+german_pov_terms:
+  - Erzählperspektive
+  - Erzählstandpunkt
+  - Erzählsituation
+  - Ich-Erzähler
+  - personaler Erzähler
+  - auktorialer Erzähler
+  - Fokalisierung
+  - erlebte Rede
+  - Erzählhaltung
+  - Perspektivwechsel
