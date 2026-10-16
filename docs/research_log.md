@@ -5,7 +5,7 @@ Newest entry first. One entry per working session (or per day). Always link outp
 ## How to write an entry
 
 ```markdown
-## YYYY-MM-DD | Week N | Phase: <Protocol|Candidates|Ngram|Catalogue|Dedup|Access|Fulltext|Retrieval|Annotation|Model|Analysis> | X.X h
+## YYYY-MM-DD | Week N | Phase: <Protocol|Candidates|Ngram|Catalogue|Dedup|Access|Fulltext|Retrieval|Annotation|Model|Analysis>
 **Goal:** what this session was meant to achieve
 **Done:** what actually happened (facts, numbers)
 **Data/outputs:** paths + row counts + commit hash
@@ -31,34 +31,72 @@ Rules:
 | DEC-003 | 2026-10-08 | Colleague OpenLibrary data is kept as a frozen raw discovery layer, not merged into the corpus directly | Noise (DE ~72% non-primary), seed recall DE ~3/50 | frozen |
 | DEC-004 | 2026-10-08 | DNB + HeBIS are the primary German sources; WorldCat optional; KVK manual only | Coverage, open access to APIs, KVK has no database of its own | provisional |
 | DEC-005 | 2026-10-08 | Works and editions are modelled separately (`work_id`, `edition_id`) | New-works vs editions-per-year are different measures | frozen |
+| DEC-006 | 2026-10-13 | Discovery outputs are a **true union** with download tiers P0–P3; colleagues review `review_*.csv` only | ~15k union is not reviewable flat; seed/filtered first, then primary harvests | frozen |
+| DEC-007 | 2026-10-13 | Early file-hash lookup was tried as an access identifier | Superseded by DEC-008. The lookup tooling and notes left this repository | superseded |
+| DEC-008 | 2026-10-16 | This repository covers catalogue discovery and legal full-text access only (library holdings, open digital objects, TDM) | File acquisition was split out so this repo does not document outside sources | frozen |
 
 Status values: `provisional` (open for revision), `frozen` (changes need a new DEC that supersedes it), `superseded`.
 
 ---
 
-## Hours tracker
-
-| Phase | Budget (h) | Spent (h) | Notes |
-|---|---:|---:|---|
-| Protocol & vocabulary | 20-30 | 0 | |
-| Existing candidates & gold benchmark | 15-20 | 0 | |
-| Ngram analysis | 10-15 | 0 | |
-| Catalogue harvesting (DNB/HeBIS/KVK) | 25-35 | 0 | |
-| Enrichment & deduplication | 30-45 | 0 | |
-| Eligibility coding & publication history | 20-30 | 0 | |
-| Library / TDM access | 15-25 | 0 | runs in parallel |
-| Full-text acquisition, OCR, cleaning | 50-80 | 0 | |
-| Retrieval prototype | 30-40 | 0 | |
-| Annotation | 30-45 | 0 | |
-| Classifier & evaluation | 25-35 | 0 | |
-| Full inference & analysis | 50-70 | 0 | |
-| **Total** | **320-470** | **0** | |
-
----
 
 ## Entries
 
-## 2026-10-10 | Week 5–7 | Phase: Catalogue | — h
+## 2026-10-16 | Week 5–7 | Phase: Access
+**Goal:** Keep this repository limited to catalogue discovery and legal full-text access.
+**Done:**
+- Acquisition tooling and its handoff tables moved out of this repository (DEC-008).
+- Colleague review files remain `review_{en,de}.csv`. Search feeds remain `final_list_{en,de}.csv`.
+- Source-specific status labels on the lists kept here were folded into `found`.
+**Data/outputs:**
+- `data/interim/final_lists/{union_all,final_list_*,review_*}.csv`
+**Decisions:** DEC-008 (supersedes DEC-007)
+**Problems / open questions:** none in this repo
+**Next:** Colleague eligibility pass on `review_*.csv`. Legal full-text access stays in week 12.
+
+## 2026-10-14 | Week 5–7 | Phase: Access
+**Goal:** Record file-hash coverage on the candidate lists after an offline ISBN match.
+**Done:**
+- Offline ISBN match added 202 hashes (EN 196, DE 6).
+- Union coverage after that merge: **587** hashes — **P0 67/100**, **P1 520/1,230**.
+- Search feeds: EN **554/4,622**, DE **33/420**.
+**Data/outputs:**
+- Updated `final_list_*` / `union_all` / `review_*` (the handoff export later left this repository)
+- HEAD `a08c6bb` (uncommitted data/docs)
+**Decisions:** DEC-007 (later superseded by DEC-008)
+**Problems / open questions:** Remaining English gaps are mostly without ISBN. German ISBN recall stayed weak.
+**Next:** Colleague review of `review_*.csv`. Do not send P2 to review yet.
+
+## 2026-10-13 | Week 5–7 | Phase: Access
+**Goal:** Record how many candidate rows already had a file hash before the later offline match.
+**Done:**
+- After the first fills: **383** hashes — **P0 64/100**, **P1 319/1,230**.
+- One colliding hash was rejected (same hash on unrelated ISBNs).
+- Search feeds: EN **358/4,622**, DE **25/420**.
+**Data/outputs:**
+- Updated `final_list_*.csv` / `review_*.csv` / `union_all.csv`
+- not committed
+**Decisions:** DEC-007 (later superseded by DEC-008)
+**Problems / open questions:** Most remaining English gaps lack ISBN.
+**Next:** Colleague review of `review_*.csv`.
+
+## 2026-10-13 | Week 5–7 | Phase: Candidates / Dedup
+**Goal:** Replace the seed+filtered-only final lists with a true-union discovery table, tiered search feeds, and a colleague-facing review slice.
+**Done:**
+- Rewrote `src/candidates/build_final_lists.py`: ingest seed, filtered OL, catalogue `prescreen_*`, `ol_search_*` (`likely_primary`+`uncertain`), DNB title hits, OpenSyllabus **books** only.
+- Dedup cascade per language: ISBN-13 → OL work id → DNB id → base title + surname; merge `source_tags` on clash.
+- Download tiers: **P0** seed (100), **P1** filtered OL + OpenSyllabus books (1,230), **P2** likely_primary harvests (3,728), **P3** uncertain/contextual (10,456).
+- ISBN backfill from `ol_search` / related sources (`backfill_isbn`).
+- Outputs (records): `union_all.csv` **15,514**; search feeds `final_list_en.csv` **4,622** / `final_list_de.csv` **420** (P0–P2, excludes `likely_exclude`); review `review_en.csv` **1,394** / `review_de.csv` **320** (all P0+P1 + sample of P2/P3).
+**Data/outputs:**
+- `data/interim/final_lists/{union_all,final_list_*,review_*,dedupe_log}.csv`
+- `data/interim/README.md` (colleague path: open `review_*.csv` only)
+- not committed
+**Decisions:** DEC-006
+**Problems / open questions:** P3 is large and noisy; do not send it for colleague review.
+**Next:** Colleague eligibility pass on `review_*.csv`.
+
+## 2026-10-10 | Week 5–7 | Phase: Catalogue
 **Goal:** Reorganize `src/` by research-plan phase; harden DNB; implement HeBIS + improved Open Library; shared logging.
 **Done:**
 - `src/` now has phase folders (`common`, `candidates`, `ngrams`, `catalogue`, `merge_enrich`, `publication`, plus README-only later phases). Each folder has a plain-English README. Run logs go to `logs/`.
@@ -74,16 +112,16 @@ Status values: `provisional` (open for revision), `frozen` (changes need a new D
 - `logs/*_20261010_*.log`
 **Decisions:** none
 **Problems / open questions:** HeBIS SRU unreachable from current network; retry from campus or another path. oai_dc subjects are DDC-style — switch to MARC21 for real GND headings.
-**Next:** Full DE DNB seed-gap pass; fuller OL harvest; access MD5 search on `final_list_*.csv`.
+**Next:** Full DE DNB seed-gap pass; fuller OL harvest; colleague review of `review_*.csv`.
 
-## 2026-10-08 | Week 3 | Phase: Candidates | — h
-**Goal:** File layout for filtered OL + seed → final candidate lists; document MD5 handoff.
+## 2026-10-08 | Week 3 | Phase: Candidates
+**Goal:** File layout for filtered OL + seed → final candidate lists.
 **Done:**
 - Moved MiniMax scrapers to `data/raw/colleague_openlibrary/scripts/openlibrary_scrape_{en,de}.py`.
 - Moved cleaned filtered CSVs to `data/interim/filtered_openlibrary/` (UTF-8; 1,086 EN + 80 DE; all OLIDs ⊆ raw).
 - Reorganized interim: `final_lists/`, `catalogue/`, `filtered_openlibrary/`, `dnb/`; wrote `data/interim/README.md`.
 - `src/candidates/build_final_lists.py` merges filtered + seed; dedupe on base title + surname (seed wins). Lists: EN 1,120 (50 seed + 1,070 filtered), DE 128 (50 seed + 78 filtered); 18 drops in `dedupe_log.csv` (6 seed∩filtered, 12 filtered∩filtered).
-- Broader lists under `catalogue/prescreen_*.csv` (still no seed). `md5` empty until access search; download needs 32-char lowercase `md5` from the access pipeline.
+- Broader lists under `catalogue/prescreen_*.csv` (still no seed).
 **Data/outputs:**
 - `data/interim/final_lists/final_list_en.csv` (1,120), `final_list_de.csv` (128), `dedupe_log.csv` (18)
 - `data/interim/filtered_openlibrary/filtered_*_corp.csv`
@@ -91,9 +129,9 @@ Status values: `provisional` (open for revision), `frozen` (changes need a new D
 - not committed
 **Decisions:** none
 **Problems / open questions:** none new
-**Next:** Run access checks on `final_list_*.csv` one language at a time (`--formats epub,pdf`).
+**Next:** Colleague review of the final lists, one language at a time.
 
-## 2026-10-08 | Week 3 | Phase: Candidates | — h
+## 2026-10-08 | Week 3 | Phase: Candidates
 **Goal:** Migrate the colleague OpenLibrary lists and the seed corpus into the master schema, pre-screen them, and measure seed recall.
 **Done:**
 - `src/migrate_candidates.py` reads both OpenLibrary CSVs (header repair, W/M ids, `/works/OL...M` → `/books/OL...M`) and the seed sheet. Nothing is deleted.
@@ -113,7 +151,7 @@ Status values: `provisional` (open for revision), `frozen` (changes need a new D
 - A subtitle set off by a period rather than a colon does not count as the base title.
 **Next:** Sample the pre-screen classes (step 9). Map seed `Book_type` to A-F.
 
-## 2026-10-08 | Week 1 | Phase: Protocol | — h
+## 2026-10-08 | Week 1 | Phase: Protocol
 **Goal:** Set up the repository, a first Ngram and DNB smoke test, and the documentation.
 **Done:**
 - Created the scaffold (venv on Python 3.14, configs, `src/` modules).

@@ -102,7 +102,7 @@ Columns: `title`, `author`, `language`/`year` (order differs EN vs DE), `link`. 
 
 ### Final lists
 
-See [`data/interim/README.md`](../data/interim/README.md). First access-check input is `data/interim/final_lists/final_list_{en,de}.csv` (filtered + seed, deduped). Broader auto-prescreen lists live under `data/interim/catalogue/prescreen_*.csv`.
+See [`data/interim/README.md`](../data/interim/README.md). Colleague review: `data/interim/final_lists/review_{en,de}.csv`. Search feeds: `final_list_{en,de}.csv` (P0–P2 true-union). Full audit: `union_all.csv`. Rebuild with `python -m src.candidates.build_final_lists`. Broader auto-prescreen lists still live under `data/interim/catalogue/prescreen_*.csv` as provenance.
 
 ### Not yet in the repository
 

@@ -50,9 +50,11 @@ python -m src.ngrams.ngrams --group english_corpus_terms --corpus en
 python -m src.ngrams.ngrams --group german_corpus_terms --corpus de
 python -m src.catalogue.dnb --query 'tit="kreatives schreiben"' --max-pages 2
 python -m src.candidates.migrate_candidates          # → data/interim/catalogue/
-python -m src.candidates.build_final_lists           # → data/interim/final_lists/
+python -m src.candidates.build_final_lists           # → data/interim/final_lists/ (union + review)
 python -m src.catalogue.openlibrary --lang de --max-pages 1
 python -m src.catalogue.hebis --isbn 9780226616551 --max-pages 1
 ```
 
-Status: `ngrams`, `dnb`, `hebis`, `openlibrary`, `migrate_candidates` and `build_final_lists` work. `worldcat`, `deduplicate` and `publication_stats` are stubs.
+Colleagues reviewing candidates: open `data/interim/final_lists/review_{en,de}.csv` (see [`data/interim/README.md`](data/interim/README.md)).
+
+Status: `ngrams`, `dnb`, `hebis`, `openlibrary`, `migrate_candidates`, `build_final_lists` and `backfill_isbn` work. `worldcat`, `deduplicate` and `publication_stats` are stubs.
