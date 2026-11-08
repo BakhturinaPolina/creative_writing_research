@@ -13,6 +13,7 @@ Raw inputs stay under `data/raw/` and are never edited. Everything here is deriv
 | [`hebis/`](hebis/) | HeBIS SRU hit tables (seed holdings checks) |
 | [`openlibrary/`](openlibrary/) | Improved Open Library harvest CSVs (`ol_search_en.csv`, `ol_search_de.csv`) |
 | [`opensyllabus/`](opensyllabus/) | Open Syllabus Project creative-writing query results |
+| `fulltext/` | Book manifest (`manifest.csv`), role review table, extraction spot-check; per-book JSON and excerpts are gitignored (see [`src/fulltext/README.md`](../../src/fulltext/README.md)) |
 
 ## Final lists (`final_lists/`) — start here for review
 

@@ -12,3 +12,8 @@ tenacity
 pyarrow
 jupyter
 openpyxl
+beautifulsoup4
+ebooklib
+pymupdf
+lingua-language-detector
+mobi
