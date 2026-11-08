@@ -136,6 +136,29 @@ def _resolve(base: str, href: str) -> str:
     return "/".join(parts)
 
 
+class EncryptedBookError(Exception):
+    """Content documents are DRM-encrypted (font obfuscation alone does not count)."""
+
+
+FONT_OBFUSCATION = ("http://www.idpf.org/2008/embedding", "http://ns.adobe.com/pdf/enc#RC")
+
+
+def check_epub_encryption(zf: zipfile.ZipFile) -> None:
+    try:
+        xml = zf.read("META-INF/encryption.xml")
+    except KeyError:
+        return
+    soup = BeautifulSoup(xml, "xml")
+    for data in soup.find_all("EncryptedData"):
+        method = data.find("EncryptionMethod")
+        ref = data.find("CipherReference")
+        uri = (ref.get("URI") if ref else "") or ""
+        if method and method.get("Algorithm") in FONT_OBFUSCATION:
+            continue
+        if uri.lower().endswith((".html", ".xhtml", ".htm", ".xml")):
+            raise EncryptedBookError(f"DRM-encrypted content ({uri})")
+
+
 def epub_spine(path: Path) -> tuple[list[tuple[str, bytes]], dict[str, str]]:
     """Return spine documents in reading order and a {doc_name: toc_title} map.
 
@@ -145,6 +168,7 @@ def epub_spine(path: Path) -> tuple[list[tuple[str, bytes]], dict[str, str]]:
     from urllib.parse import unquote
 
     with zipfile.ZipFile(path) as zf:
+        check_epub_encryption(zf)
         names = set(zf.namelist())
         opf = _opf_path(zf)
         docs: list[tuple[str, bytes]] = []
@@ -265,6 +289,7 @@ def txtzip_documents(path: Path) -> tuple[list[tuple[str, bytes]], dict[str, str
     with zipfile.ZipFile(path) as zf:
         for name in sorted(n for n in zf.namelist() if n.endswith(".txt")):
             raw = zf.read(name).decode("utf-8", errors="replace")
+            raw = re.sub(r"(\w)-\n\s*(?=[a-zäöüß])", r"\1", raw)  # OCR line-break hyphenation
             blocks = [("p", b) for b in re.split(r"\n\s*\n", raw) if b.strip()]
             docs.append((name, _html_doc(blocks)))
     return docs, {}

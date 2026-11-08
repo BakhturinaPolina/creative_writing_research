@@ -55,6 +55,14 @@ python -m src.catalogue.openlibrary --lang de --max-pages 1
 python -m src.catalogue.hebis --isbn 9780226616551 --max-pages 1
 ```
 
+Full texts (books are gitignored; see [`src/fulltext/README.md`](src/fulltext/README.md)):
+
+```bash
+python -m src.fulltext.inventory --move   # manifest + originals → data/raw/books/
+python -m src.fulltext.prescreen_books    # corpus_role per book (overrides: config/book_role_overrides.csv)
+python -m src.fulltext.extract_ebook      # round 1 → data/interim/fulltext/json/ + spotcheck_round1.md
+```
+
 Colleagues reviewing candidates: open `data/interim/final_lists/review_{en,de}.csv` (see [`data/interim/README.md`](data/interim/README.md)).
 
 Status: `ngrams`, `dnb`, `hebis`, `openlibrary`, `migrate_candidates`, `build_final_lists` and `backfill_isbn` work. `worldcat`, `deduplicate` and `publication_stats` are stubs.

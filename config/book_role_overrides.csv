@@ -6,7 +6,7 @@ de_ea2ff97a7d6c,comparison,narratology_theory,F,,,agent-firstpass,Aristotle Poet
 de_369e4a819345,negative,not_instructional,,,,agent-firstpass,oral/life history
 de_a63fd9aec972,negative,not_instructional,,,,agent-firstpass,content is a novel; title mismatch
 de_1c1f740c52c8,comparison,academic_study,,,,agent-firstpass,autofiction studies
-de_88dd306c2ce5,primary,,A,,,agent-firstpass,self-publishing writing guide
+de_88dd306c2ce5,unreviewed,,,,,agent-firstpass,"title says writing guide, extracted text opens with a finance memoir; 4.3k words"
 de_5b5a41048804,comparison,academic_study,,,,agent-firstpass,literary studies
 de_0f0a23138662,comparison,narratology_theory,F,,,agent-firstpass,Spielhagen 1883 novel theory; historical extension candidate
 de_652b9f741575,negative,not_instructional,,,,agent-firstpass,poetry anthology
@@ -41,7 +41,7 @@ de_37d39f0f7584,comparison,narratology_theory,F,,,agent-firstpass,17th/18th c. n
 de_368b9722b730,comparison,academic_study,,,,agent-firstpass,literary history
 de_8e13ce34136b,comparison,narratology_theory,F,,,agent-firstpass,Gottsched Critische Dichtkunst; historical extension candidate
 de_0c3be71c3b5d,comparison,narratology_theory,F,,,agent-firstpass,Gottsched variant index
-de_ed096f04f754,primary,,A,translation,en,agent-firstpass,Natalie Goldberg (Wild Mind)
+de_ed096f04f754,primary,,A,,,agent-firstpass,"filed as Goldberg Wild Mind, but text is another German writing guide (Professionell schreiben); check"
 de_d9d6a0580d89,negative,not_instructional,,,,agent-firstpass,law/knowledge transfer
 de_8b6fe39629d4,negative,technical_writing,,,,agent-firstpass,MS Word manual for authors
 de_70af015ed128,comparison,academic_study,,,,agent-firstpass,philology

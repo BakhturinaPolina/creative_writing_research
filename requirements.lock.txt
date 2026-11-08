@@ -16,7 +16,6 @@ contourpy==1.4.0
 cycler==0.12.1
 debugpy==1.8.22
 defusedxml==0.7.1
-EbookLib==0.21
 et_xmlfile==2.0.0
 executing==2.2.1
 fastjsonschema==2.22.2
