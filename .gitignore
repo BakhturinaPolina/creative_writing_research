@@ -32,3 +32,10 @@ data/raw/**
 # Colleague and manually curated inputs cannot be re-fetched: track them
 !data/raw/colleague_openlibrary/**
 !data/raw/seed_corpus/**
+
+# Copyrighted full texts: never commit (§60d UrhG, no redistribution)
+data/interim/creative_writing/
+data/raw/books/
+data/interim/fulltext/json/
+data/interim/fulltext/excerpts/
+data/processed/fulltext/
