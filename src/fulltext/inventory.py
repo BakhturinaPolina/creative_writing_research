@@ -51,7 +51,7 @@ INVENTORY_COLS = [
     *UNION_COLS,
 ]
 DOWNSTREAM_COLS = [
-    "corpus_type", "corpus_role", "role_source", "prescreen_role", "prescreen_reason",
+    "title_match", "content_dup_of", "corpus_type", "corpus_role", "role_source", "prescreen_role", "prescreen_reason",
     "translation_status", "original_language", "exclusion_reason", "work_id",
     "extraction_round", "extraction_status", "n_words", "n_chapters",
 ]

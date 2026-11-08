@@ -303,6 +303,26 @@ def ebook_sample(path: Path, fmt: str, max_chars: int = 40000) -> str:
     return " ".join(parts)[:max_chars]
 
 
+def front_text(path: Path, fmt: str, max_chars: int = 15000) -> str:
+    """Title pages / imprint: first documents of an ebook or first 6 PDF pages."""
+    if fmt == "pdf":
+        import pymupdf
+
+        with pymupdf.open(path, filetype="pdf") as doc:
+            return normalize_text(" ".join(doc[i].get_text() for i in range(min(6, doc.page_count))))[:max_chars]
+    if fmt not in EBOOK_EXTS:
+        return ""
+    docs, _ = ebook_documents(path, fmt)
+    parts, total = [], 0
+    for _, html in docs[: max(int(len(docs) * 0.15), 3)]:
+        text = html_text(html)
+        parts.append(text)
+        total += len(text)
+        if total >= max_chars:
+            break
+    return " ".join(parts)[:max_chars]
+
+
 def pdf_page_texts(path: Path, max_pages: int = 25) -> tuple[int, list[str]]:
     """Return (page_count, texts of up to max_pages evenly spread body pages)."""
     import pymupdf

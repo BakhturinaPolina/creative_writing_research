@@ -1,0 +1,110 @@
+# Book-level pre-screen on extracted text samples (src/fulltext/prescreen_books.py).
+# Regexes are case-insensitive; rates are matches per 1,000 words of the body sample.
+# Title rules from inclusion_rules.yml run first; these text signals refine them.
+
+signals:
+  instruction:  # teaching someone how to write
+    en:
+      - "\\byour (story|stories|novel|reader|readers|character|characters|protagonist|plot|manuscript|draft|scene|scenes|writing|book|narrator|dialogue)\\b"
+      - "\\byou (should|can|must|need to|might want|will want|have to|may want)\\b"
+      - "\\bwriters?\\b"
+      - "\\bpoint of view\\b|\\bpov\\b|\\bviewpoint\\b"
+      - "\\bshow,? don'?t tell\\b"
+      - "\\bexercises?\\b|\\bprompts?\\b"
+      - "\\b(first|second|rough|final) draft\\b|\\brevision\\b|\\brevis(e|ing)\\b"
+      - "\\bprotagonists?\\b|\\bantagonists?\\b"
+      - "\\bmanuscripts?\\b|\\bliterary agents?\\b|\\bquery letters?\\b"
+      - "\\bplot(s|ting)?\\b|\\bsubplots?\\b"
+      - "\\bnarrators?\\b|\\bnarrative\\b"
+      - "\\bcharacterization\\b|\\bdialogue\\b"
+    de:
+      - "\\b(ihr(e|en|em|er)?|dein(e|en|em|er)?) (geschichte|roman|romans|leser|leserin|figur|figuren|protagonist\\w*|text|manuskript|szene|szenen|plot|handlung|erzähler\\w*|buch|dialog\\w*)\\b"
+      - "\\bsie (sollten|können|müssen|dürfen)\\b"
+      - "\\bautor(in|en|innen)?\\b|\\bschriftsteller\\w*"
+      - "\\bschreib(en|er|ende|übung\\w*|prozess\\w*|handwerk\\w*|blockade\\w*|ratgeber\\w*)\\b"
+      - "\\berzählperspektive\\w*|\\bperspektive\\w*|\\bpoint of view\\b"
+      - "\\bfigur(en)?\\b|\\bprotagonist(in|en)?\\b"
+      - "\\bmanuskript\\w*|\\blektor\\w*|\\bexposé\\w*"
+      - "\\bplot\\w*|\\bszene(n)?\\b|\\bspannungsbogen\\w*|\\bkonflikt\\w*"
+      - "\\bübung(en)?\\b|\\bschreibaufgabe\\w*"
+      - "\\berzähler(in|s)?\\b|\\bshow,? don'?t tell\\b"
+  fiction:  # narrated story with dialogue tags
+    en:
+      - "\\b(he|she|i|they) (said|asked|replied|whispered|shouted|muttered|murmured|sighed|nodded|smiled|grinned|laughed)\\b"
+      - "\\b(said|asked|replied|whispered) (he|she)\\b"
+    de:
+      - "\\b(sagte|fragte|antwortete|flüsterte|rief|murmelte|seufzte|nickte|lächelte|grinste|lachte) (er|sie|ich)\\b"
+      - "\\b(er|sie|ich) (sagte|fragte|antwortete|flüsterte|rief|murmelte|seufzte|nickte|lächelte|grinste|lachte)\\b"
+  dialogue:  # opening quotation marks; novels are dense with them
+    en:
+      - "[“]"
+      - "(^|\\s)\"(?=\\w)"
+    de:
+      - "[»„]"
+      - "(^|\\s)\"(?=\\w)"
+  academic:  # scholarly apparatus
+    en:
+      - "\\bet al\\."
+      - "\\bibid\\b"
+      - "\\bcf\\."
+      - "\\(\\d{4}[a-z]?(: ?\\d+)?\\)"
+      - "\\bpp?\\. ?\\d+"
+    de:
+      - "\\bvgl\\."
+      - "\\bebd\\."
+      - "\\bs\\. ?\\d+"
+      - "\\bhrsg\\."
+      - "\\(\\d{4}[a-z]?(: ?\\d+)?\\)"
+  literary:  # about literature at all (separates literary scholarship from unrelated books)
+    en:
+      - "\\b(literature|literary|novels?|fiction|narratives?|poetry|poems?|authors?|narrators?|genre|writing|writers?)\\b"
+    de:
+      - "\\b(literatur\\w*|literarisch\\w*|roman(e|s)?|erzähl\\w*|dichtung\\w*|lyrik|gedicht\\w*|autor\\w*|poetik\\w*|gattung\\w*|schreib\\w*|schriftsteller\\w*)\\b"
+  school:
+    en:
+      - "\\b(students?|teachers?|classrooms?|pupils?|lesson plans?|curriculum|grade \\d+|instructors?)\\b"
+    de:
+      - "\\b(schüler\\w*|lehrer\\w*|unterricht\\w*|lehrkr\\w*|klasse \\d+|didaktik\\w*|lernende\\w*|studierende\\w*)\\b"
+  therapy:
+    en:
+      - "\\b(therap\\w*|healing|trauma\\w*|clients?|patients?|journaling|self-care)\\b"
+    de:
+      - "\\b(therap\\w*|heilsam\\w*|heilung|klient\\w*|trauma\\w*|patient\\w*|seele)\\b"
+
+# Applied to title (list title, else filename title), before text signals.
+title_rules:
+  language_course:
+    - "writing skills in (spanish|french|german|english|italian)"
+    - "\\b(esl|efl|daf)\\b"
+    - "as a (second|foreign) language"
+    - "deutsch als fremdsprache|fremdsprach"
+    - "\\b(in|für) (spanish|french|german|spanisch|französisch|englisch)\\b"
+  blank_notebook:
+    - "notizbuch|bullet journal|zum selberschreiben|blank (book|notebook|journal)|blanko|\\bliniert|\\bkariert|punktraster|\\d+ seiten"
+  screenwriting:
+    - "screenwrit|screenplay|drehbuch"
+  poetry:
+    - "\\bpoetry\\b|\\bgedichte schreiben\\b|\\blyrik schreiben\\b"
+
+# Front matter (first pages) of German books: translation notice.
+translation:
+  de:
+    - "(aus dem|übersetzt aus dem|übersetzung aus dem) (amerikanischen |britischen )?(englischen|amerikanischen)"
+    - "titel der (amerikanischen |englischen |britischen )?originalausgabe"
+    - "originaltitel"
+  english_markers:
+    - "englisch|amerikanisch|britisch|\\b(new york|london|cincinnati|boston)\\b|copyright ©? ?\\d{4}"
+
+# Calibrated on the curated (P0/P1) books: their median instruction rate is 7.3 (en) / 12.2 (de)
+# per 1,000 words, median dialogue rate 4-6; novels in the folder have dialogue rates around 18-20.
+thresholds:
+  min_sample_words: 300
+  instruction_primary: {en: 6.0, de: 8.0}
+  instruction_weak: {en: 3.0, de: 4.0}
+  fiction_tags_high: 1.5
+  dialogue_high: 15.0
+  academic_high: 3.0
+  literary_some: 3.0
+  school_high: 6.0             # and at least half the instruction rate
+  therapy_high: 3.0
+  title_match_min: 0.5         # share of title words found in the book's own front matter
