@@ -75,7 +75,13 @@ PUBLISHERS = {
 }
 ROLE_WORDS = re.compile(
     r"\(?\b(author|authors|editor|editors|eds?|edited by|compiler|comp|illustrator|illustrated by|"
-    r"translator|translated by|trans|foreword|introduction|narrator|contributor|writer)\b\.?\)?",
+    r"translator|translated by|trans|foreword|introduction|narrator|contributor|writer|"
+    r"edt|trl|ill|ctb|aut|cmp|professor|prof|dr)\b\.?\)?",
+    re.I,
+)
+EDITION = re.compile(
+    r"[,:;.]?\s*\b(\d+(st|nd|rd|th)|first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|new|revised)"
+    r"( anniversary| revised| and expanded| updated)? edition\b",
     re.I,
 )
 DATES = re.compile(r"\(?\b\d{3,4}\s*-\s*(\d{3,4})?\)?\.?|\(?\bb\.\s*\d{4}\)?")
@@ -128,9 +134,14 @@ def clean_title(title: str, source: str) -> str:
         title = title.replace("_", " ")
     title = re.sub(r"^microsoft (word|powerpoint)\s*-\s*", "", title, flags=re.I)
     title = re.sub(r"\.(pdf|docx?|epub|mobi|indd|qxd|rtf)$", "", title, flags=re.I)
+    title = re.split(r"\s+=", title, maxsplit=1)[0]          # MARC parallel title "= ..."
+    title = EDITION.sub("", title)
     while TRAILING_NOTE.search(title):
         title = TRAILING_NOTE.sub("", title)
+    if ":" in title:                                         # series note after a subtitle
+        title = re.sub(r"\s*\([^()]*\)\s*$", "", title)
     title = re.sub(r"\s+/\s*$", "", title)                   # MARC "title /"
+    title = re.sub(r"\s*;\s+", ": ", title, count=1) if ":" not in title else title
     title = re.sub(r"\s+:\s*", ": ", title)                  # "title : subtitle"
     title = re.sub(r"\s+", " ", title).strip(" -:;,/")
     if JUNK_TITLE.match(title) or (" " not in title and len(title) > 15) or re.search(r"\d{2,}_|titelblatt", title, re.I):
@@ -142,7 +153,7 @@ def _junk_author(name: str) -> bool:
     low = name.lower().strip(" .")
     if JUNK_AUTHOR.match(low) or low in PUBLISHERS or len(low) < 3:
         return True
-    if re.search(r"\d|www|@|\.com|\bpress\b|\bpublish|\buniversity\b", low):
+    if re.search(r"\d|www|@|\.com|\bpress\b|\bpublish|\buniversity\b|mcgraw|\balliance\b", low):
         return True
     return " " not in name and name.islower()  # account names such as 'brockur'
 
@@ -172,6 +183,19 @@ def clean_author(author: str) -> str:
 def surname(name: str) -> str:
     tokens = [t for t in words(name) if t not in NAME_SUFFIXES]
     return tokens[-1] if tokens else ""
+
+
+def shares_person(a: str, b: str) -> bool:
+    """Some name in a and b has the same surname and the same first initial."""
+    def people(author: str) -> set[tuple[str, str]]:
+        found = set()
+        for name in author.split(";"):
+            tokens = [t for t in words(name) if t not in NAME_SUFFIXES]
+            if tokens:
+                found.add((tokens[-1], tokens[0][0] if len(tokens) > 1 else ""))
+        return found
+
+    return any(sa == sb and (not ia or not ib or ia == ib) for sa, ia in people(a) for sb, ib in people(b))
 
 
 def surnames(author: str) -> frozenset[str]:
@@ -359,8 +383,11 @@ def decide(row: dict, cands: list[dict], front_words: set[str], cur_title: str, 
     if readable:
         verified = [(s, t) for s, t in titles if title_score(t, front_words) >= VERIFIED]
         if cur_score >= VERIFIED or (cur_t_clean and title_score(" ".join(main_key(cur_t_clean)), front_words) >= VERIFIED):
-            group = [(s, t) for s, t in verified if same_book(t, cur_t_clean)]
-            longer = [(s, t) for s, t in group if len(title_key(t)) > len(title_key(cur_t_clean))]
+            cur_main = main_key(cur_t_clean)
+            longer = [
+                (s, t) for s, t in verified
+                if len(title_key(t)) > len(title_key(cur_t_clean)) and title_key(t)[: len(cur_main)] == cur_main
+            ]
             if longer:
                 best_len = max(len(title_key(t)) for _, t in longer)
                 best = [(s, t) for s, t in longer if len(title_key(t)) == best_len]
@@ -374,8 +401,11 @@ def decide(row: dict, cands: list[dict], front_words: set[str], cur_title: str, 
                 identity = True
                 reasons.append(f"current title not in text; text matches '{prop_t}' ({','.join(agree_title(prop_t))})")
     else:
-        same = [(s, t) for s, t in titles if same_book(t, cur_t_clean)]
-        backed = [(s, t) for s, t in same if len(agree_title(t)) >= 2 and len(title_key(t)) > len(title_key(cur_t_clean))]
+        cur_main = main_key(cur_t_clean)
+        backed = [
+            (s, t) for s, t in titles
+            if len(agree_title(t)) >= 2 and len(title_key(t)) > len(title_key(cur_t_clean)) and title_key(t)[: len(cur_main)] == cur_main
+        ]
         if backed:
             best_len = max(len(title_key(t)) for _, t in backed)
             prop_t = pick_wording([o for o in backed if len(title_key(o[1])) == best_len], cur_t_clean)
@@ -412,13 +442,20 @@ def decide(row: dict, cands: list[dict], front_words: set[str], cur_title: str, 
         elif identity and pool:
             prop_a = min(pool, key=lambda o: SOURCES.index(o[0]))[1]
             reasons.append(f"author from the same source as the title, not on title page ({','.join(agree_author(prop_a))})")
+        elif identity:
+            prop_a = ""
+            reasons.append("author of the actual book not found")
     elif not cur_a_clean:
         backed = [(s, a) for s, a in pool if len(agree_author(a)) >= 2] or pool
         if backed:
             prop_a = min(backed, key=lambda o: SOURCES.index(o[0]))[1]
             reasons.append(f"author was missing, unverified ({','.join(agree_author(prop_a))})")
     if surnames(prop_a) == surnames(cur_a_clean) and name_fullness(prop_a, front_words) <= name_fullness(cur_a_clean, front_words):
-        prop_a = cur_author if cur_a_clean else prop_a
+        if cur_a_clean:  # same people: keep the current spelling, only fix 'Last, First' and list separators
+            prop_a = cur_a_clean if "," in cur_author else cur_author
+    if readable and not identity and cur_a_clean and prop_a and not shares_person(prop_a, cur_a_clean):
+        identity = True  # same title, different author on the title page: another book with that title
+        reasons.append("title page names a different author: probably another book with the same title")
 
     # --- confidence
     t_changed = prop_t != cur_title
