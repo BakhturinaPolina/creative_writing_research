@@ -30,7 +30,9 @@ from src.fulltext.books import (
     detect_format,
     detect_language,
     discover_books,
+    display_title_author,
     ebook_sample,
+    load_metadata_overrides,
     md5_of,
     normalize_text,
     parse_filename,
@@ -144,8 +146,7 @@ def assign_lang(row: dict) -> None:
 
 
 def move_to_raw(path: Path, row: dict, log) -> Path:
-    title = row.get("title") or row.get("file_title") or ""
-    author = row.get("author_name") or row.get("file_author") or ""
+    title, author = display_title_author(row, load_metadata_overrides())
     dest = raw_book_path(
         row["lang"], row.get("corpus_role"), title, author, row["md5"], row["format"],
     )

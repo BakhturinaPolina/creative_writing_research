@@ -5,6 +5,8 @@ Turn the downloaded books into one uniform, machine-readable format.
 ```bash
 python -m src.fulltext.inventory --move     # manifest + move originals into raw books tree
 python -m src.fulltext.prescreen_books      # proposed corpus_role for every book
+python -m src.fulltext.fix_titles suggest   # proposed title/author fixes (en) → title_author_review.csv
+python -m src.fulltext.fix_titles apply     # accepted fixes → config/book_metadata_overrides.csv
 python -m src.fulltext.reorganize_books     # readable names + role subfolders (after labelling)
 python -m src.fulltext.extract_ebook        # round 1: EPUB/MOBI/AZW3/DOCX/page-text zips → per-book JSON
 ```
@@ -14,6 +16,7 @@ python -m src.fulltext.extract_ebook        # round 1: EPUB/MOBI/AZW3/DOCX/page-
 - `format` is the real format from the file's magic bytes; `file_ext` is the downloaded extension (many `.epub` files are PDFs).
 - Raw originals (gitignored): `data/raw/books/{lang}/{primary|review|comparison|negative}/{Title} - {Author} [{md5}].{ext}`.
   `unreviewed` maps to `review/`. Re-run `reorganize_books` after changing labels.
+  Files moved or renamed by hand (no longer at their manifest `raw_path`) are left in place.
 
 ## Outputs (`data/interim/fulltext/`)
 
@@ -22,6 +25,8 @@ python -m src.fulltext.extract_ebook        # round 1: EPUB/MOBI/AZW3/DOCX/page-
 | `manifest.csv` | yes | one row per file: identity, language, format, PDF triage, list join, labels, extraction status |
 | `review_unlisted.csv` | yes | books not in the candidate lists, with prescreen signals per 1,000 words |
 | `extraction_stats_round1.csv`, `spotcheck_round1.md` | yes | extraction statistics and spot-check report (no book text) |
+| `title_author_review.csv` | yes | proposed title/author fixes with every source, confidence and an `accept` column |
+| `lookup_cache.json` | no | cached Open Library responses |
 | `json/{lang}/{book_id}.json` | no | chapters (`front` / `body` / `back`) and paragraphs |
 | `excerpts/` | no | text samples used for language detection, prescreen and spot-checks |
 
@@ -31,6 +36,20 @@ python -m src.fulltext.extract_ebook        # round 1: EPUB/MOBI/AZW3/DOCX/page-
 academic, screenwriting, poetry), `negative` (fiction, unrelated, language courses, other languages),
 `unreviewed`. The prescreen proposes; [`config/book_role_overrides.csv`](../../config/book_role_overrides.csv)
 decides (`reviewer` column; `agent-firstpass` rows are proposals awaiting confirmation).
+
+## Titles and authors
+
+Filenames use [`config/book_metadata_overrides.csv`](../../config/book_metadata_overrides.csv) first, then the
+candidate lists, then the download filename. `fix_titles suggest` compares the filename, candidate list, metadata
+embedded in the file and Open Library (ISBN from the copyright page, else a search) against the book's first pages
+and proposes a fix with a `confidence`:
+
+- `high`: title and author are on the title page and every changed field is backed by two sources. These are applied unless `accept=no`.
+- `medium` / `conflict`: need `accept=yes`.
+- `wrong_book`: the file's text is a different book than its name says. These need `accept=yes`, and once applied they are marked `identity_changed=True` (re-check `corpus_role`).
+
+You can edit `proposed_title` / `proposed_author` before running `apply`. Re-running `suggest` keeps `accept`
+values for unchanged proposals.
 
 Check columns before analysis: `title_match=False` means the file's text does not contain its title words
 (often a different book than the filename says); `content_dup_of` points to another file with the same text.
