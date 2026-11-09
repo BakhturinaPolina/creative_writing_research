@@ -38,4 +38,5 @@ data/interim/creative_writing/
 data/raw/books/
 data/interim/fulltext/json/
 data/interim/fulltext/excerpts/
+data/interim/fulltext/lookup_cache.json
 data/processed/fulltext/

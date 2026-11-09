@@ -17,7 +17,7 @@ from pathlib import Path, PurePosixPath
 
 from bs4 import BeautifulSoup, XMLParsedAsHTMLWarning
 
-from src.common.paths import DATA_INTERIM, DATA_RAW
+from src.common.paths import CONFIG, DATA_INTERIM, DATA_RAW
 
 warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 
@@ -28,6 +28,7 @@ MANIFEST_PATH = FULLTEXT_DIR / "manifest.csv"
 JSON_DIR = FULLTEXT_DIR / "json"
 EXCERPTS_DIR = FULLTEXT_DIR / "excerpts"
 SAMPLES_DIR = EXCERPTS_DIR / "samples"
+METADATA_OVERRIDES = CONFIG / "book_metadata_overrides.csv"
 
 BOOK_EXTS = {"epub", "pdf", "mobi", "azw3", "docx", "txtzip", "rtf"}
 # Round 1 formats: everything whose text is available without layout analysis or OCR
@@ -102,7 +103,8 @@ def role_folder(corpus_role: str | None) -> str:
 
 def safe_book_filename(title: str, author: str, md5: str, fmt: str, max_stem: int = 160) -> str:
     """Human-readable name that still embeds the full MD5 for inventory parsing."""
-    title = UNSAFE_FILENAME.sub("", (title or "").strip()).strip(" .")
+    title = re.sub(r"\s*:\s+", " - ", (title or "").strip()).replace("/", "-")
+    title = UNSAFE_FILENAME.sub("", title).strip(" .")
     author = UNSAFE_FILENAME.sub("", (author or "").strip()).strip(" .")
     author = author.replace("; ", " _ ")
     if not title:
@@ -115,6 +117,40 @@ def safe_book_filename(title: str, author: str, md5: str, fmt: str, max_stem: in
 
 def raw_book_path(lang: str, corpus_role: str | None, title: str, author: str, md5: str, fmt: str) -> Path:
     return RAW_BOOKS / lang / role_folder(corpus_role) / safe_book_filename(title, author, md5, fmt)
+
+
+def raw_files_by_md5() -> dict[str, Path]:
+    """Where each book file actually is under data/raw/books/, keyed by the MD5 in its name."""
+    found = {}
+    for path in RAW_BOOKS.rglob("*") if RAW_BOOKS.exists() else []:
+        md5 = parse_filename(path.name)["md5"]
+        if path.is_file() and md5:
+            found[md5] = path
+    return found
+
+
+def load_metadata_overrides() -> dict[str, tuple[str, str]]:
+    """{book_id: (title, author)} from config/book_metadata_overrides.csv."""
+    if not METADATA_OVERRIDES.is_file():
+        return {}
+    import csv
+
+    with open(METADATA_OVERRIDES, encoding="utf-8", newline="") as fh:
+        return {r["book_id"]: (r["title"].strip(), r["author"].strip()) for r in csv.DictReader(fh) if r["book_id"]}
+
+
+def display_title_author(row: dict, overrides: dict[str, tuple[str, str]] | None = None) -> tuple[str, str]:
+    """Title and author for filenames: override, then candidate list, then download filename."""
+    title, author = (overrides or {}).get(str(row.get("book_id") or ""), ("", ""))
+    for key in ("title", "file_title"):
+        value = str(row.get(key) or "").strip()
+        if not title and value not in {"", "nan"}:
+            title = value
+    for key in ("author_name", "file_author"):
+        value = str(row.get(key) or "").strip()
+        if not author and value not in {"", "nan"}:
+            author = value
+    return title or "untitled", author
 
 
 def discover_books() -> list[tuple[Path, str]]:
@@ -380,6 +416,60 @@ def front_text(path: Path, fmt: str, max_chars: int = 15000) -> str:
         if total >= max_chars:
             break
     return " ".join(parts)[:max_chars]
+
+
+def _kindle_exth(path: Path) -> tuple[str, str]:
+    """EXTH 503 (updated title, else the full name) and 100 (authors) from a MOBI/AZW3 header."""
+    import struct
+
+    data = path.read_bytes()[:200000]
+    rec0 = struct.unpack(">I", data[78:82])[0]
+    mobi = rec0 + 16
+    if data[mobi:mobi + 4] != b"MOBI":
+        return "", ""
+    header_len, encoding = struct.unpack(">II", data[mobi + 4:mobi + 12])
+    codec = "utf-8" if encoding == 65001 else "cp1252"
+    name_off, name_len = struct.unpack(">II", data[rec0 + 84:rec0 + 92])
+    title = data[rec0 + name_off:rec0 + name_off + name_len].decode(codec, "replace")
+    authors = []
+    exth = mobi + header_len
+    if data[exth:exth + 4] == b"EXTH":
+        count = struct.unpack(">I", data[exth + 8:exth + 12])[0]
+        pos = exth + 12
+        for _ in range(count):
+            kind, size = struct.unpack(">II", data[pos:pos + 8])
+            value = data[pos + 8:pos + size].decode(codec, "replace").strip()
+            if kind == 503 and value:
+                title = value
+            elif kind == 100 and value:
+                authors.append(value)
+            pos += size
+    return normalize_text(title), "; ".join(normalize_text(a) for a in authors)
+
+
+def embedded_metadata(path: Path, fmt: str) -> tuple[str, str]:
+    """(title, author) stored inside the file; empty strings when absent or unreadable."""
+    try:
+        if fmt == "epub":
+            with zipfile.ZipFile(path) as zf:
+                opf = _opf_path(zf)
+                if not opf:
+                    return "", ""
+                soup = BeautifulSoup(zf.read(opf), "xml")
+            title = soup.find("title")
+            creators = [normalize_text(c.get_text()) for c in soup.find_all("creator")]
+            return normalize_text(title.get_text()) if title else "", "; ".join(c for c in creators if c)
+        if fmt == "pdf":
+            import pymupdf
+
+            with pymupdf.open(path, filetype="pdf") as doc:
+                meta = doc.metadata or {}
+            return normalize_text(meta.get("title") or ""), normalize_text(meta.get("author") or "")
+        if fmt in {"mobi", "azw3"}:
+            return _kindle_exth(path)
+    except Exception:  # malformed metadata is treated as missing
+        return "", ""
+    return "", ""
 
 
 def pdf_page_texts(path: Path, max_pages: int = 25) -> tuple[int, list[str]]:
