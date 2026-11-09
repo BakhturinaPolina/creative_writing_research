@@ -40,3 +40,6 @@ data/interim/fulltext/json/
 data/interim/fulltext/excerpts/
 data/interim/fulltext/lookup_cache.json
 data/processed/fulltext/
+
+# Colleague keyword-scan dump (CSVs contain book-text excerpts)
+book_filtering_script_and_results/
