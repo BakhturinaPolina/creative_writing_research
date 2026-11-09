@@ -34,6 +34,15 @@ BOOK_EXTS = {"epub", "pdf", "mobi", "azw3", "docx", "txtzip", "rtf"}
 EBOOK_EXTS = {"epub", "mobi", "azw3", "docx", "txtzip"}
 FOLDER_LANG = {"english": "en", "german": "de"}
 CORPUS_LANGS = {"en", "de"}
+# Browse layout under data/raw/books/{lang}/
+ROLE_FOLDERS = ("primary", "review", "comparison", "negative")
+ROLE_TO_FOLDER = {
+    "primary": "primary",
+    "comparison": "comparison",
+    "negative": "negative",
+    "unreviewed": "review",
+}
+UNSAFE_FILENAME = re.compile(r'[<>:"/\\|?*\x00-\x1f]')
 
 FILENAME_RE = re.compile(r"^(?P<stem>.*?)\s*\[(?P<md5>[0-9a-f]{32})\]\.(?P<ext>[A-Za-z0-9]+)$")
 WORD_RE = re.compile(r"\w+", re.UNICODE)
@@ -86,15 +95,40 @@ def md5_of(path: Path, chunk: int = 1 << 20) -> str:
     return digest.hexdigest()
 
 
+def role_folder(corpus_role: str | None) -> str:
+    """Map corpus_role to a browse subfolder under data/raw/books/{lang}/."""
+    return ROLE_TO_FOLDER.get(str(corpus_role or "").strip(), "review")
+
+
+def safe_book_filename(title: str, author: str, md5: str, fmt: str, max_stem: int = 160) -> str:
+    """Human-readable name that still embeds the full MD5 for inventory parsing."""
+    title = UNSAFE_FILENAME.sub("", (title or "").strip()).strip(" .")
+    author = UNSAFE_FILENAME.sub("", (author or "").strip()).strip(" .")
+    author = author.replace("; ", " _ ")
+    if not title:
+        title = "untitled"
+    stem = f"{title} - {author}" if author else title
+    if len(stem) > max_stem:
+        stem = stem[: max_stem - 3].rstrip(" .-_") + "..."
+    return f"{stem} [{md5}].{fmt}"
+
+
+def raw_book_path(lang: str, corpus_role: str | None, title: str, author: str, md5: str, fmt: str) -> Path:
+    return RAW_BOOKS / lang / role_folder(corpus_role) / safe_book_filename(title, author, md5, fmt)
+
+
 def discover_books() -> list[tuple[Path, str]]:
     """Return (path, folder_lang) for every book under the source and raw folders."""
     found = []
     for path in sorted(SOURCE_DIR.glob("*/*/*")):
         if path.is_file() and path.suffix.lstrip(".").lower() in BOOK_EXTS:
             found.append((path, FOLDER_LANG.get(path.parts[-3], "")))
-    for path in sorted(RAW_BOOKS.glob("*/*")):
-        if path.is_file() and path.suffix.lstrip(".").lower() in BOOK_EXTS:
-            found.append((path, ""))
+    if RAW_BOOKS.exists():
+        for path in sorted(RAW_BOOKS.rglob("*")):
+            if path.is_file() and path.suffix.lstrip(".").lower() in BOOK_EXTS:
+                rel = path.relative_to(RAW_BOOKS)
+                folder_lang = rel.parts[0] if rel.parts and rel.parts[0] in {"en", "de", "other"} else ""
+                found.append((path, folder_lang))
     return found
 
 

@@ -9,7 +9,7 @@ status) from the existing manifest; only inventory columns are recomputed.
 
 Usage:
   python -m src.fulltext.inventory              # build / refresh manifest
-  python -m src.fulltext.inventory --move       # also move originals to data/raw/books/{lang}/{md5}.{ext}
+  python -m src.fulltext.inventory --move       # also move originals to data/raw/books/{lang}/{role}/
 """
 from __future__ import annotations
 
@@ -35,6 +35,7 @@ from src.fulltext.books import (
     normalize_text,
     parse_filename,
     pdf_page_texts,
+    raw_book_path,
     word_count,
     write_sample,
 )
@@ -143,7 +144,11 @@ def assign_lang(row: dict) -> None:
 
 
 def move_to_raw(path: Path, row: dict, log) -> Path:
-    dest = RAW_BOOKS / row["lang"] / f"{row['md5']}.{row['format']}"
+    title = row.get("title") or row.get("file_title") or ""
+    author = row.get("author_name") or row.get("file_author") or ""
+    dest = raw_book_path(
+        row["lang"], row.get("corpus_role"), title, author, row["md5"], row["format"],
+    )
     if path.resolve() == dest.resolve():
         return dest
     dest.parent.mkdir(parents=True, exist_ok=True)

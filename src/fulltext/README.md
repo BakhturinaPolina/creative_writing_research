@@ -3,14 +3,17 @@
 Turn the downloaded books into one uniform, machine-readable format.
 
 ```bash
-python -m src.fulltext.inventory --move   # manifest + move originals to data/raw/books/{lang}/{md5}.{format}
-python -m src.fulltext.prescreen_books    # proposed corpus_role for every book
-python -m src.fulltext.extract_ebook      # round 1: EPUB/MOBI/AZW3/DOCX/page-text zips → per-book JSON
+python -m src.fulltext.inventory --move     # manifest + move originals into raw books tree
+python -m src.fulltext.prescreen_books      # proposed corpus_role for every book
+python -m src.fulltext.reorganize_books     # readable names + role subfolders (after labelling)
+python -m src.fulltext.extract_ebook        # round 1: EPUB/MOBI/AZW3/DOCX/page-text zips → per-book JSON
 ```
 
 - `books.py`: shared helpers (format sniffing, EPUB/Kindle/DOCX readers, PDF sampling, language detection, DRM check).
 - Book ID: `{lang}_{md5[:12]}`; `lang` is detected from the text (`en`, `de`, `other`), falling back to the download folder.
 - `format` is the real format from the file's magic bytes; `file_ext` is the downloaded extension (many `.epub` files are PDFs).
+- Raw originals (gitignored): `data/raw/books/{lang}/{primary|review|comparison|negative}/{Title} - {Author} [{md5}].{ext}`.
+  `unreviewed` maps to `review/`. Re-run `reorganize_books` after changing labels.
 
 ## Outputs (`data/interim/fulltext/`)
 

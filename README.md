@@ -60,6 +60,7 @@ Full texts (books are gitignored; see [`src/fulltext/README.md`](src/fulltext/RE
 ```bash
 python -m src.fulltext.inventory --move   # manifest + originals → data/raw/books/
 python -m src.fulltext.prescreen_books    # corpus_role per book (overrides: config/book_role_overrides.csv)
+python -m src.fulltext.reorganize_books   # Title - Author names + primary/review/comparison/negative/
 python -m src.fulltext.extract_ebook      # round 1 → data/interim/fulltext/json/ + spotcheck_round1.md
 ```
 
