@@ -8,6 +8,8 @@ python -m src.fulltext.prescreen_books      # proposed corpus_role for every boo
 python -m src.fulltext.fix_titles suggest   # proposed title/author fixes (en) → title_author_review.csv
 python -m src.fulltext.fix_titles apply     # accepted fixes → config/book_metadata_overrides.csv
 python -m src.fulltext.reorganize_books     # readable names + role subfolders (after labelling)
+python -m src.fulltext.stage_title_review  # move pending title fixes → en/_title_review/{confidence}/
+python -m src.fulltext.sync_raw_layout     # after hand moves/renames: sync manifest + overrides
 python -m src.fulltext.extract_ebook        # round 1: EPUB/MOBI/AZW3/DOCX/page-text zips → per-book JSON
 ```
 
@@ -16,7 +18,8 @@ python -m src.fulltext.extract_ebook        # round 1: EPUB/MOBI/AZW3/DOCX/page-
 - `format` is the real format from the file's magic bytes; `file_ext` is the downloaded extension (many `.epub` files are PDFs).
 - Raw originals (gitignored): `data/raw/books/{lang}/{primary|review|comparison|negative}/{Title} - {Author} [{md5}].{ext}`.
   `unreviewed` maps to `review/`. Re-run `reorganize_books` after changing labels.
-  Files moved or renamed by hand (no longer at their manifest `raw_path`) are left in place.
+  Files moved or renamed by hand, and anything under `_title_review/`, are left in place.
+  `inventory --move` only relocates files still under `data/interim/creative_writing/`.
 
 ## Outputs (`data/interim/fulltext/`)
 
@@ -50,6 +53,13 @@ and proposes a fix with a `confidence`:
 
 You can edit `proposed_title` / `proposed_author` before running `apply`. Re-running `suggest` keeps `accept`
 values for unchanged proposals.
+
+For manual review, `stage_title_review` gathers remaining suggestions into
+`data/raw/books/en/_title_review/{wrong_book|conflict|medium}/` (books already in
+`comparison/` or `negative/` are left there). Rename the file, move it into the right
+role folder, then run `sync_raw_layout` so the manifest and
+[`config/book_role_overrides.csv`](../../config/book_role_overrides.csv) /
+[`config/book_metadata_overrides.csv`](../../config/book_metadata_overrides.csv) match the disk.
 
 Check columns before analysis: `title_match=False` means the file's text does not contain its title words
 (often a different book than the filename says); `content_dup_of` points to another file with the same text.

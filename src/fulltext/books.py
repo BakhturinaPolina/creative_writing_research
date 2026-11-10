@@ -43,6 +43,10 @@ ROLE_TO_FOLDER = {
     "negative": "negative",
     "unreviewed": "review",
 }
+FOLDER_TO_ROLE = {folder: role for role, folder in ROLE_TO_FOLDER.items()}
+# Staging area for manual title/author fixes: data/raw/books/{lang}/_title_review/{confidence}/
+TITLE_REVIEW_DIR = "_title_review"
+TITLE_REVIEW_CONFIDENCE = ("wrong_book", "conflict", "medium")
 UNSAFE_FILENAME = re.compile(r'[<>:"/\\|?*\x00-\x1f]')
 
 FILENAME_RE = re.compile(r"^(?P<stem>.*?)\s*\[(?P<md5>[0-9a-f]{32})\]\.(?P<ext>[A-Za-z0-9]+)$")
@@ -99,6 +103,27 @@ def md5_of(path: Path, chunk: int = 1 << 20) -> str:
 def role_folder(corpus_role: str | None) -> str:
     """Map corpus_role to a browse subfolder under data/raw/books/{lang}/."""
     return ROLE_TO_FOLDER.get(str(corpus_role or "").strip(), "review")
+
+
+def role_from_path(path: Path) -> str | None:
+    """corpus_role implied by a path under data/raw/books/, or None if staged/unknown."""
+    try:
+        rel = path.resolve().relative_to(RAW_BOOKS.resolve())
+    except ValueError:
+        return None
+    if len(rel.parts) < 2:
+        return None
+    folder = rel.parts[1]
+    if folder == TITLE_REVIEW_DIR:
+        return None
+    return FOLDER_TO_ROLE.get(folder)
+
+
+def in_title_review(path: Path) -> bool:
+    try:
+        return TITLE_REVIEW_DIR in path.resolve().relative_to(RAW_BOOKS.resolve()).parts
+    except ValueError:
+        return False
 
 
 def safe_book_filename(title: str, author: str, md5: str, fmt: str, max_stem: int = 160) -> str:

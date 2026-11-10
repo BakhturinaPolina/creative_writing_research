@@ -74,8 +74,9 @@ PUBLISHERS = {
     "scholastic", "norton", "w. w. norton", "houghton mifflin", "simon & schuster", "taylor & francis",
 }
 ROLE_WORDS = re.compile(
+    # bare "writer" omitted: it chops "Writer's Digest". MARC ", writer" is rare here.
     r"\(?\b(author|authors|editor|editors|eds?|edited by|compiler|comp|illustrator|illustrated by|"
-    r"translator|translated by|trans|foreword|introduction|narrator|contributor|writer|"
+    r"translator|translated by|trans|foreword|introduction|narrator|contributor|"
     r"edt|trl|ill|ctb|aut|cmp|professor|prof|dr)\b\.?\)?",
     re.I,
 )

@@ -42,6 +42,14 @@ from src.fulltext.books import (
     write_sample,
 )
 
+
+def _under_raw(path: Path) -> bool:
+    try:
+        path.resolve().relative_to(RAW_BOOKS.resolve())
+        return True
+    except ValueError:
+        return False
+
 UNION_PATH = DATA_INTERIM / "final_lists" / "union_all.csv"
 UNION_COLS = ["candidate_id", "title", "author_name", "publication_year", "screen_status",
               "screen_rule", "download_priority", "edition_language"]
@@ -198,7 +206,12 @@ def main() -> None:
         for col in UNION_COLS:
             row[col] = hit[col] if hit else ""
         if args.move:
-            row["raw_path"] = rel(move_to_raw(path, row, log))
+            # Files already under data/raw/books/ stay put (hand moves, _title_review staging).
+            # Only originals still in data/interim/creative_writing/ are relocated.
+            if _under_raw(path):
+                row["raw_path"] = rel(path)
+            else:
+                row["raw_path"] = rel(move_to_raw(path, row, log))
         else:
             row["raw_path"] = row.get("raw_path") or ""
         rows.append(row)
