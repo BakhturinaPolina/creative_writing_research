@@ -1,67 +1,159 @@
 book_id,title,author,source,confidence,identity_changed,reviewer,note
+en_026291c1ff47,How to Write Ebooks: A quick guide for new authors,Phil Wade,title_page,wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_03c1679e0eaf,Narrative Environments and Experience Design,Madison Smartt Bell,filename,manual,True,manual,hand-renamed; synced from filename
 en_0483a85c612c,How to Write Erotic Short Stories that Sell - A Simple Formula,Christina Palmer,"embedded,filename,openlibrary",high,False,auto-high,author name cleaned
+en_050f1651b0d3,Creating Characters: The Complete Guide to Populating Your Fiction,Writer's Digest Editors,title_page,wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_07d5b497153a,Writing science fiction and fantasy,Crawford Kilian,filename,manual,False,manual,hand-renamed; synced from filename
 en_07de97b281f8,Get writing: sentences and paragraphs,Mark Connelly,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_0836b352b72d,A writer's guide to fiction,Mary Buckham,"filename,list,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_091fe0c7289b,The everyday writer,Andrea Lunsford,"embedded,filename,list,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_0b8c5137ea86,How to write romances,Adrienne deWolfe,"filename,openlibrary,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_0c63a7a4e647,"How to write book reports: analyzing and evaluating fiction, drama, poetry, and non-fiction",Walter James Miller,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_0c65beac6225,Building fiction: how to develop plot and structure,Jesse Lee Kercheval,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_0d616efc780d,Creative pattern practice: a new approach to writing,Mary E. Whitten,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_0e42bcac1d83,Creativity and the writing process,James Carter,"filename,list,embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_0eaba7c4ecd7,Writer's guide to places,Angela Ackerman; Becca Puglisi,"filename,list,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_0ec6146dfa4c,Cursive Writing Made Easy & Fun! (Grades 2-5),Kama Einhorn,"openlibrary,filename,list",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_0fb0d5ee5a2e,Burning Down My Masters' House: A Personal Descent Into Madness That Shook the New York Times,Jayson Blair,title_page,wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_117afab82ae8,Deep Freewriting: How to Masterfully Navigate the Creative Flow,Stephen Lloyd Webber,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_11ec1f2ddaae,"Mediawriting: print, broadcast, and public relations",Wayne R. Whitaker,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_128290a16845,Political writing: a guide to the essentials,Adam Garfinkle,"embedded,filename,openlibrary",high,False,auto-high,punctuation restored
 en_13bd47f1cd03,How to write & market your mystery novel: a step-by-step guide from idea to final rewrite and marketing,Jean Hager,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_18323bf850d0,So you want to be a writer,Sherri Fulmer Moorer,"embedded,filename,list,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_1abf2d2a6a11,Professional writing in context,Theresa Lillis,"filename,list,openlibrary,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_1ad46747c328,Creative writing innovations,Michael Dean Clark; Trent Hergenrader; Joseph Rein,"embedded,filename,list,openlibrary",high,False,auto-high,"author completed (embedded,openlibrary)"
+en_1b0f06390fb7,Beyond the writers' workshop New Ways to Write Creative Non Fiction,Carol Bly,filename,manual,True,manual,hand-renamed; synced from filename
+en_1b0fb50fe1ca,The Writer's Handbook for Sociology,Dona J. Young,filename,manual,True,manual,hand-renamed; synced from filename
 en_1c2887a6135f,Becoming a writing researcher,Ann M. Blakeslee; Cathy Fleischer,"embedded,filename,list,openlibrary",high,False,auto-high,"author completed (embedded,openlibrary)"
 en_1e12529ed833,Poetry writing: theme and variations,David Starkey,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_1f36e17a4b10,The McGraw-Hill guide to writing,Helen Cunningham; Brenda Greene,"filename,list,openlibrary,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_216af2e0a972,The way of the writer,Charles Johnson,"embedded,filename,list,openlibrary",high,False,auto-high,"author completed (embedded,filename,list,openlibrary)"
+en_2238900ace7c,Creative Writing Teaching and Learning the Fiction of the Future,Nigel Krauth,filename,manual,True,manual,hand-renamed; synced from filename
+en_23769dae0289,Novel Writing Tips and Techniques From Authors of Second Wind Publishing,A. S. Burack,filename,manual,True,manual,hand-renamed; synced from filename
 en_24ace3328aeb,Students Must Write: A Guide to Better Writing in Coursework and Examinations,Robert Barrass,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_28deda9732cd,The practical writer with Readings,Edward P. Bailey,filename,manual,True,manual,hand-renamed; synced from filename
+en_2a91af857c93,Real writing with readings Paragraphs and Essays,Susan Anker,filename,manual,True,manual,hand-renamed; synced from filename
+en_2f274ca42820,Writing Deep Point Of View,Rayne Hall,filename,manual,True,manual,hand-renamed; synced from filename
+en_32d84ed4e588,The Write Start: Sentences to Paragraphs with Professional and Student Readings,Lawrence Checkett,filename,manual,True,manual,hand-renamed; synced from filename
 en_33b42b2abfe2,Metafiction: the theory and practice of self-conscious fiction,Patricia Waugh,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_35e052fcb86f,Metafiction: the theory and practice of self-conscious fiction,Patricia Waugh,"embedded,openlibrary,filename",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_3671f27acb2c,The creative writer's style guide: rules and advice for writing fiction and creative nonfiction,Christopher T. Leland,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_3741d4040eab,Creating fiction: instruction and insights from teachers of Associated Writing Programs,Julie Checkoway,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_39425edd94c3,Short-Form Creative Writing: A Writer's Guide and Anthology,H. K. Hummel; Stephanie Lenox,"embedded,openlibrary",high,False,auto-high,"title extended (embedded,openlibrary); author completed (embedded,openlibrary)"
+en_3a1534afb737,Serious Daring Creative Writing in Four Genres,Lisa Roney,filename,manual,True,manual,hand-renamed; synced from filename
 en_3b4d8b994617,"The joy of writing: a guide for writers, disguised as a literary memoir",Pierre Berton,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_3d003f3c3827,The Joy of Mindful Writing: Notes to Inspire Creative Awareness,Joy Kenward,title_page,wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_3dadc3aaeaba,Start writing: a practical introduction to creative writing,David Stephenson,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_4014d5aa30a8,"Sex For Money How to Write, Publish, and Sell Gay Erotica and MM Erotic Romance",Cameron D. James,filename,manual,True,manual,hand-renamed; synced from filename
+en_42b51f337810,Naming the Unnamable Researching Identities through Creative Writing,Tom Dobson,filename,manual,True,manual,hand-renamed; synced from filename
+en_433fc5605f0e,The soul of creative writing,Linda Lappin,"filename,list,embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_45b1e8782418,The everything creative writing book,Wendy Burt-Thomas,"embedded,filename,list,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_45e5729421b6,"Stop, look and write!: effective writing through pictures",Hart Day Leavitt,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_477834b34d92,Nine Day Novel: Writing,Dianne Doubtfire,filename,manual,True,manual,hand-renamed; synced from filename
+en_486d77ceb9a3,Research Proposal: Academic Writing Guide for Graduate Students,Grant Andrews,embedded,wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_49102624b4b1,Does the writing workshop still work?,Dianne Donnelly,"embedded,filename,openlibrary",high,False,auto-high,punctuation restored
 en_4961d7936da3,Screenwriting: a manual,Jonathan Dawson,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_4b7a36c0180b,The writer's brief handbook,Cheryl Glenn,"filename,list,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_4be46e08e82d,The rewarding practice of journal writing: a guide for starting and keeping your personal journal,James E. Miller,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_4d6090d1d47f,The way to write,Mark Hunziker,"filename,list,embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_4e6c3ad2e4af,Story-writing scaffolds,Maria Roberts,filename,manual,False,manual,hand-renamed; synced from filename
 en_4f3508ef8ae0,The courage to create: a workbook for writers,Hank Bruce,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_5093b059c96e,Quick! start writing,Shrey Mehrotra; Akash Grade,"filename,list,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_523efa103922,Building Fiction,C. R. Rowenson,"filename,embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_53ec5c9ae2e7,Watchers and Seekers Creative Writing by Black Woman,Rhonda Cobham,filename,manual,True,manual,hand-renamed; synced from filename
+en_57cce7b9f511,The Craft of Research,Wayne C. Booth; Gregory G. Colomb; Joseph M. Williams; Joseph Bizup; William T. FitzGerald,title_page,wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_581fe21db344,Shut Up and Write,Charm Baker,filename,manual,True,manual,hand-renamed; synced from filename
 en_59cafc433202,How to make money out of writing: the beginning writer's handbook,Graham Stevenson,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_5b0247d2e1b2,A writer's notebook: the ultimate guide to creative writing,Pamela Curtis Swallow,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_5bd37e9cc093,Narrative in fiction and film: an introduction,Jakob Lothe,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_5db89ef4709d,What writing does and how it does it An Introduction to Analyzing Texts and Textual Practices,Charles Bazerman,filename,manual,True,manual,hand-renamed; synced from filename
+en_5fc6b683fc05,The healing art of writing,Janine Burke,"filename,list,embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_60f753385f05,The Legal Writing Workshop,Katie Wood Ray,filename,manual,True,manual,hand-renamed; synced from filename
+en_6126c62a4ab4,Small Business Management,Hasanraza Ansari,embedded,wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_61a136b38181,Axelrod & Cooper's concise guide to writing,Rise B. Axelrod; Charles R. Cooper,"filename,list,embedded,openlibrary",high,False,auto-high,"author completed (embedded,openlibrary)"
 en_61dc26440475,Handbook for the beginning novelist: getting started,R. Karl Largent,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_6a262de277a1,Break into fiction: 11 steps to building a story that sells,M. E. Buckham,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_6c135dba584e,Shaping the Industrial Century: The Remarkable Story of the Evolution of the Modern Chemical and Pharmaceutical Industries,Alfred D. Chandler Jr,title_page,wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_6f86b50b1b1e,Improve your writing,Ron Fry,"embedded,filename,openlibrary",high,False,auto-high,"author completed (embedded,filename,openlibrary)"
+en_7075bf32a9dc,Love Writing,Sue Moorcroft,filename,manual,True,manual,hand-renamed; synced from filename
+en_74aacb05a1d6,"Writing for Others, Writing for Ourselves Telling Stories in an Age of Blogging",Jerry Lanson,filename,manual,True,manual,hand-renamed; synced from filename
 en_787732968ca2,How to write a better thesis,David Evans; Paul Gruba; Justin Zobel,"embedded,filename,openlibrary",high,False,auto-high,"author completed (embedded,openlibrary)"
 en_78aa9582a70e,Lessons for guided writing: grades 5 & up: whole-class lessons and dozens of student samples with teacher comments to effectively scaffold the writing process,Mary Sullivan,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_7a1ce16504db,The experience of writing,Gaston Festari,"filename,embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_7b95788416b8,Embracing writing,Dianne C. Luce,"filename,embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_7f5900465e67,Alternative Scriptwriting: Successfully Breaking the Rules,Ken Dancyger; Jeff Rush,"embedded,openlibrary",high,False,auto-high,"title extended (embedded,openlibrary); author completed (embedded,openlibrary)"
 en_7fe94641f7a7,English as a creative art: literary concepts linked to creative writing,Linden Peach,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_86d03013b6f8,The Road to Somewhere Creative Writing Companion,Robert Graham,filename,manual,True,manual,hand-renamed; synced from filename
 en_87dec7c31afa,"Professional Communication in Speech-Language Pathology: How to Write, Talk, and Act Like a Clinician",A. Embry Burrus; Laura B. Willis,"embedded,filename,openlibrary",high,False,auto-high,punctuation restored; author name cleaned
+en_87fb10231002,Your Book in Bookstores: Alli's Guide to Print Book Distribution for Authors,Debbie P. Young,filename,wrong_book,True,manual,hand-renamed; newline removed from filename
 en_883d1780b017,On Writing Short Stories,Francine Prose; Tom Bailey,"embedded,filename,list,openlibrary",high,False,auto-high,"author completed (embedded,openlibrary)"
 en_888fe9f0a12e,Relocating authority: Japanese Americans writing to redress mass incarceration,Mira Shimabukuro,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_889572a3302c,The American writer and the university,Paul Bauer,"filename,list,embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_88a332307812,Let the crazy child write: finding your creative writing voice,Clive Matson,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_8d41a2ace877,The lawyer's guide to writing well,Tom Goldstein; Jethro K. Lieberman,"embedded,filename,list,openlibrary",high,False,auto-high,"author completed (embedded,openlibrary)"
+en_920fc82778af,On Writing Horror,Mort Castle,filename,manual,True,manual,hand-renamed; synced from filename
+en_9b5778f3c335,Thinking like a writer,Dahlia Evans,"filename,list,openlibrary,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_9c051f9dfd51,Rethinking Creative Writing in Higher Education: Programs and Practices That Work,Stephanie Vanderslice,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_9c467e4566ac,Developing Writing Skills for Ielts,Sin Wang Chong; Xuejun Ye,"embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_a38447c01b2e,Teaching Academic Writing: A Toolkit for Higher Education,Caroline Coffin; Mary Jane Curry; Sharon Goodman; Ann Hewings; Theresa M.Lillis; Joan Swann,"embedded,filename,openlibrary",high,False,auto-high,punctuation restored; author name cleaned
 en_a664f8f324bc,Pep talks for writers: 52 insights and actions to boost your creative mojo,Grant Faulkner,"embedded,openlibrary,filename",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_a9233b2d0aa3,Writing creative non-fiction,Moore,filename,manual,False,manual,hand-renamed; synced from filename
 en_a9f685692e96,Journey through a writing class: short stories for teens,Richard V. Dalke,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_aaaa0d67b223,Thomas Pynchon and the Digital Humanities,Paul Horgan,filename,manual,True,manual,hand-renamed; synced from filename
 en_ac3f1231224e,Released into language: options for teaching creative writing,Wendy Bishop,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_acd521d92c93,Crossroads: creative writing exercises in four genres,Diane Thiel,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_acfa15bcee22,"Creative writing: how to unlock your imagination, develop your writing skills - and get published",Adele Ramet,"embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_ad25e507fb13,Deepening fiction: a practical guide for intermediate and advanced writers,Sarah Stone,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_ad2d72bb3653,A writer's guide to the Internet,Sarah-Beth Watkins,"filename,list,embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_aeb87085430c,Writing What You Know,Meredith Sue Willis,filename,manual,True,manual,hand-renamed; synced from filename
+en_aedee80400db,Children write poetry,Maureen W. Armour,"filename,list,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_b032814e83ac,"Outline Your Books Or Die Secrets of Writing Fiction that Sells, including Plotting and Novel Outlining Techniques",Jim Driver,filename,manual,True,manual,hand-renamed; synced from filename
+en_b3b9eaf71972,Storytelling,Aron Christensen,"filename,embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_b8873a38710e,Television and screen writing,Coral Drouyn,"filename,list,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_bba7d0858503,I'd rather be writing,Joe Bonomo,"filename,openlibrary,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_bde73e6746be,Creative writing: the essential guide,Tim Atkinson,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_bf5db587ee8d,Short Story Writing: A Practical Treatise on the Art of the Short Story,Charles Raymond Barrett,"embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_bf85284d25d5,Your Story Matters A Suprasingly Practical guide to writing,Sylvan Barnet,filename,manual,True,manual,hand-renamed; synced from filename
+en_bfbb2014d5b2,Crafting Novels & Short Stories: Everything You Need to Know to Write Great Fiction,Editors of Writer's Digest; James Scott Bell,title_page,wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_c20ac0b50708,How to write a story,Simon Cheshire,"embedded,filename,openlibrary",high,False,auto-high,author name cleaned
+en_c66da0c4daa8,Teachers & writers,Teachers & Writers Collaborative,"filename,list",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_ca8938f229e7,The writer and the screen: on writing for film and television,Wolf Peter Rilla,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_ca8c355cbb62,How to write a better anything: the creative writer's handbook,Dorothy Alicia Farmiloe,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_caa8617d0b69,The young writer,Mary Kole,"filename,openlibrary,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_cb1c69dcf744,Reading and writing for civic literacy: the critical citizen's guide to argumentative rhetoric,Donald Lazere,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_cc9e05332fd3,The Complete Handbook of Novel Writing: Everything You Need to Know About Creating & Selling Your Work,Editors of Writer's Digest,title_page,wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_ce2a5a8d3d8e,A writer's notebook,Rachel Lisberg,filename,manual,False,manual,hand-renamed; synced from filename
+en_cfa035dba789,Writing Children’s Books,Lesley Bolton,filename,manual,True,manual,hand-renamed; synced from filename
+en_cff63e022c75,Nonfiction Book Proposals Anybody Can Write,Roberta Jean Bryant,filename,manual,True,manual,hand-renamed; synced from filename
+en_d01fcc880dc1,Working at Writing Columnists and Critics Composing,Robert L. Root,filename,manual,True,manual,hand-renamed; synced from filename
+en_d0b723ac4d1b,The Craft of science fiction,Ben Bova,"filename,openlibrary,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_d1c1536e7a42,The writer's workplace: Building College Writing Skills,Sandra Scarry,filename,manual,True,manual,hand-renamed; fixed author split
+en_d250ffa85f43,Creative guide to journal writing,Lavinia Spalding,"filename,list,openlibrary,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_d3a14b52ea34,The Writer's Guide to Realistic Dialogue,S. A. Soule,filename,manual,True,manual,hand-renamed; synced from filename
 en_d4ee4c20aaea,"Creative writing: researching, planning, and writing for publication",Alan Jamieson,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_d9279040afd1,Creative writing course,C. P. Sykes,"filename,list,openlibrary,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_dddd26ad6ba4,"A Pocket Style Manual, APA Version",Diana Hacker; Nancy Sommers,"embedded,openlibrary",high,False,auto-high,"title extended (embedded,openlibrary); author completed (embedded,openlibrary)"
+en_df2594b3b94e,The young writer's craft,Ruta Sepetys,"filename,list,embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_e064fcb76484,The Only Writing Series You'll Ever Need Screenwriting,Madeline Dimaggio,filename,manual,True,manual,hand-renamed; synced from filename
 en_e2f86a737791,Assessing and improving student writing in college,Barbara E. Walvoord,"embedded,filename,list,openlibrary",high,False,auto-high,"author completed (embedded,filename,list,openlibrary)"
+en_e6b21af3b2af,Teaching Evidence-Based Writing: Fiction,Leslie Blauman,filename,manual,True,manual,hand-renamed; synced from filename
 en_ea41b864de52,Writing with At-risk Youth,Richard Gold,"embedded,filename,openlibrary",high,False,auto-high,author name cleaned
+en_ebe60ec39a54,How to write a story,Mary Kole,"filename,openlibrary,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_ed24eadfd610,How to Write Correct English,R. K Singh,"embedded,filename,openlibrary",high,False,auto-high,author name cleaned
+en_ed9317e514b3,The truth about fiction,Daniel H. Pink,"filename,list,openlibrary,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_ee3d391c5150,"READING, THINKING, and WRITING ABOUT HISTORY",Chauncey Monte-Sano,filename,manual,True,manual,hand-renamed; synced from filename
+en_eeac89ad6499,The write stuff -Thinking Through Esseys,Marcie Sims,filename,manual,True,manual,hand-renamed; synced from filename
 en_f23d46cd5421,Evangeline: A Tale of Acadie,Henry Wadsworth Longfellow,"embedded,openlibrary,filename",high,False,auto-high,"title extended (embedded,openlibrary)"
 en_f4482a854d6d,Creating fiction: a writer's companion,Fred Leebron,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_f4d6ecb60fbd,Creative writing skills,Sally Jones,"filename,list,openlibrary,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_f6b432e9fa70,Digital fictions: storytelling in a material world,Sarah Sloane,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_f7214c543fc5,Will Write for Food,Dianne Jacob,filename,manual,True,manual,hand-renamed; synced from filename
 en_f7f6f08b4a8e,Playwriting: A Practical Guide,Noel Greig,"embedded,filename,openlibrary",high,False,auto-high,punctuation restored
+en_f93e2e769243,A writer's journey,William Bernhardt,"filename,embedded,openlibrary",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_fae751b0e281,A student's guide to writing How to Plan and Write Successful Essays,Gordon Taylor,filename,manual,True,manual,hand-renamed; synced from filename
 en_fc0620c9226b,Key concepts in creative writing,Matthew Morrison,"embedded,filename,openlibrary",high,False,auto-high,"author completed (embedded,filename,openlibrary)"
+en_fc356918508f,Start writing today!,Justin Cox,"filename,list,openlibrary,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
+en_fc3e71f6452f,A Short Guide to Writing about Art,Sylvan Barnet,filename,manual,True,manual,hand-renamed; synced from filename
 en_fc5232c54556,The playful way to serious writing: an anything-can-happen workbook to inspire and delight,Roberta Allen,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
+en_fecf12caa115,Women writers of the short story,Kate Krueger,"filename,list,openlibrary,embedded",wrong_book,True,auto-wrong_book,file is a different book than its old name; re-check corpus_role
 en_ff580d321e45,The Fanfiction Reader: Folk Tales for the Digital Age,Francesca Coppa,"embedded,openlibrary,filename,list",high,False,auto-high,"title extended (embedded,openlibrary)"
