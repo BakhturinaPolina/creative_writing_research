@@ -1,0 +1,11 @@
+{
+  "built": "2026-11-12 20:42",
+  "git_commit": "a8a4f9a",
+  "uncommitted_changes_at_build": true,
+  "manifest_sha256": "eb76ff306dfdc4a7",
+  "lexicon_version": 0.1,
+  "lexicon_sha256": "9461c96ad9324ae7",
+  "short_text_words": 10000,
+  "files": 487,
+  "in_analysis_set": 432
+}

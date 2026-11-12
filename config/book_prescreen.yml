@@ -3,31 +3,30 @@
 # Title rules from inclusion_rules.yml run first; these text signals refine them.
 
 signals:
+  # No point-of-view or narrator words here: POV is what the corpus is meant to measure,
+  # so it must not decide which books enter primary (DEC-001 in docs/research_log.md).
   instruction:  # teaching someone how to write
     en:
-      - "\\byour (story|stories|novel|reader|readers|character|characters|protagonist|plot|manuscript|draft|scene|scenes|writing|book|narrator|dialogue)\\b"
+      - "\\byour (story|stories|novel|reader|readers|character|characters|protagonist|plot|manuscript|draft|scene|scenes|writing|book|dialogue)\\b"
       - "\\byou (should|can|must|need to|might want|will want|have to|may want)\\b"
       - "\\bwriters?\\b"
-      - "\\bpoint of view\\b|\\bpov\\b|\\bviewpoint\\b"
       - "\\bshow,? don'?t tell\\b"
       - "\\bexercises?\\b|\\bprompts?\\b"
       - "\\b(first|second|rough|final) draft\\b|\\brevision\\b|\\brevis(e|ing)\\b"
       - "\\bprotagonists?\\b|\\bantagonists?\\b"
       - "\\bmanuscripts?\\b|\\bliterary agents?\\b|\\bquery letters?\\b"
       - "\\bplot(s|ting)?\\b|\\bsubplots?\\b"
-      - "\\bnarrators?\\b|\\bnarrative\\b"
       - "\\bcharacterization\\b|\\bdialogue\\b"
     de:
-      - "\\b(ihr(e|en|em|er)?|dein(e|en|em|er)?) (geschichte|roman|romans|leser|leserin|figur|figuren|protagonist\\w*|text|manuskript|szene|szenen|plot|handlung|erzähler\\w*|buch|dialog\\w*)\\b"
+      - "\\b(ihr(e|en|em|er)?|dein(e|en|em|er)?) (geschichte|roman|romans|leser|leserin|figur|figuren|protagonist\\w*|text|manuskript|szene|szenen|plot|handlung|buch|dialog\\w*)\\b"
       - "\\bsie (sollten|können|müssen|dürfen)\\b"
       - "\\bautor(in|en|innen)?\\b|\\bschriftsteller\\w*"
       - "\\bschreib(en|er|ende|übung\\w*|prozess\\w*|handwerk\\w*|blockade\\w*|ratgeber\\w*)\\b"
-      - "\\berzählperspektive\\w*|\\bperspektive\\w*|\\bpoint of view\\b"
       - "\\bfigur(en)?\\b|\\bprotagonist(in|en)?\\b"
       - "\\bmanuskript\\w*|\\blektor\\w*|\\bexposé\\w*"
       - "\\bplot\\w*|\\bszene(n)?\\b|\\bspannungsbogen\\w*|\\bkonflikt\\w*"
       - "\\bübung(en)?\\b|\\bschreibaufgabe\\w*"
-      - "\\berzähler(in|s)?\\b|\\bshow,? don'?t tell\\b"
+      - "\\bshow,? don'?t tell\\b"
   fiction:  # narrated story with dialogue tags
     en:
       - "\\b(he|she|i|they) (said|asked|replied|whispered|shouted|muttered|murmured|sighed|nodded|smiled|grinned|laughed)\\b"
@@ -81,6 +80,8 @@ title_rules:
     - "\\b(in|für) (spanish|french|german|spanisch|französisch|englisch)\\b"
   blank_notebook:
     - "notizbuch|bullet journal|zum selberschreiben|blank (book|notebook|journal)|blanko|\\bliniert|\\bkariert|punktraster|\\d+ seiten"
+  # Genre craft titles are primary (narrative writing). Kept here only for documentation /
+  # older logs; decide() no longer diverts them to comparison.
   screenwriting:
     - "screenwrit|screenplay|drehbuch"
   poetry:
@@ -89,6 +90,20 @@ title_rules:
     - "playwrit|writing plays|\\bdrama writing\\b|dramaturgie|theaterstück(e)? schreiben"
   creative_nonfiction:
     - "creative non[- ]?fiction|writing non[- ]?fiction|\\bmemoir writing\\b|writing (a )?memoir"
+  # Small comparison group: narratology and academic writing (not craft teaching).
+  narratology:
+    - "narratolog|narrative theory|narrative in fiction|\\bmetafiction\\b|erzähltheorie|erzählforschung"
+  composition:  # college composition and general writing handbooks
+    - "\\bcomposition\\b|handbooks? for writers|college writing|\\brhetoric|writer'?s reference|everyday writer"
+  discipline_writing:  # writing for law, history, science
+    - "lawyer|legal writing|writing (about|in) history|science writing|writing (about|in) science"
+  writing_studies:  # research on writing, not teaching it
+    - "creative writing studies|writing research(er)?s?\\b|companion to creative writing"
+  # Outside primary and outside the contrast group → negative.
+  journalism:
+    - "\\bjournalis|news writing|feature writing|writing for (the )?media|write a news"
+  songwriting:
+    - "songwrit|writing songs|songs? writing|lieder schreiben"
   # Literary scholarship without craft/narratology teaching → negative (prescreen decide()).
   literary_scholarship:
     - "literary history|literary criticism|\\bcritical companion\\b|\\bcompanion to\\b"

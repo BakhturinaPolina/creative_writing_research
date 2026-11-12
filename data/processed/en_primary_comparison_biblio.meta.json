@@ -1,22 +1,22 @@
 {
-  "built_at": "2026-11-12T15:55:25.648555+00:00",
-  "git_commit": "98aab3555aafc9eafb38a0f7bcf13a43fd2ae510",
-  "n_rows": 505,
-  "n_primary": 320,
-  "n_comparison": 185,
-  "n_edition_year": 484,
-  "n_first_work_year": 271,
-  "n_both_years": 271,
+  "built_at": "2026-11-12T19:32:22.566919+00:00",
+  "git_commit": "a8a4f9a826185819e9276193f624b2ce7db08d64",
+  "n_rows": 487,
+  "n_primary": 446,
+  "n_comparison": 41,
+  "n_edition_year": 467,
+  "n_first_work_year": 262,
+  "n_both_years": 262,
   "edition_year_sources": {
-    "union_or_manifest": 393,
-    "filtered_openlibrary_title": 90,
-    "missing": 21,
+    "union_or_manifest": 375,
+    "filtered_openlibrary_title": 91,
+    "missing": 20,
     "opensyllabus_title": 1
   },
   "first_work_year_sources": {
-    "missing": 234,
-    "ol_search": 231,
-    "seed": 40
+    "missing": 225,
+    "ol_search": 219,
+    "seed": 43
   },
   "edition_year_min": 1961,
   "edition_year_max": 2020,

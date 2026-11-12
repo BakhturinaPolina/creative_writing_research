@@ -79,8 +79,9 @@ prescreen_patterns:
       - "schwungübung"
       - "kindergarten"
       - "schreiben lernen.*(kinder|abc|klasse)"
-      - "\\babc\\b"
+      - "\\babc\\b(?!['’]?s of)"
       - "handwriting"
+      - "cursive"
       - "penmanship"
       - "calligraph"
     technical_academic_business:

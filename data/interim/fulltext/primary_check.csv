@@ -1,0 +1,69 @@
+book_id,lang,title,author,role_source,rate_instruction,rate_school,rate_academic,check_reason
+de_dc8ca47de6c4,de,Freies Schreiben und Drucken Mit der Schuldruckerei,Marjan Rosetz,review:agent-2026-11-12,2.95,0.17,0.0,"prescreen says unreviewed: about literature, not instructional (3.13/1k)"
+de_9f0f847f4b95,de,Raum zum Schreiben,Bonni Goldberg,review:agent-2026-11-12,5.99,0.0,0.0,prescreen says unreviewed: weak instruction 5.99/1k
+de_4c918ab1f7cf,de,Schreiben heisst sich selber lesen,Christa Thomassen,review:agent-2026-11-12,7.59,0.0,0.71,prescreen says unreviewed: weak instruction 7.59/1k
+de_ed096f04f754,de,Wild Mind – Freies Schreiben,Natalie Goldberg,review:agent-2026-11-12,4.18,0.0,0.54,prescreen says unreviewed: weak instruction 4.18/1k
+en_5a5528ca287f,en,300 creative writing activities for the composition class,Edwin P Grobe,review:agent-2026-11-12,14.03,5.35,0.0,prescreen says comparison: title: composition / general writing handbook
+en_0fb09c968b51,en,"A Guide to teaching creative writing, fiction",Linda Christensen,review:agent-2026-11-12,4.89,0.49,0.0,prescreen says unreviewed: weak instruction 4.89/1k
+en_2ec8ae74984b,en,A Swim in a Pond in the Rain,George Saunders,review:agent-2026-11-12,3.24,0.95,0.0,prescreen says unreviewed: weak instruction 3.24/1k
+en_e83aabd35020,en,A guide to writing social stories,Chris Williams,review:agent-2026-11-12,0.74,5.2,0.45,prescreen says unreviewed: in curated list P1 but little instruction (0.74/1k)
+en_ad2d72bb3653,en,A writer's guide to the Internet,Sarah-Beth Watkins,review:agent-2026-11-12,22.5,0.56,0.0,placed by hand under its old name; file is another book
+en_80f7ff84ac0c,en,Absolutely write!,Tommy Thomason,review:agent-2026-11-12,3.96,0.29,0.0,prescreen says unreviewed: weak instruction 3.96/1k
+en_bf900bfe19c5,en,Contemporary Creative Nonfiction,Bich Minh Nguyen,review:agent-2026-11-12,0.89,0.19,0.0,prescreen says unreviewed: in curated list P1 but little instruction (0.89/1k)
+en_bf2df38b6a4a,en,Countdown to non-fiction writing,Stephen Bowkett,review:agent-2026-11-12,2.14,3.63,0.0,prescreen says unreviewed: in curated list P1 but little instruction (2.14/1k)
+en_77f89ce197d2,en,Countdown to poetry writing,Stephen Bowkett,review:agent-2026-11-12,2.09,4.57,0.0,prescreen says unreviewed: in curated list P1 but little instruction (2.09/1k)
+en_2238900ace7c,en,Creative Writing Teaching and Learning the Fiction of the Future,Nigel Krauth,review:agent-2026-11-12,4.96,0.47,3.42,prescreen says comparison: scholarship on literature/writing (citations 3.42/1k)
+en_f4d6ecb60fbd,en,Creative Writing Tutor LOOKING AT PEOPLE’S LIVES,Sally Jones Amanda Jones,review:agent-2026-11-12,2.66,1.45,0.0,prescreen says unreviewed: in curated list P1 but little instruction (2.66/1k)
+en_4c78361ebf9c,en,Creative Writing in Health and Social Care,Fiona Sampson,review:agent-2026-11-12,3.19,1.23,12.86,prescreen says comparison: scholarship on literature/writing (citations 12.86/1k)
+en_ddd3a8a7d428,en,Creative nonfiction,Lee Gutkind,review:agent-2026-11-12,2.92,0.0,0.0,prescreen says unreviewed: in curated list P1 but little instruction (2.92/1k)
+en_25d7fe105ca4,en,Developmental writing,Leif Fearn,review:agent-2026-11-12,5.5,0.46,0.0,prescreen says unreviewed: weak instruction 5.5/1k
+en_3acea1231810,en,Dialogue on writing,Len Fox,review:agent-2026-11-12,2.69,18.81,0.0,prescreen says unreviewed: in curated list P1 but little instruction (2.69/1k)
+en_211306a24746,en,Don't Forget to Write for the Elementary Grades,"Traig, Jennifer",review:agent-2026-11-12,4.77,11.91,0.0,prescreen says unreviewed: weak instruction 4.77/1k
+en_8556c9fb41f9,en,Enhancing writing through imagery,Karin Hess,review:agent-2026-11-12,1.36,8.5,0.0,prescreen says unreviewed: in curated list P1 but little instruction (1.36/1k)
+en_f96c6d24d4be,en,Establishing creative writing studies as an academic discipline,Dianne Donnelly,review:agent-2026-11-12,7.4,20.0,5.3,prescreen says comparison: title: research on writing
+en_0b241b622c4d,en,Expressive writing,National Assessment of Educational Progress (Project),review:agent-2026-11-12,2.59,1.37,0.91,"prescreen says unreviewed: about literature, not instructional (24.39/1k)"
+en_1dd952666082,en,Film Genre for the Screenwriter,Jule Selbo,review:agent-2026-11-12,2.73,0.3,10.16,prescreen says comparison: scholarship on literature/writing (citations 10.16/1k)
+en_b588183e0ed1,en,"First We Read, Then We Write",Robert D. Richardson,review:agent-2026-11-12,3.74,0.55,0.0,prescreen says unreviewed: weak instruction 3.74/1k
+en_2e63ac17e66c,en,Foundational practices of online writing instruction,Beth L. Hewett,review:agent-2026-11-12,0.67,15.17,1.83,"prescreen says unreviewed: about literature, not instructional (14.67/1k)"
+en_42a265a1e116,en,Grade six writing,Unknown,review:agent-2026-11-12,2.97,10.78,0.0,"prescreen says unreviewed: about literature, not instructional (7.34/1k)"
+en_46e5e0145e53,en,How to Start Writing (and When to Stop)_ Advice for Writers,Wislawa Szymborska,review:agent-2026-11-12,5.06,0.0,0.14,prescreen says unreviewed: weak instruction 5.06/1k
+en_026291c1ff47,en,How to Write Ebooks: A quick guide for new authors,Phil Wade,review:agent-2026-11-12,9.47,0.73,0.0,placed by hand under its old name; file is another book
+en_ea1f3cae608c,en,How to Write a Poem,Cecilia Minden,review:agent-2026-11-12,1.09,2.18,0.0,"prescreen says unreviewed: about literature, not instructional (39.15/1k)"
+en_b1e7e5e96388,en,How to teach poetry writing,Michaela Morgan,review:agent-2026-11-12,3.54,1.38,0.59,prescreen says unreviewed: weak instruction 3.54/1k
+en_ceeb9a5206ff,en,How to write a review,Cecilia Minden,review:agent-2026-11-12,2.68,1.34,0.0,"prescreen says unreviewed: about literature, not instructional (7.16/1k)"
+en_c91df9980974,en,How to write an autobiographical novel,Alexander Chee,review:agent-2026-11-12,0.4,2.4,0.0,"prescreen says negative: fiction (dialogue tags 2.26/1k, quotes 2.53/1k, instruction 0.4/1k)"
+en_95b569ef485e,en,How to write short stories for magazines,Sophie King,review:agent-2026-11-12,5.02,0.41,0.0,prescreen says unreviewed: weak instruction 5.02/1k
+en_76e5ef550c64,en,Interactive writing & interactive editing,Stanley L. Swartz,review:agent-2026-11-12,2.83,0.0,2.48,"prescreen says unreviewed: about literature, not instructional (8.75/1k)"
+en_d59fc56cb581,en,Location writing,Caroline Davey,review:agent-2026-11-12,1.96,1.82,0.14,"prescreen says unreviewed: about literature, not instructional (9.96/1k)"
+en_330e79656d58,en,Mainstreaming basic writers,Sallyanne H. Fitzgerald,review:agent-2026-11-12,2.87,21.18,1.94,"prescreen says unreviewed: about literature, not instructional (18.31/1k)"
+en_2df9c13f85b0,en,Models for writers,Alfred Rosa,review:agent-2026-11-12,2.98,9.15,1.19,"prescreen says unreviewed: about literature, not instructional (5.57/1k)"
+en_4972302c0ed0,en,On screen writing,Edward Dmytryk,review:agent-2026-11-12,5.57,0.13,0.4,prescreen says unreviewed: weak instruction 5.57/1k
+en_a84f04122836,en,On the teaching of creative writing,Wallace Stegner,review:agent-2026-11-12,2.26,3.7,0.0,"prescreen says unreviewed: about literature, not instructional (27.74/1k)"
+en_facf0df0d31e,en,On writing,George V. Higgins,review:agent-2026-11-12,4.11,0.6,0.12,prescreen says unreviewed: weak instruction 4.11/1k
+en_d59fd3d62e68,en,Poetry writing,David Starkey,review:agent-2026-11-12,1.62,0.0,4.04,prescreen says comparison: scholarship on literature/writing (citations 4.04/1k)
+en_aedee80400db,en,"Poetry, The Magic Language Children Learn to Read and Write It",Maureen W. Armour,review:agent-2026-11-12,1.73,10.08,0.29,prescreen says unreviewed: in curated list P1 but little instruction (1.73/1k)
+en_0eaba7c4ecd7,en,Rural Setting Thesarius A Writer’s Guide to Personal and Natural Places,Becca Puglisi,review:agent-2026-11-12,0.89,0.0,0.0,prescreen says unreviewed: in curated list P1 but little instruction (0.89/1k)
+en_535a79d811f5,en,Screenwriting,Paul Joseph Gulino,review:agent-2026-11-12,5.15,0.88,4.86,prescreen says comparison: scholarship on literature/writing (citations 4.86/1k)
+en_fb382f24ecb6,en,Screenwriting,Jonathan Dawson,review:agent-2026-11-12,1.8,0.0,5.4,prescreen says comparison: scholarship on literature/writing (citations 5.4/1k)
+en_2a05a8eaf38c,en,Simon & Schuster handbook for writers,Lynn Quitman Troyka,review:agent-2026-11-12,7.13,2.7,0.58,prescreen says comparison: title: composition / general writing handbook
+en_282eda36613e,en,Step-by-Step Strategies for Teaching Expository Writing,Barbara Mariconda,review:agent-2026-11-12,3.21,11.6,0.0,prescreen says unreviewed: weak instruction 3.21/1k
+en_6413133bb836,en,"Teachers, discourses, and authority in the postmodern composition classroom",Xin Liu Gale,review:agent-2026-11-12,2.6,29.91,1.67,prescreen says comparison: title: composition / general writing handbook
+en_e6b21af3b2af,en,Teaching Evidence-Based Writing: Fiction,Leslie Blauman,review:agent-2026-11-12,2.64,13.51,0.62,prescreen says unreviewed: in curated list P1 but little instruction (2.64/1k)
+en_9aa5d07f5fbd,en,Teaching and writing popular fiction,Karen M. Hubert,review:agent-2026-11-12,2.49,4.25,0.0,"prescreen says unreviewed: in curated list P1 but reads like fiction (dialogue tags 1.76/1k, quotes 7.77/1k, instruction 2.49/1k)"
+en_022b9d262f7d,en,Teaching kids to write,Eleanor W Hoomes,review:agent-2026-11-12,1.38,5.54,0.0,prescreen says unreviewed: in curated list P1 but little instruction (1.38/1k)
+en_b8873a38710e,en,Television and screen writing,Coral Drouyn,review:agent-2026-11-12,13.18,0.11,0.0,placed by hand under its old name; file is another book
+en_57cce7b9f511,en,The Craft of Research,Wayne C. Booth; Gregory G. Colomb; Joseph M. Williams; Joseph Bizup; William T. FitzGerald,review:agent-2026-11-12,9.23,3.32,0.0,placed by hand under its old name; file is another book
+en_4c8fb855d77e,en,The LEA guide to composition,James D. Williams,review:agent-2026-11-12,5.85,2.62,0.31,prescreen says comparison: title: composition / general writing handbook
+en_60f753385f05,en,The Legal Writing Workshop,Katie Wood Ray,review:agent-2026-11-12,8.93,0.18,0.35,"prescreen says comparison: title: writing for law, history or science"
+en_594ea9f2b40a,en,The Self on the Page,Celia Hunt,review:agent-2026-11-12,2.88,0.3,5.57,prescreen says comparison: scholarship on literature/writing (citations 5.57/1k)
+en_c65be8ea645e,en,The art of writing,F. M. Salter,review:agent-2026-11-12,1.48,39.25,1.15,"prescreen says unreviewed: about literature, not instructional (6.93/1k)"
+en_7a670cafce1c,en,The college handbook of creative writing,Robert DeMaria,review:agent-2026-11-12,2.55,0.0,0.0,prescreen says unreviewed: in curated list P1 but little instruction (2.55/1k)
+en_4be46e08e82d,en,The rewarding practice of journal writing: a guide for starting and keeping your personal journal,James E. Miller,review:agent-2026-11-12,2.91,0.0,0.0,prescreen says unreviewed: in curated list P1 but little instruction (2.91/1k)
+en_e2b36266a693,en,The therapeutic potential of creative writing,Gillie Bolton,review:agent-2026-11-12,5.45,0.84,1.68,prescreen says unreviewed: weak instruction 5.45/1k
+en_d1c1536e7a42,en,The writer's workplace: Building College Writing Skills,Sandra Scarry,review:agent-2026-11-12,4.94,2.64,0.0,prescreen says comparison: title: composition / general writing handbook
+en_a9fda328daa4,en,Therapeutic Storywriting  A Practical Guide to Developing Emotional Literacy in Primary Schools,Trisha Waters,review:agent-2026-11-12,2.41,7.59,0.69,prescreen says unreviewed: in curated list P1 but little instruction (2.41/1k)
+en_9b5778f3c335,en,Thinking like a Romance Writer,Dahlia Evans,review:agent-2026-11-12,0.0,0.0,0.0,prescreen says unreviewed: in curated list P1 but little instruction (0.0/1k)
+en_dc9e574a8eb7,en,Third Mind,Tonya Foster,review:agent-2026-11-12,1.43,10.78,0.78,prescreen says unreviewed: in curated list P1 but little instruction (1.43/1k)
+en_eac5708d282a,en,Writers on writing,Robert Pack,review:agent-2026-11-12,0.43,0.14,0.0,prescreen says unreviewed: in curated list P1 but little instruction (0.43/1k)
+en_8bf36d7b2d72,en,"Writing With Skill, Level 2",Susan Wise Bauer,review:agent-2026-11-12,2.69,0.99,0.14,"prescreen says unreviewed: about literature, not instructional (6.51/1k)"
+en_ea41b864de52,en,Writing with At-risk Youth,Richard Gold,review:agent-2026-11-12,2.09,1.11,0.0,"prescreen says unreviewed: about literature, not instructional (20.89/1k)"

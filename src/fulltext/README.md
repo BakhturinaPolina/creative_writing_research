@@ -29,6 +29,7 @@ python -m src.fulltext.extract_pdf --lang en
 |---|---|---|
 | `manifest.csv` | yes | one row per file: identity, language, format, PDF triage, list join, labels, extraction status |
 | `review_unlisted.csv` | yes | books not in the candidate lists, with prescreen signals per 1,000 words |
+| `primary_check.csv` | yes | `primary` books whose label conflicts with the prescreen rules, with the reason (to check by hand) |
 | `extraction_stats_round1.csv`, `spotcheck_round1.md` | yes | ebook extraction statistics and spot-check report (no book text) |
 | `extraction_stats_round1b.csv`, `spotcheck_round1b.md` | yes | PDF text-layer extraction statistics and spot-check report |
 | `title_author_review.csv` | yes | proposed title/author fixes with every source, confidence and an `accept` column |
@@ -41,7 +42,20 @@ python -m src.fulltext.extract_pdf --lang en
 `corpus_role` = `primary` (types A–D, incl. German translations), `comparison` (E–F, school, therapy,
 academic, screenwriting, poetry), `negative` (fiction, unrelated, language courses, other languages),
 `unreviewed`. The prescreen proposes; [`config/book_role_overrides.csv`](../../config/book_role_overrides.csv)
-decides (`reviewer` column; `agent-firstpass` rows are proposals awaiting confirmation).
+decides (`reviewer` column; `agent-*` rows are proposals awaiting confirmation).
+
+**Primary (analysis definition, 2026-11-12):** books whose subject is narrative / creative
+writing — fiction craft, school creative-writing pedagogy and exercises, screen / poetry /
+drama craft, creative nonfiction, therapy writing that teaches narrative writing. The
+prescreen does not count POV words (DEC-001). Seed titles go to `primary` unless the file is
+another book (`wrong_book`).
+
+**Comparison (small contrast group):** narratology / narrative theory, and academic writing
+about writing (composition handbooks, research on creative writing, literary scholarship on
+writing). Journalism and songwriting are `negative`.
+
+This is broader than `docs/scientific_readme.md` §2 (where pedagogy and screen/poetry were
+comparison). Update the protocol before locking application text.
 
 ## Titles and authors
 

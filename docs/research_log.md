@@ -42,6 +42,35 @@ Status values: `provisional` (open for revision), `frozen` (changes need a new D
 
 ## Entries
 
+## 2026-11-12 | Week 19–24 (first pass, ahead of plan) | Phase: Analysis
+**Goal:** First descriptive statistics for the English `primary` and `comparison` books, as a notebook for the team discussion of the May conference application.
+**Done:**
+- `src/analysis/corpus_stats.py` builds a book-level table from the manifest and the per-book JSON; `src/analysis/plots.py` holds the figures; notebook `04_corpus_descriptive_stats_en.ipynb` with an HTML export without code.
+- Files: 505 (320 primary, 185 comparison). Left out of the analysis set: 12 files need OCR, 18 files under 10,000 words, 13 files of works filed in both folders, 20 second files of a work. Analysis set: 442 books (288 primary, 154 comparison), 37.1 million words.
+- Usable edition year: 310 of 442 books. 64 books have a renamed file (`identity_changed`) and 21 an open wrong-book doubt; for 56 of these 85 the year on record was dropped (48 renamed, 8 unresolved). 76 books have no year at all.
+- POV terms (lexicon v0.1, `high` terms and regex, body text): 27,144 occurrences. At least one term in 97% of primary and 97% of comparison books. Median per 10,000 words: primary 5.0 (quartiles 1.7 and 13.0), comparison 1.9 (0.9 and 4.2).
+- Spot check, 20 random matches per corpus, one reader (AI assistant): 2 of 20 primary and 9 of 20 comparison matches were not about narrative POV (opinion sense, grammar lessons, camera directions).
+- Negative result: "mentions POV" does not discriminate between books; the share of books "discussing POV" runs from about 85% to 50% (primary) depending on a threshold of 1 or 5 terms per 10,000 words.
+**Data/outputs:**
+- `data/processed/en_book_stats.csv` (505 files), `data/processed/en_book_stats.meta.json`
+- `figures/corpus_stats/fig1…fig7` (PNG and PDF)
+- `notebooks/04_corpus_descriptive_stats_en.ipynb`, `notebooks/exports/04_corpus_descriptive_stats_en.html`
+- not committed
+**Decisions:** none. The analysis-set rules (10,000-word limit, duplicate handling, no year for renamed files) are provisional choices in `corpus_stats.py`.
+**Problems / open questions:**
+- The prescreen that proposed 302 of 320 `primary` labels counts *point of view / pov / viewpoint / narrator / narrative* in its `instruction` signal (`config/book_prescreen.yml`). The primary/comparison contrast in POV terms is therefore partly circular, and the selection conflicts with DEC-001.
+- `publication_year` is the edition year of the candidate-list record, not first publication (Brande 1934 is on record as 1981).
+- Primary PDFs have a higher median density (6.5) than primary e-books (3.9); cause unknown. Works held as both PDF and e-book agree when the two files have the same length.
+- 5 of the 45 English seed titles with a file are not in `primary` (3 in `negative`, 2 unreviewed).
+- `corpus_type` is recorded for 25 of 505 files.
+- Later the same day, folder and definition changes (`prescreen_books.py`, `book_prescreen.yml`, overrides by `agent-2026-11-12`):
+  1. No POV words in the instruction signal; seed titles → `primary` unless the file is another book.
+  2. **New primary definition (for analysis, pending scientific-readme update):** subject = narrative / creative writing, including school CW pedagogy, exercises, screen / poetry / drama craft, creative nonfiction, therapy writing. **Comparison** = small contrast group only: narratology and academic writing (composition, research on CW, literary scholarship on writing). Journalism and songwriting → negative.
+  3. English after moves: **446 primary / 41 comparison** files; analysis set **432** (400 primary, 32 comparison). Primary median **3.7** POV terms per 10,000 words; comparison **2.0**. At ≥5/10k: 42% vs 25%.
+  4. **Robustness cut inside primary** (`primary_group` in `en_book_stats.csv`): fiction manuals (279 in analysis set, median **5.3**) vs pedagogy/genre craft (121, median **2.1**) vs contrast (32, median **2.0**). Pedagogy/genre craft stays in primary; it is not the comparison corpus. Classification: genre/school/therapy title cues plus overrides that moved old comparison reasons into primary. Conflicts with scientific_readme §2. Not committed.
+  5. Notebook rewritten for the 13 November demonstration: provenance of the lists, kinds of books with example titles, plain-language reading of the statistics, figures on fiction manuals vs comparison (time figure: fiction manuals with a clean first-publication year only; 111 of 279 left out). Cleaning tables removed. Not committed.
+**Next:** Freeze broad primary + robustness cut in the scientific readme if the meeting agrees; hand-check a sample; first-publication years; lexicon validation.
+
 ## 2026-10-16 | Week 5–7 | Phase: Access
 **Goal:** Keep this repository limited to catalogue discovery and legal full-text access.
 **Done:**
