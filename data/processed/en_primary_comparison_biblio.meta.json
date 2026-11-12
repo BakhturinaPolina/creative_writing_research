@@ -1,0 +1,34 @@
+{
+  "built_at": "2026-11-12T15:55:25.648555+00:00",
+  "git_commit": "98aab3555aafc9eafb38a0f7bcf13a43fd2ae510",
+  "n_rows": 505,
+  "n_primary": 320,
+  "n_comparison": 185,
+  "n_edition_year": 484,
+  "n_first_work_year": 271,
+  "n_both_years": 271,
+  "edition_year_sources": {
+    "union_or_manifest": 393,
+    "filtered_openlibrary_title": 90,
+    "missing": 21,
+    "opensyllabus_title": 1
+  },
+  "first_work_year_sources": {
+    "missing": 234,
+    "ol_search": 231,
+    "seed": 40
+  },
+  "edition_year_min": 1961,
+  "edition_year_max": 2020,
+  "sources": {
+    "manifest": "data/interim/fulltext/manifest.csv",
+    "union_all": "data/interim/final_lists/union_all.csv",
+    "seed_candidates": "data/interim/catalogue/seed_candidates.csv",
+    "openlibrary_candidates": "data/interim/catalogue/openlibrary_candidates.csv",
+    "ol_search_en": "data/interim/openlibrary/ol_search_en.csv",
+    "filtered_english_corp": "data/interim/filtered_openlibrary/filtered_english_corp.csv",
+    "opensyllabus": "data/interim/opensyllabus/opensyllabus_creative_writing_all.csv",
+    "en_book_stats": "data/processed/en_book_stats.csv"
+  },
+  "output": "data/processed/en_primary_comparison_biblio.csv"
+}
