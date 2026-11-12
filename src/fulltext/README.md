@@ -11,6 +11,8 @@ python -m src.fulltext.reorganize_books     # readable names + role subfolders (
 python -m src.fulltext.stage_title_review  # move pending title fixes → en/_title_review/{confidence}/
 python -m src.fulltext.sync_raw_layout     # after hand moves/renames: sync manifest + overrides
 python -m src.fulltext.extract_ebook        # round 1: EPUB/MOBI/AZW3/DOCX/page-text zips → per-book JSON
+python -m src.fulltext.extract_pdf          # round 1b: PDFs with text_layer=good → per-book JSON
+python -m src.fulltext.extract_pdf --lang en
 ```
 
 - `books.py`: shared helpers (format sniffing, EPUB/Kindle/DOCX readers, PDF sampling, language detection, DRM check).
@@ -27,7 +29,8 @@ python -m src.fulltext.extract_ebook        # round 1: EPUB/MOBI/AZW3/DOCX/page-
 |---|---|---|
 | `manifest.csv` | yes | one row per file: identity, language, format, PDF triage, list join, labels, extraction status |
 | `review_unlisted.csv` | yes | books not in the candidate lists, with prescreen signals per 1,000 words |
-| `extraction_stats_round1.csv`, `spotcheck_round1.md` | yes | extraction statistics and spot-check report (no book text) |
+| `extraction_stats_round1.csv`, `spotcheck_round1.md` | yes | ebook extraction statistics and spot-check report (no book text) |
+| `extraction_stats_round1b.csv`, `spotcheck_round1b.md` | yes | PDF text-layer extraction statistics and spot-check report |
 | `title_author_review.csv` | yes | proposed title/author fixes with every source, confidence and an `accept` column |
 | `lookup_cache.json` | no | cached Open Library responses |
 | `json/{lang}/{book_id}.json` | no | chapters (`front` / `body` / `back`) and paragraphs |
@@ -64,4 +67,15 @@ role folder, then run `sync_raw_layout` so the manifest and
 Check columns before analysis: `title_match=False` means the file's text does not contain its title words
 (often a different book than the filename says); `content_dup_of` points to another file with the same text.
 
-Not yet: PDF text-layer extraction (round 1b), OCR of scans (round 2), Parquet export.
+Round 1b (`extract_pdf`) covers PDFs with `text_layer=good` (and optionally `--include-poor`).
+`text_layer=none` stays for OCR (round 2). Not yet: OCR of scans, Parquet export.
+
+## Role taxonomy (English folder placement)
+
+Confirmed decisions for `data/raw/books/en/`:
+
+| Goes to | Examples |
+|---|---|
+| `primary` | Fiction / narrative craft manuals; novel-writing; specialized craft (POV, scene, dialogue); writer memoirs with substantial craft; genre fiction craft; **children's literature** craft when it teaches story/narrative writing |
+| `comparison` | Pedagogical CW handbooks (E); narratology / literary theory (F); poetry, playwriting, screenwriting, creative nonfiction, memoir-as-genre advice; journalism / copywriting / blogging / songwriting craft; research on creative writing as a discipline; school pedagogy; therapy writing |
+| `negative` | Academic / essay / scientific writing; business writing; dictionaries, language courses, and general grammar/style guides; literary scholarship that is **not** narratology; fiction itself; tech / programming / unrelated subjects; administering a CW programme |

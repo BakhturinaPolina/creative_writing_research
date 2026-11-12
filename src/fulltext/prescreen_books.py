@@ -113,14 +113,23 @@ def decide(row: dict, r: dict, titles, title_rules, t) -> tuple[str, str, str]:
             return "comparison", "title: screenwriting", "screenwriting_only"
         if titles["poetry"].search(title):
             return "comparison", "title: poetry", "poetry_only"
+        if titles.get("playwriting") and titles["playwriting"].search(title):
+            return "comparison", "title: playwriting", "playwriting_only"
+        if titles.get("creative_nonfiction") and titles["creative_nonfiction"].search(title):
+            return "comparison", "title: creative nonfiction / memoir craft", "creative_nonfiction"
         if title_status == "likely_contextual":
             return "comparison", f"title rule {title_rule}", TITLE_EXCLUDE_REASON.get(title_rule, "other")
         if row["download_priority"] == "P0" or row["screen_status"] == "likely_primary":
             return "primary", f"instruction {instr}/1k + candidate list", ""
         return "primary", f"instruction {instr}/1k", ""
 
+    if titles.get("literary_scholarship") and titles["literary_scholarship"].search(title):
+        return "negative", "title: literary scholarship (not narratology)", "not_instructional"
     if r["rate_academic"] >= t["academic_high"]:
         if r["rate_literary"] >= t["literary_some"]:
+            # Narratology / writing theory stays comparison; other lit-scholarship is negative.
+            # Title cues for narratology are weak here, so academic+literary still → comparison
+            # unless the literary-scholarship title rule already fired above.
             return "comparison", f"scholarship on literature/writing (citations {r['rate_academic']}/1k)", "academic_study"
         if curated:
             return "unreviewed", f"in curated list {row['download_priority']} but reads like unrelated scholarship", ""

@@ -84,7 +84,14 @@ title_rules:
   screenwriting:
     - "screenwrit|screenplay|drehbuch"
   poetry:
-    - "\\bpoetry\\b|\\bgedichte schreiben\\b|\\blyrik schreiben\\b"
+    - "\\bpoetry\\b|\\bpoem(s)? writing\\b|\\bwriting poetry\\b|\\bgedichte schreiben\\b|\\blyrik schreiben\\b"
+  playwriting:
+    - "playwrit|writing plays|\\bdrama writing\\b|dramaturgie|theaterstück(e)? schreiben"
+  creative_nonfiction:
+    - "creative non[- ]?fiction|writing non[- ]?fiction|\\bmemoir writing\\b|writing (a )?memoir"
+  # Literary scholarship without craft/narratology teaching → negative (prescreen decide()).
+  literary_scholarship:
+    - "literary history|literary criticism|\\bcritical companion\\b|\\bcompanion to\\b"
 
 # Front matter (first pages) of German books: translation notice.
 translation:

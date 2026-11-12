@@ -33,6 +33,8 @@ METADATA_OVERRIDES = CONFIG / "book_metadata_overrides.csv"
 BOOK_EXTS = {"epub", "pdf", "mobi", "azw3", "docx", "txtzip", "rtf"}
 # Round 1 formats: everything whose text is available without layout analysis or OCR
 EBOOK_EXTS = {"epub", "mobi", "azw3", "docx", "txtzip"}
+# Round 1b: PDFs with a usable text layer (see inventory text_layer triage)
+PDF_TEXT_LAYERS_OK = {"good"}
 FOLDER_LANG = {"english": "en", "german": "de"}
 CORPUS_LANGS = {"en", "de"}
 # Browse layout under data/raw/books/{lang}/
@@ -510,6 +512,57 @@ def pdf_page_texts(path: Path, max_pages: int = 25) -> tuple[int, list[str]]:
         step = max(len(span) // max_pages, 1)
         picks = span[::step][:max_pages]
         return n, [doc[i].get_text() for i in picks]
+
+
+SOFT_HYPHEN_LINE = re.compile(r"(\w)-\n(\w)", re.UNICODE)
+PAGE_ONLY = re.compile(r"^\s*(\d{1,4}|[ivxlcdm]{1,8})\s*$", re.IGNORECASE)
+
+
+def join_hyphenated_lines(text: str) -> str:
+    """Rejoin words split by a hyphen at a line break; keep other newlines."""
+    prev = None
+    while prev != text:
+        prev = text
+        text = SOFT_HYPHEN_LINE.sub(r"\1\2", text)
+    return text
+
+
+def pdf_toc(path: Path) -> list[tuple[int, str, int]]:
+    """Return PDF bookmarks as (level, title, 1-based page). Empty if none or unreadable."""
+    import pymupdf
+
+    try:
+        with pymupdf.open(path, filetype="pdf") as doc:
+            toc = doc.get_toc(simple=True) or []
+    except Exception:
+        return []
+    out = []
+    for entry in toc:
+        if len(entry) < 3:
+            continue
+        level, title, page = int(entry[0]), normalize_text(str(entry[1])), int(entry[2])
+        if title and page >= 1:
+            out.append((level, title, page))
+    return out
+
+
+def pdf_pages(path: Path) -> list[str]:
+    """Plain text of every page, with end-of-line hyphenation rejoined.
+
+    Does not use the dict/layout API (too slow and memory-heavy on large scans).
+    Chapter structure is recovered later from the PDF TOC or heading-line regexes.
+    """
+    import pymupdf
+
+    with pymupdf.open(path, filetype="pdf") as doc:
+        pages = []
+        for i in range(doc.page_count):
+            raw = doc[i].get_text("text") or ""
+            raw = join_hyphenated_lines(raw)
+            # Drop lines that are only a page number; keep other structure for chapter cues.
+            kept = [ln for ln in raw.splitlines() if not PAGE_ONLY.match(ln)]
+            pages.append("\n".join(kept).strip())
+        return pages
 
 
 _DETECTOR = None

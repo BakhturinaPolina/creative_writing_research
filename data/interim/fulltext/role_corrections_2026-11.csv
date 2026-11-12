@@ -1,0 +1,78 @@
+book_id,from_role,to_role,exclusion_reason,corpus_type,note,title
+en_74aacb05a1d6,primary,comparison,journalism,,blogging / feature storytelling craft,"Writing for Others, Writing for Ourselves Telling Stories in an Age of Blogging - Jerry La"
+en_ddd3a8a7d428,primary,comparison,creative_nonfiction,,creative nonfiction craft,Creative nonfiction - Lee Gutkind
+en_5ab533e8fd11,primary,comparison,creative_nonfiction,,nonfiction book craft,How to write and sell your first nonfiction book - Oscar Collier
+en_238873c8728c,primary,comparison,creative_nonfiction,,nonfiction writing guide,The Complete Idiots Guide To Writing Nonfiction - Christina Boufis
+en_d920c6279ae5,primary,comparison,creative_nonfiction,,nonfiction / memoir / essays / reviews guide,The Everything Guide To Writing Nonfiction All You Need To Write And Sell Exceptional Nonf
+en_04d6f4a876b4,primary,comparison,creative_nonfiction,,nonfiction book proposal,The fast-track course on how to write a nonfiction book proposal - Stephen Blake Mettee
+en_747075c7c601,primary,comparison,journalism,,news article writing,How to write a news article - Cecilia Minden
+en_5bd37e9cc093,primary,comparison,narratology_theory,F,Lothe narrative in fiction and film,Narrative in fiction and film - an introduction - Jakob Lothe
+en_7f5900465e67,primary,comparison,screenwriting_only,,alternative scriptwriting,Alternative Scriptwriting - Successfully Breaking the Rules - Ken Dancyger _ Jeff Rush
+en_9b0a144b16bd,primary,comparison,playwriting_only,,playwriting craft,The art and craft of playwriting - Jeffrey Hatcher
+en_77f89ce197d2,primary,comparison,poetry_only,,poetry writing (was hand-placed primary),Countdown to poetry writing - Stephen Bowkett
+en_f8871763367c,primary,comparison,poetry_only,,poetry writing,Extraordinary poetry writing - Margaret Ryan
+en_aedee80400db,primary,comparison,school_pedagogy,E,poetry for children learning to read/write; pedagogy,"Poetry, The Magic Language Children Learn to Read and Write It - Maureen W. Armour"
+en_42b51f337810,primary,comparison,research_discipline,,researching identities through CW,Naming the Unnamable Researching Identities through Creative Writing - Tom Dobson
+en_ada12ba0b557,primary,comparison,research_discipline,,research methods in CW,Research Methods in Creative Writing - Jeri Kroll
+en_dede2712ef0c,primary,comparison,research_discipline,,researching creative writing,Researching Creative Writing - Jen Webb
+en_2238900ace7c,primary,comparison,school_pedagogy,E,CW teaching and learning,Creative Writing Teaching and Learning the Fiction of the Future - Nigel Krauth
+en_70933108edef,primary,comparison,school_pedagogy,E,resources for teaching CW,Resources for teaching creative writing - Johnnie Young
+en_6413133bb836,primary,comparison,school_pedagogy,E,composition classroom,"Teachers, discourses, and authority in the postmodern composition classroom - Xin Liu Gale"
+en_e6b21af3b2af,primary,comparison,school_pedagogy,E,teaching evidence-based writing,Teaching Evidence-Based Writing: Fiction - Leslie Blauman
+en_9aa5d07f5fbd,primary,comparison,school_pedagogy,E,teaching popular fiction (was hand-placed primary),Teaching and writing popular fiction - Karen M. Hubert
+en_022b9d262f7d,primary,comparison,school_pedagogy,E,teaching kids to write (was hand-placed primary),Teaching kids to write - Eleanor W Hoomes
+en_b9067dab32a1,primary,comparison,school_pedagogy,E,tools students need,Tools students need to be skillful writers - Phyllis Hostmeyer
+en_ac21c1ffd789,primary,comparison,songwriting_only,,songwriting for dummies,Songwriting for dummies - Jim Peterik
+en_a9fda328daa4,primary,comparison,therapy,,therapeutic storywriting (was hand-placed primary),Therapeutic Storywriting  A Practical Guide to Developing Emotional Literacy in Primary Sc
+en_dddd26ad6ba4,primary,negative,academic_writing,,APA pocket style manual,"A Pocket Style Manual, APA Version - Diana Hacker _ Nancy Sommers"
+en_2ba45a285a18,primary,negative,academic_writing,,how to write a thesis,How to write a thesis - Rowena Murray
+en_f9128eaa1a04,primary,negative,academic_writing,,how to write book reports,How to write book reports - Harry Teitelbaum
+en_0c63a7a4e647,primary,negative,academic_writing,,how to write book reports (fiction/drama/poetry analysis),"How to write book reports - analyzing and evaluating fiction, drama, poetry, and non-ficti"
+en_24ace3328aeb,primary,negative,academic_writing,,students must write — coursework/exams,Students Must Write - A Guide to Better Writing in Coursework and Examinations - Robert Ba
+en_12634a184c9f,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Working writing - Unknown",Working writing - Unknown
+en_2f4a6e592e61,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: On second language writing - Paul Kei Matsuda",On second language writing - Paul Kei Matsuda
+en_535a79d811f5,comparison,comparison,screenwriting_only,,retag: Screenwriting — Gulino,Screenwriting - Paul Joseph Gulino
+en_6d5e0a669c25,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Thinking_writing - Martha Kilgore Rice",Thinking_writing - Martha Kilgore Rice
+en_70f88efc75f4,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Tales and _their telling difference_ - Herbert Foltinek _ Wolfgang Riehle _ Wald",Tales and _their telling difference_ - Herbert Foltinek _ Wolfgang Riehle _ Waldemar Zacha
+en_7e8f1f97afd3,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Creativity and writing pedagogy - Harriet Levin Millan",Creativity and writing pedagogy - Harriet Levin Millan
+en_9afadcb65b3a,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: New Directions in Technology for Writing Instruction - Gonca Yangın-Ekşi _ Sedat",New Directions in Technology for Writing Instruction - Gonca Yangın-Ekşi _ Sedat Akayoglu 
+en_a81bcac1410d,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Adolescents Rewrite Their Worlds - Vivian Yenika-Agbaw",Adolescents Rewrite Their Worlds - Vivian Yenika-Agbaw
+en_bd0cff4dfc78,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Rethinking basic writing - Laura Gray-Rosendale",Rethinking basic writing - Laura Gray-Rosendale
+en_c1b118a0bd53,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Ekphrasis, imagination and persuasion in ancient rhetorical theory and practice ","Ekphrasis, imagination and persuasion in ancient rhetorical theory and practice - Ruth Web"
+en_c956d3d5cafa,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Essays on writing - Lizbeth Bryant",Essays on writing - Lizbeth Bryant
+en_d191046f07bf,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Tools for writing - Barbara Z. Boone",Tools for writing - Barbara Z. Boone
+en_e2f86a737791,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Assessing and improving student writing in college - Barbara E. Walvoord",Assessing and improving student writing in college - Barbara E. Walvoord
+en_e4c9f33dcaf3,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Memory and writing - Philip Davis",Memory and writing - Philip Davis
+en_0759789dd995,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Computers and writing - Noel Williams",Computers and writing - Noel Williams
+en_078daf69734f,comparison,comparison,other,,retag: Myth and creative writing — craft-adjacent; keep comparison,Myth and creative writing - Adrian May
+en_2e3017fb6870,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Successful writing for qualitative researchers - Peter Woods",Successful writing for qualitative researchers - Peter Woods
+en_30a27c8a078f,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Traditions of writing research - Charles Bazerman",Traditions of writing research - Charles Bazerman
+en_33b42b2abfe2,comparison,comparison,narratology_theory,F,retag: Waugh metafiction,Metafiction - the theory and practice of self-conscious fiction - Patricia Waugh
+en_35e052fcb86f,comparison,comparison,narratology_theory,F,retag: Waugh metafiction duplicate,Metafiction - the theory and practice of self-conscious fiction - Patricia Waugh
+en_4011224ad896,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: The experience of writing - William D. Baker",The experience of writing - William D. Baker
+en_4c78361ebf9c,comparison,comparison,therapy,,retag: CW in health and social care,Creative Writing in Health and Social Care - Fiona Sampson
+en_509c36e78d90,comparison,comparison,research_discipline,,retag: The Creativity Market,The Creativity Market - Dominique Hecq
+en_594ea9f2b40a,comparison,comparison,therapy,,retag: The Self on the Page — therapeutic/reflective writing,The Self on the Page - Celia Hunt
+en_7ecabda557a2,comparison,comparison,other,,retag: The realities of fiction — Hale craft essays; keep comparison,The realities of fiction - Nancy Hale
+en_8533f9518fe3,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Teaching and evaluating writing in the age of computers and high-stakes testing ",Teaching and evaluating writing in the age of computers and high-stakes testing - Carl Whi
+en_91fa634eefd5,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: English language, literature and creative writing - Sarah Dobbs","English language, literature and creative writing - Sarah Dobbs"
+en_bc56c3f18946,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: University writing  selves and texts in academic societies - Christiane Donahue",University writing  selves and texts in academic societies - Christiane Donahue
+en_cc489b473530,comparison,comparison,other,,retag: Creative Writing and Rewriting — craft/criticism hybrid; keep comparison for now,Creative Writing and Rewriting - John Richard Kuehl
+en_d2c859f41419,comparison,comparison,narratology_theory,F,retag: poetics of creative writing,Towards a poetics of creative writing - Dominique Hecq
+en_d396c8c3143a,comparison,comparison,research_discipline,,retag: On Creative Writing — Harper,On Creative Writing - Graeme Harper
+en_d59fd3d62e68,comparison,comparison,poetry_only,,retag: Poetry writing — Starkey,Poetry writing - David Starkey
+en_e107cc62e290,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Books that teach kids to write - Marianne Saccardi",Books that teach kids to write - Marianne Saccardi
+en_e31b1945621e,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Descriptive writing - Kimberly A. Williams",Descriptive writing - Kimberly A. Williams
+en_eaa6c22eeed9,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Experimental writing in composition - Patricia Suzanne Sullivan",Experimental writing in composition - Patricia Suzanne Sullivan
+en_eff6c5ad46c2,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Student writing and genre - Fiona English",Student writing and genre - Fiona English
+en_f6b432e9fa70,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Digital fictions - storytelling in a material world - Sarah Sloane",Digital fictions - storytelling in a material world - Sarah Sloane
+en_f794a6632743,comparison,negative,not_instructional,,"literary/composition scholarship, not narratology: Exploring second language creative writing - Dan (Professor) Disney",Exploring second language creative writing - Dan (Professor) Disney
+en_fee22c2d4cab,comparison,comparison,research_discipline,,retag: The writer in the academy,The writer in the academy - Richard Marggraf Turley
+en_f7f6f08b4a8e,comparison,comparison,playwriting_only,,Playwriting practical guide — retag,Playwriting - A Practical Guide - Noel Greig
+en_c91df9980974,comparison,comparison,creative_nonfiction,D,autobiographical novel craft / CNF,How to write an autobiographical novel - Alexander Chee
+en_33e31cc97628,primary,comparison,creative_nonfiction,,fiction and nonfiction publishing guide → comparison (CNF/mixed form),The complete guide to writing fiction and nonfiction--and getting it published
+en_1abf2d2a6a11,comparison,negative,academic_writing,,academic writing handbook (was hand-placed comparison),Academic Writing in a Global Context
+en_2b88ca55ceac,comparison,negative,grammar_style,,general grammar/style guide → negative; NYT manual of style and usage,The New York times manual of style and usage
+en_3852a78a1b4c,comparison,negative,grammar_style,,general grammar/style guide → negative; Idiot's guide to grammar and style,The complete idiot's guide to grammar and style
+en_1f3fa63b97fd,comparison,negative,grammar_style,,general grammar/style guide → negative; Easy writer — composition/style handbook,Easy writer
+en_f434b539d3ea,comparison,negative,grammar_style,,general grammar/style guide → negative; Barzun on writing/editing/publishing — style/usage,"On writing, editing, and publishing"

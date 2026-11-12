@@ -27,7 +27,7 @@ The project is **not** about collecting as many manuals as possible. It is about
 
 **Primary corpus:** books whose principal purpose is to teach, advise on, or systematically discuss the production of literary narrative prose.
 
-Not in the primary corpus (they can serve as comparison corpora): academic writing, copywriting, journalism, grammar/style guides, screenwriting, therapeutic writing, school composition, and theoretical narratology.
+Not in the primary corpus (they can serve as comparison corpora): copywriting, journalism, screenwriting, poetry, playwriting, creative nonfiction and memoir-as-genre advice, therapeutic writing, school composition, research on creative writing as a discipline, and theoretical narratology. Children's-literature craft that teaches story/narrative writing stays in the primary corpus. Academic writing, general grammar/style guides, and literary scholarship that is not narratology are negatives, not comparison texts.
 
 German needs particular care. *Kreatives Schreiben* covers school pedagogy, self-expression, therapy and literary authorship. Catalogue searches therefore retrieve broadly, and classification happens afterwards.
 
