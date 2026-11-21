@@ -1,0 +1,11 @@
+baseline,language,selection_rule,n
+B_v02_lexical,en,strong_high_or_concept_regex,8555
+B_v02_lexical,en,weak_pov_plus_supporting,1189
+B_v02_lexical,en,two_independent_supporting,867
+B_v02_lexical,de,strong_high_or_concept_regex,949
+B_v02_lexical,de,two_independent_supporting,85
+C_bm25,en,strong_high_or_concept_regex,4412
+C_bm25,en,two_independent_supporting,863
+C_bm25,en,weak_pov_plus_supporting,466
+C_bm25,de,strong_high_or_concept_regex,936
+C_bm25,de,two_independent_supporting,85

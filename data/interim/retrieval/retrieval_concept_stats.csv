@@ -1,0 +1,231 @@
+concept_id,language,n_assignments,n_unique_passages,n_books,per_10k_body_words,by_primary_group,baseline
+consciousness_access,en,756,756,238,0.2186,"{""fiction_manual"": 642, ""pedagogy_genre_craft"": 103, ""contrast"": 11}",A_v01
+distance_depth,en,303,303,79,0.0876,"{""fiction_manual"": 284, ""pedagogy_genre_craft"": 15, ""contrast"": 4}",A_v01
+general_pov,en,7408,7408,413,2.1422,"{""fiction_manual"": 5901, ""pedagogy_genre_craft"": 1333, ""contrast"": 174}",A_v01
+information_control,en,714,714,220,0.2065,"{""fiction_manual"": 583, ""pedagogy_genre_craft"": 109, ""contrast"": 22}",A_v01
+involvement_voice,en,648,648,178,0.1874,"{""fiction_manual"": 497, ""pedagogy_genre_craft"": 124, ""contrast"": 27}",A_v01
+knowledge_focalization,en,1289,1289,231,0.3727,"{""fiction_manual"": 1122, ""pedagogy_genre_craft"": 114, ""contrast"": 53}",A_v01
+multiplicity_switching,en,326,326,106,0.0943,"{""fiction_manual"": 281, ""pedagogy_genre_craft"": 43, ""contrast"": 2}",A_v01
+narrator_role,en,277,277,119,0.0801,"{""fiction_manual"": 237, ""pedagogy_genre_craft"": 33, ""contrast"": 7}",A_v01
+objective_mode,en,277,277,130,0.0801,"{""fiction_manual"": 218, ""pedagogy_genre_craft"": 54, ""contrast"": 5}",A_v01
+person,en,3882,3882,359,1.1226,"{""fiction_manual"": 3167, ""pedagogy_genre_craft"": 625, ""contrast"": 90}",A_v01
+reliability,en,168,168,87,0.0486,"{""fiction_manual"": 145, ""pedagogy_genre_craft"": 16, ""contrast"": 7}",A_v01
+thought_representation,en,601,601,157,0.1738,"{""fiction_manual"": 537, ""pedagogy_genre_craft"": 54, ""contrast"": 10}",A_v01
+consciousness_access,de,250,250,42,0.5359,"{""pedagogy_genre_craft"": 134, ""fiction_manual"": 101, ""contrast"": 15}",A_v01
+distance_depth,de,55,55,18,0.1179,"{""fiction_manual"": 36, ""pedagogy_genre_craft"": 13, ""contrast"": 6}",A_v01
+general_pov,de,280,280,44,0.6002,"{""fiction_manual"": 196, ""pedagogy_genre_craft"": 61, ""contrast"": 23}",A_v01
+information_control,de,76,76,27,0.1629,"{""fiction_manual"": 65, ""contrast"": 6, ""pedagogy_genre_craft"": 5}",A_v01
+involvement_voice,de,62,62,23,0.1329,"{""fiction_manual"": 42, ""pedagogy_genre_craft"": 12, ""contrast"": 8}",A_v01
+knowledge_focalization,de,240,240,42,0.5144,"{""fiction_manual"": 175, ""contrast"": 42, ""pedagogy_genre_craft"": 23}",A_v01
+multiplicity_switching,de,115,115,33,0.2465,"{""fiction_manual"": 45, ""pedagogy_genre_craft"": 45, ""contrast"": 25}",A_v01
+narrator_role,de,668,668,51,1.4318,"{""fiction_manual"": 418, ""contrast"": 172, ""pedagogy_genre_craft"": 78}",A_v01
+objective_mode,de,12,12,9,0.0257,"{""fiction_manual"": 7, ""pedagogy_genre_craft"": 4, ""contrast"": 1}",A_v01
+person,de,311,311,55,0.6666,"{""fiction_manual"": 230, ""contrast"": 43, ""pedagogy_genre_craft"": 38}",A_v01
+reliability,de,5,5,4,0.0107,"{""fiction_manual"": 5}",A_v01
+thought_representation,de,64,64,23,0.1372,"{""fiction_manual"": 50, ""pedagogy_genre_craft"": 10, ""contrast"": 4}",A_v01
+choice_tradeoffs,en,100,100,50,0.0289,"{""fiction_manual"": 62, ""pedagogy_genre_craft"": 29, ""contrast"": 9}",B_v02_lexical
+consciousness_access,en,212,212,98,0.0613,"{""fiction_manual"": 154, ""pedagogy_genre_craft"": 46, ""contrast"": 12}",B_v02_lexical
+distance_depth,en,153,153,48,0.0442,"{""fiction_manual"": 136, ""pedagogy_genre_craft"": 11, ""contrast"": 6}",B_v02_lexical
+filter_words,en,1,1,1,0.0003,"{""fiction_manual"": 1}",B_v02_lexical
+focalization_external,en,35,35,23,0.0101,"{""fiction_manual"": 27, ""pedagogy_genre_craft"": 4, ""contrast"": 4}",B_v02_lexical
+focalization_fixed,en,14,14,8,0.004,"{""fiction_manual"": 14}",B_v02_lexical
+focalization_general,en,69,69,20,0.02,"{""fiction_manual"": 38, ""contrast"": 27, ""pedagogy_genre_craft"": 4}",B_v02_lexical
+focalization_internal,en,99,99,49,0.0286,"{""fiction_manual"": 77, ""pedagogy_genre_craft"": 12, ""contrast"": 10}",B_v02_lexical
+focalization_variable,en,25,25,11,0.0072,"{""fiction_manual"": 25}",B_v02_lexical
+focalization_zero,en,1016,1016,199,0.2938,"{""fiction_manual"": 908, ""pedagogy_genre_craft"": 88, ""contrast"": 20}",B_v02_lexical
+grammatical_first_person,en,2497,2497,328,0.7221,"{""fiction_manual"": 2055, ""pedagogy_genre_craft"": 396, ""contrast"": 46}",B_v02_lexical
+grammatical_second_person,en,550,550,169,0.159,"{""fiction_manual"": 434, ""pedagogy_genre_craft"": 104, ""contrast"": 12}",B_v02_lexical
+grammatical_third_person,en,2028,2028,292,0.5864,"{""fiction_manual"": 1690, ""pedagogy_genre_craft"": 286, ""contrast"": 52}",B_v02_lexical
+information_control,en,170,170,63,0.0492,"{""fiction_manual"": 87, ""pedagogy_genre_craft"": 79, ""contrast"": 4}",B_v02_lexical
+mode_balance,en,55,55,30,0.0159,"{""fiction_manual"": 43, ""pedagogy_genre_craft"": 10, ""contrast"": 2}",B_v02_lexical
+mode_dramatic,en,152,152,63,0.044,"{""fiction_manual"": 88, ""pedagogy_genre_craft"": 40, ""contrast"": 24}",B_v02_lexical
+mode_narrative,en,492,492,122,0.1423,"{""fiction_manual"": 343, ""pedagogy_genre_craft"": 138, ""contrast"": 11}",B_v02_lexical
+multiple_focalization_same_event,en,4,4,3,0.0012,"{""fiction_manual"": 3, ""contrast"": 1}",B_v02_lexical
+narrative_style_voice,en,235,235,113,0.068,"{""fiction_manual"": 176, ""pedagogy_genre_craft"": 46, ""contrast"": 13}",B_v02_lexical
+narrator_level_time,en,29,29,14,0.0084,"{""fiction_manual"": 14, ""contrast"": 12, ""pedagogy_genre_craft"": 3}",B_v02_lexical
+perspective_general,en,1267,1267,144,0.3664,"{""fiction_manual"": 1198, ""pedagogy_genre_craft"": 58, ""contrast"": 11}",B_v02_lexical
+pov_object,en,3,3,3,0.0009,"{""fiction_manual"": 2, ""contrast"": 1}",B_v02_lexical
+pov_subject,en,8,8,7,0.0023,"{""fiction_manual"": 5, ""contrast"": 2, ""pedagogy_genre_craft"": 1}",B_v02_lexical
+reader_effect,en,74,74,38,0.0214,"{""fiction_manual"": 57, ""pedagogy_genre_craft"": 16, ""contrast"": 1}",B_v02_lexical
+reliability,en,138,138,72,0.0399,"{""fiction_manual"": 119, ""pedagogy_genre_craft"": 12, ""contrast"": 7}",B_v02_lexical
+speech_dialogue,en,189,189,83,0.0547,"{""fiction_manual"": 129, ""pedagogy_genre_craft"": 46, ""contrast"": 14}",B_v02_lexical
+stance_figural,en,18,18,7,0.0052,"{""fiction_manual"": 17, ""pedagogy_genre_craft"": 1}",B_v02_lexical
+stance_narratorial,en,16,16,11,0.0046,"{""fiction_manual"": 14, ""pedagogy_genre_craft"": 1, ""contrast"": 1}",B_v02_lexical
+switching_consistency,en,60,60,24,0.0174,"{""fiction_manual"": 53, ""pedagogy_genre_craft"": 7}",B_v02_lexical
+thought_representation,en,376,376,89,0.1087,"{""fiction_manual"": 351, ""pedagogy_genre_craft"": 18, ""contrast"": 7}",B_v02_lexical
+voice_eyewitness,en,42,42,19,0.0121,"{""fiction_manual"": 36, ""pedagogy_genre_craft"": 5, ""contrast"": 1}",B_v02_lexical
+voice_general,en,438,438,121,0.1267,"{""fiction_manual"": 318, ""pedagogy_genre_craft"": 90, ""contrast"": 30}",B_v02_lexical
+voice_heterodiegetic,en,6,6,5,0.0017,"{""fiction_manual"": 3, ""contrast"": 2, ""pedagogy_genre_craft"": 1}",B_v02_lexical
+voice_homodiegetic,en,18,18,16,0.0052,"{""fiction_manual"": 15, ""contrast"": 2, ""pedagogy_genre_craft"": 1}",B_v02_lexical
+voice_participant,en,3,3,3,0.0009,"{""fiction_manual"": 3}",B_v02_lexical
+voice_protagonist,en,19,19,7,0.0055,"{""fiction_manual"": 12, ""pedagogy_genre_craft"": 7}",B_v02_lexical
+choice_tradeoffs,de,16,16,11,0.0343,"{""fiction_manual"": 12, ""pedagogy_genre_craft"": 2, ""contrast"": 2}",B_v02_lexical
+consciousness_access,de,32,32,18,0.0686,"{""fiction_manual"": 15, ""pedagogy_genre_craft"": 14, ""contrast"": 3}",B_v02_lexical
+distance_depth,de,11,11,6,0.0236,"{""fiction_manual"": 8, ""pedagogy_genre_craft"": 3}",B_v02_lexical
+focalization_external,de,1,1,1,0.0021,"{""contrast"": 1}",B_v02_lexical
+focalization_general,de,3,3,1,0.0064,"{""contrast"": 3}",B_v02_lexical
+focalization_internal,de,4,4,4,0.0086,"{""pedagogy_genre_craft"": 3, ""fiction_manual"": 1}",B_v02_lexical
+focalization_variable,de,15,15,10,0.0322,"{""pedagogy_genre_craft"": 10, ""fiction_manual"": 4, ""contrast"": 1}",B_v02_lexical
+focalization_zero,de,5,5,4,0.0107,"{""fiction_manual"": 5}",B_v02_lexical
+grammatical_first_person,de,246,246,47,0.5273,"{""fiction_manual"": 183, ""pedagogy_genre_craft"": 35, ""contrast"": 28}",B_v02_lexical
+grammatical_second_person,de,8,8,5,0.0171,"{""pedagogy_genre_craft"": 5, ""fiction_manual"": 3}",B_v02_lexical
+grammatical_third_person,de,46,46,17,0.0986,"{""fiction_manual"": 36, ""pedagogy_genre_craft"": 9, ""contrast"": 1}",B_v02_lexical
+information_control,de,21,21,5,0.045,"{""fiction_manual"": 20, ""pedagogy_genre_craft"": 1}",B_v02_lexical
+mode_balance,de,15,15,8,0.0322,"{""fiction_manual"": 12, ""pedagogy_genre_craft"": 2, ""contrast"": 1}",B_v02_lexical
+mode_dramatic,de,33,33,15,0.0707,"{""fiction_manual"": 15, ""contrast"": 15, ""pedagogy_genre_craft"": 3}",B_v02_lexical
+mode_narrative,de,15,15,8,0.0322,"{""contrast"": 10, ""fiction_manual"": 4, ""pedagogy_genre_craft"": 1}",B_v02_lexical
+multiple_focalization_same_event,de,3,3,2,0.0064,"{""fiction_manual"": 3}",B_v02_lexical
+narrative_style_voice,de,43,43,22,0.0922,"{""fiction_manual"": 35, ""pedagogy_genre_craft"": 5, ""contrast"": 3}",B_v02_lexical
+narrator_level_time,de,45,45,12,0.0965,"{""contrast"": 35, ""fiction_manual"": 7, ""pedagogy_genre_craft"": 3}",B_v02_lexical
+perspective_general,de,218,218,38,0.4673,"{""fiction_manual"": 167, ""pedagogy_genre_craft"": 34, ""contrast"": 17}",B_v02_lexical
+pov_object,de,1,1,1,0.0021,"{""contrast"": 1}",B_v02_lexical
+pov_subject,de,1,1,1,0.0021,"{""contrast"": 1}",B_v02_lexical
+reader_effect,de,3,3,3,0.0064,"{""fiction_manual"": 2, ""pedagogy_genre_craft"": 1}",B_v02_lexical
+reliability,de,1,1,1,0.0021,"{""fiction_manual"": 1}",B_v02_lexical
+speech_dialogue,de,19,19,11,0.0407,"{""fiction_manual"": 13, ""pedagogy_genre_craft"": 4, ""contrast"": 2}",B_v02_lexical
+stance_figural,de,10,10,5,0.0214,"{""fiction_manual"": 9, ""pedagogy_genre_craft"": 1}",B_v02_lexical
+stance_narratorial,de,2,2,1,0.0043,"{""fiction_manual"": 2}",B_v02_lexical
+switching_consistency,de,94,94,29,0.2015,"{""pedagogy_genre_craft"": 39, ""fiction_manual"": 36, ""contrast"": 19}",B_v02_lexical
+thought_representation,de,63,63,24,0.135,"{""fiction_manual"": 51, ""pedagogy_genre_craft"": 9, ""contrast"": 3}",B_v02_lexical
+voice_general,de,53,53,15,0.1136,"{""fiction_manual"": 41, ""contrast"": 7, ""pedagogy_genre_craft"": 5}",B_v02_lexical
+voice_heterodiegetic,de,1,1,1,0.0021,"{""contrast"": 1}",B_v02_lexical
+voice_protagonist,de,6,6,3,0.0129,"{""contrast"": 4, ""fiction_manual"": 2}",B_v02_lexical
+choice_tradeoffs,en,100,100,50,0.0289,"{""fiction_manual"": 62, ""pedagogy_genre_craft"": 29, ""contrast"": 9}",C_bm25
+consciousness_access,en,211,211,98,0.061,"{""fiction_manual"": 153, ""pedagogy_genre_craft"": 46, ""contrast"": 12}",C_bm25
+distance_depth,en,153,153,48,0.0442,"{""fiction_manual"": 136, ""pedagogy_genre_craft"": 11, ""contrast"": 6}",C_bm25
+filter_words,en,1,1,1,0.0003,"{""fiction_manual"": 1}",C_bm25
+focalization_external,en,35,35,23,0.0101,"{""fiction_manual"": 27, ""contrast"": 4, ""pedagogy_genre_craft"": 4}",C_bm25
+focalization_fixed,en,14,14,8,0.004,"{""fiction_manual"": 14}",C_bm25
+focalization_general,en,69,69,20,0.02,"{""fiction_manual"": 38, ""contrast"": 27, ""pedagogy_genre_craft"": 4}",C_bm25
+focalization_internal,en,99,99,49,0.0286,"{""fiction_manual"": 77, ""pedagogy_genre_craft"": 12, ""contrast"": 10}",C_bm25
+focalization_variable,en,25,25,11,0.0072,"{""fiction_manual"": 25}",C_bm25
+focalization_zero,en,500,500,139,0.1446,"{""fiction_manual"": 457, ""pedagogy_genre_craft"": 42, ""contrast"": 1}",C_bm25
+grammatical_first_person,en,500,500,148,0.1446,"{""fiction_manual"": 449, ""pedagogy_genre_craft"": 47, ""contrast"": 4}",C_bm25
+grammatical_second_person,en,500,500,154,0.1446,"{""fiction_manual"": 398, ""pedagogy_genre_craft"": 93, ""contrast"": 9}",C_bm25
+grammatical_third_person,en,500,500,147,0.1446,"{""fiction_manual"": 452, ""pedagogy_genre_craft"": 45, ""contrast"": 3}",C_bm25
+information_control,en,170,170,63,0.0492,"{""fiction_manual"": 87, ""pedagogy_genre_craft"": 79, ""contrast"": 4}",C_bm25
+mode_balance,en,55,55,30,0.0159,"{""fiction_manual"": 43, ""pedagogy_genre_craft"": 10, ""contrast"": 2}",C_bm25
+mode_dramatic,en,150,150,62,0.0434,"{""fiction_manual"": 88, ""pedagogy_genre_craft"": 38, ""contrast"": 24}",C_bm25
+mode_narrative,en,491,491,122,0.142,"{""fiction_manual"": 343, ""pedagogy_genre_craft"": 137, ""contrast"": 11}",C_bm25
+multiple_focalization_same_event,en,4,4,3,0.0012,"{""fiction_manual"": 3, ""contrast"": 1}",C_bm25
+narrative_style_voice,en,235,235,113,0.068,"{""fiction_manual"": 176, ""pedagogy_genre_craft"": 46, ""contrast"": 13}",C_bm25
+narrator_level_time,en,29,29,14,0.0084,"{""fiction_manual"": 14, ""contrast"": 12, ""pedagogy_genre_craft"": 3}",C_bm25
+perspective_general,en,500,500,106,0.1446,"{""fiction_manual"": 469, ""pedagogy_genre_craft"": 28, ""contrast"": 3}",C_bm25
+pov_object,en,3,3,3,0.0009,"{""fiction_manual"": 2, ""contrast"": 1}",C_bm25
+pov_subject,en,8,8,7,0.0023,"{""fiction_manual"": 5, ""contrast"": 2, ""pedagogy_genre_craft"": 1}",C_bm25
+reader_effect,en,74,74,38,0.0214,"{""fiction_manual"": 57, ""pedagogy_genre_craft"": 16, ""contrast"": 1}",C_bm25
+reliability,en,138,138,72,0.0399,"{""fiction_manual"": 119, ""pedagogy_genre_craft"": 12, ""contrast"": 7}",C_bm25
+speech_dialogue,en,189,189,83,0.0547,"{""fiction_manual"": 129, ""pedagogy_genre_craft"": 46, ""contrast"": 14}",C_bm25
+stance_figural,en,18,18,7,0.0052,"{""fiction_manual"": 17, ""pedagogy_genre_craft"": 1}",C_bm25
+stance_narratorial,en,16,16,11,0.0046,"{""fiction_manual"": 14, ""contrast"": 1, ""pedagogy_genre_craft"": 1}",C_bm25
+switching_consistency,en,60,60,24,0.0174,"{""fiction_manual"": 53, ""pedagogy_genre_craft"": 7}",C_bm25
+thought_representation,en,374,374,89,0.1082,"{""fiction_manual"": 349, ""pedagogy_genre_craft"": 18, ""contrast"": 7}",C_bm25
+voice_eyewitness,en,37,37,19,0.0107,"{""fiction_manual"": 31, ""pedagogy_genre_craft"": 5, ""contrast"": 1}",C_bm25
+voice_general,en,438,438,121,0.1267,"{""fiction_manual"": 318, ""pedagogy_genre_craft"": 90, ""contrast"": 30}",C_bm25
+voice_heterodiegetic,en,6,6,5,0.0017,"{""fiction_manual"": 3, ""contrast"": 2, ""pedagogy_genre_craft"": 1}",C_bm25
+voice_homodiegetic,en,18,18,16,0.0052,"{""fiction_manual"": 15, ""contrast"": 2, ""pedagogy_genre_craft"": 1}",C_bm25
+voice_participant,en,3,3,3,0.0009,"{""fiction_manual"": 3}",C_bm25
+voice_protagonist,en,18,18,7,0.0052,"{""fiction_manual"": 12, ""pedagogy_genre_craft"": 6}",C_bm25
+choice_tradeoffs,de,16,16,11,0.0343,"{""fiction_manual"": 12, ""pedagogy_genre_craft"": 2, ""contrast"": 2}",C_bm25
+consciousness_access,de,32,32,18,0.0686,"{""fiction_manual"": 15, ""pedagogy_genre_craft"": 14, ""contrast"": 3}",C_bm25
+distance_depth,de,11,11,6,0.0236,"{""fiction_manual"": 8, ""pedagogy_genre_craft"": 3}",C_bm25
+focalization_external,de,1,1,1,0.0021,"{""contrast"": 1}",C_bm25
+focalization_general,de,3,3,1,0.0064,"{""contrast"": 3}",C_bm25
+focalization_internal,de,4,4,4,0.0086,"{""pedagogy_genre_craft"": 3, ""fiction_manual"": 1}",C_bm25
+focalization_variable,de,15,15,10,0.0322,"{""pedagogy_genre_craft"": 10, ""fiction_manual"": 4, ""contrast"": 1}",C_bm25
+focalization_zero,de,5,5,4,0.0107,"{""fiction_manual"": 5}",C_bm25
+grammatical_first_person,de,239,239,46,0.5123,"{""fiction_manual"": 176, ""pedagogy_genre_craft"": 35, ""contrast"": 28}",C_bm25
+grammatical_second_person,de,8,8,5,0.0171,"{""pedagogy_genre_craft"": 5, ""fiction_manual"": 3}",C_bm25
+grammatical_third_person,de,46,46,17,0.0986,"{""fiction_manual"": 36, ""pedagogy_genre_craft"": 9, ""contrast"": 1}",C_bm25
+information_control,de,21,21,5,0.045,"{""fiction_manual"": 20, ""pedagogy_genre_craft"": 1}",C_bm25
+mode_balance,de,15,15,8,0.0322,"{""fiction_manual"": 12, ""pedagogy_genre_craft"": 2, ""contrast"": 1}",C_bm25
+mode_dramatic,de,33,33,15,0.0707,"{""fiction_manual"": 15, ""contrast"": 15, ""pedagogy_genre_craft"": 3}",C_bm25
+mode_narrative,de,15,15,8,0.0322,"{""contrast"": 10, ""fiction_manual"": 4, ""pedagogy_genre_craft"": 1}",C_bm25
+multiple_focalization_same_event,de,3,3,2,0.0064,"{""fiction_manual"": 3}",C_bm25
+narrative_style_voice,de,43,43,22,0.0922,"{""fiction_manual"": 35, ""pedagogy_genre_craft"": 5, ""contrast"": 3}",C_bm25
+narrator_level_time,de,45,45,12,0.0965,"{""contrast"": 35, ""fiction_manual"": 7, ""pedagogy_genre_craft"": 3}",C_bm25
+perspective_general,de,217,217,38,0.4651,"{""fiction_manual"": 166, ""pedagogy_genre_craft"": 34, ""contrast"": 17}",C_bm25
+pov_object,de,1,1,1,0.0021,"{""contrast"": 1}",C_bm25
+pov_subject,de,1,1,1,0.0021,"{""contrast"": 1}",C_bm25
+reader_effect,de,3,3,3,0.0064,"{""fiction_manual"": 2, ""pedagogy_genre_craft"": 1}",C_bm25
+reliability,de,1,1,1,0.0021,"{""fiction_manual"": 1}",C_bm25
+speech_dialogue,de,19,19,11,0.0407,"{""fiction_manual"": 13, ""pedagogy_genre_craft"": 4, ""contrast"": 2}",C_bm25
+stance_figural,de,10,10,5,0.0214,"{""fiction_manual"": 9, ""pedagogy_genre_craft"": 1}",C_bm25
+stance_narratorial,de,2,2,1,0.0043,"{""fiction_manual"": 2}",C_bm25
+switching_consistency,de,92,92,28,0.1972,"{""pedagogy_genre_craft"": 39, ""fiction_manual"": 34, ""contrast"": 19}",C_bm25
+thought_representation,de,60,60,23,0.1286,"{""fiction_manual"": 48, ""pedagogy_genre_craft"": 9, ""contrast"": 3}",C_bm25
+voice_general,de,53,53,15,0.1136,"{""fiction_manual"": 41, ""contrast"": 7, ""pedagogy_genre_craft"": 5}",C_bm25
+voice_heterodiegetic,de,1,1,1,0.0021,"{""contrast"": 1}",C_bm25
+voice_protagonist,de,6,6,3,0.0129,"{""contrast"": 4, ""fiction_manual"": 2}",C_bm25
+choice_tradeoffs,en,97,97,59,0.028,"{""fiction_manual"": 88, ""pedagogy_genre_craft"": 8, ""contrast"": 1}",C_bm25_only_unvalidated
+consciousness_access,en,87,87,44,0.0252,"{""fiction_manual"": 84, ""pedagogy_genre_craft"": 3}",C_bm25_only_unvalidated
+distance_depth,en,80,80,50,0.0231,"{""fiction_manual"": 71, ""pedagogy_genre_craft"": 9}",C_bm25_only_unvalidated
+filter_words,en,100,100,61,0.0289,"{""fiction_manual"": 88, ""pedagogy_genre_craft"": 12}",C_bm25_only_unvalidated
+focalization_external,en,86,86,56,0.0249,"{""fiction_manual"": 76, ""pedagogy_genre_craft"": 7, ""contrast"": 3}",C_bm25_only_unvalidated
+focalization_fixed,en,95,95,43,0.0275,"{""fiction_manual"": 82, ""contrast"": 8, ""pedagogy_genre_craft"": 5}",C_bm25_only_unvalidated
+focalization_general,en,78,78,45,0.0226,"{""fiction_manual"": 70, ""pedagogy_genre_craft"": 7, ""contrast"": 1}",C_bm25_only_unvalidated
+focalization_internal,en,73,73,49,0.0211,"{""fiction_manual"": 68, ""pedagogy_genre_craft"": 5}",C_bm25_only_unvalidated
+focalization_variable,en,89,89,45,0.0257,"{""fiction_manual"": 78, ""pedagogy_genre_craft"": 6, ""contrast"": 5}",C_bm25_only_unvalidated
+focalization_zero,en,11,11,9,0.0032,"{""fiction_manual"": 10, ""pedagogy_genre_craft"": 1}",C_bm25_only_unvalidated
+grammatical_first_person,en,17,17,10,0.0049,"{""fiction_manual"": 15, ""pedagogy_genre_craft"": 2}",C_bm25_only_unvalidated
+grammatical_second_person,en,46,46,27,0.0133,"{""fiction_manual"": 40, ""pedagogy_genre_craft"": 5, ""contrast"": 1}",C_bm25_only_unvalidated
+grammatical_third_person,en,5,5,5,0.0014,"{""pedagogy_genre_craft"": 3, ""fiction_manual"": 2}",C_bm25_only_unvalidated
+information_control,en,81,81,53,0.0234,"{""fiction_manual"": 76, ""pedagogy_genre_craft"": 5}",C_bm25_only_unvalidated
+mode_balance,en,89,89,45,0.0257,"{""fiction_manual"": 76, ""pedagogy_genre_craft"": 13}",C_bm25_only_unvalidated
+mode_dramatic,en,92,92,54,0.0266,"{""fiction_manual"": 77, ""pedagogy_genre_craft"": 13, ""contrast"": 2}",C_bm25_only_unvalidated
+mode_narrative,en,69,69,57,0.02,"{""fiction_manual"": 59, ""pedagogy_genre_craft"": 10}",C_bm25_only_unvalidated
+multiple_focalization_same_event,en,97,97,68,0.028,"{""fiction_manual"": 85, ""pedagogy_genre_craft"": 9, ""contrast"": 3}",C_bm25_only_unvalidated
+narrative_style_voice,en,84,84,54,0.0243,"{""fiction_manual"": 78, ""pedagogy_genre_craft"": 5, ""contrast"": 1}",C_bm25_only_unvalidated
+narrator_level_time,en,87,87,55,0.0252,"{""fiction_manual"": 75, ""pedagogy_genre_craft"": 9, ""contrast"": 3}",C_bm25_only_unvalidated
+perspective_general,en,56,56,41,0.0162,"{""fiction_manual"": 44, ""pedagogy_genre_craft"": 12}",C_bm25_only_unvalidated
+pov_object,en,100,100,64,0.0289,"{""fiction_manual"": 76, ""pedagogy_genre_craft"": 21, ""contrast"": 3}",C_bm25_only_unvalidated
+pov_subject,en,99,99,58,0.0286,"{""fiction_manual"": 90, ""pedagogy_genre_craft"": 9}",C_bm25_only_unvalidated
+reader_effect,en,93,93,49,0.0269,"{""fiction_manual"": 67, ""pedagogy_genre_craft"": 26}",C_bm25_only_unvalidated
+reliability,en,62,62,34,0.0179,"{""fiction_manual"": 46, ""pedagogy_genre_craft"": 9, ""contrast"": 7}",C_bm25_only_unvalidated
+speech_dialogue,en,69,69,31,0.02,"{""fiction_manual"": 65, ""pedagogy_genre_craft"": 3, ""contrast"": 1}",C_bm25_only_unvalidated
+stance_figural,en,92,92,43,0.0266,"{""fiction_manual"": 85, ""pedagogy_genre_craft"": 5, ""contrast"": 2}",C_bm25_only_unvalidated
+stance_narratorial,en,99,99,53,0.0286,"{""fiction_manual"": 81, ""pedagogy_genre_craft"": 14, ""contrast"": 4}",C_bm25_only_unvalidated
+switching_consistency,en,79,79,42,0.0228,"{""fiction_manual"": 75, ""pedagogy_genre_craft"": 3, ""contrast"": 1}",C_bm25_only_unvalidated
+thought_representation,en,50,50,35,0.0145,"{""fiction_manual"": 40, ""pedagogy_genre_craft"": 9, ""contrast"": 1}",C_bm25_only_unvalidated
+voice_eyewitness,en,87,87,52,0.0252,"{""fiction_manual"": 74, ""pedagogy_genre_craft"": 13}",C_bm25_only_unvalidated
+voice_general,en,72,72,46,0.0208,"{""fiction_manual"": 56, ""pedagogy_genre_craft"": 9, ""contrast"": 7}",C_bm25_only_unvalidated
+voice_heterodiegetic,en,98,98,50,0.0283,"{""fiction_manual"": 65, ""pedagogy_genre_craft"": 24, ""contrast"": 9}",C_bm25_only_unvalidated
+voice_homodiegetic,en,96,96,48,0.0278,"{""fiction_manual"": 73, ""pedagogy_genre_craft"": 16, ""contrast"": 7}",C_bm25_only_unvalidated
+voice_participant,en,100,100,51,0.0289,"{""fiction_manual"": 80, ""pedagogy_genre_craft"": 19, ""contrast"": 1}",C_bm25_only_unvalidated
+voice_protagonist,en,98,98,52,0.0283,"{""fiction_manual"": 83, ""pedagogy_genre_craft"": 11, ""contrast"": 4}",C_bm25_only_unvalidated
+choice_tradeoffs,de,99,99,23,0.2122,"{""fiction_manual"": 84, ""pedagogy_genre_craft"": 15}",C_bm25_only_unvalidated
+consciousness_access,de,91,91,24,0.1951,"{""fiction_manual"": 81, ""pedagogy_genre_craft"": 9, ""contrast"": 1}",C_bm25_only_unvalidated
+distance_depth,de,93,93,29,0.1993,"{""fiction_manual"": 75, ""pedagogy_genre_craft"": 12, ""contrast"": 6}",C_bm25_only_unvalidated
+filter_words,de,100,100,36,0.2143,"{""fiction_manual"": 82, ""pedagogy_genre_craft"": 16, ""contrast"": 2}",C_bm25_only_unvalidated
+focalization_external,de,99,99,30,0.2122,"{""fiction_manual"": 79, ""pedagogy_genre_craft"": 17, ""contrast"": 3}",C_bm25_only_unvalidated
+focalization_fixed,de,100,100,22,0.2143,"{""fiction_manual"": 89, ""pedagogy_genre_craft"": 11}",C_bm25_only_unvalidated
+focalization_general,de,100,100,27,0.2143,"{""fiction_manual"": 87, ""pedagogy_genre_craft"": 12, ""contrast"": 1}",C_bm25_only_unvalidated
+focalization_internal,de,98,98,20,0.2101,"{""fiction_manual"": 86, ""pedagogy_genre_craft"": 11, ""contrast"": 1}",C_bm25_only_unvalidated
+focalization_variable,de,96,96,21,0.2058,"{""fiction_manual"": 86, ""pedagogy_genre_craft"": 8, ""contrast"": 2}",C_bm25_only_unvalidated
+focalization_zero,de,98,98,22,0.2101,"{""fiction_manual"": 88, ""pedagogy_genre_craft"": 10}",C_bm25_only_unvalidated
+grammatical_first_person,de,25,25,15,0.0536,"{""fiction_manual"": 24, ""contrast"": 1}",C_bm25_only_unvalidated
+grammatical_second_person,de,98,98,29,0.2101,"{""fiction_manual"": 84, ""pedagogy_genre_craft"": 13, ""contrast"": 1}",C_bm25_only_unvalidated
+grammatical_third_person,de,75,75,26,0.1608,"{""fiction_manual"": 64, ""pedagogy_genre_craft"": 7, ""contrast"": 4}",C_bm25_only_unvalidated
+information_control,de,90,90,27,0.1929,"{""fiction_manual"": 83, ""pedagogy_genre_craft"": 6, ""contrast"": 1}",C_bm25_only_unvalidated
+mode_balance,de,95,95,29,0.2036,"{""fiction_manual"": 86, ""contrast"": 6, ""pedagogy_genre_craft"": 3}",C_bm25_only_unvalidated
+mode_dramatic,de,95,95,23,0.2036,"{""fiction_manual"": 77, ""pedagogy_genre_craft"": 10, ""contrast"": 8}",C_bm25_only_unvalidated
+mode_narrative,de,97,97,30,0.2079,"{""fiction_manual"": 79, ""pedagogy_genre_craft"": 9, ""contrast"": 9}",C_bm25_only_unvalidated
+multiple_focalization_same_event,de,98,98,29,0.2101,"{""fiction_manual"": 70, ""pedagogy_genre_craft"": 18, ""contrast"": 10}",C_bm25_only_unvalidated
+narrative_style_voice,de,86,86,24,0.1843,"{""fiction_manual"": 77, ""pedagogy_genre_craft"": 8, ""contrast"": 1}",C_bm25_only_unvalidated
+narrator_level_time,de,96,96,29,0.2058,"{""fiction_manual"": 80, ""pedagogy_genre_craft"": 12, ""contrast"": 4}",C_bm25_only_unvalidated
+perspective_general,de,55,55,19,0.1179,"{""fiction_manual"": 47, ""pedagogy_genre_craft"": 5, ""contrast"": 3}",C_bm25_only_unvalidated
+pov_object,de,100,100,25,0.2143,"{""fiction_manual"": 67, ""contrast"": 18, ""pedagogy_genre_craft"": 15}",C_bm25_only_unvalidated
+pov_subject,de,100,100,33,0.2143,"{""fiction_manual"": 70, ""pedagogy_genre_craft"": 17, ""contrast"": 13}",C_bm25_only_unvalidated
+reader_effect,de,97,97,23,0.2079,"{""fiction_manual"": 77, ""pedagogy_genre_craft"": 17, ""contrast"": 3}",C_bm25_only_unvalidated
+reliability,de,99,99,28,0.2122,"{""fiction_manual"": 81, ""pedagogy_genre_craft"": 14, ""contrast"": 4}",C_bm25_only_unvalidated
+speech_dialogue,de,91,91,27,0.1951,"{""fiction_manual"": 74, ""pedagogy_genre_craft"": 17}",C_bm25_only_unvalidated
+stance_figural,de,94,94,27,0.2015,"{""fiction_manual"": 77, ""pedagogy_genre_craft"": 11, ""contrast"": 6}",C_bm25_only_unvalidated
+stance_narratorial,de,100,100,30,0.2143,"{""fiction_manual"": 86, ""pedagogy_genre_craft"": 8, ""contrast"": 6}",C_bm25_only_unvalidated
+switching_consistency,de,90,90,23,0.1929,"{""fiction_manual"": 81, ""pedagogy_genre_craft"": 7, ""contrast"": 2}",C_bm25_only_unvalidated
+thought_representation,de,82,82,31,0.1758,"{""fiction_manual"": 66, ""pedagogy_genre_craft"": 11, ""contrast"": 5}",C_bm25_only_unvalidated
+voice_eyewitness,de,100,100,26,0.2143,"{""fiction_manual"": 86, ""pedagogy_genre_craft"": 11, ""contrast"": 3}",C_bm25_only_unvalidated
+voice_general,de,84,84,23,0.18,"{""fiction_manual"": 72, ""contrast"": 8, ""pedagogy_genre_craft"": 4}",C_bm25_only_unvalidated
+voice_heterodiegetic,de,99,99,31,0.2122,"{""fiction_manual"": 78, ""pedagogy_genre_craft"": 13, ""contrast"": 8}",C_bm25_only_unvalidated
+voice_homodiegetic,de,100,100,28,0.2143,"{""fiction_manual"": 81, ""pedagogy_genre_craft"": 13, ""contrast"": 6}",C_bm25_only_unvalidated
+voice_participant,de,100,100,24,0.2143,"{""fiction_manual"": 85, ""pedagogy_genre_craft"": 12, ""contrast"": 3}",C_bm25_only_unvalidated
+voice_protagonist,de,100,100,28,0.2143,"{""fiction_manual"": 87, ""pedagogy_genre_craft"": 12, ""contrast"": 1}",C_bm25_only_unvalidated

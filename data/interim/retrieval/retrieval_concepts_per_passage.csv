@@ -1,0 +1,3 @@
+language,max_concepts_per_passage,mean_concepts_per_passage,passages_with_ge_5_concepts,passages_with_ge_10_concepts
+en,21,1.442,100,8
+de,15,1.341,15,2

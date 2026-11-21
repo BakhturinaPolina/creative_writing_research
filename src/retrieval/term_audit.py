@@ -274,53 +274,36 @@ def write_tiers(audits: dict[str, pd.DataFrame], log) -> dict:
 
 
 def pilot_smoke(log) -> None:
+    from src.retrieval.evidence import candidate_status, collect_concept_evidence, qualifying_concepts
+    from src.retrieval.regex_map import load_regex_map
+
     lex = load_lexicon()
+    rmap = load_regex_map()
     lines = [
         "# Lexicon pilot smoke (v0.2-draft)",
         "",
         f"Built: {datetime.now().strftime('%Y-%m-%d %H:%M')}",
         f"Lexicon: `{lex.path.relative_to(ROOT)}` ({lex.version})",
+        f"Regex map: `{rmap.path.relative_to(ROOT)}` ({rmap.version})",
         "",
-        "Rule: a passage is a *literal candidate* if any strong high term/regex hits,",
-        "or weak POV surfaces plus an independent supporting cue, or ≥2 supporting.",
-        "Ambiguous `point of view` / `regex:general_pov` alone never counts.",
+        "Rule (shared with Baseline B/C): strong concept-specific high/regex,",
+        "or weak POV + independent supporting, or ≥2 independent supporting.",
+        "Demoted/context-only never qualify alone; regexes are concept-mapped.",
         "",
     ]
     cases = list(lex.pilot_examples) + EXTRA_FP
     ok = fail = 0
-    weak = {
-        "point of view", "pov", "povs", "viewpoint", "viewpoints", "regex:general_pov"
-    }
     for case in cases:
         lang = case["lang"]
         text = case["text"]
-        norm = normalize_text(text)
         expected = set(case.get("expected") or [])
         reason = case.get("reason") or case.get("label") or ""
-        hits_high, hits_supp = [], []
-        for cid, ct in lex.concepts[lang].items():
-            for term in ct.academic:
-                if phrase_in_text(term, norm):
-                    hits_high.append(f"{cid}:{term}")
-            for term in ct.craft:
-                if not phrase_in_text(term, norm):
-                    continue
-                tier = classify_tier(lang, "craft", term)
-                if tier == "supporting":
-                    hits_supp.append(f"{cid}:{term}")
-                elif tier == "high":
-                    hits_high.append(f"{cid}:{term}")
-        for name, pat in lex.example_regex.get(lang, {}).items():
-            if pat.search(text):
-                hits_high.append(f"regex:{name}")
-        strong_high = [
-            h for h in hits_high
-            if h.casefold().split(":", 1)[-1] not in weak
-            and not h.casefold().startswith("regex:general_pov")
-        ]
-        weak_high = [h for h in hits_high if h not in strong_high]
-        real_supp = [s for s in hits_supp if s.casefold().split(":", 1)[-1] not in weak]
-        is_cand = bool(strong_high) or (bool(weak_high) and bool(real_supp)) or len(real_supp) >= 2
+        q = qualifying_concepts(text, lang, lex, rmap)
+        is_cand = bool(q)
+        high, supp = [], []
+        for cid, ev in q.items():
+            high.extend(f"{cid}:{h.term}" for h in ev.high)
+            supp.extend(f"{cid}:{h.term}" for h in ev.supporting)
         want_empty = len(expected) == 0
         if want_empty and not is_cand:
             status = "PASS"
@@ -328,15 +311,20 @@ def pilot_smoke(log) -> None:
         elif want_empty and is_cand:
             status = "FAIL"
             fail += 1
-        elif expected and is_cand:
+        elif expected and expected <= set(q.keys()):
             status = "PASS"
             ok += 1
-        else:
+        elif expected and is_cand:
             status = "CHECK"
+        else:
+            status = "FAIL" if expected else "CHECK"
+            if expected and not is_cand:
+                fail += 1
         lines.append(f"## [{status}] {lang}: {text[:90]}{'…' if len(text) > 90 else ''}")
         lines.append(f"- reason/expected: {reason or expected}")
-        lines.append(f"- high hits: {hits_high or '—'}")
-        lines.append(f"- supporting hits: {hits_supp or '—'}")
+        lines.append(f"- qualifying concepts: {sorted(q) or '—'}")
+        lines.append(f"- high hits: {high or '—'}")
+        lines.append(f"- supporting hits: {supp or '—'}")
         lines.append(f"- literal_candidate: {is_cand}")
         lines.append("")
     lines.append(f"**Summary:** {ok} PASS, {fail} FAIL, {len(cases) - ok - fail} CHECK")

@@ -1,0 +1,772 @@
+passage_id,book_id,language,title,author,edition_year,corpus_role,primary_group,chapter_idx,para_idx,concept_ids,n_concepts
+de_017250902eee:c19:p7,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,19,7,grammatical_first_person; voice_general,2
+de_017250902eee:c24:p6,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,24,6,perspective_general,1
+de_017250902eee:c24:p9,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,24,9,voice_general,1
+de_017250902eee:c25:p7,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,25,7,thought_representation; voice_general,2
+de_017250902eee:c31:p21,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,31,21,grammatical_first_person,1
+de_017250902eee:c39:p33,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,39,33,perspective_general,1
+de_017250902eee:c41:p18,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,41,18,grammatical_first_person; perspective_general,2
+de_017250902eee:c42:p3,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,42,3,perspective_general,1
+de_017250902eee:c46:p1,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,46,1,narrative_style_voice; perspective_general,2
+de_017250902eee:c49:p7,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,49,7,information_control; voice_general,2
+de_017250902eee:c49:p10,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,49,10,perspective_general; voice_general,2
+de_017250902eee:c49:p11,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,49,11,consciousness_access,1
+de_017250902eee:c49:p13,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,49,13,mode_dramatic,1
+de_017250902eee:c49:p14,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,49,14,mode_balance,1
+de_017250902eee:c77:p1,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,77,1,mode_balance,1
+de_0414af7ce525:c10:p16,de_0414af7ce525,de,"Was wäre, wenn...? Schreibübungen für Schriftsteller",Anne Bernays,2003,primary,fiction_manual,10,16,switching_consistency; thought_representation,2
+de_0414af7ce525:c12:p5,de_0414af7ce525,de,"Was wäre, wenn...? Schreibübungen für Schriftsteller",Anne Bernays,2003,primary,fiction_manual,12,5,grammatical_first_person,1
+de_0414af7ce525:c13:p1,de_0414af7ce525,de,"Was wäre, wenn...? Schreibübungen für Schriftsteller",Anne Bernays,2003,primary,fiction_manual,13,1,grammatical_first_person,1
+de_0414af7ce525:c13:p2,de_0414af7ce525,de,"Was wäre, wenn...? Schreibübungen für Schriftsteller",Anne Bernays,2003,primary,fiction_manual,13,2,grammatical_first_person,1
+de_0414af7ce525:c14:p2,de_0414af7ce525,de,"Was wäre, wenn...? Schreibübungen für Schriftsteller",Anne Bernays,2003,primary,fiction_manual,14,2,grammatical_first_person,1
+de_0414af7ce525:c15:p4,de_0414af7ce525,de,"Was wäre, wenn...? Schreibübungen für Schriftsteller",Anne Bernays,2003,primary,fiction_manual,15,4,grammatical_first_person,1
+de_0414af7ce525:c16:p2,de_0414af7ce525,de,"Was wäre, wenn...? Schreibübungen für Schriftsteller",Anne Bernays,2003,primary,fiction_manual,16,2,grammatical_first_person,1
+de_0414af7ce525:c17:p5,de_0414af7ce525,de,"Was wäre, wenn...? Schreibübungen für Schriftsteller",Anne Bernays,2003,primary,fiction_manual,17,5,speech_dialogue,1
+de_0414af7ce525:c17:p7,de_0414af7ce525,de,"Was wäre, wenn...? Schreibübungen für Schriftsteller",Anne Bernays,2003,primary,fiction_manual,17,7,grammatical_first_person,1
+de_0414af7ce525:c18:p0,de_0414af7ce525,de,"Was wäre, wenn...? Schreibübungen für Schriftsteller",Anne Bernays,2003,primary,fiction_manual,18,0,speech_dialogue,1
+de_0414af7ce525:c33:p2,de_0414af7ce525,de,"Was wäre, wenn...? Schreibübungen für Schriftsteller",Anne Bernays,2003,primary,fiction_manual,33,2,grammatical_first_person,1
+de_0414af7ce525:c38:p5,de_0414af7ce525,de,"Was wäre, wenn...? Schreibübungen für Schriftsteller",Anne Bernays,2003,primary,fiction_manual,38,5,grammatical_first_person,1
+de_0507109a194a:c0:p30,de_0507109a194a,de,Kreatives Schreiben Im Deutschunterricht,Bettina Einhellig,2008,primary,pedagogy_genre_craft,0,30,distance_depth,1
+de_0507109a194a:c0:p130,de_0507109a194a,de,Kreatives Schreiben Im Deutschunterricht,Bettina Einhellig,2008,primary,pedagogy_genre_craft,0,130,switching_consistency,1
+de_0507109a194a:c0:p175,de_0507109a194a,de,Kreatives Schreiben Im Deutschunterricht,Bettina Einhellig,2008,primary,pedagogy_genre_craft,0,175,narrative_style_voice,1
+de_0507109a194a:c0:p319,de_0507109a194a,de,Kreatives Schreiben Im Deutschunterricht,Bettina Einhellig,2008,primary,pedagogy_genre_craft,0,319,speech_dialogue,1
+de_0507109a194a:c0:p476,de_0507109a194a,de,Kreatives Schreiben Im Deutschunterricht,Bettina Einhellig,2008,primary,pedagogy_genre_craft,0,476,speech_dialogue,1
+de_0507109a194a:c0:p511,de_0507109a194a,de,Kreatives Schreiben Im Deutschunterricht,Bettina Einhellig,2008,primary,pedagogy_genre_craft,0,511,speech_dialogue,1
+de_0507109a194a:c0:p516,de_0507109a194a,de,Kreatives Schreiben Im Deutschunterricht,Bettina Einhellig,2008,primary,pedagogy_genre_craft,0,516,speech_dialogue,1
+de_0507109a194a:c0:p798,de_0507109a194a,de,Kreatives Schreiben Im Deutschunterricht,Bettina Einhellig,2008,primary,pedagogy_genre_craft,0,798,grammatical_first_person,1
+de_06b43f8bc57b:c0:p16,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,16,switching_consistency,1
+de_06b43f8bc57b:c0:p21,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,21,focalization_variable; switching_consistency,2
+de_06b43f8bc57b:c0:p38,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,38,switching_consistency,1
+de_06b43f8bc57b:c0:p41,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,41,grammatical_first_person,1
+de_06b43f8bc57b:c0:p57,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,57,switching_consistency,1
+de_06b43f8bc57b:c0:p62,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,62,switching_consistency,1
+de_06b43f8bc57b:c0:p63,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,63,focalization_variable; switching_consistency,2
+de_06b43f8bc57b:c0:p76,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,76,switching_consistency,1
+de_06b43f8bc57b:c0:p136,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,136,consciousness_access,1
+de_06b43f8bc57b:c0:p143,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,143,switching_consistency,1
+de_06b43f8bc57b:c0:p144,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,144,switching_consistency,1
+de_06b43f8bc57b:c0:p151,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,151,switching_consistency,1
+de_06b43f8bc57b:c0:p160,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,160,grammatical_first_person; switching_consistency,2
+de_06b43f8bc57b:c0:p166,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,166,consciousness_access,1
+de_06b43f8bc57b:c0:p176,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,176,perspective_general,1
+de_06b43f8bc57b:c0:p215,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,215,perspective_general,1
+de_06b43f8bc57b:c0:p220,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,220,perspective_general,1
+de_06b43f8bc57b:c0:p233,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,233,switching_consistency,1
+de_06b43f8bc57b:c0:p234,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,234,switching_consistency,1
+de_06b43f8bc57b:c0:p236,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,236,switching_consistency,1
+de_06b43f8bc57b:c0:p246,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,246,perspective_general; switching_consistency,2
+de_06b43f8bc57b:c0:p260,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,260,perspective_general,1
+de_06b43f8bc57b:c0:p263,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,263,grammatical_first_person,1
+de_06b43f8bc57b:c0:p273,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,273,switching_consistency,1
+de_06b43f8bc57b:c0:p292,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,292,grammatical_first_person,1
+de_06b43f8bc57b:c0:p324,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,324,switching_consistency,1
+de_06b43f8bc57b:c0:p329,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,329,switching_consistency,1
+de_06b43f8bc57b:c0:p333,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,333,switching_consistency,1
+de_111d77f70faf:c5:p7,de_111d77f70faf,de,»Kreatives Schreiben« als Methode zur Förderung der  Schreibkompetenz,Hanna Cieslak,,primary,pedagogy_genre_craft,5,7,perspective_general,1
+de_111d77f70faf:c6:p2,de_111d77f70faf,de,»Kreatives Schreiben« als Methode zur Förderung der  Schreibkompetenz,Hanna Cieslak,,primary,pedagogy_genre_craft,6,2,perspective_general,1
+de_111d77f70faf:c6:p3,de_111d77f70faf,de,»Kreatives Schreiben« als Methode zur Förderung der  Schreibkompetenz,Hanna Cieslak,,primary,pedagogy_genre_craft,6,3,consciousness_access; focalization_internal; grammatical_first_person; perspective_general,4
+de_111d77f70faf:c6:p4,de_111d77f70faf,de,»Kreatives Schreiben« als Methode zur Förderung der  Schreibkompetenz,Hanna Cieslak,,primary,pedagogy_genre_craft,6,4,consciousness_access; focalization_variable; grammatical_second_person; perspective_general,4
+de_111d77f70faf:c7:p3,de_111d77f70faf,de,»Kreatives Schreiben« als Methode zur Förderung der  Schreibkompetenz,Hanna Cieslak,,primary,pedagogy_genre_craft,7,3,choice_tradeoffs,1
+de_111d77f70faf:c7:p5,de_111d77f70faf,de,»Kreatives Schreiben« als Methode zur Förderung der  Schreibkompetenz,Hanna Cieslak,,primary,pedagogy_genre_craft,7,5,switching_consistency; thought_representation,2
+de_111d77f70faf:c7:p6,de_111d77f70faf,de,»Kreatives Schreiben« als Methode zur Förderung der  Schreibkompetenz,Hanna Cieslak,,primary,pedagogy_genre_craft,7,6,switching_consistency,1
+de_111d77f70faf:c7:p14,de_111d77f70faf,de,»Kreatives Schreiben« als Methode zur Förderung der  Schreibkompetenz,Hanna Cieslak,,primary,pedagogy_genre_craft,7,14,narrator_level_time,1
+de_20949e1984dc:c5:p656,de_20949e1984dc,de,Vier Seiten für ein Halleluja,Hans Peter Roentgen,2008,primary,fiction_manual,5,656,voice_general,1
+de_20949e1984dc:c5:p657,de_20949e1984dc,de,Vier Seiten für ein Halleluja,Hans Peter Roentgen,2008,primary,fiction_manual,5,657,voice_general,1
+de_20949e1984dc:c6:p203,de_20949e1984dc,de,Vier Seiten für ein Halleluja,Hans Peter Roentgen,2008,primary,fiction_manual,6,203,grammatical_first_person,1
+de_20949e1984dc:c9:p19,de_20949e1984dc,de,Vier Seiten für ein Halleluja,Hans Peter Roentgen,2008,primary,fiction_manual,9,19,perspective_general,1
+de_20949e1984dc:c9:p93,de_20949e1984dc,de,Vier Seiten für ein Halleluja,Hans Peter Roentgen,2008,primary,fiction_manual,9,93,perspective_general,1
+de_26856f179d5e:c0:p0,de_26856f179d5e,de,Kunst und Technik des Erzählens,Otto Kruse,2001,primary,fiction_manual,0,0,choice_tradeoffs,1
+de_26856f179d5e:c3:p0,de_26856f179d5e,de,Kunst und Technik des Erzählens,Otto Kruse,2001,primary,fiction_manual,3,0,choice_tradeoffs; stance_figural; thought_representation; voice_general,4
+de_26856f179d5e:c4:p0,de_26856f179d5e,de,Kunst und Technik des Erzählens,Otto Kruse,2001,primary,fiction_manual,4,0,choice_tradeoffs; consciousness_access; focalization_internal; focalization_variable; focalization_zero; grammatical_first_person; mode_dramatic; narrator_level_time; perspective_general; speech_dialogue; stance_figural; stance_narratorial; switching_consistency; thought_representation; voice_general,15
+de_26856f179d5e:c5:p0,de_26856f179d5e,de,Kunst und Technik des Erzählens,Otto Kruse,2001,primary,fiction_manual,5,0,consciousness_access; grammatical_first_person; perspective_general; thought_representation; voice_general,5
+de_26856f179d5e:c6:p0,de_26856f179d5e,de,Kunst und Technik des Erzählens,Otto Kruse,2001,primary,fiction_manual,6,0,grammatical_first_person; perspective_general; thought_representation; voice_general,4
+de_26856f179d5e:c7:p0,de_26856f179d5e,de,Kunst und Technik des Erzählens,Otto Kruse,2001,primary,fiction_manual,7,0,choice_tradeoffs; consciousness_access; focalization_zero; grammatical_first_person; grammatical_third_person; mode_narrative; narrator_level_time; perspective_general; speech_dialogue; stance_figural; stance_narratorial; thought_representation; voice_general,13
+de_26856f179d5e:c8:p0,de_26856f179d5e,de,Kunst und Technik des Erzählens,Otto Kruse,2001,primary,fiction_manual,8,0,grammatical_first_person; grammatical_second_person; perspective_general; thought_representation; voice_general,5
+de_26856f179d5e:c9:p0,de_26856f179d5e,de,Kunst und Technik des Erzählens,Otto Kruse,2001,primary,fiction_manual,9,0,consciousness_access; grammatical_first_person; mode_dramatic; perspective_general; thought_representation; voice_general,6
+de_26856f179d5e:c10:p0,de_26856f179d5e,de,Kunst und Technik des Erzählens,Otto Kruse,2001,primary,fiction_manual,10,0,perspective_general; voice_general,2
+de_26856f179d5e:c11:p0,de_26856f179d5e,de,Kunst und Technik des Erzählens,Otto Kruse,2001,primary,fiction_manual,11,0,choice_tradeoffs; voice_general,2
+de_2e945ad0ab40:c0:p130,de_2e945ad0ab40,de,Besser Schreiben,Michael-Conrad Stark,,primary,fiction_manual,0,130,speech_dialogue,1
+de_314339722936:c1:p0,de_314339722936,de,Literatur in 5 Minuten,Roberta Allen,,primary,fiction_manual,1,0,consciousness_access; focalization_variable; grammatical_first_person; grammatical_second_person; perspective_general; switching_consistency; voice_general,7
+de_314339722936:c3:p0,de_314339722936,de,Literatur in 5 Minuten,Roberta Allen,,primary,fiction_manual,3,0,consciousness_access; perspective_general; thought_representation; voice_general,4
+de_37c213763dd2:c7:p1,de_37c213763dd2,de,Schreiben über mich selbst,Hanns-Josef Ortheil,2013,primary,fiction_manual,7,1,grammatical_first_person,1
+de_37c213763dd2:c7:p3,de_37c213763dd2,de,Schreiben über mich selbst,Hanns-Josef Ortheil,2013,primary,fiction_manual,7,3,grammatical_first_person,1
+de_37c213763dd2:c9:p16,de_37c213763dd2,de,Schreiben über mich selbst,Hanns-Josef Ortheil,2013,primary,fiction_manual,9,16,thought_representation,1
+de_37c213763dd2:c9:p17,de_37c213763dd2,de,Schreiben über mich selbst,Hanns-Josef Ortheil,2013,primary,fiction_manual,9,17,thought_representation,1
+de_37c213763dd2:c9:p21,de_37c213763dd2,de,Schreiben über mich selbst,Hanns-Josef Ortheil,2013,primary,fiction_manual,9,21,choice_tradeoffs; narrative_style_voice,2
+de_37f3f9d87441:c7:p14,de_37f3f9d87441,de,Suspense oder Wie man einen Thriller schreibt,Patricia Highsmith,,primary,fiction_manual,7,14,switching_consistency,1
+de_37f3f9d87441:c10:p35,de_37f3f9d87441,de,Suspense oder Wie man einen Thriller schreibt,Patricia Highsmith,,primary,fiction_manual,10,35,perspective_general,1
+de_37f3f9d87441:c10:p63,de_37f3f9d87441,de,Suspense oder Wie man einen Thriller schreibt,Patricia Highsmith,,primary,fiction_manual,10,63,grammatical_first_person,1
+de_37f3f9d87441:c11:p11,de_37f3f9d87441,de,Suspense oder Wie man einen Thriller schreibt,Patricia Highsmith,,primary,fiction_manual,11,11,perspective_general,1
+de_37f3f9d87441:c11:p12,de_37f3f9d87441,de,Suspense oder Wie man einen Thriller schreibt,Patricia Highsmith,,primary,fiction_manual,11,12,grammatical_first_person; perspective_general,2
+de_37f3f9d87441:c11:p14,de_37f3f9d87441,de,Suspense oder Wie man einen Thriller schreibt,Patricia Highsmith,,primary,fiction_manual,11,14,perspective_general,1
+de_37f3f9d87441:c11:p15,de_37f3f9d87441,de,Suspense oder Wie man einen Thriller schreibt,Patricia Highsmith,,primary,fiction_manual,11,15,perspective_general,1
+de_37f3f9d87441:c11:p17,de_37f3f9d87441,de,Suspense oder Wie man einen Thriller schreibt,Patricia Highsmith,,primary,fiction_manual,11,17,mode_balance,1
+de_37f3f9d87441:c11:p19,de_37f3f9d87441,de,Suspense oder Wie man einen Thriller schreibt,Patricia Highsmith,,primary,fiction_manual,11,19,perspective_general,1
+de_37f3f9d87441:c11:p22,de_37f3f9d87441,de,Suspense oder Wie man einen Thriller schreibt,Patricia Highsmith,,primary,fiction_manual,11,22,grammatical_first_person,1
+de_37f3f9d87441:c11:p26,de_37f3f9d87441,de,Suspense oder Wie man einen Thriller schreibt,Patricia Highsmith,,primary,fiction_manual,11,26,choice_tradeoffs; perspective_general,2
+de_37f3f9d87441:c13:p4,de_37f3f9d87441,de,Suspense oder Wie man einen Thriller schreibt,Patricia Highsmith,,primary,fiction_manual,13,4,grammatical_first_person,1
+de_37f3f9d87441:c13:p9,de_37f3f9d87441,de,Suspense oder Wie man einen Thriller schreibt,Patricia Highsmith,,primary,fiction_manual,13,9,mode_balance,1
+de_3b73957550ed:c20:p0,de_3b73957550ed,de,"Die Odyssee der Drehbuchschreiber, Romanautoren und Dramatiker",Christopher Vogler,2018,primary,pedagogy_genre_craft,20,0,mode_narrative; perspective_general,2
+de_3b73957550ed:c21:p0,de_3b73957550ed,de,"Die Odyssee der Drehbuchschreiber, Romanautoren und Dramatiker",Christopher Vogler,2018,primary,pedagogy_genre_craft,21,0,mode_dramatic; narrative_style_voice; narrator_level_time,3
+de_3d46a7a7da96:c2:p0,de_3d46a7a7da96,de,Was dem Lektorat auffällt,Hans Peter Roentgen,,primary,fiction_manual,2,0,distance_depth; grammatical_first_person; grammatical_second_person; grammatical_third_person; narrative_style_voice; perspective_general; switching_consistency; thought_representation,8
+de_3ff574f5ec85:c8:p21,de_3ff574f5ec85,de,Mit dem Schreiben anfangen,Hanns-Josef Ortheil,,primary,fiction_manual,8,21,grammatical_first_person; grammatical_third_person; voice_general,3
+de_43f906dc2d84:c0:p21,de_43f906dc2d84,de,"Alles, Was in Mir Steckt",Renate Haumann Petra Rechenberg-Winter; Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,0,21,grammatical_first_person,1
+de_43f906dc2d84:c0:p23,de_43f906dc2d84,de,"Alles, Was in Mir Steckt",Renate Haumann Petra Rechenberg-Winter; Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,0,23,thought_representation,1
+de_43f906dc2d84:c0:p25,de_43f906dc2d84,de,"Alles, Was in Mir Steckt",Renate Haumann Petra Rechenberg-Winter; Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,0,25,switching_consistency,1
+de_43f906dc2d84:c0:p47,de_43f906dc2d84,de,"Alles, Was in Mir Steckt",Renate Haumann Petra Rechenberg-Winter; Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,0,47,switching_consistency,1
+de_43f906dc2d84:c0:p59,de_43f906dc2d84,de,"Alles, Was in Mir Steckt",Renate Haumann Petra Rechenberg-Winter; Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,0,59,switching_consistency,1
+de_43f906dc2d84:c0:p61,de_43f906dc2d84,de,"Alles, Was in Mir Steckt",Renate Haumann Petra Rechenberg-Winter; Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,0,61,focalization_variable; switching_consistency,2
+de_43f906dc2d84:c0:p62,de_43f906dc2d84,de,"Alles, Was in Mir Steckt",Renate Haumann Petra Rechenberg-Winter; Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,0,62,focalization_variable; switching_consistency,2
+de_43f906dc2d84:c0:p64,de_43f906dc2d84,de,"Alles, Was in Mir Steckt",Renate Haumann Petra Rechenberg-Winter; Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,0,64,focalization_variable; switching_consistency,2
+de_43f906dc2d84:c0:p65,de_43f906dc2d84,de,"Alles, Was in Mir Steckt",Renate Haumann Petra Rechenberg-Winter; Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,0,65,focalization_variable; switching_consistency,2
+de_43f906dc2d84:c0:p69,de_43f906dc2d84,de,"Alles, Was in Mir Steckt",Renate Haumann Petra Rechenberg-Winter; Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,0,69,grammatical_first_person; grammatical_third_person,2
+de_43f906dc2d84:c0:p246,de_43f906dc2d84,de,"Alles, Was in Mir Steckt",Renate Haumann Petra Rechenberg-Winter; Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,0,246,switching_consistency,1
+de_43f906dc2d84:c0:p302,de_43f906dc2d84,de,"Alles, Was in Mir Steckt",Renate Haumann Petra Rechenberg-Winter; Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,0,302,grammatical_first_person,1
+de_44834789ac99:c3:p131,de_44834789ac99,de,Plot & Struktur,Stephan Waldscheidt,,primary,fiction_manual,3,131,information_control,1
+de_44834789ac99:c14:p95,de_44834789ac99,de,Plot & Struktur,Stephan Waldscheidt,,primary,fiction_manual,14,95,consciousness_access,1
+de_44834789ac99:c15:p47,de_44834789ac99,de,Plot & Struktur,Stephan Waldscheidt,,primary,fiction_manual,15,47,narrator_level_time,1
+de_44834789ac99:c30:p23,de_44834789ac99,de,Plot & Struktur,Stephan Waldscheidt,,primary,fiction_manual,30,23,narrative_style_voice,1
+de_44834789ac99:c33:p14,de_44834789ac99,de,Plot & Struktur,Stephan Waldscheidt,,primary,fiction_manual,33,14,mode_dramatic,1
+de_44834789ac99:c34:p3,de_44834789ac99,de,Plot & Struktur,Stephan Waldscheidt,,primary,fiction_manual,34,3,voice_general,1
+de_44834789ac99:c34:p6,de_44834789ac99,de,Plot & Struktur,Stephan Waldscheidt,,primary,fiction_manual,34,6,narrative_style_voice,1
+de_44834789ac99:c34:p8,de_44834789ac99,de,Plot & Struktur,Stephan Waldscheidt,,primary,fiction_manual,34,8,perspective_general; thought_representation,2
+de_44834789ac99:c45:p11,de_44834789ac99,de,Plot & Struktur,Stephan Waldscheidt,,primary,fiction_manual,45,11,perspective_general,1
+de_44834789ac99:c45:p113,de_44834789ac99,de,Plot & Struktur,Stephan Waldscheidt,,primary,fiction_manual,45,113,perspective_general,1
+de_47b64c10710e:c11:p2,de_47b64c10710e,de,Schreiben unter Strom,Stephan Porombka,2012,primary,fiction_manual,11,2,perspective_general,1
+de_47b64c10710e:c11:p6,de_47b64c10710e,de,Schreiben unter Strom,Stephan Porombka,2012,primary,fiction_manual,11,6,grammatical_first_person,1
+de_47b64c10710e:c16:p7,de_47b64c10710e,de,Schreiben unter Strom,Stephan Porombka,2012,primary,fiction_manual,16,7,grammatical_first_person,1
+de_47b64c10710e:c16:p8,de_47b64c10710e,de,Schreiben unter Strom,Stephan Porombka,2012,primary,fiction_manual,16,8,perspective_general,1
+de_47b64c10710e:c19:p3,de_47b64c10710e,de,Schreiben unter Strom,Stephan Porombka,2012,primary,fiction_manual,19,3,grammatical_first_person,1
+de_47b64c10710e:c19:p6,de_47b64c10710e,de,Schreiben unter Strom,Stephan Porombka,2012,primary,fiction_manual,19,6,consciousness_access,1
+de_4c918ab1f7cf:c14:p33,de_4c918ab1f7cf,de,Schreiben heisst sich selber lesen,Christa Thomassen,,primary,fiction_manual,14,33,thought_representation,1
+de_4c918ab1f7cf:c15:p9,de_4c918ab1f7cf,de,Schreiben heisst sich selber lesen,Christa Thomassen,,primary,fiction_manual,15,9,grammatical_first_person,1
+de_4c918ab1f7cf:c15:p11,de_4c918ab1f7cf,de,Schreiben heisst sich selber lesen,Christa Thomassen,,primary,fiction_manual,15,11,grammatical_first_person,1
+de_4c918ab1f7cf:c18:p49,de_4c918ab1f7cf,de,Schreiben heisst sich selber lesen,Christa Thomassen,,primary,fiction_manual,18,49,narrative_style_voice,1
+de_50887c6e1985:c7:p1,de_50887c6e1985,de,Garantiert schreiben lernen,Gabriele Lusser Rico,2004,primary,fiction_manual,7,1,narrative_style_voice,1
+de_50887c6e1985:c9:p12,de_50887c6e1985,de,Garantiert schreiben lernen,Gabriele Lusser Rico,2004,primary,fiction_manual,9,12,grammatical_first_person,1
+de_50887c6e1985:c12:p9,de_50887c6e1985,de,Garantiert schreiben lernen,Gabriele Lusser Rico,2004,primary,fiction_manual,12,9,perspective_general,1
+de_52e95775c634:c0:p41,de_52e95775c634,de,Kreatives und therapeutisches Schreiben,Silke Heimes,2008,primary,pedagogy_genre_craft,0,41,narrative_style_voice,1
+de_52e95775c634:c0:p82,de_52e95775c634,de,Kreatives und therapeutisches Schreiben,Silke Heimes,2008,primary,pedagogy_genre_craft,0,82,consciousness_access,1
+de_52e95775c634:c0:p95,de_52e95775c634,de,Kreatives und therapeutisches Schreiben,Silke Heimes,2008,primary,pedagogy_genre_craft,0,95,grammatical_first_person; grammatical_third_person,2
+de_52e95775c634:c0:p96,de_52e95775c634,de,Kreatives und therapeutisches Schreiben,Silke Heimes,2008,primary,pedagogy_genre_craft,0,96,grammatical_first_person,1
+de_52e95775c634:c0:p112,de_52e95775c634,de,Kreatives und therapeutisches Schreiben,Silke Heimes,2008,primary,pedagogy_genre_craft,0,112,consciousness_access,1
+de_59743f15dc4d:c0:p162,de_59743f15dc4d,de,Schreiben und Lesen,Elisabeth Paefgen,,primary,pedagogy_genre_craft,0,162,mode_dramatic,1
+de_59743f15dc4d:c0:p209,de_59743f15dc4d,de,Schreiben und Lesen,Elisabeth Paefgen,,primary,pedagogy_genre_craft,0,209,thought_representation,1
+de_59743f15dc4d:c0:p214,de_59743f15dc4d,de,Schreiben und Lesen,Elisabeth Paefgen,,primary,pedagogy_genre_craft,0,214,thought_representation,1
+de_59743f15dc4d:c0:p242,de_59743f15dc4d,de,Schreiben und Lesen,Elisabeth Paefgen,,primary,pedagogy_genre_craft,0,242,grammatical_first_person,1
+de_5af864ea1c5e:c8:p11,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,8,11,perspective_general,1
+de_5af864ea1c5e:c8:p15,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,8,15,perspective_general,1
+de_5af864ea1c5e:c11:p29,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,11,29,information_control,1
+de_5af864ea1c5e:c14:p11,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,14,11,information_control,1
+de_5af864ea1c5e:c17:p23,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,17,23,mode_narrative,1
+de_5af864ea1c5e:c20:p33,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,20,33,mode_dramatic,1
+de_5af864ea1c5e:c20:p42,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,20,42,perspective_general,1
+de_5af864ea1c5e:c20:p50,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,20,50,narrative_style_voice; voice_general,2
+de_5af864ea1c5e:c21:p2,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,21,2,information_control,1
+de_5af864ea1c5e:c21:p4,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,21,4,information_control,1
+de_5af864ea1c5e:c21:p5,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,21,5,information_control,1
+de_5af864ea1c5e:c21:p7,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,21,7,information_control,1
+de_5af864ea1c5e:c21:p55,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,21,55,information_control,1
+de_5af864ea1c5e:c21:p57,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,21,57,information_control,1
+de_5af864ea1c5e:c22:p2,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,22,2,information_control,1
+de_5af864ea1c5e:c22:p3,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,22,3,information_control,1
+de_5af864ea1c5e:c22:p6,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,22,6,information_control,1
+de_5af864ea1c5e:c22:p9,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,22,9,information_control,1
+de_5af864ea1c5e:c22:p10,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,22,10,information_control,1
+de_5af864ea1c5e:c22:p15,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,22,15,information_control,1
+de_5af864ea1c5e:c22:p16,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,22,16,information_control,1
+de_5af864ea1c5e:c22:p17,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,22,17,information_control,1
+de_5af864ea1c5e:c23:p1,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,23,1,information_control,1
+de_5d88f23e5040:c7:p7,de_5d88f23e5040,de,Dramatisches Schreiben,Lajos Egri,,primary,pedagogy_genre_craft,7,7,grammatical_first_person,1
+de_5d88f23e5040:c24:p10,de_5d88f23e5040,de,Dramatisches Schreiben,Lajos Egri,,primary,pedagogy_genre_craft,24,10,perspective_general,1
+de_5d88f23e5040:c29:p7,de_5d88f23e5040,de,Dramatisches Schreiben,Lajos Egri,,primary,pedagogy_genre_craft,29,7,grammatical_first_person,1
+de_5d88f23e5040:c30:p10,de_5d88f23e5040,de,Dramatisches Schreiben,Lajos Egri,,primary,pedagogy_genre_craft,30,10,grammatical_first_person,1
+de_5d88f23e5040:c32:p33,de_5d88f23e5040,de,Dramatisches Schreiben,Lajos Egri,,primary,pedagogy_genre_craft,32,33,perspective_general,1
+de_5d88f23e5040:c33:p8,de_5d88f23e5040,de,Dramatisches Schreiben,Lajos Egri,,primary,pedagogy_genre_craft,33,8,grammatical_first_person,1
+de_5d88f23e5040:c33:p11,de_5d88f23e5040,de,Dramatisches Schreiben,Lajos Egri,,primary,pedagogy_genre_craft,33,11,grammatical_first_person,1
+de_5d88f23e5040:c36:p11,de_5d88f23e5040,de,Dramatisches Schreiben,Lajos Egri,,primary,pedagogy_genre_craft,36,11,grammatical_first_person,1
+de_5d88f23e5040:c36:p18,de_5d88f23e5040,de,Dramatisches Schreiben,Lajos Egri,,primary,pedagogy_genre_craft,36,18,grammatical_first_person,1
+de_5d88f23e5040:c43:p1,de_5d88f23e5040,de,Dramatisches Schreiben,Lajos Egri,,primary,pedagogy_genre_craft,43,1,reader_effect,1
+de_635af8e255a9:c0:p43,de_635af8e255a9,de,Du - Ich - Wir,Silke Heimes,,primary,pedagogy_genre_craft,0,43,switching_consistency,1
+de_635af8e255a9:c0:p85,de_635af8e255a9,de,Du - Ich - Wir,Silke Heimes,,primary,pedagogy_genre_craft,0,85,distance_depth,1
+de_635af8e255a9:c0:p86,de_635af8e255a9,de,Du - Ich - Wir,Silke Heimes,,primary,pedagogy_genre_craft,0,86,distance_depth,1
+de_6579a8be2114:c5:p95,de_6579a8be2114,de,Schreiben dicht am Leben,Hanns-Josef Ortheil,2011,primary,fiction_manual,5,95,switching_consistency,1
+de_660df57bec8d:c0:p0,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,0,0,perspective_general,1
+de_660df57bec8d:c2:p27,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,2,27,grammatical_first_person,1
+de_660df57bec8d:c2:p41,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,2,41,voice_protagonist,1
+de_660df57bec8d:c2:p82,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,2,82,voice_general,1
+de_660df57bec8d:c2:p124,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,2,124,perspective_general,1
+de_660df57bec8d:c2:p127,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,2,127,perspective_general,1
+de_660df57bec8d:c2:p169,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,2,169,mode_dramatic,1
+de_660df57bec8d:c2:p171,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,2,171,mode_dramatic,1
+de_660df57bec8d:c2:p218,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,2,218,thought_representation,1
+de_660df57bec8d:c2:p224,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,2,224,grammatical_first_person,1
+de_660df57bec8d:c2:p238,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,2,238,mode_balance,1
+de_660df57bec8d:c2:p252,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,2,252,thought_representation,1
+de_660df57bec8d:c2:p266,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,2,266,grammatical_first_person; perspective_general,2
+de_660df57bec8d:c2:p277,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,2,277,perspective_general,1
+de_660df57bec8d:c4:p8,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,8,grammatical_third_person,1
+de_660df57bec8d:c4:p10,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,10,grammatical_first_person,1
+de_660df57bec8d:c4:p21,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,21,grammatical_first_person,1
+de_660df57bec8d:c4:p22,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,22,grammatical_first_person,1
+de_660df57bec8d:c4:p27,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,27,grammatical_first_person; perspective_general,2
+de_660df57bec8d:c4:p29,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,29,grammatical_first_person,1
+de_660df57bec8d:c4:p30,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,30,grammatical_first_person; grammatical_third_person,2
+de_660df57bec8d:c4:p32,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,32,distance_depth,1
+de_660df57bec8d:c4:p34,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,34,thought_representation,1
+de_660df57bec8d:c4:p40,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,40,grammatical_first_person; grammatical_third_person; thought_representation,3
+de_660df57bec8d:c4:p41,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,41,thought_representation,1
+de_660df57bec8d:c4:p42,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,42,thought_representation,1
+de_660df57bec8d:c4:p44,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,44,consciousness_access,1
+de_660df57bec8d:c4:p45,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,45,grammatical_first_person; multiple_focalization_same_event; perspective_general; stance_figural; switching_consistency; thought_representation,6
+de_660df57bec8d:c4:p48,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,48,perspective_general,1
+de_660df57bec8d:c4:p50,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,50,grammatical_third_person,1
+de_660df57bec8d:c4:p51,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,51,grammatical_first_person; narrator_level_time,2
+de_660df57bec8d:c4:p52,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,52,thought_representation,1
+de_660df57bec8d:c4:p54,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,54,grammatical_first_person,1
+de_660df57bec8d:c5:p12,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,5,12,perspective_general,1
+de_660df57bec8d:c5:p19,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,5,19,narrator_level_time,1
+de_660df57bec8d:c5:p104,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,5,104,thought_representation,1
+de_660df57bec8d:c5:p124,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,5,124,mode_balance,1
+de_660df57bec8d:c5:p135,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,5,135,mode_dramatic,1
+de_660df57bec8d:c5:p170,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,5,170,grammatical_first_person,1
+de_660df57bec8d:c5:p192,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,5,192,thought_representation,1
+de_660df57bec8d:c5:p236,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,5,236,voice_general,1
+de_660df57bec8d:c5:p268,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,5,268,grammatical_first_person; mode_balance,2
+de_660df57bec8d:c5:p292,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,5,292,mode_dramatic,1
+de_660df57bec8d:c6:p7,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,6,7,perspective_general,1
+de_660df57bec8d:c6:p35,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,6,35,distance_depth,1
+de_660df57bec8d:c6:p37,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,6,37,grammatical_first_person,1
+de_660df57bec8d:c8:p14,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,8,14,consciousness_access; grammatical_first_person,2
+de_660df57bec8d:c8:p24,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,8,24,perspective_general,1
+de_660df57bec8d:c8:p59,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,8,59,distance_depth; narrative_style_voice,2
+de_69951f01b0f8:c3:p5,de_69951f01b0f8,de,Biografisches und Kreatives Schreiben Gegen Prüfungsangst,Susanne Femers-Koch,2021,primary,pedagogy_genre_craft,3,5,consciousness_access,1
+de_69951f01b0f8:c4:p19,de_69951f01b0f8,de,Biografisches und Kreatives Schreiben Gegen Prüfungsangst,Susanne Femers-Koch,2021,primary,pedagogy_genre_craft,4,19,switching_consistency,1
+de_69951f01b0f8:c5:p10,de_69951f01b0f8,de,Biografisches und Kreatives Schreiben Gegen Prüfungsangst,Susanne Femers-Koch,2021,primary,pedagogy_genre_craft,5,10,focalization_variable; switching_consistency,2
+de_69951f01b0f8:c5:p20,de_69951f01b0f8,de,Biografisches und Kreatives Schreiben Gegen Prüfungsangst,Susanne Femers-Koch,2021,primary,pedagogy_genre_craft,5,20,switching_consistency,1
+de_69dd92910957:c3:p0,de_69dd92910957,de,Leid Kreativ Wandeln,Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,3,0,grammatical_first_person; perspective_general,2
+de_69dd92910957:c4:p1,de_69dd92910957,de,Leid Kreativ Wandeln,Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,4,1,grammatical_first_person,1
+de_69dd92910957:c5:p0,de_69dd92910957,de,Leid Kreativ Wandeln,Petra Rechenberg-Winter,,primary,pedagogy_genre_craft,5,0,grammatical_first_person; grammatical_third_person; narrative_style_voice; perspective_general; thought_representation,5
+de_79efc1d01c06:c13:p3,de_79efc1d01c06,de,Schreiben Tag für Tag,Christian Schärf,2011,primary,fiction_manual,13,3,perspective_general,1
+de_79efc1d01c06:c16:p0,de_79efc1d01c06,de,Schreiben Tag für Tag,Christian Schärf,2011,primary,fiction_manual,16,0,grammatical_first_person,1
+de_79efc1d01c06:c28:p4,de_79efc1d01c06,de,Schreiben Tag für Tag,Christian Schärf,2011,primary,fiction_manual,28,4,switching_consistency,1
+de_79efc1d01c06:c30:p0,de_79efc1d01c06,de,Schreiben Tag für Tag,Christian Schärf,2011,primary,fiction_manual,30,0,grammatical_first_person,1
+de_79efc1d01c06:c30:p1,de_79efc1d01c06,de,Schreiben Tag für Tag,Christian Schärf,2011,primary,fiction_manual,30,1,grammatical_first_person,1
+de_79efc1d01c06:c30:p2,de_79efc1d01c06,de,Schreiben Tag für Tag,Christian Schärf,2011,primary,fiction_manual,30,2,grammatical_first_person,1
+de_7cd94b463388:c0:p29,de_7cd94b463388,de,Schreib es dir von der Seele,Silke Heimes,2015,primary,pedagogy_genre_craft,0,29,grammatical_first_person; grammatical_third_person; perspective_general,3
+de_7cd94b463388:c0:p72,de_7cd94b463388,de,Schreib es dir von der Seele,Silke Heimes,2015,primary,pedagogy_genre_craft,0,72,consciousness_access,1
+de_7cd94b463388:c0:p102,de_7cd94b463388,de,Schreib es dir von der Seele,Silke Heimes,2015,primary,pedagogy_genre_craft,0,102,switching_consistency,1
+de_7cd94b463388:c0:p117,de_7cd94b463388,de,Schreib es dir von der Seele,Silke Heimes,2015,primary,pedagogy_genre_craft,0,117,consciousness_access,1
+de_7cd94b463388:c0:p127,de_7cd94b463388,de,Schreib es dir von der Seele,Silke Heimes,2015,primary,pedagogy_genre_craft,0,127,grammatical_first_person; grammatical_third_person; perspective_general,3
+de_7cd94b463388:c0:p128,de_7cd94b463388,de,Schreib es dir von der Seele,Silke Heimes,2015,primary,pedagogy_genre_craft,0,128,grammatical_first_person; perspective_general,2
+de_7cd94b463388:c0:p129,de_7cd94b463388,de,Schreib es dir von der Seele,Silke Heimes,2015,primary,pedagogy_genre_craft,0,129,grammatical_second_person,1
+de_7cd94b463388:c0:p130,de_7cd94b463388,de,Schreib es dir von der Seele,Silke Heimes,2015,primary,pedagogy_genre_craft,0,130,grammatical_first_person; grammatical_third_person,2
+de_7cd94b463388:c0:p131,de_7cd94b463388,de,Schreib es dir von der Seele,Silke Heimes,2015,primary,pedagogy_genre_craft,0,131,consciousness_access; grammatical_first_person; grammatical_second_person; grammatical_third_person; perspective_general; switching_consistency,6
+de_7cd94b463388:c0:p132,de_7cd94b463388,de,Schreib es dir von der Seele,Silke Heimes,2015,primary,pedagogy_genre_craft,0,132,grammatical_second_person,1
+de_7cd94b463388:c0:p133,de_7cd94b463388,de,Schreib es dir von der Seele,Silke Heimes,2015,primary,pedagogy_genre_craft,0,133,perspective_general,1
+de_7cd94b463388:c0:p154,de_7cd94b463388,de,Schreib es dir von der Seele,Silke Heimes,2015,primary,pedagogy_genre_craft,0,154,grammatical_second_person; perspective_general,2
+de_7cd94b463388:c0:p155,de_7cd94b463388,de,Schreib es dir von der Seele,Silke Heimes,2015,primary,pedagogy_genre_craft,0,155,grammatical_first_person,1
+de_809a3ef948a5:c7:p77,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,7,77,voice_general,1
+de_809a3ef948a5:c10:p13,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,10,13,grammatical_first_person; grammatical_third_person,2
+de_809a3ef948a5:c13:p15,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,13,15,thought_representation,1
+de_809a3ef948a5:c13:p16,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,13,16,thought_representation,1
+de_809a3ef948a5:c14:p23,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,14,23,thought_representation,1
+de_809a3ef948a5:c14:p24,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,14,24,thought_representation,1
+de_809a3ef948a5:c14:p30,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,14,30,perspective_general,1
+de_809a3ef948a5:c17:p16,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,17,16,perspective_general,1
+de_809a3ef948a5:c18:p0,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,0,perspective_general,1
+de_809a3ef948a5:c18:p4,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,4,perspective_general,1
+de_809a3ef948a5:c18:p5,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,5,perspective_general,1
+de_809a3ef948a5:c18:p7,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,7,perspective_general,1
+de_809a3ef948a5:c18:p8,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,8,perspective_general,1
+de_809a3ef948a5:c18:p56,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,56,perspective_general,1
+de_809a3ef948a5:c18:p57,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,57,perspective_general,1
+de_809a3ef948a5:c18:p69,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,69,grammatical_first_person; perspective_general,2
+de_809a3ef948a5:c18:p70,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,70,grammatical_first_person,1
+de_809a3ef948a5:c18:p72,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,72,grammatical_first_person; perspective_general,2
+de_809a3ef948a5:c18:p73,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,73,grammatical_first_person,1
+de_809a3ef948a5:c18:p80,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,80,perspective_general,1
+de_809a3ef948a5:c18:p81,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,81,perspective_general,1
+de_809a3ef948a5:c18:p103,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,103,grammatical_first_person; perspective_general,2
+de_809a3ef948a5:c18:p119,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,119,grammatical_third_person; switching_consistency,2
+de_809a3ef948a5:c18:p120,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,120,grammatical_first_person; perspective_general,2
+de_809a3ef948a5:c18:p121,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,121,grammatical_first_person; grammatical_third_person,2
+de_809a3ef948a5:c18:p122,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,122,grammatical_third_person,1
+de_809a3ef948a5:c18:p133,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,133,grammatical_third_person,1
+de_809a3ef948a5:c18:p134,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,134,grammatical_third_person,1
+de_809a3ef948a5:c18:p138,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,138,perspective_general,1
+de_809a3ef948a5:c18:p140,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,140,grammatical_first_person,1
+de_809a3ef948a5:c18:p141,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,141,grammatical_third_person,1
+de_809a3ef948a5:c19:p4,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,19,4,perspective_general,1
+de_809a3ef948a5:c21:p68,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,21,68,mode_balance,1
+de_809a3ef948a5:c29:p29,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,29,29,thought_representation,1
+de_809a3ef948a5:c31:p16,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,31,16,narrative_style_voice; voice_general,2
+de_809a3ef948a5:c31:p23,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,31,23,choice_tradeoffs,1
+de_809a3ef948a5:c40:p4,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,40,4,thought_representation,1
+de_84168b10ce89:c0:p237,de_84168b10ce89,de,Kreatives Schreiben. Neue Wege der Schreibdidaktik,Andre Schonen,,primary,pedagogy_genre_craft,0,237,grammatical_first_person,1
+de_84168b10ce89:c0:p252,de_84168b10ce89,de,Kreatives Schreiben. Neue Wege der Schreibdidaktik,Andre Schonen,,primary,pedagogy_genre_craft,0,252,focalization_variable,1
+de_8478310c51fa:c5:p9,de_8478310c51fa,de,Wie Romane entstehen,Hanns-Josef Ortheil,,primary,fiction_manual,5,9,narrative_style_voice,1
+de_8478310c51fa:c7:p32,de_8478310c51fa,de,Wie Romane entstehen,Hanns-Josef Ortheil,,primary,fiction_manual,7,32,perspective_general,1
+de_8478310c51fa:c7:p37,de_8478310c51fa,de,Wie Romane entstehen,Hanns-Josef Ortheil,,primary,fiction_manual,7,37,perspective_general,1
+de_8478310c51fa:c7:p38,de_8478310c51fa,de,Wie Romane entstehen,Hanns-Josef Ortheil,,primary,fiction_manual,7,38,perspective_general,1
+de_8478310c51fa:c10:p32,de_8478310c51fa,de,Wie Romane entstehen,Hanns-Josef Ortheil,,primary,fiction_manual,10,32,perspective_general,1
+de_8478310c51fa:c10:p58,de_8478310c51fa,de,Wie Romane entstehen,Hanns-Josef Ortheil,,primary,fiction_manual,10,58,perspective_general,1
+de_87de0ddb50b0:c0:p58,de_87de0ddb50b0,de,Wie schreibe ich meine Erinnerungen?,Wilhelm Ruprecht Frieling,1991,primary,fiction_manual,0,58,perspective_general,1
+de_87de0ddb50b0:c0:p71,de_87de0ddb50b0,de,Wie schreibe ich meine Erinnerungen?,Wilhelm Ruprecht Frieling,1991,primary,fiction_manual,0,71,consciousness_access,1
+de_8a3f85c73003:c26:p31,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,26,31,perspective_general,1
+de_8a3f85c73003:c38:p16,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,38,16,mode_balance,1
+de_8a3f85c73003:c44:p9,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,9,perspective_general,1
+de_8a3f85c73003:c44:p25,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,25,grammatical_first_person,1
+de_8a3f85c73003:c44:p26,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,26,grammatical_first_person,1
+de_8a3f85c73003:c44:p28,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,28,perspective_general,1
+de_8a3f85c73003:c44:p30,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,30,grammatical_first_person; perspective_general,2
+de_8a3f85c73003:c44:p38,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,38,perspective_general,1
+de_8a3f85c73003:c44:p42,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,42,perspective_general,1
+de_8a3f85c73003:c44:p43,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,43,perspective_general,1
+de_8a3f85c73003:c44:p47,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,47,information_control,1
+de_8a3f85c73003:c44:p54,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,54,perspective_general,1
+de_8a3f85c73003:c44:p68,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,68,perspective_general,1
+de_8a3f85c73003:c44:p74,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,74,grammatical_first_person; perspective_general,2
+de_8a3f85c73003:c44:p75,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,75,grammatical_first_person,1
+de_8a3f85c73003:c44:p76,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,76,grammatical_first_person,1
+de_8a3f85c73003:c44:p77,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,77,perspective_general,1
+de_8a3f85c73003:c44:p82,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,82,grammatical_first_person,1
+de_8a3f85c73003:c44:p84,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,84,grammatical_first_person,1
+de_8a3f85c73003:c44:p88,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,88,perspective_general,1
+de_8a3f85c73003:c44:p90,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,44,90,grammatical_first_person; perspective_general,2
+de_8a3f85c73003:c46:p39,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,46,39,grammatical_first_person; perspective_general,2
+de_8a3f85c73003:c52:p42,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,52,42,perspective_general,1
+de_8a3f85c73003:c56:p90,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,56,90,switching_consistency,1
+de_8a3f85c73003:c60:p66,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,60,66,speech_dialogue,1
+de_8a3f85c73003:c89:p44,de_8a3f85c73003,de,Krimis schreiben,Patrick Baumgärtel,,primary,fiction_manual,89,44,grammatical_first_person,1
+de_96e473acb9fd:c0:p15,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,0,15,perspective_general,1
+de_96e473acb9fd:c0:p16,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,0,16,perspective_general,1
+de_96e473acb9fd:c0:p17,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,0,17,grammatical_first_person; perspective_general,2
+de_96e473acb9fd:c3:p30,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,30,narrative_style_voice,1
+de_96e473acb9fd:c3:p80,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,80,reader_effect,1
+de_96e473acb9fd:c3:p119,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,119,grammatical_first_person; narrative_style_voice,2
+de_96e473acb9fd:c3:p174,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,174,perspective_general,1
+de_96e473acb9fd:c3:p179,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,179,perspective_general,1
+de_96e473acb9fd:c3:p181,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,181,grammatical_first_person,1
+de_96e473acb9fd:c3:p187,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,187,grammatical_first_person,1
+de_96e473acb9fd:c3:p189,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,189,perspective_general,1
+de_96e473acb9fd:c3:p193,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,193,grammatical_first_person; perspective_general,2
+de_96e473acb9fd:c3:p202,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,202,grammatical_first_person,1
+de_96e473acb9fd:c3:p206,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,206,grammatical_first_person,1
+de_96e473acb9fd:c3:p209,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,209,grammatical_first_person; voice_general,2
+de_96e473acb9fd:c3:p210,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,210,grammatical_first_person,1
+de_96e473acb9fd:c3:p212,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,212,grammatical_first_person,1
+de_96e473acb9fd:c3:p214,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,214,grammatical_first_person,1
+de_96e473acb9fd:c3:p216,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,216,grammatical_first_person,1
+de_96e473acb9fd:c3:p217,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,217,grammatical_first_person,1
+de_96e473acb9fd:c3:p223,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,223,grammatical_first_person,1
+de_96e473acb9fd:c3:p224,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,224,grammatical_first_person,1
+de_96e473acb9fd:c3:p225,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,225,grammatical_first_person; thought_representation,2
+de_96e473acb9fd:c3:p228,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,228,perspective_general,1
+de_96e473acb9fd:c3:p229,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,229,perspective_general,1
+de_96e473acb9fd:c3:p230,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,230,perspective_general,1
+de_96e473acb9fd:c3:p238,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,238,perspective_general,1
+de_96e473acb9fd:c3:p239,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,239,perspective_general,1
+de_96e473acb9fd:c3:p243,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,243,grammatical_first_person,1
+de_96e473acb9fd:c3:p261,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,261,speech_dialogue,1
+de_96e473acb9fd:c3:p273,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,273,mode_dramatic,1
+de_96e473acb9fd:c3:p284,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,284,grammatical_first_person,1
+de_96e473acb9fd:c3:p435,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,435,narrative_style_voice,1
+de_96e473acb9fd:c4:p57,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,4,57,grammatical_first_person,1
+de_96e473acb9fd:c4:p89,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,4,89,perspective_general,1
+de_96e473acb9fd:c4:p109,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,4,109,grammatical_first_person; perspective_general,2
+de_96e473acb9fd:c4:p131,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,4,131,focalization_zero; grammatical_first_person,2
+de_9890443ed736:c4:p23,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,4,23,grammatical_first_person,1
+de_9890443ed736:c4:p58,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,4,58,narrative_style_voice,1
+de_9890443ed736:c5:p111,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,111,grammatical_first_person,1
+de_9890443ed736:c5:p126,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,126,grammatical_first_person,1
+de_9890443ed736:c5:p127,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,127,grammatical_first_person,1
+de_9890443ed736:c5:p128,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,128,grammatical_first_person,1
+de_9890443ed736:c5:p129,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,129,grammatical_first_person,1
+de_9890443ed736:c5:p130,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,130,grammatical_first_person,1
+de_9890443ed736:c5:p131,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,131,grammatical_first_person,1
+de_9890443ed736:c5:p132,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,132,grammatical_first_person,1
+de_9890443ed736:c5:p133,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,133,grammatical_first_person,1
+de_9890443ed736:c5:p134,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,134,grammatical_first_person; grammatical_third_person; perspective_general,3
+de_9890443ed736:c5:p135,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,135,grammatical_first_person; grammatical_third_person,2
+de_9890443ed736:c5:p138,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,138,grammatical_first_person,1
+de_9890443ed736:c5:p141,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,141,grammatical_first_person; switching_consistency,2
+de_9890443ed736:c5:p142,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,142,grammatical_first_person,1
+de_9890443ed736:c5:p143,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,143,grammatical_first_person,1
+de_9890443ed736:c5:p146,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,146,choice_tradeoffs,1
+de_9890443ed736:c5:p190,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,5,190,grammatical_first_person,1
+de_9890443ed736:c6:p21,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,6,21,grammatical_first_person,1
+de_9890443ed736:c7:p19,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,7,19,perspective_general,1
+de_9890443ed736:c7:p21,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,7,21,perspective_general,1
+de_9890443ed736:c8:p29,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,8,29,grammatical_first_person,1
+de_9890443ed736:c8:p31,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,8,31,grammatical_first_person,1
+de_9890443ed736:c9:p23,de_9890443ed736,de,Über das Schreiben,Sol Stein,1997,primary,fiction_manual,9,23,speech_dialogue,1
+de_9909b0db2c3a:c14:p5,de_9909b0db2c3a,de,Schreiben,Jens Loescher,,primary,fiction_manual,14,5,thought_representation,1
+de_9909b0db2c3a:c15:p7,de_9909b0db2c3a,de,Schreiben,Jens Loescher,,primary,fiction_manual,15,7,thought_representation,1
+de_9909b0db2c3a:c30:p21,de_9909b0db2c3a,de,Schreiben,Jens Loescher,,primary,fiction_manual,30,21,switching_consistency,1
+de_9909b0db2c3a:c35:p16,de_9909b0db2c3a,de,Schreiben,Jens Loescher,,primary,fiction_manual,35,16,perspective_general,1
+de_9909b0db2c3a:c44:p9,de_9909b0db2c3a,de,Schreiben,Jens Loescher,,primary,fiction_manual,44,9,perspective_general,1
+de_9909b0db2c3a:c54:p21,de_9909b0db2c3a,de,Schreiben,Jens Loescher,,primary,fiction_manual,54,21,grammatical_first_person,1
+de_9909b0db2c3a:c55:p11,de_9909b0db2c3a,de,Schreiben,Jens Loescher,,primary,fiction_manual,55,11,perspective_general,1
+de_9909b0db2c3a:c55:p15,de_9909b0db2c3a,de,Schreiben,Jens Loescher,,primary,fiction_manual,55,15,grammatical_first_person,1
+de_9909b0db2c3a:c65:p12,de_9909b0db2c3a,de,Schreiben,Jens Loescher,,primary,fiction_manual,65,12,grammatical_first_person,1
+de_9f0f847f4b95:c7:p105,de_9f0f847f4b95,de,Raum zum Schreiben,Bonni Goldberg,,primary,fiction_manual,7,105,grammatical_first_person,1
+de_a6c42ae0dfcf:c0:p9,de_a6c42ae0dfcf,de,Schule des Erzählens,Sibylle Knauss,2006,primary,fiction_manual,0,9,mode_narrative,1
+de_a6c42ae0dfcf:c0:p10,de_a6c42ae0dfcf,de,Schule des Erzählens,Sibylle Knauss,2006,primary,fiction_manual,0,10,mode_narrative,1
+de_a6c42ae0dfcf:c0:p121,de_a6c42ae0dfcf,de,Schule des Erzählens,Sibylle Knauss,2006,primary,fiction_manual,0,121,speech_dialogue,1
+de_a6c42ae0dfcf:c0:p167,de_a6c42ae0dfcf,de,Schule des Erzählens,Sibylle Knauss,2006,primary,fiction_manual,0,167,information_control,1
+de_a70e5a5cb1ca:c4:p25,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,4,25,perspective_general,1
+de_a70e5a5cb1ca:c22:p20,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,22,20,grammatical_first_person,1
+de_a70e5a5cb1ca:c24:p137,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,24,137,mode_balance,1
+de_a70e5a5cb1ca:c25:p25,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,25,25,switching_consistency,1
+de_a70e5a5cb1ca:c31:p43,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,31,43,perspective_general,1
+de_a70e5a5cb1ca:c31:p44,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,31,44,perspective_general,1
+de_a70e5a5cb1ca:c32:p3,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,32,3,perspective_general,1
+de_a70e5a5cb1ca:c32:p10,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,32,10,perspective_general,1
+de_a70e5a5cb1ca:c43:p3,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,43,3,perspective_general,1
+de_a70e5a5cb1ca:c43:p6,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,43,6,perspective_general,1
+de_a70e5a5cb1ca:c43:p9,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,43,9,perspective_general,1
+de_a70e5a5cb1ca:c43:p25,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,43,25,perspective_general,1
+de_a70e5a5cb1ca:c43:p31,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,43,31,perspective_general,1
+de_a70e5a5cb1ca:c43:p33,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,43,33,grammatical_third_person; perspective_general,2
+de_a70e5a5cb1ca:c43:p43,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,43,43,grammatical_third_person,1
+de_a70e5a5cb1ca:c43:p45,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,43,45,grammatical_first_person,1
+de_a70e5a5cb1ca:c43:p56,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,43,56,grammatical_first_person; perspective_general,2
+de_a70e5a5cb1ca:c43:p59,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,43,59,grammatical_third_person,1
+de_a70e5a5cb1ca:c43:p60,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,43,60,grammatical_third_person,1
+de_a70e5a5cb1ca:c43:p61,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,43,61,grammatical_first_person; grammatical_third_person,2
+de_a70e5a5cb1ca:c43:p62,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,43,62,perspective_general; switching_consistency,2
+de_a70e5a5cb1ca:c45:p13,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,45,13,grammatical_first_person,1
+de_a70e5a5cb1ca:c45:p30,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,45,30,grammatical_first_person,1
+de_a70e5a5cb1ca:c47:p28,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,47,28,speech_dialogue,1
+de_a70e5a5cb1ca:c47:p36,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,47,36,speech_dialogue,1
+de_a70e5a5cb1ca:c47:p37,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,47,37,speech_dialogue,1
+de_a70e5a5cb1ca:c65:p70,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,65,70,switching_consistency,1
+de_a70e5a5cb1ca:c67:p40,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,67,40,perspective_general,1
+de_a70e5a5cb1ca:c82:p107,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,82,107,grammatical_first_person,1
+de_bef6dde900a8:c0:p6,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,6,grammatical_first_person; perspective_general,2
+de_bef6dde900a8:c0:p9,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,9,mode_dramatic,1
+de_bef6dde900a8:c0:p13,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,13,grammatical_first_person,1
+de_bef6dde900a8:c0:p19,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,19,voice_protagonist,1
+de_bef6dde900a8:c0:p33,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,33,voice_general,1
+de_bef6dde900a8:c0:p40,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,40,perspective_general,1
+de_bef6dde900a8:c0:p42,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,42,perspective_general,1
+de_bef6dde900a8:c0:p52,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,52,mode_dramatic,1
+de_bef6dde900a8:c0:p53,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,53,mode_dramatic,1
+de_bef6dde900a8:c0:p65,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,65,thought_representation,1
+de_bef6dde900a8:c0:p68,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,68,mode_balance,1
+de_bef6dde900a8:c0:p73,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,73,thought_representation,1
+de_bef6dde900a8:c0:p75,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,75,grammatical_first_person; perspective_general,2
+de_bef6dde900a8:c0:p78,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,78,perspective_general,1
+de_bef6dde900a8:c0:p103,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,103,perspective_general,1
+de_bef6dde900a8:c0:p104,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,104,grammatical_first_person; grammatical_third_person,2
+de_bef6dde900a8:c0:p105,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,105,voice_general,1
+de_bef6dde900a8:c0:p106,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,106,grammatical_first_person,1
+de_bef6dde900a8:c0:p107,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,107,grammatical_first_person,1
+de_bef6dde900a8:c0:p108,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,108,distance_depth; grammatical_first_person; grammatical_third_person,3
+de_bef6dde900a8:c0:p109,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,109,thought_representation,1
+de_bef6dde900a8:c0:p110,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,110,grammatical_first_person; grammatical_third_person; stance_figural; thought_representation,4
+de_bef6dde900a8:c0:p111,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,111,consciousness_access; perspective_general; stance_figural; thought_representation,4
+de_bef6dde900a8:c0:p112,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,112,grammatical_first_person; multiple_focalization_same_event; perspective_general; switching_consistency; thought_representation,5
+de_bef6dde900a8:c0:p113,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,113,grammatical_first_person; grammatical_third_person; narrator_level_time; thought_representation,4
+de_bef6dde900a8:c0:p118,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,118,perspective_general,1
+de_bef6dde900a8:c0:p121,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,121,narrator_level_time,1
+de_bef6dde900a8:c0:p132,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,132,thought_representation,1
+de_bef6dde900a8:c0:p136,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,136,mode_balance,1
+de_bef6dde900a8:c0:p138,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,138,mode_dramatic,1
+de_bef6dde900a8:c0:p144,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,144,grammatical_first_person,1
+de_bef6dde900a8:c0:p152,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,152,thought_representation,1
+de_bef6dde900a8:c0:p163,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,163,voice_general,1
+de_bef6dde900a8:c0:p169,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,169,grammatical_first_person; mode_balance,2
+de_bef6dde900a8:c0:p174,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,174,mode_dramatic,1
+de_bef6dde900a8:c0:p180,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,180,perspective_general,1
+de_bef6dde900a8:c0:p182,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,182,distance_depth; grammatical_first_person; perspective_general,3
+de_bef6dde900a8:c0:p194,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,194,consciousness_access; grammatical_first_person; perspective_general,3
+de_bef6dde900a8:c0:p197,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,197,distance_depth; narrative_style_voice,2
+de_bef6dde900a8:c0:p212,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,212,perspective_general,1
+de_bef6dde900a8:c0:p213,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,213,focalization_zero; grammatical_first_person; perspective_general; stance_figural; thought_representation,5
+de_bef6dde900a8:c0:p214,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,214,grammatical_first_person; mode_balance; perspective_general; thought_representation,4
+de_bef6dde900a8:c0:p215,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,215,mode_dramatic,1
+de_bef6dde900a8:c0:p216,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,216,multiple_focalization_same_event; perspective_general,2
+de_bef6dde900a8:c0:p217,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,217,thought_representation,1
+de_bef6dde900a8:c0:p228,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,228,perspective_general,1
+de_c2147905f44d:c0:p83,de_c2147905f44d,de,Schriftsteller werden,Dorothea Brande,2001,primary,fiction_manual,0,83,perspective_general,1
+de_c51fc98197f7:c2:p3,de_c51fc98197f7,de,Kreativ schreiben für Fortgeschrittene,Fritz Gesing,,primary,fiction_manual,2,3,thought_representation,1
+de_c51fc98197f7:c3:p4,de_c51fc98197f7,de,Kreativ schreiben für Fortgeschrittene,Fritz Gesing,,primary,fiction_manual,3,4,perspective_general,1
+de_c51fc98197f7:c4:p20,de_c51fc98197f7,de,Kreativ schreiben für Fortgeschrittene,Fritz Gesing,,primary,fiction_manual,4,20,grammatical_first_person; perspective_general,2
+de_c51fc98197f7:c20:p4,de_c51fc98197f7,de,Kreativ schreiben für Fortgeschrittene,Fritz Gesing,,primary,fiction_manual,20,4,choice_tradeoffs; speech_dialogue,2
+de_d7814779ddef:c0:p43,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,43,perspective_general,1
+de_d7814779ddef:c0:p46,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,46,perspective_general,1
+de_d7814779ddef:c0:p47,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,47,grammatical_first_person; perspective_general,2
+de_d7814779ddef:c0:p688,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,688,perspective_general,1
+de_d7814779ddef:c0:p689,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,689,perspective_general,1
+de_d7814779ddef:c0:p690,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,690,perspective_general,1
+de_d7814779ddef:c0:p691,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,691,perspective_general,1
+de_d7814779ddef:c0:p694,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,694,perspective_general; reliability,2
+de_d7814779ddef:c0:p701,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,701,grammatical_first_person,1
+de_d7814779ddef:c0:p702,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,702,grammatical_first_person,1
+de_d7814779ddef:c0:p703,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,703,grammatical_first_person,1
+de_d7814779ddef:c0:p705,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,705,grammatical_first_person,1
+de_d7814779ddef:c0:p706,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,706,grammatical_first_person,1
+de_d7814779ddef:c0:p707,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,707,grammatical_first_person,1
+de_d7814779ddef:c0:p714,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,714,perspective_general,1
+de_d7814779ddef:c0:p717,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,717,grammatical_first_person,1
+de_d7814779ddef:c0:p720,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,720,grammatical_first_person; grammatical_third_person,2
+de_d7814779ddef:c0:p722,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,722,perspective_general,1
+de_d7814779ddef:c0:p728,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,728,grammatical_first_person,1
+de_d7814779ddef:c0:p732,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,732,grammatical_first_person,1
+de_d7814779ddef:c0:p734,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,734,grammatical_first_person,1
+de_d84259e282d0:c0:p139,de_d84259e282d0,de,Literarisches Schreiben,Lajos Egri,2002,primary,fiction_manual,0,139,reader_effect,1
+de_d84259e282d0:c0:p783,de_d84259e282d0,de,Literarisches Schreiben,Lajos Egri,2002,primary,fiction_manual,0,783,grammatical_first_person,1
+de_d84259e282d0:c0:p969,de_d84259e282d0,de,Literarisches Schreiben,Lajos Egri,2002,primary,fiction_manual,0,969,grammatical_first_person,1
+de_dc8ca47de6c4:c15:p8,de_dc8ca47de6c4,de,Freies Schreiben und Drucken Mit der Schuldruckerei,Marjan Rosetz,,primary,pedagogy_genre_craft,15,8,switching_consistency,1
+de_e64332ee88fa:c10:p1,de_e64332ee88fa,de,Kreatives Schreiben an Hochschulen,Hans Arnold Rau,1988,primary,pedagogy_genre_craft,10,1,grammatical_first_person; grammatical_third_person; perspective_general,3
+de_e64332ee88fa:c10:p5,de_e64332ee88fa,de,Kreatives Schreiben an Hochschulen,Hans Arnold Rau,1988,primary,pedagogy_genre_craft,10,5,thought_representation,1
+de_e64332ee88fa:c10:p6,de_e64332ee88fa,de,Kreatives Schreiben an Hochschulen,Hans Arnold Rau,1988,primary,pedagogy_genre_craft,10,6,consciousness_access; focalization_internal; grammatical_first_person; grammatical_third_person; perspective_general; stance_figural; thought_representation,7
+de_ea54a1d49c95:c8:p17,de_ea54a1d49c95,de,Fantasy schreiben und veröffentlichen,Sylvia Englert,,primary,fiction_manual,8,17,switching_consistency,1
+de_ed096f04f754:c0:p2204,de_ed096f04f754,de,Wild Mind – Freies Schreiben,Natalie Goldberg,,primary,fiction_manual,0,2204,grammatical_first_person,1
+de_f03df72445ee:c1:p5,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,1,5,perspective_general,1
+de_f03df72445ee:c1:p8,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,1,8,grammatical_third_person; narrative_style_voice; voice_general,3
+de_f03df72445ee:c50:p3,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,50,3,narrative_style_voice; voice_general,2
+de_f03df72445ee:c51:p4,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,51,4,narrative_style_voice; voice_general,2
+de_f03df72445ee:c51:p5,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,51,5,narrative_style_voice; voice_general,2
+de_f03df72445ee:c51:p6,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,51,6,narrative_style_voice; voice_general,2
+de_f03df72445ee:c51:p7,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,51,7,narrative_style_voice; voice_general,2
+de_f03df72445ee:c52:p4,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,52,4,narrative_style_voice; voice_general,2
+de_f03df72445ee:c52:p5,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,52,5,narrative_style_voice; voice_general,2
+de_f03df72445ee:c53:p4,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,53,4,narrative_style_voice; voice_general,2
+de_f03df72445ee:c55:p7,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,55,7,narrative_style_voice; voice_general,2
+de_f03df72445ee:c56:p3,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,56,3,grammatical_first_person; grammatical_third_person,2
+de_f03df72445ee:c57:p0,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,57,0,grammatical_third_person,1
+de_f03df72445ee:c57:p5,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,57,5,grammatical_first_person,1
+de_f03df72445ee:c58:p3,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,58,3,grammatical_first_person,1
+de_f03df72445ee:c58:p4,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,58,4,grammatical_first_person; grammatical_third_person,2
+de_f03df72445ee:c58:p6,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,58,6,grammatical_first_person,1
+de_f03df72445ee:c59:p4,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,59,4,grammatical_first_person,1
+de_f03df72445ee:c59:p5,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,59,5,narrative_style_voice; voice_general,2
+de_f03df72445ee:c59:p7,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,59,7,narrative_style_voice; voice_general,2
+de_f03df72445ee:c59:p8,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,59,8,narrative_style_voice; voice_general,2
+de_f03df72445ee:c60:p5,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,60,5,narrative_style_voice; voice_general,2
+de_f03df72445ee:c61:p0,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,61,0,narrative_style_voice; voice_general,2
+de_f03df72445ee:c61:p4,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,61,4,narrative_style_voice; voice_general,2
+de_f03df72445ee:c68:p1,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,68,1,grammatical_third_person,1
+de_f03df72445ee:c68:p3,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,68,3,grammatical_first_person,1
+de_f03df72445ee:c68:p5,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,68,5,grammatical_third_person,1
+de_f03df72445ee:c69:p3,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,69,3,grammatical_third_person,1
+de_f03df72445ee:c69:p5,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,69,5,narrative_style_voice; voice_general,2
+de_f03df72445ee:c69:p7,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,69,7,grammatical_first_person,1
+de_f951ce0b5eb5:c8:p56,de_f951ce0b5eb5,de,Kreatives Schreiben Im Deutschunterricht in der Sekundarstufe I,Sevim Toker,,primary,pedagogy_genre_craft,8,56,perspective_general,1
+de_f951ce0b5eb5:c10:p19,de_f951ce0b5eb5,de,Kreatives Schreiben Im Deutschunterricht in der Sekundarstufe I,Sevim Toker,,primary,pedagogy_genre_craft,10,19,perspective_general,1
+de_f951ce0b5eb5:c10:p20,de_f951ce0b5eb5,de,Kreatives Schreiben Im Deutschunterricht in der Sekundarstufe I,Sevim Toker,,primary,pedagogy_genre_craft,10,20,consciousness_access; focalization_internal; perspective_general,3
+de_f951ce0b5eb5:c10:p26,de_f951ce0b5eb5,de,Kreatives Schreiben Im Deutschunterricht in der Sekundarstufe I,Sevim Toker,,primary,pedagogy_genre_craft,10,26,grammatical_first_person; perspective_general,2
+de_f951ce0b5eb5:c10:p28,de_f951ce0b5eb5,de,Kreatives Schreiben Im Deutschunterricht in der Sekundarstufe I,Sevim Toker,,primary,pedagogy_genre_craft,10,28,consciousness_access; perspective_general,2
+de_f951ce0b5eb5:c10:p30,de_f951ce0b5eb5,de,Kreatives Schreiben Im Deutschunterricht in der Sekundarstufe I,Sevim Toker,,primary,pedagogy_genre_craft,10,30,focalization_variable; perspective_general,2
+de_f951ce0b5eb5:c12:p41,de_f951ce0b5eb5,de,Kreatives Schreiben Im Deutschunterricht in der Sekundarstufe I,Sevim Toker,,primary,pedagogy_genre_craft,12,41,choice_tradeoffs,1
+de_f951ce0b5eb5:c12:p53,de_f951ce0b5eb5,de,Kreatives Schreiben Im Deutschunterricht in der Sekundarstufe I,Sevim Toker,,primary,pedagogy_genre_craft,12,53,thought_representation,1
+de_f951ce0b5eb5:c12:p58,de_f951ce0b5eb5,de,Kreatives Schreiben Im Deutschunterricht in der Sekundarstufe I,Sevim Toker,,primary,pedagogy_genre_craft,12,58,switching_consistency,1
+de_f951ce0b5eb5:c12:p63,de_f951ce0b5eb5,de,Kreatives Schreiben Im Deutschunterricht in der Sekundarstufe I,Sevim Toker,,primary,pedagogy_genre_craft,12,63,switching_consistency,1
+de_f951ce0b5eb5:c12:p124,de_f951ce0b5eb5,de,Kreatives Schreiben Im Deutschunterricht in der Sekundarstufe I,Sevim Toker,,primary,pedagogy_genre_craft,12,124,narrator_level_time,1
+de_fa66d2852566:c0:p3,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,3,perspective_general,1
+de_fa66d2852566:c0:p35,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,35,perspective_general,1
+de_fa66d2852566:c0:p52,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,52,switching_consistency,1
+de_fa66d2852566:c0:p63,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,63,switching_consistency,1
+de_fa66d2852566:c0:p124,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,124,switching_consistency,1
+de_fa66d2852566:c0:p126,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,126,switching_consistency,1
+de_fa66d2852566:c0:p140,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,140,switching_consistency,1
+de_fa66d2852566:c0:p141,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,141,thought_representation,1
+de_fa66d2852566:c0:p144,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,144,perspective_general,1
+de_fa66d2852566:c0:p149,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,149,choice_tradeoffs; consciousness_access; narrative_style_voice; perspective_general; switching_consistency,5
+de_fa66d2852566:c0:p150,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,150,grammatical_first_person,1
+de_fa66d2852566:c0:p155,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,155,perspective_general,1
+de_fa66d2852566:c0:p167,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,167,thought_representation,1
+de_fa66d2852566:c0:p169,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,169,thought_representation,1
+de_fa66d2852566:c0:p185,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,185,switching_consistency,1
+de_fa66d2852566:c0:p191,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,191,perspective_general; switching_consistency,2
+de_fa66d2852566:c0:p192,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,192,grammatical_first_person,1
+de_fa66d2852566:c0:p195,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,195,grammatical_first_person; grammatical_third_person; perspective_general,3
+de_fa66d2852566:c0:p196,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,196,switching_consistency,1
+de_fa66d2852566:c0:p202,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,202,consciousness_access; switching_consistency,2
+de_fa66d2852566:c0:p205,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,205,grammatical_first_person,1
+de_fa66d2852566:c0:p212,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,212,focalization_zero; grammatical_first_person; grammatical_third_person; perspective_general; switching_consistency,5
+de_fa66d2852566:c0:p213,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,213,grammatical_first_person; grammatical_third_person; perspective_general,3
+de_fa66d2852566:c0:p214,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,214,focalization_variable; grammatical_first_person; switching_consistency,3
+de_fa66d2852566:c0:p215,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,215,perspective_general,1
+de_fa66d2852566:c0:p217,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,217,perspective_general,1
+de_fa66d2852566:c0:p218,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,218,switching_consistency,1
+de_fa66d2852566:c0:p221,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,221,choice_tradeoffs; grammatical_first_person; perspective_general,3
+de_fa66d2852566:c0:p222,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,222,perspective_general,1
+de_fa66d2852566:c0:p225,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,225,thought_representation,1
+de_fa66d2852566:c0:p239,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,239,grammatical_first_person; perspective_general,2
+de_fa66d2852566:c0:p240,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,240,perspective_general,1
+de_fa66d2852566:c0:p262,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,262,distance_depth,1
+de_fa66d2852566:c0:p269,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,269,switching_consistency,1
+de_fa66d2852566:c0:p278,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,278,grammatical_first_person,1
+de_fa66d2852566:c0:p291,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,291,switching_consistency,1
+de_fa66d2852566:c0:p316,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,316,switching_consistency,1
+de_fa66d2852566:c0:p317,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,317,focalization_variable; grammatical_first_person; switching_consistency,3
+de_fa66d2852566:c0:p319,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,319,switching_consistency,1
+de_fa66d2852566:c0:p332,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,332,narrative_style_voice,1
+de_fccec0ce43dd:c1:p43,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,1,43,grammatical_first_person; perspective_general; stance_figural,3
+de_fccec0ce43dd:c14:p23,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,14,23,switching_consistency,1
+de_fccec0ce43dd:c48:p59,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,48,59,grammatical_first_person,1
+de_fccec0ce43dd:c62:p4,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,62,4,narrative_style_voice,1
+de_fccec0ce43dd:c63:p20,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,63,20,grammatical_first_person,1
+de_fccec0ce43dd:c70:p15,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,70,15,thought_representation,1
+de_fccec0ce43dd:c72:p44,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,72,44,grammatical_first_person; perspective_general,2
+de_fccec0ce43dd:c72:p46,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,72,46,grammatical_first_person; perspective_general,2
+de_fccec0ce43dd:c72:p47,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,72,47,perspective_general,1
+de_fccec0ce43dd:c72:p49,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,72,49,perspective_general,1
+de_fccec0ce43dd:c72:p50,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,72,50,stance_figural,1
+de_fccec0ce43dd:c72:p52,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,72,52,grammatical_first_person; perspective_general,2
+de_fccec0ce43dd:c72:p53,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,72,53,grammatical_first_person,1
+de_fccec0ce43dd:c72:p56,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,72,56,grammatical_first_person,1
+de_fccec0ce43dd:c72:p57,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,72,57,perspective_general,1
+de_fccec0ce43dd:c72:p59,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,72,59,perspective_general,1
+de_fccec0ce43dd:c94:p22,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,94,22,perspective_general,1
+de_0f0a23138662:c2:p37,de_0f0a23138662,de,Beiträge Zur Theorie und Technik des Romans,Friedrich Spielhagen,,comparison,contrast,2,37,consciousness_access,1
+de_0f0a23138662:c6:p4,de_0f0a23138662,de,Beiträge Zur Theorie und Technik des Romans,Friedrich Spielhagen,,comparison,contrast,6,4,grammatical_first_person,1
+de_0f0a23138662:c6:p31,de_0f0a23138662,de,Beiträge Zur Theorie und Technik des Romans,Friedrich Spielhagen,,comparison,contrast,6,31,grammatical_first_person,1
+de_0f0a23138662:c6:p32,de_0f0a23138662,de,Beiträge Zur Theorie und Technik des Romans,Friedrich Spielhagen,,comparison,contrast,6,32,grammatical_first_person,1
+de_0f0a23138662:c6:p33,de_0f0a23138662,de,Beiträge Zur Theorie und Technik des Romans,Friedrich Spielhagen,,comparison,contrast,6,33,grammatical_first_person,1
+de_0f0a23138662:c6:p140,de_0f0a23138662,de,Beiträge Zur Theorie und Technik des Romans,Friedrich Spielhagen,,comparison,contrast,6,140,grammatical_first_person; grammatical_third_person,2
+de_0f0a23138662:c6:p167,de_0f0a23138662,de,Beiträge Zur Theorie und Technik des Romans,Friedrich Spielhagen,,comparison,contrast,6,167,grammatical_first_person,1
+de_0f0a23138662:c6:p213,de_0f0a23138662,de,Beiträge Zur Theorie und Technik des Romans,Friedrich Spielhagen,,comparison,contrast,6,213,grammatical_first_person,1
+de_0f0a23138662:c6:p229,de_0f0a23138662,de,Beiträge Zur Theorie und Technik des Romans,Friedrich Spielhagen,,comparison,contrast,6,229,grammatical_first_person,1
+de_0f0a23138662:c6:p231,de_0f0a23138662,de,Beiträge Zur Theorie und Technik des Romans,Friedrich Spielhagen,,comparison,contrast,6,231,grammatical_first_person,1
+de_0f0a23138662:c6:p233,de_0f0a23138662,de,Beiträge Zur Theorie und Technik des Romans,Friedrich Spielhagen,,comparison,contrast,6,233,grammatical_first_person,1
+de_0f0a23138662:c6:p249,de_0f0a23138662,de,Beiträge Zur Theorie und Technik des Romans,Friedrich Spielhagen,,comparison,contrast,6,249,grammatical_first_person,1
+de_0f0a23138662:c6:p250,de_0f0a23138662,de,Beiträge Zur Theorie und Technik des Romans,Friedrich Spielhagen,,comparison,contrast,6,250,grammatical_first_person,1
+de_105a4a440067:c0:p57,de_105a4a440067,de,Deutsche Poetik,Otto Lange,,comparison,contrast,0,57,mode_narrative,1
+de_105a4a440067:c0:p59,de_105a4a440067,de,Deutsche Poetik,Otto Lange,,comparison,contrast,0,59,mode_narrative,1
+de_105a4a440067:c0:p60,de_105a4a440067,de,Deutsche Poetik,Otto Lange,,comparison,contrast,0,60,mode_narrative,1
+de_105a4a440067:c0:p208,de_105a4a440067,de,Deutsche Poetik,Otto Lange,,comparison,contrast,0,208,mode_narrative,1
+de_105a4a440067:c0:p236,de_105a4a440067,de,Deutsche Poetik,Otto Lange,,comparison,contrast,0,236,grammatical_first_person,1
+de_105a4a440067:c0:p456,de_105a4a440067,de,Deutsche Poetik,Otto Lange,,comparison,contrast,0,456,mode_narrative,1
+de_105a4a440067:c0:p544,de_105a4a440067,de,Deutsche Poetik,Otto Lange,,comparison,contrast,0,544,mode_dramatic,1
+de_37d39f0f7584:c36:p1,de_37d39f0f7584,de,Theorie und Technik des Romans Im 17. und 18. Jahrhundert,Dieter Kimpel; Conrad Wiedemann,,comparison,contrast,36,1,mode_dramatic,1
+de_37d39f0f7584:c36:p4,de_37d39f0f7584,de,Theorie und Technik des Romans Im 17. und 18. Jahrhundert,Dieter Kimpel; Conrad Wiedemann,,comparison,contrast,36,4,mode_dramatic,1
+de_37d39f0f7584:c38:p0,de_37d39f0f7584,de,Theorie und Technik des Romans Im 17. und 18. Jahrhundert,Dieter Kimpel; Conrad Wiedemann,,comparison,contrast,38,0,mode_dramatic,1
+de_459b6be47a09:c0:p159,de_459b6be47a09,de,Schreiben und Selbstreflexion,Irene Jung,,comparison,contrast,0,159,thought_representation,1
+de_459b6be47a09:c0:p181,de_459b6be47a09,de,Schreiben und Selbstreflexion,Irene Jung,,comparison,contrast,0,181,thought_representation,1
+de_5c34c16806de:c3:p27,de_5c34c16806de,de,"Schreiben, Bildung und Gespräch",Eckart Conrad Lutz,,comparison,contrast,3,27,switching_consistency,1
+de_5c34c16806de:c4:p13,de_5c34c16806de,de,"Schreiben, Bildung und Gespräch",Eckart Conrad Lutz,,comparison,contrast,4,13,speech_dialogue,1
+de_5c34c16806de:c5:p26,de_5c34c16806de,de,"Schreiben, Bildung und Gespräch",Eckart Conrad Lutz,,comparison,contrast,5,26,speech_dialogue,1
+de_5c34c16806de:c5:p47,de_5c34c16806de,de,"Schreiben, Bildung und Gespräch",Eckart Conrad Lutz,,comparison,contrast,5,47,perspective_general,1
+de_5c34c16806de:c5:p61,de_5c34c16806de,de,"Schreiben, Bildung und Gespräch",Eckart Conrad Lutz,,comparison,contrast,5,61,perspective_general,1
+de_5c34c16806de:c6:p11,de_5c34c16806de,de,"Schreiben, Bildung und Gespräch",Eckart Conrad Lutz,,comparison,contrast,6,11,narrator_level_time,1
+de_5c34c16806de:c6:p21,de_5c34c16806de,de,"Schreiben, Bildung und Gespräch",Eckart Conrad Lutz,,comparison,contrast,6,21,grammatical_first_person,1
+de_5c34c16806de:c6:p23,de_5c34c16806de,de,"Schreiben, Bildung und Gespräch",Eckart Conrad Lutz,,comparison,contrast,6,23,narrator_level_time,1
+de_5c34c16806de:c6:p29,de_5c34c16806de,de,"Schreiben, Bildung und Gespräch",Eckart Conrad Lutz,,comparison,contrast,6,29,grammatical_first_person,1
+de_5c34c16806de:c6:p31,de_5c34c16806de,de,"Schreiben, Bildung und Gespräch",Eckart Conrad Lutz,,comparison,contrast,6,31,grammatical_first_person,1
+de_5c34c16806de:c6:p34,de_5c34c16806de,de,"Schreiben, Bildung und Gespräch",Eckart Conrad Lutz,,comparison,contrast,6,34,grammatical_first_person,1
+de_5c34c16806de:c6:p49,de_5c34c16806de,de,"Schreiben, Bildung und Gespräch",Eckart Conrad Lutz,,comparison,contrast,6,49,narrator_level_time,1
+de_630d6b7e0c9c:c4:p37,de_630d6b7e0c9c,de,Poetik und Anthropologie,Elisabeth Schmid,,comparison,contrast,4,37,pov_subject,1
+de_630d6b7e0c9c:c4:p124,de_630d6b7e0c9c,de,Poetik und Anthropologie,Elisabeth Schmid,,comparison,contrast,4,124,grammatical_first_person,1
+de_630d6b7e0c9c:c5:p32,de_630d6b7e0c9c,de,Poetik und Anthropologie,Elisabeth Schmid,,comparison,contrast,5,32,grammatical_first_person,1
+de_630d6b7e0c9c:c5:p39,de_630d6b7e0c9c,de,Poetik und Anthropologie,Elisabeth Schmid,,comparison,contrast,5,39,grammatical_first_person,1
+de_630d6b7e0c9c:c6:p43,de_630d6b7e0c9c,de,Poetik und Anthropologie,Elisabeth Schmid,,comparison,contrast,6,43,grammatical_first_person,1
+de_630d6b7e0c9c:c6:p46,de_630d6b7e0c9c,de,Poetik und Anthropologie,Elisabeth Schmid,,comparison,contrast,6,46,grammatical_first_person,1
+de_630d6b7e0c9c:c6:p49,de_630d6b7e0c9c,de,Poetik und Anthropologie,Elisabeth Schmid,,comparison,contrast,6,49,grammatical_first_person,1
+de_630d6b7e0c9c:c6:p52,de_630d6b7e0c9c,de,Poetik und Anthropologie,Elisabeth Schmid,,comparison,contrast,6,52,thought_representation,1
+de_6ee48fd5e95a:c8:p6,de_6ee48fd5e95a,de,Schreiben und Übersetzen,Wilhelm Gössmann,,comparison,contrast,8,6,mode_dramatic; mode_narrative,2
+de_6ee48fd5e95a:c8:p14,de_6ee48fd5e95a,de,Schreiben und Übersetzen,Wilhelm Gössmann,,comparison,contrast,8,14,voice_heterodiegetic,1
+de_6ee48fd5e95a:c8:p22,de_6ee48fd5e95a,de,Schreiben und Übersetzen,Wilhelm Gössmann,,comparison,contrast,8,22,narrator_level_time,1
+de_6ee48fd5e95a:c9:p0,de_6ee48fd5e95a,de,Schreiben und Übersetzen,Wilhelm Gössmann,,comparison,contrast,9,0,narrator_level_time,1
+de_6ee48fd5e95a:c10:p20,de_6ee48fd5e95a,de,Schreiben und Übersetzen,Wilhelm Gössmann,,comparison,contrast,10,20,narrative_style_voice; voice_general,2
+de_6ee48fd5e95a:c11:p17,de_6ee48fd5e95a,de,Schreiben und Übersetzen,Wilhelm Gössmann,,comparison,contrast,11,17,mode_balance,1
+de_7e290d053067:c3:p50,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,3,50,mode_dramatic,1
+de_7e290d053067:c3:p56,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,3,56,grammatical_first_person; perspective_general,2
+de_7e290d053067:c4:p17,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,4,17,grammatical_first_person,1
+de_7e290d053067:c5:p55,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,5,55,mode_dramatic,1
+de_7e290d053067:c5:p60,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,5,60,mode_dramatic,1
+de_7e290d053067:c5:p102,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,5,102,mode_narrative,1
+de_7e290d053067:c6:p11,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,11,focalization_general,1
+de_7e290d053067:c6:p12,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,12,focalization_general,1
+de_7e290d053067:c6:p18,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,18,perspective_general,1
+de_7e290d053067:c6:p20,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,20,voice_protagonist,1
+de_7e290d053067:c6:p37,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,37,perspective_general,1
+de_7e290d053067:c6:p46,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,46,voice_protagonist,1
+de_7e290d053067:c6:p54,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,54,mode_dramatic,1
+de_7e290d053067:c6:p107,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,107,narrator_level_time,1
+de_7e290d053067:c6:p117,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,117,narrator_level_time,1
+de_7e290d053067:c6:p121,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,121,voice_protagonist,1
+de_7e290d053067:c6:p130,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,130,perspective_general,1
+de_7e290d053067:c6:p136,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,136,perspective_general,1
+de_7e290d053067:c6:p150,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,150,perspective_general,1
+de_7e290d053067:c6:p160,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,160,perspective_general,1
+de_7e290d053067:c6:p168,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,168,grammatical_first_person,1
+de_7e290d053067:c6:p174,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,174,narrator_level_time; perspective_general,2
+de_7e290d053067:c6:p201,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,201,voice_general,1
+de_7e290d053067:c6:p203,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,203,perspective_general,1
+de_7e290d053067:c6:p204,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,204,perspective_general; switching_consistency,2
+de_7e290d053067:c6:p213,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,213,narrator_level_time,1
+de_7e290d053067:c6:p239,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,239,perspective_general,1
+de_7e290d053067:c6:p284,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,284,voice_protagonist,1
+de_7e290d053067:c6:p306,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,306,narrator_level_time,1
+de_7e290d053067:c6:p315,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,315,perspective_general,1
+de_7e290d053067:c6:p391,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,391,mode_dramatic,1
+de_7e290d053067:c6:p411,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,411,perspective_general,1
+de_7e290d053067:c6:p485,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,485,mode_dramatic,1
+de_7e290d053067:c6:p491,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,491,perspective_general,1
+de_7e290d053067:c6:p511,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,511,mode_narrative,1
+de_7e290d053067:c7:p96,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,7,96,choice_tradeoffs; pov_object,2
+de_7e290d053067:c7:p105,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,7,105,voice_general,1
+de_7e290d053067:c7:p157,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,7,157,narrative_style_voice; voice_general,2
+de_7e290d053067:c7:p181,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,7,181,narrative_style_voice; voice_general,2
+de_7e290d053067:c8:p149,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,8,149,mode_narrative,1
+de_7e290d053067:c11:p10,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,11,10,focalization_general,1
+de_d88c45142668:c1:p9,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,9,choice_tradeoffs,1
+de_d88c45142668:c1:p12,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,12,mode_narrative,1
+de_d88c45142668:c1:p13,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,13,switching_consistency,1
+de_d88c45142668:c1:p16,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,16,consciousness_access,1
+de_d88c45142668:c1:p17,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,17,switching_consistency,1
+de_d88c45142668:c1:p33,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,33,focalization_external,1
+de_d88c45142668:c1:p36,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,36,mode_dramatic,1
+de_d88c45142668:c1:p45,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,45,grammatical_first_person,1
+de_d88c45142668:c1:p47,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,47,narrator_level_time,1
+de_d88c45142668:c1:p49,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,49,narrator_level_time; switching_consistency,2
+de_d88c45142668:c1:p56,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,56,narrator_level_time,1
+de_d88c45142668:c1:p84,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,84,narrator_level_time,1
+de_d88c45142668:c1:p96,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,96,narrator_level_time,1
+de_d88c45142668:c1:p99,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,99,narrator_level_time,1
+de_d88c45142668:c1:p100,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,100,narrator_level_time,1
+de_d88c45142668:c1:p101,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,101,narrator_level_time,1
+de_d88c45142668:c1:p102,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,102,narrator_level_time,1
+de_d88c45142668:c1:p103,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,103,narrator_level_time,1
+de_d88c45142668:c1:p112,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,112,narrator_level_time,1
+de_d88c45142668:c1:p113,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,113,narrator_level_time,1
+de_d88c45142668:c1:p114,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,114,narrator_level_time,1
+de_d88c45142668:c1:p115,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,115,narrator_level_time,1
+de_d88c45142668:c1:p130,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,130,narrator_level_time,1
+de_d88c45142668:c1:p133,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,133,narrator_level_time,1
+de_d88c45142668:c1:p143,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,143,narrator_level_time,1
+de_d88c45142668:c1:p154,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,154,narrator_level_time,1
+de_d88c45142668:c1:p156,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,156,narrator_level_time,1
+de_d88c45142668:c1:p165,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,165,narrator_level_time,1
+de_d88c45142668:c1:p174,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,174,narrator_level_time,1
+de_d88c45142668:c1:p177,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,177,narrator_level_time,1
+de_d88c45142668:c1:p201,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,201,grammatical_first_person,1
+de_d88c45142668:c1:p221,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,221,switching_consistency,1
+de_d88c45142668:c1:p232,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,232,switching_consistency,1
+de_d88c45142668:c1:p238,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,238,voice_general,1
+de_d88c45142668:c1:p248,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,248,switching_consistency,1
+de_d88c45142668:c1:p266,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,266,focalization_variable; switching_consistency,2
+de_d88c45142668:c1:p267,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,267,switching_consistency,1
+de_d88c45142668:c1:p269,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,269,switching_consistency,1
+de_d88c45142668:c1:p271,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,271,switching_consistency,1
+de_d88c45142668:c1:p290,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,290,narrator_level_time,1
+de_d88c45142668:c1:p291,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,291,consciousness_access,1
+de_d88c45142668:c1:p295,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,295,switching_consistency,1
+de_d88c45142668:c1:p303,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,303,narrator_level_time,1
+de_d88c45142668:c1:p378,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,378,switching_consistency,1
+de_d88c45142668:c1:p380,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,380,switching_consistency,1
+de_d88c45142668:c1:p385,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,385,perspective_general,1
+de_d88c45142668:c1:p395,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,395,switching_consistency,1
+de_d88c45142668:c1:p440,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,440,switching_consistency,1
+de_d88c45142668:c1:p449,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,449,switching_consistency,1
+de_d88c45142668:c1:p489,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,489,voice_general,1
+de_d88c45142668:c1:p563,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,563,switching_consistency,1
+de_ea2ff97a7d6c:c2:p16,de_ea2ff97a7d6c,de,Aristoteles u ber die Dichtkunst,Aristotle,,comparison,contrast,2,16,mode_dramatic,1
+de_ea2ff97a7d6c:c3:p3,de_ea2ff97a7d6c,de,Aristoteles u ber die Dichtkunst,Aristotle,,comparison,contrast,3,3,mode_dramatic,1
+de_ea2ff97a7d6c:c6:p97,de_ea2ff97a7d6c,de,Aristoteles u ber die Dichtkunst,Aristotle,,comparison,contrast,6,97,narrator_level_time,1
+de_ea2ff97a7d6c:c7:p37,de_ea2ff97a7d6c,de,Aristoteles u ber die Dichtkunst,Aristotle,,comparison,contrast,7,37,mode_dramatic,1

@@ -1,0 +1,50 @@
+{
+  "built": "2026-11-21 05:11",
+  "git_commit": "c95311598ae6159dda1e801d0a64790e272d9293",
+  "git_commit_short": "",
+  "software": {
+    "python": "3.14.4",
+    "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.43",
+    "pandas": "3.0.6",
+    "yaml": "6.0.3",
+    "numpy": "2.5.3",
+    "rank_bm25": "not_installed"
+  },
+  "peak_rss_mb": 326.7,
+  "book_stats_hashes": {
+    "en": "b9d1942199d90323007f42d7fd4f0616d884e09a9c1dce02381096e60b5999eb",
+    "de": "382a44f0305208d58a6eeabbdb401b17516b5849a617425d7e500b87501008d3"
+  },
+  "kind": "manual_eval_sample",
+  "seed": 20261121,
+  "target": 260,
+  "n_unique_passages": 260,
+  "strata": {
+    "high_rank_bm25": 37,
+    "academic_term": 29,
+    "random_non_retrieved": 29,
+    "mid_rank_bm25": 25,
+    "low_rank_bm25": 23,
+    "regex_match": 23,
+    "bm25_only_unvalidated": 20,
+    "potential_false_positive": 18,
+    "craft_term": 18,
+    "subgroup_fiction_manual": 16,
+    "subgroup_pedagogy_genre_craft": 12,
+    "subgroup_contrast": 10
+  },
+  "languages": {
+    "en": 137,
+    "de": 123
+  },
+  "review_fields": [
+    "relevant_to_narrative_perspective",
+    "concept_relevance",
+    "explicit_or_implicit_discussion",
+    "instruction_or_fictional_example",
+    "correct_concept_ids",
+    "false_positive_reason",
+    "reviewer_notes"
+  ],
+  "note": "No gold labels assigned. Keep separate from rule-tuning data."
+}

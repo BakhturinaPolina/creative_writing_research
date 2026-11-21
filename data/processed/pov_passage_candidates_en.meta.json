@@ -1,16 +1,48 @@
 {
-  "built": "2026-11-21 02:50",
+  "built": "2026-11-21 05:11",
+  "git_commit": "c95311598ae6159dda1e801d0a64790e272d9293",
+  "git_commit_short": "",
+  "software": {
+    "python": "3.14.4",
+    "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.43",
+    "pandas": "3.0.6",
+    "yaml": "6.0.3",
+    "numpy": "2.5.3",
+    "rank_bm25": "not_installed"
+  },
+  "peak_rss_mb": 503.9,
+  "book_stats_hashes": {
+    "en": "b9d1942199d90323007f42d7fd4f0616d884e09a9c1dce02381096e60b5999eb",
+    "de": "382a44f0305208d58a6eeabbdb401b17516b5849a617425d7e500b87501008d3"
+  },
+  "baseline": "C",
   "lang": "en",
   "lexicon_version": "0.2-draft",
-  "git_commit": "e8f0ed5",
+  "lexicon_sha256": "97dffff1befdaed841c32d85c914d514bb8da16b72aa2dd976a1233abf060305",
+  "regex_map_version": "0.1",
   "n_paragraphs_indexed": 315302,
-  "n_candidate_rows": 1800,
-  "n_unique_passages": 1113,
+  "n_candidate_rows": 5741,
+  "n_bm25_only_rows": 2813,
+  "n_unique_passages": 4202,
   "n_concepts_with_hits": 36,
-  "top_k": 50,
+  "top_k": 500,
+  "bm25_only_k": 100,
   "score_floor": 2.0,
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "bm25_epsilon": 0.25,
   "bm25_backend": "streaming_okapi",
   "peak_strategy": "two_pass_query_vocab_df_topk_heap",
+  "expected_books": 442,
+  "processed_books": 442,
+  "skipped_missing": [],
+  "skipped_unreadable": [],
   "stores_book_text": false,
-  "passage_column_removed": "2026-11-21"
+  "passage_sidecar": true,
+  "query_construction": {
+    "dedupe_expressions": true,
+    "dedupe_tokens": true,
+    "drop_stopwords": true,
+    "allow_repeated_token_weighting": false
+  }
 }

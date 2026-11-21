@@ -1,6 +1,7 @@
 """Load PsyPer bilingual lexicon v0.2 draft for retrieval."""
 from __future__ import annotations
 
+import hashlib
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -17,13 +18,14 @@ AMBIGUOUS_SOLO = {
         "perspective", "angle", "lens", "position", "standpoint", "view",
         "voice", "speaker", "telling", "narrator", "storyteller", "tone",
         "you", "address", "addressee", "he", "she", "they", "third", "pronoun",
-        "i", "me", "we", "us", "first",
+        "i", "me", "we", "us", "first", "character", "characters",
     },
     "de": {
         "perspektive", "sichtweise", "blick", "standpunkt", "blickrichtung",
         "position", "sicht", "stimme", "sprecher", "erzählen", "ton",
         "erzähler", "erzählerin", "du", "dich", "sie", "anrede",
         "ich", "mich", "wir", "uns", "pronomen", "er", "name",
+        "figur", "figuren",
     },
 }
 
@@ -48,6 +50,13 @@ class LexiconV02:
     pilot_examples: list[dict]
     context_rules: list[str]
     path: Path
+    sha256: str = ""
+
+
+def file_sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    h.update(path.read_bytes())
+    return h.hexdigest()
 
 
 def load_lexicon(path: Path | None = None) -> LexiconV02:
@@ -76,6 +85,7 @@ def load_lexicon(path: Path | None = None) -> LexiconV02:
         pilot_examples=list(raw.get("pilot_examples") or []),
         context_rules=list(raw.get("context_rules") or []),
         path=path,
+        sha256=file_sha256(path),
     )
 
 
@@ -91,14 +101,25 @@ def iter_literal_terms(lex: LexiconV02, lang: str) -> list[tuple[str, str, str]]
 
 
 def classify_tier(lang: str, tier: str, term: str) -> str:
-    """high | supporting | demoted | context_only — for audit / candidate rule."""
+    """Return evidence class: high | supporting | demoted | context_only.
+
+    Corpus frequency is NOT used here — rarity does not imply quality.
+    """
     t = term.casefold().strip()
+    if tier == "context":
+        return "context_only"
     if tier == "academic":
-        return "high"
-    if t in AMBIGUOUS_SOLO.get(lang, set()) or " " not in t and "-" not in t and len(t) < 8:
-        # short single-token craft → demoted for solo use
-        if tier == "craft":
+        # Bare general singles demoted even if listed under academic by mistake
+        if t in AMBIGUOUS_SOLO.get(lang, set()):
             return "demoted"
+        return "high"
+    if tier == "paraphrase":
+        return "supporting"
     if tier == "craft":
+        if t in AMBIGUOUS_SOLO.get(lang, set()):
+            return "demoted"
+        # short single-token craft → demoted for solo / supporting use
+        if " " not in t and "-" not in t and len(t) < 8:
+            return "demoted"
         return "supporting"
     return "demoted"

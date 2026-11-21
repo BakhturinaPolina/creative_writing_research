@@ -1,0 +1,9 @@
+baseline,language,n_rows,n_unique_passages,n_concepts,path
+A_v01,en,16649,10964,12,data/processed/pov_baseline_a_v01_en.csv
+A_v01,de,2138,1531,12,data/processed/pov_baseline_a_v01_de.csv
+B_v02_lexical,en,10611,7361,36,data/processed/pov_baseline_b_v02_lexical_en.csv
+B_v02_lexical,de,1034,771,31,data/processed/pov_baseline_b_v02_lexical_de.csv
+C_bm25,en,5741,4202,36,data/processed/pov_baseline_c_bm25_en.csv
+C_bm25,de,1021,762,31,data/processed/pov_baseline_c_bm25_de.csv
+C_bm25_only_unvalidated,en,2813,1804,36,data/processed/pov_baseline_c_bm25_only_unvalidated_en.csv
+C_bm25_only_unvalidated,de,3320,1647,36,data/processed/pov_baseline_c_bm25_only_unvalidated_de.csv

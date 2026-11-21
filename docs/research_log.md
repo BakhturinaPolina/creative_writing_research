@@ -42,6 +42,23 @@ Status values: `provisional` (open for revision), `frozen` (changes need a new D
 
 ## Entries
 
+## 2026-11-21 | Week 15–16 | Phase: Retrieval
+**Goal:** Fix concept-specific regex leakage; unify evidence tiers; ship baselines A/B/C; bilingual regression tests; full-corpus re-run.
+**Done:**
+- Critical bug: `_literal_evidence()` applied all `example_regex` patterns to every concept — fixed via `config/regex_concept_map_v01.yml` + shared `src/retrieval/evidence.py`.
+- Demoted craft no longer counts as supporting; overlapping variants collapse to one cue; grammatical person ≠ diegesis/filter words.
+- Baselines: A (v0.1 keyword), B (v0.2 uncapped lexical), C (streaming BM25 top-500 + `bm25_only_unvalidated`).
+- Tests: `tests/retrieval/test_evidence_regression.py` — **103 passed**.
+- Corpus (vs 83706dd-era): EN **442** / DE **67** analysis books; paragraphs EN **315,302** / DE **42,623**; body words EN **34,581,264** / DE **4,665,385**; 0 missing/unreadable JSON.
+- **Baseline B:** EN 10,611 assignments / 7,361 passages / 36 concepts; DE 1,034 / 771 / 31. Max concepts/passage EN 21 / DE 15 (was up to 29 DE under regex leakage).
+- **Baseline C:** EN 5,741 validated + 2,813 `bm25_only_unvalidated`; DE 1,021 + 3,320. Peak RSS EN C **~504 MB** (passages in heap); DE C **~223 MB**.
+- Runtime (approx.): A_en 799s; B_en 1011s; C_en 1018s; B_de 97s; C_de 122s.
+- Manual eval sample: 260 passages (EN 137 / DE 123), seed 20261121; review fields empty (no gold labels).
+**Data/outputs:** `data/processed/pov_baseline_*`, `pov_baseline_b_passages_{en,de}.csv`, `data/interim/retrieval/retrieval_comparative_report.md`, `manual_eval_sample*.csv` (passages gitignored).
+**Decisions:** Lexical baseline remains **unvalidated** until manual review. Public CSVs stay pointer-only.
+**Problems / open questions:** Five DE concepts still zero-hit on Baseline B; EN `filter_words` nearly absent lexically — semantic retrieval priority. Previously committed passage CSVs already purged (earlier same-day entry); do not rewrite history further without approval.
+**Next:** Manual relevance coding of `manual_eval_sample`; then embeddings / RRF hybrid.
+
 ## 2026-11-21 | Week 15 (fix) | Phase: Retrieval
 **Goal:** Remove copyrighted book passages accidentally committed in BM25 CSVs.
 **Done:** Dropped `passage` from `pov_passage_candidates_{en,de}.csv`; BM25 writer stores pointers only; optional `--with-passages` → gitignored sidecar; history rewritten so `main` no longer contains the text.

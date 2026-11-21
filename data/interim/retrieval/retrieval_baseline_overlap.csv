@@ -1,0 +1,3 @@
+language,n_b,n_c,intersection,b_only,c_only,jaccard
+en,10611,5741,5741,4870,0,0.541
+de,1034,1021,1021,13,0,0.9874
