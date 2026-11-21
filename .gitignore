@@ -44,3 +44,7 @@ data/processed/fulltext/
 # Colleague keyword-scan dump (CSVs contain book-text excerpts)
 book_filtering_script_and_results/book_scan_results/
 book_filtering_script_and_results/example_results/
+
+# BM25 / retrieval sidecars that contain book text (pointers stay in data/processed/)
+data/interim/retrieval/*_passages.csv
+data/interim/fulltext/danil_*

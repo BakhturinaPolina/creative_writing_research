@@ -1,0 +1,16 @@
+{
+  "built": "2026-11-21 02:50",
+  "lang": "en",
+  "lexicon_version": "0.2-draft",
+  "git_commit": "e8f0ed5",
+  "n_paragraphs_indexed": 315302,
+  "n_candidate_rows": 1800,
+  "n_unique_passages": 1113,
+  "n_concepts_with_hits": 36,
+  "top_k": 50,
+  "score_floor": 2.0,
+  "bm25_backend": "streaming_okapi",
+  "peak_strategy": "two_pass_query_vocab_df_topk_heap",
+  "stores_book_text": false,
+  "passage_column_removed": "2026-11-21"
+}

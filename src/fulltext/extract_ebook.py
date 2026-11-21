@@ -43,7 +43,7 @@ from src.fulltext.books import (
     MANIFEST_PATH,
     EncryptedBookError,
     ebook_documents,
-    normalize_text,
+    normalize_block,
     word_count,
 )
 
@@ -93,11 +93,12 @@ def doc_blocks(html: bytes) -> list[tuple[str, str]]:
             continue  # container; its children are emitted instead
         if el.name in HEADINGS and el.find_parent(HEADINGS) is not None:
             continue
-        text = normalize_text(el.get_text(" "))
+        # Preserve newlines so line-break hyphens can be rejoined before collapse.
+        text = normalize_block(el.get_text("\n"))
         if text and not PAGE_NUMBER.match(text):
             blocks.append((el.name, text))
     if not blocks:
-        text = normalize_text(body.get_text(" "))
+        text = normalize_block(body.get_text("\n"))
         if text:
             blocks.append(("p", text))
     return blocks

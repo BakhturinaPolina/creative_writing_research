@@ -1,78 +1,128 @@
 book_id,corpus_role,exclusion_reason,corpus_type,translation_status,original_language,reviewer,note
 de_017250902eee,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 de_023bce492ffa,negative,not_instructional,,,,agent-firstpass,memory culture (history)
+de_0507109a194a,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): CW pedagogy Deutschunterricht
 de_073dfc18edb1,negative,not_instructional,,,,agent-firstpass,Stephen King stories (fiction)
-de_0c3be71c3b5d,comparison,narratology_theory,F,,,agent-firstpass,Gottsched variant index
+de_07c3adc7c4e6,negative,wrong_book,,,,agent-2026-11-21,filename Schreibratgeber Hochschule; file unrelated (wrong_book) — stay negative
+de_0c3be71c3b5d,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology_theory: Gottsched Critische Dichtkunst variants
+de_0cb08b1cac85,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Die Sachen der Aufklärung
 de_0ed6a979cf5f,negative,not_instructional,,,,agent-firstpass,theology/poetry
-de_0f0a23138662,comparison,narratology_theory,F,,,agent-firstpass,Spielhagen 1883 novel theory; historical extension candidate
-de_105a4a440067,comparison,narratology_theory,F,,,agent-firstpass,historical German poetics textbook
+de_0f0a23138662,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology_theory: Spielhagen Theorie und Technik des Romans
+de_105a4a440067,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology_theory: Deutsche Poetik
+de_10a8083e5b8b,negative,not_instructional,,,,agent-2026-11-21,Rezeptbuch / not writing craft
 de_111d77f70faf,primary,,E,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 de_11cc69ef7971,negative,not_instructional,,,,agent-firstpass,content is self-help; title mismatch
 de_13071ed36155,negative,not_instructional,,,,agent-firstpass,by title only (Moore poem); needs OCR
-de_1408a38d001b,comparison,academic_study,,,,agent-firstpass,literary history
-de_17feb7172cd8,comparison,academic_study,,,,agent-firstpass,literary/cultural studies
-de_1c1f740c52c8,comparison,academic_study,,,,agent-firstpass,autofiction studies
-de_368b9722b730,comparison,academic_study,,,,agent-firstpass,literary history
+de_1408a38d001b,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Amerikanische Literatur des 20. [i. e. zwanzigsten] Jahrhund
+de_17feb7172cd8,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Frauen unterwegs
+de_1c1f740c52c8,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Auto(r)fiktion
+de_25d7e06a9fc4,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Auch in Neisse im Exil
+de_308569c9cfdf,negative,wrong_book,,,,agent-2026-11-21,filename Einführung kreatives Schreiben; file unrelated (wrong_book) — stay negative
+de_334098a722c9,negative,wrong_book,,,,agent-2026-11-21,filename Literarische Schreibratgeber; file is Dostoevsky (wrong_book)
+de_368b9722b730,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: US-amerikanische Erzählkunst 1990-2000
 de_369e4a819345,negative,not_instructional,,,,agent-firstpass,oral/life history
-de_37d39f0f7584,comparison,narratology_theory,F,,,agent-firstpass,17th/18th c. novel theory anthology; historical extension candidate
+de_37d39f0f7584,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology_theory: Theorie und Technik des Romans 17./18. Jh.
+de_3b22537766aa,negative,wrong_book,,,,agent-2026-11-21,filename KS DaF; content mismatch risk — stay negative
+de_3c752e9f1af1,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Jean Paul
+de_3e1077e69b1a,negative,literary_scholarship,,,,agent-2026-11-21,"literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Fr uhe Neuzeit, Bd. 125"
+de_3ee7fc729dfa,negative,wrong_book,,,,agent-2026-11-21,filename Stein craft manual; file is unrelated (wrong_book) — stay negative
+de_3f569ed3aac1,negative,wrong_book,,,,agent-2026-11-21,filename KS Unterricht; file unrelated art history (wrong_book) — stay negative
 de_401fc6902a4b,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 de_43f906dc2d84,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-de_482dab657766,comparison,academic_study,,,,agent-firstpass,literary studies (multilingualism)
-de_4a631afebd04,comparison,academic_study,,,,agent-firstpass,literary studies
+de_459b6be47a09,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: academic_study: Schreiben und Selbstreflexion (writing studies)
+de_482dab657766,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Affektivität und Mehrsprachigkeit
+de_4a631afebd04,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Die Dichter und das…
+de_4bbdee8ff728,negative,wrong_book,,,,agent-2026-11-21,filename 20 Masterplots; file is Piper Fantasy (wrong_book) — stay negative
 de_4c918ab1f7cf,primary,,A,,,agent-2026-11-12,narrative-writing primary: restore from review
+de_4f9e01853cc5,negative,not_instructional,,,,agent-2026-11-21,Konrad Bayer literary figure; needs_ocr / not craft manual
 de_52e95775c634,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-de_58f154035f87,comparison,academic_study,,,,agent-firstpass,content is literary history (exile literature) not Arabic poetry
+de_54bcdadcab26,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Bewegte Sprache
+de_55a67985e8db,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Erfahrung und Geschichte
+de_58f154035f87,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Altarabische Dichtkunst
 de_59743f15dc4d,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-de_5b5a41048804,comparison,academic_study,,,,agent-firstpass,literary studies
-de_630d6b7e0c9c,comparison,academic_study,,,,agent-firstpass,poetics/anthropology studies
+de_5b5a41048804,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Begegnungen
+de_5c34c16806de,comparison,,,,,agent-2026-11-21,"2026-11-12 keep comparison: academic_study: Schreiben, Bildung und Gespräch"
+de_630d6b7e0c9c,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology_theory: Poetik und Anthropologie
 de_635af8e255a9,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+de_64cb73ae86bb,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Das Bibelepos in der Frühen Neuzeit
 de_652b9f741575,negative,not_instructional,,,,agent-firstpass,poetry anthology
+de_6643123c5d85,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Joseph Zoderer
 de_66f47cdbc662,negative,not_instructional,,,,agent-firstpass,essays; title mismatch
 de_69951f01b0f8,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 de_69dd92910957,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-de_6c1eb7646a97,comparison,academic_study,,,,agent-firstpass,literary studies
+de_6b0368c55f7c,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Deutsche Familienromane
+de_6c1eb7646a97,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Koloniale Gewalt Literarisch Vermessen
 de_6c3b804e5e1b,negative,not_instructional,,,,agent-firstpass,cultural studies; title mismatch
-de_6ee48fd5e95a,comparison,academic_study,,,,agent-firstpass,writing and translation studies
-de_70af015ed128,comparison,academic_study,,,,agent-firstpass,philology
+de_6cda058df6f1,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Hans Joachim Schädlich
+de_6ee48fd5e95a,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: academic_study: Schreiben und Übersetzen
+de_70af015ed128,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: _Texte dritter Stufe_
+de_7a95ff2d2e0a,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Inseln des Eigensinns
 de_7bc748296a05,negative,not_instructional,,,,agent-firstpass,letters edition
+de_7dc0861fb77a,negative,literary_scholarship,,,,agent-2026-11-21,"literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Sprechen, Schreiben, Erzahlen"
+de_7e290d053067,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: academic_study: Schreiben des Abenteuers (poetics of writing)
 de_7f0387512ce5,negative,not_instructional,,,,agent-firstpass,archaeology festschrift; title mismatch
 de_7ffeaba032c1,negative,not_instructional,,,,agent-firstpass,biblical studies
+de_81126d1664d6,negative,literary_scholarship,,,,agent-2026-11-21,"classical philology on Claudianus, not CW craft"
 de_84168b10ce89,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-de_88dd306c2ce5,unreviewed,,,,,agent-firstpass,"title says writing guide, extracted text opens with a finance memoir; 4.3k words"
+de_88c52e349736,negative,wrong_book,,,,agent-2026-11-21,filename KS Grundschule; file is math didactics (wrong_book) — stay negative
+de_88dd306c2ce5,primary,,,,,agent-2026-11-21,narrative-writing: BUCH SCHREIBEN LERNEN bestseller system (short; may fail short_text gate)
 de_8b6fe39629d4,negative,technical_writing,,,,agent-firstpass,MS Word manual for authors
 de_8beaf597ccf1,negative,not_instructional,,,,agent-firstpass,Kisch reportage
-de_8e13ce34136b,comparison,narratology_theory,F,,,agent-firstpass,Gottsched Critische Dichtkunst; historical extension candidate
+de_8e13ce34136b,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology_theory: Gottsched Critische Dichtkunst Bd.6
 de_929500dd34a8,negative,not_instructional,,,,agent-firstpass,by title only (Herodotus); needs OCR
-de_93ddb0666db8,comparison,academic_study,,,,agent-firstpass,scholarship on writing practices
+de_93ddb0666db8,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology_theory: Asketisches Schreiben
+de_95504c80bfa8,negative,empty,,,,agent-2026-11-21,empty extract
 de_995bd8a03a4a,negative,not_instructional,,,,agent-firstpass,musicology
+de_99c021fdd264,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Schreibende Frauen um 1500
 de_9f0f847f4b95,primary,,A,translation,en,agent-2026-11-12,narrative-writing primary: restore from review
-de_a162cce7b606,comparison,academic_study,,,,agent-firstpass,literary studies
+de_a04e334d15ff,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Spiel Mit Dem Wort!
+de_a162cce7b606,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Ins Fremde schreiben
+de_a253bc322483,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Schriftstellerische Praxis in der Literatur der DDR und der 
+de_a5a7e7dce8c3,negative,wrong_book,,,,agent-2026-11-21,filename KS Schreibkompetenzen; file unrelated (wrong_book) — stay negative
 de_a63fd9aec972,negative,not_instructional,,,,agent-firstpass,content is a novel; title mismatch
-de_a6dd4ce86b0d,comparison,academic_study,,,,agent-firstpass,literary studies (prison writing)
-de_ab1a0dbd8ced,comparison,academic_study,,,,agent-firstpass,literary history
-de_afbc0c2d3b7a,comparison,academic_study,,,,agent-firstpass,literary studies (British novel)
+de_a6dd4ce86b0d,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: _Und selbst im Kerker frei--!_
+de_ab1a0dbd8ced,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Englische Literaturgeschichte
+de_ab832d056f77,negative,wrong_book,,,,agent-2026-11-21,filename KS Schulklasse; file unrelated memoir (wrong_book) — stay negative
+de_accb23d87c82,negative,songwriting,,,,agent-2026-11-21,songwriting craft → negative under 2026-11-12 taxonomy
+de_ad564f890540,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Fontane.200_Autor
+de_afbc0c2d3b7a,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Hybrides Erzählen und hybride Identität im britischen Roma
+de_b46bc30cfb14,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Otto Julius Bierbaum
+de_b4df855da504,negative,not_instructional,,,,agent-2026-11-21,"file is freelancing/HR content, not writing craft"
 de_b537e64834f1,negative,not_instructional,,,,agent-firstpass,media archaeology
-de_b63ec1fbf769,comparison,academic_study,,,,agent-firstpass,medieval literature studies
+de_b63ec1fbf769,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Gottfrieds Ironie
 de_b787ea4404c2,negative,not_instructional,,,,agent-firstpass,fiction
-de_c863061858e7,comparison,academic_study,,,,agent-firstpass,literary studies
+de_c3b1c2cc90e6,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Alphabet der Kindheit
+de_c863061858e7,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Gestörte Ordnung
+de_ced0a089a855,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Künstler-Ehe
 de_cfc756bc0750,negative,not_instructional,,,,agent-firstpass,comics history
 de_d4d0dabe62f3,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+de_d88c45142668,comparison,,,,,agent-2026-11-21,Narratologia / narrative theory → comparison under 2026-11-12 definition (was negative not_instructional)
+de_d966da6ac936,negative,wrong_book,,,,agent-2026-11-21,filename Vom Scheidt Kreatives Schreiben; file is SF magazine (wrong_book) — stay negative
 de_d9d6a0580d89,negative,not_instructional,,,,agent-firstpass,law/knowledge transfer
+de_daa517089512,primary,,,,,agent-2026-11-21,narrative craft: Absätze / dramatic units in the novel (Waldscheidt)
 de_dc8ca47de6c4,primary,,E,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-de_ea2ff97a7d6c,comparison,narratology_theory,F,,,agent-firstpass,Aristotle Poetics (theory)
+de_e71b0e0259a3,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Symphilologie
+de_ea2ff97a7d6c,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology_theory: Aristoteles über die Dichtkunst
 de_ed096f04f754,primary,,A,,,agent-2026-11-12,narrative-writing primary: restore from review
-de_eea984c0ef04,comparison,academic_study,,,,agent-firstpass,Kafka studies
+de_eea984c0ef04,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Franz Kafka und der Grosse Krieg
+de_f426a0cb7642,negative,literary_scholarship,,,,agent-2026-11-21,literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: Alfred Döblin
 de_f951ce0b5eb5,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+de_fb03d7248746,negative,literary_scholarship,,,,agent-2026-11-21,"literary scholarship / not narratology or writing-studies → negative (2026-11-12); was comparison: _Comment savoir_,  _Comment dire_"
+en_0030461b582c,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: writing on the wall
 en_022b9d262f7d,primary,,E,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_026291c1ff47,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
 en_03c1679e0eaf,negative,,,,,manual,hand-placed in negative/
+en_0483a85c612c,primary,,,,,agent-2026-11-21,fiction craft: erotic short stories formula
 en_04d6f4a876b4,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_0759789dd995,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Computers and writing - Noel Williams"
-en_078daf69734f,comparison,academic_study,,,,agent-2026-11-12,Myth and creative writing — scholarship
-en_091fe0c7289b,comparison,academic_writing,,,,agent-2026-11-12,narrative-writing def: contrast group
+en_078daf69734f,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research/poetics: Myth and creative writing
+en_091fe0c7289b,negative,everyday_writer_composition,,,,agent-2026-11-21,2026-11-12 taxonomy: everyday writer composition → negative
+en_099832eb9086,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: Women writing Middle English scholarship
 en_0b241b622c4d,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_0c63a7a4e647,negative,academic_writing,,,,taxonomy-2026-11,how to write book reports (fiction/drama/poetry analysis)
-en_0d3067f9b671,comparison,academic_writing,,,,agent-2026-11-12,narrative-writing def: contrast group
+en_0d3067f9b671,negative,rhetoric/composition_handbook,,,,agent-2026-11-21,2026-11-12 taxonomy: rhetoric/composition handbook → negative
+en_0d616efc780d,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): CW pedagogy Creative pattern practice
+en_0dc411f79d22,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): CW pedagogy Creative writing in the classroom
 en_0eaba7c4ecd7,primary,,,,,agent-2026-11-12,narrative-writing primary: restore from review
 en_0ec6146dfa4c,negative,children_handwriting,,,,agent-2026-11-12,"file is a cursive workbook (renamed, wrong_book)"
 en_0eecbaa5ddc7,negative,,,,,manual,hand-placed in negative/
@@ -80,9 +130,11 @@ en_0fb09c968b51,primary,,E,,,agent-2026-11-12,narrative-writing primary definiti
 en_0fb0d5ee5a2e,negative,not_instructional,,,,agent-2026-11-12,"seed record EN-045, file is another book (Jayson Blair memoir)"
 en_100aac549983,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_105715ec583b,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_11b7c7cac060,negative,copywriting,,,,agent-2026-11-21,2026-11-12 taxonomy: copywriting → negative
 en_11ec1f2ddaae,negative,journalism,,,,agent-2026-11-12,Mediawriting
 en_12634a184c9f,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Working writing - Unknown"
 en_128290a16845,negative,not_instructional,,,,agent-firstpass,political writing
+en_12ef8ac836d6,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: scientific proposal writing
 en_133ef9982676,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_14a1f97f50fe,negative,journalism,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_177940bdb427,negative,,,,,manual,hand-placed in negative/
@@ -94,9 +146,11 @@ en_1adb176fe24b,primary,,,,,agent-2026-11-12,narrative-writing def: release hand
 en_1b0f06390fb7,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
 en_1b0fb50fe1ca,negative,,,,,manual,hand-placed in negative/
 en_1b1ba2439cfa,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_1c2887a6135f,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research on writing: Becoming a writing researcher
 en_1c5622e5e84c,negative,journalism,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_1d1d45fd805e,negative,not_instructional,,,,agent-firstpass,children's history book
 en_1dd952666082,primary,,,,,agent-2026-11-12,narrative-writing def: screenwriting craft
+en_1e12529ed833,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): poetry craft Poetry writing
 en_1e1517a48ef2,negative,academic_writing,,,,agent-firstpass,essays
 en_1e1a0c5aa72b,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
 en_1e61ebdee802,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
@@ -111,10 +165,11 @@ en_226346b54f5b,primary,,,,,agent-2026-11-12,narrative-writing primary definitio
 en_22edff223ead,primary,,,,,agent-2026-11-12,narrative-writing def: poetry craft
 en_234d43a2a43f,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
 en_238873c8728c,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_23fb485d0564,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: writing about music
 en_24ace3328aeb,negative,academic_writing,,,,taxonomy-2026-11,students must write — coursework/exams
 en_24dfcadf510a,negative,,,,,manual,hand-placed in negative/
 en_25d7fe105ca4,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_273eb5e0c424,comparison,narratology_theory,F,,,agent-firstpass,by title (Lothe); needs OCR
+en_273eb5e0c424,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology: Narrative in fiction and film
 en_27849663e2f9,primary,,,,,agent-2026-11-12,seed EN-040; memoir part reads like fiction to the prescreen
 en_282eda36613e,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_2877da11e2f8,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
@@ -125,7 +180,9 @@ en_2a91af857c93,primary,,,,,agent-2026-11-12,narrative-writing def: release hand
 en_2af8a014bcae,negative,,,,,manual,hand-placed in negative/
 en_2b6ce8810964,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_2b88ca55ceac,negative,grammar_style,,,,taxonomy-2026-11,general grammar/style guide → negative; NYT manual of style and usage
+en_2b9f1d69178a,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: reading writing cancer
 en_2ba45a285a18,negative,academic_writing,,,,taxonomy-2026-11,how to write a thesis
+en_2bca032ca743,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): poetry pedagogy Verse writing in schools
 en_2bd50c3056c6,negative,,,,,manual,hand-placed in negative/
 en_2c392fc29cd6,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_2df9c13f85b0,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
@@ -139,24 +196,30 @@ en_3005cf521189,primary,,,,,agent-2026-11-12,narrative-writing primary definitio
 en_30a27c8a078f,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Traditions of writing research - Charles Bazerman"
 en_32d84ed4e588,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
 en_330e79656d58,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_33b42b2abfe2,comparison,narratology_theory,F,,,taxonomy-2026-11,retag: Waugh metafiction
+en_33b42b2abfe2,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology: Metafiction
 en_33e31cc97628,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_34436393937c,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_35e052fcb86f,comparison,narratology_theory,F,,,taxonomy-2026-11,retag: Waugh metafiction duplicate
+en_35e052fcb86f,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology: Metafiction
 en_3671f27acb2c,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_36edb254d4cd,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: computers and writing
 en_3852a78a1b4c,negative,grammar_style,,,,taxonomy-2026-11,general grammar/style guide → negative; Idiot's guide to grammar and style
+en_387a2ed7d93b,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): CW pedagogy Creative writing for juniors
 en_39f857785e0c,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_3acea1231810,primary,,,,,agent-2026-11-12,narrative-writing primary: restore from review
+en_3b48fc08340c,comparison,,,,,agent-2026-11-21,2026-11-12: writing studies: Speaking of writing
 en_3bbfae26ea5f,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
+en_3eaf970c95f4,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: professional report writing
 en_4011224ad896,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: The experience of writing - William D. Baker"
 en_4063dfbce53c,negative,,,,,manual,hand-placed in negative/
 en_40958e939715,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
+en_40e565592b02,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: Why Johnny cannot write literacy
 en_41611ab08100,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
 en_42a265a1e116,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_42b51f337810,comparison,research_discipline,,,,taxonomy-2026-11,researching identities through CW
+en_42b51f337810,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research on writing: Writing research/researching writing
+en_433fc5605f0e,primary,,,,,agent-2026-11-21,CW: The soul of creative writing
 en_46e5e0145e53,primary,,D,,,agent-2026-11-12,narrative-writing primary: restore from review
 en_4750f987f9ad,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_486d77ceb9a3,comparison,academic_writing,,,,agent-2026-11-12,Studying Creative Writing — academic
+en_486d77ceb9a3,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research on CW: Studying Creative Writing
 en_49102624b4b1,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_4961d7936da3,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_4972302c0ed0,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
@@ -167,14 +230,20 @@ en_4c1e90da209f,negative,,,,,manual,hand-placed in negative/
 en_4c78361ebf9c,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_4c8fb855d77e,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_4d6090d1d47f,negative,,,,,manual,hand-placed in negative/
+en_4d7600ec6cc6,comparison,,,,,agent-2026-11-21,2026-11-12: research: Cognition computers creative writing
+en_4e6c3ad2e4af,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): fiction pedagogy Story-writing scaffolds
 en_509339bb1905,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_5093b059c96e,negative,,,,,manual,hand-placed in negative/
-en_509c36e78d90,comparison,research_discipline,,,,taxonomy-2026-11,retag: The Creativity Market
+en_509c36e78d90,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research on CW: The Creativity Market
 en_523efa103922,negative,,A,,,manual,hand-placed in negative/
+en_524ce5f936e8,negative,creative_writing_for_lawyers,,,,agent-2026-11-21,2026-11-12 taxonomy: creative writing for lawyers → negative
 en_535a79d811f5,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_53ec5c9ae2e7,negative,not_instructional,,,,agent-2026-11-12,"anthology of creative writing, not instruction"
 en_545ec64f5c34,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_548cf20c7d40,negative,not_instructional,,,,agent-firstpass,content is Egyptology; title mismatch
+en_549169f5bbc6,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): CW pedagogy Creative writing activities
+en_54eb3eef9188,primary,,,,,agent-2026-11-21,CW title Creative Writing
+en_55d727e3cf4d,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): CW pedagogy year of writing activities
 en_568dcc8b6ebd,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_57cce7b9f511,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
 en_581332bce7af,negative,,,,,manual,hand-placed in negative/
@@ -182,31 +251,42 @@ en_594ea9f2b40a,primary,,,,,agent-2026-11-12,narrative-writing primary definitio
 en_59dbadaba4cc,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
 en_5a5528ca287f,primary,,E,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_5ab533e8fd11,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_5bd37e9cc093,comparison,narratology_theory,F,,,taxonomy-2026-11,Lothe narrative in fiction and film
+en_5bd37e9cc093,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology: Narrative in fiction and film
 en_5c6f2d6adb0d,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_5db89ef4709d,comparison,academic_writing,,,,agent-2026-11-12,What writing does — rhetoric/composition
-en_5dc1317370f3,comparison,narratology_theory,,,,agent-2026-11-12,Narrative fiction — narratology
+en_5cf1eac88366,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: writing center director resource
+en_5d2b60ac894c,primary,,,,,agent-2026-11-21,fiction craft: How to write and publish your novel
+en_5db89ef4709d,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research on writing: What writing does and how it does it
+en_5dc1317370f3,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology: Narrative fiction
 en_5f61b8969889,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_5fc6b683fc05,negative,,,,,manual,hand-placed in negative/
+en_601422830179,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research on CW: Creative Writing and the New Humanities
+en_60b84ecb3880,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: teach writing composition admin
 en_60f753385f05,primary,,,,,agent-2026-11-12,The writing workshop — CW pedagogy
 en_6126c62a4ab4,negative,,,,,manual,hand-placed in negative/
 en_617141870ba7,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
 en_6413133bb836,primary,,E,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_655c16bde94d,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_688808fc956b,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): screenwriting craft
+en_6b0dabff38a7,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): CW pedagogy From language to creative writing
+en_6bfe1ec65e10,negative,nonacademic_writing_professional,,,,agent-2026-11-21,2026-11-12 taxonomy: nonacademic writing professional → negative
 en_6c135dba584e,negative,not_instructional,,,,agent-2026-11-12,"seed record EN-016, file is another book (Chandler, industry history)"
 en_6c273e81598a,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_6d44fe35a3d1,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): CW reader / pedagogy
 en_6d5e0a669c25,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Thinking_writing - Martha Kilgore Rice"
+en_6f77a89b27a0,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research on CW: Creative writing studies
 en_6f86b50b1b1e,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_7015f03c0fd5,comparison,narratology_theory,F,,,agent-firstpass,Rimmon-Kenan
+en_7015f03c0fd5,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology: Narrative fiction
 en_70933108edef,primary,,E,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_70ebdde95436,comparison,academic_writing,,,,agent-2026-11-12,The writer's response — composition
+en_70ebdde95436,negative,writer_response_composition,,,,agent-2026-11-21,2026-11-12 taxonomy: writer response composition → negative
 en_70f88efc75f4,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Tales and _their telling difference_ - Herbert Foltinek _ Wolfgang Riehle _ Wald"
 en_71d3a103a8c8,negative,not_instructional,,,,agent-firstpass,mathematics education
 en_720b05d11134,negative,,,,,manual,hand-placed in negative/
 en_747075c7c601,negative,journalism,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_74812c94de33,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_74aacb05a1d6,negative,journalism,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_74be731579db,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): CNF craft Creating nonfiction
 en_76e5ef550c64,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_775abeb7c424,primary,,,,,agent-2026-11-21,CW: Just Imagine
 en_77f89ce197d2,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_787732968ca2,negative,academic_writing,,,,agent-firstpass,
 en_78aa9582a70e,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
@@ -217,26 +297,32 @@ en_7b95788416b8,negative,,,,,manual,hand-placed in negative/
 en_7d21a51e07e0,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_7d8934c768c0,negative,academic_writing,,,,agent-firstpass,
 en_7e8f1f97afd3,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Creativity and writing pedagogy - Harriet Levin Millan"
-en_7ecabda557a2,comparison,academic_study,,,,agent-2026-11-12,The realities of fiction — scholarship
+en_7ecabda557a2,comparison,,F,,,agent-2026-11-21,2026-11-12 keep comparison: narratology: realities of fiction
 en_7f5900465e67,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_7f83bd97a059,negative,academic_writing,,,,agent-firstpass,essays
 en_7fd7c64c032c,negative,songwriting_only,,,,agent-2026-11-12,"narrative-writing def: not craft, not contrast"
 en_80f7ff84ac0c,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_841da3e953d6,negative,not_instructional,,,,agent-firstpass,information science
 en_84be9d912381,negative,,,,,manual,hand-placed in negative/
+en_84c6a1ecab5f,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: WPA resource admin
 en_8527fc2bbdef,negative,,,,,manual,hand-placed in negative/
 en_8533f9518fe3,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Teaching and evaluating writing in the age of computers and high-stakes testing "
 en_8556c9fb41f9,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_858aa2752b01,comparison,academic_writing,,,,agent-2026-11-12,narrative-writing def: contrast group
+en_858aa2752b01,negative,college_writing_techniques,,,,agent-2026-11-21,2026-11-12 taxonomy: college writing techniques → negative
 en_87dec7c31afa,negative,not_instructional,,,,agent-firstpass,speech-language pathology
 en_87fb10231002,negative,,,,,manual,hand-placed in negative/
+en_888fe9f0a12e,comparison,,,,,agent-2026-11-21,2026-11-12: research: Relocating authority
 en_889572a3302c,negative,,,,,manual,hand-placed in negative/
 en_8abe2eb437d3,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_8b37824b5c28,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_8bf36d7b2d72,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_8d41a2ace877,negative,lawyer_writing_guide,,,,agent-2026-11-21,2026-11-12 taxonomy: lawyer writing guide → negative
+en_8d687a741c35,negative,business_writing,,,,agent-2026-11-21,2026-11-12 taxonomy: business writing → negative
+en_8ec5b0118c9c,primary,,,,,agent-2026-11-21,CW: Cornering creative writing
 en_90a1d24e2492,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_91fa634eefd5,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: English language, literature and creative writing - Sarah Dobbs"
 en_924d4b16df03,primary,,,,,agent-2026-11-12,seed EN-048; needs OCR
+en_94ec26687763,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): CNF/memoir craft How to write a memoir in 30 days
 en_951c788cead0,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_95b569ef485e,primary,,B,,,agent-2026-11-12,narrative-writing primary: restore from review
 en_95c08d5631a6,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
@@ -248,17 +334,22 @@ en_9aa5d07f5fbd,primary,,E,,,agent-2026-11-12,narrative-writing primary definiti
 en_9afadcb65b3a,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: New Directions in Technology for Writing Instruction - Gonca Yangın-Ekşi _ Sedat"
 en_9b0a144b16bd,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_9b5778f3c335,primary,,,,,agent-2026-11-12,narrative-writing primary: restore from review
+en_9b8bb2650e7b,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: themes and essays composition
 en_9c051f9dfd51,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_9c467e4566ac,negative,not_instructional,,,,agent-2026-11-12,narrative-writing def: follow prescreen
+en_9c58bbc3554c,primary,,,,,agent-2026-11-21,CW: Creative writing
 en_9e8d3a04baf1,negative,not_instructional,,,,agent-firstpass,content is software development; title mismatch
 en_9ed4b2fc9255,negative,academic_writing,,,,agent-firstpass,
+en_a17a52678721,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research on CW: Creative writing in America
 en_a21b156ee67d,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_a38447c01b2e,negative,academic_writing_handbook,,,,agent-2026-11-21,2026-11-12 taxonomy: academic writing handbook → negative
 en_a4e6ff8c969e,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_a6ea5bcb9970,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_a6f3da1c0c8b,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_a81bcac1410d,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Adolescents Rewrite Their Worlds - Vivian Yenika-Agbaw"
 en_a84f04122836,primary,,E,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_a9233b2d0aa3,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
+en_a9f685692e96,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: writing class admin/memoir
 en_a9fda328daa4,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_aaaa0d67b223,negative,,,,,manual,hand-placed in negative/
 en_ab81ae7512fd,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
@@ -267,21 +358,22 @@ en_ac21c1ffd789,negative,songwriting_only,,,,agent-2026-11-12,narrative-writing 
 en_ac3f1231224e,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_ad2d72bb3653,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
 en_ad3b28fec0f1,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_ada12ba0b557,comparison,research_discipline,,,,taxonomy-2026-11,research methods in CW
+en_ad879c613c04,primary,,,,,agent-2026-11-21,CW: Creative writing
+en_ada12ba0b557,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research on CW: Research Methods in Creative Writing
 en_add4aa1b6c62,negative,,,,,manual,hand-placed in negative/
 en_aedee80400db,primary,,E,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_afcbe7d8cc27,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_b0eccc526f4a,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_b11082a1bb6f,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_b1e7e5e96388,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_b290cfd70076,comparison,academic_writing,,,,agent-2026-11-12,grading writing — composition pedagogy
+en_b290cfd70076,negative,grading_writing_composition_admin,,,,agent-2026-11-21,2026-11-12 taxonomy: grading writing composition admin → negative
 en_b45e6e3b98bd,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_b588183e0ed1,primary,,D,,,agent-2026-11-12,narrative-writing primary: restore from review
 en_b7ce470acfe2,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_b8873a38710e,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
 en_b9067dab32a1,primary,,E,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_ba693891e715,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_bba7d0858503,unreviewed,,A,,,agent-2026-11-12,baseball writing memoir/bio — unclear
+en_bba7d0858503,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: baseball writing biography
 en_bc56c3f18946,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: University writing  selves and texts in academic societies - Christiane Donahue"
 en_bc734d6c4e89,negative,not_instructional,,,,agent-firstpass,Saki short story
 en_bd0cff4dfc78,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Rethinking basic writing - Laura Gray-Rosendale"
@@ -289,6 +381,8 @@ en_bf2df38b6a4a,primary,,,,,agent-2026-11-12,non-fiction writing craft
 en_bf900bfe19c5,primary,,,,,agent-2026-11-12,Creative Nonfiction
 en_c1b118a0bd53,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Ekphrasis, imagination and persuasion in ancient rhetorical theory and practice "
 en_c20ac0b50708,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_c219fac1b9c7,primary,,,,,agent-2026-11-21,fiction craft: The language of fiction
+en_c44c49a7da3c,primary,,,,,agent-2026-11-21,CW guide The creative writing guide
 en_c5399400a02f,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_c5b6e584ad76,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_c65be8ea645e,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
@@ -298,40 +392,51 @@ en_c956d3d5cafa,negative,not_instructional,,,,taxonomy-2026-11,"literary/composi
 en_c9d30a27be87,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_ca8938f229e7,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
 en_ca97f2cce361,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_cb1c69dcf744,negative,civic_literacy_composition,,,,agent-2026-11-21,2026-11-12 taxonomy: civic literacy composition → negative
 en_cb5acffe42df,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_cc489b473530,comparison,academic_study,,,,agent-2026-11-12,Creative Writing and Rewriting — scholarship
+en_cc489b473530,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research on CW: Creative Writing and Rewriting
 en_cd469adda7cb,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_cd4bed6e6527,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: teaching multiwriting composition
 en_ceeb9a5206ff,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_cff63e022c75,negative,,,,,manual,hand-placed in negative/
-en_d01fcc880dc1,unreviewed,,,,,agent-2026-11-12,Working at writing — reads like fiction
+en_d01fcc880dc1,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: Working at writing composition
 en_d191046f07bf,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Tools for writing - Barbara Z. Boone"
 en_d1c1536e7a42,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_d250ffa85f43,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
-en_d2c859f41419,comparison,narratology_theory,F,,,taxonomy-2026-11,retag: poetics of creative writing
-en_d396c8c3143a,comparison,research_discipline,,,,taxonomy-2026-11,retag: On Creative Writing — Harper
+en_d2c859f41419,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research/poetics of CW: Towards a poetics of creative writing
+en_d396c8c3143a,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research/poetics of CW: On Creative Writing
 en_d42e01dd69fe,negative,not_instructional,,,,agent-firstpass,content is a Minecraft guide; title mismatch
 en_d59fc56cb581,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_d59fd3d62e68,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_d5ef22bd4e70,unreviewed,,,,,agent-2026-11-12,Translation and Creativity — unclear
+en_d5ef22bd4e70,comparison,,,,,agent-2026-11-21,2026-11-12: research: Translation and Creativity
+en_d68be740f634,negative,essay/dissertation_handbook,,,,agent-2026-11-21,2026-11-12 taxonomy: essay/dissertation handbook → negative
 en_d7626a6bf968,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
-en_d86254a5aa8e,unreviewed,,,,,agent-2026-11-12,primary_check: follow prescreen → unreviewed
+en_d86254a5aa8e,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: courage to write general
 en_d920c6279ae5,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_d9f21bc08f65,comparison,,,,,agent-2026-11-21,2026-11-12: writing studies: Robert Frost on writing
 en_da804845b13a,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
-en_db71dc543165,comparison,academic_writing,,,,agent-firstpass,writing about film
+en_db71dc543165,negative,writing-about-film_handbook,,,,agent-2026-11-21,2026-11-12 taxonomy: writing-about-film handbook → negative
 en_dc9e574a8eb7,primary,,,,,agent-2026-11-12,narrative-writing primary: restore from review
+en_dd748760c983,primary,,,,,agent-2026-11-21,fiction craft: writer brainstorming kit
 en_ddd3a8a7d428,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_dddd26ad6ba4,negative,academic_writing,,,,taxonomy-2026-11,APA pocket style manual
-en_dede2712ef0c,comparison,research_discipline,,,,taxonomy-2026-11,researching creative writing
+en_dede2712ef0c,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research on CW: Researching Creative Writing
 en_e064fcb76484,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
 en_e06772e309ce,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_e067c98c2d9d,negative,writing-about-history_handbook,,,,agent-2026-11-21,2026-11-12 taxonomy: writing-about-history handbook → negative
 en_e107cc62e290,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Books that teach kids to write - Marianne Saccardi"
+en_e2a4e2abd9ee,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: composition Composing
 en_e2b36266a693,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_e2f86a737791,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Assessing and improving student writing in college - Barbara E. Walvoord"
 en_e31b1945621e,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Descriptive writing - Kimberly A. Williams"
+en_e3aec6469735,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: not CW craft manual
 en_e4c9f33dcaf3,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Memory and writing - Philip Davis"
 en_e5912133d2ae,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_e5aad32a1df0,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_e6b21af3b2af,primary,,E,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
+en_e6bce0c9def1,comparison,,,,,agent-2026-11-21,"2026-11-12 keep comparison: research on CW: Composition, CW Studies, DH"
+en_e76f11c1684f,primary,,,,,agent-2026-11-21,writer memoir/craft: The writing life
+en_e816b24c1eb3,primary,,,,,agent-2026-11-21,fiction craft: Writing historical fiction
 en_e83aabd35020,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_e9955aa14542,negative,academic_writing,,,,agent-firstpass,qualitative research
 en_ea1f3cae608c,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
@@ -344,10 +449,13 @@ en_ed9317e514b3,negative,,,,,manual,hand-placed in negative/
 en_edc364d25edd,primary,,,,,agent-2026-11-12,narrative-writing def: release hand comparison lock
 en_edefe7bc3017,negative,academic_writing,,,,agent-firstpass,thesis
 en_ee121d5b4ec3,negative,,,,,manual,hand-placed in negative/
-en_ee3d391c5150,comparison,academic_writing,,,,agent-2026-11-12,narrative-writing def: academic writing contrast
+en_ee3d391c5150,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): CW pedagogy Teachers teaching writing
+en_eed9ce9a132e,negative,not_instructional,,,,agent-2026-11-21,2026-11-12 unreviewed triage: copywriting compendium
 en_eff6c5ad46c2,negative,not_instructional,,,,taxonomy-2026-11,"literary/composition scholarship, not narratology: Student writing and genre - Fiona English"
 en_f0de3acd8875,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_f138dec3c590,negative,not_instructional,,,,agent-firstpass,Shakespeare plays
+en_f14383ed7e09,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research on CW: Cambridge companion to creative writing
+en_f1b3796eeb2e,primary,,,,,agent-2026-11-21,narrative-writing primary definition (2026-11-12): therapy/autobiography writing craft
 en_f434b539d3ea,negative,grammar_style,,,,taxonomy-2026-11,general grammar/style guide → negative; Barzun on writing/editing/publishing — style/usage
 en_f4650945cc90,primary,,,,,agent-2026-11-12,narrative-writing primary definition (2026-11-12)
 en_f4d6ecb60fbd,primary,,,,,agent-2026-11-12,narrative-writing primary: restore from review
@@ -366,5 +474,5 @@ en_fae751b0e281,primary,,,,,agent-2026-11-12,narrative-writing def: release hand
 en_fb382f24ecb6,primary,,,,,agent-2026-11-12,narrative-writing def: screenwriting craft
 en_fc3e71f6452f,negative,,,,,manual,hand-placed in negative/
 en_fecf12caa115,negative,,,,,manual,hand-placed in negative/
-en_fee22c2d4cab,comparison,research_discipline,,,,taxonomy-2026-11,retag: The writer in the academy
+en_fee22c2d4cab,comparison,,,,,agent-2026-11-21,2026-11-12 keep comparison: research on CW: The writer in the academy
 en_ff580d321e45,negative,,,,,manual,hand-placed in negative/

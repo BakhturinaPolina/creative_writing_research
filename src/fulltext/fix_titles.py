@@ -1,10 +1,11 @@
-"""Suggest and apply corrected titles and authors for the English books.
+"""Suggest and apply corrected titles and authors for English and German books.
 
 `suggest` collects candidate (title, author) pairs from the download filename,
 the candidate lists, metadata embedded in the file and Open Library (ISBN from
 the copyright page, else a title/author search). Every candidate is checked
 against the book's own first pages; the best verified pair is proposed with a
 confidence level and written to data/interim/fulltext/title_author_review.csv.
+Re-running for one language keeps rows for the other languages.
 
 `apply` copies accepted rows into config/book_metadata_overrides.csv, which
 reorganize_books and inventory use for filenames.
@@ -17,7 +18,7 @@ reorganize_books and inventory use for filenames.
 Acceptance: `high` rows are applied unless `accept=no`; all others need `accept=yes`.
 
 Usage:
-  python -m src.fulltext.fix_titles suggest [--offline] [--limit N] [--book-id ID ...]
+  python -m src.fulltext.fix_titles suggest [--lang en|de|all] [--offline] [--limit N]
   python -m src.fulltext.fix_titles apply
 """
 from __future__ import annotations
@@ -72,6 +73,11 @@ PUBLISHERS = {
     "harpercollins", "random house", "vintage", "anchor", "pearson", "longman", "mcgraw-hill",
     "oxford university press", "cambridge university press", "writer's digest books", "heinemann",
     "scholastic", "norton", "w. w. norton", "houghton mifflin", "simon & schuster", "taylor & francis",
+    # German / DACH
+    "suhrkamp", "fischer", "rowohlt", "hanser", "dtv", "beck", "reclam", "kunibert",
+    "authors house", "bod", "books on demand", "schrifstellerverlag", "aufbau", "wagenbach",
+    "metzler", "narr", "narr francke attempto", "utb", "schneider verlag", "schneider",
+    "beltz", "beltz juventa", "klett", "klett-cotta", "cornelsen", "westermann",
 }
 ROLE_WORDS = re.compile(
     # bare "writer" omitted: it chops "Writer's Digest". MARC ", writer" is rare here.
@@ -81,8 +87,13 @@ ROLE_WORDS = re.compile(
     re.I,
 )
 EDITION = re.compile(
-    r"[,:;.]?\s*\b(\d+(st|nd|rd|th)|first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|new|revised)"
-    r"( anniversary| revised| and expanded| updated)? edition\b",
+    r"[,:;.]?\s*\b("
+    r"(\d+(st|nd|rd|th)|first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|new|revised)"
+    r"( anniversary| revised| and expanded| updated)? edition|"
+    r"(\d+\.?\s*)?(aktualisierte|überarbeitete|erweiterte|verbesserte|neu\s*bearbeitete|neue)\s+"
+    r"(und\s+(aktualisierte|überarbeitete|erweiterte)\s+)?auflage|"
+    r"\d+\.\s*auflage"
+    r")\b",
     re.I,
 )
 DATES = re.compile(r"\(?\b\d{3,4}\s*-\s*(\d{3,4})?\)?\.?|\(?\bb\.\s*\d{4}\)?")
@@ -505,18 +516,37 @@ def decide(row: dict, cands: list[dict], front_words: set[str], cur_title: str, 
 def suggest(args) -> None:
     log = setup_logger("fix_titles_suggest")
     manifest = pd.read_csv(MANIFEST_PATH, dtype=str).fillna("")
-    books = manifest[manifest["lang"] == "en"]
+    langs = ["en", "de"] if args.lang == "all" else [args.lang]
+    books = manifest[manifest["lang"].isin(langs)]
     if args.book_id:
         books = books[books["book_id"].isin(args.book_id)]
     if args.limit:
         books = books.head(args.limit)
     overrides = load_metadata_overrides()
     previous = {}
+    kept_other = pd.DataFrame()
     if REVIEW_PATH.is_file():
         old = pd.read_csv(REVIEW_PATH, dtype=str).fillna("")
         previous = {r["book_id"]: r for r in old.to_dict(orient="records")}
+        # Keep suggestions for languages not refreshed in this run.
+        if args.lang != "all" and "book_id" in old.columns:
+            lang_map = manifest.set_index("book_id")["lang"]
+            if "lang" not in old.columns:
+                old = old.copy()
+                old["lang"] = old["book_id"].map(lang_map).fillna(old["book_id"].str[:2])
+            else:
+                blank = old["lang"].eq("")
+                if blank.any():
+                    old = old.copy()
+                    old.loc[blank, "lang"] = old.loc[blank, "book_id"].map(lang_map).fillna(
+                        old.loc[blank, "book_id"].str[:2]
+                    )
+            kept_other = old[~old["lang"].isin(langs)].copy()
     ol = OpenLibrary(args.offline, log)
-    log.info(f"{len(books)} English books; open library {'offline (cache only)' if args.offline else 'online'}")
+    log.info(
+        f"{len(books)} books (lang={','.join(langs)}); "
+        f"open library {'offline (cache only)' if args.offline else 'online'}"
+    )
 
     files = raw_files_by_md5()
     rows = []
@@ -541,6 +571,7 @@ def suggest(args) -> None:
             by_source = {c["source"]: c for c in cands}
             out = {
                 "book_id": row["book_id"],
+                "lang": row["lang"],
                 "corpus_role": row["corpus_role"],
                 "format": row["format"],
                 "title_match": row["title_match"],
@@ -564,12 +595,20 @@ def suggest(args) -> None:
     ol.save()
 
     review = pd.DataFrame(rows)
+    if not kept_other.empty:
+        # Drop obsolete columns alignment; concat on union of columns.
+        review = pd.concat([kept_other, review], ignore_index=True, sort=False)
     if not review.empty:
-        review = review.sort_values(["confidence", "book_id"], key=lambda s: s.map(CONFIDENCE_ORDER) if s.name == "confidence" else s)
+        review = review.sort_values(
+            ["confidence", "book_id"],
+            key=lambda s: s.map(CONFIDENCE_ORDER) if s.name == "confidence" else s,
+        )
     review.to_csv(REVIEW_PATH, index=False, encoding="utf-8")
     log.info(f"wrote {REVIEW_PATH.relative_to(ROOT)} ({len(review)} rows, {ol.requests} open library requests)")
     if not review.empty:
         log.info("by confidence:\n" + review["confidence"].value_counts().to_string())
+        if "lang" in review.columns:
+            log.info("by lang:\n" + review["lang"].value_counts().to_string())
     log.close()
 
 
@@ -613,6 +652,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     sub = parser.add_subparsers(dest="command", required=True)
     s = sub.add_parser("suggest", help="write the review CSV")
+    s.add_argument("--lang", choices=["en", "de", "all"], default="en",
+                   help="language to (re)suggest; other langs in the CSV are kept (default: en)")
     s.add_argument("--offline", action="store_true", help="use only cached Open Library responses")
     s.add_argument("--limit", type=int, help="first N books only (testing)")
     s.add_argument("--book-id", nargs="*", help="only these book_ids")

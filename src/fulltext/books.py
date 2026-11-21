@@ -203,6 +203,20 @@ def normalize_text(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def normalize_block(text: str) -> str:
+    """Normalize one HTML/PDF block: rejoin line-break hyphens, then NFC/whitespace.
+
+    Call with newlines still present when possible so join_hyphenated_lines can
+    fire; residual spaced hyphens (word- word) are rejoined afterwards.
+    """
+    from src.fulltext.cleaning import rejoin_residual_hyphens
+
+    text = join_hyphenated_lines(text)
+    text = normalize_text(text.replace("\n", " "))
+    text, _ = rejoin_residual_hyphens(text)
+    return text
+
+
 def word_count(text: str) -> int:
     return len(WORD_RE.findall(text))
 

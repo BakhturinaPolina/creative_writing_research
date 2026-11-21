@@ -1,16 +1,17 @@
-"""Move English books that still need a title/author check into staging folders.
+"""Move books that still need a title/author check into staging folders.
 
 Layout:
-  data/raw/books/en/_title_review/{wrong_book|conflict|medium}/{Title} - {Author} [{md5}].{ext}
+  data/raw/books/{lang}/_title_review/{wrong_book|conflict|medium}/{Title} - {Author} [{md5}].{ext}
 
 Books already placed by hand (not at their previous path), already overridden, or
 missing on disk are skipped. After you rename a file and move it into
 primary/review/comparison/negative, run:
 
-  python -m src.fulltext.sync_raw_layout
+    python -m src.fulltext.sync_raw_layout
 
 Usage:
-  python -m src.fulltext.stage_title_review           # apply
+  python -m src.fulltext.stage_title_review                # English (default)
+  python -m src.fulltext.stage_title_review --lang de
   python -m src.fulltext.stage_title_review --dry-run
 """
 from __future__ import annotations

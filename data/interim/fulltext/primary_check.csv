@@ -3,6 +3,9 @@ de_dc8ca47de6c4,de,Freies Schreiben und Drucken Mit der Schuldruckerei,Marjan Ro
 de_9f0f847f4b95,de,Raum zum Schreiben,Bonni Goldberg,review:agent-2026-11-12,5.99,0.0,0.0,prescreen says unreviewed: weak instruction 5.99/1k
 de_4c918ab1f7cf,de,Schreiben heisst sich selber lesen,Christa Thomassen,review:agent-2026-11-12,7.59,0.0,0.71,prescreen says unreviewed: weak instruction 7.59/1k
 de_ed096f04f754,de,Wild Mind – Freies Schreiben,Natalie Goldberg,review:agent-2026-11-12,4.18,0.0,0.54,prescreen says unreviewed: weak instruction 4.18/1k
+de_88dd306c2ce5,de,BUCH SCHREIBEN LERNEN - das Bestseller-System Für Ihren Erfolg,Empire of Books,review:agent-2026-11-21,3.96,0.0,0.0,"prescreen says unreviewed: about literature, not instructional (3.03/1k)"
+de_daa517089512,de,Erzählperspektiven,Stephan Waldscheidt,review:agent-2026-11-21,7.92,0.17,0.17,prescreen says unreviewed: weak instruction 7.92/1k
+de_0507109a194a,de,Kreatives Schreiben Im Deutschunterricht,Bettina Einhellig,review:agent-2026-11-21,7.16,8.95,7.37,prescreen says comparison: scholarship on literature/writing (citations 7.37/1k)
 en_5a5528ca287f,en,300 creative writing activities for the composition class,Edwin P Grobe,review:agent-2026-11-12,14.03,5.35,0.0,prescreen says comparison: title: composition / general writing handbook
 en_0fb09c968b51,en,"A Guide to teaching creative writing, fiction",Linda Christensen,review:agent-2026-11-12,4.89,0.49,0.0,prescreen says unreviewed: weak instruction 4.89/1k
 en_2ec8ae74984b,en,A Swim in a Pond in the Rain,George Saunders,review:agent-2026-11-12,3.24,0.95,0.0,prescreen says unreviewed: weak instruction 3.24/1k
@@ -67,3 +70,31 @@ en_dc9e574a8eb7,en,Third Mind,Tonya Foster,review:agent-2026-11-12,1.43,10.78,0.
 en_eac5708d282a,en,Writers on writing,Robert Pack,review:agent-2026-11-12,0.43,0.14,0.0,prescreen says unreviewed: in curated list P1 but little instruction (0.43/1k)
 en_8bf36d7b2d72,en,"Writing With Skill, Level 2",Susan Wise Bauer,review:agent-2026-11-12,2.69,0.99,0.14,"prescreen says unreviewed: about literature, not instructional (6.51/1k)"
 en_ea41b864de52,en,Writing with At-risk Youth,Richard Gold,review:agent-2026-11-12,2.09,1.11,0.0,"prescreen says unreviewed: about literature, not instructional (20.89/1k)"
+en_6d44fe35a3d1,en,A contemporary reader for creative writing,Robert DeMaria,review:agent-2026-11-21,2.06,0.39,0.0,"prescreen says unreviewed: in curated list P1 but reads like fiction (dialogue tags 3.61/1k, quotes 10.83/1k, instruction 2.06/1k)"
+en_55d727e3cf4d,en,A year of writing activities,I. David Welch,review:agent-2026-11-21,1.97,5.5,0.85,prescreen says unreviewed: in curated list P1 but little instruction (1.97/1k)
+en_8ec5b0118c9c,en,Cornering creative writing,Imogene Forte,review:agent-2026-11-21,2.54,19.99,0.0,prescreen says unreviewed: in curated list P1 but little instruction (2.54/1k)
+en_74be731579db,en,Creating nonfiction,Becky Bradway,review:agent-2026-11-21,0.0,0.0,0.0,prescreen says unreviewed: no text sample (needs OCR)
+en_54eb3eef9188,en,Creative Writing,Jesse Falzoi,review:agent-2026-11-21,1.59,0.66,0.0,"prescreen says unreviewed: about literature, not instructional (8.87/1k)"
+en_0d616efc780d,en,Creative pattern practice: a new approach to writing,Mary E. Whitten,review:agent-2026-11-21,2.35,0.39,0.0,prescreen says unreviewed: in curated list P1 but little instruction (2.35/1k)
+en_9c58bbc3554c,en,Creative writing,Sybil Marshall,review:agent-2026-11-21,1.28,4.79,0.12,prescreen says unreviewed: in curated list P1 but little instruction (1.28/1k)
+en_ad879c613c04,en,Creative writing,Howard Charles Brashers,review:agent-2026-11-21,2.86,0.48,0.76,prescreen says unreviewed: in curated list P1 but little instruction (2.86/1k)
+en_549169f5bbc6,en,Creative writing activities,Walter Burke Barbe,review:agent-2026-11-21,0.0,0.0,0.0,prescreen says unreviewed: in curated list P1 but little instruction (0.0/1k)
+en_387a2ed7d93b,en,Creative writing for juniors,Barry Maybury,review:agent-2026-11-21,2.62,4.32,0.0,prescreen says unreviewed: in curated list P1 but little instruction (2.62/1k)
+en_0dc411f79d22,en,Creative writing in the classroom,Carol Staudacher,review:agent-2026-11-21,1.82,6.43,0.0,prescreen says unreviewed: in curated list P1 but little instruction (1.82/1k)
+en_6b0dabff38a7,en,From language to creative writing,Philip Seargeant,review:agent-2026-11-21,2.57,0.14,1.72,prescreen says unreviewed: in curated list P1 but little instruction (2.57/1k)
+en_0483a85c612c,en,How to Write Erotic Short Stories that Sell - A Simple Formula,Christina Palmer,review:agent-2026-11-21,5.68,0.0,0.0,prescreen says unreviewed: weak instruction 5.68/1k
+en_94ec26687763,en,How to write a memoir in 30 days,Roberta Temes,review:agent-2026-11-21,4.78,1.64,0.0,prescreen says unreviewed: weak instruction 4.78/1k
+en_5d2b60ac894c,en,How to write and publish your novel,Bill Knott,review:agent-2026-11-21,0.0,0.0,0.0,prescreen says unreviewed: no text sample (needs OCR)
+en_775abeb7c424,en,Just Imagine,James Carter,review:agent-2026-11-21,1.45,2.76,0.73,prescreen says unreviewed: in curated list P1 but little instruction (1.45/1k)
+en_1e12529ed833,en,Poetry writing: theme and variations,David Starkey,review:agent-2026-11-21,2.13,0.61,0.0,"prescreen says unreviewed: in curated list P1 but reads like fiction (dialogue tags 4.27/1k, quotes 13.88/1k, instruction 2.13/1k)"
+en_ee3d391c5150,en,"READING, THINKING, and WRITING ABOUT HISTORY",Chauncey Monte-Sano,review:agent-2026-11-21,1.14,35.66,0.0,"prescreen says comparison: title: writing for law, history or science"
+en_688808fc956b,en,Screenwriting,Paul Joseph Gulino,review:agent-2026-11-21,0.0,0.0,0.0,prescreen says unreviewed: no text sample (needs OCR)
+en_4e6c3ad2e4af,en,Story-writing scaffolds,Maria Roberts,review:agent-2026-11-21,2.81,0.4,0.0,prescreen says unreviewed: in curated list P1 but little instruction (2.81/1k)
+en_c44c49a7da3c,en,The creative writing guide,Candace Schaefer,review:agent-2026-11-21,0.0,0.0,0.0,prescreen says unreviewed: no text sample (needs OCR)
+en_c219fac1b9c7,en,The language of fiction,Keith Sanger,review:agent-2026-11-21,2.98,0.48,0.0,prescreen says unreviewed: in curated list P1 but little instruction (2.98/1k)
+en_433fc5605f0e,en,The soul of creative writing,Linda Lappin,review:agent-2026-11-21,5.18,0.15,0.15,prescreen says unreviewed: weak instruction 5.18/1k; placed by hand under its old name; file is another book
+en_dd748760c983,en,The writer's brain storming kit,Pam McCutcheon,review:agent-2026-11-21,1.0,0.29,0.0,"prescreen says unreviewed: in curated list P1 but reads like fiction (dialogue tags 6.15/1k, quotes 0.0/1k, instruction 1.0/1k)"
+en_e76f11c1684f,en,The writing life,Ellen Gilchrist,review:agent-2026-11-21,2.2,0.13,0.0,"prescreen says unreviewed: in curated list P1 but reads like fiction (dialogue tags 2.33/1k, quotes 4.4/1k, instruction 2.2/1k)"
+en_f1b3796eeb2e,en,Therapeutic dimensions of autobiography in creative writing,Celia Hunt,review:agent-2026-11-21,4.18,0.98,6.75,prescreen says comparison: scholarship on literature/writing (citations 6.75/1k)
+en_2bca032ca743,en,Verse writing in schools,Eric J. Bolton,review:agent-2026-11-21,1.38,2.52,0.0,prescreen says unreviewed: in curated list P1 but little instruction (1.38/1k)
+en_e816b24c1eb3,en,Writing historical fiction,Rhona Martin,review:agent-2026-11-21,2.51,0.28,0.0,prescreen says unreviewed: in curated list P1 but little instruction (2.51/1k)

@@ -1,0 +1,15 @@
+{
+  "built": "2026-11-21 02:33",
+  "lang": "de",
+  "lexicon_version": "0.2-draft",
+  "git_commit": "e8f0ed5",
+  "n_paragraphs_indexed": 42623,
+  "n_candidate_rows": 1800,
+  "n_unique_passages": 384,
+  "n_concepts_with_hits": 36,
+  "top_k": 50,
+  "score_floor": 2.0,
+  "bm25_backend": "rank_bm25",
+  "stores_book_text": false,
+  "passage_column_removed": "2026-11-21"
+}

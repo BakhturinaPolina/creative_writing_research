@@ -1,0 +1,520 @@
+lang,concept_id,source_tier,assigned_tier,term,n_chars,n_tokens,df,tf,df_share,df_primary,df_comparison,df_share_primary,df_share_comparison,zero_hit
+de,perspective_general,academic,high,Erzählperspektive,17,1,157,209,0.003683,156,1,0.004263,0.000166,False
+de,perspective_general,academic,high,Erzählstandpunkt,16,1,2,6,4.7e-05,2,0,5.5e-05,0.0,False
+de,perspective_general,academic,high,Erzählerstandort,16,1,0,0,0.0,0,0,0.0,0.0,True
+de,perspective_general,academic,high,Erzählsituation,15,1,10,12,0.000235,9,1,0.000246,0.000166,False
+de,perspective_general,academic,high,Erzählhaltung,13,1,16,18,0.000375,15,1,0.00041,0.000166,False
+de,perspective_general,academic,high,Perspektivierung,16,1,15,15,0.000352,3,12,8.2e-05,0.001992,False
+de,perspective_general,academic,high,narrative Perspektive,21,2,1,1,2.3e-05,0,1,0.0,0.000166,False
+de,perspective_general,academic,high,Erzählposition,14,1,6,16,0.000141,6,0,0.000164,0.0,False
+de,perspective_general,academic,high,Perspektivenstruktur,20,1,0,0,0.0,0,0,0.0,0.0,True
+de,perspective_general,craft,supporting,Blickwinkel,11,1,113,129,0.002651,91,22,0.002486,0.003651,False
+de,perspective_general,craft,supporting,Blickpunkt,10,1,12,13,0.000282,7,5,0.000191,0.00083,False
+de,perspective_general,craft,supporting,Perspektivfigur,15,1,31,35,0.000727,31,0,0.000847,0.0,False
+de,perspective_general,craft,supporting,Erzählfigur,11,1,21,49,0.000493,21,0,0.000574,0.0,False
+de,perspective_general,craft,supporting,Erzählblick,11,1,0,0,0.0,0,0,0.0,0.0,True
+de,perspective_general,craft,supporting,Erzähloptik,11,1,0,0,0.0,0,0,0.0,0.0,True
+de,perspective_general,craft,supporting,Erzählkamera,12,1,0,0,0.0,0,0,0.0,0.0,True
+de,perspective_general,craft,supporting,Perspektivenwahl,16,1,0,0,0.0,0,0,0.0,0.0,True
+de,perspective_general,craft,supporting,Wahl der Erzählperspektive,26,3,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,perspective_general,craft,supporting,Erzählform,10,1,31,41,0.000727,29,2,0.000792,0.000332,False
+de,perspective_general,craft,supporting,Erzählweise,11,1,47,51,0.001103,38,9,0.001038,0.001494,False
+de,voice_general,academic,high,Erzählinstanz,13,1,6,8,0.000141,2,4,5.5e-05,0.000664,False
+de,voice_general,academic,high,Erzählstimme,12,1,17,62,0.000399,17,0,0.000465,0.0,False
+de,voice_general,academic,high,Erzählerstimme,14,1,19,22,0.000446,16,3,0.000437,0.000498,False
+de,voice_general,academic,high,erzählendes Subjekt,19,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_general,academic,high,narrative Stimme,16,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,voice_general,academic,high,Erzählerfigur,13,1,6,6,0.000141,5,1,0.000137,0.000166,False
+de,voice_general,academic,high,Erzählfunktion,14,1,3,3,7e-05,2,1,5.5e-05,0.000166,False
+de,voice_general,craft,demoted,Erzähler,8,1,551,871,0.012927,403,148,0.011012,0.024564,False
+de,voice_general,craft,demoted,Erzählerin,10,1,48,98,0.001126,48,0,0.001312,0.0,False
+de,voice_general,craft,supporting,Erzählerwahl,12,1,0,0,0.0,0,0,0.0,0.0,True
+de,voice_general,craft,supporting,Erzählerrolle,13,1,3,4,7e-05,3,0,8.2e-05,0.0,False
+de,voice_general,craft,supporting,Erzähleridentität,17,1,0,0,0.0,0,0,0.0,0.0,True
+de,voice_general,craft,supporting,Stimme des Erzählers,20,3,6,7,0.000141,6,0,0.000164,0.0,False
+de,voice_general,craft,supporting,erzählende Stimme,17,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_general,craft,supporting,Erzählton,9,1,10,10,0.000235,10,0,0.000273,0.0,False
+de,grammatical_first_person,academic,high,Ich-Erzählung,13,1,27,33,0.000633,19,8,0.000519,0.001328,False
+de,grammatical_first_person,academic,high,Ich-Erzähler,12,1,118,154,0.002768,102,16,0.002787,0.002656,False
+de,grammatical_first_person,academic,high,Ich-Erzählerin,14,1,12,16,0.000282,12,0,0.000328,0.0,False
+de,grammatical_first_person,academic,high,Ich-Perspektive,15,1,33,48,0.000774,33,0,0.000902,0.0,False
+de,grammatical_first_person,academic,high,Ich-Form,8,1,36,40,0.000845,34,2,0.000929,0.000332,False
+de,grammatical_first_person,academic,high,Erzählung in der ersten Person,30,5,3,3,7e-05,3,0,8.2e-05,0.0,False
+de,grammatical_first_person,academic,high,erste Person Singular,21,3,3,4,7e-05,3,0,8.2e-05,0.0,False
+de,grammatical_first_person,academic,high,Wir-Erzählung,13,1,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_first_person,craft,supporting,Ich-Form schreiben,18,2,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,grammatical_first_person,craft,supporting,Ichsicht,8,1,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_first_person,craft,supporting,Ich-PoV,7,1,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_first_person,craft,supporting,Ich-Person,10,1,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_first_person,craft,supporting,Ich-Perspektive wählen,22,2,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_first_person,craft,supporting,erste Person,12,2,19,22,0.000446,16,3,0.000437,0.000498,False
+de,grammatical_first_person,craft,supporting,Ich-Stimme,10,1,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_second_person,academic,high,Du-Erzählung,12,1,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_second_person,academic,high,Du-Perspektive,14,1,5,8,0.000117,5,0,0.000137,0.0,False
+de,grammatical_second_person,academic,high,Du-Form,7,1,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,grammatical_second_person,academic,high,Erzählung in der zweiten Person,31,5,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,grammatical_second_person,academic,high,Du-Erzähler,11,1,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_second_person,craft,supporting,zweite Person,13,2,7,9,0.000164,6,1,0.000164,0.000166,False
+de,grammatical_second_person,craft,supporting,Du-Ansprache,12,1,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_second_person,craft,supporting,Du-Perspektive schreiben,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_second_person,craft,supporting,direkte Anrede,14,2,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_third_person,academic,high,Er-Erzählung,12,1,11,12,0.000258,11,0,0.000301,0.0,False
+de,grammatical_third_person,academic,high,Sie-Erzählung,13,1,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_third_person,academic,high,Er-Erzähler,11,1,13,13,0.000305,13,0,0.000355,0.0,False
+de,grammatical_third_person,academic,high,Sie-Erzählerin,14,1,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_third_person,academic,high,Er-Sie-Erzählung,16,1,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_third_person,academic,high,Erzählung in der dritten Person,31,5,6,8,0.000141,6,0,0.000164,0.0,False
+de,grammatical_third_person,academic,high,Er-Sie-Perspektive,18,1,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_third_person,academic,high,Er-Form,7,1,15,16,0.000352,14,1,0.000383,0.000166,False
+de,grammatical_third_person,academic,high,Sie-Form,8,1,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,grammatical_third_person,craft,supporting,dritte Person,13,2,23,30,0.00054,22,1,0.000601,0.000166,False
+de,grammatical_third_person,craft,supporting,Er-Perspektive,14,1,5,9,0.000117,5,0,0.000137,0.0,False
+de,grammatical_third_person,craft,supporting,Sie-Perspektive,15,1,4,5,9.4e-05,4,0,0.000109,0.0,False
+de,grammatical_third_person,craft,supporting,Er-Sie-Form,11,1,0,0,0.0,0,0,0.0,0.0,True
+de,grammatical_third_person,craft,supporting,Er-PoV,6,1,0,0,0.0,0,0,0.0,0.0,True
+de,voice_heterodiegetic,academic,high,heterodiegetischer Erzähler,27,2,1,1,2.3e-05,0,1,0.0,0.000166,False
+de,voice_heterodiegetic,academic,high,heterodiegetische Erzählerin,28,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_heterodiegetic,academic,high,heterodiegetisches Erzählen,27,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_heterodiegetic,academic,high,heterodiegetische Erzählinstanz,31,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_heterodiegetic,academic,high,erzählweltfremde Erzählinstanz,30,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_heterodiegetic,craft,supporting,unbeteiligter Erzähler,22,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_heterodiegetic,craft,supporting,außenstehender Erzähler,23,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_heterodiegetic,craft,supporting,nicht beteiligter Erzähler,26,3,0,0,0.0,0,0,0.0,0.0,True
+de,voice_heterodiegetic,craft,supporting,distanzierter Erzähler,22,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_heterodiegetic,craft,supporting,unsichtbarer Erzähler,21,2,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,voice_heterodiegetic,craft,supporting,unpersönlicher Erzähler,23,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_homodiegetic,academic,high,homodiegetischer Erzähler,25,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_homodiegetic,academic,high,homodiegetische Erzählerin,26,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_homodiegetic,academic,high,homodiegetisches Erzählen,25,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_homodiegetic,academic,high,homodiegetische Erzählinstanz,29,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_homodiegetic,academic,high,Figurenerzähler,15,1,0,0,0.0,0,0,0.0,0.0,True
+de,voice_homodiegetic,craft,supporting,beteiligter Erzähler,20,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_homodiegetic,craft,supporting,mitwirkender Erzähler,21,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_homodiegetic,craft,supporting,Erzähler als Figur,18,3,0,0,0.0,0,0,0.0,0.0,True
+de,voice_homodiegetic,craft,supporting,Erzählerfigur,13,1,6,6,0.000141,5,1,0.000137,0.000166,False
+de,voice_homodiegetic,craft,supporting,erzählende Figur,16,2,5,5,0.000117,5,0,0.000137,0.0,False
+de,voice_homodiegetic,craft,supporting,Erzähler innerhalb der Geschichte,33,4,0,0,0.0,0,0,0.0,0.0,True
+de,voice_eyewitness,academic,high,Zeugenerzähler,14,1,0,0,0.0,0,0,0.0,0.0,True
+de,voice_eyewitness,academic,high,Zeugen-Erzähler,15,1,0,0,0.0,0,0,0.0,0.0,True
+de,voice_eyewitness,academic,high,Beobachtererzähler,18,1,0,0,0.0,0,0,0.0,0.0,True
+de,voice_eyewitness,academic,high,Beobachter-Erzähler,19,1,0,0,0.0,0,0,0.0,0.0,True
+de,voice_eyewitness,academic,high,Augenzeugenerzähler,19,1,0,0,0.0,0,0,0.0,0.0,True
+de,voice_eyewitness,academic,high,peripherer Erzähler,19,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_eyewitness,craft,supporting,Erzähler als Zeuge,18,3,0,0,0.0,0,0,0.0,0.0,True
+de,voice_eyewitness,craft,supporting,Erzähler als Beobachter,23,3,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,voice_eyewitness,craft,supporting,Ich-Erzähler als Beobachter,27,3,0,0,0.0,0,0,0.0,0.0,True
+de,voice_eyewitness,craft,supporting,erzählender Zeuge,17,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_eyewitness,craft,supporting,unbeteiligter Zeuge,19,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_eyewitness,craft,supporting,Randfigur als Erzähler,22,3,0,0,0.0,0,0,0.0,0.0,True
+de,voice_eyewitness,craft,supporting,Watson-Figur,12,1,0,0,0.0,0,0,0.0,0.0,True
+de,voice_participant,academic,high,teilnehmender Erzähler,22,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_participant,academic,high,mitwirkender Erzähler,21,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_participant,academic,high,beteiligter Nebenerzähler,25,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_participant,academic,high,homodiegetischer Nebenerzähler,30,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_participant,craft,supporting,Nebenfigur als Erzähler,23,3,0,0,0.0,0,0,0.0,0.0,True
+de,voice_participant,craft,supporting,Erzähler als Nebenfigur,23,3,0,0,0.0,0,0,0.0,0.0,True
+de,voice_participant,craft,supporting,erzählende Nebenfigur,21,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_participant,craft,supporting,Ich-Erzähler als Nebenfigur,27,3,0,0,0.0,0,0,0.0,0.0,True
+de,voice_participant,craft,supporting,Begleiter als Erzähler,22,3,0,0,0.0,0,0,0.0,0.0,True
+de,voice_protagonist,academic,high,autodiegetischer Erzähler,25,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_protagonist,academic,high,autodiegetische Erzählerin,26,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_protagonist,academic,high,autodiegetisches Erzählen,25,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_protagonist,academic,high,Erzähler-Protagonist,20,1,13,14,0.000305,4,9,0.000109,0.001494,False
+de,voice_protagonist,academic,high,Ich-Protagonist,15,1,0,0,0.0,0,0,0.0,0.0,True
+de,voice_protagonist,craft,supporting,Protagonist als Erzähler,24,3,0,0,0.0,0,0,0.0,0.0,True
+de,voice_protagonist,craft,supporting,Hauptfigur als Erzähler,23,3,0,0,0.0,0,0,0.0,0.0,True
+de,voice_protagonist,craft,supporting,erzählende Hauptfigur,21,2,0,0,0.0,0,0,0.0,0.0,True
+de,voice_protagonist,craft,supporting,Held als Erzähler,17,3,0,0,0.0,0,0,0.0,0.0,True
+de,voice_protagonist,craft,supporting,Ich-Erzähler als Hauptfigur,27,3,0,0,0.0,0,0,0.0,0.0,True
+de,stance_narratorial,academic,high,narratoriale Erzählhaltung,26,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_narratorial,academic,high,narratoriales Erzählen,22,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_narratorial,academic,high,narratoriale Darstellung,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_narratorial,academic,high,Erzählerdiskurs,15,1,0,0,0.0,0,0,0.0,0.0,True
+de,stance_narratorial,academic,high,auktoriale Erzählhaltung,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_narratorial,academic,high,auktoriales Erzählen,20,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_narratorial,academic,high,Erzählervermittlung,19,1,0,0,0.0,0,0,0.0,0.0,True
+de,stance_narratorial,craft,supporting,Erzählerkommentar,17,1,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,stance_narratorial,craft,supporting,Erzählerwertung,15,1,0,0,0.0,0,0,0.0,0.0,True
+de,stance_narratorial,craft,supporting,Erzählerreflexion,17,1,1,5,2.3e-05,1,0,2.7e-05,0.0,False
+de,stance_narratorial,craft,supporting,Erzähleinmischung,17,1,0,0,0.0,0,0,0.0,0.0,True
+de,stance_narratorial,craft,supporting,Erzählerintervention,20,1,0,0,0.0,0,0,0.0,0.0,True
+de,stance_narratorial,craft,supporting,Erzählerbemerkung,17,1,0,0,0.0,0,0,0.0,0.0,True
+de,stance_narratorial,craft,supporting,eingreifender Erzähler,22,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_narratorial,craft,supporting,kommentierender Erzähler,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_narratorial,craft,supporting,Leseransprache,14,1,5,5,0.000117,5,0,0.000137,0.0,False
+de,stance_narratorial,craft,supporting,Erzählerbericht,15,1,4,6,9.4e-05,1,3,2.7e-05,0.000498,False
+de,stance_figural,academic,high,figurale Erzählhaltung,22,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_figural,academic,high,figurales Erzählen,18,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_figural,academic,high,figurale Darstellung,20,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_figural,academic,high,figurale Perspektive,20,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_figural,academic,high,Reflektorfigur,14,1,0,0,0.0,0,0,0.0,0.0,True
+de,stance_figural,academic,high,Reflektormodus,14,1,0,0,0.0,0,0,0.0,0.0,True
+de,stance_figural,academic,high,figurenbezogenes Erzählen,25,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_figural,academic,high,personale Erzählhaltung,23,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,stance_figural,academic,high,personales Erzählen,19,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,stance_figural,craft,supporting,figurennahe Darstellung,23,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_figural,craft,supporting,Figurenstimme im Erzählen,25,3,0,0,0.0,0,0,0.0,0.0,True
+de,stance_figural,craft,supporting,figurennahe Sprache,19,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_figural,craft,supporting,Figurenfilter,13,1,0,0,0.0,0,0,0.0,0.0,True
+de,stance_figural,craft,supporting,subjektive Figurenperspektive,29,2,0,0,0.0,0,0,0.0,0.0,True
+de,stance_figural,craft,supporting,erlebte Rede,12,2,13,33,0.000305,13,0,0.000355,0.0,False
+de,stance_figural,craft,supporting,unmittelbares Erleben,21,2,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,stance_figural,craft,supporting,personale Erzählweise,21,2,3,3,7e-05,3,0,8.2e-05,0.0,False
+de,stance_figural,craft,supporting,Deep POV,8,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_general,academic,high,Fokalisierung,13,1,3,3,7e-05,0,3,0.0,0.000498,False
+de,focalization_general,academic,high,Fokalisator,11,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_general,academic,high,Fokalisierungsfigur,19,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_general,academic,high,Fokalisierungsinstanz,21,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_general,academic,high,fokalisierende Figur,20,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_general,academic,high,fokalisierte Figur,18,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_general,academic,high,Wahrnehmungsinstanz,19,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_general,academic,high,Fokalisierungstyp,17,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_general,academic,high,Fokalisationszentrum,20,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_general,craft,supporting,Wissenshorizont,15,1,2,2,4.7e-05,0,2,0.0,0.000332,False
+de,focalization_general,craft,supporting,Wahrnehmungshorizont,20,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_general,craft,supporting,Wissensstand des Erzählers,26,3,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_general,craft,supporting,Erzählwissen,12,1,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,focalization_general,craft,supporting,Informationszugang,18,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_general,craft,supporting,Wissensbegrenzung,17,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_general,craft,supporting,Beschränkung der Perspektive,28,3,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_zero,academic,high,Nullfokalisierung,17,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_zero,academic,high,Null-Fokalisierung,18,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_zero,academic,high,unfokalisierte Erzählung,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_zero,academic,high,uneingeschränkte Fokalisierung,30,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_zero,academic,high,unbeschränktes Erzählerwissen,29,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_zero,academic,high,auktoriale Erzählsituation,26,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,focalization_zero,craft,supporting,allwissender Erzähler,21,2,4,4,9.4e-05,4,0,0.000109,0.0,False
+de,focalization_zero,craft,supporting,allwissende Erzählerin,22,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_zero,craft,supporting,auktorialer Erzähler,20,2,3,3,7e-05,3,0,8.2e-05,0.0,False
+de,focalization_zero,craft,supporting,auktoriale Erzählperspektive,28,2,3,3,7e-05,3,0,8.2e-05,0.0,False
+de,focalization_zero,craft,supporting,Allwissenheit des Erzählers,27,3,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_zero,craft,supporting,Götterperspektive,17,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_zero,craft,supporting,Gottperspektive,15,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_zero,craft,supporting,Überblicksperspektive,21,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_zero,craft,supporting,unbegrenzte Perspektive,23,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_internal,academic,high,interne Fokalisierung,21,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_internal,academic,high,innere Fokalisierung,20,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_internal,academic,high,intern fokalisierte Erzählung,29,3,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_internal,academic,high,figurenbezogene Fokalisierung,29,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_internal,academic,high,figureninterne Perspektive,26,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_internal,academic,high,begrenztes Figurenwissen,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_internal,academic,high,beschränktes Erzählerwissen,27,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_internal,craft,supporting,personale Erzählsituation,25,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,focalization_internal,craft,supporting,personale Erzählperspektive,27,2,11,11,0.000258,11,0,0.000301,0.0,False
+de,focalization_internal,craft,supporting,personaler Erzähler,19,2,8,8,0.000188,8,0,0.000219,0.0,False
+de,focalization_internal,craft,supporting,Innensicht,10,1,11,13,0.000258,11,0,0.000301,0.0,False
+de,focalization_internal,craft,supporting,Innenperspektive,16,1,5,6,0.000117,3,2,8.2e-05,0.000332,False
+de,focalization_internal,craft,supporting,begrenzte Figurenperspektive,28,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_internal,craft,supporting,beschränkte Perspektive,23,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_internal,craft,supporting,subjektive Erzählperspektive,28,2,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,focalization_internal,craft,supporting,limited third person,20,3,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_internal,craft,supporting,begrenzte Allwissenheit,23,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_external,academic,high,externe Fokalisierung,21,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_external,academic,high,äußere Fokalisierung,20,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_external,academic,high,extern fokalisierte Erzählung,29,3,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_external,academic,high,Außensicht,10,1,5,5,0.000117,5,0,0.000137,0.0,False
+de,focalization_external,academic,high,Außenperspektive,16,1,11,11,0.000258,5,6,0.000137,0.000996,False
+de,focalization_external,academic,high,kein Innenzugang,16,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_external,craft,supporting,neutraler Erzähler,18,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_external,craft,supporting,neutrale Erzählsituation,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_external,craft,supporting,neutrale Erzählweise,20,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_external,craft,supporting,objektive Erzählweise,21,2,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,focalization_external,craft,supporting,objektive Erzählperspektive,27,2,3,3,7e-05,3,0,8.2e-05,0.0,False
+de,focalization_external,craft,supporting,Kameraperspektive,17,1,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,focalization_external,craft,supporting,Kameraauge,10,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_external,craft,supporting,Beobachterperspektive,21,1,10,11,0.000235,1,9,2.7e-05,0.001494,False
+de,focalization_external,craft,supporting,Kamera-Erzähler,15,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_fixed,academic,high,fixe Fokalisierung,18,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_fixed,academic,high,feste Fokalisierung,19,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_fixed,academic,high,fixed focalization,18,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_fixed,academic,high,konstante Fokalisierung,23,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_fixed,academic,high,feste interne Fokalisierung,27,3,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_fixed,academic,high,einheitliche Fokalisierung,26,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_fixed,craft,supporting,eine Perspektivfigur,20,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,focalization_fixed,craft,supporting,konstante Erzählperspektive,27,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_fixed,craft,supporting,einheitliche Figurenperspektive,31,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_fixed,craft,supporting,durchgehende Perspektive,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_fixed,craft,supporting,gleichbleibende Perspektive,27,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_fixed,craft,supporting,Einzelperspektive,17,1,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,focalization_variable,academic,high,variable Fokalisierung,22,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_variable,academic,high,wechselnde Fokalisierung,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_variable,academic,high,variable interne Fokalisierung,30,3,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_variable,academic,high,Multiperspektivität,19,1,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,focalization_variable,academic,high,multiperspektivisches Erzählen,30,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,focalization_variable,academic,high,Perspektivenpluralität,22,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_variable,craft,supporting,wechselnde Figurenperspektiven,30,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_variable,craft,supporting,mehrere Perspektivfiguren,25,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_variable,craft,supporting,Perspektivwechsel,17,1,43,53,0.001009,43,0,0.001175,0.0,False
+de,focalization_variable,craft,supporting,Perspektivenwechsel,19,1,44,48,0.001032,28,16,0.000765,0.002656,False
+de,focalization_variable,craft,supporting,wechselnde Erzählperspektiven,29,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_variable,craft,supporting,multiple Perspektiven,21,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_variable,craft,supporting,alternierende Erzähler,22,2,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_variable,craft,supporting,Dual-POV,8,1,0,0,0.0,0,0,0.0,0.0,True
+de,focalization_variable,craft,supporting,mehrere Ich-Erzähler,20,2,0,0,0.0,0,0,0.0,0.0,True
+de,pov_subject,academic,high,wahrnehmendes Subjekt,21,2,0,0,0.0,0,0,0.0,0.0,True
+de,pov_subject,academic,high,Subjekt der Wahrnehmung,23,3,0,0,0.0,0,0,0.0,0.0,True
+de,pov_subject,academic,high,erlebendes Subjekt,18,2,0,0,0.0,0,0,0.0,0.0,True
+de,pov_subject,academic,high,Wahrnehmungszentrum,19,1,1,3,2.3e-05,0,1,0.0,0.000166,False
+de,pov_subject,academic,high,Bewusstseinszentrum,19,1,0,0,0.0,0,0,0.0,0.0,True
+de,pov_subject,academic,high,Erlebenszentrum,15,1,0,0,0.0,0,0,0.0,0.0,True
+de,pov_subject,academic,high,Wahrnehmungsträger,18,1,0,0,0.0,0,0,0.0,0.0,True
+de,pov_subject,academic,high,Erfahrungssubjekt,17,1,0,0,0.0,0,0,0.0,0.0,True
+de,pov_subject,craft,supporting,Figur als Wahrnehmungsträger,28,3,0,0,0.0,0,0,0.0,0.0,True
+de,pov_subject,craft,supporting,subjektive Wahrnehmung,22,2,4,4,9.4e-05,3,1,8.2e-05,0.000166,False
+de,pov_subject,craft,supporting,sinnliche Wahrnehmung der Figur,31,4,0,0,0.0,0,0,0.0,0.0,True
+de,pov_subject,craft,supporting,erlebende Figur,15,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,pov_subject,craft,supporting,Wahrnehmungsfigur,17,1,0,0,0.0,0,0,0.0,0.0,True
+de,pov_subject,craft,supporting,Figurenwahrnehmung,18,1,0,0,0.0,0,0,0.0,0.0,True
+de,pov_subject,craft,supporting,Blick durch die Figur,21,4,0,0,0.0,0,0,0.0,0.0,True
+de,pov_object,academic,high,Wahrnehmungsobjekt,18,1,1,1,2.3e-05,0,1,0.0,0.000166,False
+de,pov_object,academic,high,Gegenstand der Wahrnehmung,26,3,0,0,0.0,0,0,0.0,0.0,True
+de,pov_object,academic,high,wahrgenommene Figur,19,2,0,0,0.0,0,0,0.0,0.0,True
+de,pov_object,academic,high,Gegenstand der Darstellung,26,3,0,0,0.0,0,0,0.0,0.0,True
+de,pov_object,academic,high,beobachtete Figur,17,2,0,0,0.0,0,0,0.0,0.0,True
+de,pov_object,academic,high,Figur als Objekt,16,3,0,0,0.0,0,0,0.0,0.0,True
+de,pov_object,craft,supporting,äußere Figurenbeschreibung,26,2,0,0,0.0,0,0,0.0,0.0,True
+de,pov_object,craft,supporting,Beschreibung des Aussehens,26,3,0,0,0.0,0,0,0.0,0.0,True
+de,pov_object,craft,supporting,Beschreibung von Verhalten,26,3,0,0,0.0,0,0,0.0,0.0,True
+de,pov_object,craft,supporting,äußere Charakterisierung,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,pov_object,craft,supporting,sichtbare Merkmale einer Figur,30,4,0,0,0.0,0,0,0.0,0.0,True
+de,mode_narrative,academic,high,narrativer Modus,16,2,1,2,2.3e-05,0,1,0.0,0.000166,False
+de,mode_narrative,academic,high,erzählender Modus,17,2,0,0,0.0,0,0,0.0,0.0,True
+de,mode_narrative,academic,high,diegetischer Modus,18,2,0,0,0.0,0,0,0.0,0.0,True
+de,mode_narrative,academic,high,Diegesis,8,1,1,1,2.3e-05,0,1,0.0,0.000166,False
+de,mode_narrative,academic,high,erzählerische Vermittlung,25,2,1,1,2.3e-05,0,1,0.0,0.000166,False
+de,mode_narrative,academic,high,Zeitraffung,11,1,5,7,0.000117,3,2,8.2e-05,0.000332,False
+de,mode_narrative,academic,high,gerafftes Erzählen,18,2,0,0,0.0,0,0,0.0,0.0,True
+de,mode_narrative,academic,high,narrativer Bericht,18,2,0,0,0.0,0,0,0.0,0.0,True
+de,mode_narrative,craft,supporting,berichtendes Erzählen,21,2,0,0,0.0,0,0,0.0,0.0,True
+de,mode_narrative,craft,supporting,zusammenfassendes Erzählen,26,2,0,0,0.0,0,0,0.0,0.0,True
+de,mode_narrative,craft,supporting,erzählerische Zusammenfassung,29,2,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,mode_narrative,craft,supporting,Erzählbericht,13,1,1,3,2.3e-05,1,0,2.7e-05,0.0,False
+de,mode_narrative,craft,supporting,Exposition,10,1,58,78,0.001361,40,18,0.001093,0.002988,False
+de,mode_narrative,craft,demoted,Telling,7,1,10,11,0.000235,9,1,0.000246,0.000166,False
+de,mode_narrative,craft,supporting,Zeit zusammenraffen,19,2,0,0,0.0,0,0,0.0,0.0,True
+de,mode_narrative,craft,supporting,Erzählpassage,13,1,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,mode_narrative,craft,supporting,Hintergrundinformationen,24,1,15,15,0.000352,15,0,0.00041,0.0,False
+de,mode_dramatic,academic,high,dramatischer Modus,18,2,0,0,0.0,0,0,0.0,0.0,True
+de,mode_dramatic,academic,high,szenischer Modus,16,2,0,0,0.0,0,0,0.0,0.0,True
+de,mode_dramatic,academic,high,mimetischer Modus,17,2,0,0,0.0,0,0,0.0,0.0,True
+de,mode_dramatic,academic,high,Mimesis,7,1,24,24,0.000563,9,15,0.000246,0.00249,False
+de,mode_dramatic,academic,high,szenische Darstellung,21,2,7,8,0.000164,7,0,0.000191,0.0,False
+de,mode_dramatic,academic,high,Zeitdeckung,11,1,0,0,0.0,0,0,0.0,0.0,True
+de,mode_dramatic,academic,high,zeitdeckendes Erzählen,22,2,1,2,2.3e-05,1,0,2.7e-05,0.0,False
+de,mode_dramatic,academic,high,unmittelbare Darstellung,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,mode_dramatic,craft,supporting,szenisches Erzählen,19,2,0,0,0.0,0,0,0.0,0.0,True
+de,mode_dramatic,craft,supporting,szenisch schreiben,18,2,0,0,0.0,0,0,0.0,0.0,True
+de,mode_dramatic,craft,supporting,Szene gestalten,15,2,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,mode_dramatic,craft,supporting,Szene entwickeln,16,2,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,mode_dramatic,craft,supporting,Show don't tell,15,3,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,mode_dramatic,craft,supporting,zeigen statt erzählen,21,3,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,mode_dramatic,craft,supporting,zeigen statt erklären,21,3,0,0,0.0,0,0,0.0,0.0,True
+de,mode_dramatic,craft,supporting,dramatisieren,13,1,10,11,0.000235,8,2,0.000219,0.000332,False
+de,mode_dramatic,craft,supporting,Handlung und Dialog,19,3,11,11,0.000258,11,0,0.000301,0.0,False
+de,mode_balance,academic,high,narrativer und dramatischer Modus,33,4,0,0,0.0,0,0,0.0,0.0,True
+de,mode_balance,academic,high,Verhältnis von Bericht und Szene,32,5,0,0,0.0,0,0,0.0,0.0,True
+de,mode_balance,academic,high,Erzählen und Zeigen,19,3,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,mode_balance,academic,high,Erzähltempo,11,1,15,15,0.000352,14,1,0.000383,0.000166,False
+de,mode_balance,craft,supporting,Szene und Zusammenfassung,25,3,0,0,0.0,0,0,0.0,0.0,True
+de,mode_balance,craft,supporting,Balance zwischen Zeigen und Erzählen,36,5,0,0,0.0,0,0,0.0,0.0,True
+de,mode_balance,craft,supporting,Wechsel zwischen Bericht und Szene,34,5,0,0,0.0,0,0,0.0,0.0,True
+de,mode_balance,craft,supporting,wann zeigen und wann erzählen,29,5,0,0,0.0,0,0,0.0,0.0,True
+de,mode_balance,craft,supporting,Erzähltempo steuern,19,2,0,0,0.0,0,0,0.0,0.0,True
+de,consciousness_access,academic,high,Zugang zum Bewusstsein,22,3,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,consciousness_access,academic,high,Bewusstseinsdarstellung,23,1,1,4,2.3e-05,1,0,2.7e-05,0.0,False
+de,consciousness_access,academic,high,Gedankenwiedergabe,18,1,0,0,0.0,0,0,0.0,0.0,True
+de,consciousness_access,academic,high,Innensicht,10,1,11,13,0.000258,11,0,0.000301,0.0,False
+de,consciousness_access,academic,high,Innenperspektive,16,1,5,6,0.000117,3,2,8.2e-05,0.000332,False
+de,consciousness_access,academic,high,Innenzugang,11,1,0,0,0.0,0,0,0.0,0.0,True
+de,consciousness_access,academic,high,Darstellung des Innenlebens,27,3,0,0,0.0,0,0,0.0,0.0,True
+de,consciousness_access,craft,supporting,Innenleben,10,1,39,43,0.000915,39,0,0.001066,0.0,False
+de,consciousness_access,craft,supporting,Gedankenwelt,12,1,14,14,0.000328,11,3,0.000301,0.000498,False
+de,consciousness_access,craft,supporting,innere Welt,11,2,13,16,0.000305,8,5,0.000219,0.00083,False
+de,consciousness_access,craft,supporting,innere Stimme,13,2,24,26,0.000563,21,3,0.000574,0.000498,False
+de,consciousness_access,craft,supporting,innerer Dialog,14,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,consciousness_access,craft,supporting,innerer Konflikt,16,2,10,10,0.000235,10,0,0.000273,0.0,False
+de,consciousness_access,craft,supporting,Gedanken und Gefühle,20,3,113,140,0.002651,111,2,0.003033,0.000332,False
+de,consciousness_access,craft,supporting,Einblick ins Innenleben,23,3,0,0,0.0,0,0,0.0,0.0,True
+de,consciousness_access,craft,supporting,Innenperspektive der Figur,26,3,0,0,0.0,0,0,0.0,0.0,True
+de,thought_representation,academic,high,erlebte Rede,12,2,13,33,0.000305,13,0,0.000355,0.0,False
+de,thought_representation,academic,high,freie indirekte Rede,20,3,0,0,0.0,0,0,0.0,0.0,True
+de,thought_representation,academic,high,freie indirekte Gedankenrede,28,3,0,0,0.0,0,0,0.0,0.0,True
+de,thought_representation,academic,high,innerer Monolog,15,2,14,16,0.000328,14,0,0.000383,0.0,False
+de,thought_representation,academic,high,Bewusstseinsstrom,17,1,12,15,0.000282,11,1,0.000301,0.000166,False
+de,thought_representation,academic,high,Gedankenbericht,15,1,1,2,2.3e-05,1,0,2.7e-05,0.0,False
+de,thought_representation,academic,high,Gedankenrede,12,1,0,0,0.0,0,0,0.0,0.0,True
+de,thought_representation,academic,high,direkte Gedankenrede,20,2,0,0,0.0,0,0,0.0,0.0,True
+de,thought_representation,academic,high,indirekte Gedankenrede,22,2,0,0,0.0,0,0,0.0,0.0,True
+de,thought_representation,academic,high,Bewusstseinsdarstellung,23,1,1,4,2.3e-05,1,0,2.7e-05,0.0,False
+de,thought_representation,academic,high,zitierter Monolog,17,2,0,0,0.0,0,0,0.0,0.0,True
+de,thought_representation,craft,supporting,Gedankenwiedergabe,18,1,0,0,0.0,0,0,0.0,0.0,True
+de,thought_representation,craft,supporting,innere Stimme,13,2,24,26,0.000563,21,3,0.000574,0.000498,False
+de,thought_representation,craft,supporting,innerer Dialog,14,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,thought_representation,craft,supporting,Stream of Consciousness,23,3,10,13,0.000235,10,0,0.000273,0.0,False
+de,thought_representation,craft,supporting,Gedanken kursiv,15,2,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,thought_representation,craft,supporting,Gedankenkennzeichnung,21,1,0,0,0.0,0,0,0.0,0.0,True
+de,thought_representation,craft,supporting,Gedankenpassage,15,1,0,0,0.0,0,0,0.0,0.0,True
+de,distance_depth,academic,high,psychische Distanz,18,2,0,0,0.0,0,0,0.0,0.0,True
+de,distance_depth,academic,high,psychologische Distanz,22,2,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,distance_depth,academic,high,narrative Distanz,17,2,0,0,0.0,0,0,0.0,0.0,True
+de,distance_depth,academic,high,Erzähldistanz,13,1,6,6,0.000141,6,0,0.000164,0.0,False
+de,distance_depth,academic,high,Erzählerdistanz,15,1,0,0,0.0,0,0,0.0,0.0,True
+de,distance_depth,academic,high,narrative Nähe,14,2,0,0,0.0,0,0,0.0,0.0,True
+de,distance_depth,academic,high,Erzählnähe,10,1,0,0,0.0,0,0,0.0,0.0,True
+de,distance_depth,craft,supporting,Nähe und Distanz,16,3,20,27,0.000469,20,0,0.000546,0.0,False
+de,distance_depth,craft,supporting,tiefe Perspektive,17,2,0,0,0.0,0,0,0.0,0.0,True
+de,distance_depth,craft,supporting,Deep POV,8,2,0,0,0.0,0,0,0.0,0.0,True
+de,distance_depth,craft,supporting,nahe Perspektive,16,2,0,0,0.0,0,0,0.0,0.0,True
+de,distance_depth,craft,supporting,distanziertes Erzählen,22,2,0,0,0.0,0,0,0.0,0.0,True
+de,distance_depth,craft,supporting,figurennahe Perspektive,23,2,0,0,0.0,0,0,0.0,0.0,True
+de,distance_depth,craft,supporting,Nahaufnahme,11,1,7,8,0.000164,5,2,0.000137,0.000332,False
+de,distance_depth,craft,supporting,heranzoomen,11,1,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,distance_depth,craft,supporting,herauszoomen,12,1,0,0,0.0,0,0,0.0,0.0,True
+de,distance_depth,craft,supporting,Kameradistanz,13,1,0,0,0.0,0,0,0.0,0.0,True
+de,switching_consistency,academic,high,Fokalisierungswechsel,21,1,0,0,0.0,0,0,0.0,0.0,True
+de,switching_consistency,academic,high,Wechsel der Fokalisierung,25,3,0,0,0.0,0,0,0.0,0.0,True
+de,switching_consistency,academic,high,Perspektivenwechsel,19,1,44,48,0.001032,28,16,0.000765,0.002656,False
+de,switching_consistency,academic,high,Perspektivwechsel,17,1,43,53,0.001009,43,0,0.001175,0.0,False
+de,switching_consistency,academic,high,Perspektivsprung,16,1,0,0,0.0,0,0,0.0,0.0,True
+de,switching_consistency,academic,high,Wechsel des Wahrnehmungszentrums,32,3,0,0,0.0,0,0,0.0,0.0,True
+de,switching_consistency,craft,supporting,Head-Hopping,12,1,0,0,0.0,0,0,0.0,0.0,True
+de,switching_consistency,craft,supporting,POV-Wechsel,11,1,0,0,0.0,0,0,0.0,0.0,True
+de,switching_consistency,craft,supporting,Perspektivbruch,15,1,0,0,0.0,0,0,0.0,0.0,True
+de,switching_consistency,craft,supporting,Perspektivfehler,16,1,2,3,4.7e-05,2,0,5.5e-05,0.0,False
+de,switching_consistency,craft,supporting,Perspektivtreue,15,1,0,0,0.0,0,0,0.0,0.0,True
+de,switching_consistency,craft,supporting,Perspektivkonsistenz,20,1,0,0,0.0,0,0,0.0,0.0,True
+de,switching_consistency,craft,supporting,Perspektivverletzung,20,1,0,0,0.0,0,0,0.0,0.0,True
+de,switching_consistency,craft,supporting,Perspektivübergang,18,1,0,0,0.0,0,0,0.0,0.0,True
+de,switching_consistency,craft,supporting,Wechsel der Erzählperspektive,29,3,3,3,7e-05,3,0,8.2e-05,0.0,False
+de,multiple_focalization_same_event,academic,high,multiple Fokalisierung,22,2,0,0,0.0,0,0,0.0,0.0,True
+de,multiple_focalization_same_event,academic,high,mehrfache Fokalisierung,23,2,0,0,0.0,0,0,0.0,0.0,True
+de,multiple_focalization_same_event,academic,high,wiederholte Fokalisierung,25,2,0,0,0.0,0,0,0.0,0.0,True
+de,multiple_focalization_same_event,academic,high,Rashomon-Effekt,15,1,3,3,7e-05,3,0,8.2e-05,0.0,False
+de,multiple_focalization_same_event,craft,supporting,mehrfache Erzählung desselben Ereignisses,41,4,0,0,0.0,0,0,0.0,0.0,True
+de,multiple_focalization_same_event,craft,supporting,dieselbe Szene aus verschiedenen Perspektiven,45,5,0,0,0.0,0,0,0.0,0.0,True
+de,multiple_focalization_same_event,craft,supporting,unterschiedliche Versionen desselben Geschehens,47,4,0,0,0.0,0,0,0.0,0.0,True
+de,information_control,academic,high,Informationssteuerung,21,1,0,0,0.0,0,0,0.0,0.0,True
+de,information_control,academic,high,Informationsvergabe,19,1,10,11,0.000235,10,0,0.000273,0.0,False
+de,information_control,academic,high,Informationsverteilung,22,1,0,0,0.0,0,0,0.0,0.0,True
+de,information_control,academic,high,Wissensverteilung,17,1,0,0,0.0,0,0,0.0,0.0,True
+de,information_control,academic,high,Wissensasymmetrie,17,1,0,0,0.0,0,0,0.0,0.0,True
+de,information_control,academic,high,Wissensvorsprung,16,1,9,10,0.000211,9,0,0.000246,0.0,False
+de,information_control,academic,high,dramatische Ironie,18,2,4,4,9.4e-05,4,0,0.000109,0.0,False
+de,information_control,academic,high,Paralipse,9,1,0,0,0.0,0,0,0.0,0.0,True
+de,information_control,academic,high,Paralepse,9,1,0,0,0.0,0,0,0.0,0.0,True
+de,information_control,craft,supporting,Informationen vorenthalten,26,2,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,information_control,craft,supporting,Informationen preisgeben,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,information_control,craft,supporting,Informationen enthüllen,23,2,0,0,0.0,0,0,0.0,0.0,True
+de,information_control,craft,supporting,Wissen des Erzählers,20,3,1,1,2.3e-05,0,1,0.0,0.000166,False
+de,information_control,craft,supporting,Wissen der Figur,16,3,0,0,0.0,0,0,0.0,0.0,True
+de,information_control,craft,supporting,Wissen des Lesers,17,3,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,information_control,craft,supporting,verzögerte Enthüllung,21,2,0,0,0.0,0,0,0.0,0.0,True
+de,information_control,craft,supporting,Informationsbeschränkung,24,1,0,0,0.0,0,0,0.0,0.0,True
+de,reliability,academic,high,unzuverlässiger Erzähler,24,2,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,reliability,academic,high,unzuverlässige Erzählerin,25,2,0,0,0.0,0,0,0.0,0.0,True
+de,reliability,academic,high,unzuverlässiges Erzählen,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,reliability,academic,high,erzählerische Unzuverlässigkeit,31,2,0,0,0.0,0,0,0.0,0.0,True
+de,reliability,academic,high,Zuverlässigkeit des Erzählers,29,3,0,0,0.0,0,0,0.0,0.0,True
+de,reliability,academic,high,zuverlässiger Erzähler,22,2,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,reliability,craft,supporting,unglaubwürdiger Erzähler,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,reliability,craft,supporting,täuschender Erzähler,20,2,0,0,0.0,0,0,0.0,0.0,True
+de,reliability,craft,supporting,naiver Erzähler,15,2,0,0,0.0,0,0,0.0,0.0,True
+de,reliability,craft,supporting,voreingenommener Erzähler,25,2,0,0,0.0,0,0,0.0,0.0,True
+de,reliability,craft,supporting,unzuverlässiger Ich-Erzähler,28,2,0,0,0.0,0,0,0.0,0.0,True
+de,reliability,craft,supporting,Glaubwürdigkeit des Erzählers,29,3,0,0,0.0,0,0,0.0,0.0,True
+de,narrator_level_time,academic,high,extradiegetischer Erzähler,26,2,0,0,0.0,0,0,0.0,0.0,True
+de,narrator_level_time,academic,high,intradiegetischer Erzähler,26,2,0,0,0.0,0,0,0.0,0.0,True
+de,narrator_level_time,academic,high,metadiegetische Erzählung,25,2,0,0,0.0,0,0,0.0,0.0,True
+de,narrator_level_time,academic,high,Erzählebene,11,1,10,10,0.000235,0,10,0.0,0.00166,False
+de,narrator_level_time,academic,high,Rahmenerzählung,15,1,30,41,0.000704,6,24,0.000164,0.003983,False
+de,narrator_level_time,academic,high,Binnenerzählung,15,1,1,1,2.3e-05,0,1,0.0,0.000166,False
+de,narrator_level_time,academic,high,erzählendes Ich,15,2,4,5,9.4e-05,4,0,0.000109,0.0,False
+de,narrator_level_time,academic,high,erlebendes Ich,14,2,2,3,4.7e-05,2,0,5.5e-05,0.0,False
+de,narrator_level_time,academic,high,retrospektives Erzählen,23,2,0,0,0.0,0,0,0.0,0.0,True
+de,narrator_level_time,academic,high,nachträgliches Erzählen,23,2,0,0,0.0,0,0,0.0,0.0,True
+de,narrator_level_time,academic,high,gleichzeitiges Erzählen,23,2,0,0,0.0,0,0,0.0,0.0,True
+de,narrator_level_time,craft,supporting,Rahmenerzähler,14,1,0,0,0.0,0,0,0.0,0.0,True
+de,narrator_level_time,craft,supporting,Geschichte in der Geschichte,28,4,0,0,0.0,0,0,0.0,0.0,True
+de,narrator_level_time,craft,supporting,rückblickende Ich-Erzählung,27,2,0,0,0.0,0,0,0.0,0.0,True
+de,narrator_level_time,craft,supporting,älteres Ich,11,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,narrator_level_time,craft,supporting,erzählendes Präsens,19,2,0,0,0.0,0,0,0.0,0.0,True
+de,narrator_level_time,craft,supporting,Erzählen im Präteritum,22,3,0,0,0.0,0,0,0.0,0.0,True
+de,narrator_level_time,craft,supporting,Rückschau des Erzählers,23,3,0,0,0.0,0,0,0.0,0.0,True
+de,filter_words,academic,high,Wahrnehmungsverben,18,1,0,0,0.0,0,0,0.0,0.0,True
+de,filter_words,academic,high,Kognitionsverben,16,1,0,0,0.0,0,0,0.0,0.0,True
+de,filter_words,academic,high,Verben der Wahrnehmung,22,3,0,0,0.0,0,0,0.0,0.0,True
+de,filter_words,academic,high,Verben des Denkens,18,3,0,0,0.0,0,0,0.0,0.0,True
+de,filter_words,craft,supporting,Filterwörter,12,1,0,0,0.0,0,0,0.0,0.0,True
+de,filter_words,craft,supporting,Filterverben,12,1,0,0,0.0,0,0,0.0,0.0,True
+de,filter_words,craft,supporting,Distanzwörter,13,1,0,0,0.0,0,0,0.0,0.0,True
+de,filter_words,craft,supporting,Wahrnehmungsfilter,18,1,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,filter_words,craft,supporting,Gedankenmarker,14,1,0,0,0.0,0,0,0.0,0.0,True
+de,filter_words,craft,supporting,Denkverben,10,1,0,0,0.0,0,0,0.0,0.0,True
+de,filter_words,craft,supporting,Signalverben,12,1,0,0,0.0,0,0,0.0,0.0,True
+de,reader_effect,academic,high,Leseridentifikation,19,1,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,reader_effect,academic,high,Figurenidentifikation,21,1,0,0,0.0,0,0,0.0,0.0,True
+de,reader_effect,academic,high,Perspektivübernahme,19,1,0,0,0.0,0,0,0.0,0.0,True
+de,reader_effect,academic,high,narrative Empathie,18,2,0,0,0.0,0,0,0.0,0.0,True
+de,reader_effect,academic,high,narrative Transportation,24,2,0,0,0.0,0,0,0.0,0.0,True
+de,reader_effect,academic,high,narrative Immersion,19,2,0,0,0.0,0,0,0.0,0.0,True
+de,reader_effect,academic,high,Leserbeteiligung,16,1,0,0,0.0,0,0,0.0,0.0,True
+de,reader_effect,academic,high,emotionale Involviertheit,25,2,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,reader_effect,craft,supporting,Leserbindung,12,1,1,1,2.3e-05,1,0,2.7e-05,0.0,False
+de,reader_effect,craft,supporting,Leserempathie,13,1,0,0,0.0,0,0,0.0,0.0,True
+de,reader_effect,craft,supporting,emotionale Nähe,15,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,reader_effect,craft,supporting,Einfühlung in die Figur,23,4,0,0,0.0,0,0,0.0,0.0,True
+de,reader_effect,craft,supporting,Identifikation mit der Figur,28,4,0,0,0.0,0,0,0.0,0.0,True
+de,reader_effect,craft,supporting,Nähe zur Hauptfigur,19,3,0,0,0.0,0,0,0.0,0.0,True
+de,reader_effect,craft,supporting,emotionale Distanz,18,2,0,0,0.0,0,0,0.0,0.0,True
+de,speech_dialogue,academic,high,direkte Rede,12,2,14,19,0.000328,11,3,0.000301,0.000498,False
+de,speech_dialogue,academic,high,indirekte Rede,14,2,5,6,0.000117,5,0,0.000137,0.0,False
+de,speech_dialogue,academic,high,Redewiedergabe,14,1,0,0,0.0,0,0,0.0,0.0,True
+de,speech_dialogue,academic,high,Figurenrede,11,1,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,speech_dialogue,academic,high,Rededarstellung,15,1,0,0,0.0,0,0,0.0,0.0,True
+de,speech_dialogue,academic,high,Redebericht,11,1,0,0,0.0,0,0,0.0,0.0,True
+de,speech_dialogue,craft,supporting,Dialoggestaltung,16,1,8,8,0.000188,8,0,0.000219,0.0,False
+de,speech_dialogue,craft,supporting,Redebegleitung,14,1,0,0,0.0,0,0,0.0,0.0,True
+de,speech_dialogue,craft,supporting,Redebegleitsatz,15,1,14,17,0.000328,14,0,0.000383,0.0,False
+de,speech_dialogue,craft,supporting,Dialogtag,9,1,0,0,0.0,0,0,0.0,0.0,True
+de,speech_dialogue,craft,supporting,Dialogszene,11,1,0,0,0.0,0,0,0.0,0.0,True
+de,speech_dialogue,craft,supporting,Dialog und Erzählen,19,3,0,0,0.0,0,0,0.0,0.0,True
+de,speech_dialogue,craft,supporting,wörtliche Rede,14,2,19,20,0.000446,19,0,0.000519,0.0,False
+de,narrative_style_voice,academic,high,Erzählstil,10,1,5,5,0.000117,5,0,0.000137,0.0,False
+de,narrative_style_voice,academic,high,Erzählerstil,12,1,0,0,0.0,0,0,0.0,0.0,True
+de,narrative_style_voice,academic,high,Erzählton,9,1,10,10,0.000235,10,0,0.000273,0.0,False
+de,narrative_style_voice,academic,high,narrative Stimme,16,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,narrative_style_voice,academic,high,Erzählerstimme,14,1,19,22,0.000446,16,3,0.000437,0.000498,False
+de,narrative_style_voice,academic,high,Figurenstimme,13,1,0,0,0.0,0,0,0.0,0.0,True
+de,narrative_style_voice,academic,high,Autorenstimme,13,1,2,5,4.7e-05,2,0,5.5e-05,0.0,False
+de,narrative_style_voice,craft,supporting,unverwechselbare Stimme,23,2,3,3,7e-05,3,0,8.2e-05,0.0,False
+de,narrative_style_voice,craft,supporting,individuelle Erzählstimme,25,2,0,0,0.0,0,0,0.0,0.0,True
+de,narrative_style_voice,craft,supporting,eigene Stimme,13,2,39,46,0.000915,36,3,0.000984,0.000498,False
+de,narrative_style_voice,craft,supporting,Figurenidiom,12,1,0,0,0.0,0,0,0.0,0.0,True
+de,narrative_style_voice,craft,supporting,Sprachfärbung,13,1,0,0,0.0,0,0,0.0,0.0,True
+de,narrative_style_voice,craft,supporting,stimmige Erzählerstimme,23,2,0,0,0.0,0,0,0.0,0.0,True
+de,choice_tradeoffs,academic,high,Erzählstrategie,15,1,2,2,4.7e-05,1,1,2.7e-05,0.000166,False
+de,choice_tradeoffs,academic,high,Perspektivstrategie,19,1,0,0,0.0,0,0,0.0,0.0,True
+de,choice_tradeoffs,academic,high,Erzähltechnik,13,1,12,18,0.000282,11,1,0.000301,0.000166,False
+de,choice_tradeoffs,academic,high,Wahl der Erzählperspektive,26,3,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,choice_tradeoffs,academic,high,Wahl der Fokalisierung,22,3,0,0,0.0,0,0,0.0,0.0,True
+de,choice_tradeoffs,academic,high,narratologische Perspektivwahl,30,2,0,0,0.0,0,0,0.0,0.0,True
+de,choice_tradeoffs,craft,supporting,Perspektive wählen,18,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,choice_tradeoffs,craft,supporting,Vor- und Nachteile der Ich-Perspektive,38,5,0,0,0.0,0,0,0.0,0.0,True
+de,choice_tradeoffs,craft,supporting,Vor- und Nachteile der Er-Perspektive,37,5,0,0,0.0,0,0,0.0,0.0,True
+de,choice_tradeoffs,craft,supporting,Erzählform wählen,17,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,choice_tradeoffs,craft,supporting,Perspektiven ausprobieren,25,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,choice_tradeoffs,craft,supporting,Perspektivenwahl,16,1,0,0,0.0,0,0,0.0,0.0,True
+de,choice_tradeoffs,craft,supporting,passende Erzählperspektive,26,2,2,2,4.7e-05,2,0,5.5e-05,0.0,False
+de,regex:general_pov,regex,high,\b(?:erzählperspektiv|erzählstandpunkt|erzählsituation|erzählhaltung|erzählposition)\w*\b,89,0,208,310,0.00488,203,5,0.005547,0.00083,False
+de,regex:grammatical_first_person,regex,high,\bich[\s-]?(?:erzähl|perspektiv|form)\w*\b,42,0,243,369,0.005701,215,28,0.005875,0.004647,False
+de,regex:voice_heterodiegetic,regex,high,\bheterodiegetisch\w*\b,23,0,1,2,2.3e-05,0,1,0.0,0.000166,False
+de,regex:voice_homodiegetic,regex,high,\bhomodiegetisch\w*\b,21,0,0,0,0.0,0,0,0.0,0.0,True
+de,regex:voice_protagonist,regex,high,\bautodiegetisch\w*\b,21,0,0,0,0.0,0,0,0.0,0.0,True
+de,regex:focalization,regex,high,\b(?:null[\s-]?)?fokalisier\w*\b,32,0,4,4,9.4e-05,0,4,0.0,0.000664,False
+de,regex:focalization_internal,regex,high,\b(?:intern|inner)\w*\s+fokalisier\w*\b,39,0,0,0,0.0,0,0,0.0,0.0,True
+de,regex:focalization_external,regex,high,\b(?:extern|äußer)\w*\s+fokalisier\w*\b,39,0,0,0,0.0,0,0,0.0,0.0,True
+de,regex:focalization_variable,regex,high,\b(?:variabl|wechselnd)\w*\s+fokalisier\w*\b,44,0,0,0,0.0,0,0,0.0,0.0,True
+de,regex:stance_figural,regex,high,\bfigural\w*\s+(?:erzählhalt|darstell|erzähl)\w*\b,50,0,0,0,0.0,0,0,0.0,0.0,True
+de,regex:stance_narratorial,regex,high,\bnarratorial\w*\s+(?:erzählhalt|darstell|erzähl)\w*\b,54,0,0,0,0.0,0,0,0.0,0.0,True
+de,regex:thought_representation,regex,high,\berlebt\w*\s+rede\b|\binner\w*\s+monolog\w*\b,46,0,52,120,0.00122,50,2,0.001366,0.000332,False
+de,regex:switching_consistency,regex,high,\bperspektiv(?:en)?(?:wechsel|sprung|bruch|fehler)\w*\b,55,0,94,115,0.002205,75,19,0.002049,0.003154,False

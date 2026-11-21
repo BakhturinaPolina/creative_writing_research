@@ -1,0 +1,12 @@
+{
+  "built": "2026-11-21 02:31",
+  "lang": "en",
+  "lexicon_version": "0.2-draft",
+  "lexicon_path": "config/pov_lexicon_psyper_en_de_v0.2.yml",
+  "git_commit": "e8f0ed5",
+  "n_paragraphs": 315302,
+  "n_primary_paras": 308115,
+  "n_comparison_paras": 7187,
+  "n_terms": 570,
+  "zero_hit_terms": 238
+}

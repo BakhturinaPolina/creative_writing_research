@@ -38,6 +38,7 @@ from src.fulltext.books import (
     JSON_DIR,
     MANIFEST_PATH,
     PDF_TEXT_LAYERS_OK,
+    normalize_block,
     normalize_text,
     pdf_pages,
     pdf_toc,
@@ -92,15 +93,15 @@ def tool_versions() -> dict:
 
 
 def page_paragraphs(page_text: str) -> list[str]:
-    """Split a page into paragraphs on blank lines; each paragraph is NFC-normalized."""
+    """Split a page into paragraphs on blank lines; each paragraph is cleaned."""
     blocks = re.split(r"\n\s*\n", page_text)
     out = []
     for block in blocks:
-        text = normalize_text(block.replace("\n", " "))
+        text = normalize_block(block)
         if text:
             out.append(text)
     if not out and page_text.strip():
-        text = normalize_text(page_text.replace("\n", " "))
+        text = normalize_block(page_text)
         if text:
             out.append(text)
     return out
@@ -443,11 +444,27 @@ def main() -> None:
         for col in ("extraction_status", "n_words", "n_chapters"):
             manifest.loc[idx, col] = manifest.loc[idx, "book_id"].map(update[col]).astype(str)
         manifest.loc[idx, "extraction_round"] = ROUND
-        manifest.to_csv(MANIFEST_PATH, index=False, encoding="utf-8")
         log.info("extraction_status:\n" + manifest.loc[idx, "extraction_status"]
                  .str.replace(r":.*", "", regex=True).value_counts().to_string())
         if "chapter_source" in stats.columns:
             log.info("chapter_source:\n" + stats["chapter_source"].value_counts().to_string())
+
+    # Symmetric OCR flag: scanned / poor text layers are round 1b = needs_ocr (both langs).
+    ocr = (manifest["format"] == "pdf") & manifest["text_layer"].isin(["none", "poor"])
+    if args.lang:
+        ocr &= manifest["lang"] == args.lang
+    # Do not overwrite a successful extract if someone forced --include-poor.
+    ocr &= ~manifest["extraction_status"].eq("ok")
+    if ocr.any():
+        manifest.loc[ocr, "extraction_status"] = "needs_ocr"
+        manifest.loc[ocr, "extraction_round"] = ROUND
+        for col in ("n_words", "n_chapters"):
+            blank = ocr & manifest[col].isin(["", "nan", "None"])
+            manifest.loc[blank, col] = "0"
+        log.info(f"marked needs_ocr: {int(ocr.sum())} PDFs (text_layer none|poor)")
+
+    if not stats.empty or ocr.any():
+        manifest.to_csv(MANIFEST_PATH, index=False, encoding="utf-8")
 
     write_report(manifest, pd.read_csv(STATS_PATH) if STATS_PATH.is_file() else pd.DataFrame(), log)
     log.close()

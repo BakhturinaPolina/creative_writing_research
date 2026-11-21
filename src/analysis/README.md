@@ -2,17 +2,18 @@
 
 Train a POV passage classifier, run it on the full accessible corpus, and compute book- and decade-level measures for the research questions.
 
-So far this folder holds a first descriptive pass over the English books. The classifier and the measures in `docs/scientific_readme.md` sections 9–11 are still to come.
+So far this folder holds descriptive book-level tables for English and German. The classifier and the measures in `docs/scientific_readme.md` sections 9–11 are still to come.
 
 ```bash
-python -m src.analysis.corpus_stats                # book-level table (needs the full texts, about 2 minutes)
+python -m src.analysis.corpus_stats                # English book-level table
+python -m src.analysis.corpus_stats --lang de      # German book-level table
 python -m src.analysis.corpus_stats --selftest     # check the POV matcher on made-up sentences
 python -m src.analysis.corpus_stats --spotcheck 40 # print 40 random matches in context (terminal only, not saved)
 ```
 
-- `corpus_stats.py`: one row per English `primary` / `comparison` file with quality flags, the analysis-set flag and exploratory POV term counts. Also the small tables the notebook shows (flow, key figures, sensitivity).
-- `plots.py`: shared figure style and one function per figure.
-- Notebook: [`notebooks/04_corpus_descriptive_stats_en.ipynb`](../../notebooks/04_corpus_descriptive_stats_en.ipynb). It reads only the table below and the manifest, so it runs without the book files.
+- `corpus_stats.py`: one row per `primary` / `comparison` file with quality flags, `in_analysis_set`, `primary_group` (fiction_manual / pedagogy_genre_craft / contrast), and exploratory POV term counts.
+- `plots.py`: shared figure style and one function per figure (English notebook).
+- Notebook: [`notebooks/04_corpus_descriptive_stats_en.ipynb`](../../notebooks/04_corpus_descriptive_stats_en.ipynb). It reads the English table and the manifest.
 
 ## Outputs
 
@@ -20,9 +21,11 @@ None of these contain book text, so all of them may be committed.
 
 | File | Content |
 |---|---|
-| `data/processed/en_book_stats.csv` | one row per file: catalogue data, flags, word counts, POV term counts |
-| `data/processed/en_book_stats.meta.json` | build time, commit, manifest and lexicon checksums, row counts |
-| `figures/corpus_stats/fig*.{png,pdf}` | the notebook's figures, for slides and print |
+| `data/processed/en_book_stats.csv` | English primary/comparison: flags, word counts, POV terms, `primary_group` |
+| `data/processed/en_book_stats.meta.json` | build time, commit, checksums, analysis-set and group counts |
+| `data/processed/de_book_stats.csv` | German counterpart |
+| `data/processed/de_book_stats.meta.json` | German build metadata |
+| `figures/corpus_stats/fig*.{png,pdf}` | the English notebook's figures, for slides and print |
 | `notebooks/exports/04_corpus_descriptive_stats_en.html` | the notebook without code, for readers who do not run Python |
 
 ## Analysis set
@@ -43,16 +46,17 @@ Nothing is deleted. `exclusion_step` names the reason, `in_analysis_set` is the 
 
 ## POV term counts (exploratory)
 
-- Terms: English `high` terms and `regex` patterns of each dimension in `config/pov_lexicon.yml`.
-- Body chapters only. Spaces and hyphens are interchangeable, case is ignored, a plural -s is allowed.
+- Terms: language-specific `high` terms and `regex` patterns of each dimension in `config/pov_lexicon.yml` (`--lang en|de`).
+- Body chapters only. Spaces and hyphens are interchangeable, case is ignored; English allows an optional plural -s.
 - `pov_<dimension>_n` counts per dimension. `pov_n` merges overlapping matches across dimensions. `pov_per_10k` = `pov_n` per 10,000 body words.
 - Nothing is counted per paragraph: paragraphs are about ten times longer in PDFs than in e-books.
 
 `primary_group` splits primary for robustness (not a second corpus): `fiction_manual`,
 `pedagogy_genre_craft`, or `contrast` (the comparison books). See `robustness_primary_split()`
-and `plots.plot_pov_density_robustness`.
+and `plots.plot_pov_density_robustness`. German school/therapy/genre title cues are included
+alongside the English ones.
 
 Known limits: the counts are not validated against annotation; "point of view" also matches
 the everyday sense ("opinion"). Since 2026-11-12 the instruction signal no longer counts POV
 words. Primary is the broad narrative-writing set (see `src/fulltext/README.md`); comparison
-is narratology + academic writing only.
+is narratology + academic writing about writing only.

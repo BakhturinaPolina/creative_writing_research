@@ -1,0 +1,571 @@
+lang,concept_id,source_tier,assigned_tier,term,n_chars,n_tokens,df,tf,df_share,df_primary,df_comparison,df_share_primary,df_share_comparison,zero_hit
+en,perspective_general,academic,high,narrative perspective,21,2,36,70,0.000114,26,10,8.4e-05,0.001391,False
+en,perspective_general,academic,high,narrative point of view,23,4,32,37,0.000101,30,2,9.7e-05,0.000278,False
+en,perspective_general,academic,high,narrative viewpoint,19,2,13,14,4.1e-05,13,0,4.2e-05,0.0,False
+en,perspective_general,academic,high,perspectivization,17,1,0,0,0.0,0,0,0.0,0.0,True
+en,perspective_general,academic,high,narrative situation,19,2,10,25,3.2e-05,7,3,2.3e-05,0.000417,False
+en,perspective_general,academic,high,narratorial perspective,23,2,3,3,1e-05,3,0,1e-05,0.0,False
+en,perspective_general,academic,high,narrative perspective-taking,28,2,0,0,0.0,0,0,0.0,0.0,True
+en,perspective_general,craft,supporting,point of view,13,3,4149,6775,0.013159,4028,121,0.013073,0.016836,False
+en,perspective_general,craft,demoted,POV,3,1,1810,3400,0.005741,1809,1,0.005871,0.000139,False
+en,perspective_general,craft,supporting,viewpoint,9,1,1548,2484,0.00491,1527,21,0.004956,0.002922,False
+en,perspective_general,craft,supporting,viewpoint character,19,2,433,592,0.001373,433,0,0.001405,0.0,False
+en,perspective_general,craft,supporting,perspective character,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,perspective_general,craft,supporting,POV character,13,2,678,898,0.00215,678,0,0.0022,0.0,False
+en,perspective_general,craft,supporting,story perspective,17,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,perspective_general,craft,supporting,narrative lens,14,2,0,0,0.0,0,0,0.0,0.0,True
+en,perspective_general,craft,supporting,narrative angle,15,2,1,1,3e-06,0,1,0.0,0.000139,False
+en,perspective_general,craft,supporting,narrative stance,16,2,13,13,4.1e-05,13,0,4.2e-05,0.0,False
+en,perspective_general,craft,supporting,narrative camera,16,2,0,0,0.0,0,0,0.0,0.0,True
+en,perspective_general,craft,supporting,choice of perspective,21,3,4,4,1.3e-05,4,0,1.3e-05,0.0,False
+en,perspective_general,craft,supporting,choice of viewpoint,19,3,8,8,2.5e-05,8,0,2.6e-05,0.0,False
+en,voice_general,academic,high,narrative voice,15,2,359,431,0.001139,335,24,0.001087,0.003339,False
+en,voice_general,academic,high,narrating instance,18,2,1,2,3e-06,0,1,0.0,0.000139,False
+en,voice_general,academic,high,narratorial voice,17,2,5,5,1.6e-05,5,0,1.6e-05,0.0,False
+en,voice_general,academic,high,narrator's voice,16,2,75,85,0.000238,71,4,0.00023,0.000557,False
+en,voice_general,academic,high,narrative agency,16,2,4,4,1.3e-05,3,1,1e-05,0.000139,False
+en,voice_general,academic,high,narrating subject,17,2,3,3,1e-05,1,2,3e-06,0.000278,False
+en,voice_general,academic,high,narrating voice,15,2,11,12,3.5e-05,10,1,3.2e-05,0.000139,False
+en,voice_general,craft,demoted,storyteller,11,1,610,707,0.001935,599,11,0.001944,0.001531,False
+en,voice_general,craft,demoted,narrator,8,1,3595,7113,0.011402,3439,156,0.011161,0.021706,False
+en,voice_general,craft,supporting,narrative speaker,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_general,craft,supporting,choice of narrator,18,3,6,6,1.9e-05,6,0,1.9e-05,0.0,False
+en,voice_general,craft,supporting,narrator's identity,19,2,1,1,3e-06,0,1,0.0,0.000139,False
+en,voice_general,craft,supporting,storyteller's voice,19,2,5,5,1.6e-05,5,0,1.6e-05,0.0,False
+en,voice_general,craft,supporting,narrator's role,15,2,9,9,2.9e-05,7,2,2.3e-05,0.000278,False
+en,grammatical_first_person,academic,high,first-person narration,22,2,136,164,0.000431,132,4,0.000428,0.000557,False
+en,grammatical_first_person,academic,high,first-person narrative,22,2,130,171,0.000412,126,4,0.000409,0.000557,False
+en,grammatical_first_person,academic,high,first-person narrator,21,2,379,560,0.001202,373,6,0.001211,0.000835,False
+en,grammatical_first_person,academic,high,first-person point of view,26,4,134,172,0.000425,134,0,0.000435,0.0,False
+en,grammatical_first_person,academic,high,first-person perspective,24,2,16,16,5.1e-05,15,1,4.9e-05,0.000139,False
+en,grammatical_first_person,academic,high,I-narrator,10,1,5,5,1.6e-05,4,1,1.3e-05,0.000139,False
+en,grammatical_first_person,academic,high,first-person pronoun,20,2,42,44,0.000133,41,1,0.000133,0.000139,False
+en,grammatical_first_person,craft,supporting,first person,12,2,1592,2356,0.005049,1563,29,0.005073,0.004035,False
+en,grammatical_first_person,craft,supporting,first-person POV,16,2,59,66,0.000187,59,0,0.000191,0.0,False
+en,grammatical_first_person,craft,supporting,first person singular,21,3,36,41,0.000114,26,10,8.4e-05,0.001391,False
+en,grammatical_first_person,craft,supporting,writing in first person,23,4,14,14,4.4e-05,14,0,4.5e-05,0.0,False
+en,grammatical_first_person,craft,supporting,first-person viewpoint,22,2,33,35,0.000105,33,0,0.000107,0.0,False
+en,grammatical_first_person,craft,supporting,I perspective,13,2,0,0,0.0,0,0,0.0,0.0,True
+en,grammatical_first_person,craft,supporting,we narrator,11,2,0,0,0.0,0,0,0.0,0.0,True
+en,grammatical_first_person,craft,supporting,first-person plural,19,2,27,30,8.6e-05,27,0,8.8e-05,0.0,False
+en,grammatical_second_person,academic,high,second-person narration,23,2,13,13,4.1e-05,13,0,4.2e-05,0.0,False
+en,grammatical_second_person,academic,high,second-person narrator,22,2,14,18,4.4e-05,12,2,3.9e-05,0.000278,False
+en,grammatical_second_person,academic,high,second-person narrative,23,2,9,10,2.9e-05,9,0,2.9e-05,0.0,False
+en,grammatical_second_person,academic,high,second-person point of view,27,4,40,49,0.000127,40,0,0.00013,0.0,False
+en,grammatical_second_person,craft,supporting,second person,13,2,418,638,0.001326,408,10,0.001324,0.001391,False
+en,grammatical_second_person,craft,supporting,second-person POV,17,2,32,41,0.000101,32,0,0.000104,0.0,False
+en,grammatical_second_person,craft,supporting,you narration,13,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,grammatical_second_person,craft,supporting,you perspective,15,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,grammatical_second_person,craft,supporting,writing in second person,24,4,1,1,3e-06,1,0,3e-06,0.0,False
+en,grammatical_third_person,academic,high,third-person narration,22,2,81,104,0.000257,77,4,0.00025,0.000557,False
+en,grammatical_third_person,academic,high,third-person narrative,22,2,66,99,0.000209,60,6,0.000195,0.000835,False
+en,grammatical_third_person,academic,high,third-person narrator,21,2,135,248,0.000428,131,4,0.000425,0.000557,False
+en,grammatical_third_person,academic,high,third-person point of view,26,4,110,134,0.000349,110,0,0.000357,0.0,False
+en,grammatical_third_person,academic,high,third-person perspective,24,2,22,22,7e-05,22,0,7.1e-05,0.0,False
+en,grammatical_third_person,craft,supporting,third person,12,2,1326,2026,0.004205,1290,36,0.004187,0.005009,False
+en,grammatical_third_person,craft,supporting,third-person POV,16,2,55,71,0.000174,55,0,0.000179,0.0,False
+en,grammatical_third_person,craft,supporting,he or she narration,19,4,0,0,0.0,0,0,0.0,0.0,True
+en,grammatical_third_person,craft,supporting,third-person viewpoint,22,2,31,33,9.8e-05,31,0,0.000101,0.0,False
+en,grammatical_third_person,craft,supporting,writing in third person,23,4,8,8,2.5e-05,8,0,2.6e-05,0.0,False
+en,voice_heterodiegetic,academic,high,heterodiegetic narrator,23,2,3,3,1e-05,1,2,3e-06,0.000278,False
+en,voice_heterodiegetic,academic,high,heterodiegetic narration,24,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_heterodiegetic,academic,high,heterodiegetic narrative,24,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_heterodiegetic,academic,high,non-diegetic narrator,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_heterodiegetic,academic,high,narrator outside the diegesis,29,4,0,0,0.0,0,0,0.0,0.0,True
+en,voice_heterodiegetic,craft,supporting,detached narrator,17,2,6,6,1.9e-05,6,0,1.9e-05,0.0,False
+en,voice_heterodiegetic,craft,supporting,nonparticipant narrator,23,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_heterodiegetic,craft,supporting,external narrator,17,2,8,10,2.5e-05,8,0,2.6e-05,0.0,False
+en,voice_heterodiegetic,craft,supporting,outside narrator,16,2,5,5,1.6e-05,5,0,1.6e-05,0.0,False
+en,voice_heterodiegetic,craft,supporting,uninvolved narrator,19,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,voice_heterodiegetic,craft,supporting,impersonal narrator,19,2,3,3,1e-05,3,0,1e-05,0.0,False
+en,voice_heterodiegetic,craft,supporting,absent narrator,15,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_homodiegetic,academic,high,homodiegetic narrator,21,2,1,1,3e-06,0,1,0.0,0.000139,False
+en,voice_homodiegetic,academic,high,homodiegetic narration,22,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_homodiegetic,academic,high,homodiegetic narrative,22,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_homodiegetic,academic,high,character narrator,18,2,6,6,1.9e-05,6,0,1.9e-05,0.0,False
+en,voice_homodiegetic,academic,high,narrator-character,18,1,1,1,3e-06,1,0,3e-06,0.0,False
+en,voice_homodiegetic,craft,supporting,involved narrator,17,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,voice_homodiegetic,craft,supporting,participating narrator,22,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_homodiegetic,craft,supporting,narrator as character,21,3,0,0,0.0,0,0,0.0,0.0,True
+en,voice_homodiegetic,craft,supporting,narrator in the story,21,4,2,2,6e-06,2,0,6e-06,0.0,False
+en,voice_homodiegetic,craft,supporting,first-person character narrator,31,3,1,1,3e-06,1,0,3e-06,0.0,False
+en,voice_eyewitness,academic,high,witness narrator,16,2,3,3,1e-05,3,0,1e-05,0.0,False
+en,voice_eyewitness,academic,high,eyewitness narrator,19,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_eyewitness,academic,high,observer narrator,17,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,voice_eyewitness,academic,high,peripheral narrator,19,2,21,32,6.7e-05,21,0,6.8e-05,0.0,False
+en,voice_eyewitness,academic,high,peripheral first-person narrator,32,3,1,1,3e-06,1,0,3e-06,0.0,False
+en,voice_eyewitness,academic,high,first-person peripheral,23,2,3,5,1e-05,3,0,1e-05,0.0,False
+en,voice_eyewitness,craft,supporting,narrator as witness,19,3,1,1,3e-06,1,0,3e-06,0.0,False
+en,voice_eyewitness,craft,supporting,narrator as observer,20,3,2,2,6e-06,2,0,6e-06,0.0,False
+en,voice_eyewitness,craft,supporting,outsider witness,16,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_eyewitness,craft,supporting,sidekick narrator,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_eyewitness,craft,supporting,bystander narrator,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_eyewitness,craft,supporting,Watson narrator,15,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_eyewitness,craft,supporting,first-person observer,21,2,4,5,1.3e-05,4,0,1.3e-05,0.0,False
+en,voice_eyewitness,craft,supporting,spectator narrator,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_participant,academic,high,participant narrator,20,2,3,3,1e-05,3,0,1e-05,0.0,False
+en,voice_participant,academic,high,participating narrator,22,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_participant,academic,high,narrator as secondary character,31,4,0,0,0.0,0,0,0.0,0.0,True
+en,voice_participant,academic,high,homodiegetic secondary narrator,31,3,0,0,0.0,0,0,0.0,0.0,True
+en,voice_participant,craft,supporting,secondary-character narrator,28,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_participant,craft,supporting,supporting-character narrator,29,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_participant,craft,supporting,first-person secondary character,32,3,0,0,0.0,0,0,0.0,0.0,True
+en,voice_participant,craft,supporting,narrator as side character,26,4,0,0,0.0,0,0,0.0,0.0,True
+en,voice_participant,craft,supporting,narrator as companion,21,3,0,0,0.0,0,0,0.0,0.0,True
+en,voice_protagonist,academic,high,autodiegetic narrator,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_protagonist,academic,high,autodiegetic narration,22,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_protagonist,academic,high,protagonist narrator,20,2,4,4,1.3e-05,4,0,1.3e-05,0.0,False
+en,voice_protagonist,academic,high,narrator-protagonist,20,1,9,9,2.9e-05,9,0,2.9e-05,0.0,False
+en,voice_protagonist,academic,high,first-person protagonist,24,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,voice_protagonist,craft,supporting,first-person main character,27,3,0,0,0.0,0,0,0.0,0.0,True
+en,voice_protagonist,craft,supporting,main-character narrator,23,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_protagonist,craft,supporting,central-character narrator,26,2,0,0,0.0,0,0,0.0,0.0,True
+en,voice_protagonist,craft,supporting,hero narrator,13,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,voice_protagonist,craft,supporting,narrator as protagonist,23,3,0,0,0.0,0,0,0.0,0.0,True
+en,voice_protagonist,craft,supporting,narrator as main character,26,4,0,0,0.0,0,0,0.0,0.0,True
+en,stance_narratorial,academic,high,narratorial narration,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_narratorial,academic,high,narratorial stance,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_narratorial,academic,high,narratorial discourse,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_narratorial,academic,high,narratorial presentation,24,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_narratorial,academic,high,narrator's discourse,20,2,1,2,3e-06,0,1,0.0,0.000139,False
+en,stance_narratorial,academic,high,authorial narration,19,2,3,3,1e-05,3,0,1e-05,0.0,False
+en,stance_narratorial,academic,high,narrator mediation,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_narratorial,craft,supporting,narratorial commentary,22,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_narratorial,craft,supporting,narrator commentary,19,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_narratorial,craft,supporting,intrusive narrator,18,2,13,16,4.1e-05,12,1,3.9e-05,0.000139,False
+en,stance_narratorial,craft,supporting,authorial intrusion,19,2,14,16,4.4e-05,13,1,4.2e-05,0.000139,False
+en,stance_narratorial,craft,supporting,narrator intrusion,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_narratorial,craft,supporting,narrator intervention,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_narratorial,craft,supporting,narrator interpretation,23,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_narratorial,craft,supporting,narrator evaluation,19,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_narratorial,craft,supporting,narrator addresses the reader,29,4,4,4,1.3e-05,4,0,1.3e-05,0.0,False
+en,stance_narratorial,craft,supporting,editorial omniscience,21,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,stance_narratorial,craft,supporting,authorial voice,15,2,90,99,0.000285,86,4,0.000279,0.000557,False
+en,stance_figural,academic,high,figural narration,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_figural,academic,high,figural narrative,17,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,stance_figural,academic,high,figural stance,14,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_figural,academic,high,figural presentation,20,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_figural,academic,high,figural discourse,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_figural,academic,high,reflector character,19,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,stance_figural,academic,high,reflector mode,14,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_figural,academic,high,character-bound narration,25,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_figural,academic,high,character-centred narration,27,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_figural,academic,high,character-centered narration,28,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_figural,craft,supporting,character-filtered narration,28,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_figural,craft,supporting,character voice in narration,28,4,0,0,0.0,0,0,0.0,0.0,True
+en,stance_figural,craft,supporting,character's own language,24,3,0,0,0.0,0,0,0.0,0.0,True
+en,stance_figural,craft,supporting,immersive narration,19,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_figural,craft,supporting,close narration,15,2,0,0,0.0,0,0,0.0,0.0,True
+en,stance_figural,craft,supporting,deep POV,8,2,84,94,0.000266,84,0,0.000273,0.0,False
+en,stance_figural,craft,supporting,filtering through the character,31,4,0,0,0.0,0,0,0.0,0.0,True
+en,stance_figural,craft,supporting,character's subjective experience,33,3,1,1,3e-06,1,0,3e-06,0.0,False
+en,stance_figural,craft,supporting,free indirect style,19,3,28,39,8.9e-05,26,2,8.4e-05,0.000278,False
+en,focalization_general,academic,high,focalization,12,1,48,131,0.000152,27,21,8.8e-05,0.002922,False
+en,focalization_general,academic,high,focalisation,12,1,7,10,2.2e-05,4,3,1.3e-05,0.000417,False
+en,focalization_general,academic,high,focalizer,9,1,16,49,5.1e-05,0,16,0.0,0.002226,False
+en,focalization_general,academic,high,focaliser,9,1,5,5,1.6e-05,5,0,1.6e-05,0.0,False
+en,focalization_general,academic,high,focalized character,19,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_general,academic,high,focalised character,19,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_general,academic,high,focalizing subject,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_general,academic,high,focalising subject,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_general,academic,high,focal narrative,15,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_general,academic,high,locus of focalization,21,3,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_general,craft,supporting,viewpoint restriction,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_general,craft,supporting,narrative knowledge,19,2,3,4,1e-05,0,3,0.0,0.000417,False
+en,focalization_general,craft,supporting,access to information,21,3,27,27,8.6e-05,24,3,7.8e-05,0.000417,False
+en,focalization_general,craft,supporting,range of knowledge,18,3,8,8,2.5e-05,8,0,2.6e-05,0.0,False
+en,focalization_general,craft,supporting,information available to the narrator,37,5,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_general,craft,supporting,perspective constraints,23,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_zero,academic,high,zero focalization,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_zero,academic,high,zero focalisation,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_zero,academic,high,nonfocalized narration,22,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_zero,academic,high,unrestricted focalization,25,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_zero,academic,high,omniscient narration,20,2,41,46,0.00013,40,1,0.00013,0.000139,False
+en,focalization_zero,academic,high,unrestricted narration,22,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_zero,academic,high,unrestricted knowledge,22,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_zero,craft,supporting,omniscient narrator,19,2,218,273,0.000691,210,8,0.000682,0.001113,False
+en,focalization_zero,craft,supporting,omniscient point of view,24,4,120,167,0.000381,120,0,0.000389,0.0,False
+en,focalization_zero,craft,supporting,third-person omniscient,23,2,71,84,0.000225,70,1,0.000227,0.000139,False
+en,focalization_zero,craft,supporting,all-knowing narrator,20,2,8,8,2.5e-05,8,0,2.6e-05,0.0,False
+en,focalization_zero,craft,supporting,godlike narrator,16,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,focalization_zero,craft,supporting,god's-eye view,14,2,4,4,1.3e-05,4,0,1.3e-05,0.0,False
+en,focalization_zero,craft,supporting,god's eye perspective,21,3,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_zero,craft,supporting,unlimited viewpoint,19,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_zero,craft,supporting,unrestricted viewpoint,22,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_zero,craft,supporting,authorial omniscience,21,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,focalization_zero,craft,supporting,panoramic perspective,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_zero,craft,supporting,omniscience,11,1,184,274,0.000584,183,1,0.000594,0.000139,False
+en,focalization_internal,academic,high,internal focalization,21,2,5,5,1.6e-05,0,5,0.0,0.000696,False
+en,focalization_internal,academic,high,internal focalisation,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_internal,academic,high,internally focalized narration,30,3,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_internal,academic,high,character-bound focalization,28,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_internal,academic,high,restricted focalization,23,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_internal,academic,high,limited knowledge,17,2,15,18,4.8e-05,11,4,3.6e-05,0.000557,False
+en,focalization_internal,academic,high,restricted narrative knowledge,30,3,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_internal,craft,supporting,third-person limited,20,2,93,123,0.000295,93,0,0.000302,0.0,False
+en,focalization_internal,craft,supporting,limited third person,20,3,49,63,0.000155,48,1,0.000156,0.000139,False
+en,focalization_internal,craft,supporting,limited third,13,2,83,110,0.000263,82,1,0.000266,0.000139,False
+en,focalization_internal,craft,supporting,limited omniscient,18,2,46,67,0.000146,46,0,0.000149,0.0,False
+en,focalization_internal,craft,supporting,limited omniscience,19,2,23,30,7.3e-05,23,0,7.5e-05,0.0,False
+en,focalization_internal,craft,supporting,selective omniscience,21,2,4,8,1.3e-05,4,0,1.3e-05,0.0,False
+en,focalization_internal,craft,supporting,limited point of view,21,4,39,48,0.000124,39,0,0.000127,0.0,False
+en,focalization_internal,craft,supporting,restricted point of view,24,4,2,2,6e-06,2,0,6e-06,0.0,False
+en,focalization_internal,craft,supporting,subjective point of view,24,4,11,14,3.5e-05,11,0,3.6e-05,0.0,False
+en,focalization_internal,craft,supporting,character-limited perspective,29,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_internal,craft,supporting,close third person,18,3,21,24,6.7e-05,21,0,6.8e-05,0.0,False
+en,focalization_internal,craft,supporting,deep third person,17,3,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_external,academic,high,external focalization,21,2,4,5,1.3e-05,1,3,3e-06,0.000417,False
+en,focalization_external,academic,high,external focalisation,21,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,focalization_external,academic,high,externally focalized narration,30,3,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_external,academic,high,external perspective,20,2,3,4,1e-05,2,1,6e-06,0.000139,False
+en,focalization_external,academic,high,no interior access,18,3,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_external,academic,high,restricted external observation,31,3,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_external,craft,supporting,objective narration,19,2,12,16,3.8e-05,12,0,3.9e-05,0.0,False
+en,focalization_external,craft,supporting,objective narrator,18,2,21,23,6.7e-05,20,1,6.5e-05,0.000139,False
+en,focalization_external,craft,supporting,objective point of view,23,4,41,48,0.00013,40,1,0.00013,0.000139,False
+en,focalization_external,craft,supporting,objective third person,22,3,6,6,1.9e-05,6,0,1.9e-05,0.0,False
+en,focalization_external,craft,supporting,camera eye,10,2,14,16,4.4e-05,14,0,4.5e-05,0.0,False
+en,focalization_external,craft,supporting,camera-eye narration,20,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_external,craft,supporting,camera perspective,18,2,4,5,1.3e-05,4,0,1.3e-05,0.0,False
+en,focalization_external,craft,supporting,fly on the wall,15,4,23,28,7.3e-05,23,0,7.5e-05,0.0,False
+en,focalization_external,craft,supporting,fly-on-the-wall narrator,24,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_external,craft,supporting,dramatic point of view,22,4,17,21,5.4e-05,17,0,5.5e-05,0.0,False
+en,focalization_external,craft,supporting,behavioural narration,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_external,craft,supporting,behavioral narration,20,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_external,craft,supporting,third-person observer,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_fixed,academic,high,fixed focalization,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_fixed,academic,high,fixed focalisation,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_fixed,academic,high,fixed internal focalization,27,3,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_fixed,academic,high,single focalizer,16,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_fixed,academic,high,single focaliser,16,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_fixed,academic,high,constant focalization,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_fixed,craft,supporting,single point of view,20,4,34,35,0.000108,34,0,0.00011,0.0,False
+en,focalization_fixed,craft,supporting,single POV,10,2,25,31,7.9e-05,25,0,8.1e-05,0.0,False
+en,focalization_fixed,craft,supporting,single viewpoint,16,2,44,62,0.00014,44,0,0.000143,0.0,False
+en,focalization_fixed,craft,supporting,single viewpoint character,26,3,6,7,1.9e-05,6,0,1.9e-05,0.0,False
+en,focalization_fixed,craft,supporting,one-character perspective,25,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_fixed,craft,supporting,single-character perspective,28,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_fixed,craft,supporting,consistent POV,14,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,focalization_fixed,craft,supporting,single perspective,18,2,13,13,4.1e-05,13,0,4.2e-05,0.0,False
+en,focalization_variable,academic,high,variable focalization,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_variable,academic,high,variable focalisation,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_variable,academic,high,shifting internal focalization,30,3,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_variable,academic,high,alternating internal focalization,33,3,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_variable,academic,high,shifting focalizer,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_variable,academic,high,perspectival plurality,22,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_variable,craft,supporting,multiple POV,12,2,69,89,0.000219,69,0,0.000224,0.0,False
+en,focalization_variable,craft,supporting,multiple viewpoints,19,2,35,40,0.000111,34,1,0.00011,0.000139,False
+en,focalization_variable,craft,supporting,multiple points of view,23,4,77,80,0.000244,77,0,0.00025,0.0,False
+en,focalization_variable,craft,supporting,alternating POV,15,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_variable,craft,supporting,alternating viewpoints,22,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,focalization_variable,craft,supporting,multiple viewpoint characters,29,3,3,3,1e-05,3,0,1e-05,0.0,False
+en,focalization_variable,craft,supporting,third-person multiple,21,2,15,15,4.8e-05,15,0,4.9e-05,0.0,False
+en,focalization_variable,craft,supporting,multiple first-person narrative,31,3,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_variable,craft,supporting,rotating viewpoint,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_variable,craft,supporting,dual POV,8,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,focalization_variable,craft,supporting,ensemble POV,12,2,0,0,0.0,0,0,0.0,0.0,True
+en,focalization_variable,craft,supporting,alternating narrators,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,pov_subject,academic,high,perceiving subject,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,pov_subject,academic,high,subject of perception,21,3,0,0,0.0,0,0,0.0,0.0,True
+en,pov_subject,academic,high,experiencing subject,20,2,1,1,3e-06,0,1,0.0,0.000139,False
+en,pov_subject,academic,high,centre of consciousness,23,3,1,3,3e-06,0,1,0.0,0.000139,False
+en,pov_subject,academic,high,center of consciousness,23,3,4,7,1.3e-05,4,0,1.3e-05,0.0,False
+en,pov_subject,academic,high,perceptual centre,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,pov_subject,academic,high,perceptual center,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,pov_subject,academic,high,experiential centre,19,2,0,0,0.0,0,0,0.0,0.0,True
+en,pov_subject,academic,high,focalizing subject,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,pov_subject,academic,high,focalising subject,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,pov_subject,craft,supporting,viewpoint character as observer,31,4,0,0,0.0,0,0,0.0,0.0,True
+en,pov_subject,craft,supporting,perceptual point of view,24,4,1,1,3e-06,0,1,0.0,0.000139,False
+en,pov_subject,craft,supporting,character as lens,17,3,0,0,0.0,0,0,0.0,0.0,True
+en,pov_subject,craft,supporting,character's sensory experience,30,3,0,0,0.0,0,0,0.0,0.0,True
+en,pov_subject,craft,supporting,subjective perception,21,2,5,5,1.6e-05,4,1,1.3e-05,0.000139,False
+en,pov_subject,craft,supporting,subjective viewpoint,20,2,8,10,2.5e-05,7,1,2.3e-05,0.000139,False
+en,pov_subject,craft,supporting,sensory viewpoint,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,pov_subject,craft,supporting,character's eyes,16,2,59,59,0.000187,59,0,0.000191,0.0,False
+en,pov_object,academic,high,object of perception,20,3,0,0,0.0,0,0,0.0,0.0,True
+en,pov_object,academic,high,perceived object,16,2,2,2,6e-06,1,1,3e-06,0.000139,False
+en,pov_object,academic,high,perceived character,19,2,0,0,0.0,0,0,0.0,0.0,True
+en,pov_object,academic,high,object of representation,24,3,0,0,0.0,0,0,0.0,0.0,True
+en,pov_object,academic,high,observed character,18,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,pov_object,academic,high,external representation of character,36,4,0,0,0.0,0,0,0.0,0.0,True
+en,pov_object,craft,supporting,character seen from outside,27,4,0,0,0.0,0,0,0.0,0.0,True
+en,pov_object,craft,supporting,description of appearance,25,3,2,2,6e-06,2,0,6e-06,0.0,False
+en,pov_object,craft,supporting,physical description of character,33,4,1,1,3e-06,1,0,3e-06,0.0,False
+en,pov_object,craft,supporting,observable character behaviour,30,3,0,0,0.0,0,0,0.0,0.0,True
+en,pov_object,craft,supporting,visual characterization,23,2,0,0,0.0,0,0,0.0,0.0,True
+en,pov_object,craft,supporting,visual characterisation,23,2,0,0,0.0,0,0,0.0,0.0,True
+en,mode_narrative,academic,high,narrative mode,14,2,43,48,0.000136,41,2,0.000133,0.000278,False
+en,mode_narrative,academic,high,narrative summary,17,2,189,235,0.000599,189,0,0.000613,0.0,False
+en,mode_narrative,academic,high,narratorial mediation,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,mode_narrative,academic,high,summary narration,17,2,7,8,2.2e-05,7,0,2.3e-05,0.0,False
+en,mode_narrative,academic,high,diegetic mode,13,2,0,0,0.0,0,0,0.0,0.0,True
+en,mode_narrative,academic,high,diegesis,8,1,36,61,0.000114,27,9,8.8e-05,0.001252,False
+en,mode_narrative,academic,high,time compression,16,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,mode_narrative,academic,high,temporal compression,20,2,1,1,3e-06,0,1,0.0,0.000139,False
+en,mode_narrative,academic,high,narrative report,16,2,9,16,2.9e-05,9,0,2.9e-05,0.0,False
+en,mode_narrative,craft,demoted,telling,7,1,5484,6807,0.017393,5334,150,0.017312,0.020871,False
+en,mode_narrative,craft,supporting,telling instead of showing,26,4,1,1,3e-06,1,0,3e-06,0.0,False
+en,mode_narrative,craft,supporting,show versus tell,16,3,3,3,1e-05,3,0,1e-05,0.0,False
+en,mode_narrative,craft,supporting,summary versus scene,20,3,0,0,0.0,0,0,0.0,0.0,True
+en,mode_narrative,craft,supporting,exposition,10,1,1074,1538,0.003406,1061,13,0.003444,0.001809,False
+en,mode_narrative,craft,supporting,narrative exposition,20,2,5,5,1.6e-05,5,0,1.6e-05,0.0,False
+en,mode_narrative,craft,supporting,backstory summary,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,mode_narrative,craft,supporting,summary passage,15,2,5,5,1.6e-05,5,0,1.6e-05,0.0,False
+en,mode_narrative,craft,supporting,compress time,13,2,12,13,3.8e-05,12,0,3.9e-05,0.0,False
+en,mode_narrative,craft,supporting,narrative distance through summary,34,4,0,0,0.0,0,0,0.0,0.0,True
+en,mode_dramatic,academic,high,dramatic mode,13,2,13,14,4.1e-05,13,0,4.2e-05,0.0,False
+en,mode_dramatic,academic,high,scenic mode,11,2,0,0,0.0,0,0,0.0,0.0,True
+en,mode_dramatic,academic,high,scenic narration,16,2,0,0,0.0,0,0,0.0,0.0,True
+en,mode_dramatic,academic,high,mimetic mode,12,2,0,0,0.0,0,0,0.0,0.0,True
+en,mode_dramatic,academic,high,mimesis,7,1,85,142,0.00027,66,19,0.000214,0.002644,False
+en,mode_dramatic,academic,high,scenic presentation,19,2,5,5,1.6e-05,3,2,1e-05,0.000278,False
+en,mode_dramatic,academic,high,scene versus summary,20,3,2,2,6e-06,2,0,6e-06,0.0,False
+en,mode_dramatic,academic,high,temporal isochrony,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,mode_dramatic,craft,supporting,"show, don't tell",16,3,182,232,0.000577,173,9,0.000561,0.001252,False
+en,mode_dramatic,craft,supporting,show not tell,13,3,15,15,4.8e-05,15,0,4.9e-05,0.0,False
+en,mode_dramatic,craft,supporting,showing rather than telling,27,4,33,36,0.000105,32,1,0.000104,0.000139,False
+en,mode_dramatic,craft,supporting,dramatize the scene,19,3,0,0,0.0,0,0,0.0,0.0,True
+en,mode_dramatic,craft,supporting,dramatise the scene,19,3,0,0,0.0,0,0,0.0,0.0,True
+en,mode_dramatic,craft,supporting,scene construction,18,2,12,19,3.8e-05,11,1,3.6e-05,0.000139,False
+en,mode_dramatic,craft,supporting,scene writing,13,2,10,10,3.2e-05,10,0,3.2e-05,0.0,False
+en,mode_dramatic,craft,supporting,moment-by-moment narration,26,2,0,0,0.0,0,0,0.0,0.0,True
+en,mode_dramatic,craft,supporting,real-time action,16,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,mode_dramatic,craft,supporting,dramatization,13,1,113,138,0.000358,110,3,0.000357,0.000417,False
+en,mode_dramatic,craft,supporting,dramatise events,16,2,0,0,0.0,0,0,0.0,0.0,True
+en,mode_dramatic,craft,supporting,dialogue and action,19,3,96,107,0.000304,96,0,0.000312,0.0,False
+en,mode_balance,academic,high,narrative-dramatic continuum,28,2,0,0,0.0,0,0,0.0,0.0,True
+en,mode_balance,academic,high,narrative and dramatic modes,28,4,0,0,0.0,0,0,0.0,0.0,True
+en,mode_balance,academic,high,telling and showing,19,3,20,24,6.3e-05,19,1,6.2e-05,0.000139,False
+en,mode_balance,academic,high,scene and summary,17,3,34,43,0.000108,33,1,0.000107,0.000139,False
+en,mode_balance,academic,high,narrative speed,15,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,mode_balance,craft,supporting,balance showing and telling,27,4,0,0,0.0,0,0,0.0,0.0,True
+en,mode_balance,craft,supporting,alternate scene and summary,27,4,0,0,0.0,0,0,0.0,0.0,True
+en,mode_balance,craft,supporting,mix dialogue and narration,26,4,0,0,0.0,0,0,0.0,0.0,True
+en,mode_balance,craft,supporting,when to show and when to tell,29,7,3,3,1e-05,3,0,1e-05,0.0,False
+en,mode_balance,craft,supporting,pacing through scene and summary,32,5,0,0,0.0,0,0,0.0,0.0,True
+en,mode_balance,craft,supporting,switch between scene and summary,32,5,0,0,0.0,0,0,0.0,0.0,True
+en,consciousness_access,academic,high,access to consciousness,23,3,0,0,0.0,0,0,0.0,0.0,True
+en,consciousness_access,academic,high,interior access,15,2,0,0,0.0,0,0,0.0,0.0,True
+en,consciousness_access,academic,high,access to thoughts,18,3,2,2,6e-06,2,0,6e-06,0.0,False
+en,consciousness_access,academic,high,mental access,13,2,0,0,0.0,0,0,0.0,0.0,True
+en,consciousness_access,academic,high,representation of consciousness,31,3,0,0,0.0,0,0,0.0,0.0,True
+en,consciousness_access,academic,high,consciousness representation,28,2,0,0,0.0,0,0,0.0,0.0,True
+en,consciousness_access,academic,high,interiority,11,1,76,88,0.000241,74,2,0.00024,0.000278,False
+en,consciousness_access,academic,high,interior perspective,20,2,1,1,3e-06,0,1,0.0,0.000139,False
+en,consciousness_access,craft,supporting,inside the character's head,27,4,14,14,4.4e-05,14,0,4.5e-05,0.0,False
+en,consciousness_access,craft,supporting,inside the character's mind,27,4,3,3,1e-05,3,0,1e-05,0.0,False
+en,consciousness_access,craft,supporting,inner life,10,2,198,232,0.000628,191,7,0.00062,0.000974,False
+en,consciousness_access,craft,supporting,inner world,11,2,104,132,0.00033,91,13,0.000295,0.001809,False
+en,consciousness_access,craft,supporting,internal experience,19,2,8,9,2.5e-05,8,0,2.6e-05,0.0,False
+en,consciousness_access,craft,supporting,internal monologue,18,2,77,88,0.000244,77,0,0.00025,0.0,False
+en,consciousness_access,craft,supporting,thoughts and feelings,21,3,409,448,0.001297,403,6,0.001308,0.000835,False
+en,consciousness_access,craft,supporting,inner dialogue,14,2,35,38,0.000111,32,3,0.000104,0.000417,False
+en,consciousness_access,craft,supporting,inner voice,11,2,154,208,0.000488,152,2,0.000493,0.000278,False
+en,consciousness_access,craft,supporting,inner conflict,14,2,132,189,0.000419,132,0,0.000428,0.0,False
+en,consciousness_access,craft,supporting,light penetration,17,2,4,4,1.3e-05,4,0,1.3e-05,0.0,False
+en,consciousness_access,craft,supporting,deep penetration,16,2,11,14,3.5e-05,11,0,3.6e-05,0.0,False
+en,thought_representation,academic,high,free indirect discourse,23,3,11,49,3.5e-05,6,5,1.9e-05,0.000696,False
+en,thought_representation,academic,high,free indirect speech,20,3,9,11,2.9e-05,7,2,2.3e-05,0.000278,False
+en,thought_representation,academic,high,free indirect style,19,3,28,39,8.9e-05,26,2,8.4e-05,0.000278,False
+en,thought_representation,academic,high,free indirect thought,21,3,2,11,6e-06,0,2,0.0,0.000278,False
+en,thought_representation,academic,high,narrated monologue,18,2,2,2,6e-06,0,2,0.0,0.000278,False
+en,thought_representation,academic,high,interior monologue,18,2,293,384,0.000929,286,7,0.000928,0.000974,False
+en,thought_representation,academic,high,psycho-narration,16,1,0,0,0.0,0,0,0.0,0.0,True
+en,thought_representation,academic,high,psychonarration,15,1,0,0,0.0,0,0,0.0,0.0,True
+en,thought_representation,academic,high,thought report,14,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,thought_representation,academic,high,represented speech and thought,30,4,0,0,0.0,0,0,0.0,0.0,True
+en,thought_representation,academic,high,quoted monologue,16,2,0,0,0.0,0,0,0.0,0.0,True
+en,thought_representation,academic,high,direct thought,14,2,20,44,6.3e-05,18,2,5.8e-05,0.000278,False
+en,thought_representation,academic,high,indirect thought,16,2,7,17,2.2e-05,5,2,1.6e-05,0.000278,False
+en,thought_representation,craft,supporting,stream of consciousness,23,3,245,312,0.000777,240,5,0.000779,0.000696,False
+en,thought_representation,craft,supporting,internal monologue,18,2,77,88,0.000244,77,0,0.00025,0.0,False
+en,thought_representation,craft,supporting,thought tags,12,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,thought_representation,craft,supporting,dialogue with oneself,21,3,2,2,6e-06,2,0,6e-06,0.0,False
+en,thought_representation,craft,supporting,unspoken dialogue,17,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,thought_representation,craft,supporting,inner narration,15,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,thought_representation,craft,supporting,italicized thoughts,19,2,0,0,0.0,0,0,0.0,0.0,True
+en,thought_representation,craft,supporting,italicised thoughts,19,2,0,0,0.0,0,0,0.0,0.0,True
+en,thought_representation,craft,supporting,thought attribution,19,2,0,0,0.0,0,0,0.0,0.0,True
+en,distance_depth,academic,high,psychic distance,16,2,50,82,0.000159,49,1,0.000159,0.000139,False
+en,distance_depth,academic,high,narrative distance,18,2,65,86,0.000206,61,4,0.000198,0.000557,False
+en,distance_depth,academic,high,narratorial distance,20,2,0,0,0.0,0,0,0.0,0.0,True
+en,distance_depth,academic,high,psychological distance,22,2,8,8,2.5e-05,6,2,1.9e-05,0.000278,False
+en,distance_depth,academic,high,narrative immediacy,19,2,3,3,1e-05,3,0,1e-05,0.0,False
+en,distance_depth,academic,high,experiential distance,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,distance_depth,craft,supporting,deep POV,8,2,84,94,0.000266,84,0,0.000273,0.0,False
+en,distance_depth,craft,supporting,deep point of view,18,4,10,10,3.2e-05,10,0,3.2e-05,0.0,False
+en,distance_depth,craft,supporting,close POV,9,2,4,4,1.3e-05,4,0,1.3e-05,0.0,False
+en,distance_depth,craft,supporting,close third,11,2,45,60,0.000143,45,0,0.000146,0.0,False
+en,distance_depth,craft,supporting,deep third,10,2,5,5,1.6e-05,5,0,1.6e-05,0.0,False
+en,distance_depth,craft,supporting,intimate third person,21,3,3,7,1e-05,3,0,1e-05,0.0,False
+en,distance_depth,craft,supporting,close third-person perspective,30,3,0,0,0.0,0,0,0.0,0.0,True
+en,distance_depth,craft,supporting,narrative closeness,19,2,0,0,0.0,0,0,0.0,0.0,True
+en,distance_depth,craft,supporting,distant narration,17,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,distance_depth,craft,supporting,intimate viewpoint,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,distance_depth,craft,supporting,shallow POV,11,2,3,3,1e-05,3,0,1e-05,0.0,False
+en,distance_depth,craft,supporting,zoom in,7,2,67,72,0.000212,67,0,0.000217,0.0,False
+en,distance_depth,craft,supporting,zoom out,8,2,12,16,3.8e-05,12,0,3.9e-05,0.0,False
+en,distance_depth,craft,supporting,narrative camera distance,25,3,0,0,0.0,0,0,0.0,0.0,True
+en,switching_consistency,academic,high,focalization shift,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,switching_consistency,academic,high,focalisation shift,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,switching_consistency,academic,high,perspective shift,17,2,9,9,2.9e-05,9,0,2.9e-05,0.0,False
+en,switching_consistency,academic,high,point-of-view shift,19,2,17,23,5.4e-05,17,0,5.5e-05,0.0,False
+en,switching_consistency,academic,high,change of focalization,22,3,0,0,0.0,0,0,0.0,0.0,True
+en,switching_consistency,academic,high,narrative perspective shift,27,3,0,0,0.0,0,0,0.0,0.0,True
+en,switching_consistency,craft,supporting,head hopping,12,2,9,11,2.9e-05,9,0,2.9e-05,0.0,False
+en,switching_consistency,craft,supporting,head-hopping,12,1,40,47,0.000127,40,0,0.00013,0.0,False
+en,switching_consistency,craft,supporting,POV switching,13,2,0,0,0.0,0,0,0.0,0.0,True
+en,switching_consistency,craft,supporting,POV switch,10,2,7,7,2.2e-05,7,0,2.3e-05,0.0,False
+en,switching_consistency,craft,supporting,POV shift,9,2,22,25,7e-05,22,0,7.1e-05,0.0,False
+en,switching_consistency,craft,supporting,viewpoint shift,15,2,9,16,2.9e-05,9,0,2.9e-05,0.0,False
+en,switching_consistency,craft,supporting,viewpoint change,16,2,7,7,2.2e-05,7,0,2.3e-05,0.0,False
+en,switching_consistency,craft,supporting,POV consistency,15,2,0,0,0.0,0,0,0.0,0.0,True
+en,switching_consistency,craft,supporting,point-of-view consistency,25,2,0,0,0.0,0,0,0.0,0.0,True
+en,switching_consistency,craft,supporting,POV violation,13,2,4,4,1.3e-05,4,0,1.3e-05,0.0,False
+en,switching_consistency,craft,supporting,POV slip,8,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,switching_consistency,craft,supporting,POV error,9,2,12,13,3.8e-05,12,0,3.9e-05,0.0,False
+en,switching_consistency,craft,supporting,break POV,9,2,0,0,0.0,0,0,0.0,0.0,True
+en,switching_consistency,craft,supporting,viewpoint transition,20,2,0,0,0.0,0,0,0.0,0.0,True
+en,multiple_focalization_same_event,academic,high,multiple focalization,21,2,1,1,3e-06,0,1,0.0,0.000139,False
+en,multiple_focalization_same_event,academic,high,multiple focalisation,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,multiple_focalization_same_event,academic,high,repeated focalization,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,multiple_focalization_same_event,academic,high,multiple narration of the same event,36,6,0,0,0.0,0,0,0.0,0.0,True
+en,multiple_focalization_same_event,academic,high,Rashomon effect,15,2,3,3,1e-05,3,0,1e-05,0.0,False
+en,multiple_focalization_same_event,craft,supporting,retelling from another perspective,34,4,0,0,0.0,0,0,0.0,0.0,True
+en,multiple_focalization_same_event,craft,supporting,same event different viewpoints,31,4,0,0,0.0,0,0,0.0,0.0,True
+en,multiple_focalization_same_event,craft,supporting,multiple versions of events,27,4,0,0,0.0,0,0,0.0,0.0,True
+en,multiple_focalization_same_event,craft,supporting,conflicting perspectives,24,2,3,3,1e-05,3,0,1e-05,0.0,False
+en,information_control,academic,high,information control,19,2,3,3,1e-05,3,0,1e-05,0.0,False
+en,information_control,academic,high,information distribution,24,2,0,0,0.0,0,0,0.0,0.0,True
+en,information_control,academic,high,epistemic access,16,2,0,0,0.0,0,0,0.0,0.0,True
+en,information_control,academic,high,epistemic restriction,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,information_control,academic,high,narrative knowledge,19,2,3,4,1e-05,0,3,0.0,0.000417,False
+en,information_control,academic,high,knowledge asymmetry,19,2,0,0,0.0,0,0,0.0,0.0,True
+en,information_control,academic,high,information asymmetry,21,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,information_control,academic,high,dramatic irony,14,2,135,161,0.000428,134,1,0.000435,0.000139,False
+en,information_control,academic,high,narrative paralipsis,20,2,0,0,0.0,0,0,0.0,0.0,True
+en,information_control,academic,high,narrative paralepsis,20,2,0,0,0.0,0,0,0.0,0.0,True
+en,information_control,craft,supporting,withhold information,20,2,18,18,5.7e-05,18,0,5.8e-05,0.0,False
+en,information_control,craft,supporting,reveal information,18,2,28,28,8.9e-05,27,1,8.8e-05,0.000139,False
+en,information_control,craft,supporting,information management,22,2,9,10,2.9e-05,9,0,2.9e-05,0.0,False
+en,information_control,craft,supporting,narrator knows,14,2,42,46,0.000133,41,1,0.000133,0.000139,False
+en,information_control,craft,supporting,character knows,15,2,55,56,0.000174,54,1,0.000175,0.000139,False
+en,information_control,craft,supporting,reader knows,12,2,259,278,0.000821,255,4,0.000828,0.000557,False
+en,information_control,craft,supporting,selective revelation,20,2,0,0,0.0,0,0,0.0,0.0,True
+en,information_control,craft,supporting,delayed revelation,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,information_control,craft,supporting,restricted information,22,2,0,0,0.0,0,0,0.0,0.0,True
+en,information_control,craft,supporting,plot revelation,15,2,0,0,0.0,0,0,0.0,0.0,True
+en,reliability,academic,high,unreliable narrator,19,2,118,167,0.000374,114,4,0.00037,0.000557,False
+en,reliability,academic,high,unreliable narration,20,2,6,6,1.9e-05,5,1,1.6e-05,0.000139,False
+en,reliability,academic,high,narrative unreliability,23,2,0,0,0.0,0,0,0.0,0.0,True
+en,reliability,academic,high,reliable narrator,17,2,134,187,0.000425,128,6,0.000415,0.000835,False
+en,reliability,academic,high,narratorial reliability,23,2,0,0,0.0,0,0,0.0,0.0,True
+en,reliability,academic,high,unreliable focalizer,20,2,0,0,0.0,0,0,0.0,0.0,True
+en,reliability,academic,high,unreliable focaliser,20,2,0,0,0.0,0,0,0.0,0.0,True
+en,reliability,craft,supporting,untrustworthy narrator,22,2,5,5,1.6e-05,5,0,1.6e-05,0.0,False
+en,reliability,craft,supporting,misleading narrator,19,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,reliability,craft,supporting,deceptive narrator,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,reliability,craft,supporting,naive narrator,14,2,6,7,1.9e-05,6,0,1.9e-05,0.0,False
+en,reliability,craft,supporting,naïve narrator,14,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,reliability,craft,supporting,biased narrator,15,2,0,0,0.0,0,0,0.0,0.0,True
+en,reliability,craft,supporting,unreliable first person,23,3,4,4,1.3e-05,4,0,1.3e-05,0.0,False
+en,reliability,craft,supporting,fallible narrator,17,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,reliability,craft,supporting,narrator credibility,20,2,0,0,0.0,0,0,0.0,0.0,True
+en,narrator_level_time,academic,high,extradiegetic narrator,22,2,5,12,1.6e-05,0,5,0.0,0.000696,False
+en,narrator_level_time,academic,high,intradiegetic narrator,22,2,3,3,1e-05,0,3,0.0,0.000417,False
+en,narrator_level_time,academic,high,metadiegetic narration,22,2,0,0,0.0,0,0,0.0,0.0,True
+en,narrator_level_time,academic,high,embedded narrative,18,2,2,2,6e-06,1,1,3e-06,0.000139,False
+en,narrator_level_time,academic,high,narrative level,15,2,16,29,5.1e-05,7,9,2.3e-05,0.001252,False
+en,narrator_level_time,academic,high,narrating I,11,2,20,22,6.3e-05,17,3,5.5e-05,0.000417,False
+en,narrator_level_time,academic,high,experiencing I,14,2,56,56,0.000178,52,4,0.000169,0.000557,False
+en,narrator_level_time,academic,high,retrospective narration,23,2,2,5,6e-06,0,2,0.0,0.000278,False
+en,narrator_level_time,academic,high,simultaneous narration,22,2,0,0,0.0,0,0,0.0,0.0,True
+en,narrator_level_time,academic,high,subsequent narration,20,2,0,0,0.0,0,0,0.0,0.0,True
+en,narrator_level_time,craft,supporting,frame narrator,14,2,3,31,1e-05,2,1,6e-06,0.000139,False
+en,narrator_level_time,craft,supporting,framing story,13,2,4,4,1.3e-05,4,0,1.3e-05,0.0,False
+en,narrator_level_time,craft,supporting,story within a story,20,4,16,16,5.1e-05,16,0,5.2e-05,0.0,False
+en,narrator_level_time,craft,supporting,older narrator,14,2,12,17,3.8e-05,12,0,3.9e-05,0.0,False
+en,narrator_level_time,craft,supporting,retrospective first person,26,3,0,0,0.0,0,0,0.0,0.0,True
+en,narrator_level_time,craft,supporting,present-tense narration,23,2,16,19,5.1e-05,16,0,5.2e-05,0.0,False
+en,narrator_level_time,craft,supporting,past-tense narration,20,2,6,6,1.9e-05,6,0,1.9e-05,0.0,False
+en,narrator_level_time,craft,supporting,narrator hindsight,18,2,0,0,0.0,0,0,0.0,0.0,True
+en,filter_words,academic,high,perception verbs,16,2,0,0,0.0,0,0,0.0,0.0,True
+en,filter_words,academic,high,cognition verbs,15,2,0,0,0.0,0,0,0.0,0.0,True
+en,filter_words,academic,high,mental state verbs,18,3,0,0,0.0,0,0,0.0,0.0,True
+en,filter_words,academic,high,sensory mediation,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,filter_words,craft,supporting,filter words,12,2,7,8,2.2e-05,7,0,2.3e-05,0.0,False
+en,filter_words,craft,supporting,filtering words,15,2,3,3,1e-05,3,0,1e-05,0.0,False
+en,filter_words,craft,supporting,filter verbs,12,2,0,0,0.0,0,0,0.0,0.0,True
+en,filter_words,craft,supporting,distancing words,16,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,filter_words,craft,supporting,narrative filters,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,filter_words,craft,supporting,thought tags,12,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,filter_words,craft,supporting,perception filters,18,2,1,1,3e-06,0,1,0.0,0.000139,False
+en,filter_words,craft,supporting,remove filters,14,2,0,0,0.0,0,0,0.0,0.0,True
+en,reader_effect,academic,high,reader identification,21,2,46,50,0.000146,46,0,0.000149,0.0,False
+en,reader_effect,academic,high,character identification,24,2,9,10,2.9e-05,9,0,2.9e-05,0.0,False
+en,reader_effect,academic,high,perspective taking,18,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,reader_effect,academic,high,perspective-taking,18,1,4,4,1.3e-05,4,0,1.3e-05,0.0,False
+en,reader_effect,academic,high,narrative empathy,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,reader_effect,academic,high,narrative transportation,24,2,0,0,0.0,0,0,0.0,0.0,True
+en,reader_effect,academic,high,narrative engagement,20,2,3,3,1e-05,3,0,1e-05,0.0,False
+en,reader_effect,academic,high,reader alignment,16,2,0,0,0.0,0,0,0.0,0.0,True
+en,reader_effect,academic,high,reader allegiance,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,reader_effect,academic,high,narrative immersion,19,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,reader_effect,craft,supporting,reader immersion,16,2,0,0,0.0,0,0,0.0,0.0,True
+en,reader_effect,craft,supporting,emotional connection,20,2,57,63,0.000181,57,0,0.000185,0.0,False
+en,reader_effect,craft,supporting,intimacy with the character,27,4,5,6,1.6e-05,5,0,1.6e-05,0.0,False
+en,reader_effect,craft,supporting,reader involvement,18,2,21,21,6.7e-05,21,0,6.8e-05,0.0,False
+en,reader_effect,craft,supporting,reader sympathy,15,2,13,22,4.1e-05,13,0,4.2e-05,0.0,False
+en,reader_effect,craft,supporting,emotional distance,18,2,31,33,9.8e-05,28,3,9.1e-05,0.000417,False
+en,reader_effect,craft,supporting,reader attachment,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,reader_effect,craft,supporting,emotional engagement,20,2,14,14,4.4e-05,13,1,4.2e-05,0.000139,False
+en,speech_dialogue,academic,high,direct discourse,16,2,57,168,0.000181,50,7,0.000162,0.000974,False
+en,speech_dialogue,academic,high,indirect discourse,18,2,50,121,0.000159,43,7,0.00014,0.000974,False
+en,speech_dialogue,academic,high,direct speech,13,2,87,152,0.000276,82,5,0.000266,0.000696,False
+en,speech_dialogue,academic,high,indirect speech,15,2,30,60,9.5e-05,27,3,8.8e-05,0.000417,False
+en,speech_dialogue,academic,high,speech representation,21,2,6,6,1.9e-05,0,6,0.0,0.000835,False
+en,speech_dialogue,academic,high,dialogue attribution,20,2,11,14,3.5e-05,11,0,3.6e-05,0.0,False
+en,speech_dialogue,academic,high,speech reporting,16,2,0,0,0.0,0,0,0.0,0.0,True
+en,speech_dialogue,craft,supporting,dialogue tags,13,2,97,139,0.000308,96,1,0.000312,0.000139,False
+en,speech_dialogue,craft,supporting,speech tags,11,2,33,44,0.000105,33,0,0.000107,0.0,False
+en,speech_dialogue,craft,supporting,action beats,12,2,16,17,5.1e-05,16,0,5.2e-05,0.0,False
+en,speech_dialogue,craft,supporting,dialogue and narration,22,3,6,6,1.9e-05,6,0,1.9e-05,0.0,False
+en,speech_dialogue,craft,supporting,dialogue scene,14,2,107,113,0.000339,107,0,0.000347,0.0,False
+en,speech_dialogue,craft,supporting,reported speech,15,2,25,38,7.9e-05,25,0,8.1e-05,0.0,False
+en,speech_dialogue,craft,supporting,dialogue-driven scene,21,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,speech_dialogue,craft,supporting,dialogue attribution,20,2,11,14,3.5e-05,11,0,3.6e-05,0.0,False
+en,narrative_style_voice,academic,high,narratorial style,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,narrative_style_voice,academic,high,narrator's diction,18,2,1,1,3e-06,1,0,3e-06,0.0,False
+en,narrative_style_voice,academic,high,narrative style,15,2,62,67,0.000197,58,4,0.000188,0.000557,False
+en,narrative_style_voice,academic,high,narrative tone,14,2,8,9,2.5e-05,8,0,2.6e-05,0.0,False
+en,narrative_style_voice,academic,high,authorial voice,15,2,90,99,0.000285,86,4,0.000279,0.000557,False
+en,narrative_style_voice,academic,high,character voice,15,2,28,28,8.9e-05,28,0,9.1e-05,0.0,False
+en,narrative_style_voice,academic,high,discourse style,15,2,0,0,0.0,0,0,0.0,0.0,True
+en,narrative_style_voice,craft,supporting,narrative voice,15,2,359,431,0.001139,335,24,0.001087,0.003339,False
+en,narrative_style_voice,craft,supporting,distinctive narrator voice,26,3,0,0,0.0,0,0,0.0,0.0,True
+en,narrative_style_voice,craft,supporting,authentic voice,15,2,56,66,0.000178,54,2,0.000175,0.000278,False
+en,narrative_style_voice,craft,supporting,character-specific diction,26,2,0,0,0.0,0,0,0.0,0.0,True
+en,narrative_style_voice,craft,supporting,writer's voice,14,2,134,161,0.000425,126,8,0.000409,0.001113,False
+en,narrative_style_voice,craft,supporting,voice consistency,17,2,0,0,0.0,0,0,0.0,0.0,True
+en,narrative_style_voice,craft,supporting,tone of narration,17,3,1,1,3e-06,1,0,3e-06,0.0,False
+en,choice_tradeoffs,academic,high,narrative strategy,18,2,44,47,0.00014,40,4,0.00013,0.000557,False
+en,choice_tradeoffs,academic,high,perspectival strategy,21,2,0,0,0.0,0,0,0.0,0.0,True
+en,choice_tradeoffs,academic,high,narrative technique,19,2,103,146,0.000327,94,9,0.000305,0.001252,False
+en,choice_tradeoffs,academic,high,choice of focalization,22,3,0,0,0.0,0,0,0.0,0.0,True
+en,choice_tradeoffs,academic,high,choice of narrative perspective,31,4,0,0,0.0,0,0,0.0,0.0,True
+en,choice_tradeoffs,craft,supporting,choosing a POV,14,3,6,6,1.9e-05,6,0,1.9e-05,0.0,False
+en,choice_tradeoffs,craft,supporting,choosing point of view,22,4,1,1,3e-06,1,0,3e-06,0.0,False
+en,choice_tradeoffs,craft,supporting,advantages of first person,26,4,11,11,3.5e-05,11,0,3.6e-05,0.0,False
+en,choice_tradeoffs,craft,supporting,disadvantages of third person,29,4,0,0,0.0,0,0,0.0,0.0,True
+en,choice_tradeoffs,craft,supporting,POV options,11,2,2,2,6e-06,2,0,6e-06,0.0,False
+en,choice_tradeoffs,craft,supporting,point-of-view choices,21,2,5,5,1.6e-05,5,0,1.6e-05,0.0,False
+en,choice_tradeoffs,craft,supporting,advantages of omniscience,25,3,0,0,0.0,0,0,0.0,0.0,True
+en,choice_tradeoffs,craft,supporting,limitations of limited POV,26,4,0,0,0.0,0,0,0.0,0.0,True
+en,choice_tradeoffs,craft,supporting,changing narrative perspective,30,3,0,0,0.0,0,0,0.0,0.0,True
+en,regex:general_pov,regex,high,\bpoint[\s-]+of[\s-]+view\b|\bPOVs?\b|\bviewpoints?\b,53,0,7392,14028,0.023444,7223,169,0.023443,0.023515,False
+en,regex:grammatical_person,regex,high,\b(?:first|second|third)[\s-]+person\b,38,0,3866,8583,0.012261,3777,89,0.012258,0.012383,False
+en,regex:focalization,regex,high,\bfocali[sz](?:ation|er|ed|ing)s?\b,35,0,80,249,0.000254,49,31,0.000159,0.004313,False
+en,regex:focalization_zero,regex,high,\bomniscien(?:t|ce)\b,21,0,1016,1748,0.003222,996,20,0.003233,0.002783,False
+en,regex:thought_representation,regex,high,\bfree[\s-]+indirect[\s-]+(?:discourse|speech|style|thought)\b,62,0,42,108,0.000133,36,6,0.000117,0.000835,False
+en,regex:switching_consistency,regex,high,\bhead[\s-]+hopping\b,21,0,48,58,0.000152,48,0,0.000156,0.0,False

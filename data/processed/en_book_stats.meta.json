@@ -1,11 +1,17 @@
 {
-  "built": "2026-11-12 20:42",
-  "git_commit": "a8a4f9a",
+  "built": "2026-11-21 01:26",
+  "lang": "en",
+  "git_commit": "e8f0ed5",
   "uncommitted_changes_at_build": true,
-  "manifest_sha256": "eb76ff306dfdc4a7",
+  "manifest_sha256": "c91905e26204e5fb",
   "lexicon_version": 0.1,
   "lexicon_sha256": "9461c96ad9324ae7",
   "short_text_words": 10000,
-  "files": 487,
-  "in_analysis_set": 432
+  "files": 503,
+  "in_analysis_set": 442,
+  "primary_group_in_analysis_set": {
+    "fiction_manual": 290,
+    "pedagogy_genre_craft": 131,
+    "contrast": 21
+  }
 }

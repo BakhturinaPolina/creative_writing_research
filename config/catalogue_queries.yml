@@ -26,6 +26,19 @@ german:
     - erzählperspektive
     - erzählperspektiven
     - perspektive erzählen
+    # from PsyPer v0.2 term audit (2026-11-21); high/supporting multi-word survivors
+    - Erzählstandpunkt
+    - Erzählsituation
+    - Erzählhaltung
+    - Ich-Erzähler
+    - auktorialer Erzähler
+    - personaler Erzähler
+    - Nullfokalisierung
+    - interne Fokalisierung
+    - erlebte Rede
+    - unzuverlässiger Erzähler
+    - Perspektivenwahl
+    - Erzählstimme
   historical:
     - schriftstellerei
     - erzählkunst
@@ -56,6 +69,19 @@ english:
   pov_specific:
     - point of view in fiction
     - viewpoint fiction writing
+    # from PsyPer v0.2 term audit (2026-11-21); high/supporting multi-word survivors
+    - narrative perspective
+    - narrative point of view
+    - first-person narrator
+    - third-person narrator
+    - omniscient narrator
+    - narrative voice
+    - viewpoint character
+    - free indirect discourse
+    - unreliable narrator
+    - limited omniscience
+    - deep POV
+    - interior monologue
   historical:
     - art of fiction
     - craft of fiction

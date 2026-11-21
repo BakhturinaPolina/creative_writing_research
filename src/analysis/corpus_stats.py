@@ -1,30 +1,31 @@
-"""Book-level statistics for the English primary and comparison books.
+"""Book-level statistics for primary and comparison books (English or German).
 
-Builds one row per collected file (505 at the time of writing) with:
+Builds one row per collected file with:
 
 - what the manifest already knows (folder label, format, edition year, words),
 - quality flags (needs OCR, short text, possible duplicate, label conflict),
 - one flag `in_analysis_set` that says whether the book enters the headline figures,
-- exploratory counts of point-of-view (POV) vocabulary per 10,000 words.
+- exploratory counts of point-of-view (POV) vocabulary per 10,000 words,
+- `primary_group` robustness split (fiction_manual / pedagogy_genre_craft / contrast).
 
 The output holds counts and catalogue metadata only, never book text, so it
 can be tracked in git and the notebook can be re-run without the full texts:
 
-  data/processed/en_book_stats.csv
-  data/processed/en_book_stats.meta.json   (when and from what it was built)
+  data/processed/{en|de}_book_stats.csv
+  data/processed/{en|de}_book_stats.meta.json
 
 Usage:
-  python -m src.analysis.corpus_stats               # build the table (about 2 minutes)
-  python -m src.analysis.corpus_stats --selftest    # check the POV matcher only
+  python -m src.analysis.corpus_stats                 # English (default)
+  python -m src.analysis.corpus_stats --lang de       # German
+  python -m src.analysis.corpus_stats --selftest      # check the POV matcher only
   python -m src.analysis.corpus_stats --spotcheck 40  # print matched snippets (not saved)
 
 How POV vocabulary is counted (exploratory, lexicon v0.1, not validated):
-for each dimension in config/pov_lexicon.yml we take the English `high`
-terms and the English `regex` patterns, and count their occurrences in the
-body text (front and back matter are skipped). Spaces and hyphens are
-interchangeable ("first person" = "first-person"), matching ignores case and
-a plural -s is allowed. An overall count merges overlapping matches, so
-"third-person point of view" is one occurrence, not two.
+for each dimension in config/pov_lexicon.yml we take the language's `high`
+terms and `regex` patterns, and count their occurrences in the body text
+(front and back matter are skipped). Spaces and hyphens are interchangeable,
+matching ignores case and a plural -s is allowed for English. An overall count
+merges overlapping matches.
 """
 from __future__ import annotations
 
@@ -51,13 +52,30 @@ METADATA_OVERRIDES_PATH = CONFIG / "book_metadata_overrides.csv"
 PRIMARY_CHECK_PATH = DATA_INTERIM / "fulltext" / "primary_check.csv"  # src.fulltext.prescreen_books
 JSON_DIR = DATA_INTERIM / "fulltext" / "json"
 LEXICON_PATH = CONFIG / "pov_lexicon.yml"
-STATS_PATH = DATA_PROCESSED / "en_book_stats.csv"
-META_PATH = DATA_PROCESSED / "en_book_stats.meta.json"
 BIBLIO_PATH = DATA_PROCESSED / "en_primary_comparison_biblio.csv"  # src.publication.build_en_biblio_timeline
 
 LANG = "en"
+STATS_PATH = DATA_PROCESSED / "en_book_stats.csv"
+META_PATH = DATA_PROCESSED / "en_book_stats.meta.json"
 ROLES = ["primary", "comparison"]
 SHORT_TEXT_WORDS = 10_000  # below this the file is too short to be a whole manual
+
+
+def configure_lang(lang: str) -> None:
+    """Set module language and output paths (call before build / load_book_stats)."""
+    global LANG, STATS_PATH, META_PATH
+    if lang not in {"en", "de"}:
+        raise ValueError(f"unsupported lang: {lang}")
+    LANG = lang
+    STATS_PATH = DATA_PROCESSED / f"{lang}_book_stats.csv"
+    META_PATH = DATA_PROCESSED / f"{lang}_book_stats.meta.json"
+    # Clear cached patterns so the next call picks up the new LANG.
+    dimension_patterns.cache_clear()
+
+
+def _init_count_worker(lang: str) -> None:
+    """ProcessPool worker: inherit the build language for JSON paths and lexicon."""
+    configure_lang(lang)
 
 # Exclusion steps, applied in this order. A book is counted under the first that applies.
 EXCLUSION_STEPS = {
@@ -93,10 +111,23 @@ _PEDAGOGY_NOTE_RE = re.compile(
 )
 _SCHOOL_TITLE_RE = re.compile(
     r"teach|classroom|pedagog|lesson|curriculum|for teachers|writing workshop|"
-    r"grade \d|students?\b|pupils?|\bschool\b",
+    r"grade \d|students?\b|pupils?|\bschool\b|"
+    r"grundschule|sekundarstufe|unterricht|schulklasse|schreibdidaktik|"
+    r"hochschul(e|en)|daf\b|deutschunterricht|schreibkompetenz",
     re.IGNORECASE,
 )
-_THERAPY_TITLE_RE = re.compile(r"therap|expressive writing|journal writing|healing", re.IGNORECASE)
+_THERAPY_TITLE_RE = re.compile(
+    r"therap|expressive writing|journal writing|healing|"
+    r"therapeutisch|selbsthilfe|prüfungsangst|seele|coaching",
+    re.IGNORECASE,
+)
+# German / bilingual genre cues beyond book_prescreen.yml English title_rules.
+_DE_GENRE_TITLE_RE = re.compile(
+    r"drehbuch|screenplay|lyrik|gedicht|poesie|theater|drama(tisches)?|"
+    r"schauspiel|memoir|biografisches\s+schreiben|non[\s-]?fiction|"
+    r"sachbuch\s*schreiben",
+    re.IGNORECASE,
+)
 _GENRE_TITLE_RULES = ("screenwriting", "poetry", "playwriting", "creative_nonfiction")
 ROLE_SOURCE_LABELS = {
     "prescreen": "Automatic prescreen, not checked",
@@ -197,24 +228,29 @@ def _term_pattern(term: str) -> str:
     return _SEPARATOR.join(re.escape(p) for p in parts)
 
 
-def build_dimension_patterns(lexicon: dict, lang: str = LANG) -> dict[str, re.Pattern]:
+def build_dimension_patterns(lexicon: dict, lang: str | None = None) -> dict[str, re.Pattern]:
     """One compiled pattern per POV dimension: high-precision terms plus the regex list."""
+    lang = lang or LANG
     patterns = {}
     for name, spec in lexicon["dimensions"].items():
         terms = sorted({t for t in (spec.get(lang, {}).get("high") or []) if t}, key=len, reverse=True)
         alternatives = []
         if terms:
-            alternatives.append(r"(?<!\w)(?:" + "|".join(_term_pattern(t) for t in terms) + r")s?(?!\w)")
+            # English allows an optional plural -s; German compounds usually do not need it.
+            plural = "s?" if lang == "en" else ""
+            alternatives.append(
+                r"(?<!\w)(?:" + "|".join(_term_pattern(t) for t in terms) + r")" + plural + r"(?!\w)"
+            )
         alternatives += [f"(?:{rx})" for rx in (spec.get("regex", {}).get(lang) or [])]
         if alternatives:
             patterns[name] = re.compile("|".join(alternatives), re.IGNORECASE)
     return patterns
 
 
-@lru_cache(maxsize=1)
-def dimension_patterns() -> dict[str, re.Pattern]:
+@lru_cache(maxsize=2)
+def dimension_patterns(lang: str) -> dict[str, re.Pattern]:
     with open(LEXICON_PATH, encoding="utf-8") as fh:
-        return build_dimension_patterns(yaml.safe_load(fh))
+        return build_dimension_patterns(yaml.safe_load(fh), lang)
 
 
 def clean_text(text: str) -> str:
@@ -228,7 +264,7 @@ def find_matches(text: str, patterns: dict[str, re.Pattern] | None = None):
     Merged spans are (start, end, dimensions): overlapping matches from different
     dimensions are fused, so each stretch of text is counted once overall.
     """
-    patterns = patterns or dimension_patterns()
+    patterns = patterns or dimension_patterns(LANG)
     per_dimension = {}
     spans = []
     for name, pattern in patterns.items():
@@ -268,8 +304,8 @@ SELFTEST_NEGATIVE = [
 
 
 def selftest() -> list[str]:
-    """Check the matcher on made-up sentences. Returns a list of problems (empty = fine)."""
-    patterns = dimension_patterns()
+    """Check the matcher on English probe sentences. Always uses the `en` lexicon."""
+    patterns = dimension_patterns("en")
     problems = []
     for name in patterns:
         if name not in SELFTEST_POSITIVE:
@@ -307,7 +343,7 @@ def _body_chapters(book_id: str):
 
 def count_book(book_id: str) -> dict:
     """POV counts for one book. Runs in a worker process."""
-    patterns = dimension_patterns()
+    patterns = dimension_patterns(LANG)
     row = {"book_id": book_id, "body_words": 0, "pov_n": 0, **{f"pov_{d}_n": 0 for d in patterns}}
     for text, words in _body_chapters(book_id):
         per_dimension, merged = find_matches(text, patterns)
@@ -410,6 +446,8 @@ def add_primary_group(books: pd.DataFrame) -> pd.DataFrame:
             hit = "school_title"
         if not hit and _THERAPY_TITLE_RE.search(title):
             hit = "therapy_title"
+        if not hit and _DE_GENRE_TITLE_RE.search(title):
+            hit = "de_genre_title"
         note = notes.get(row["book_id"], "") if len(notes) else ""
         if not hit and (note in _PEDAGOGY_MOVE_NOTES or _PEDAGOGY_NOTE_RE.search(note or "")):
             hit = "override_move"
@@ -504,7 +542,7 @@ def build(workers: int) -> pd.DataFrame:
             log.error(f"matcher self-test: {p}")
         log.close()
         raise SystemExit("POV matcher self-test failed; no table written.")
-    log.info(f"Matcher self-test passed ({len(dimension_patterns())} dimensions).")
+    log.info(f"Matcher self-test passed ({len(dimension_patterns('en'))} dimensions).")
 
     books = add_primary_group(add_flags(add_titles_and_identity(load_manifest_subset())))
     log.info(f"Files: {len(books)} " + str(books["corpus_role"].value_counts().to_dict()))
@@ -512,13 +550,18 @@ def build(workers: int) -> pd.DataFrame:
     log.info("Primary robustness split: " + str(primary["primary_group"].value_counts().to_dict()))
 
     extracted = books.loc[~books["needs_ocr"], "book_id"].tolist()
-    log.info(f"Counting POV vocabulary in {len(extracted)} extracted books with {workers} workers ...")
-    with ProcessPoolExecutor(max_workers=workers) as pool:
+    log.info(
+        f"Counting POV vocabulary ({LANG}) in {len(extracted)} extracted books "
+        f"with {workers} workers ..."
+    )
+    with ProcessPoolExecutor(
+        max_workers=workers, initializer=_init_count_worker, initargs=(LANG,),
+    ) as pool:
         counts = pd.DataFrame(list(pool.map(count_book, extracted, chunksize=8)))
     books = books.merge(counts, on="book_id", how="left")
     books["pov_per_10k"] = (books["pov_n"] / books["body_words"] * 10_000).round(3)
 
-    dims = list(dimension_patterns())
+    dims = list(dimension_patterns(LANG))
     for name in dims:
         if books[f"pov_{name}_n"].sum() == 0:
             log.error(f"WARNING: dimension {name} has zero matches in the whole corpus; check the lexicon/matcher.")
@@ -528,6 +571,7 @@ def build(workers: int) -> pd.DataFrame:
     candidate_source = books["candidate_id"].str.split(":").str[0].fillna("not_in_lists")
     out = pd.DataFrame({
         "book_id": books["book_id"],
+        "lang": LANG,
         "corpus_role": books["corpus_role"],
         "primary_group": books["primary_group"],
         "primary_group_reason": books["primary_group_reason"],
@@ -561,8 +605,11 @@ def build(workers: int) -> pd.DataFrame:
     out.to_csv(STATS_PATH, index=False)
     with open(LEXICON_PATH, encoding="utf-8") as fh:
         lexicon_version = yaml.safe_load(fh).get("version")
+    in_set = out[out["in_analysis_set"]]
+    group_counts = in_set["primary_group"].value_counts().to_dict()
     meta = {
         "built": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "lang": LANG,
         "git_commit": _git("rev-parse", "--short", "HEAD"),
         "uncommitted_changes_at_build": bool(_git("status", "--porcelain")),
         "manifest_sha256": hashlib.sha256(MANIFEST_PATH.read_bytes()).hexdigest()[:16],
@@ -571,9 +618,11 @@ def build(workers: int) -> pd.DataFrame:
         "short_text_words": SHORT_TEXT_WORDS,
         "files": int(len(out)),
         "in_analysis_set": int(out["in_analysis_set"].sum()),
+        "primary_group_in_analysis_set": {k: int(v) for k, v in group_counts.items()},
     }
     META_PATH.write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
     log.info(f"Wrote {STATS_PATH.relative_to(ROOT)} ({len(out)} rows, {int(out['in_analysis_set'].sum())} in analysis set)")
+    log.info("primary_group in analysis set: " + str(group_counts))
     log.info("Exclusions: " + str(out["exclusion_step"].replace("", "in_analysis_set").value_counts().to_dict()))
     log.close()
     return out
@@ -944,12 +993,16 @@ def prescreen_pov_words() -> tuple[list[str], float]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    parser.add_argument("--lang", choices=["en", "de"], default="en",
+                        help="corpus language to build (default: en)")
     parser.add_argument("--workers", type=int, default=6)
     parser.add_argument("--selftest", action="store_true", help="only test the POV matcher")
     parser.add_argument("--spotcheck", type=int, metavar="N", help="print N random matched snippets (not saved)")
     parser.add_argument("--dimension", help="restrict --spotcheck to one dimension, e.g. general_pov")
     parser.add_argument("--seed", type=int, default=20261112)
     args = parser.parse_args()
+    # Self-test sentences are English; always configure en for --selftest.
+    configure_lang("en" if args.selftest else args.lang)
     if args.selftest:
         problems = selftest()
         print("\n".join(problems) if problems else "POV matcher self-test passed.")

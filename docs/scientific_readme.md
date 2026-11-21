@@ -25,11 +25,13 @@ The project is **not** about collecting as many manuals as possible. It is about
 
 ## 2. Corpus definition
 
-**Primary corpus:** books whose principal purpose is to teach, advise on, or systematically discuss the production of literary narrative prose.
+**Primary corpus (analysis definition, 2026-11-12):** books whose subject is narrative / creative writing — fiction craft, school creative-writing pedagogy and exercises, screen / poetry / drama craft, creative nonfiction, and therapy writing that teaches narrative writing. Children's-literature craft that teaches story/narrative writing stays in the primary corpus. For robustness checks inside primary, fiction-writing manuals are distinguished from pedagogy / genre craft (`primary_group` in the book-stats tables); both remain `corpus_role=primary`.
 
-Not in the primary corpus (they can serve as comparison corpora): copywriting, journalism, screenwriting, poetry, playwriting, creative nonfiction and memoir-as-genre advice, therapeutic writing, school composition, research on creative writing as a discipline, and theoretical narratology. Children's-literature craft that teaches story/narrative writing stays in the primary corpus. Academic writing, general grammar/style guides, and literary scholarship that is not narratology are negatives, not comparison texts.
+**Comparison corpus (small contrast group):** narratology / narrative theory, and academic writing *about* writing (composition research, research on creative writing as a discipline, literary scholarship on writing). Journalism, songwriting, blogging and copywriting are **negatives**, not comparison.
 
-German needs particular care. *Kreatives Schreiben* covers school pedagogy, self-expression, therapy and literary authorship. Catalogue searches therefore retrieve broadly, and classification happens afterwards.
+**Negatives:** academic / essay / scientific writing handbooks; business writing; dictionaries, language courses, and general grammar/style guides; literary scholarship that is not narratology; fiction itself; tech / unrelated subjects; administering a CW programme.
+
+German needs particular care. *Kreatives Schreiben* covers school pedagogy, self-expression, therapy and literary authorship. Catalogue searches therefore retrieve broadly, and classification happens afterwards. Many German downloads also have wrong-book identity mismatches (filename ≠ file text); those stay out of the analysis set via identity flags and role overrides.
 
 ### 2.1 Corpus type (`corpus_type`)
 
@@ -39,7 +41,7 @@ German needs particular care. *Kreatives Schreiben* covers school pedagogy, self
 | B | Novel-writing handbook | main |
 | C | Specialized narrative-craft book (e.g. POV, scene, dialogue) | main |
 | D | Writer memoir with substantial craft instruction | main, flagged |
-| E | Pedagogical creative-writing handbook | robustness / comparison |
+| E | Pedagogical creative-writing handbook | primary (robustness: pedagogy / genre craft) |
 | F | Narratology / literary theory | comparison only |
 
 ### 2.2 Three nested datasets

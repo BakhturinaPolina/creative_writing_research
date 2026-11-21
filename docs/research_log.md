@@ -42,6 +42,46 @@ Status values: `provisional` (open for revision), `frozen` (changes need a new D
 
 ## Entries
 
+## 2026-11-21 | Week 15 (fix) | Phase: Retrieval
+**Goal:** Remove copyrighted book passages accidentally committed in BM25 CSVs.
+**Done:** Dropped `passage` from `pov_passage_candidates_{en,de}.csv`; BM25 writer stores pointers only; optional `--with-passages` → gitignored sidecar; history rewritten so `main` no longer contains the text.
+**Data/outputs:** cleaned CSVs under `data/processed/`; `.gitignore` for `*_passages.csv`.
+**Next:** if GitHub still caches the old blob, confirm the rewritten tip after force-with-lease.
+
+## 2026-11-21 | Week 15 | Phase: Retrieval
+**Goal:** Move Richter to comparison; pull PsyPer lexicon v0.2; keyword audit + streaming BM25 on the analysis set without OOM.
+**Done:**
+- `de_d88c45142668` (*Das narrative Urteil*, Michael Richter) → `comparison` (Narratologia); DE now 65 primary / **13** comparison; analysis set **67** (contrast 11).
+- Checked out `config/pov_lexicon_psyper_en_de_v0.2.yml` from GitHub `0defc6f` (additive to v0.1; `corpus_stats` still on v0.1).
+- `src.retrieval.term_audit`: EN 315 302 / DE 42 623 paragraphs streamed; term audits + `lexicon_term_tiers.yml`; pilot smoke 8 PASS / 0 FAIL after weak-POV rule.
+- `src.retrieval.bm25_passages`: two-pass streaming Okapi BM25 (query-vocab DF + top-k heaps). EN peak RSS **~159 MB** (`maxrss_kb=163176`); 1800 candidate rows each for EN and DE (50×36 concepts). First in-memory design OOM’d on ~5 GB hosts — fixed by not materializing the paragraph list.
+- Appended high/supporting multi-word survivors to `config/catalogue_queries.yml` `pov_specific` (EN+DE).
+**Data/outputs:** `data/interim/retrieval/*`, `data/processed/pov_passage_candidates_{en,de}.csv` (+ meta), `src/retrieval/README.md`.
+**Next:** sample-annotate BM25 hits; embedding retrieval (W16); optional merge of validated v0.2 terms into book-level lexicon.
+
+## 2026-11-21 | Week 13–14 / labelling | Phase: Fulltext + Analysis
+**Goal:** Apply the 2026-11-12 taxonomy consistently (DE rescue + EN comparison cleanup + clear unreviewed) and publish bilingual analysis tables with `primary_group`.
+**Done:**
+- 163 role overrides (`agent-2026-11-21`). DE “craft” titles in `negative` were mostly **wrong_book** files (Stein/Masterplots/etc. filenames ≠ text) — kept negative with notes; real moves: DE pedagogy from comparison → primary (`Kreatives Schreiben Im Deutschunterricht`), songwriting → negative, DE comparison narrowed to 12 narratology/writing-studies titles; EN comparison: 15 composition/professional → negative, 2 pedagogy/therapy → primary; all 59 unreviewed triaged.
+- `prescreen_books` + `reorganize_books`: 117 folder moves; **0 unreviewed** left.
+- Synced `docs/scientific_readme.md` §2 and `src/fulltext/README.md` role table to broad primary / narrow comparison.
+- `corpus_stats --lang en|de`: fixed lexicon lang binding; wrote `en_book_stats.csv` and `de_book_stats.csv`.
+**Role counts after apply:** DE 65 primary / 12 comparison / 347 negative; EN 474 primary / 29 comparison / 179 negative.
+**Analysis set (`primary_group`):** EN 442 (fiction_manual 290, pedagogy_genre_craft 131, contrast 21); DE 66 (38 / 18 / 10).
+**Data/outputs:** `config/book_role_overrides.csv`, `de_book_stats.csv` (+ meta), refreshed `en_book_stats.csv`.
+**Next:** human confirm high-risk DE `title_match=False` / wrong_book overrides; OCR round 2; DE descriptive notebook if needed.
+
+## 2026-11-21 | Week 13–14 (catch-up) | Phase: Fulltext
+**Goal:** Equalize German and English fulltext preprocessing (extraction coverage + shared cleaner).
+**Done:**
+- Ran PDF round 1b for German (`extract_pdf --lang de`): 88 `text_layer=good` → `ok`; 5 `none|poor` → `needs_ocr`. Spot-check 1b now reports EN and DE.
+- Shared cleaner (`src/fulltext/cleaning.py`, `clean_fulltext.py`, rules_version `2`): residual spaced hyphens, cross-paragraph hyphen splits (common in EPUB HTML), running headers (≥10 repeats, ≤12 words). Coordinated compounds kept (`- und` / `- oder` / `- and`). Applied to all EN+DE JSON.
+- QC script `preprocess_qc.py`: post-clean residual hyphen rate 0 per 10k for both languages; headers stripped.
+- `fix_titles suggest --lang de` (offline) merged into `title_author_review.csv` (291 EN + 236 DE suggestions); staging already accepts `--lang de`.
+**Data/outputs:** `spotcheck_round1b.md`, `cleaning_stats.csv`, `preprocess_qc.csv` / `.md`, updated `manifest.csv`, cleaned `json/{en,de}/`.
+**Decisions:** one bilingual cleaning standard documented in `src/fulltext/README.md`. OCR round 2 still deferred.
+**Next:** review DE title suggestions; OCR for `needs_ocr` scans; DE analysis set / `de_book_stats` when needed.
+
 ## 2026-11-12 | Week 19–24 (first pass, ahead of plan) | Phase: Analysis
 **Goal:** First descriptive statistics for the English `primary` and `comparison` books, as a notebook for the team discussion of the May conference application.
 **Done:**

@@ -1,0 +1,4469 @@
+version: 0.2-draft-audit
+built: 2026-11-21 02:31
+git_commit: e8f0ed5
+rules:
+  high: academic terms and example_regex with df>0; zero-hit academic → unvalidated
+  supporting: multi-word craft with df>0
+  demoted: ambiguous/short craft; context never solo
+  unvalidated: zero corpus hits — keep for semantic retrieval later
+  catalogue_candidates: short multi-word high/supporting survivors for catalogue_queries.yml
+languages:
+  en:
+    high:
+    - term: narrative perspective
+      concept_id: perspective_general
+      source_tier: academic
+      df: 36
+    - term: narrative point of view
+      concept_id: perspective_general
+      source_tier: academic
+      df: 32
+    - term: narrative viewpoint
+      concept_id: perspective_general
+      source_tier: academic
+      df: 13
+    - term: narrative situation
+      concept_id: perspective_general
+      source_tier: academic
+      df: 10
+    - term: narratorial perspective
+      concept_id: perspective_general
+      source_tier: academic
+      df: 3
+    - term: narrative voice
+      concept_id: voice_general
+      source_tier: academic
+      df: 359
+    - term: narrating instance
+      concept_id: voice_general
+      source_tier: academic
+      df: 1
+    - term: narratorial voice
+      concept_id: voice_general
+      source_tier: academic
+      df: 5
+    - term: narrator's voice
+      concept_id: voice_general
+      source_tier: academic
+      df: 75
+    - term: narrative agency
+      concept_id: voice_general
+      source_tier: academic
+      df: 4
+    - term: narrating subject
+      concept_id: voice_general
+      source_tier: academic
+      df: 3
+    - term: narrating voice
+      concept_id: voice_general
+      source_tier: academic
+      df: 11
+    - term: first-person narration
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 136
+    - term: first-person narrative
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 130
+    - term: first-person narrator
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 379
+    - term: first-person point of view
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 134
+    - term: first-person perspective
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 16
+    - term: I-narrator
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 5
+    - term: first-person pronoun
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 42
+    - term: second-person narration
+      concept_id: grammatical_second_person
+      source_tier: academic
+      df: 13
+    - term: second-person narrator
+      concept_id: grammatical_second_person
+      source_tier: academic
+      df: 14
+    - term: second-person narrative
+      concept_id: grammatical_second_person
+      source_tier: academic
+      df: 9
+    - term: second-person point of view
+      concept_id: grammatical_second_person
+      source_tier: academic
+      df: 40
+    - term: third-person narration
+      concept_id: grammatical_third_person
+      source_tier: academic
+      df: 81
+    - term: third-person narrative
+      concept_id: grammatical_third_person
+      source_tier: academic
+      df: 66
+    - term: third-person narrator
+      concept_id: grammatical_third_person
+      source_tier: academic
+      df: 135
+    - term: third-person point of view
+      concept_id: grammatical_third_person
+      source_tier: academic
+      df: 110
+    - term: third-person perspective
+      concept_id: grammatical_third_person
+      source_tier: academic
+      df: 22
+    - term: heterodiegetic narrator
+      concept_id: voice_heterodiegetic
+      source_tier: academic
+      df: 3
+    - term: homodiegetic narrator
+      concept_id: voice_homodiegetic
+      source_tier: academic
+      df: 1
+    - term: character narrator
+      concept_id: voice_homodiegetic
+      source_tier: academic
+      df: 6
+    - term: narrator-character
+      concept_id: voice_homodiegetic
+      source_tier: academic
+      df: 1
+    - term: witness narrator
+      concept_id: voice_eyewitness
+      source_tier: academic
+      df: 3
+    - term: observer narrator
+      concept_id: voice_eyewitness
+      source_tier: academic
+      df: 1
+    - term: peripheral narrator
+      concept_id: voice_eyewitness
+      source_tier: academic
+      df: 21
+    - term: peripheral first-person narrator
+      concept_id: voice_eyewitness
+      source_tier: academic
+      df: 1
+    - term: first-person peripheral
+      concept_id: voice_eyewitness
+      source_tier: academic
+      df: 3
+    - term: participant narrator
+      concept_id: voice_participant
+      source_tier: academic
+      df: 3
+    - term: protagonist narrator
+      concept_id: voice_protagonist
+      source_tier: academic
+      df: 4
+    - term: narrator-protagonist
+      concept_id: voice_protagonist
+      source_tier: academic
+      df: 9
+    - term: first-person protagonist
+      concept_id: voice_protagonist
+      source_tier: academic
+      df: 2
+    - term: narrator's discourse
+      concept_id: stance_narratorial
+      source_tier: academic
+      df: 1
+    - term: authorial narration
+      concept_id: stance_narratorial
+      source_tier: academic
+      df: 3
+    - term: figural narrative
+      concept_id: stance_figural
+      source_tier: academic
+      df: 1
+    - term: reflector character
+      concept_id: stance_figural
+      source_tier: academic
+      df: 1
+    - term: focalization
+      concept_id: focalization_general
+      source_tier: academic
+      df: 48
+    - term: focalisation
+      concept_id: focalization_general
+      source_tier: academic
+      df: 7
+    - term: focalizer
+      concept_id: focalization_general
+      source_tier: academic
+      df: 16
+    - term: focaliser
+      concept_id: focalization_general
+      source_tier: academic
+      df: 5
+    - term: omniscient narration
+      concept_id: focalization_zero
+      source_tier: academic
+      df: 41
+    - term: internal focalization
+      concept_id: focalization_internal
+      source_tier: academic
+      df: 5
+    - term: limited knowledge
+      concept_id: focalization_internal
+      source_tier: academic
+      df: 15
+    - term: external focalization
+      concept_id: focalization_external
+      source_tier: academic
+      df: 4
+    - term: external focalisation
+      concept_id: focalization_external
+      source_tier: academic
+      df: 1
+    - term: external perspective
+      concept_id: focalization_external
+      source_tier: academic
+      df: 3
+    - term: experiencing subject
+      concept_id: pov_subject
+      source_tier: academic
+      df: 1
+    - term: centre of consciousness
+      concept_id: pov_subject
+      source_tier: academic
+      df: 1
+    - term: center of consciousness
+      concept_id: pov_subject
+      source_tier: academic
+      df: 4
+    - term: perceived object
+      concept_id: pov_object
+      source_tier: academic
+      df: 2
+    - term: observed character
+      concept_id: pov_object
+      source_tier: academic
+      df: 1
+    - term: narrative mode
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 43
+    - term: narrative summary
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 189
+    - term: summary narration
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 7
+    - term: diegesis
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 36
+    - term: time compression
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 2
+    - term: temporal compression
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 1
+    - term: narrative report
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 9
+    - term: dramatic mode
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 13
+    - term: mimesis
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 85
+    - term: scenic presentation
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 5
+    - term: scene versus summary
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 2
+    - term: telling and showing
+      concept_id: mode_balance
+      source_tier: academic
+      df: 20
+    - term: scene and summary
+      concept_id: mode_balance
+      source_tier: academic
+      df: 34
+    - term: narrative speed
+      concept_id: mode_balance
+      source_tier: academic
+      df: 2
+    - term: access to thoughts
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 2
+    - term: interiority
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 76
+    - term: interior perspective
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 1
+    - term: free indirect discourse
+      concept_id: thought_representation
+      source_tier: academic
+      df: 11
+    - term: free indirect speech
+      concept_id: thought_representation
+      source_tier: academic
+      df: 9
+    - term: free indirect style
+      concept_id: thought_representation
+      source_tier: academic
+      df: 28
+    - term: free indirect thought
+      concept_id: thought_representation
+      source_tier: academic
+      df: 2
+    - term: narrated monologue
+      concept_id: thought_representation
+      source_tier: academic
+      df: 2
+    - term: interior monologue
+      concept_id: thought_representation
+      source_tier: academic
+      df: 293
+    - term: thought report
+      concept_id: thought_representation
+      source_tier: academic
+      df: 1
+    - term: direct thought
+      concept_id: thought_representation
+      source_tier: academic
+      df: 20
+    - term: indirect thought
+      concept_id: thought_representation
+      source_tier: academic
+      df: 7
+    - term: psychic distance
+      concept_id: distance_depth
+      source_tier: academic
+      df: 50
+    - term: narrative distance
+      concept_id: distance_depth
+      source_tier: academic
+      df: 65
+    - term: psychological distance
+      concept_id: distance_depth
+      source_tier: academic
+      df: 8
+    - term: narrative immediacy
+      concept_id: distance_depth
+      source_tier: academic
+      df: 3
+    - term: perspective shift
+      concept_id: switching_consistency
+      source_tier: academic
+      df: 9
+    - term: point-of-view shift
+      concept_id: switching_consistency
+      source_tier: academic
+      df: 17
+    - term: multiple focalization
+      concept_id: multiple_focalization_same_event
+      source_tier: academic
+      df: 1
+    - term: Rashomon effect
+      concept_id: multiple_focalization_same_event
+      source_tier: academic
+      df: 3
+    - term: information control
+      concept_id: information_control
+      source_tier: academic
+      df: 3
+    - term: narrative knowledge
+      concept_id: information_control
+      source_tier: academic
+      df: 3
+    - term: information asymmetry
+      concept_id: information_control
+      source_tier: academic
+      df: 1
+    - term: dramatic irony
+      concept_id: information_control
+      source_tier: academic
+      df: 135
+    - term: unreliable narrator
+      concept_id: reliability
+      source_tier: academic
+      df: 118
+    - term: unreliable narration
+      concept_id: reliability
+      source_tier: academic
+      df: 6
+    - term: reliable narrator
+      concept_id: reliability
+      source_tier: academic
+      df: 134
+    - term: extradiegetic narrator
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 5
+    - term: intradiegetic narrator
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 3
+    - term: embedded narrative
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 2
+    - term: narrative level
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 16
+    - term: narrating I
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 20
+    - term: experiencing I
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 56
+    - term: retrospective narration
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 2
+    - term: reader identification
+      concept_id: reader_effect
+      source_tier: academic
+      df: 46
+    - term: character identification
+      concept_id: reader_effect
+      source_tier: academic
+      df: 9
+    - term: perspective taking
+      concept_id: reader_effect
+      source_tier: academic
+      df: 2
+    - term: perspective-taking
+      concept_id: reader_effect
+      source_tier: academic
+      df: 4
+    - term: narrative engagement
+      concept_id: reader_effect
+      source_tier: academic
+      df: 3
+    - term: narrative immersion
+      concept_id: reader_effect
+      source_tier: academic
+      df: 1
+    - term: direct discourse
+      concept_id: speech_dialogue
+      source_tier: academic
+      df: 57
+    - term: indirect discourse
+      concept_id: speech_dialogue
+      source_tier: academic
+      df: 50
+    - term: direct speech
+      concept_id: speech_dialogue
+      source_tier: academic
+      df: 87
+    - term: indirect speech
+      concept_id: speech_dialogue
+      source_tier: academic
+      df: 30
+    - term: speech representation
+      concept_id: speech_dialogue
+      source_tier: academic
+      df: 6
+    - term: dialogue attribution
+      concept_id: speech_dialogue
+      source_tier: academic
+      df: 11
+    - term: narrator's diction
+      concept_id: narrative_style_voice
+      source_tier: academic
+      df: 1
+    - term: narrative style
+      concept_id: narrative_style_voice
+      source_tier: academic
+      df: 62
+    - term: narrative tone
+      concept_id: narrative_style_voice
+      source_tier: academic
+      df: 8
+    - term: authorial voice
+      concept_id: narrative_style_voice
+      source_tier: academic
+      df: 90
+    - term: character voice
+      concept_id: narrative_style_voice
+      source_tier: academic
+      df: 28
+    - term: narrative strategy
+      concept_id: choice_tradeoffs
+      source_tier: academic
+      df: 44
+    - term: narrative technique
+      concept_id: choice_tradeoffs
+      source_tier: academic
+      df: 103
+    - term: \bpoint[\s-]+of[\s-]+view\b|\bPOVs?\b|\bviewpoints?\b
+      concept_id: regex:general_pov
+      kind: regex
+      df: 7392
+    - term: \b(?:first|second|third)[\s-]+person\b
+      concept_id: regex:grammatical_person
+      kind: regex
+      df: 3866
+    - term: \bfocali[sz](?:ation|er|ed|ing)s?\b
+      concept_id: regex:focalization
+      kind: regex
+      df: 80
+    - term: \bomniscien(?:t|ce)\b
+      concept_id: regex:focalization_zero
+      kind: regex
+      df: 1016
+    - term: \bfree[\s-]+indirect[\s-]+(?:discourse|speech|style|thought)\b
+      concept_id: regex:thought_representation
+      kind: regex
+      df: 42
+    - term: \bhead[\s-]+hopping\b
+      concept_id: regex:switching_consistency
+      kind: regex
+      df: 48
+    supporting:
+    - term: point of view
+      concept_id: perspective_general
+      source_tier: craft
+      df: 4149
+    - term: viewpoint
+      concept_id: perspective_general
+      source_tier: craft
+      df: 1548
+    - term: viewpoint character
+      concept_id: perspective_general
+      source_tier: craft
+      df: 433
+    - term: POV character
+      concept_id: perspective_general
+      source_tier: craft
+      df: 678
+    - term: story perspective
+      concept_id: perspective_general
+      source_tier: craft
+      df: 2
+    - term: narrative angle
+      concept_id: perspective_general
+      source_tier: craft
+      df: 1
+    - term: narrative stance
+      concept_id: perspective_general
+      source_tier: craft
+      df: 13
+    - term: choice of perspective
+      concept_id: perspective_general
+      source_tier: craft
+      df: 4
+    - term: choice of viewpoint
+      concept_id: perspective_general
+      source_tier: craft
+      df: 8
+    - term: choice of narrator
+      concept_id: voice_general
+      source_tier: craft
+      df: 6
+    - term: narrator's identity
+      concept_id: voice_general
+      source_tier: craft
+      df: 1
+    - term: storyteller's voice
+      concept_id: voice_general
+      source_tier: craft
+      df: 5
+    - term: narrator's role
+      concept_id: voice_general
+      source_tier: craft
+      df: 9
+    - term: first person
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 1592
+    - term: first-person POV
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 59
+    - term: first person singular
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 36
+    - term: writing in first person
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 14
+    - term: first-person viewpoint
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 33
+    - term: first-person plural
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 27
+    - term: second person
+      concept_id: grammatical_second_person
+      source_tier: craft
+      df: 418
+    - term: second-person POV
+      concept_id: grammatical_second_person
+      source_tier: craft
+      df: 32
+    - term: you narration
+      concept_id: grammatical_second_person
+      source_tier: craft
+      df: 1
+    - term: you perspective
+      concept_id: grammatical_second_person
+      source_tier: craft
+      df: 2
+    - term: writing in second person
+      concept_id: grammatical_second_person
+      source_tier: craft
+      df: 1
+    - term: third person
+      concept_id: grammatical_third_person
+      source_tier: craft
+      df: 1326
+    - term: third-person POV
+      concept_id: grammatical_third_person
+      source_tier: craft
+      df: 55
+    - term: third-person viewpoint
+      concept_id: grammatical_third_person
+      source_tier: craft
+      df: 31
+    - term: writing in third person
+      concept_id: grammatical_third_person
+      source_tier: craft
+      df: 8
+    - term: detached narrator
+      concept_id: voice_heterodiegetic
+      source_tier: craft
+      df: 6
+    - term: external narrator
+      concept_id: voice_heterodiegetic
+      source_tier: craft
+      df: 8
+    - term: outside narrator
+      concept_id: voice_heterodiegetic
+      source_tier: craft
+      df: 5
+    - term: uninvolved narrator
+      concept_id: voice_heterodiegetic
+      source_tier: craft
+      df: 1
+    - term: impersonal narrator
+      concept_id: voice_heterodiegetic
+      source_tier: craft
+      df: 3
+    - term: involved narrator
+      concept_id: voice_homodiegetic
+      source_tier: craft
+      df: 1
+    - term: narrator in the story
+      concept_id: voice_homodiegetic
+      source_tier: craft
+      df: 2
+    - term: first-person character narrator
+      concept_id: voice_homodiegetic
+      source_tier: craft
+      df: 1
+    - term: narrator as witness
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 1
+    - term: narrator as observer
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 2
+    - term: first-person observer
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 4
+    - term: hero narrator
+      concept_id: voice_protagonist
+      source_tier: craft
+      df: 1
+    - term: intrusive narrator
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 13
+    - term: authorial intrusion
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 14
+    - term: narrator addresses the reader
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 4
+    - term: editorial omniscience
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 1
+    - term: authorial voice
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 90
+    - term: deep POV
+      concept_id: stance_figural
+      source_tier: craft
+      df: 84
+    - term: character's subjective experience
+      concept_id: stance_figural
+      source_tier: craft
+      df: 1
+    - term: free indirect style
+      concept_id: stance_figural
+      source_tier: craft
+      df: 28
+    - term: narrative knowledge
+      concept_id: focalization_general
+      source_tier: craft
+      df: 3
+    - term: access to information
+      concept_id: focalization_general
+      source_tier: craft
+      df: 27
+    - term: range of knowledge
+      concept_id: focalization_general
+      source_tier: craft
+      df: 8
+    - term: omniscient narrator
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 218
+    - term: omniscient point of view
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 120
+    - term: third-person omniscient
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 71
+    - term: all-knowing narrator
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 8
+    - term: godlike narrator
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 2
+    - term: god's-eye view
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 4
+    - term: authorial omniscience
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 2
+    - term: omniscience
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 184
+    - term: third-person limited
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 93
+    - term: limited third person
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 49
+    - term: limited third
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 83
+    - term: limited omniscient
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 46
+    - term: limited omniscience
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 23
+    - term: selective omniscience
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 4
+    - term: limited point of view
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 39
+    - term: restricted point of view
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 2
+    - term: subjective point of view
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 11
+    - term: close third person
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 21
+    - term: objective narration
+      concept_id: focalization_external
+      source_tier: craft
+      df: 12
+    - term: objective narrator
+      concept_id: focalization_external
+      source_tier: craft
+      df: 21
+    - term: objective point of view
+      concept_id: focalization_external
+      source_tier: craft
+      df: 41
+    - term: objective third person
+      concept_id: focalization_external
+      source_tier: craft
+      df: 6
+    - term: camera eye
+      concept_id: focalization_external
+      source_tier: craft
+      df: 14
+    - term: camera perspective
+      concept_id: focalization_external
+      source_tier: craft
+      df: 4
+    - term: fly on the wall
+      concept_id: focalization_external
+      source_tier: craft
+      df: 23
+    - term: dramatic point of view
+      concept_id: focalization_external
+      source_tier: craft
+      df: 17
+    - term: single point of view
+      concept_id: focalization_fixed
+      source_tier: craft
+      df: 34
+    - term: single POV
+      concept_id: focalization_fixed
+      source_tier: craft
+      df: 25
+    - term: single viewpoint
+      concept_id: focalization_fixed
+      source_tier: craft
+      df: 44
+    - term: single viewpoint character
+      concept_id: focalization_fixed
+      source_tier: craft
+      df: 6
+    - term: consistent POV
+      concept_id: focalization_fixed
+      source_tier: craft
+      df: 2
+    - term: single perspective
+      concept_id: focalization_fixed
+      source_tier: craft
+      df: 13
+    - term: multiple POV
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 69
+    - term: multiple viewpoints
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 35
+    - term: multiple points of view
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 77
+    - term: alternating viewpoints
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 2
+    - term: multiple viewpoint characters
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 3
+    - term: third-person multiple
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 15
+    - term: dual POV
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 1
+    - term: perceptual point of view
+      concept_id: pov_subject
+      source_tier: craft
+      df: 1
+    - term: subjective perception
+      concept_id: pov_subject
+      source_tier: craft
+      df: 5
+    - term: subjective viewpoint
+      concept_id: pov_subject
+      source_tier: craft
+      df: 8
+    - term: character's eyes
+      concept_id: pov_subject
+      source_tier: craft
+      df: 59
+    - term: description of appearance
+      concept_id: pov_object
+      source_tier: craft
+      df: 2
+    - term: physical description of character
+      concept_id: pov_object
+      source_tier: craft
+      df: 1
+    - term: telling instead of showing
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 1
+    - term: show versus tell
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 3
+    - term: exposition
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 1074
+    - term: narrative exposition
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 5
+    - term: summary passage
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 5
+    - term: compress time
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 12
+    - term: show, don't tell
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 182
+    - term: show not tell
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 15
+    - term: showing rather than telling
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 33
+    - term: scene construction
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 12
+    - term: scene writing
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 10
+    - term: real-time action
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 2
+    - term: dramatization
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 113
+    - term: dialogue and action
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 96
+    - term: when to show and when to tell
+      concept_id: mode_balance
+      source_tier: craft
+      df: 3
+    - term: inside the character's head
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 14
+    - term: inside the character's mind
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 3
+    - term: inner life
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 198
+    - term: inner world
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 104
+    - term: internal experience
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 8
+    - term: internal monologue
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 77
+    - term: thoughts and feelings
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 409
+    - term: inner dialogue
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 35
+    - term: inner voice
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 154
+    - term: inner conflict
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 132
+    - term: light penetration
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 4
+    - term: deep penetration
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 11
+    - term: stream of consciousness
+      concept_id: thought_representation
+      source_tier: craft
+      df: 245
+    - term: internal monologue
+      concept_id: thought_representation
+      source_tier: craft
+      df: 77
+    - term: thought tags
+      concept_id: thought_representation
+      source_tier: craft
+      df: 1
+    - term: dialogue with oneself
+      concept_id: thought_representation
+      source_tier: craft
+      df: 2
+    - term: unspoken dialogue
+      concept_id: thought_representation
+      source_tier: craft
+      df: 2
+    - term: inner narration
+      concept_id: thought_representation
+      source_tier: craft
+      df: 1
+    - term: deep POV
+      concept_id: distance_depth
+      source_tier: craft
+      df: 84
+    - term: deep point of view
+      concept_id: distance_depth
+      source_tier: craft
+      df: 10
+    - term: close POV
+      concept_id: distance_depth
+      source_tier: craft
+      df: 4
+    - term: close third
+      concept_id: distance_depth
+      source_tier: craft
+      df: 45
+    - term: deep third
+      concept_id: distance_depth
+      source_tier: craft
+      df: 5
+    - term: intimate third person
+      concept_id: distance_depth
+      source_tier: craft
+      df: 3
+    - term: distant narration
+      concept_id: distance_depth
+      source_tier: craft
+      df: 1
+    - term: shallow POV
+      concept_id: distance_depth
+      source_tier: craft
+      df: 3
+    - term: zoom in
+      concept_id: distance_depth
+      source_tier: craft
+      df: 67
+    - term: zoom out
+      concept_id: distance_depth
+      source_tier: craft
+      df: 12
+    - term: head hopping
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 9
+    - term: head-hopping
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 40
+    - term: POV switch
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 7
+    - term: POV shift
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 22
+    - term: viewpoint shift
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 9
+    - term: viewpoint change
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 7
+    - term: POV violation
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 4
+    - term: POV slip
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 1
+    - term: POV error
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 12
+    - term: conflicting perspectives
+      concept_id: multiple_focalization_same_event
+      source_tier: craft
+      df: 3
+    - term: withhold information
+      concept_id: information_control
+      source_tier: craft
+      df: 18
+    - term: reveal information
+      concept_id: information_control
+      source_tier: craft
+      df: 28
+    - term: information management
+      concept_id: information_control
+      source_tier: craft
+      df: 9
+    - term: narrator knows
+      concept_id: information_control
+      source_tier: craft
+      df: 42
+    - term: character knows
+      concept_id: information_control
+      source_tier: craft
+      df: 55
+    - term: reader knows
+      concept_id: information_control
+      source_tier: craft
+      df: 259
+    - term: untrustworthy narrator
+      concept_id: reliability
+      source_tier: craft
+      df: 5
+    - term: misleading narrator
+      concept_id: reliability
+      source_tier: craft
+      df: 2
+    - term: naive narrator
+      concept_id: reliability
+      source_tier: craft
+      df: 6
+    - term: naïve narrator
+      concept_id: reliability
+      source_tier: craft
+      df: 2
+    - term: unreliable first person
+      concept_id: reliability
+      source_tier: craft
+      df: 4
+    - term: fallible narrator
+      concept_id: reliability
+      source_tier: craft
+      df: 2
+    - term: frame narrator
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 3
+    - term: framing story
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 4
+    - term: story within a story
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 16
+    - term: older narrator
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 12
+    - term: present-tense narration
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 16
+    - term: past-tense narration
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 6
+    - term: filter words
+      concept_id: filter_words
+      source_tier: craft
+      df: 7
+    - term: filtering words
+      concept_id: filter_words
+      source_tier: craft
+      df: 3
+    - term: distancing words
+      concept_id: filter_words
+      source_tier: craft
+      df: 1
+    - term: thought tags
+      concept_id: filter_words
+      source_tier: craft
+      df: 1
+    - term: perception filters
+      concept_id: filter_words
+      source_tier: craft
+      df: 1
+    - term: emotional connection
+      concept_id: reader_effect
+      source_tier: craft
+      df: 57
+    - term: intimacy with the character
+      concept_id: reader_effect
+      source_tier: craft
+      df: 5
+    - term: reader involvement
+      concept_id: reader_effect
+      source_tier: craft
+      df: 21
+    - term: reader sympathy
+      concept_id: reader_effect
+      source_tier: craft
+      df: 13
+    - term: emotional distance
+      concept_id: reader_effect
+      source_tier: craft
+      df: 31
+    - term: emotional engagement
+      concept_id: reader_effect
+      source_tier: craft
+      df: 14
+    - term: dialogue tags
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 97
+    - term: speech tags
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 33
+    - term: action beats
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 16
+    - term: dialogue and narration
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 6
+    - term: dialogue scene
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 107
+    - term: reported speech
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 25
+    - term: dialogue-driven scene
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 1
+    - term: dialogue attribution
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 11
+    - term: narrative voice
+      concept_id: narrative_style_voice
+      source_tier: craft
+      df: 359
+    - term: authentic voice
+      concept_id: narrative_style_voice
+      source_tier: craft
+      df: 56
+    - term: writer's voice
+      concept_id: narrative_style_voice
+      source_tier: craft
+      df: 134
+    - term: tone of narration
+      concept_id: narrative_style_voice
+      source_tier: craft
+      df: 1
+    - term: choosing a POV
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 6
+    - term: choosing point of view
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 1
+    - term: advantages of first person
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 11
+    - term: POV options
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 2
+    - term: point-of-view choices
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 5
+    demoted:
+    - term: POV
+      concept_id: perspective_general
+      source_tier: craft
+      df: 1810
+    - term: storyteller
+      concept_id: voice_general
+      source_tier: craft
+      df: 610
+    - term: narrator
+      concept_id: voice_general
+      source_tier: craft
+      df: 3595
+    - term: telling
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 5484
+    unvalidated:
+    - term: perspectivization
+      concept_id: perspective_general
+      source_tier: academic
+      df: 0
+    - term: narrative perspective-taking
+      concept_id: perspective_general
+      source_tier: academic
+      df: 0
+    - term: perspective character
+      concept_id: perspective_general
+      source_tier: craft
+      df: 0
+    - term: narrative lens
+      concept_id: perspective_general
+      source_tier: craft
+      df: 0
+    - term: narrative camera
+      concept_id: perspective_general
+      source_tier: craft
+      df: 0
+    - term: narrative speaker
+      concept_id: voice_general
+      source_tier: craft
+      df: 0
+    - term: I perspective
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 0
+    - term: we narrator
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 0
+    - term: he or she narration
+      concept_id: grammatical_third_person
+      source_tier: craft
+      df: 0
+    - term: heterodiegetic narration
+      concept_id: voice_heterodiegetic
+      source_tier: academic
+      df: 0
+    - term: heterodiegetic narrative
+      concept_id: voice_heterodiegetic
+      source_tier: academic
+      df: 0
+    - term: non-diegetic narrator
+      concept_id: voice_heterodiegetic
+      source_tier: academic
+      df: 0
+    - term: narrator outside the diegesis
+      concept_id: voice_heterodiegetic
+      source_tier: academic
+      df: 0
+    - term: nonparticipant narrator
+      concept_id: voice_heterodiegetic
+      source_tier: craft
+      df: 0
+    - term: absent narrator
+      concept_id: voice_heterodiegetic
+      source_tier: craft
+      df: 0
+    - term: homodiegetic narration
+      concept_id: voice_homodiegetic
+      source_tier: academic
+      df: 0
+    - term: homodiegetic narrative
+      concept_id: voice_homodiegetic
+      source_tier: academic
+      df: 0
+    - term: participating narrator
+      concept_id: voice_homodiegetic
+      source_tier: craft
+      df: 0
+    - term: narrator as character
+      concept_id: voice_homodiegetic
+      source_tier: craft
+      df: 0
+    - term: eyewitness narrator
+      concept_id: voice_eyewitness
+      source_tier: academic
+      df: 0
+    - term: outsider witness
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 0
+    - term: sidekick narrator
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 0
+    - term: bystander narrator
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 0
+    - term: Watson narrator
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 0
+    - term: spectator narrator
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 0
+    - term: participating narrator
+      concept_id: voice_participant
+      source_tier: academic
+      df: 0
+    - term: narrator as secondary character
+      concept_id: voice_participant
+      source_tier: academic
+      df: 0
+    - term: homodiegetic secondary narrator
+      concept_id: voice_participant
+      source_tier: academic
+      df: 0
+    - term: secondary-character narrator
+      concept_id: voice_participant
+      source_tier: craft
+      df: 0
+    - term: supporting-character narrator
+      concept_id: voice_participant
+      source_tier: craft
+      df: 0
+    - term: first-person secondary character
+      concept_id: voice_participant
+      source_tier: craft
+      df: 0
+    - term: narrator as side character
+      concept_id: voice_participant
+      source_tier: craft
+      df: 0
+    - term: narrator as companion
+      concept_id: voice_participant
+      source_tier: craft
+      df: 0
+    - term: autodiegetic narrator
+      concept_id: voice_protagonist
+      source_tier: academic
+      df: 0
+    - term: autodiegetic narration
+      concept_id: voice_protagonist
+      source_tier: academic
+      df: 0
+    - term: first-person main character
+      concept_id: voice_protagonist
+      source_tier: craft
+      df: 0
+    - term: main-character narrator
+      concept_id: voice_protagonist
+      source_tier: craft
+      df: 0
+    - term: central-character narrator
+      concept_id: voice_protagonist
+      source_tier: craft
+      df: 0
+    - term: narrator as protagonist
+      concept_id: voice_protagonist
+      source_tier: craft
+      df: 0
+    - term: narrator as main character
+      concept_id: voice_protagonist
+      source_tier: craft
+      df: 0
+    - term: narratorial narration
+      concept_id: stance_narratorial
+      source_tier: academic
+      df: 0
+    - term: narratorial stance
+      concept_id: stance_narratorial
+      source_tier: academic
+      df: 0
+    - term: narratorial discourse
+      concept_id: stance_narratorial
+      source_tier: academic
+      df: 0
+    - term: narratorial presentation
+      concept_id: stance_narratorial
+      source_tier: academic
+      df: 0
+    - term: narrator mediation
+      concept_id: stance_narratorial
+      source_tier: academic
+      df: 0
+    - term: narratorial commentary
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 0
+    - term: narrator commentary
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 0
+    - term: narrator intrusion
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 0
+    - term: narrator intervention
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 0
+    - term: narrator interpretation
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 0
+    - term: narrator evaluation
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 0
+    - term: figural narration
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: figural stance
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: figural presentation
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: figural discourse
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: reflector mode
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: character-bound narration
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: character-centred narration
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: character-centered narration
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: character-filtered narration
+      concept_id: stance_figural
+      source_tier: craft
+      df: 0
+    - term: character voice in narration
+      concept_id: stance_figural
+      source_tier: craft
+      df: 0
+    - term: character's own language
+      concept_id: stance_figural
+      source_tier: craft
+      df: 0
+    - term: immersive narration
+      concept_id: stance_figural
+      source_tier: craft
+      df: 0
+    - term: close narration
+      concept_id: stance_figural
+      source_tier: craft
+      df: 0
+    - term: filtering through the character
+      concept_id: stance_figural
+      source_tier: craft
+      df: 0
+    - term: focalized character
+      concept_id: focalization_general
+      source_tier: academic
+      df: 0
+    - term: focalised character
+      concept_id: focalization_general
+      source_tier: academic
+      df: 0
+    - term: focalizing subject
+      concept_id: focalization_general
+      source_tier: academic
+      df: 0
+    - term: focalising subject
+      concept_id: focalization_general
+      source_tier: academic
+      df: 0
+    - term: focal narrative
+      concept_id: focalization_general
+      source_tier: academic
+      df: 0
+    - term: locus of focalization
+      concept_id: focalization_general
+      source_tier: academic
+      df: 0
+    - term: viewpoint restriction
+      concept_id: focalization_general
+      source_tier: craft
+      df: 0
+    - term: information available to the narrator
+      concept_id: focalization_general
+      source_tier: craft
+      df: 0
+    - term: perspective constraints
+      concept_id: focalization_general
+      source_tier: craft
+      df: 0
+    - term: zero focalization
+      concept_id: focalization_zero
+      source_tier: academic
+      df: 0
+    - term: zero focalisation
+      concept_id: focalization_zero
+      source_tier: academic
+      df: 0
+    - term: nonfocalized narration
+      concept_id: focalization_zero
+      source_tier: academic
+      df: 0
+    - term: unrestricted focalization
+      concept_id: focalization_zero
+      source_tier: academic
+      df: 0
+    - term: unrestricted narration
+      concept_id: focalization_zero
+      source_tier: academic
+      df: 0
+    - term: unrestricted knowledge
+      concept_id: focalization_zero
+      source_tier: academic
+      df: 0
+    - term: god's eye perspective
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 0
+    - term: unlimited viewpoint
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 0
+    - term: unrestricted viewpoint
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 0
+    - term: panoramic perspective
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 0
+    - term: internal focalisation
+      concept_id: focalization_internal
+      source_tier: academic
+      df: 0
+    - term: internally focalized narration
+      concept_id: focalization_internal
+      source_tier: academic
+      df: 0
+    - term: character-bound focalization
+      concept_id: focalization_internal
+      source_tier: academic
+      df: 0
+    - term: restricted focalization
+      concept_id: focalization_internal
+      source_tier: academic
+      df: 0
+    - term: restricted narrative knowledge
+      concept_id: focalization_internal
+      source_tier: academic
+      df: 0
+    - term: character-limited perspective
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 0
+    - term: deep third person
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 0
+    - term: externally focalized narration
+      concept_id: focalization_external
+      source_tier: academic
+      df: 0
+    - term: no interior access
+      concept_id: focalization_external
+      source_tier: academic
+      df: 0
+    - term: restricted external observation
+      concept_id: focalization_external
+      source_tier: academic
+      df: 0
+    - term: camera-eye narration
+      concept_id: focalization_external
+      source_tier: craft
+      df: 0
+    - term: fly-on-the-wall narrator
+      concept_id: focalization_external
+      source_tier: craft
+      df: 0
+    - term: behavioural narration
+      concept_id: focalization_external
+      source_tier: craft
+      df: 0
+    - term: behavioral narration
+      concept_id: focalization_external
+      source_tier: craft
+      df: 0
+    - term: third-person observer
+      concept_id: focalization_external
+      source_tier: craft
+      df: 0
+    - term: fixed focalization
+      concept_id: focalization_fixed
+      source_tier: academic
+      df: 0
+    - term: fixed focalisation
+      concept_id: focalization_fixed
+      source_tier: academic
+      df: 0
+    - term: fixed internal focalization
+      concept_id: focalization_fixed
+      source_tier: academic
+      df: 0
+    - term: single focalizer
+      concept_id: focalization_fixed
+      source_tier: academic
+      df: 0
+    - term: single focaliser
+      concept_id: focalization_fixed
+      source_tier: academic
+      df: 0
+    - term: constant focalization
+      concept_id: focalization_fixed
+      source_tier: academic
+      df: 0
+    - term: one-character perspective
+      concept_id: focalization_fixed
+      source_tier: craft
+      df: 0
+    - term: single-character perspective
+      concept_id: focalization_fixed
+      source_tier: craft
+      df: 0
+    - term: variable focalization
+      concept_id: focalization_variable
+      source_tier: academic
+      df: 0
+    - term: variable focalisation
+      concept_id: focalization_variable
+      source_tier: academic
+      df: 0
+    - term: shifting internal focalization
+      concept_id: focalization_variable
+      source_tier: academic
+      df: 0
+    - term: alternating internal focalization
+      concept_id: focalization_variable
+      source_tier: academic
+      df: 0
+    - term: shifting focalizer
+      concept_id: focalization_variable
+      source_tier: academic
+      df: 0
+    - term: perspectival plurality
+      concept_id: focalization_variable
+      source_tier: academic
+      df: 0
+    - term: alternating POV
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 0
+    - term: multiple first-person narrative
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 0
+    - term: rotating viewpoint
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 0
+    - term: ensemble POV
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 0
+    - term: alternating narrators
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 0
+    - term: perceiving subject
+      concept_id: pov_subject
+      source_tier: academic
+      df: 0
+    - term: subject of perception
+      concept_id: pov_subject
+      source_tier: academic
+      df: 0
+    - term: perceptual centre
+      concept_id: pov_subject
+      source_tier: academic
+      df: 0
+    - term: perceptual center
+      concept_id: pov_subject
+      source_tier: academic
+      df: 0
+    - term: experiential centre
+      concept_id: pov_subject
+      source_tier: academic
+      df: 0
+    - term: focalizing subject
+      concept_id: pov_subject
+      source_tier: academic
+      df: 0
+    - term: focalising subject
+      concept_id: pov_subject
+      source_tier: academic
+      df: 0
+    - term: viewpoint character as observer
+      concept_id: pov_subject
+      source_tier: craft
+      df: 0
+    - term: character as lens
+      concept_id: pov_subject
+      source_tier: craft
+      df: 0
+    - term: character's sensory experience
+      concept_id: pov_subject
+      source_tier: craft
+      df: 0
+    - term: sensory viewpoint
+      concept_id: pov_subject
+      source_tier: craft
+      df: 0
+    - term: object of perception
+      concept_id: pov_object
+      source_tier: academic
+      df: 0
+    - term: perceived character
+      concept_id: pov_object
+      source_tier: academic
+      df: 0
+    - term: object of representation
+      concept_id: pov_object
+      source_tier: academic
+      df: 0
+    - term: external representation of character
+      concept_id: pov_object
+      source_tier: academic
+      df: 0
+    - term: character seen from outside
+      concept_id: pov_object
+      source_tier: craft
+      df: 0
+    - term: observable character behaviour
+      concept_id: pov_object
+      source_tier: craft
+      df: 0
+    - term: visual characterization
+      concept_id: pov_object
+      source_tier: craft
+      df: 0
+    - term: visual characterisation
+      concept_id: pov_object
+      source_tier: craft
+      df: 0
+    - term: narratorial mediation
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 0
+    - term: diegetic mode
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 0
+    - term: summary versus scene
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 0
+    - term: backstory summary
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 0
+    - term: narrative distance through summary
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 0
+    - term: scenic mode
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 0
+    - term: scenic narration
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 0
+    - term: mimetic mode
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 0
+    - term: temporal isochrony
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 0
+    - term: dramatize the scene
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 0
+    - term: dramatise the scene
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 0
+    - term: moment-by-moment narration
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 0
+    - term: dramatise events
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 0
+    - term: narrative-dramatic continuum
+      concept_id: mode_balance
+      source_tier: academic
+      df: 0
+    - term: narrative and dramatic modes
+      concept_id: mode_balance
+      source_tier: academic
+      df: 0
+    - term: balance showing and telling
+      concept_id: mode_balance
+      source_tier: craft
+      df: 0
+    - term: alternate scene and summary
+      concept_id: mode_balance
+      source_tier: craft
+      df: 0
+    - term: mix dialogue and narration
+      concept_id: mode_balance
+      source_tier: craft
+      df: 0
+    - term: pacing through scene and summary
+      concept_id: mode_balance
+      source_tier: craft
+      df: 0
+    - term: switch between scene and summary
+      concept_id: mode_balance
+      source_tier: craft
+      df: 0
+    - term: access to consciousness
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 0
+    - term: interior access
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 0
+    - term: mental access
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 0
+    - term: representation of consciousness
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 0
+    - term: consciousness representation
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 0
+    - term: psycho-narration
+      concept_id: thought_representation
+      source_tier: academic
+      df: 0
+    - term: psychonarration
+      concept_id: thought_representation
+      source_tier: academic
+      df: 0
+    - term: represented speech and thought
+      concept_id: thought_representation
+      source_tier: academic
+      df: 0
+    - term: quoted monologue
+      concept_id: thought_representation
+      source_tier: academic
+      df: 0
+    - term: italicized thoughts
+      concept_id: thought_representation
+      source_tier: craft
+      df: 0
+    - term: italicised thoughts
+      concept_id: thought_representation
+      source_tier: craft
+      df: 0
+    - term: thought attribution
+      concept_id: thought_representation
+      source_tier: craft
+      df: 0
+    - term: narratorial distance
+      concept_id: distance_depth
+      source_tier: academic
+      df: 0
+    - term: experiential distance
+      concept_id: distance_depth
+      source_tier: academic
+      df: 0
+    - term: close third-person perspective
+      concept_id: distance_depth
+      source_tier: craft
+      df: 0
+    - term: narrative closeness
+      concept_id: distance_depth
+      source_tier: craft
+      df: 0
+    - term: intimate viewpoint
+      concept_id: distance_depth
+      source_tier: craft
+      df: 0
+    - term: narrative camera distance
+      concept_id: distance_depth
+      source_tier: craft
+      df: 0
+    - term: focalization shift
+      concept_id: switching_consistency
+      source_tier: academic
+      df: 0
+    - term: focalisation shift
+      concept_id: switching_consistency
+      source_tier: academic
+      df: 0
+    - term: change of focalization
+      concept_id: switching_consistency
+      source_tier: academic
+      df: 0
+    - term: narrative perspective shift
+      concept_id: switching_consistency
+      source_tier: academic
+      df: 0
+    - term: POV switching
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 0
+    - term: POV consistency
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 0
+    - term: point-of-view consistency
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 0
+    - term: break POV
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 0
+    - term: viewpoint transition
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 0
+    - term: multiple focalisation
+      concept_id: multiple_focalization_same_event
+      source_tier: academic
+      df: 0
+    - term: repeated focalization
+      concept_id: multiple_focalization_same_event
+      source_tier: academic
+      df: 0
+    - term: multiple narration of the same event
+      concept_id: multiple_focalization_same_event
+      source_tier: academic
+      df: 0
+    - term: retelling from another perspective
+      concept_id: multiple_focalization_same_event
+      source_tier: craft
+      df: 0
+    - term: same event different viewpoints
+      concept_id: multiple_focalization_same_event
+      source_tier: craft
+      df: 0
+    - term: multiple versions of events
+      concept_id: multiple_focalization_same_event
+      source_tier: craft
+      df: 0
+    - term: information distribution
+      concept_id: information_control
+      source_tier: academic
+      df: 0
+    - term: epistemic access
+      concept_id: information_control
+      source_tier: academic
+      df: 0
+    - term: epistemic restriction
+      concept_id: information_control
+      source_tier: academic
+      df: 0
+    - term: knowledge asymmetry
+      concept_id: information_control
+      source_tier: academic
+      df: 0
+    - term: narrative paralipsis
+      concept_id: information_control
+      source_tier: academic
+      df: 0
+    - term: narrative paralepsis
+      concept_id: information_control
+      source_tier: academic
+      df: 0
+    - term: selective revelation
+      concept_id: information_control
+      source_tier: craft
+      df: 0
+    - term: delayed revelation
+      concept_id: information_control
+      source_tier: craft
+      df: 0
+    - term: restricted information
+      concept_id: information_control
+      source_tier: craft
+      df: 0
+    - term: plot revelation
+      concept_id: information_control
+      source_tier: craft
+      df: 0
+    - term: narrative unreliability
+      concept_id: reliability
+      source_tier: academic
+      df: 0
+    - term: narratorial reliability
+      concept_id: reliability
+      source_tier: academic
+      df: 0
+    - term: unreliable focalizer
+      concept_id: reliability
+      source_tier: academic
+      df: 0
+    - term: unreliable focaliser
+      concept_id: reliability
+      source_tier: academic
+      df: 0
+    - term: deceptive narrator
+      concept_id: reliability
+      source_tier: craft
+      df: 0
+    - term: biased narrator
+      concept_id: reliability
+      source_tier: craft
+      df: 0
+    - term: narrator credibility
+      concept_id: reliability
+      source_tier: craft
+      df: 0
+    - term: metadiegetic narration
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 0
+    - term: simultaneous narration
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 0
+    - term: subsequent narration
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 0
+    - term: retrospective first person
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 0
+    - term: narrator hindsight
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 0
+    - term: perception verbs
+      concept_id: filter_words
+      source_tier: academic
+      df: 0
+    - term: cognition verbs
+      concept_id: filter_words
+      source_tier: academic
+      df: 0
+    - term: mental state verbs
+      concept_id: filter_words
+      source_tier: academic
+      df: 0
+    - term: sensory mediation
+      concept_id: filter_words
+      source_tier: academic
+      df: 0
+    - term: filter verbs
+      concept_id: filter_words
+      source_tier: craft
+      df: 0
+    - term: narrative filters
+      concept_id: filter_words
+      source_tier: craft
+      df: 0
+    - term: remove filters
+      concept_id: filter_words
+      source_tier: craft
+      df: 0
+    - term: narrative empathy
+      concept_id: reader_effect
+      source_tier: academic
+      df: 0
+    - term: narrative transportation
+      concept_id: reader_effect
+      source_tier: academic
+      df: 0
+    - term: reader alignment
+      concept_id: reader_effect
+      source_tier: academic
+      df: 0
+    - term: reader allegiance
+      concept_id: reader_effect
+      source_tier: academic
+      df: 0
+    - term: reader immersion
+      concept_id: reader_effect
+      source_tier: craft
+      df: 0
+    - term: reader attachment
+      concept_id: reader_effect
+      source_tier: craft
+      df: 0
+    - term: speech reporting
+      concept_id: speech_dialogue
+      source_tier: academic
+      df: 0
+    - term: narratorial style
+      concept_id: narrative_style_voice
+      source_tier: academic
+      df: 0
+    - term: discourse style
+      concept_id: narrative_style_voice
+      source_tier: academic
+      df: 0
+    - term: distinctive narrator voice
+      concept_id: narrative_style_voice
+      source_tier: craft
+      df: 0
+    - term: character-specific diction
+      concept_id: narrative_style_voice
+      source_tier: craft
+      df: 0
+    - term: voice consistency
+      concept_id: narrative_style_voice
+      source_tier: craft
+      df: 0
+    - term: perspectival strategy
+      concept_id: choice_tradeoffs
+      source_tier: academic
+      df: 0
+    - term: choice of focalization
+      concept_id: choice_tradeoffs
+      source_tier: academic
+      df: 0
+    - term: choice of narrative perspective
+      concept_id: choice_tradeoffs
+      source_tier: academic
+      df: 0
+    - term: disadvantages of third person
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 0
+    - term: advantages of omniscience
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 0
+    - term: limitations of limited POV
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 0
+    - term: changing narrative perspective
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 0
+    counts:
+      high: 133
+      supporting: 195
+      demoted: 4
+      unvalidated: 238
+  de:
+    high:
+    - term: Erzählperspektive
+      concept_id: perspective_general
+      source_tier: academic
+      df: 157
+    - term: Erzählstandpunkt
+      concept_id: perspective_general
+      source_tier: academic
+      df: 2
+    - term: Erzählsituation
+      concept_id: perspective_general
+      source_tier: academic
+      df: 10
+    - term: Erzählhaltung
+      concept_id: perspective_general
+      source_tier: academic
+      df: 16
+    - term: Perspektivierung
+      concept_id: perspective_general
+      source_tier: academic
+      df: 15
+    - term: narrative Perspektive
+      concept_id: perspective_general
+      source_tier: academic
+      df: 1
+    - term: Erzählposition
+      concept_id: perspective_general
+      source_tier: academic
+      df: 6
+    - term: Erzählinstanz
+      concept_id: voice_general
+      source_tier: academic
+      df: 6
+    - term: Erzählstimme
+      concept_id: voice_general
+      source_tier: academic
+      df: 17
+    - term: Erzählerstimme
+      concept_id: voice_general
+      source_tier: academic
+      df: 19
+    - term: narrative Stimme
+      concept_id: voice_general
+      source_tier: academic
+      df: 2
+    - term: Erzählerfigur
+      concept_id: voice_general
+      source_tier: academic
+      df: 6
+    - term: Erzählfunktion
+      concept_id: voice_general
+      source_tier: academic
+      df: 3
+    - term: Ich-Erzählung
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 27
+    - term: Ich-Erzähler
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 118
+    - term: Ich-Erzählerin
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 12
+    - term: Ich-Perspektive
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 33
+    - term: Ich-Form
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 36
+    - term: Erzählung in der ersten Person
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 3
+    - term: erste Person Singular
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 3
+    - term: Du-Perspektive
+      concept_id: grammatical_second_person
+      source_tier: academic
+      df: 5
+    - term: Du-Form
+      concept_id: grammatical_second_person
+      source_tier: academic
+      df: 1
+    - term: Erzählung in der zweiten Person
+      concept_id: grammatical_second_person
+      source_tier: academic
+      df: 1
+    - term: Er-Erzählung
+      concept_id: grammatical_third_person
+      source_tier: academic
+      df: 11
+    - term: Er-Erzähler
+      concept_id: grammatical_third_person
+      source_tier: academic
+      df: 13
+    - term: Erzählung in der dritten Person
+      concept_id: grammatical_third_person
+      source_tier: academic
+      df: 6
+    - term: Er-Form
+      concept_id: grammatical_third_person
+      source_tier: academic
+      df: 15
+    - term: Sie-Form
+      concept_id: grammatical_third_person
+      source_tier: academic
+      df: 2
+    - term: heterodiegetischer Erzähler
+      concept_id: voice_heterodiegetic
+      source_tier: academic
+      df: 1
+    - term: Erzähler-Protagonist
+      concept_id: voice_protagonist
+      source_tier: academic
+      df: 13
+    - term: personale Erzählhaltung
+      concept_id: stance_figural
+      source_tier: academic
+      df: 2
+    - term: personales Erzählen
+      concept_id: stance_figural
+      source_tier: academic
+      df: 2
+    - term: Fokalisierung
+      concept_id: focalization_general
+      source_tier: academic
+      df: 3
+    - term: auktoriale Erzählsituation
+      concept_id: focalization_zero
+      source_tier: academic
+      df: 2
+    - term: Außensicht
+      concept_id: focalization_external
+      source_tier: academic
+      df: 5
+    - term: Außenperspektive
+      concept_id: focalization_external
+      source_tier: academic
+      df: 11
+    - term: Multiperspektivität
+      concept_id: focalization_variable
+      source_tier: academic
+      df: 1
+    - term: multiperspektivisches Erzählen
+      concept_id: focalization_variable
+      source_tier: academic
+      df: 2
+    - term: Wahrnehmungszentrum
+      concept_id: pov_subject
+      source_tier: academic
+      df: 1
+    - term: Wahrnehmungsobjekt
+      concept_id: pov_object
+      source_tier: academic
+      df: 1
+    - term: narrativer Modus
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 1
+    - term: Diegesis
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 1
+    - term: erzählerische Vermittlung
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 1
+    - term: Zeitraffung
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 5
+    - term: Mimesis
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 24
+    - term: szenische Darstellung
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 7
+    - term: zeitdeckendes Erzählen
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 1
+    - term: Erzählen und Zeigen
+      concept_id: mode_balance
+      source_tier: academic
+      df: 1
+    - term: Erzähltempo
+      concept_id: mode_balance
+      source_tier: academic
+      df: 15
+    - term: Zugang zum Bewusstsein
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 2
+    - term: Bewusstseinsdarstellung
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 1
+    - term: Innensicht
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 11
+    - term: Innenperspektive
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 5
+    - term: erlebte Rede
+      concept_id: thought_representation
+      source_tier: academic
+      df: 13
+    - term: innerer Monolog
+      concept_id: thought_representation
+      source_tier: academic
+      df: 14
+    - term: Bewusstseinsstrom
+      concept_id: thought_representation
+      source_tier: academic
+      df: 12
+    - term: Gedankenbericht
+      concept_id: thought_representation
+      source_tier: academic
+      df: 1
+    - term: Bewusstseinsdarstellung
+      concept_id: thought_representation
+      source_tier: academic
+      df: 1
+    - term: psychologische Distanz
+      concept_id: distance_depth
+      source_tier: academic
+      df: 1
+    - term: Erzähldistanz
+      concept_id: distance_depth
+      source_tier: academic
+      df: 6
+    - term: Perspektivenwechsel
+      concept_id: switching_consistency
+      source_tier: academic
+      df: 44
+    - term: Perspektivwechsel
+      concept_id: switching_consistency
+      source_tier: academic
+      df: 43
+    - term: Rashomon-Effekt
+      concept_id: multiple_focalization_same_event
+      source_tier: academic
+      df: 3
+    - term: Informationsvergabe
+      concept_id: information_control
+      source_tier: academic
+      df: 10
+    - term: Wissensvorsprung
+      concept_id: information_control
+      source_tier: academic
+      df: 9
+    - term: dramatische Ironie
+      concept_id: information_control
+      source_tier: academic
+      df: 4
+    - term: unzuverlässiger Erzähler
+      concept_id: reliability
+      source_tier: academic
+      df: 1
+    - term: zuverlässiger Erzähler
+      concept_id: reliability
+      source_tier: academic
+      df: 1
+    - term: Erzählebene
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 10
+    - term: Rahmenerzählung
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 30
+    - term: Binnenerzählung
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 1
+    - term: erzählendes Ich
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 4
+    - term: erlebendes Ich
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 2
+    - term: Leseridentifikation
+      concept_id: reader_effect
+      source_tier: academic
+      df: 2
+    - term: emotionale Involviertheit
+      concept_id: reader_effect
+      source_tier: academic
+      df: 1
+    - term: direkte Rede
+      concept_id: speech_dialogue
+      source_tier: academic
+      df: 14
+    - term: indirekte Rede
+      concept_id: speech_dialogue
+      source_tier: academic
+      df: 5
+    - term: Figurenrede
+      concept_id: speech_dialogue
+      source_tier: academic
+      df: 2
+    - term: Erzählstil
+      concept_id: narrative_style_voice
+      source_tier: academic
+      df: 5
+    - term: Erzählton
+      concept_id: narrative_style_voice
+      source_tier: academic
+      df: 10
+    - term: narrative Stimme
+      concept_id: narrative_style_voice
+      source_tier: academic
+      df: 2
+    - term: Erzählerstimme
+      concept_id: narrative_style_voice
+      source_tier: academic
+      df: 19
+    - term: Autorenstimme
+      concept_id: narrative_style_voice
+      source_tier: academic
+      df: 2
+    - term: Erzählstrategie
+      concept_id: choice_tradeoffs
+      source_tier: academic
+      df: 2
+    - term: Erzähltechnik
+      concept_id: choice_tradeoffs
+      source_tier: academic
+      df: 12
+    - term: Wahl der Erzählperspektive
+      concept_id: choice_tradeoffs
+      source_tier: academic
+      df: 2
+    - term: \b(?:erzählperspektiv|erzählstandpunkt|erzählsituation|erzählhaltung|erzählposition)\w*\b
+      concept_id: regex:general_pov
+      kind: regex
+      df: 208
+    - term: \bich[\s-]?(?:erzähl|perspektiv|form)\w*\b
+      concept_id: regex:grammatical_first_person
+      kind: regex
+      df: 243
+    - term: \bheterodiegetisch\w*\b
+      concept_id: regex:voice_heterodiegetic
+      kind: regex
+      df: 1
+    - term: \b(?:null[\s-]?)?fokalisier\w*\b
+      concept_id: regex:focalization
+      kind: regex
+      df: 4
+    - term: \berlebt\w*\s+rede\b|\binner\w*\s+monolog\w*\b
+      concept_id: regex:thought_representation
+      kind: regex
+      df: 52
+    - term: \bperspektiv(?:en)?(?:wechsel|sprung|bruch|fehler)\w*\b
+      concept_id: regex:switching_consistency
+      kind: regex
+      df: 94
+    supporting:
+    - term: Blickwinkel
+      concept_id: perspective_general
+      source_tier: craft
+      df: 113
+    - term: Blickpunkt
+      concept_id: perspective_general
+      source_tier: craft
+      df: 12
+    - term: Perspektivfigur
+      concept_id: perspective_general
+      source_tier: craft
+      df: 31
+    - term: Erzählfigur
+      concept_id: perspective_general
+      source_tier: craft
+      df: 21
+    - term: Wahl der Erzählperspektive
+      concept_id: perspective_general
+      source_tier: craft
+      df: 2
+    - term: Erzählform
+      concept_id: perspective_general
+      source_tier: craft
+      df: 31
+    - term: Erzählweise
+      concept_id: perspective_general
+      source_tier: craft
+      df: 47
+    - term: Erzählerrolle
+      concept_id: voice_general
+      source_tier: craft
+      df: 3
+    - term: Stimme des Erzählers
+      concept_id: voice_general
+      source_tier: craft
+      df: 6
+    - term: Erzählton
+      concept_id: voice_general
+      source_tier: craft
+      df: 10
+    - term: Ich-Form schreiben
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 1
+    - term: erste Person
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 19
+    - term: zweite Person
+      concept_id: grammatical_second_person
+      source_tier: craft
+      df: 7
+    - term: dritte Person
+      concept_id: grammatical_third_person
+      source_tier: craft
+      df: 23
+    - term: Er-Perspektive
+      concept_id: grammatical_third_person
+      source_tier: craft
+      df: 5
+    - term: Sie-Perspektive
+      concept_id: grammatical_third_person
+      source_tier: craft
+      df: 4
+    - term: unsichtbarer Erzähler
+      concept_id: voice_heterodiegetic
+      source_tier: craft
+      df: 1
+    - term: Erzählerfigur
+      concept_id: voice_homodiegetic
+      source_tier: craft
+      df: 6
+    - term: erzählende Figur
+      concept_id: voice_homodiegetic
+      source_tier: craft
+      df: 5
+    - term: Erzähler als Beobachter
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 1
+    - term: Erzählerkommentar
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 1
+    - term: Erzählerreflexion
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 1
+    - term: Leseransprache
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 5
+    - term: Erzählerbericht
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 4
+    - term: erlebte Rede
+      concept_id: stance_figural
+      source_tier: craft
+      df: 13
+    - term: unmittelbares Erleben
+      concept_id: stance_figural
+      source_tier: craft
+      df: 1
+    - term: personale Erzählweise
+      concept_id: stance_figural
+      source_tier: craft
+      df: 3
+    - term: Wissenshorizont
+      concept_id: focalization_general
+      source_tier: craft
+      df: 2
+    - term: Erzählwissen
+      concept_id: focalization_general
+      source_tier: craft
+      df: 1
+    - term: allwissender Erzähler
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 4
+    - term: auktorialer Erzähler
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 3
+    - term: auktoriale Erzählperspektive
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 3
+    - term: personale Erzählsituation
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 2
+    - term: personale Erzählperspektive
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 11
+    - term: personaler Erzähler
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 8
+    - term: Innensicht
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 11
+    - term: Innenperspektive
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 5
+    - term: subjektive Erzählperspektive
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 1
+    - term: objektive Erzählweise
+      concept_id: focalization_external
+      source_tier: craft
+      df: 1
+    - term: objektive Erzählperspektive
+      concept_id: focalization_external
+      source_tier: craft
+      df: 3
+    - term: Kameraperspektive
+      concept_id: focalization_external
+      source_tier: craft
+      df: 1
+    - term: Beobachterperspektive
+      concept_id: focalization_external
+      source_tier: craft
+      df: 10
+    - term: eine Perspektivfigur
+      concept_id: focalization_fixed
+      source_tier: craft
+      df: 2
+    - term: Einzelperspektive
+      concept_id: focalization_fixed
+      source_tier: craft
+      df: 1
+    - term: Perspektivwechsel
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 43
+    - term: Perspektivenwechsel
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 44
+    - term: subjektive Wahrnehmung
+      concept_id: pov_subject
+      source_tier: craft
+      df: 4
+    - term: erlebende Figur
+      concept_id: pov_subject
+      source_tier: craft
+      df: 2
+    - term: erzählerische Zusammenfassung
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 1
+    - term: Erzählbericht
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 1
+    - term: Exposition
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 58
+    - term: Erzählpassage
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 1
+    - term: Hintergrundinformationen
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 15
+    - term: Szene gestalten
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 1
+    - term: Szene entwickeln
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 1
+    - term: Show don't tell
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 1
+    - term: zeigen statt erzählen
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 1
+    - term: dramatisieren
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 10
+    - term: Handlung und Dialog
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 11
+    - term: Innenleben
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 39
+    - term: Gedankenwelt
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 14
+    - term: innere Welt
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 13
+    - term: innere Stimme
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 24
+    - term: innerer Dialog
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 2
+    - term: innerer Konflikt
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 10
+    - term: Gedanken und Gefühle
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 113
+    - term: innere Stimme
+      concept_id: thought_representation
+      source_tier: craft
+      df: 24
+    - term: innerer Dialog
+      concept_id: thought_representation
+      source_tier: craft
+      df: 2
+    - term: Stream of Consciousness
+      concept_id: thought_representation
+      source_tier: craft
+      df: 10
+    - term: Gedanken kursiv
+      concept_id: thought_representation
+      source_tier: craft
+      df: 1
+    - term: Nähe und Distanz
+      concept_id: distance_depth
+      source_tier: craft
+      df: 20
+    - term: Nahaufnahme
+      concept_id: distance_depth
+      source_tier: craft
+      df: 7
+    - term: heranzoomen
+      concept_id: distance_depth
+      source_tier: craft
+      df: 2
+    - term: Perspektivfehler
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 2
+    - term: Wechsel der Erzählperspektive
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 3
+    - term: Informationen vorenthalten
+      concept_id: information_control
+      source_tier: craft
+      df: 1
+    - term: Wissen des Erzählers
+      concept_id: information_control
+      source_tier: craft
+      df: 1
+    - term: Wissen des Lesers
+      concept_id: information_control
+      source_tier: craft
+      df: 1
+    - term: älteres Ich
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 2
+    - term: Wahrnehmungsfilter
+      concept_id: filter_words
+      source_tier: craft
+      df: 2
+    - term: Leserbindung
+      concept_id: reader_effect
+      source_tier: craft
+      df: 1
+    - term: emotionale Nähe
+      concept_id: reader_effect
+      source_tier: craft
+      df: 2
+    - term: Dialoggestaltung
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 8
+    - term: Redebegleitsatz
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 14
+    - term: wörtliche Rede
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 19
+    - term: unverwechselbare Stimme
+      concept_id: narrative_style_voice
+      source_tier: craft
+      df: 3
+    - term: eigene Stimme
+      concept_id: narrative_style_voice
+      source_tier: craft
+      df: 39
+    - term: Perspektive wählen
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 2
+    - term: Erzählform wählen
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 2
+    - term: Perspektiven ausprobieren
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 2
+    - term: passende Erzählperspektive
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 2
+    demoted:
+    - term: Erzähler
+      concept_id: voice_general
+      source_tier: craft
+      df: 551
+    - term: Erzählerin
+      concept_id: voice_general
+      source_tier: craft
+      df: 48
+    - term: Telling
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 10
+    unvalidated:
+    - term: Erzählerstandort
+      concept_id: perspective_general
+      source_tier: academic
+      df: 0
+    - term: Perspektivenstruktur
+      concept_id: perspective_general
+      source_tier: academic
+      df: 0
+    - term: Erzählblick
+      concept_id: perspective_general
+      source_tier: craft
+      df: 0
+    - term: Erzähloptik
+      concept_id: perspective_general
+      source_tier: craft
+      df: 0
+    - term: Erzählkamera
+      concept_id: perspective_general
+      source_tier: craft
+      df: 0
+    - term: Perspektivenwahl
+      concept_id: perspective_general
+      source_tier: craft
+      df: 0
+    - term: erzählendes Subjekt
+      concept_id: voice_general
+      source_tier: academic
+      df: 0
+    - term: Erzählerwahl
+      concept_id: voice_general
+      source_tier: craft
+      df: 0
+    - term: Erzähleridentität
+      concept_id: voice_general
+      source_tier: craft
+      df: 0
+    - term: erzählende Stimme
+      concept_id: voice_general
+      source_tier: craft
+      df: 0
+    - term: Wir-Erzählung
+      concept_id: grammatical_first_person
+      source_tier: academic
+      df: 0
+    - term: Ichsicht
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 0
+    - term: Ich-PoV
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 0
+    - term: Ich-Person
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 0
+    - term: Ich-Perspektive wählen
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 0
+    - term: Ich-Stimme
+      concept_id: grammatical_first_person
+      source_tier: craft
+      df: 0
+    - term: Du-Erzählung
+      concept_id: grammatical_second_person
+      source_tier: academic
+      df: 0
+    - term: Du-Erzähler
+      concept_id: grammatical_second_person
+      source_tier: academic
+      df: 0
+    - term: Du-Ansprache
+      concept_id: grammatical_second_person
+      source_tier: craft
+      df: 0
+    - term: Du-Perspektive schreiben
+      concept_id: grammatical_second_person
+      source_tier: craft
+      df: 0
+    - term: direkte Anrede
+      concept_id: grammatical_second_person
+      source_tier: craft
+      df: 0
+    - term: Sie-Erzählung
+      concept_id: grammatical_third_person
+      source_tier: academic
+      df: 0
+    - term: Sie-Erzählerin
+      concept_id: grammatical_third_person
+      source_tier: academic
+      df: 0
+    - term: Er-Sie-Erzählung
+      concept_id: grammatical_third_person
+      source_tier: academic
+      df: 0
+    - term: Er-Sie-Perspektive
+      concept_id: grammatical_third_person
+      source_tier: academic
+      df: 0
+    - term: Er-Sie-Form
+      concept_id: grammatical_third_person
+      source_tier: craft
+      df: 0
+    - term: Er-PoV
+      concept_id: grammatical_third_person
+      source_tier: craft
+      df: 0
+    - term: heterodiegetische Erzählerin
+      concept_id: voice_heterodiegetic
+      source_tier: academic
+      df: 0
+    - term: heterodiegetisches Erzählen
+      concept_id: voice_heterodiegetic
+      source_tier: academic
+      df: 0
+    - term: heterodiegetische Erzählinstanz
+      concept_id: voice_heterodiegetic
+      source_tier: academic
+      df: 0
+    - term: erzählweltfremde Erzählinstanz
+      concept_id: voice_heterodiegetic
+      source_tier: academic
+      df: 0
+    - term: unbeteiligter Erzähler
+      concept_id: voice_heterodiegetic
+      source_tier: craft
+      df: 0
+    - term: außenstehender Erzähler
+      concept_id: voice_heterodiegetic
+      source_tier: craft
+      df: 0
+    - term: nicht beteiligter Erzähler
+      concept_id: voice_heterodiegetic
+      source_tier: craft
+      df: 0
+    - term: distanzierter Erzähler
+      concept_id: voice_heterodiegetic
+      source_tier: craft
+      df: 0
+    - term: unpersönlicher Erzähler
+      concept_id: voice_heterodiegetic
+      source_tier: craft
+      df: 0
+    - term: homodiegetischer Erzähler
+      concept_id: voice_homodiegetic
+      source_tier: academic
+      df: 0
+    - term: homodiegetische Erzählerin
+      concept_id: voice_homodiegetic
+      source_tier: academic
+      df: 0
+    - term: homodiegetisches Erzählen
+      concept_id: voice_homodiegetic
+      source_tier: academic
+      df: 0
+    - term: homodiegetische Erzählinstanz
+      concept_id: voice_homodiegetic
+      source_tier: academic
+      df: 0
+    - term: Figurenerzähler
+      concept_id: voice_homodiegetic
+      source_tier: academic
+      df: 0
+    - term: beteiligter Erzähler
+      concept_id: voice_homodiegetic
+      source_tier: craft
+      df: 0
+    - term: mitwirkender Erzähler
+      concept_id: voice_homodiegetic
+      source_tier: craft
+      df: 0
+    - term: Erzähler als Figur
+      concept_id: voice_homodiegetic
+      source_tier: craft
+      df: 0
+    - term: Erzähler innerhalb der Geschichte
+      concept_id: voice_homodiegetic
+      source_tier: craft
+      df: 0
+    - term: Zeugenerzähler
+      concept_id: voice_eyewitness
+      source_tier: academic
+      df: 0
+    - term: Zeugen-Erzähler
+      concept_id: voice_eyewitness
+      source_tier: academic
+      df: 0
+    - term: Beobachtererzähler
+      concept_id: voice_eyewitness
+      source_tier: academic
+      df: 0
+    - term: Beobachter-Erzähler
+      concept_id: voice_eyewitness
+      source_tier: academic
+      df: 0
+    - term: Augenzeugenerzähler
+      concept_id: voice_eyewitness
+      source_tier: academic
+      df: 0
+    - term: peripherer Erzähler
+      concept_id: voice_eyewitness
+      source_tier: academic
+      df: 0
+    - term: Erzähler als Zeuge
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 0
+    - term: Ich-Erzähler als Beobachter
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 0
+    - term: erzählender Zeuge
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 0
+    - term: unbeteiligter Zeuge
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 0
+    - term: Randfigur als Erzähler
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 0
+    - term: Watson-Figur
+      concept_id: voice_eyewitness
+      source_tier: craft
+      df: 0
+    - term: teilnehmender Erzähler
+      concept_id: voice_participant
+      source_tier: academic
+      df: 0
+    - term: mitwirkender Erzähler
+      concept_id: voice_participant
+      source_tier: academic
+      df: 0
+    - term: beteiligter Nebenerzähler
+      concept_id: voice_participant
+      source_tier: academic
+      df: 0
+    - term: homodiegetischer Nebenerzähler
+      concept_id: voice_participant
+      source_tier: academic
+      df: 0
+    - term: Nebenfigur als Erzähler
+      concept_id: voice_participant
+      source_tier: craft
+      df: 0
+    - term: Erzähler als Nebenfigur
+      concept_id: voice_participant
+      source_tier: craft
+      df: 0
+    - term: erzählende Nebenfigur
+      concept_id: voice_participant
+      source_tier: craft
+      df: 0
+    - term: Ich-Erzähler als Nebenfigur
+      concept_id: voice_participant
+      source_tier: craft
+      df: 0
+    - term: Begleiter als Erzähler
+      concept_id: voice_participant
+      source_tier: craft
+      df: 0
+    - term: autodiegetischer Erzähler
+      concept_id: voice_protagonist
+      source_tier: academic
+      df: 0
+    - term: autodiegetische Erzählerin
+      concept_id: voice_protagonist
+      source_tier: academic
+      df: 0
+    - term: autodiegetisches Erzählen
+      concept_id: voice_protagonist
+      source_tier: academic
+      df: 0
+    - term: Ich-Protagonist
+      concept_id: voice_protagonist
+      source_tier: academic
+      df: 0
+    - term: Protagonist als Erzähler
+      concept_id: voice_protagonist
+      source_tier: craft
+      df: 0
+    - term: Hauptfigur als Erzähler
+      concept_id: voice_protagonist
+      source_tier: craft
+      df: 0
+    - term: erzählende Hauptfigur
+      concept_id: voice_protagonist
+      source_tier: craft
+      df: 0
+    - term: Held als Erzähler
+      concept_id: voice_protagonist
+      source_tier: craft
+      df: 0
+    - term: Ich-Erzähler als Hauptfigur
+      concept_id: voice_protagonist
+      source_tier: craft
+      df: 0
+    - term: narratoriale Erzählhaltung
+      concept_id: stance_narratorial
+      source_tier: academic
+      df: 0
+    - term: narratoriales Erzählen
+      concept_id: stance_narratorial
+      source_tier: academic
+      df: 0
+    - term: narratoriale Darstellung
+      concept_id: stance_narratorial
+      source_tier: academic
+      df: 0
+    - term: Erzählerdiskurs
+      concept_id: stance_narratorial
+      source_tier: academic
+      df: 0
+    - term: auktoriale Erzählhaltung
+      concept_id: stance_narratorial
+      source_tier: academic
+      df: 0
+    - term: auktoriales Erzählen
+      concept_id: stance_narratorial
+      source_tier: academic
+      df: 0
+    - term: Erzählervermittlung
+      concept_id: stance_narratorial
+      source_tier: academic
+      df: 0
+    - term: Erzählerwertung
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 0
+    - term: Erzähleinmischung
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 0
+    - term: Erzählerintervention
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 0
+    - term: Erzählerbemerkung
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 0
+    - term: eingreifender Erzähler
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 0
+    - term: kommentierender Erzähler
+      concept_id: stance_narratorial
+      source_tier: craft
+      df: 0
+    - term: figurale Erzählhaltung
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: figurales Erzählen
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: figurale Darstellung
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: figurale Perspektive
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: Reflektorfigur
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: Reflektormodus
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: figurenbezogenes Erzählen
+      concept_id: stance_figural
+      source_tier: academic
+      df: 0
+    - term: figurennahe Darstellung
+      concept_id: stance_figural
+      source_tier: craft
+      df: 0
+    - term: Figurenstimme im Erzählen
+      concept_id: stance_figural
+      source_tier: craft
+      df: 0
+    - term: figurennahe Sprache
+      concept_id: stance_figural
+      source_tier: craft
+      df: 0
+    - term: Figurenfilter
+      concept_id: stance_figural
+      source_tier: craft
+      df: 0
+    - term: subjektive Figurenperspektive
+      concept_id: stance_figural
+      source_tier: craft
+      df: 0
+    - term: Deep POV
+      concept_id: stance_figural
+      source_tier: craft
+      df: 0
+    - term: Fokalisator
+      concept_id: focalization_general
+      source_tier: academic
+      df: 0
+    - term: Fokalisierungsfigur
+      concept_id: focalization_general
+      source_tier: academic
+      df: 0
+    - term: Fokalisierungsinstanz
+      concept_id: focalization_general
+      source_tier: academic
+      df: 0
+    - term: fokalisierende Figur
+      concept_id: focalization_general
+      source_tier: academic
+      df: 0
+    - term: fokalisierte Figur
+      concept_id: focalization_general
+      source_tier: academic
+      df: 0
+    - term: Wahrnehmungsinstanz
+      concept_id: focalization_general
+      source_tier: academic
+      df: 0
+    - term: Fokalisierungstyp
+      concept_id: focalization_general
+      source_tier: academic
+      df: 0
+    - term: Fokalisationszentrum
+      concept_id: focalization_general
+      source_tier: academic
+      df: 0
+    - term: Wahrnehmungshorizont
+      concept_id: focalization_general
+      source_tier: craft
+      df: 0
+    - term: Wissensstand des Erzählers
+      concept_id: focalization_general
+      source_tier: craft
+      df: 0
+    - term: Informationszugang
+      concept_id: focalization_general
+      source_tier: craft
+      df: 0
+    - term: Wissensbegrenzung
+      concept_id: focalization_general
+      source_tier: craft
+      df: 0
+    - term: Beschränkung der Perspektive
+      concept_id: focalization_general
+      source_tier: craft
+      df: 0
+    - term: Nullfokalisierung
+      concept_id: focalization_zero
+      source_tier: academic
+      df: 0
+    - term: Null-Fokalisierung
+      concept_id: focalization_zero
+      source_tier: academic
+      df: 0
+    - term: unfokalisierte Erzählung
+      concept_id: focalization_zero
+      source_tier: academic
+      df: 0
+    - term: uneingeschränkte Fokalisierung
+      concept_id: focalization_zero
+      source_tier: academic
+      df: 0
+    - term: unbeschränktes Erzählerwissen
+      concept_id: focalization_zero
+      source_tier: academic
+      df: 0
+    - term: allwissende Erzählerin
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 0
+    - term: Allwissenheit des Erzählers
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 0
+    - term: Götterperspektive
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 0
+    - term: Gottperspektive
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 0
+    - term: Überblicksperspektive
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 0
+    - term: unbegrenzte Perspektive
+      concept_id: focalization_zero
+      source_tier: craft
+      df: 0
+    - term: interne Fokalisierung
+      concept_id: focalization_internal
+      source_tier: academic
+      df: 0
+    - term: innere Fokalisierung
+      concept_id: focalization_internal
+      source_tier: academic
+      df: 0
+    - term: intern fokalisierte Erzählung
+      concept_id: focalization_internal
+      source_tier: academic
+      df: 0
+    - term: figurenbezogene Fokalisierung
+      concept_id: focalization_internal
+      source_tier: academic
+      df: 0
+    - term: figureninterne Perspektive
+      concept_id: focalization_internal
+      source_tier: academic
+      df: 0
+    - term: begrenztes Figurenwissen
+      concept_id: focalization_internal
+      source_tier: academic
+      df: 0
+    - term: beschränktes Erzählerwissen
+      concept_id: focalization_internal
+      source_tier: academic
+      df: 0
+    - term: begrenzte Figurenperspektive
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 0
+    - term: beschränkte Perspektive
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 0
+    - term: limited third person
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 0
+    - term: begrenzte Allwissenheit
+      concept_id: focalization_internal
+      source_tier: craft
+      df: 0
+    - term: externe Fokalisierung
+      concept_id: focalization_external
+      source_tier: academic
+      df: 0
+    - term: äußere Fokalisierung
+      concept_id: focalization_external
+      source_tier: academic
+      df: 0
+    - term: extern fokalisierte Erzählung
+      concept_id: focalization_external
+      source_tier: academic
+      df: 0
+    - term: kein Innenzugang
+      concept_id: focalization_external
+      source_tier: academic
+      df: 0
+    - term: neutraler Erzähler
+      concept_id: focalization_external
+      source_tier: craft
+      df: 0
+    - term: neutrale Erzählsituation
+      concept_id: focalization_external
+      source_tier: craft
+      df: 0
+    - term: neutrale Erzählweise
+      concept_id: focalization_external
+      source_tier: craft
+      df: 0
+    - term: Kameraauge
+      concept_id: focalization_external
+      source_tier: craft
+      df: 0
+    - term: Kamera-Erzähler
+      concept_id: focalization_external
+      source_tier: craft
+      df: 0
+    - term: fixe Fokalisierung
+      concept_id: focalization_fixed
+      source_tier: academic
+      df: 0
+    - term: feste Fokalisierung
+      concept_id: focalization_fixed
+      source_tier: academic
+      df: 0
+    - term: fixed focalization
+      concept_id: focalization_fixed
+      source_tier: academic
+      df: 0
+    - term: konstante Fokalisierung
+      concept_id: focalization_fixed
+      source_tier: academic
+      df: 0
+    - term: feste interne Fokalisierung
+      concept_id: focalization_fixed
+      source_tier: academic
+      df: 0
+    - term: einheitliche Fokalisierung
+      concept_id: focalization_fixed
+      source_tier: academic
+      df: 0
+    - term: konstante Erzählperspektive
+      concept_id: focalization_fixed
+      source_tier: craft
+      df: 0
+    - term: einheitliche Figurenperspektive
+      concept_id: focalization_fixed
+      source_tier: craft
+      df: 0
+    - term: durchgehende Perspektive
+      concept_id: focalization_fixed
+      source_tier: craft
+      df: 0
+    - term: gleichbleibende Perspektive
+      concept_id: focalization_fixed
+      source_tier: craft
+      df: 0
+    - term: variable Fokalisierung
+      concept_id: focalization_variable
+      source_tier: academic
+      df: 0
+    - term: wechselnde Fokalisierung
+      concept_id: focalization_variable
+      source_tier: academic
+      df: 0
+    - term: variable interne Fokalisierung
+      concept_id: focalization_variable
+      source_tier: academic
+      df: 0
+    - term: Perspektivenpluralität
+      concept_id: focalization_variable
+      source_tier: academic
+      df: 0
+    - term: wechselnde Figurenperspektiven
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 0
+    - term: mehrere Perspektivfiguren
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 0
+    - term: wechselnde Erzählperspektiven
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 0
+    - term: multiple Perspektiven
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 0
+    - term: alternierende Erzähler
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 0
+    - term: Dual-POV
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 0
+    - term: mehrere Ich-Erzähler
+      concept_id: focalization_variable
+      source_tier: craft
+      df: 0
+    - term: wahrnehmendes Subjekt
+      concept_id: pov_subject
+      source_tier: academic
+      df: 0
+    - term: Subjekt der Wahrnehmung
+      concept_id: pov_subject
+      source_tier: academic
+      df: 0
+    - term: erlebendes Subjekt
+      concept_id: pov_subject
+      source_tier: academic
+      df: 0
+    - term: Bewusstseinszentrum
+      concept_id: pov_subject
+      source_tier: academic
+      df: 0
+    - term: Erlebenszentrum
+      concept_id: pov_subject
+      source_tier: academic
+      df: 0
+    - term: Wahrnehmungsträger
+      concept_id: pov_subject
+      source_tier: academic
+      df: 0
+    - term: Erfahrungssubjekt
+      concept_id: pov_subject
+      source_tier: academic
+      df: 0
+    - term: Figur als Wahrnehmungsträger
+      concept_id: pov_subject
+      source_tier: craft
+      df: 0
+    - term: sinnliche Wahrnehmung der Figur
+      concept_id: pov_subject
+      source_tier: craft
+      df: 0
+    - term: Wahrnehmungsfigur
+      concept_id: pov_subject
+      source_tier: craft
+      df: 0
+    - term: Figurenwahrnehmung
+      concept_id: pov_subject
+      source_tier: craft
+      df: 0
+    - term: Blick durch die Figur
+      concept_id: pov_subject
+      source_tier: craft
+      df: 0
+    - term: Gegenstand der Wahrnehmung
+      concept_id: pov_object
+      source_tier: academic
+      df: 0
+    - term: wahrgenommene Figur
+      concept_id: pov_object
+      source_tier: academic
+      df: 0
+    - term: Gegenstand der Darstellung
+      concept_id: pov_object
+      source_tier: academic
+      df: 0
+    - term: beobachtete Figur
+      concept_id: pov_object
+      source_tier: academic
+      df: 0
+    - term: Figur als Objekt
+      concept_id: pov_object
+      source_tier: academic
+      df: 0
+    - term: äußere Figurenbeschreibung
+      concept_id: pov_object
+      source_tier: craft
+      df: 0
+    - term: Beschreibung des Aussehens
+      concept_id: pov_object
+      source_tier: craft
+      df: 0
+    - term: Beschreibung von Verhalten
+      concept_id: pov_object
+      source_tier: craft
+      df: 0
+    - term: äußere Charakterisierung
+      concept_id: pov_object
+      source_tier: craft
+      df: 0
+    - term: sichtbare Merkmale einer Figur
+      concept_id: pov_object
+      source_tier: craft
+      df: 0
+    - term: erzählender Modus
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 0
+    - term: diegetischer Modus
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 0
+    - term: gerafftes Erzählen
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 0
+    - term: narrativer Bericht
+      concept_id: mode_narrative
+      source_tier: academic
+      df: 0
+    - term: berichtendes Erzählen
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 0
+    - term: zusammenfassendes Erzählen
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 0
+    - term: Zeit zusammenraffen
+      concept_id: mode_narrative
+      source_tier: craft
+      df: 0
+    - term: dramatischer Modus
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 0
+    - term: szenischer Modus
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 0
+    - term: mimetischer Modus
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 0
+    - term: Zeitdeckung
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 0
+    - term: unmittelbare Darstellung
+      concept_id: mode_dramatic
+      source_tier: academic
+      df: 0
+    - term: szenisches Erzählen
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 0
+    - term: szenisch schreiben
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 0
+    - term: zeigen statt erklären
+      concept_id: mode_dramatic
+      source_tier: craft
+      df: 0
+    - term: narrativer und dramatischer Modus
+      concept_id: mode_balance
+      source_tier: academic
+      df: 0
+    - term: Verhältnis von Bericht und Szene
+      concept_id: mode_balance
+      source_tier: academic
+      df: 0
+    - term: Szene und Zusammenfassung
+      concept_id: mode_balance
+      source_tier: craft
+      df: 0
+    - term: Balance zwischen Zeigen und Erzählen
+      concept_id: mode_balance
+      source_tier: craft
+      df: 0
+    - term: Wechsel zwischen Bericht und Szene
+      concept_id: mode_balance
+      source_tier: craft
+      df: 0
+    - term: wann zeigen und wann erzählen
+      concept_id: mode_balance
+      source_tier: craft
+      df: 0
+    - term: Erzähltempo steuern
+      concept_id: mode_balance
+      source_tier: craft
+      df: 0
+    - term: Gedankenwiedergabe
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 0
+    - term: Innenzugang
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 0
+    - term: Darstellung des Innenlebens
+      concept_id: consciousness_access
+      source_tier: academic
+      df: 0
+    - term: Einblick ins Innenleben
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 0
+    - term: Innenperspektive der Figur
+      concept_id: consciousness_access
+      source_tier: craft
+      df: 0
+    - term: freie indirekte Rede
+      concept_id: thought_representation
+      source_tier: academic
+      df: 0
+    - term: freie indirekte Gedankenrede
+      concept_id: thought_representation
+      source_tier: academic
+      df: 0
+    - term: Gedankenrede
+      concept_id: thought_representation
+      source_tier: academic
+      df: 0
+    - term: direkte Gedankenrede
+      concept_id: thought_representation
+      source_tier: academic
+      df: 0
+    - term: indirekte Gedankenrede
+      concept_id: thought_representation
+      source_tier: academic
+      df: 0
+    - term: zitierter Monolog
+      concept_id: thought_representation
+      source_tier: academic
+      df: 0
+    - term: Gedankenwiedergabe
+      concept_id: thought_representation
+      source_tier: craft
+      df: 0
+    - term: Gedankenkennzeichnung
+      concept_id: thought_representation
+      source_tier: craft
+      df: 0
+    - term: Gedankenpassage
+      concept_id: thought_representation
+      source_tier: craft
+      df: 0
+    - term: psychische Distanz
+      concept_id: distance_depth
+      source_tier: academic
+      df: 0
+    - term: narrative Distanz
+      concept_id: distance_depth
+      source_tier: academic
+      df: 0
+    - term: Erzählerdistanz
+      concept_id: distance_depth
+      source_tier: academic
+      df: 0
+    - term: narrative Nähe
+      concept_id: distance_depth
+      source_tier: academic
+      df: 0
+    - term: Erzählnähe
+      concept_id: distance_depth
+      source_tier: academic
+      df: 0
+    - term: tiefe Perspektive
+      concept_id: distance_depth
+      source_tier: craft
+      df: 0
+    - term: Deep POV
+      concept_id: distance_depth
+      source_tier: craft
+      df: 0
+    - term: nahe Perspektive
+      concept_id: distance_depth
+      source_tier: craft
+      df: 0
+    - term: distanziertes Erzählen
+      concept_id: distance_depth
+      source_tier: craft
+      df: 0
+    - term: figurennahe Perspektive
+      concept_id: distance_depth
+      source_tier: craft
+      df: 0
+    - term: herauszoomen
+      concept_id: distance_depth
+      source_tier: craft
+      df: 0
+    - term: Kameradistanz
+      concept_id: distance_depth
+      source_tier: craft
+      df: 0
+    - term: Fokalisierungswechsel
+      concept_id: switching_consistency
+      source_tier: academic
+      df: 0
+    - term: Wechsel der Fokalisierung
+      concept_id: switching_consistency
+      source_tier: academic
+      df: 0
+    - term: Perspektivsprung
+      concept_id: switching_consistency
+      source_tier: academic
+      df: 0
+    - term: Wechsel des Wahrnehmungszentrums
+      concept_id: switching_consistency
+      source_tier: academic
+      df: 0
+    - term: Head-Hopping
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 0
+    - term: POV-Wechsel
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 0
+    - term: Perspektivbruch
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 0
+    - term: Perspektivtreue
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 0
+    - term: Perspektivkonsistenz
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 0
+    - term: Perspektivverletzung
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 0
+    - term: Perspektivübergang
+      concept_id: switching_consistency
+      source_tier: craft
+      df: 0
+    - term: multiple Fokalisierung
+      concept_id: multiple_focalization_same_event
+      source_tier: academic
+      df: 0
+    - term: mehrfache Fokalisierung
+      concept_id: multiple_focalization_same_event
+      source_tier: academic
+      df: 0
+    - term: wiederholte Fokalisierung
+      concept_id: multiple_focalization_same_event
+      source_tier: academic
+      df: 0
+    - term: mehrfache Erzählung desselben Ereignisses
+      concept_id: multiple_focalization_same_event
+      source_tier: craft
+      df: 0
+    - term: dieselbe Szene aus verschiedenen Perspektiven
+      concept_id: multiple_focalization_same_event
+      source_tier: craft
+      df: 0
+    - term: unterschiedliche Versionen desselben Geschehens
+      concept_id: multiple_focalization_same_event
+      source_tier: craft
+      df: 0
+    - term: Informationssteuerung
+      concept_id: information_control
+      source_tier: academic
+      df: 0
+    - term: Informationsverteilung
+      concept_id: information_control
+      source_tier: academic
+      df: 0
+    - term: Wissensverteilung
+      concept_id: information_control
+      source_tier: academic
+      df: 0
+    - term: Wissensasymmetrie
+      concept_id: information_control
+      source_tier: academic
+      df: 0
+    - term: Paralipse
+      concept_id: information_control
+      source_tier: academic
+      df: 0
+    - term: Paralepse
+      concept_id: information_control
+      source_tier: academic
+      df: 0
+    - term: Informationen preisgeben
+      concept_id: information_control
+      source_tier: craft
+      df: 0
+    - term: Informationen enthüllen
+      concept_id: information_control
+      source_tier: craft
+      df: 0
+    - term: Wissen der Figur
+      concept_id: information_control
+      source_tier: craft
+      df: 0
+    - term: verzögerte Enthüllung
+      concept_id: information_control
+      source_tier: craft
+      df: 0
+    - term: Informationsbeschränkung
+      concept_id: information_control
+      source_tier: craft
+      df: 0
+    - term: unzuverlässige Erzählerin
+      concept_id: reliability
+      source_tier: academic
+      df: 0
+    - term: unzuverlässiges Erzählen
+      concept_id: reliability
+      source_tier: academic
+      df: 0
+    - term: erzählerische Unzuverlässigkeit
+      concept_id: reliability
+      source_tier: academic
+      df: 0
+    - term: Zuverlässigkeit des Erzählers
+      concept_id: reliability
+      source_tier: academic
+      df: 0
+    - term: unglaubwürdiger Erzähler
+      concept_id: reliability
+      source_tier: craft
+      df: 0
+    - term: täuschender Erzähler
+      concept_id: reliability
+      source_tier: craft
+      df: 0
+    - term: naiver Erzähler
+      concept_id: reliability
+      source_tier: craft
+      df: 0
+    - term: voreingenommener Erzähler
+      concept_id: reliability
+      source_tier: craft
+      df: 0
+    - term: unzuverlässiger Ich-Erzähler
+      concept_id: reliability
+      source_tier: craft
+      df: 0
+    - term: Glaubwürdigkeit des Erzählers
+      concept_id: reliability
+      source_tier: craft
+      df: 0
+    - term: extradiegetischer Erzähler
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 0
+    - term: intradiegetischer Erzähler
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 0
+    - term: metadiegetische Erzählung
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 0
+    - term: retrospektives Erzählen
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 0
+    - term: nachträgliches Erzählen
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 0
+    - term: gleichzeitiges Erzählen
+      concept_id: narrator_level_time
+      source_tier: academic
+      df: 0
+    - term: Rahmenerzähler
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 0
+    - term: Geschichte in der Geschichte
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 0
+    - term: rückblickende Ich-Erzählung
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 0
+    - term: erzählendes Präsens
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 0
+    - term: Erzählen im Präteritum
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 0
+    - term: Rückschau des Erzählers
+      concept_id: narrator_level_time
+      source_tier: craft
+      df: 0
+    - term: Wahrnehmungsverben
+      concept_id: filter_words
+      source_tier: academic
+      df: 0
+    - term: Kognitionsverben
+      concept_id: filter_words
+      source_tier: academic
+      df: 0
+    - term: Verben der Wahrnehmung
+      concept_id: filter_words
+      source_tier: academic
+      df: 0
+    - term: Verben des Denkens
+      concept_id: filter_words
+      source_tier: academic
+      df: 0
+    - term: Filterwörter
+      concept_id: filter_words
+      source_tier: craft
+      df: 0
+    - term: Filterverben
+      concept_id: filter_words
+      source_tier: craft
+      df: 0
+    - term: Distanzwörter
+      concept_id: filter_words
+      source_tier: craft
+      df: 0
+    - term: Gedankenmarker
+      concept_id: filter_words
+      source_tier: craft
+      df: 0
+    - term: Denkverben
+      concept_id: filter_words
+      source_tier: craft
+      df: 0
+    - term: Signalverben
+      concept_id: filter_words
+      source_tier: craft
+      df: 0
+    - term: Figurenidentifikation
+      concept_id: reader_effect
+      source_tier: academic
+      df: 0
+    - term: Perspektivübernahme
+      concept_id: reader_effect
+      source_tier: academic
+      df: 0
+    - term: narrative Empathie
+      concept_id: reader_effect
+      source_tier: academic
+      df: 0
+    - term: narrative Transportation
+      concept_id: reader_effect
+      source_tier: academic
+      df: 0
+    - term: narrative Immersion
+      concept_id: reader_effect
+      source_tier: academic
+      df: 0
+    - term: Leserbeteiligung
+      concept_id: reader_effect
+      source_tier: academic
+      df: 0
+    - term: Leserempathie
+      concept_id: reader_effect
+      source_tier: craft
+      df: 0
+    - term: Einfühlung in die Figur
+      concept_id: reader_effect
+      source_tier: craft
+      df: 0
+    - term: Identifikation mit der Figur
+      concept_id: reader_effect
+      source_tier: craft
+      df: 0
+    - term: Nähe zur Hauptfigur
+      concept_id: reader_effect
+      source_tier: craft
+      df: 0
+    - term: emotionale Distanz
+      concept_id: reader_effect
+      source_tier: craft
+      df: 0
+    - term: Redewiedergabe
+      concept_id: speech_dialogue
+      source_tier: academic
+      df: 0
+    - term: Rededarstellung
+      concept_id: speech_dialogue
+      source_tier: academic
+      df: 0
+    - term: Redebericht
+      concept_id: speech_dialogue
+      source_tier: academic
+      df: 0
+    - term: Redebegleitung
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 0
+    - term: Dialogtag
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 0
+    - term: Dialogszene
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 0
+    - term: Dialog und Erzählen
+      concept_id: speech_dialogue
+      source_tier: craft
+      df: 0
+    - term: Erzählerstil
+      concept_id: narrative_style_voice
+      source_tier: academic
+      df: 0
+    - term: Figurenstimme
+      concept_id: narrative_style_voice
+      source_tier: academic
+      df: 0
+    - term: individuelle Erzählstimme
+      concept_id: narrative_style_voice
+      source_tier: craft
+      df: 0
+    - term: Figurenidiom
+      concept_id: narrative_style_voice
+      source_tier: craft
+      df: 0
+    - term: Sprachfärbung
+      concept_id: narrative_style_voice
+      source_tier: craft
+      df: 0
+    - term: stimmige Erzählerstimme
+      concept_id: narrative_style_voice
+      source_tier: craft
+      df: 0
+    - term: Perspektivstrategie
+      concept_id: choice_tradeoffs
+      source_tier: academic
+      df: 0
+    - term: Wahl der Fokalisierung
+      concept_id: choice_tradeoffs
+      source_tier: academic
+      df: 0
+    - term: narratologische Perspektivwahl
+      concept_id: choice_tradeoffs
+      source_tier: academic
+      df: 0
+    - term: Vor- und Nachteile der Ich-Perspektive
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 0
+    - term: Vor- und Nachteile der Er-Perspektive
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 0
+    - term: Perspektivenwahl
+      concept_id: choice_tradeoffs
+      source_tier: craft
+      df: 0
+    - term: \bhomodiegetisch\w*\b
+      concept_id: regex:voice_homodiegetic
+      kind: regex
+      df: 0
+    - term: \bautodiegetisch\w*\b
+      concept_id: regex:voice_protagonist
+      kind: regex
+      df: 0
+    - term: \b(?:intern|inner)\w*\s+fokalisier\w*\b
+      concept_id: regex:focalization_internal
+      kind: regex
+      df: 0
+    - term: \b(?:extern|äußer)\w*\s+fokalisier\w*\b
+      concept_id: regex:focalization_external
+      kind: regex
+      df: 0
+    - term: \b(?:variabl|wechselnd)\w*\s+fokalisier\w*\b
+      concept_id: regex:focalization_variable
+      kind: regex
+      df: 0
+    - term: \bfigural\w*\s+(?:erzählhalt|darstell|erzähl)\w*\b
+      concept_id: regex:stance_figural
+      kind: regex
+      df: 0
+    - term: \bnarratorial\w*\s+(?:erzählhalt|darstell|erzähl)\w*\b
+      concept_id: regex:stance_narratorial
+      kind: regex
+      df: 0
+    counts:
+      high: 92
+      supporting: 91
+      demoted: 3
+      unvalidated: 333
+catalogue_candidates:
+  en:
+  - narrative perspective
+  - narrative point of view
+  - narrative viewpoint
+  - narrative situation
+  - narratorial perspective
+  - point of view
+  - viewpoint character
+  - POV character
+  - story perspective
+  - narrative angle
+  - narrative stance
+  - choice of perspective
+  - choice of viewpoint
+  - narrative voice
+  - narrating instance
+  - narratorial voice
+  - narrator's voice
+  - narrative agency
+  - narrating subject
+  - narrating voice
+  - choice of narrator
+  - narrator's identity
+  - storyteller's voice
+  - narrator's role
+  - first-person narration
+  - first-person narrative
+  - first-person narrator
+  - first-person point of view
+  - first-person perspective
+  - first-person pronoun
+  - first person
+  - first-person POV
+  - first person singular
+  - writing in first person
+  - first-person viewpoint
+  - first-person plural
+  - second-person narration
+  - second-person narrator
+  - second-person narrative
+  - second-person point of view
+  de:
+  - narrative Perspektive
+  - Wahl der Erzählperspektive
+  - narrative Stimme
+  - Stimme des Erzählers
+  - Erzählung in der ersten Person
+  - erste Person Singular
+  - Ich-Form schreiben
+  - erste Person
+  - Erzählung in der zweiten Person
+  - zweite Person
+  - Erzählung in der dritten Person
+  - dritte Person
+  - heterodiegetischer Erzähler
+  - unsichtbarer Erzähler
+  - erzählende Figur
+  - Erzähler als Beobachter
+  - personale Erzählhaltung
+  - personales Erzählen
+  - erlebte Rede
+  - unmittelbares Erleben
+  - personale Erzählweise
+  - auktoriale Erzählsituation
+  - allwissender Erzähler
+  - auktorialer Erzähler
+  - auktoriale Erzählperspektive
+  - personale Erzählsituation
+  - personale Erzählperspektive
+  - personaler Erzähler
+  - subjektive Erzählperspektive
+  - objektive Erzählweise
+  - objektive Erzählperspektive
+  - eine Perspektivfigur
+  - multiperspektivisches Erzählen
+  - subjektive Wahrnehmung
+  - erlebende Figur
+  - narrativer Modus
+  - erzählerische Vermittlung
+  - erzählerische Zusammenfassung
+  - szenische Darstellung
+  - zeitdeckendes Erzählen
