@@ -131,11 +131,21 @@ def main() -> None:
         _run(cmd, log)
 
         _run([py, "-m", "src.retrieval.report", "--version", "v03"], log)
-        _run([py, "-m", "src.retrieval.eval_sample", "--version", "v03"], log)
+        # Preserve frozen v0.3 sample; generate probability + diversity v0.4 designs
+        # with lexicon-dev held-out books excluded by default.
+        held = DATA_INTERIM / "retrieval" / "lexicon_dev_held_out_books_v03.txt"
+        eval_cmd = [py, "-m", "src.retrieval.eval_sample", "--version", "v04"]
+        if held.is_file():
+            eval_cmd.extend(["--held-out-file", str(held)])
+        _run(eval_cmd, log)
 
         if not args.skip_manifest:
             _run(
                 [py, "-m", "src.retrieval.passage_manifest", "--lang", args.lang],
+                log,
+            )
+            _run(
+                [py, "-m", "src.retrieval.corpus_snapshot", "--lang", args.lang],
                 log,
             )
 

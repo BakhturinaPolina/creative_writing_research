@@ -1,12 +1,27 @@
-"""Deterministic streaming reservoir sampling for evaluation strata."""
+"""Deterministic streaming reservoir sampling for evaluation strata.
+
+Stratum seeds are derived with BLAKE2b so results do not depend on
+PYTHONHASHSEED or process-local ``hash()``.
+"""
 from __future__ import annotations
 
+import hashlib
 from dataclasses import dataclass, field
 from typing import Generic, Iterable, TypeVar
 
 import numpy as np
 
 T = TypeVar("T")
+
+# Inclusive upper bound for numpy Generator seeds (signed 32-bit positive).
+_SEED_MOD = 2**31 - 1
+
+
+def derive_stratum_seed(master_seed: int, stratum: str) -> int:
+    """Stable per-stratum seed in ``[0, 2**31 - 2]`` from master seed + name."""
+    payload = f"{int(master_seed)}\0{stratum}".encode("utf-8")
+    digest = hashlib.blake2b(payload, digest_size=8).digest()
+    return int.from_bytes(digest, "big") % _SEED_MOD
 
 
 @dataclass
@@ -20,7 +35,7 @@ class ReservoirSample(Generic[T]):
     seen: int = 0
 
     def __post_init__(self) -> None:
-        self.rng = np.random.default_rng(self.seed)
+        self.rng = np.random.default_rng(int(self.seed) % _SEED_MOD)
         if self.k < 0:
             raise ValueError("k must be >= 0")
 
@@ -50,6 +65,13 @@ class ReservoirSample(Generic[T]):
             return None
         return min(1.0, self.k / self.seen)
 
+    @property
+    def sampling_weight(self) -> float | None:
+        pi = self.inclusion_probability
+        if pi is None or pi == 0:
+            return None
+        return 1.0 / pi
+
 
 @dataclass
 class StratifiedReservoirs(Generic[T]):
@@ -61,8 +83,7 @@ class StratifiedReservoirs(Generic[T]):
 
     def _get(self, stratum: str) -> ReservoirSample[T]:
         if stratum not in self._reservoirs:
-            # Derive a stable per-stratum seed from the master seed + stratum name.
-            h = abs(hash((self.seed, stratum))) % (2**31 - 1)
+            h = derive_stratum_seed(self.seed, stratum)
             self._reservoirs[stratum] = ReservoirSample(k=self.k_per_stratum, seed=h)
         return self._reservoirs[stratum]
 
@@ -71,18 +92,26 @@ class StratifiedReservoirs(Generic[T]):
 
     def all_items(self) -> list[T]:
         out: list[T] = []
-        for r in self._reservoirs.values():
-            out.extend(r.reservoir)
+        # Deterministic traversal order of strata.
+        for s in sorted(self._reservoirs.keys()):
+            out.extend(self._reservoirs[s].reservoir)
         return out
 
     def meta(self) -> dict[str, dict]:
         return {
             s: {
                 "population_size": r.population_size,
+                "N_h": r.population_size,
                 "k": r.k,
+                "n_h": len(r.reservoir),
                 "n_sampled": len(r.reservoir),
                 "inclusion_probability": r.inclusion_probability,
+                "sampling_weight": r.sampling_weight,
                 "seed": r.seed,
             }
-            for s, r in self._reservoirs.items()
+            for s, r in sorted(self._reservoirs.items())
         }
+
+    @property
+    def master_seed(self) -> int:
+        return self.seed
