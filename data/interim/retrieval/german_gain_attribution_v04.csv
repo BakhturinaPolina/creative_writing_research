@@ -1,0 +1,5 @@
+concept_id,n_v02,n_algo_fix,n_v03,gained_algo_fix,gained_vocab_or_tiers,algo_new_causes,vocab_new_causes,delta_gained_algo,delta_gained_vocab
+focalization_zero,5,8,133,3,125,"{""dict_allwissen+strong_override"": 3}","{""dict_allwissen+regex+strong_override"": 22, ""regex+strong_override"": 103}",3,125
+stance_narratorial,2,5,103,3,98,"{""dict_auktorial+strong_override"": 3}","{""dict_auktorial+regex+strong_override"": 98}",3,98
+stance_figural,10,17,75,7,58,"{""dict_personal+strong_override"": 7}","{""dict_personal+regex+strong_override"": 58}",7,58
+grammatical_third_person,46,47,89,1,42,"{""strong_override"": 1}","{""regex+strong_override"": 42}",1,42

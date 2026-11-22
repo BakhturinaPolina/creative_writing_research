@@ -72,7 +72,7 @@ Streaming only: one book JSON resident; BM25 uses two corpus passes and top-k he
 # Regression tests (required before full runs)
 .venv/bin/python -m pytest tests/retrieval -q
 
-# v0.3 pipeline (algo-fix → B v0.3 → C v0.3 → report → eval → manifest)
+# v0.3 pipeline (algo-fix → B v0.3 → C v0.3 → report → v0.4 eval → manifest/snapshot)
 .venv/bin/python -m src.retrieval.run_all --lang all --pipeline v03
 
 # Individual steps
@@ -80,16 +80,53 @@ Streaming only: one book JSON resident; BM25 uses two corpus passes and top-k he
 .venv/bin/python -m src.retrieval.keyword_baselines --baseline b --lang all --lexicon-version v03
 .venv/bin/python -m src.retrieval.bm25_passages --lang all --lexicon-version v03 --top-k 500
 .venv/bin/python -m src.retrieval.report --version v03
-.venv/bin/python -m src.retrieval.eval_sample --version v03
+.venv/bin/python -m src.retrieval.report --version set_algebra
+.venv/bin/python -m src.retrieval.eval_sample --version v04
 .venv/bin/python -m src.retrieval.passage_manifest --lang all
+.venv/bin/python -m src.retrieval.corpus_snapshot --lang all
 .venv/bin/python -m src.retrieval.dev_sample   # BM25-only lexicon-expansion holdout
+.venv/bin/python -m src.retrieval.matcher_audit --n-per-lang 200
+.venv/bin/python -m src.retrieval.de_vocab_audit
 ```
+
 
 Optional `--with-passages` writes gitignored sidecars under `data/interim/retrieval/*_passages.csv`.
 
-## Evaluation sample (v0.3)
+## Evaluation samples
 
-`manual_eval_sample_v03.csv` uses mutually exclusive strata and **reservoir sampling** over the full non-retrieved corpus (no early stop at 5,000 paragraphs). Annotator view: `manual_eval_sample_v03_annotator.csv` hides method/rank/predicted concept. Review fields stay empty (no gold labels). Stratified candidate samples do **not** estimate absolute corpus-wide recall.
+| Sample | Role |
+|---|---|
+| `manual_eval_sample_v03.*` | **Frozen** 247-passage sample (do not overwrite) |
+| `manual_eval_sample_prob_v04.*` | Design A — probability-based; records `N_h`, `n_h`, `π_h`, weights |
+| `manual_eval_sample_diversity_v04.*` | Design B — book-diversity diagnostic; **no** probability weights |
+| `manual_eval_sample_v03_v04_reconciliation.csv` | Passage overlap across samples |
+
+Design A estimates refer to stratum populations inside the **independent evaluation population** (analysis set minus lexicon-dev held-out books). Design B is qualitative only. Annotator CSVs hide method/rank/predicted concept. Review fields stay empty until human coding.
+
+```bash
+.venv/bin/python -m src.retrieval.eval_sample --version v04
+```
+
+## BM25 set algebra (v0.4)
+
+Canonical key: `(passage_id, retrieval_concept_id)`. Report: `retrieval_set_algebra_v04.md`.
+Genuinely new BM25 assignments are **`B \ L`**, not merely “absent from qualified BM25”.
+
+## Corpus snapshot (candidate)
+
+```bash
+.venv/bin/python -m src.retrieval.corpus_snapshot --lang all
+```
+
+Writes `corpus_manifest_{lang}_v1_candidate.csv` and hashed `passage_manifest_{lang}_v1_candidate.csv` under snapshot ID `corpus_snapshot_analysis_v1_candidate_20261122`. Full texts stay private.
+
+## German lexical audit
+
+```bash
+.venv/bin/python -m src.retrieval.de_vocab_audit
+```
+
+Provisional AI assessments only — see `german_lexical_audit_v04.md`.
 
 ## Hugging Face Jobs (CPU) fallback
 

@@ -43,6 +43,20 @@ Status values: `provisional` (open for revision), `frozen` (changes need a new D
 ## Entries
 
 ## 2026-11-22 | Week 16 | Phase: Retrieval
+**Goal:** Finalize lexical IR (v0.4 infrastructure) before semantic retrieval: deterministic sampling, BM25 set algebra, German audit, corpus snapshot.
+**Done:**
+- BLAKE2b stratum seeds; Design A probability sample (247) + Design B diversity (160); v0.3 sample preserved; reconciliation written.
+- Set algebra report: EN/DE `L,Bq,B,B\L` with passage-level new vs new-on-known; BM25 code subtracts `L` for future genuinely-new exports.
+- Tests **143 passed**; matcher audit 200/lang, 0 diffs (finite — no equivalence claim).
+- German audit: gains mostly vocab/regex; 78 review rows; 2042 provenance rows; **no lexicon edit** pending human decisions.
+- Corpus snapshot candidate `corpus_snapshot_analysis_v1_candidate_20261122`: EN 315,302 / DE 42,623 hashed passages; extreme EN 49 / DE 7; peak RSS ≈188 MB.
+- No rewrite of frozen v0.3 lexical/BM25 assignment CSVs.
+**Data/outputs:** `docs/lexical_retrieval_finalization_*.md`, `docs/retrieval_v04_changelog.md`, `manual_eval_sample_*_v04.*`, `retrieval_set_algebra_v04.*`, `german_*_v04.*`, `corpus_manifest_*_v1_candidate.csv`, `passage_manifest_*_v1_candidate.csv`.
+**Decisions:** DEC — probability vs diversity samples are separate designs; BM25-only = `B\L` at assignment key; snapshot labelled **candidate** while cleaning ongoing.
+**Problems / open questions:** Genette/Stanzel dictionary overlap; `allwissen*` FP risk; DE zero-hit concepts with BM25-only hits; extreme paragraph policy for embeddings.
+**Next:** Human review of `german_audit_review_v04.csv` and eval coding; then semantic retrieval on hashed manifests — not before human lexicon decisions if they change matching.
+
+## 2026-11-22 | Week 16 | Phase: Retrieval
 **Goal:** PsyPer retrieval v0.3 — shared prefilter/variants, PsyPer tag metadata, evidence tiers, lexicon expansion, reservoir eval sample, full bilingual re-run, passage manifest.
 **Done:**
 - Preserved all v0.2 outputs/configs. Added `config/pov_lexicon_psyper_en_de_v0.3.yml`, `config/regex_concept_map_v03.yml`, `docs/retrieval_v03_changelog.md`.

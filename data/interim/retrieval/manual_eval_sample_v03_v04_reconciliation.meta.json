@@ -1,0 +1,47 @@
+{
+  "built": "2026-11-22 19:23",
+  "built_utc": "2026-11-22T18:23:37Z",
+  "git_commit": "89b3c88ae443eb00e2e8ccf9f5fcb630dab5d46f",
+  "git_commit_short": "",
+  "git_working_tree_dirty": true,
+  "code_config_fingerprint": "353b51e3d3ac8fa530fd8a05f78bd8fa21708cb34a8ef9f7edb5aab6b8054bab",
+  "reproducibility_note": "Working tree dirty; attribute via code_config_fingerprint, not git_commit alone.",
+  "corpus_snapshot_id": "corpus_snapshot_analysis_v1_candidate_20261122",
+  "software": {
+    "python": "3.14.4",
+    "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.43",
+    "pandas": "3.0.6",
+    "yaml": "6.0.3",
+    "numpy": "2.5.3",
+    "rank_bm25": "not_installed"
+  },
+  "peak_rss_mb": 349.6,
+  "corpus_denominators": {
+    "en": {
+      "available": true,
+      "n_books_analysis": 442,
+      "n_books_total": 503,
+      "body_words": 34581264.0,
+      "book_stats_sha256": "b9d1942199d90323007f42d7fd4f0616d884e09a9c1dce02381096e60b5999eb"
+    },
+    "de": {
+      "available": true,
+      "n_books_analysis": 67,
+      "n_books_total": 78,
+      "body_words": 4665385.0,
+      "book_stats_sha256": "382a44f0305208d58a6eeabbdb401b17516b5849a617425d7e500b87501008d3"
+    }
+  },
+  "book_stats_hashes": {
+    "en": "b9d1942199d90323007f42d7fd4f0616d884e09a9c1dce02381096e60b5999eb",
+    "de": "382a44f0305208d58a6eeabbdb401b17516b5849a617425d7e500b87501008d3"
+  },
+  "kind": "manual_eval_sample_reconciliation",
+  "n_v03": 247,
+  "n_prob_v04": 247,
+  "n_diversity_v04": 160,
+  "overlap_v03_prob": 27,
+  "overlap_v03_diversity": 5,
+  "overlap_prob_diversity": 12,
+  "note": "v0.3 sample preserved; v0.4 designs are additive."
+}
