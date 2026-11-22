@@ -19,3 +19,4 @@ lingua-language-detector
 mobi
 tabulate
 rank_bm25
+plotly
