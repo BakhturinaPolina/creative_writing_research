@@ -1,0 +1,8 @@
+passage_id,book_id,language,character_count,word_count,segmentation_status,qc_flags,primary_group
+de_26856f179d5e:c4:p0,de_26856f179d5e,de,121264,17450,extreme_length,extreme_length,fiction_manual
+de_26856f179d5e:c7:p0,de_26856f179d5e,de,102129,15029,extreme_length,extreme_length;possible_ocr_spacing,fiction_manual
+de_314339722936:c1:p0,de_314339722936,de,220993,34450,extreme_length,extreme_length,fiction_manual
+de_314339722936:c3:p0,de_314339722936,de,165203,25578,extreme_length,extreme_length,fiction_manual
+de_3b73957550ed:c20:p0,de_3b73957550ed,de,499200,76645,extreme_length,extreme_length;possible_ocr_spacing,pedagogy_genre_craft
+de_3b73957550ed:c21:p0,de_3b73957550ed,de,214325,32282,extreme_length,extreme_length;possible_ocr_spacing,pedagogy_genre_craft
+de_3d46a7a7da96:c2:p0,de_3d46a7a7da96,de,213754,32427,extreme_length,extreme_length;possible_ocr_spacing,fiction_manual
