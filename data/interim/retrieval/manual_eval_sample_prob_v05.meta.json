@@ -1,0 +1,432 @@
+{
+  "built": "2026-11-22 20:16",
+  "built_utc": "2026-11-22T19:16:25Z",
+  "git_commit": "3ebddfe032d93326ee0ddf7c02c325d02c4f7c01",
+  "git_commit_short": "",
+  "git_working_tree_dirty": true,
+  "code_config_fingerprint": "74b0e09d091d721faf82a9c42927154ede42d4e148552be5c07839f5a22a3e3a",
+  "reproducibility_note": "Working tree dirty; attribute via code_config_fingerprint, not git_commit alone.",
+  "corpus_snapshot_id": "corpus_snapshot_analysis_v1_candidate_20261122",
+  "software": {
+    "python": "3.14.4",
+    "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.43",
+    "pandas": "3.0.6",
+    "yaml": "6.0.3",
+    "numpy": "2.5.3",
+    "rank_bm25": "not_installed"
+  },
+  "peak_rss_mb": 522.3,
+  "corpus_denominators": {
+    "en": {
+      "available": true,
+      "n_books_analysis": 442,
+      "n_books_total": 503,
+      "body_words": 34581264.0,
+      "book_stats_sha256": "b9d1942199d90323007f42d7fd4f0616d884e09a9c1dce02381096e60b5999eb"
+    },
+    "de": {
+      "available": true,
+      "n_books_analysis": 67,
+      "n_books_total": 78,
+      "body_words": 4665385.0,
+      "book_stats_sha256": "382a44f0305208d58a6eeabbdb401b17516b5849a617425d7e500b87501008d3"
+    }
+  },
+  "book_stats_hashes": {
+    "en": "b9d1942199d90323007f42d7fd4f0616d884e09a9c1dce02381096e60b5999eb",
+    "de": "382a44f0305208d58a6eeabbdb401b17516b5849a617425d7e500b87501008d3"
+  },
+  "kind": "manual_eval_sample_prob_v05",
+  "sampling_design": "A_probability_based_exclusive_populations",
+  "seed": 20261124,
+  "master_seed": 20261124,
+  "n_unique_passages": 250,
+  "strata": {
+    "high_ranked_qualified_bm25": 63,
+    "non_retrieved": 60,
+    "lower_ranked_qualified_bm25": 40,
+    "new_bm25_passages": 40,
+    "lexical_only": 32,
+    "bm25_expansion_known": 15
+  },
+  "languages": {
+    "en": 125,
+    "de": 125
+  },
+  "review_fields": [
+    "relevant_to_narrative_perspective",
+    "correct_concept_ids",
+    "concept_relevance",
+    "explicit_or_implicit_discussion",
+    "instruction_or_fictional_example",
+    "discussion_purpose",
+    "false_positive_reason",
+    "reviewer_notes"
+  ],
+  "stratum_meta": {
+    "master_seed": 20261124,
+    "languages": {
+      "en": {
+        "high_ranked_qualified_bm25": {
+          "N_h": 768,
+          "n_h": 20,
+          "inclusion_probability": 0.026041666666666668,
+          "sampling_weight": 38.4,
+          "seed": 1145868526,
+          "design": "srs_without_replacement",
+          "target_sample_size": 20,
+          "actual_sample_size": 20,
+          "population_size": 768,
+          "sampling_seed": 1145868526,
+          "stratum_id": "en::high_ranked_qualified_bm25",
+          "population_definition": "Exclusive primary stratum=high_ranked_qualified_bm25 within independent eval population"
+        },
+        "lower_ranked_qualified_bm25": {
+          "N_h": 2318,
+          "n_h": 20,
+          "inclusion_probability": 0.008628127696289905,
+          "sampling_weight": 115.9,
+          "seed": 1094088196,
+          "design": "srs_without_replacement",
+          "target_sample_size": 20,
+          "actual_sample_size": 20,
+          "population_size": 2318,
+          "sampling_seed": 1094088196,
+          "stratum_id": "en::lower_ranked_qualified_bm25",
+          "population_definition": "Exclusive primary stratum=lower_ranked_qualified_bm25 within independent eval population"
+        },
+        "lexical_only": {
+          "N_h": 2175,
+          "n_h": 20,
+          "inclusion_probability": 0.009195402298850575,
+          "sampling_weight": 108.75,
+          "seed": 1253205543,
+          "design": "srs_without_replacement",
+          "target_sample_size": 20,
+          "actual_sample_size": 20,
+          "population_size": 2175,
+          "sampling_seed": 1253205543,
+          "stratum_id": "en::lexical_only",
+          "population_definition": "Exclusive primary stratum=lexical_only within independent eval population"
+        },
+        "bm25_expansion_known": {
+          "N_h": 121,
+          "n_h": 15,
+          "inclusion_probability": 0.12396694214876033,
+          "sampling_weight": 8.066666666666666,
+          "seed": 1937950550,
+          "design": "srs_without_replacement",
+          "target_sample_size": 15,
+          "actual_sample_size": 15,
+          "population_size": 121,
+          "sampling_seed": 1937950550,
+          "stratum_id": "en::bm25_expansion_known",
+          "population_definition": "Exclusive primary stratum=bm25_expansion_known within independent eval population"
+        },
+        "new_bm25_passages": {
+          "N_h": 590,
+          "n_h": 20,
+          "inclusion_probability": 0.03389830508474576,
+          "sampling_weight": 29.5,
+          "seed": 1052307895,
+          "design": "srs_without_replacement",
+          "target_sample_size": 20,
+          "actual_sample_size": 20,
+          "population_size": 590,
+          "sampling_seed": 1052307895,
+          "stratum_id": "en::new_bm25_passages",
+          "population_definition": "Exclusive primary stratum=new_bm25_passages within independent eval population"
+        },
+        "non_retrieved": {
+          "contrast": {
+            "N_h": 6855,
+            "n_h": 10,
+            "inclusion_probability": 0.0014587892049598833,
+            "sampling_weight": 685.5,
+            "seed": 357698750,
+            "design": "srs_without_replacement",
+            "target_sample_size": 10,
+            "actual_sample_size": 10,
+            "population_size": 6855,
+            "sampling_seed": 357698750,
+            "stratum_id": "en::non_retrieved::contrast",
+            "population_definition": "Exclusive non_retrieved within independent eval population; primary_group=contrast"
+          },
+          "fiction_manual": {
+            "N_h": 168142,
+            "n_h": 10,
+            "inclusion_probability": 5.9473540221955255e-05,
+            "sampling_weight": 16814.2,
+            "seed": 229000666,
+            "design": "srs_without_replacement",
+            "target_sample_size": 10,
+            "actual_sample_size": 10,
+            "population_size": 168142,
+            "sampling_seed": 229000666,
+            "stratum_id": "en::non_retrieved::fiction_manual",
+            "population_definition": "Exclusive non_retrieved within independent eval population; primary_group=fiction_manual"
+          },
+          "pedagogy_genre_craft": {
+            "N_h": 96216,
+            "n_h": 10,
+            "inclusion_probability": 0.00010393281782655692,
+            "sampling_weight": 9621.6,
+            "seed": 1828088149,
+            "design": "srs_without_replacement",
+            "target_sample_size": 10,
+            "actual_sample_size": 10,
+            "population_size": 96216,
+            "sampling_seed": 1828088149,
+            "stratum_id": "en::non_retrieved::pedagogy_genre_craft",
+            "population_definition": "Exclusive non_retrieved within independent eval population; primary_group=pedagogy_genre_craft"
+          }
+        }
+      },
+      "de": {
+        "high_ranked_qualified_bm25": {
+          "N_h": 137,
+          "n_h": 43,
+          "inclusion_probability": 0.31386861313868614,
+          "sampling_weight": 3.186046511627907,
+          "seed": 2104395979,
+          "design": "srs_without_replacement",
+          "target_sample_size": 20,
+          "actual_sample_size": 43,
+          "population_size": 137,
+          "sampling_seed": 2104395979,
+          "stratum_id": "de::high_ranked_qualified_bm25",
+          "population_definition": "Exclusive primary stratum=high_ranked_qualified_bm25 within independent eval population"
+        },
+        "lower_ranked_qualified_bm25": {
+          "N_h": 140,
+          "n_h": 20,
+          "inclusion_probability": 0.14285714285714285,
+          "sampling_weight": 7.0,
+          "seed": 298745169,
+          "design": "srs_without_replacement",
+          "target_sample_size": 20,
+          "actual_sample_size": 20,
+          "population_size": 140,
+          "sampling_seed": 298745169,
+          "stratum_id": "de::lower_ranked_qualified_bm25",
+          "population_definition": "Exclusive primary stratum=lower_ranked_qualified_bm25 within independent eval population"
+        },
+        "lexical_only": {
+          "N_h": 12,
+          "n_h": 12,
+          "inclusion_probability": 1.0,
+          "sampling_weight": 1.0,
+          "seed": 749642919,
+          "design": "srs_without_replacement",
+          "target_sample_size": 20,
+          "actual_sample_size": 12,
+          "population_size": 12,
+          "sampling_seed": 749642919,
+          "stratum_id": "de::lexical_only",
+          "population_definition": "Exclusive primary stratum=lexical_only within independent eval population"
+        },
+        "bm25_expansion_known": {
+          "N_h": 0,
+          "n_h": 0,
+          "inclusion_probability": null,
+          "sampling_weight": null,
+          "seed": 1755209110,
+          "design": "srs_without_replacement",
+          "target_sample_size": 15,
+          "actual_sample_size": 0,
+          "population_size": 0,
+          "sampling_seed": 1755209110,
+          "stratum_id": "de::bm25_expansion_known",
+          "population_definition": "Exclusive primary stratum=bm25_expansion_known within independent eval population"
+        },
+        "new_bm25_passages": {
+          "N_h": 411,
+          "n_h": 20,
+          "inclusion_probability": 0.04866180048661801,
+          "sampling_weight": 20.55,
+          "seed": 1622120368,
+          "design": "srs_without_replacement",
+          "target_sample_size": 20,
+          "actual_sample_size": 20,
+          "population_size": 411,
+          "sampling_seed": 1622120368,
+          "stratum_id": "de::new_bm25_passages",
+          "population_definition": "Exclusive primary stratum=new_bm25_passages within independent eval population"
+        },
+        "non_retrieved": {
+          "contrast": {
+            "N_h": 4159,
+            "n_h": 10,
+            "inclusion_probability": 0.0024044241404183697,
+            "sampling_weight": 415.9,
+            "seed": 1546162020,
+            "design": "srs_without_replacement",
+            "target_sample_size": 10,
+            "actual_sample_size": 10,
+            "population_size": 4159,
+            "sampling_seed": 1546162020,
+            "stratum_id": "de::non_retrieved::contrast",
+            "population_definition": "Exclusive non_retrieved within independent eval population; primary_group=contrast"
+          },
+          "fiction_manual": {
+            "N_h": 11763,
+            "n_h": 10,
+            "inclusion_probability": 0.0008501232678738418,
+            "sampling_weight": 1176.3,
+            "seed": 998133567,
+            "design": "srs_without_replacement",
+            "target_sample_size": 10,
+            "actual_sample_size": 10,
+            "population_size": 11763,
+            "sampling_seed": 998133567,
+            "stratum_id": "de::non_retrieved::fiction_manual",
+            "population_definition": "Exclusive non_retrieved within independent eval population; primary_group=fiction_manual"
+          },
+          "pedagogy_genre_craft": {
+            "N_h": 4980,
+            "n_h": 10,
+            "inclusion_probability": 0.002008032128514056,
+            "sampling_weight": 498.0,
+            "seed": 698974886,
+            "design": "srs_without_replacement",
+            "target_sample_size": 10,
+            "actual_sample_size": 10,
+            "population_size": 4980,
+            "sampling_seed": 698974886,
+            "stratum_id": "de::non_retrieved::pedagogy_genre_craft",
+            "population_definition": "Exclusive non_retrieved within independent eval population; primary_group=pedagogy_genre_craft"
+          }
+        }
+      }
+    },
+    "quotas": {
+      "en": {
+        "targets": {
+          "high_ranked_qualified_bm25": 20,
+          "lower_ranked_qualified_bm25": 20,
+          "lexical_only": 20,
+          "bm25_expansion_known": 15,
+          "new_bm25_passages": 20,
+          "non_retrieved": 30
+        },
+        "population_sizes": {
+          "high_ranked_qualified_bm25": 768,
+          "lower_ranked_qualified_bm25": 2318,
+          "lexical_only": 2175,
+          "bm25_expansion_known": 121,
+          "new_bm25_passages": 590,
+          "non_retrieved": 271213
+        },
+        "after_redistribution": {
+          "high_ranked_qualified_bm25": 20,
+          "lower_ranked_qualified_bm25": 20,
+          "lexical_only": 20,
+          "bm25_expansion_known": 15,
+          "new_bm25_passages": 20,
+          "non_retrieved": 30
+        }
+      },
+      "de": {
+        "targets": {
+          "high_ranked_qualified_bm25": 20,
+          "lower_ranked_qualified_bm25": 20,
+          "lexical_only": 20,
+          "bm25_expansion_known": 15,
+          "new_bm25_passages": 20,
+          "non_retrieved": 30
+        },
+        "population_sizes": {
+          "high_ranked_qualified_bm25": 137,
+          "lower_ranked_qualified_bm25": 140,
+          "lexical_only": 12,
+          "bm25_expansion_known": 0,
+          "new_bm25_passages": 411,
+          "non_retrieved": 20902
+        },
+        "after_redistribution": {
+          "high_ranked_qualified_bm25": 43,
+          "lower_ranked_qualified_bm25": 20,
+          "lexical_only": 12,
+          "bm25_expansion_known": 0,
+          "new_bm25_passages": 20,
+          "non_retrieved": 30
+        }
+      }
+    }
+  },
+  "held_out_books": [
+    "de_017250902eee",
+    "de_06b43f8bc57b",
+    "de_111d77f70faf",
+    "de_2e945ad0ab40",
+    "de_314339722936",
+    "de_37f3f9d87441",
+    "de_3ff574f5ec85",
+    "de_44834789ac99",
+    "de_5af864ea1c5e",
+    "de_660df57bec8d",
+    "de_7cd94b463388",
+    "de_7e290d053067",
+    "de_809a3ef948a5",
+    "de_8478310c51fa",
+    "de_96e473acb9fd",
+    "de_a70e5a5cb1ca",
+    "de_bef6dde900a8",
+    "de_c2147905f44d",
+    "de_c51fc98197f7",
+    "de_d7814779ddef",
+    "de_d84259e282d0",
+    "de_d88c45142668",
+    "de_f03df72445ee",
+    "de_f951ce0b5eb5",
+    "de_fa66d2852566",
+    "de_fccec0ce43dd",
+    "en_0836b352b72d",
+    "en_0b894dd02469",
+    "en_0bb61846d05a",
+    "en_238873c8728c",
+    "en_2d4ebcf25d69",
+    "en_545ec64f5c34",
+    "en_54f73bd10ca2",
+    "en_5dc1317370f3",
+    "en_5f8c3b5327cd",
+    "en_6fe9ad300203",
+    "en_850462b7a97e",
+    "en_85572bac189d",
+    "en_91b4e225bf2d",
+    "en_9497ca388274",
+    "en_a7e7506d960c",
+    "en_aeb87085430c",
+    "en_b0c4405578aa",
+    "en_b20175188e09",
+    "en_b45e6e3b98bd",
+    "en_b5ab119b40cf",
+    "en_bc4317c4ddeb",
+    "en_bea46d6b3984",
+    "en_bfbb2014d5b2",
+    "en_d0b723ac4d1b",
+    "en_d2944289b323",
+    "en_d59fd3d62e68",
+    "en_d7591a01cba4",
+    "en_d8a16a041bcf",
+    "en_d9279040afd1",
+    "en_d957cd886385",
+    "en_e6b21af3b2af",
+    "en_e83aabd35020",
+    "en_ec56ea12c130",
+    "en_f5b6d3c842d0"
+  ],
+  "population_scope": "independent_evaluation_population (candidate passage manifests minus lexicon_dev held-out books); mutually exclusive primary strata fixed before sampling",
+  "estimate_refers_to": "Stratum populations within the independent evaluation population. Weights are not valid for the complete unfiltered corpus or for prevalence among development books.",
+  "inclusion_probability_formula": "pi_h = n_h / N_h",
+  "sampling_weight_formula": "w_h = N_h / n_h",
+  "quota_redistribution": [
+    "high_ranked_qualified_bm25",
+    "lower_ranked_qualified_bm25",
+    "lexical_only",
+    "bm25_expansion_known",
+    "new_bm25_passages",
+    "non_retrieved"
+  ],
+  "note": "Design A v0.5: exclusive populations before SRS. If N_h <= target, census with pi=1. Do not transfer annotations by chapter/paragraph coordinates alone."
+}
