@@ -22,6 +22,16 @@ Rules:
 
 ---
 
+## 2026-11-22 | Phase: Analysis v2
+**Goal:** Full corpus audit, improved statistical analysis, and interactive bilingual research report on frozen latest inputs.
+**Done:** Input inventory + book-coverage audit (EN 503/442, DE 78/67; exclusions rule-based); word-count fields + extreme-passage gate (0 recoverable → retain v0.3 retrieval); analysis v2 with eligible-word denominators, standardization, all-concept dispersion, S1–S11 sensitivity, bootstrap (1000, seed 20261122); notebook 06 executed; offline interactive HTML with lexicon explorer/suggestions; `tests/analysis` + full suite 166 passed.
+**Data/outputs:** `data/processed/input_inventory_v2.json`, `extreme_passage_gate_v2.json`, `reports/tables/02_*`, `reports/figures/02_narrative_perspective/`, `reports/02_narrative_perspective_interactive.html`, `notebooks/06_narrative_perspective_full_analysis.ipynb`, `docs/corpus_coverage_audit.md`, `docs/analysis_methodology_v2.md`, `docs/terminology_review_guide.md`, `docs/analysis_v2_implementation_summary.md`.
+**Decisions:** Primary denominator = eligible searchable words; no silent resegment; Braw not reconstructed; suggestions stay pending until curated.
+**Problems / open questions:** Eval labels still empty; extreme chapters unsegmented; work_id missingness.
+**Next:** Human terminology review; annotate prob_v05; then semantic retrieval columns on `02_assignments_long.csv`.
+
+---
+
 ## 2026-11-22 | Phase: Retrieval / Analysis
 **Goal:** Finalize lexical IR methodology (v0.5) and ship the first bilingual exploratory notebook on narrative perspective in EN/DE creative writing manuals.
 **Done:** Exclusive evaluation strata + prob sample v05 (n=250); provenance v05; German heuristic audit clarified; BM25 L/Bq/Braw/Bnew/U terminology; corpus QC table; concept families + helpers; executed notebook 05 + HTML/tables/figures under `reports/`.
