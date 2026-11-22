@@ -1,0 +1,3 @@
+language,language_label,n_lexical_assignments,n_lexical_passages,n_bnew_assignments,n_genuinely_new_bm25_passages,n_known_passages_with_new_bm25_concepts,n_combined_unique_passages,jaccard_passages_L_vs_Bnew,pool_note,method,version
+en,English,10643,7380,2812,820,958,8200,0.11682926829268293,Bnew from bm25_only_unvalidated file (≈ Braw\\L); not independent top-K,lexical_v03_vs_bm25_only_v03,v03
+de,German,1380,941,3195,1263,330,2204,0.14972776769509982,Bnew from bm25_only_unvalidated file (≈ Braw\\L); not independent top-K,lexical_v03_vs_bm25_only_v03,v03

@@ -1,0 +1,30 @@
+{
+  "source_commit": "0b099f256eda54add3a24489689e24df681392f5",
+  "corpus_snapshot_id": "corpus_snapshot_analysis_v1_candidate_20261122",
+  "lexicon_version": "0.3-draft",
+  "retrieval_baseline_version": "v0.3",
+  "execution_timestamp": "2026-11-22T19:27:57.695520+00:00",
+  "input_file_checksums": {
+    "data/processed/corpus_manifest_en_v1_candidate.csv": "1080c7d39b522c50ab061ccdf6fe76b98a87d7d7ee6b4b44de879aefa8777af8",
+    "data/processed/corpus_manifest_de_v1_candidate.csv": "48925bd271070123c4faea536e34b69fa9fc6eb9ac863cbda88e497a1f341965",
+    "data/processed/pov_baseline_b_v03_lexical_en.csv": "a493eeffefd36d26b242f770690781067e66d2a777e4e7a6bcd1c80f9236f95c",
+    "data/processed/pov_baseline_b_v03_lexical_de.csv": "c602a043c0ee7e2ca2e8d77159bc38e0cb0928718375433c1de34506a1d29aec"
+  },
+  "software_versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.5.3"
+  },
+  "validation": {
+    "en": {
+      "n_assignments": 10643,
+      "n_unique_passages": 7380,
+      "n_missing_from_passage_manifest": 0
+    },
+    "de": {
+      "n_assignments": 1380,
+      "n_unique_passages": 941,
+      "n_missing_from_passage_manifest": 0
+    }
+  },
+  "n_concepts": 36
+}

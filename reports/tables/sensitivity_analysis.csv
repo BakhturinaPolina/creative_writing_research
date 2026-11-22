@@ -1,0 +1,31 @@
+scenario,scenario_description,concept_id,freq_en_per_10k,freq_de_per_10k,frequency_ratio_en_over_de,method,version
+S1,Complete analysis-set corpus,focalization_zero,0.29380071243202677,0.2850782947173706,1.0305965689997678,lexical_v03,v03
+S1,Complete analysis-set corpus,stance_narratorial,0.004626782872945303,0.22077491996909152,0.02095701302300575,lexical_v03,v03
+S1,Complete analysis-set corpus,stance_figural,0.005205130732063467,0.16075843687069769,0.032378585120543896,lexical_v03,v03
+S1,Complete analysis-set corpus,grammatical_third_person,0.5873122509344945,0.19076667841989461,3.0786941189056476,lexical_v03,v03
+S1,Complete analysis-set corpus,filter_words,0.0028917392955908144,0.004286891649885272,0.6745538566779976,lexical_v03,v03
+S1,Complete analysis-set corpus,reader_effect,0.02139887078737203,0.006430337474827908,3.3277990262781216,lexical_v03,v03
+S2,Primary creative writing manuals only (exclude contrast),focalization_zero,0.3033209810228873,0.2909947911932376,1.0423587988606446,lexical_v03,v03
+S2,Primary creative writing manuals only (exclude contrast),stance_narratorial,0.0045680870635977,0.26999516708650917,0.016919143823541254,lexical_v03,v03
+S2,Primary creative writing manuals only (exclude contrast),stance_figural,0.0054817044763172396,0.22499597257209095,0.024363567105899403,lexical_v03,v03
+S2,Primary creative writing manuals only (exclude contrast),grammatical_third_person,0.6026829532573232,0.23999570407689702,2.5112239220091106,lexical_v03,v03
+S2,Primary creative writing manuals only (exclude contrast),filter_words,0.0027408522381586198,0.005999892601922426,0.4568168832356138,lexical_v03,v03
+S2,Primary creative writing manuals only (exclude contrast),reader_effect,0.02223135704284214,0.008999838902883639,2.4701949982370226,lexical_v03,v03
+S3,Exclude extreme-length passages,focalization_zero,0.3130859196142029,0.2865831258050278,1.0924785565609534,lexical_v03,v03
+S3,Exclude extreme-length passages,stance_narratorial,0.004387590465063904,0.22565600457088802,0.019443712448101853,lexical_v03,v03
+S3,Exclude extreme-length passages,stance_figural,0.00564118774079645,0.1624723232910394,0.03472091508589618,lexical_v03,v03
+S3,Exclude extreme-length passages,grammatical_third_person,0.628679033779871,0.1940641639309637,3.2395421238282665,lexical_v03,v03
+S3,Exclude extreme-length passages,filter_words,0.0031339931893313608,0.00451312009141776,0.6944183017179235,lexical_v03,v03
+S3,Exclude extreme-length passages,reader_effect,0.020997754368520118,0.006769680137126642,3.1017350810067246,lexical_v03,v03
+S4,Conservative DE ambiguous allwissen/focalization_zero exclusions,focalization_zero,0.29380071243202677,0.002143445824942636,137.06934367696914,lexical_v03,v03
+S4,Conservative DE ambiguous allwissen/focalization_zero exclusions,stance_narratorial,0.004626782872945303,0.22077491996909152,0.02095701302300575,lexical_v03,v03
+S4,Conservative DE ambiguous allwissen/focalization_zero exclusions,stance_figural,0.005205130732063467,0.16075843687069769,0.032378585120543896,lexical_v03,v03
+S4,Conservative DE ambiguous allwissen/focalization_zero exclusions,grammatical_third_person,0.5873122509344945,0.19076667841989461,3.0786941189056476,lexical_v03,v03
+S4,Conservative DE ambiguous allwissen/focalization_zero exclusions,filter_words,0.0028917392955908144,0.004286891649885272,0.6745538566779976,lexical_v03,v03
+S4,Conservative DE ambiguous allwissen/focalization_zero exclusions,reader_effect,0.02139887078737203,0.006430337474827908,3.3277990262781216,lexical_v03,v03
+S5,Exclude books flagged possible_duplicate,focalization_zero,0.30213042168988374,0.26131364169844856,1.1561984277825688,lexical_v03,v03
+S5,Exclude books flagged possible_duplicate,stance_narratorial,0.004676941512227302,0.20274334269707217,0.02306828648482593,lexical_v03,v03
+S5,Exclude books flagged possible_duplicate,stance_figural,0.004988737613042455,0.1216460056182433,0.04101028708413498,lexical_v03,v03
+S5,Exclude books flagged possible_duplicate,grammatical_third_person,0.6048844355813978,0.17796360081187446,3.3989222111819477,lexical_v03,v03
+S5,Exclude books flagged possible_duplicate,filter_words,0.003117961008151535,0.002252703807745246,1.3840971890895561,lexical_v03,v03
+S5,Exclude books flagged possible_duplicate,reader_effect,0.019331358250539516,0.004505407615490492,4.290701286177624,lexical_v03,v03

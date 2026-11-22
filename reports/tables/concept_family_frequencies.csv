@@ -1,0 +1,15 @@
+concept_family,concept_family_label,language,language_label,n_assignments,n_unique_passages,frequency_per_10000_words,note,method,version
+perspective_and_person,Narrative perspective and grammatical person,en,English,6798,5178,1.497342607256924,numerator = unique passages in family (deduplicated),lexical_v03,v03
+perspective_and_person,Narrative perspective and grammatical person,de,German,619,494,1.058862237521662,numerator = unique passages in family (deduplicated),lexical_v03,v03
+narrator_participation,Narrator participation,en,English,92,89,0.025736479730758252,numerator = unique passages in family (deduplicated),lexical_v03,v03
+narrator_participation,Narrator participation,de,German,7,7,0.015004120774598452,numerator = unique passages in family (deduplicated),lexical_v03,v03
+narratorial_figural_stance,Narratorial and figural stance,en,English,34,34,0.00983191360500877,numerator = unique passages in family (deduplicated),lexical_v03,v03
+narratorial_figural_stance,Narratorial and figural stance,de,German,178,155,0.33223410286610855,numerator = unique passages in family (deduplicated),lexical_v03,v03
+focalization,Focalization,en,English,1273,1157,0.3345742364998573,numerator = unique passages in family (deduplicated),lexical_v03,v03
+focalization,Focalization,de,German,161,155,0.33223410286610855,numerator = unique passages in family (deduplicated),lexical_v03,v03
+mode_of_presentation,Mode of presentation,en,English,888,850,0.24579784012521927,numerator = unique passages in family (deduplicated),lexical_v03,v03
+mode_of_presentation,Mode of presentation,de,German,82,79,0.16933222017046826,numerator = unique passages in family (deduplicated),lexical_v03,v03
+consciousness_and_techniques,Consciousness and writing techniques,en,English,1047,989,0.2859930163339316,numerator = unique passages in family (deduplicated),lexical_v03,v03
+consciousness_and_techniques,Consciousness and writing techniques,de,German,245,222,0.4758449731372652,numerator = unique passages in family (deduplicated),lexical_v03,v03
+functions_and_reader_effects,Narrative functions and reader effects,en,English,511,491,0.14198439941350902,numerator = unique passages in family (deduplicated),lexical_v03,v03
+functions_and_reader_effects,Narrative functions and reader effects,de,German,88,86,0.1843363409450667,numerator = unique passages in family (deduplicated),lexical_v03,v03

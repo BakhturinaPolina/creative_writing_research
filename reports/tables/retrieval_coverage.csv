@@ -1,0 +1,3 @@
+language,retrieved_passages,assignments,pct_eligible_paragraphs,passages_per_10k_words,assignments_per_10k_words,avg_concepts_per_retrieved_passage,concepts_nonzero
+English,7380,10643,2.340613126462883,2.1341036001460214,3.0776781322973044,1.442140921409214,36
+German,941,1380,2.2077282218520518,2.01698252127102,2.9579552384208374,1.4665249734325185,32
