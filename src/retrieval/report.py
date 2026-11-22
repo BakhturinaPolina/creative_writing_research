@@ -817,10 +817,149 @@ def build_set_algebra_v04(log) -> Path:
     return out
 
 
+def build_set_algebra_v05(log) -> Path:
+    """Clarify L / Bq / Braw / Bnew / U terminology without regenerating BM25.
+
+    Historical exports do not retain the complete ungated exploratory heap
+    (``Braw``). The on-disk BM25-only file is already filtered (≈ Braw \\ L after
+    write). Therefore this report uses:
+
+    - **B_combined** = Bq ∪ bm25_only_file — a *reconstructed combined candidate
+      pool*, **not** an independent top-K BM25 ranking
+    - **Bnew_file** = bm25_only_file ≈ assignments in the exploratory export
+      after subtracting L (and historically Bq)
+    - Top-K asymmetry: qualified heap ``top_k=500``; exploratory ``bm25_only_k=100``
+
+    Future BM25 runs must export complete ``Braw`` *before* subtracting L,
+    preserve ranks, and record K / score thresholds / query configuration.
+    """
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    rows = []
+    md = [
+        "# Retrieval set algebra (v0.5 terminology)",
+        "",
+        "Canonical assignment key: `(passage_id, retrieval_concept_id)`.",
+        "",
+        "## Symbols",
+        "",
+        "| Symbol | Meaning |",
+        "|---|---|",
+        "| **L** | Lexical retrieval assignments (B v0.3) |",
+        "| **Bq** | Lexical-qualified BM25 assignments (C v0.3; top-K = 500) |",
+        "| **Braw** | Independent exploratory BM25 heap (top-K = 100) *before* subtracting L |",
+        "| **Bnew** | Genuinely new exploratory assignments: ideally Braw \\\\ L |",
+        "| **U** | Union of lexical and exploratory pools: ideally L ∪ Braw |",
+        "| **B_combined** | Reconstructed pool Bq ∪ bm25_only_file (historical stand-in) |",
+        "",
+        "**Important:** The complete historical `Braw` output is not available on disk.",
+        "Do **not** interpret `B_combined` as an independent top-K BM25 ranking.",
+        "Qualified and exploratory heaps used different K limits (500 vs 100).",
+        "",
+        "Passage-level and assignment-level comparisons are reported separately.",
+        "",
+    ]
+    for lang in ("en", "de"):
+        Ldf = _read(DATA_PROCESSED / f"pov_baseline_b_v03_lexical_{lang}.csv")
+        Bqdf = _read(DATA_PROCESSED / f"pov_baseline_c_v03_bm25_{lang}.csv")
+        Bonlydf = _read(
+            DATA_PROCESSED / f"pov_baseline_c_v03_bm25_only_unvalidated_{lang}.csv"
+        )
+        L = _assignment_keys(Ldf)
+        Bq = _assignment_keys(Bqdf)
+        Bonly = _assignment_keys(Bonlydf)
+        B_combined = Bq | Bonly
+        # On-disk only-file ≈ Bnew under Bq ⊆ L; still name it clearly.
+        Bnew_file = Bonly
+        Bnew_from_combined = B_combined - L
+        U_combined = L | B_combined
+
+        Lp = {p for p, _ in L}
+        Bcomb_p = {p for p, _ in B_combined}
+        Bnew_p = {p for p, _ in Bnew_from_combined}
+        genuinely_new_passages = Bnew_p - Lp
+        new_concept_on_known = Bnew_p & Lp
+        U_p = Lp | Bcomb_p
+
+        max_rank_bq = (
+            pd.to_numeric(Bqdf["rank"], errors="coerce").max() if len(Bqdf) else None
+        )
+        max_rank_only = (
+            pd.to_numeric(Bonlydf["rank"], errors="coerce").max() if len(Bonlydf) else None
+        )
+
+        row = {
+            "language": lang,
+            "unit": "assignment",
+            "n_L": len(L),
+            "n_Bq": len(Bq),
+            "n_B_combined": len(B_combined),
+            "n_Bnew_file": len(Bnew_file),
+            "n_Bnew_from_combined": len(Bnew_from_combined),
+            "n_U_combined": len(U_combined),
+            "n_L_minus_B_combined": len(L - B_combined),
+            "n_L_intersect_B_combined": len(L & B_combined),
+            "n_Bnew_file_intersect_L": len(Bnew_file & L),
+            "n_passages_L": len(Lp),
+            "n_passages_B_combined": len(Bcomb_p),
+            "n_passages_U_combined": len(U_p),
+            "n_passages_genuinely_new": len(genuinely_new_passages),
+            "n_passages_new_concept_on_lexical": len(new_concept_on_known),
+            "max_rank_Bq": max_rank_bq,
+            "max_rank_Bonly_file": max_rank_only,
+            "Bq_top_k_config": 500,
+            "exploratory_top_k_config": 100,
+            "Braw_available": False,
+            "pool_label": "B_combined_reconstructed_not_independent_topK",
+            "assignment_key": "(passage_id, retrieval_concept_id)",
+        }
+        rows.append(row)
+        md.append(f"## {lang}")
+        md.append("")
+        md.append(
+            f"- Assignments: |L|={len(L)}, |Bq|={len(Bq)}, |B_combined|={len(B_combined)}, "
+            f"|Bnew_file|={len(Bnew_file)}, |Bnew_from_combined|={len(Bnew_from_combined)}, "
+            f"|U_combined|={len(U_combined)}"
+        )
+        md.append(
+            f"- Bnew_file ∩ L (expect 0): {len(Bnew_file & L)}"
+        )
+        md.append(
+            f"- Passages: L={len(Lp)}, B_combined={len(Bcomb_p)}, U_combined={len(U_p)}; "
+            f"genuinely new passages={len(genuinely_new_passages)}; "
+            f"new concepts on known passages={len(new_concept_on_known)}"
+        )
+        md.append(
+            f"- Observed max ranks: Bq={max_rank_bq}, Bonly_file={max_rank_only} "
+            f"(configs 500 / 100)"
+        )
+        md.append("- `Braw` not reconstructed from historical files.")
+        md.append("")
+
+    out = OUT_DIR / "retrieval_set_algebra_v05.csv"
+    pd.DataFrame(rows).to_csv(out, index=False)
+    report = OUT_DIR / "retrieval_set_algebra_v05.md"
+    report.write_text("\n".join(md) + "\n", encoding="utf-8")
+    write_json(
+        OUT_DIR / "retrieval_set_algebra_v05.meta.json",
+        base_run_meta(
+            kind="set_algebra_v05",
+            n_languages=len(rows),
+            note=(
+                "Terminology clarification only; frozen v0.3 assignment CSVs unchanged. "
+                "B_combined is not an independent top-K BM25 ranking."
+            ),
+        ),
+    )
+    log.info(f"wrote {out} and {report}")
+    return out
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument(
-        "--version", choices=["v02", "v03", "v04", "set_algebra"], default="v03"
+        "--version",
+        choices=["v02", "v03", "v04", "v05", "set_algebra"],
+        default="v03",
     )
     args = parser.parse_args()
     log = setup_logger(__file__)
@@ -830,6 +969,8 @@ def main() -> None:
         if args.version == "v04":
             build_report_v03(log)
         build_set_algebra_v04(log)
+    elif args.version == "v05":
+        build_set_algebra_v05(log)
     else:
         build_report(log)
     log.info("Log finished.")

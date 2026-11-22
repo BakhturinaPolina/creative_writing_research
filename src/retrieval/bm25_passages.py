@@ -7,6 +7,11 @@ Two corpus passes (never holds all paragraphs in RAM):
 Validated candidates require concept-specific literal evidence.
 Optional BM25-only exploratory pool is labelled ``bm25_only_unvalidated``.
 
+Terminology (v0.5): **Braw** = exploratory heap before subtracting lexical
+assignments L; **Bnew** = Braw \\ L (exported as the only-unvalidated file);
+**Bq** = lexical-qualified BM25; **U** = L ∪ Braw. Future runs must export
+complete Braw before subtraction and record K / thresholds / ranks.
+
 Tracked CSVs store pointers/scores only — never book text.
 Optional ``--with-passages`` writes a gitignored sidecar.
 
@@ -458,7 +463,10 @@ def retrieve_lang(
         n_unique_passages=int(df_val.groupby("passage_id").ngroups) if len(df_val) else 0,
         n_concepts_with_hits=int(df_val["concept_id"].nunique()) if len(df_val) else 0,
         assignment_key="(passage_id, retrieval_concept_id)",
-        genuinely_new_definition="B_exploratory \\\\ L_lexical",
+        Braw_definition="exploratory_heap_before_subtracting_L",
+        Bnew_definition="Braw \\\\ L",
+        U_definition="L ∪ Braw",
+        genuinely_new_definition="Braw \\\\ L_lexical",
         n_exploratory_also_in_L=n_dropped_in_L,
         n_exploratory_also_in_Bq=n_dropped_in_Bq,
         n_lexical_keys_loaded=len(lexical_keys),
