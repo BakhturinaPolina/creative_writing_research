@@ -1,0 +1,9 @@
+language,a,b,n_a,n_b,intersection,a_only,b_only,jaccard
+en,B_v02_lexical,B_v02_algo_fix,10611,10630,10611,0,19,0.9982
+en,B_v02_algo_fix,B_v03_lexical,10630,10643,10630,0,13,0.9988
+en,B_v02_lexical,B_v03_lexical,10611,10643,10611,0,32,0.997
+en,B_v03_lexical,C_v03_bm25,10643,5756,5756,4887,0,0.5408
+de,B_v02_lexical,B_v02_algo_fix,1034,1050,1034,0,16,0.9848
+de,B_v02_algo_fix,B_v03_lexical,1050,1380,1050,0,330,0.7609
+de,B_v02_lexical,B_v03_lexical,1034,1380,1034,0,346,0.7493
+de,B_v03_lexical,C_v03_bm25,1380,1339,1339,41,0,0.9703

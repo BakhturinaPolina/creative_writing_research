@@ -1,0 +1,28 @@
+{
+  "built": "2026-11-22 02:26",
+  "git_commit": "377a73e0ce7d573448e1b458fe857427eefe046e",
+  "git_commit_short": "",
+  "software": {
+    "python": "3.14.4",
+    "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.43",
+    "pandas": "3.0.6",
+    "yaml": "6.0.3",
+    "numpy": "2.5.3",
+    "rank_bm25": "not_installed"
+  },
+  "peak_rss_mb": 150.9,
+  "book_stats_hashes": {
+    "en": "b9d1942199d90323007f42d7fd4f0616d884e09a9c1dce02381096e60b5999eb",
+    "de": "382a44f0305208d58a6eeabbdb401b17516b5849a617425d7e500b87501008d3"
+  },
+  "kind": "passage_manifest",
+  "lang": "en",
+  "n_passages": 315302,
+  "corpus_version": "analysis_set_v1",
+  "expected_books": 442,
+  "processed_books": 442,
+  "skipped_missing": [],
+  "skipped_unreadable": [],
+  "book_stats_sha256": "b9d1942199d90323007f42d7fd4f0616d884e09a9c1dce02381096e60b5999eb",
+  "note": "All eligible paragraphs; lexical relevance is not a prerequisite."
+}

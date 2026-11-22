@@ -1,0 +1,11 @@
+baseline,language,n_rows,n_unique_passages,n_concepts,path
+B_v02_lexical,en,10611,7361,36,data/processed/pov_baseline_b_v02_lexical_en.csv
+B_v02_lexical,de,1034,771,31,data/processed/pov_baseline_b_v02_lexical_de.csv
+B_v02_algo_fix,en,10630,7374,36,data/processed/pov_baseline_b_v02_algo_fix_en.csv
+B_v02_algo_fix,de,1050,777,31,data/processed/pov_baseline_b_v02_algo_fix_de.csv
+B_v03_lexical,en,10643,7380,36,data/processed/pov_baseline_b_v03_lexical_en.csv
+B_v03_lexical,de,1380,941,32,data/processed/pov_baseline_b_v03_lexical_de.csv
+C_v03_bm25,en,5756,4204,36,data/processed/pov_baseline_c_v03_bm25_en.csv
+C_v03_bm25,de,1339,906,32,data/processed/pov_baseline_c_v03_bm25_de.csv
+C_v03_bm25_only,en,2812,1778,36,data/processed/pov_baseline_c_v03_bm25_only_unvalidated_en.csv
+C_v03_bm25_only,de,3195,1593,36,data/processed/pov_baseline_c_v03_bm25_only_unvalidated_de.csv

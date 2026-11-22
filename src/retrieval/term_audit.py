@@ -43,23 +43,28 @@ def _git_commit() -> str:
         return ""
 
 
-def _compile_term_matchers(terms: list[tuple[str, str, str]]):
+def _compile_term_matchers(terms: list[tuple[str, str, str]], lang: str = "en"):
+    """Build audit matchers using the same variant expansion as retrieval prefilters."""
+    from src.retrieval.match import expand_prefilter_needles
+
     matchers = []
     for concept_id, tier, term in terms:
-        p = normalize_text(term)
-        if not p:
+        needles = expand_prefilter_needles(term, lang, min_len=1)
+        if not needles:
             continue
-        if " " in p or "-" in p:
-            matchers.append((concept_id, tier, term, "substr", p))
+        # Prefer substr when any multi-token / hyphenated variant exists
+        if any((" " in n or "-" in n) for n in needles) or len(needles) > 1:
+            for n in needles:
+                matchers.append((concept_id, tier, term, "substr", n.replace("-", " ")))
         else:
-            matchers.append((concept_id, tier, term, "token", p))
+            matchers.append((concept_id, tier, term, "token", needles[0]))
     return matchers
 
 
 def audit_lang(lang: str, log) -> pd.DataFrame:
     lex = load_lexicon()
     literal = iter_literal_terms(lex, lang)
-    matchers = _compile_term_matchers(literal)
+    matchers = _compile_term_matchers(literal, lang=lang)
     substr = [(c, t, term, needle) for c, t, term, kind, needle in matchers if kind == "substr"]
     tokens_m = [(c, t, term, needle) for c, t, term, kind, needle in matchers if kind == "token"]
     stats = {
@@ -80,25 +85,24 @@ def audit_lang(lang: str, log) -> pd.DataFrame:
             n_primary += 1
         elif role == "comparison":
             n_comparison += 1
-        norm = p.text_norm()
+        norm = p.text_norm().replace("-", " ")
         toks = p.tokens()
         tokset = set(toks)
+        # Collapse variant needles: at most one DF increment per (concept, tier, term)
+        hit_tf: dict[tuple[str, str, str], int] = {}
         for c, t, term, needle in substr:
             hits = norm.count(needle)
             if hits <= 0:
                 continue
-            s = stats[(c, t, term)]
-            s["df"] += 1
-            s["tf"] += hits
-            if role == "primary":
-                s["df_primary"] += 1
-            elif role == "comparison":
-                s["df_comparison"] += 1
+            key = (c, t, term)
+            hit_tf[key] = max(hit_tf.get(key, 0), hits)
         for c, t, term, needle in tokens_m:
             if needle not in tokset:
                 continue
-            hits = toks.count(needle)
-            s = stats[(c, t, term)]
+            key = (c, t, term)
+            hit_tf[key] = max(hit_tf.get(key, 0), toks.count(needle))
+        for key, hits in hit_tf.items():
+            s = stats[key]
             s["df"] += 1
             s["tf"] += hits
             if role == "primary":

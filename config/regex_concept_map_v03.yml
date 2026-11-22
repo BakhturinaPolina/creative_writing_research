@@ -1,0 +1,133 @@
+# Explicit mapping: example_regex name → permitted PsyPer concept IDs.
+# v0.3 extends v0.1 with additional German person / perspective / omniscience patterns.
+# A regex match may only contribute evidence for listed concepts.
+# Roles:
+#   concept_specific       — strong high-tier evidence for the mapped concept(s)
+#   context_only           — narrative-perspective context; never validates a concept alone
+#   supporting_insufficient — weak cue; needs independent non-regex support
+#   ambiguous_unrelated    — recorded for audit only; never qualifies a candidate
+#
+# Grammatical person alone must never validate diegesis, focalization, filter words, etc.
+# Ambiguous forms such as Sie-Form require narrative context (supporting role only).
+
+version: "0.3"
+lexicon_version: "0.3-draft"
+built: "2026-11-22"
+
+languages:
+  en:
+    general_pov:
+      role: context_only
+      concepts: [perspective_general]
+      notes: "POV / viewpoint surfaces are general narrative context, not concept-specific."
+
+    grammatical_person:
+      role: concept_specific
+      concept_filters:
+        grammatical_first_person: ["first"]
+        grammatical_second_person: ["second"]
+        grammatical_third_person: ["third"]
+      notes: "Person morphology only; never implies hetero/homodiegesis or filter words."
+
+    focalization:
+      role: supporting_insufficient
+      concepts: [focalization_general]
+      notes: "Bare focalization lemma is general; subtype needs more specific cues."
+
+    focalization_zero:
+      role: concept_specific
+      concepts: [focalization_zero]
+      notes: "Omniscien* is zero-focalization / omniscient-narrator evidence."
+
+    thought_representation:
+      role: concept_specific
+      concepts: [thought_representation]
+
+    switching_consistency:
+      role: concept_specific
+      concepts: [switching_consistency]
+
+  de:
+    general_pov:
+      role: context_only
+      concepts: [perspective_general]
+      notes: "Erzählperspektive etc. are general context; never qualify every PsyPer concept."
+
+    grammatical_first_person:
+      role: concept_specific
+      concepts: [grammatical_first_person]
+      notes: "Ich-Erzähl* morphology only; not diegesis or filter words."
+
+    grammatical_second_person:
+      role: concept_specific
+      concepts: [grammatical_second_person]
+      notes: "Du-Erzähl* / Du-Perspektive; still not diegesis."
+
+    grammatical_third_person:
+      role: concept_specific
+      concepts: [grammatical_third_person]
+      notes: "Er-/Sie-Perspektive morphology; Sie-Form alone remains ambiguous in language instruction."
+
+    grammatical_person_generic:
+      role: supporting_insufficient
+      concepts: [grammatical_first_person, grammatical_second_person, grammatical_third_person]
+      notes: "erste/zweite/dritte Person — needs narrative context; not language-lesson grammar alone."
+
+    voice_heterodiegetic:
+      role: concept_specific
+      concepts: [voice_heterodiegetic]
+
+    voice_homodiegetic:
+      role: concept_specific
+      concepts: [voice_homodiegetic]
+
+    voice_protagonist:
+      role: concept_specific
+      concepts: [voice_protagonist]
+
+    focalization:
+      role: supporting_insufficient
+      concepts: [focalization_general]
+      notes: "Bare fokalisier* is general; subtypes need specific patterns."
+
+    focalization_internal:
+      role: concept_specific
+      concepts: [focalization_internal]
+
+    focalization_external:
+      role: concept_specific
+      concepts: [focalization_external]
+
+    focalization_variable:
+      role: concept_specific
+      concepts: [focalization_variable]
+
+    omniscient_de:
+      role: concept_specific
+      concepts: [focalization_zero]
+      notes: "allwissen* / Nullfokalisierung — not identical to auktoriales Erzählen."
+
+    auktorial:
+      role: concept_specific
+      concepts: [stance_narratorial]
+      notes: "Auktorial ≠ automatic zero focalization."
+
+    personal_erzaehl:
+      role: concept_specific
+      concepts: [stance_figural]
+
+    stance_figural:
+      role: concept_specific
+      concepts: [stance_figural]
+
+    stance_narratorial:
+      role: concept_specific
+      concepts: [stance_narratorial]
+
+    thought_representation:
+      role: concept_specific
+      concepts: [thought_representation]
+
+    switching_consistency:
+      role: concept_specific
+      concepts: [switching_consistency]

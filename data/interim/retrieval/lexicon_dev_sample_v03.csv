@@ -1,0 +1,81 @@
+passage_id,book_id,language,title,author,edition_year,corpus_role,primary_group,chapter_idx,para_idx,concept_id,bm25_score,rank,retrieval_method
+en_bc4317c4ddeb:c0:p5311,en_bc4317c4ddeb,en,The complete idiot's guide to creative writing,Laurie Rozakis,1997,primary,fiction_manual,0,5311,voice_homodiegetic,24.7473,100,baseline_c_bm25_only
+en_d0b723ac4d1b:c4:p32,en_d0b723ac4d1b,en,The Craft of science fiction,Ben Bova,,primary,fiction_manual,4,32,focalization_fixed,35.0868,70,baseline_c_bm25_only
+en_e83aabd35020:c8:p127,en_e83aabd35020,en,A guide to writing social stories,Chris Williams,2017,primary,pedagogy_genre_craft,8,127,pov_object,26.9045,19,baseline_c_bm25_only
+en_545ec64f5c34:c4:p13,en_545ec64f5c34,en,Teaching writing in middle school,Beth Means,1998,primary,pedagogy_genre_craft,4,13,voice_homodiegetic,26.6488,61,baseline_c_bm25_only
+en_bea46d6b3984:c0:p30,en_bea46d6b3984,en,Novelist's essential guide to crafting scenes,Raymond Obstfeld,2000,primary,fiction_manual,0,30,voice_eyewitness,32.7752,28,baseline_c_bm25_only
+en_54f73bd10ca2:c0:p204,en_54f73bd10ca2,en,The essence of fiction,Malcolm McConnell,1986,primary,fiction_manual,0,204,pov_subject,34.6096,25,baseline_c_bm25_only
+en_d8a16a041bcf:c25:p85,en_d8a16a041bcf,en,Characters & Viewpoint,Orson Scott Card,2011,primary,fiction_manual,25,85,pov_subject,33.8213,31,baseline_c_bm25_only
+en_9497ca388274:c3:p0,en_9497ca388274,en,The writing process,John M. Lannon,1983,primary,fiction_manual,3,0,filter_words,25.3114,42,baseline_c_bm25_only
+en_d9279040afd1:c335:p31,en_d9279040afd1,en,Creative writing course,C. P. Sykes,,primary,fiction_manual,335,31,pov_subject,33.7805,33,baseline_c_bm25_only
+en_d2944289b323:c62:p44,en_d2944289b323,en,Reflective practice,Gillie Bolton,2001,primary,fiction_manual,62,44,reliability,26.6686,76,baseline_c_bm25_only
+en_d9279040afd1:c320:p10,en_d9279040afd1,en,Creative writing course,C. P. Sykes,,primary,fiction_manual,320,10,pov_object,21.3002,100,baseline_c_bm25_only
+en_5dc1317370f3:c14:p5,en_5dc1317370f3,en,Narrative fiction,Shlomith Rimmon-Kenan,1983,comparison,contrast,14,5,voice_heterodiegetic,36.2698,3,baseline_c_bm25_only
+en_aeb87085430c:c13:p190,en_aeb87085430c,en,Writing What You Know,Meredith Sue Willis,,primary,fiction_manual,13,190,filter_words,26.9791,28,baseline_c_bm25_only
+en_a7e7506d960c:c5:p53,en_a7e7506d960c,en,The Power of Point of View,Alicia Rasley,2008,primary,fiction_manual,5,53,focalization_fixed,38.6828,34,baseline_c_bm25_only
+en_a7e7506d960c:c6:p118,en_a7e7506d960c,en,The Power of Point of View,Alicia Rasley,2008,primary,fiction_manual,6,118,voice_heterodiegetic,23.9774,66,baseline_c_bm25_only
+en_bfbb2014d5b2:c81:p39,en_bfbb2014d5b2,en,Crafting Novels & Short Stories: Everything You Need to Know to Write Great Fiction,Editors of Writer's Digest; James Scott Bell,,primary,fiction_manual,81,39,filter_words,23.2168,64,baseline_c_bm25_only
+en_0b894dd02469:c0:p46,en_0b894dd02469,en,The art & craft of novel writing,Oakley Hall,1989,primary,fiction_manual,0,46,voice_homodiegetic,24.9607,96,baseline_c_bm25_only
+en_e6b21af3b2af:c157:p5,en_e6b21af3b2af,en,Teaching Evidence-Based Writing: Fiction,Leslie Blauman,,primary,pedagogy_genre_craft,157,5,focalization_fixed,34.7619,75,baseline_c_bm25_only
+en_b45e6e3b98bd:c13:p1,en_b45e6e3b98bd,en,Next Level Screenwriting,David Landau,,primary,pedagogy_genre_craft,13,1,voice_heterodiegetic,22.6956,97,baseline_c_bm25_only
+en_d957cd886385:c65:p3,en_d957cd886385,en,The art & craft of writing Christian fiction,Jeff Gerke,2009,primary,fiction_manual,65,3,pov_object,23.5411,46,baseline_c_bm25_only
+en_91b4e225bf2d:c30:p3,en_91b4e225bf2d,en,Finding your writer's voice,Thaisa Frank,1994,primary,fiction_manual,30,3,voice_homodiegetic,25.427,81,baseline_c_bm25_only
+en_0b894dd02469:c0:p52,en_0b894dd02469,en,The art & craft of novel writing,Oakley Hall,1989,primary,fiction_manual,0,52,focalization_fixed,36.2906,53,baseline_c_bm25_only
+en_d957cd886385:c62:p37,en_d957cd886385,en,The art & craft of writing Christian fiction,Jeff Gerke,2009,primary,fiction_manual,62,37,focalization_fixed,35.3594,68,baseline_c_bm25_only
+en_ec56ea12c130:c36:p208,en_ec56ea12c130,en,Alternative scriptwriting,Ken Dancyger,1991,primary,pedagogy_genre_craft,36,208,pov_subject,35.4613,17,baseline_c_bm25_only
+en_d7591a01cba4:c8:p58,en_d7591a01cba4,en,The Simon & Schuster guide to writing,Jeanette Harris,1993,primary,fiction_manual,8,58,voice_heterodiegetic,27.2172,27,baseline_c_bm25_only
+en_d59fd3d62e68:c8:p6,en_d59fd3d62e68,en,Poetry writing,David Starkey,2000,primary,pedagogy_genre_craft,8,6,pov_object,24.9665,28,baseline_c_bm25_only
+en_d9279040afd1:c311:p0,en_d9279040afd1,en,Creative writing course,C. P. Sykes,,primary,fiction_manual,311,0,pov_object,25.1089,25,baseline_c_bm25_only
+en_a7e7506d960c:c5:p38,en_a7e7506d960c,en,The Power of Point of View,Alicia Rasley,2008,primary,fiction_manual,5,38,focalization_fixed,35.7314,64,baseline_c_bm25_only
+en_5f8c3b5327cd:c0:p77,en_5f8c3b5327cd,en,The creative writer's handbook,Isabelle Gibson Ziegler,1975,primary,fiction_manual,0,77,focalization_external,40.8646,100,baseline_c_bm25_only
+en_0bb61846d05a:c10:p12,en_0bb61846d05a,en,The beginner's guide to writing a novel,Marina Oliver,2006,primary,fiction_manual,10,12,filter_words,23.9303,51,baseline_c_bm25_only
+en_b20175188e09:c46:p58,en_b20175188e09,en,Writing and the writer,Frank Smith,,primary,fiction_manual,46,58,stance_narratorial,28.1974,63,baseline_c_bm25_only
+en_238873c8728c:c33:p102,en_238873c8728c,en,The Complete Idiots Guide To Writing Nonfiction,Christina Boufis,2012,primary,pedagogy_genre_craft,33,102,voice_general,24.1621,95,baseline_c_bm25_only
+en_f5b6d3c842d0:c7:p152,en_f5b6d3c842d0,en,Writing Fiction,Alexander Steele,2003,primary,fiction_manual,7,152,speech_dialogue,33.9436,27,baseline_c_bm25_only
+en_0836b352b72d:c11:p8,en_0836b352b72d,en,"A Writer’s Guide to Active Setting How to Enhance Your Fiction with More Descriptive, Dynamic Settings- Mary Buckham",,,primary,fiction_manual,11,8,information_control,29.5892,67,baseline_c_bm25_only
+en_85572bac189d:c0:p89,en_85572bac189d,en,The ABC's of Writing Fiction,Ann Copeland,1996,primary,fiction_manual,0,89,mode_balance,33.7118,62,baseline_c_bm25_only
+en_b0c4405578aa:c6:p86,en_b0c4405578aa,en,Writing fiction for dummies,Randy Ingermanson,2009,primary,fiction_manual,6,86,mode_narrative,34.7467,62,baseline_c_bm25_only
+en_850462b7a97e:c6:p4,en_850462b7a97e,en,The 4 A.M. Breakthrough,Brian Kiteley,,primary,fiction_manual,6,4,stance_narratorial,27.7508,67,baseline_c_bm25_only
+en_b5ab119b40cf:c0:p203,en_b5ab119b40cf,en,Crafting Fiction,Marvin Diogenes,,primary,fiction_manual,0,203,multiple_focalization_same_event,29.3049,35,baseline_c_bm25_only
+en_6fe9ad300203:c16:p80,en_6fe9ad300203,en,Write Away,Elizabeth George,2004,primary,fiction_manual,16,80,stance_figural,33.1063,53,baseline_c_bm25_only
+en_2d4ebcf25d69:c0:p57,en_2d4ebcf25d69,en,Creative writer's handbook,Philip K. Jason,1994,primary,fiction_manual,0,57,voice_protagonist,32.1695,24,baseline_c_bm25_only
+de_5af864ea1c5e:c11:p27,de_5af864ea1c5e,de,Kreatives Schreiben,Ulla Mothes,,primary,fiction_manual,11,27,pov_object,15.9594,84,baseline_c_bm25_only
+de_017250902eee:c81:p0,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,81,0,voice_participant,18.8873,27,baseline_c_bm25_only
+de_fccec0ce43dd:c34:p2,de_fccec0ce43dd,de,Kreatives Schreiben Für Dummies,Monika Hoffmann,2026,primary,fiction_manual,34,2,filter_words,13.8518,57,baseline_c_bm25_only
+de_7cd94b463388:c0:p127,de_7cd94b463388,de,Schreib es dir von der Seele,Silke Heimes,2015,primary,pedagogy_genre_craft,0,127,voice_heterodiegetic,18.0498,23,baseline_c_bm25_only
+de_7e290d053067:c6:p416,de_7e290d053067,de,"Das Schreiben des Abenteuers, das Abenteuer des Schreibens",Ulrike Söllner-Fürst,,comparison,contrast,6,416,pov_subject,17.0931,60,baseline_c_bm25_only
+de_d88c45142668:c1:p38,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,38,voice_homodiegetic,17.0804,64,baseline_c_bm25_only
+de_8478310c51fa:c10:p41,de_8478310c51fa,de,Wie Romane entstehen,Hanns-Josef Ortheil,,primary,fiction_manual,10,41,reliability,16.5459,55,baseline_c_bm25_only
+de_d7814779ddef:c0:p1167,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,1167,focalization_fixed,14.8723,100,baseline_c_bm25_only
+de_111d77f70faf:c7:p1,de_111d77f70faf,de,»Kreatives Schreiben« als Methode zur Förderung der  Schreibkompetenz,Hanna Cieslak,,primary,pedagogy_genre_craft,7,1,pov_object,16.7115,63,baseline_c_bm25_only
+de_8478310c51fa:c10:p58,de_8478310c51fa,de,Wie Romane entstehen,Hanns-Josef Ortheil,,primary,fiction_manual,10,58,focalization_fixed,18.9725,39,baseline_c_bm25_only
+de_96e473acb9fd:c3:p174,de_96e473acb9fd,de,Grundlagen Kreatives Schreiben,Pia Helfferich,,primary,fiction_manual,3,174,voice_eyewitness,15.2022,80,baseline_c_bm25_only
+de_3ff574f5ec85:c8:p10,de_3ff574f5ec85,de,Mit dem Schreiben anfangen,Hanns-Josef Ortheil,,primary,fiction_manual,8,10,reliability,19.2854,27,baseline_c_bm25_only
+de_017250902eee:c31:p21,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,31,21,reliability,17.5316,42,baseline_c_bm25_only
+de_a70e5a5cb1ca:c49:p28,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,49,28,pov_subject,20.9864,12,baseline_c_bm25_only
+de_f951ce0b5eb5:c10:p30,de_f951ce0b5eb5,de,Kreatives Schreiben Im Deutschunterricht in der Sekundarstufe I,Sevim Toker,,primary,pedagogy_genre_craft,10,30,voice_heterodiegetic,13.5431,91,baseline_c_bm25_only
+de_d88c45142668:c1:p365,de_d88c45142668,de,Das narrative Urteil,Michael Richter,,comparison,contrast,1,365,voice_heterodiegetic,14.2724,67,baseline_c_bm25_only
+de_809a3ef948a5:c18:p82,de_809a3ef948a5,de,Die 50 Werkzeuge für gutes Schreiben,Roy Peter Clark,,primary,fiction_manual,18,82,focalization_fixed,19.4114,34,baseline_c_bm25_only
+de_f03df72445ee:c55:p8,de_f03df72445ee,de,Wie man einen verdammt guten Roman schreibt 2,James N. Frey,1998,primary,fiction_manual,55,8,voice_heterodiegetic,14.7078,53,baseline_c_bm25_only
+de_3ff574f5ec85:c8:p23,de_3ff574f5ec85,de,Mit dem Schreiben anfangen,Hanns-Josef Ortheil,,primary,fiction_manual,8,23,voice_heterodiegetic,22.1079,7,baseline_c_bm25_only
+de_d7814779ddef:c0:p711,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,711,filter_words,12.7642,98,baseline_c_bm25_only
+de_d7814779ddef:c0:p1027,de_d7814779ddef,de,Wie man einen verdammt guten Roman schreibt,James N. Frey,2002,primary,fiction_manual,0,1027,filter_words,12.8501,93,baseline_c_bm25_only
+de_d84259e282d0:c0:p800,de_d84259e282d0,de,Literarisches Schreiben,Lajos Egri,2002,primary,fiction_manual,0,800,filter_words,12.8835,90,baseline_c_bm25_only
+de_017250902eee:c70:p8,de_017250902eee,de,Geschichte Schreiben Lernen,Olaf Hartung,,primary,pedagogy_genre_craft,70,8,pov_subject,20.7843,14,baseline_c_bm25_only
+de_bef6dde900a8:c0:p196,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,196,pov_object,18.8056,27,baseline_c_bm25_only
+de_8478310c51fa:c7:p38,de_8478310c51fa,de,Wie Romane entstehen,Hanns-Josef Ortheil,,primary,fiction_manual,7,38,voice_heterodiegetic,16.2748,37,baseline_c_bm25_only
+de_c2147905f44d:c0:p69,de_c2147905f44d,de,Schriftsteller werden,Dorothea Brande,2001,primary,fiction_manual,0,69,filter_words,13.4779,64,baseline_c_bm25_only
+de_06b43f8bc57b:c0:p129,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,129,voice_homodiegetic,19.7123,33,baseline_c_bm25_only
+de_a70e5a5cb1ca:c43:p5,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,43,5,voice_heterodiegetic,14.2921,66,baseline_c_bm25_only
+de_c51fc98197f7:c14:p4,de_c51fc98197f7,de,Kreativ schreiben für Fortgeschrittene,Fritz Gesing,,primary,fiction_manual,14,4,voice_eyewitness,15.1443,81,baseline_c_bm25_only
+de_44834789ac99:c13:p125,de_44834789ac99,de,Plot & Struktur,Stephan Waldscheidt,,primary,fiction_manual,13,125,pov_object,15.4588,95,baseline_c_bm25_only
+de_2e945ad0ab40:c0:p238,de_2e945ad0ab40,de,Besser Schreiben,Michael-Conrad Stark,,primary,fiction_manual,0,238,information_control,23.3948,13,baseline_c_bm25_only
+de_314339722936:c2:p0,de_314339722936,de,Literatur in 5 Minuten,Roberta Allen,,primary,fiction_manual,2,0,grammatical_first_person,19.1921,90,baseline_c_bm25_only
+de_660df57bec8d:c4:p30,de_660df57bec8d,de,Kreativ schreiben,Fritz Gesing,,primary,fiction_manual,4,30,narrator_level_time,20.8848,27,baseline_c_bm25_only
+de_8478310c51fa:c7:p26,de_8478310c51fa,de,Wie Romane entstehen,Hanns-Josef Ortheil,,primary,fiction_manual,7,26,mode_narrative,17.8433,27,baseline_c_bm25_only
+de_bef6dde900a8:c0:p49,de_bef6dde900a8,de,Kreativ schreiben. Handwerk und Techniken des Erzählens,Fritz Gesing,,primary,fiction_manual,0,49,grammatical_second_person,13.2837,57,baseline_c_bm25_only
+de_37f3f9d87441:c11:p11,de_37f3f9d87441,de,Suspense oder Wie man einen Thriller schreibt,Patricia Highsmith,,primary,fiction_manual,11,11,switching_consistency,13.8598,98,baseline_c_bm25_only
+de_fa66d2852566:c0:p165,de_fa66d2852566,de,Arbeitsbuch Kreatives Schreiben,Stephanie Posselt,2014,primary,fiction_manual,0,165,stance_figural,16.1799,86,baseline_c_bm25_only
+de_a70e5a5cb1ca:c55:p155,de_a70e5a5cb1ca,de,Romane schreiben,Gustav Ernst,,primary,fiction_manual,55,155,grammatical_second_person,12.3293,89,baseline_c_bm25_only
+de_44834789ac99:c11:p12,de_44834789ac99,de,Plot & Struktur,Stephan Waldscheidt,,primary,fiction_manual,11,12,information_control,35.884,1,baseline_c_bm25_only
+de_06b43f8bc57b:c0:p157,de_06b43f8bc57b,de,Kreatives Schreiben Zur Entwicklung Von Ressourcen in Beratung und Coaching,Renate Haussmann,2017,primary,pedagogy_genre_craft,0,157,consciousness_access,17.9603,72,baseline_c_bm25_only

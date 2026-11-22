@@ -1,0 +1,936 @@
+# PsyPer bilingual retrieval lexicon v0.3 (draft).
+# Additive to v0.2; does not replace config/pov_lexicon_psyper_en_de_v0.2.yml.
+# Terms are candidate retrieval cues, not gold narratological labels.
+# PsyPer mappings indicate potential relevance, not logical equivalence.
+# evidence_overrides assign explicit evidence tiers independent of vocabulary origin.
+# Provisional corpus-driven expansions require human confirmation.
+version: 0.3-draft
+languages: [en, de]
+purpose: Retrieve discussion of narrative perspective in writing manuals, not annotate fictional examples.
+matching: {academic: Specific phrases; rare terms may be strong candidates; ambiguous ones need context.,
+  craft: Candidate terms used in practical instruction; require narrative context for ambiguous forms.,
+  paraphrases: Match normalized phrases or use as semantic queries; do not count semantic similarity as
+    literal frequency., context: Supporting cues only; never retrieve a passage on these words alone.,
+  scope: Paragraph or 2–3 sentences; retain surrounding context; do not match across chapter boundaries.,
+  normalization: 'NFKC, Unicode quotes/dashes, soft hyphen removal, conservative line-break dehyphenation,
+    case-folding, German inflection and compounds.', aggregation: 'Deduplicate overlapping spans by concept;
+    preserve matched form, concept ID and all evidence; report counts per 10000 body words.', corpus_membership: 'Independent
+    of lexicon hits; unreadable or unavailable text is unknown, not zero.', ngram: 'Use only literal,
+    short, sufficiently specific forms, with language-specific spelling and inflection variants; measure
+    separately from manual corpus.', undeterminable: 'PsyPer 0/0.1/0.2 are uncertainty labels, not concept
+    retrieval categories.'}
+concepts:
+- id: perspective_general
+  psyper: [A, B, C, D, E, F]
+  note: Umbrella terminology; no specific category inferred.
+  en:
+    academic: [narrative perspective, narrative point of view, narrative viewpoint, perspectivization,
+      narrative situation, narratorial perspective, narrative perspective-taking]
+    craft: [point of view, POV, viewpoint, viewpoint character, perspective character, POV character,
+      story perspective, narrative lens, narrative angle, narrative stance, narrative camera, choice of
+        perspective, choice of viewpoint]
+    paraphrases: [who tells the story, who is telling the story, from whose point of view, from whose
+        perspective, whose story is it, whose eyes we see through, who should narrate the story, choose
+        a point of view, decide who tells the story, choose the right perspective]
+    context: [perspective, angle, lens, position, standpoint, view]
+  de:
+    academic: [Erzählperspektive, Erzählstandpunkt, Erzählerstandort, Erzählsituation, Erzählhaltung,
+      Perspektivierung, narrative Perspektive, Erzählposition, Perspektivenstruktur]
+    craft: [Blickwinkel, Blickpunkt, Perspektivfigur, Erzählfigur, Erzählblick, Erzähloptik, Erzählkamera,
+      Perspektivenwahl, Wahl der Erzählperspektive, Erzählform, Erzählweise]
+    paraphrases: [wer erzählt die Geschichte, aus wessen Sicht, aus wessen Perspektive, durch wessen Augen,
+      wer soll erzählen, wessen Geschichte wird erzählt, die passende Perspektive wählen, die Erzählperspektive
+        festlegen, aus welchem Blickwinkel erzählt wird]
+    context: [Perspektive, Sichtweise, Blick, Standpunkt, Blickrichtung, Position, Sicht]
+- id: voice_general
+  psyper: [A, B, C]
+  note: Narrative voice and identity of the narrator; voice can also refer to style.
+  en:
+    academic: [narrative voice, narrating instance, narratorial voice, narrator's voice, narrative agency,
+      narrating subject, narrating voice]
+    craft: [storyteller, narrator, narrative speaker, choice of narrator, narrator's identity, storyteller's
+        voice, narrator's role]
+    paraphrases: [who is speaking, who narrates, who is the narrator, whose voice tells the story, who
+        does the telling, who is responsible for the narration, decide on the narrator]
+    context: [voice, speaker, telling, narrator, storyteller, tone]
+  de:
+    academic: [Erzählinstanz, Erzählstimme, Erzählerstimme, erzählendes Subjekt, narrative Stimme, Erzählerfigur,
+      Erzählfunktion]
+    craft: [Erzähler, Erzählerin, Erzählerwahl, Erzählerrolle, Erzähleridentität, Stimme des Erzählers,
+      erzählende Stimme, Erzählton]
+    paraphrases: [wer spricht, wer erzählt, wer ist der Erzähler, aus wessen Stimme erzählt wird, wer
+        die Geschichte vermittelt, wer übernimmt das Erzählen, den Erzähler auswählen]
+    context: [Stimme, Sprecher, Erzählen, Ton, Erzähler, Erzählerin]
+- id: grammatical_first_person
+  psyper: [A, B]
+  note: Grammatical person is evidence, not sufficient for homodiegetic status.
+  en:
+    academic: [first-person narration, first-person narrative, first-person narrator, first-person point
+        of view, first-person perspective, I-narrator, first-person pronoun]
+    craft: [first person, first-person POV, first person singular, writing in first person, first-person
+        viewpoint, I perspective, we narrator, first-person plural]
+    paraphrases: [tell the story using I, write from the I perspective, narrate in the first person, use
+        I instead of he or she, the narrator refers to himself, the narrator refers to herself, tell your
+        own story]
+    context: [I, me, we, us, first, pronoun]
+  de:
+    academic: [Ich-Erzählung, Ich-Erzähler, Ich-Erzählerin, Ich-Perspektive, Ich-Form, Erzählung in der
+        ersten Person, erste Person Singular, Wir-Erzählung]
+    craft: [Ich-Form schreiben, Ichsicht, Ich-PoV, Ich-Person, Ich-Perspektive wählen, erste Person, Ich-Stimme,
+      Ich-Perspektive, Ich-Form]
+    paraphrases: [aus der Ich-Perspektive erzählen, in der ersten Person schreiben, die Geschichte mit
+        Ich erzählen, statt er oder sie Ich verwenden, der Erzähler spricht von sich selbst, die Erzählerin
+        spricht von sich selbst]
+    context: [Ich, mich, wir, uns, Pronomen]
+- id: grammatical_second_person
+  psyper: [A, B]
+  note: Additional grammatical-person dimension; not a PsyPer voice class.
+  en:
+    academic: [second-person narration, second-person narrator, second-person narrative, second-person
+        point of view]
+    craft: [second person, second-person POV, you narration, you perspective, writing in second person]
+    paraphrases: [address the protagonist as you, narrate using you, tell the story in the second person,
+      make the reader the protagonist]
+    context: [you, address, addressee]
+  de:
+    academic: [Du-Erzählung, Du-Perspektive, Du-Form, Erzählung in der zweiten Person, Du-Erzähler]
+    craft: [zweite Person, Du-Ansprache, Du-Perspektive schreiben, direkte Anrede, Du-Perspektive, Du-Form]
+    paraphrases: [die Figur mit Du ansprechen, in der zweiten Person erzählen, den Leser als Du ansprechen]
+    context: [Du, dich, Sie, Anrede]
+- id: grammatical_third_person
+  psyper: [A, B, D, E]
+  note: Third person is not equivalent to heterodiegetic or unrestricted narration.
+  en:
+    academic: [third-person narration, third-person narrative, third-person narrator, third-person point
+        of view, third-person perspective]
+    craft: [third person, third-person POV, he or she narration, third-person viewpoint, writing in third
+        person]
+    paraphrases: [tell the story using he or she, write in the third person, refer to the character by
+        name, narrate using third-person pronouns]
+    context: [he, she, they, third, pronoun]
+  de:
+    academic: [Er-Erzählung, Sie-Erzählung, Er-Erzähler, Sie-Erzählerin, Er-Sie-Erzählung, Erzählung in
+        der dritten Person, Er-Sie-Perspektive, Er-Form, Sie-Form]
+    craft: [dritte Person, Er-Perspektive, Sie-Perspektive, Er-Sie-Form, Er-PoV, Er-/Sie-Form, Er-Form,
+      Sie-Form]
+    paraphrases: [in der dritten Person erzählen, mit er oder sie erzählen, aus der Er-Perspektive schreiben,
+      die Figur beim Namen nennen]
+    context: [er, sie, Name, Pronomen]
+- id: voice_heterodiegetic
+  psyper: ['1', '1.1']
+  note: Detached means not a participant; not necessarily unemotional, objective or omniscient.
+  en:
+    academic: [heterodiegetic narrator, heterodiegetic narration, heterodiegetic narrative, non-diegetic
+        narrator, narrator outside the diegesis]
+    craft: [detached narrator, nonparticipant narrator, external narrator, outside narrator, uninvolved
+        narrator, impersonal narrator, absent narrator]
+    paraphrases: [narrator outside the story, narrator is not a character, narrator not part of the story,
+      narrator does not take part in the action, narrator stands outside the events, storyteller remains
+        outside the action, the narrator is not a character in the story, the narrator is not part of
+        the fictional world]
+    context: [outside, detached, invisible, external, nonparticipant]
+    evidence_overrides: {the narrator is not a character in the story: strong_paraphrase, the narrator is not part of the fictional world: strong_paraphrase}
+  de:
+    academic: [heterodiegetischer Erzähler, heterodiegetische Erzählerin, heterodiegetisches Erzählen,
+      heterodiegetische Erzählinstanz, erzählweltfremde Erzählinstanz]
+    craft: [unbeteiligter Erzähler, außenstehender Erzähler, nicht beteiligter Erzähler, distanzierter
+        Erzähler, unsichtbarer Erzähler, unpersönlicher Erzähler]
+    paraphrases: [Erzähler ist keine Figur, Erzähler gehört nicht zur erzählten Welt, Erzähler steht außerhalb
+        der Handlung, Erzähler nimmt nicht am Geschehen teil, Erzählinstanz ist nicht am Geschehen beteiligt,
+      der Erzähler ist keine Figur der erzählten Welt, die Erzählinstanz gehört nicht zur fiktiven Welt]
+    context: [außenstehend, unbeteiligt, außerhalb, unsichtbar, distanziert]
+    evidence_overrides: {der erzähler ist keine figur der erzählten welt: strong_paraphrase}
+- id: voice_homodiegetic
+  psyper: ['2', '2.2']
+  en:
+    academic: [homodiegetic narrator, homodiegetic narration, homodiegetic narrative, character narrator,
+      narrator-character]
+    craft: [involved narrator, participating narrator, narrator as character, narrator in the story, first-person
+        character narrator]
+    paraphrases: [narrator is a character, narrator is part of the story, narrator belongs to the story
+        world, narrator takes part in the action, narrator recounts personal experience, narrator was
+        present at the events, a narrator who appears in the story, narrator within the fictional world,
+      a character who tells the story, the narrator is himself or herself a character, the narrator is
+        involved in the events]
+    context: [participation, involvement, personal experience, presence, memories]
+    evidence_overrides: {a narrator who appears in the story: strong_paraphrase, narrator within the fictional world: strong_paraphrase,
+      the narrator is himself or herself a character: strong_paraphrase}
+  de:
+    academic: [homodiegetischer Erzähler, homodiegetische Erzählerin, homodiegetisches Erzählen, homodiegetische
+        Erzählinstanz, Figurenerzähler]
+    craft: [beteiligter Erzähler, mitwirkender Erzähler, Erzähler als Figur, Erzählerfigur, erzählende
+        Figur, Erzähler innerhalb der Geschichte]
+    paraphrases: [Erzähler ist selbst eine Figur, Erzähler gehört zur erzählten Welt, Erzähler ist Teil
+        der Handlung, Erzähler nimmt am Geschehen teil, Erzähler berichtet eigene Erlebnisse, Erzähler
+        war selbst dabei, 'ein Erzähler, der in der Geschichte vorkommt', Erzähler innerhalb der erzählten
+        Welt, 'eine Figur, die die Geschichte erzählt', der Erzähler ist selbst eine handelnde Figur,
+      der Erzähler ist am Geschehen beteiligt]
+    context: [Beteiligung, Anwesenheit, eigene Erlebnisse, Erinnerung, Mitwirkung]
+    evidence_overrides: {erzähler innerhalb der erzählten welt: strong_paraphrase, der erzähler ist selbst eine handelnde figur: strong_paraphrase,
+      der erzähler ist am geschehen beteiligt: strong_paraphrase}
+- id: voice_eyewitness
+  psyper: [2.2.1]
+  en:
+    academic: [witness narrator, eyewitness narrator, observer narrator, peripheral narrator, peripheral
+        first-person narrator, first-person peripheral]
+    craft: [narrator as witness, narrator as observer, outsider witness, sidekick narrator, bystander
+        narrator, Watson narrator, first-person observer, spectator narrator]
+    paraphrases: [tells someone else's story, tells the story of another character, watches the protagonist,
+      observes without taking part, witnesses the events without intervening, narrator is present but
+        does not act, a narrator who witnesses the events, tell the story through a witness, narration
+        by a secondary observer, the narrator observes rather than participates]
+    context: [eyewitness, witness, observer, onlooker, bystander, spectator]
+    evidence_overrides: {a narrator who witnesses the events: strong_paraphrase, the narrator observes rather than participates: strong_paraphrase,
+      narration by a secondary observer: strong_paraphrase}
+  de:
+    academic: [Zeugenerzähler, Zeugen-Erzähler, Beobachtererzähler, Beobachter-Erzähler, Augenzeugenerzähler,
+      peripherer Erzähler]
+    craft: [Erzähler als Zeuge, Erzähler als Beobachter, Ich-Erzähler als Beobachter, erzählender Zeuge,
+      unbeteiligter Zeuge, Randfigur als Erzähler, Watson-Figur, Augenzeuge als Erzähler, beobachtende
+        Erzählinstanz]
+    paraphrases: [die Geschichte einer anderen Figur erzählen, der Erzähler beobachtet die Hauptfigur,
+      als Zeuge berichten, beobachtet ohne einzugreifen, ist anwesend ohne mitzuwirken, schildert das
+        Geschehen als Zuschauer, 'ein Erzähler, der das Geschehen beobachtet', die Geschichte aus der
+        Sicht eines Zeugen erzählen, Erzählen aus der Sicht einer beobachtenden Nebenfigur, 'der Erzähler
+        beobachtet, statt selbst zu handeln', Augenzeuge als Erzähler, beobachtende Erzählinstanz]
+    context: [Zeuge, Augenzeuge, Beobachter, Zuschauer, Randfigur]
+    evidence_overrides: {'ein erzähler, der das geschehen beobachtet': strong_paraphrase, 'der erzähler beobachtet, statt selbst zu handeln': strong_paraphrase,
+      augenzeuge als erzähler: strong_craft, beobachtende erzählinstanz: strong_craft, ich-erzähler als beobachter: strong_craft}
+- id: voice_participant
+  psyper: [2.2.2]
+  en:
+    academic: [participant narrator, participating narrator, narrator as secondary character, homodiegetic
+        secondary narrator]
+    craft: [secondary-character narrator, supporting-character narrator, first-person secondary character,
+      narrator as side character, narrator as companion]
+    paraphrases: [narrator plays a part in the events, narrator influences the action, narrator helps
+        the protagonist, someone close to the main character tells the story, narrator takes part but
+        is not the protagonist, the story is told by a minor character, narration by a participating secondary
+        character, a narrator who takes part in the action, a narrator who is not the main protagonist
+        but participates in events]
+    context: [participant, involvement, secondary character, supporting character, companion]
+    evidence_overrides: {the story is told by a minor character: strong_paraphrase, narration by a participating secondary character: strong_paraphrase,
+      a narrator who is not the main protagonist but participates in events: strong_paraphrase}
+  de:
+    academic: [teilnehmender Erzähler, mitwirkender Erzähler, beteiligter Nebenerzähler, homodiegetischer
+        Nebenerzähler]
+    craft: [Nebenfigur als Erzähler, Erzähler als Nebenfigur, erzählende Nebenfigur, Ich-Erzähler als
+        Nebenfigur, Begleiter als Erzähler]
+    paraphrases: [Erzähler wirkt am Geschehen mit, Erzähler hilft der Hauptfigur, Erzähler beeinflusst
+        die Handlung, Nebenfigur erzählt die Geschichte, nimmt teil ohne die Hauptfigur zu sein, die Geschichte
+        wird von einer Nebenfigur erzählt, erzählende und handelnde Nebenfigur, 'ein Erzähler, der aktiv
+        am Geschehen beteiligt ist', 'der Erzähler nimmt an der Handlung teil, ohne die Hauptfigur zu
+        sein']
+    context: [Mitwirkung, Teilnehmer, Nebenfigur, Nebenrolle, Begleiter]
+    evidence_overrides: {die geschichte wird von einer nebenfigur erzählt: strong_paraphrase, 'der erzähler nimmt an der handlung teil, ohne die hauptfigur zu sein': strong_paraphrase}
+- id: voice_protagonist
+  psyper: [2.2.3]
+  en:
+    academic: [autodiegetic narrator, autodiegetic narration, protagonist narrator, narrator-protagonist,
+      first-person protagonist]
+    craft: [first-person main character, main-character narrator, central-character narrator, hero narrator,
+      narrator as protagonist, narrator as main character]
+    paraphrases: [the protagonist tells their own story, the hero narrates the events, the main character
+        tells the story, narrator tells their own life, narrator is the central character, story centres
+        on the narrator's experiences]
+    context: [protagonist, hero, main character, central character, own story]
+  de:
+    academic: [autodiegetischer Erzähler, autodiegetische Erzählerin, autodiegetisches Erzählen, Erzähler-Protagonist,
+      Ich-Protagonist]
+    craft: [Protagonist als Erzähler, Hauptfigur als Erzähler, erzählende Hauptfigur, Held als Erzähler,
+      Ich-Erzähler als Hauptfigur]
+    paraphrases: [die Hauptfigur erzählt ihre eigene Geschichte, der Held erzählt selbst, der Erzähler
+        ist die Hauptfigur, die Erzählerin ist die Protagonistin, die Handlung dreht sich um den Erzähler,
+      eigene Erlebnisse stehen im Mittelpunkt]
+    context: [Hauptfigur, Protagonist, Protagonistin, Held, eigene Geschichte]
+- id: stance_narratorial
+  psyper: ['3']
+  note: Authorial narration is a related historical/craft cue, not an exact equivalent.
+  en:
+    academic: [narratorial narration, narratorial stance, narratorial discourse, narratorial presentation,
+      narrator's discourse, authorial narration, narrator mediation]
+    craft: [narratorial commentary, narrator commentary, intrusive narrator, authorial intrusion, narrator
+        intrusion, narrator intervention, narrator interpretation, narrator evaluation, narrator addresses
+        the reader, editorial omniscience, authorial voice]
+    paraphrases: [narrator comments on the action, narrator explains what happened, narrator tells the
+        reader what to think, narrator judges the characters, narrator steps in to explain, narrator speaks
+        directly to the reader, narrator summarizes the events, storyteller interrupts the scene]
+    context: [commentary, evaluation, judgement, explanation, interpretation, intervention, aside, reader
+        address]
+  de:
+    academic: [narratoriale Erzählhaltung, narratoriales Erzählen, narratoriale Darstellung, Erzählerdiskurs,
+      auktoriale Erzählhaltung, auktoriales Erzählen, Erzählervermittlung, auktoriale Erzählperspektive,
+      auktoriale Erzählsituation]
+    craft: [Erzählerkommentar, Erzählerwertung, Erzählerreflexion, Erzähleinmischung, Erzählerintervention,
+      Erzählerbemerkung, eingreifender Erzähler, kommentierender Erzähler, Leseransprache, Erzählerbericht,
+      auktorialer Erzähler, auktoriale Erzählerin]
+    paraphrases: [Erzähler kommentiert die Handlung, Erzähler bewertet die Figuren, Erzähler erklärt die
+        Ereignisse, Erzähler wendet sich an den Leser, Erzähler greift in die Darstellung ein, Erzählinstanz
+        ordnet das Geschehen ein, Erzähler fasst die Handlung zusammen]
+    context: [Kommentar, Wertung, Erklärung, Einordnung, Reflexion, Vorausdeutung, Leseransprache]
+- id: stance_figural
+  psyper: ['4']
+  note: Thought representation and character-centred language are related cues; distinguish from information
+    access.
+  en:
+    academic: [figural narration, figural narrative, figural stance, figural presentation, figural discourse,
+      reflector character, reflector mode, character-bound narration, character-centred narration, character-centered
+        narration]
+    craft: [character-filtered narration, character voice in narration, character's own language, immersive
+        narration, close narration, deep POV, filtering through the character, character's subjective
+        experience, free indirect style]
+    paraphrases: [use the character's own words, use the language of the viewpoint character, write as
+        the character would think, filter the description through the character, let the character's voice
+        colour the narration, let the character's experience shape the prose, remove the narrator as intermediary]
+    context: [subjectivity, diction, expressive syntax, deictic centre, deixis, immediacy, character voice]
+  de:
+    academic: [figurale Erzählhaltung, figurales Erzählen, figurale Darstellung, figurale Perspektive,
+      Reflektorfigur, Reflektormodus, figurenbezogenes Erzählen, personale Erzählhaltung, personales Erzählen,
+      personale Erzählperspektive, personale Erzählsituation]
+    craft: [figurennahe Darstellung, Figurenstimme im Erzählen, figurennahe Sprache, Figurenfilter, subjektive
+        Figurenperspektive, erlebte Rede, unmittelbares Erleben, personale Erzählweise, Deep POV, personaler
+        Erzähler, personale Erzählerin]
+    paraphrases: [die Sprache der Figur verwenden, durch die Figur gefiltert erzählen, die Wahrnehmung
+        der Figur bestimmt die Sprache, in der Gedankenwelt der Figur schreiben, den Erzähler als Vermittler
+        zurücktreten lassen, die Figurenstimme prägt den Text]
+    context: [Subjektivität, Figurenstimme, Deixis, unmittelbares Erleben, Sprachstil, Ausdruck, figural]
+- id: focalization_general
+  psyper: [D, E]
+  en:
+    academic: [focalization, focalisation, focalizer, focaliser, focalized character, focalised character,
+      focalizing subject, focalising subject, focal narrative, locus of focalization]
+    craft: [viewpoint restriction, narrative knowledge, access to information, range of knowledge, information
+        available to the narrator, perspective constraints]
+    paraphrases: [who knows what, who sees what, what the narrator is allowed to know, what information
+        the viewpoint character has, whose knowledge limits the narration]
+    context: [knowledge, information, perception, restriction, access, limitation]
+  de:
+    academic: [Fokalisierung, Fokalisator, Fokalisierungsfigur, Fokalisierungsinstanz, fokalisierende
+        Figur, fokalisierte Figur, Wahrnehmungsinstanz, Fokalisierungstyp, Fokalisationszentrum]
+    craft: [Wissenshorizont, Wahrnehmungshorizont, Wissensstand des Erzählers, Erzählwissen, Informationszugang,
+      Wissensbegrenzung, Beschränkung der Perspektive]
+    paraphrases: [wer weiß was, wer sieht was, was der Erzähler wissen kann, was die Perspektivfigur wissen
+        kann, wessen Wissen die Darstellung bestimmt, welche Informationen zugänglich sind]
+    context: [Wissen, Information, Wahrnehmung, Einschränkung, Zugang, Begrenzung]
+- id: focalization_zero
+  psyper: ['5', '5.1']
+  note: Omniscience and auktorial are related cues, not invariably zero focalization.
+  en:
+    academic: [zero focalization, zero focalisation, nonfocalized narration, unrestricted focalization,
+      omniscient narration, unrestricted narration, unrestricted knowledge]
+    craft: [omniscient narrator, omniscient point of view, third-person omniscient, all-knowing narrator,
+      godlike narrator, god's-eye view, god's eye perspective, unlimited viewpoint, unrestricted viewpoint,
+      authorial omniscience, panoramic perspective, omniscience, all-knowing narrative voice, unlimited
+        narrator knowledge, access to every character's thoughts, narrator knows more than the protagonist]
+    paraphrases: [narrator knows everything, knows more than the characters, sees into everyone's mind,
+      enters any character's thoughts, knows the past and future, knows what happens elsewhere, knows
+        things no character knows, sees the whole picture, knows all the characters' secrets, unlimited
+        narrator knowledge, access to every character's thoughts, narrator knows more than the protagonist]
+    context: [all-knowing, omniscient, unrestricted, unlimited, future knowledge, secrets]
+    evidence_overrides: {omniscient point of view: strong_craft, all-knowing narrative voice: strong_paraphrase,
+      unlimited narrator knowledge: strong_paraphrase, access to every character's thoughts: strong_paraphrase,
+      narrator knows more than the protagonist: strong_paraphrase, third-person omniscient: strong_craft}
+  de:
+    academic: [Nullfokalisierung, Null-Fokalisierung, unfokalisierte Erzählung, uneingeschränkte Fokalisierung,
+      unbeschränktes Erzählerwissen, auktoriale Erzählsituation]
+    craft: [allwissender Erzähler, allwissende Erzählerin, auktorialer Erzähler, auktoriale Erzählperspektive,
+      Allwissenheit des Erzählers, Götterperspektive, Gottperspektive, Überblicksperspektive, unbegrenzte
+        Perspektive, allwissende Erzählperspektive, allwissende Erzählinstanz, unbegrenztes Wissen des
+        Erzählers, Einblick in die Gedanken sämtlicher Figuren, Wissensvorsprung des Erzählers, übergeordnetes
+        Erzählerwissen, Nullfokalisierung]
+    paraphrases: [Erzähler weiß alles, Erzähler weiß mehr als die Figuren, kennt die Gedanken aller Figuren,
+      kennt Vergangenheit und Zukunft, weiß was anderswo geschieht, weiß Dinge die keine Figur weiß, kann
+        in alle Köpfe schauen, überblickt das ganze Geschehen]
+    context: [allwissend, auktorial, Allwissenheit, unbegrenzt, uneingeschränkt, Wissensvorsprung]
+    evidence_overrides: {allwissende erzählperspektive: strong_craft, allwissende erzählinstanz: strong_craft,
+      nullfokalisierung: strong_academic, unbegrenztes wissen des erzählers: strong_paraphrase, einblick in die gedanken sämtlicher figuren: strong_paraphrase,
+      wissensvorsprung des erzählers: strong_paraphrase, allwissender erzähler: strong_craft}
+- id: focalization_internal
+  psyper: ['6']
+  note: Limited third person is a craft cue; first-person narration is not necessarily internally focalized.
+  en:
+    academic: [internal focalization, internal focalisation, internally focalized narration, character-bound
+        focalization, restricted focalization, limited knowledge, restricted narrative knowledge]
+    craft: [third-person limited, limited third person, limited third, limited omniscient, limited omniscience,
+      selective omniscience, limited point of view, restricted point of view, subjective point of view,
+      character-limited perspective, close third person, deep third person]
+    paraphrases: [know only what the character knows, reader sees only what the character sees, stay inside
+        the character's head, limit the story to one character's experience, cannot reveal what other
+        characters think, restrict information to the viewpoint character, tell the story through a character's
+        perceptions]
+    context: [restricted knowledge, subjectivity, experience, thoughts, perceptions, feelings]
+  de:
+    academic: [interne Fokalisierung, innere Fokalisierung, intern fokalisierte Erzählung, figurenbezogene
+        Fokalisierung, figureninterne Perspektive, begrenztes Figurenwissen, beschränktes Erzählerwissen]
+    craft: [personale Erzählsituation, personale Erzählperspektive, personaler Erzähler, Innensicht, Innenperspektive,
+      begrenzte Figurenperspektive, beschränkte Perspektive, subjektive Erzählperspektive, limited third
+        person, begrenzte Allwissenheit]
+    paraphrases: [nur wissen was die Figur weiß, Leser sieht nur was die Figur sieht, im Kopf der Figur
+        bleiben, auf die Wahrnehmung einer Figur beschränkt, nicht wissen was andere Figuren denken, aus
+        dem Erleben der Figur erzählen, nur was die Perspektivfigur wahrnimmt]
+    context: [Wissenshorizont, Innenleben, Wahrnehmung, Gedanken, Gefühle, Beschränkung]
+- id: focalization_external
+  psyper: ['7', '7.1']
+  note: No access to inner states; 'showing' or an objective tone alone is insufficient.
+  en:
+    academic: [external focalization, external focalisation, externally focalized narration, external
+        perspective, no interior access, restricted external observation]
+    craft: [objective narration, objective narrator, objective point of view, objective third person,
+      camera eye, camera-eye narration, camera perspective, fly on the wall, fly-on-the-wall narrator,
+      dramatic point of view, behavioural narration, behavioral narration, third-person observer]
+    paraphrases: [describe only what can be seen or heard, show only external actions, record events like
+        a camera, no access to thoughts, do not reveal what characters think, let actions speak for themselves,
+      describe the character from the outside, report only observable behaviour]
+    context: [observable behaviour, gesture, facial expression, body language, camera, observation, external
+        action]
+  de:
+    academic: [externe Fokalisierung, äußere Fokalisierung, extern fokalisierte Erzählung, Außensicht,
+      Außenperspektive, kein Innenzugang]
+    craft: [neutraler Erzähler, neutrale Erzählsituation, neutrale Erzählweise, objektive Erzählweise,
+      objektive Erzählperspektive, Kameraperspektive, Kameraauge, Beobachterperspektive, Kamera-Erzähler]
+    paraphrases: [nur beschreiben was sichtbar oder hörbar ist, wie eine Kamera erzählen, kein Zugang
+        zu den Gedanken, das Innenleben nicht offenlegen, nur äußere Handlungen schildern, die Figur von
+        außen beschreiben, nur beobachtbares Verhalten wiedergeben]
+    context: [äußeres Verhalten, Mimik, Gestik, Körpersprache, Beobachtung, Kamera, Handlung]
+- id: focalization_fixed
+  psyper: ['6.1']
+  en:
+    academic: [fixed focalization, fixed focalisation, fixed internal focalization, single focalizer,
+      single focaliser, constant focalization]
+    craft: [single point of view, single POV, single viewpoint, single viewpoint character, one-character
+        perspective, single-character perspective, consistent POV, single perspective]
+    paraphrases: [stay with one character, stay in one character's head, stick to one viewpoint, tell
+        everything from one perspective, do not leave the viewpoint character, keep the same point of
+        view throughout, use one narrator per scene, one viewpoint throughout the novel, remain with the
+        same character, restrict the perspective to one character, tell the story through a single character's
+        eyes, maintain a single focal character]
+    context: [one character, consistent, constant, single, stay]
+    evidence_overrides: {one viewpoint throughout the novel: strong_paraphrase, restrict the perspective to one character: strong_paraphrase,
+      tell the story through a single character's eyes: strong_paraphrase, maintain a single focal character: strong_paraphrase}
+  de:
+    academic: [fixe Fokalisierung, feste Fokalisierung, fixed focalization, konstante Fokalisierung, feste
+        interne Fokalisierung, einheitliche Fokalisierung]
+    craft: [eine Perspektivfigur, konstante Erzählperspektive, einheitliche Figurenperspektive, durchgehende
+        Perspektive, gleichbleibende Perspektive, Einzelperspektive]
+    paraphrases: [bei einer Figur bleiben, im Kopf einer Figur bleiben, aus der Sicht nur einer Figur
+        erzählen, die Perspektive beibehalten, nicht aus der Perspektive herausfallen, pro Szene nur eine
+        Perspektivfigur verwenden, durchgehend dieselbe Erzählperspektive, bei derselben Figur bleiben,
+      die Perspektive auf eine Figur beschränken, die Geschichte durch die Augen einer einzigen Figur
+        erzählen, dieselbe Perspektivfigur beibehalten]
+    context: [eine Figur, konstant, gleichbleibend, einheitlich, durchgehend]
+    evidence_overrides: {durchgehend dieselbe erzählperspektive: strong_paraphrase, die perspektive auf eine figur beschränken: strong_paraphrase,
+      die geschichte durch die augen einer einzigen figur erzählen: strong_paraphrase}
+- id: focalization_variable
+  psyper: ['6.2']
+  note: Several limited perspectives do not by themselves establish omniscience; multiple telling of same
+    event is separate.
+  en:
+    academic: [variable focalization, variable focalisation, shifting internal focalization, alternating
+        internal focalization, shifting focalizer, perspectival plurality]
+    craft: [multiple POV, multiple viewpoints, multiple points of view, alternating POV, alternating viewpoints,
+      multiple viewpoint characters, third-person multiple, multiple first-person narrative, rotating
+        viewpoint, dual POV, ensemble POV, alternating narrators]
+    paraphrases: [switch between characters' perspectives, shift from one character to another, tell different
+        chapters from different viewpoints, alternate point of view characters, each scene has a different
+        viewpoint, move between characters' minds, give several characters a turn to tell the story]
+    context: [multiple, alternating, shifts, switching, ensemble, dual]
+  de:
+    academic: [variable Fokalisierung, wechselnde Fokalisierung, variable interne Fokalisierung, Multiperspektivität,
+      multiperspektivisches Erzählen, Perspektivenpluralität]
+    craft: [wechselnde Figurenperspektiven, mehrere Perspektivfiguren, Perspektivwechsel, Perspektivenwechsel,
+      wechselnde Erzählperspektiven, multiple Perspektiven, alternierende Erzähler, Dual-POV, mehrere
+        Ich-Erzähler]
+    paraphrases: [zwischen Figurenperspektiven wechseln, aus Sicht mehrerer Figuren erzählen, jedes Kapitel
+        aus einer anderen Perspektive erzählen, verschiedene Figuren abwechselnd erzählen lassen, von
+        einer Figur zur nächsten wechseln, mehrere Blickwinkel auf die Handlung]
+    context: [Wechsel, wechselnd, mehrere, abwechselnd, vielfältig, multiperspektivisch]
+- id: pov_subject
+  psyper: ['8']
+  en:
+    academic: [perceiving subject, subject of perception, experiencing subject, centre of consciousness,
+      center of consciousness, perceptual centre, perceptual center, experiential centre, focalizing subject,
+      focalising subject]
+    craft: [viewpoint character as observer, perceptual point of view, character as lens, character's
+        sensory experience, subjective perception, subjective viewpoint, sensory viewpoint, character's
+        eyes]
+    paraphrases: [see through the character's eyes, experience the scene with the character, see what
+        the character sees, hear what the character hears, perceive the world through the character, inhabit
+        the character's mind, follow the character's experience, see things as the character sees them]
+    context: [perceive, see, hear, feel, notice, experience, sensory, body sensation]
+  de:
+    academic: [wahrnehmendes Subjekt, Subjekt der Wahrnehmung, erlebendes Subjekt, Wahrnehmungszentrum,
+      Bewusstseinszentrum, Erlebenszentrum, Wahrnehmungsträger, Erfahrungssubjekt]
+    craft: [Figur als Wahrnehmungsträger, subjektive Wahrnehmung, sinnliche Wahrnehmung der Figur, erlebende
+        Figur, Wahrnehmungsfigur, Figurenwahrnehmung, Blick durch die Figur]
+    paraphrases: [durch die Augen der Figur sehen, durch die Augen der Figur erzählen, die Szene mit der
+        Figur erleben, sehen was die Figur sieht, hören was die Figur hört, die Welt durch die Figur wahrnehmen,
+      den Leser in die Figur versetzen]
+    context: [wahrnehmen, sehen, hören, fühlen, bemerken, erleben, Empfindung, Sinneseindruck]
+- id: pov_object
+  psyper: ['9']
+  note: A character can be an object of depiction within another character's internal perspective.
+  en:
+    academic: [object of perception, perceived object, perceived character, object of representation,
+      observed character, external representation of character]
+    craft: [character seen from outside, description of appearance, physical description of character,
+      observable character behaviour, visual characterization, visual characterisation]
+    paraphrases: [describe the character from outside, show how the character looks to another character,
+      make the character the object of another's gaze, describe observable gestures, describe how others
+        see the character, show how the character appears]
+    context: [appearance, posture, gestures, clothing, facial expression, look, observation]
+  de:
+    academic: [Wahrnehmungsobjekt, Gegenstand der Wahrnehmung, wahrgenommene Figur, Gegenstand der Darstellung,
+      beobachtete Figur, Figur als Objekt]
+    craft: [äußere Figurenbeschreibung, Beschreibung des Aussehens, Beschreibung von Verhalten, äußere
+        Charakterisierung, sichtbare Merkmale einer Figur]
+    paraphrases: [Figur von außen beschreiben, beschreiben wie die Figur auf andere wirkt, Figur durch
+        den Blick einer anderen Figur zeigen, sichtbare Gesten schildern, beschreiben wie andere die Figur
+        sehen]
+    context: [Aussehen, Kleidung, Mimik, Gestik, Haltung, Verhalten, Blick]
+- id: mode_narrative
+  psyper: ['10', '11']
+  note: Search discussion of telling; lexical hits cannot distinguish ordinal levels 10 and 11.
+  en:
+    academic: [narrative mode, narrative summary, narratorial mediation, summary narration, diegetic mode,
+      diegesis, time compression, temporal compression, narrative report]
+    craft: [telling, telling instead of showing, show versus tell, summary versus scene, exposition, narrative
+        exposition, backstory summary, summary passage, compress time, narrative distance through summary]
+    paraphrases: [summarize rather than dramatize, tell the reader what happened, skip over uneventful
+        periods, sum up repeated actions, condense a long period into a sentence, cover years in a paragraph,
+      explain rather than enact the scene]
+    context: [summary, exposition, report, telling, compression, explanation, background]
+  de:
+    academic: [narrativer Modus, erzählender Modus, diegetischer Modus, Diegesis, erzählerische Vermittlung,
+      Zeitraffung, gerafftes Erzählen, narrativer Bericht]
+    craft: [berichtendes Erzählen, zusammenfassendes Erzählen, erzählerische Zusammenfassung, Erzählbericht,
+      Exposition, Telling, Zeit zusammenraffen, Erzählpassage, Hintergrundinformationen]
+    paraphrases: [zusammenfassen statt szenisch darstellen, dem Leser sagen was geschehen ist, längere
+        Zeiträume zusammenfassen, Jahre in wenigen Sätzen schildern, Handlungen gerafft wiedergeben, Ereignisse
+        berichten statt zeigen]
+    context: [Bericht, Zusammenfassung, Exposition, Raffung, Erklärung, Hintergrund]
+- id: mode_dramatic
+  psyper: ['13', '14']
+  note: Search discussion of showing/scenic presentation; direct speech alone does not establish dramatic
+    mode.
+  en:
+    academic: [dramatic mode, scenic mode, scenic narration, mimetic mode, mimesis, scenic presentation,
+      scene versus summary, temporal isochrony]
+    craft: ['show, don''t tell', show not tell, showing rather than telling, dramatize the scene, dramatise
+        the scene, scene construction, scene writing, moment-by-moment narration, real-time action, dramatization,
+      dramatise events, dialogue and action]
+    paraphrases: [show the events as they happen, let the reader experience the scene, unfold the scene
+        moment by moment, dramatize rather than summarize, replace explanation with action, use dialogue
+        and concrete details, show emotion through action]
+    context: [scene, dialogue, action, showing, immediacy, sensory details, movement, beat]
+  de:
+    academic: [dramatischer Modus, szenischer Modus, mimetischer Modus, Mimesis, szenische Darstellung,
+      Zeitdeckung, zeitdeckendes Erzählen, unmittelbare Darstellung]
+    craft: [szenisches Erzählen, szenisch schreiben, Szene gestalten, Szene entwickeln, Show don't tell,
+      zeigen statt erzählen, zeigen statt erklären, dramatisieren, Handlung und Dialog]
+    paraphrases: [das Geschehen unmittelbar zeigen, den Leser die Szene miterleben lassen, die Szene Schritt
+        für Schritt entfalten, zeigen statt zusammenfassen, Handlung durch Dialog und Aktionen darstellen,
+      Gefühle durch Handlungen zeigen]
+    context: [Szene, Dialog, Handlung, Zeigen, Unmittelbarkeit, Detail, Bewegung]
+- id: mode_balance
+  psyper: ['10', '11', '12', '13', '14']
+  note: Discussion of the continuum, not automatic assignment of Mixed.
+  en:
+    academic: [narrative-dramatic continuum, narrative and dramatic modes, telling and showing, scene
+        and summary, narrative speed]
+    craft: [balance showing and telling, alternate scene and summary, mix dialogue and narration, when
+        to show and when to tell, pacing through scene and summary, switch between scene and summary]
+    paraphrases: [decide what to show and what to tell, summarize between scenes, combine exposition with
+        dramatized moments, slow down important scenes and speed up transitions]
+    context: [balance, pacing, transition, alternation, scene, summary]
+  de:
+    academic: [narrativer und dramatischer Modus, Verhältnis von Bericht und Szene, Erzählen und Zeigen,
+      Erzähltempo]
+    craft: [Szene und Zusammenfassung, Balance zwischen Zeigen und Erzählen, Wechsel zwischen Bericht
+        und Szene, wann zeigen und wann erzählen, Erzähltempo steuern]
+    paraphrases: [entscheiden was gezeigt und was erzählt wird, zwischen Szenen zusammenfassen, Dialog
+        und Bericht kombinieren, wichtige Szenen verlangsamen und Übergänge raffen]
+    context: [Balance, Tempo, Übergang, Wechsel, Szene, Zusammenfassung]
+- id: consciousness_access
+  psyper: ['6', '7', '7.1', '8']
+  en:
+    academic: [access to consciousness, interior access, access to thoughts, mental access, representation
+        of consciousness, consciousness representation, interiority, interior perspective]
+    craft: [inside the character's head, inside the character's mind, inner life, inner world, internal
+        experience, internal monologue, thoughts and feelings, inner dialogue, inner voice, inner conflict,
+      light penetration, deep penetration]
+    paraphrases: [get inside the character's mind, reveal the character's thoughts, let the reader know
+        what the character feels, show the character's inner world, convey unspoken feelings, let the
+        reader hear the character thinking]
+    context: [mind, thoughts, feelings, emotion, consciousness, motivation, inner life]
+  de:
+    academic: [Zugang zum Bewusstsein, Bewusstseinsdarstellung, Gedankenwiedergabe, Innensicht, Innenperspektive,
+      Innenzugang, Darstellung des Innenlebens]
+    craft: [Innenleben, Gedankenwelt, innere Welt, innere Stimme, innerer Dialog, innerer Konflikt, Gedanken
+        und Gefühle, Einblick ins Innenleben, Innenperspektive der Figur]
+    paraphrases: [in den Kopf der Figur gelangen, die Gedanken der Figur offenlegen, den Leser wissen
+        lassen was die Figur fühlt, die innere Welt der Figur zeigen, unausgesprochene Gefühle vermitteln,
+      Einblick in das Bewusstsein gewähren]
+    context: [Bewusstsein, Gedanken, Gefühle, Emotionen, Motivation, Innenleben]
+- id: thought_representation
+  psyper: ['3', '4', '6', '8']
+  en:
+    academic: [free indirect discourse, free indirect speech, free indirect style, free indirect thought,
+      narrated monologue, interior monologue, psycho-narration, psychonarration, thought report, represented
+        speech and thought, quoted monologue, direct thought, indirect thought]
+    craft: [stream of consciousness, internal monologue, thought tags, dialogue with oneself, unspoken
+        dialogue, inner narration, italicized thoughts, italicised thoughts, thought attribution]
+    paraphrases: [write thoughts without saying she thought, blend the narrator's language with the character's
+        thoughts, put thoughts in italics, report thought indirectly, render the character's stream of
+        thoughts, let thoughts flow without quotation marks]
+    context: [thought, monologue, interiority, speech, consciousness, italics]
+  de:
+    academic: [erlebte Rede, freie indirekte Rede, freie indirekte Gedankenrede, innerer Monolog, Bewusstseinsstrom,
+      Gedankenbericht, Gedankenrede, direkte Gedankenrede, indirekte Gedankenrede, Bewusstseinsdarstellung,
+      zitierter Monolog]
+    craft: [Gedankenwiedergabe, innere Stimme, innerer Dialog, Stream of Consciousness, Gedanken kursiv,
+      Gedankenkennzeichnung, Gedankenpassage]
+    paraphrases: [Gedanken ohne dachte sie wiedergeben, Erzählerstimme und Gedanken der Figur verschmelzen,
+      Gedanken kursiv setzen, Gedanken indirekt wiedergeben, Gedankenstrom der Figur darstellen, Gedanken
+        ohne Anführungszeichen wiedergeben]
+    context: [Gedanke, Monolog, Rede, Bewusstsein, kursiv, Gedankenfluss]
+- id: distance_depth
+  psyper: ['3', '4', '6', '8']
+  note: 'Related extra dimension: distance is not itself a PsyPer tag.'
+  en:
+    academic: [psychic distance, narrative distance, narratorial distance, psychological distance, narrative
+        immediacy, experiential distance]
+    craft: [deep POV, deep point of view, close POV, close third, deep third, intimate third person, close
+        third-person perspective, narrative closeness, distant narration, intimate viewpoint, shallow
+        POV, zoom in, zoom out, narrative camera distance]
+    paraphrases: [bring the reader closer to the character, move into the character's mind, pull back
+        from the character, increase the distance between reader and character, remove the distance between
+        reader and character, move from wide shot to close-up, eliminate the sense of a narrator]
+    context: [distance, closeness, intimacy, immediacy, zoom, close-up, wide shot]
+  de:
+    academic: [psychische Distanz, psychologische Distanz, narrative Distanz, Erzähldistanz, Erzählerdistanz,
+      narrative Nähe, Erzählnähe]
+    craft: [Nähe und Distanz, tiefe Perspektive, Deep POV, nahe Perspektive, distanziertes Erzählen, figurennahe
+        Perspektive, Nahaufnahme, heranzoomen, herauszoomen, Kameradistanz]
+    paraphrases: [den Leser näher an die Figur bringen, näher an die Figur heranrücken, Abstand zur Figur
+        schaffen, die Distanz zwischen Leser und Figur verringern, in den Kopf der Figur hineinzoomen,
+      von der Totalen zur Nahaufnahme wechseln]
+    context: [Distanz, Nähe, Abstand, Intimität, Unmittelbarkeit, Nahaufnahme, Totalen]
+- id: switching_consistency
+  psyper: ['6.1', '6.2', '8', '9']
+  en:
+    academic: [focalization shift, focalisation shift, perspective shift, point-of-view shift, change
+        of focalization, narrative perspective shift]
+    craft: [head hopping, head-hopping, POV switching, POV switch, POV shift, viewpoint shift, viewpoint
+        change, POV consistency, point-of-view consistency, POV violation, POV slip, POV error, break
+        POV, viewpoint transition]
+    paraphrases: [avoid jumping from head to head, do not switch perspectives mid-scene, maintain a consistent
+        viewpoint, signal a change of point of view, switch viewpoints at a chapter break, don't reveal
+        another character's thoughts, anchor the reader in a new viewpoint]
+    context: [switch, shift, jump, change, transition, consistency, violation, slip]
+    evidence_overrides: {head hopping: strong_craft}
+  de:
+    academic: [Fokalisierungswechsel, Wechsel der Fokalisierung, Perspektivenwechsel, Perspektivwechsel,
+      Perspektivsprung, Wechsel des Wahrnehmungszentrums]
+    craft: [Head-Hopping, POV-Wechsel, Perspektivbruch, Perspektivfehler, Perspektivtreue, Perspektivkonsistenz,
+      Perspektivverletzung, Perspektivübergang, Wechsel der Erzählperspektive]
+    paraphrases: [nicht von Kopf zu Kopf springen, Perspektivwechsel innerhalb einer Szene vermeiden,
+      die Perspektive konsequent beibehalten, einen Perspektivwechsel deutlich markieren, erst beim Kapitelwechsel
+        die Perspektive ändern, nicht die Gedanken anderer Figuren verraten]
+    context: [Wechsel, Sprung, Bruch, Konsistenz, Übergang, Fehler, markieren]
+    evidence_overrides: {perspektivwechsel: strong_craft}
+- id: multiple_focalization_same_event
+  psyper: ['6.2']
+  note: Related Genette category, not a distinct PsyPer tag; distinguish from alternating viewpoints.
+  en:
+    academic: [multiple focalization, multiple focalisation, repeated focalization, multiple narration
+        of the same event, Rashomon effect]
+    craft: [retelling from another perspective, same event different viewpoints, multiple versions of
+        events, conflicting perspectives]
+    paraphrases: [tell the same event through different characters, retell the scene from another viewpoint,
+      show the same incident from several perspectives]
+    context: [retelling, repetition, versions, conflicting accounts]
+  de:
+    academic: [multiple Fokalisierung, mehrfache Fokalisierung, wiederholte Fokalisierung, Rashomon-Effekt]
+    craft: [mehrfache Erzählung desselben Ereignisses, dieselbe Szene aus verschiedenen Perspektiven,
+      unterschiedliche Versionen desselben Geschehens]
+    paraphrases: [dasselbe Ereignis aus verschiedenen Blickwinkeln erzählen, dieselbe Szene erneut aus
+        einer anderen Perspektive erzählen, mehrere Figuren schildern denselben Vorfall]
+    context: [Wiederholung, Nacherzählung, Version, widersprüchlich]
+- id: information_control
+  psyper: ['5', '5.1', '6', '6.1', '6.2', '7']
+  en:
+    academic: [information control, information distribution, epistemic access, epistemic restriction,
+      narrative knowledge, knowledge asymmetry, information asymmetry, dramatic irony, narrative paralipsis,
+      narrative paralepsis]
+    craft: [withhold information, reveal information, information management, narrator knows, character
+        knows, reader knows, selective revelation, delayed revelation, restricted information, plot revelation]
+    paraphrases: [what the narrator knows, what the character knows, what the reader knows, decide what
+        the reader should know, reveal only what the character discovers, keep information from the reader,
+      let the reader know more than the protagonist, narrator knows something the reader does not, conceal
+        the truth until later]
+    context: [information, knowledge, reveal, conceal, suspense, surprise, secret, discovery]
+  de:
+    academic: [Informationssteuerung, Informationsvergabe, Informationsverteilung, Wissensverteilung,
+      Wissensasymmetrie, Wissensvorsprung, dramatische Ironie, Paralipse, Paralepse]
+    craft: [Informationen vorenthalten, Informationen preisgeben, Informationen enthüllen, Wissen des
+        Erzählers, Wissen der Figur, Wissen des Lesers, verzögerte Enthüllung, Informationsbeschränkung]
+    paraphrases: [was der Erzähler weiß, was die Figur weiß, was der Leser weiß, entscheiden was der Leser
+        erfahren soll, nur offenbaren was die Figur entdeckt, Informationen vor dem Leser verbergen, der
+        Leser weiß mehr als die Hauptfigur, die Wahrheit erst später enthüllen]
+    context: [Wissen, Information, Enthüllung, Geheimnis, Spannung, Überraschung, Entdeckung]
+- id: reliability
+  psyper: []
+  note: Legacy/project extension independent of voice participation and focalization.
+  en:
+    academic: [unreliable narrator, unreliable narration, narrative unreliability, reliable narrator,
+      narratorial reliability, unreliable focalizer, unreliable focaliser]
+    craft: [untrustworthy narrator, misleading narrator, deceptive narrator, naive narrator, naïve narrator,
+      biased narrator, unreliable first person, fallible narrator, narrator credibility]
+    paraphrases: [narrator cannot be trusted, narrator lies to the reader, narrator misinterprets events,
+      reader must question the narrator, narrator tells only their version of the truth, narrator hides
+        the truth]
+    context: [reliability, unreliable, bias, trust, deception, misinterpretation, credibility]
+  de:
+    academic: [unzuverlässiger Erzähler, unzuverlässige Erzählerin, unzuverlässiges Erzählen, erzählerische
+        Unzuverlässigkeit, Zuverlässigkeit des Erzählers, zuverlässiger Erzähler]
+    craft: [unglaubwürdiger Erzähler, täuschender Erzähler, naiver Erzähler, voreingenommener Erzähler,
+      unzuverlässiger Ich-Erzähler, Glaubwürdigkeit des Erzählers]
+    paraphrases: [dem Erzähler kann man nicht trauen, der Erzähler belügt den Leser, der Erzähler deutet
+        die Ereignisse falsch, der Leser muss den Erzähler hinterfragen, Erzähler verschweigt die Wahrheit]
+    context: [Zuverlässigkeit, Glaubwürdigkeit, Täuschung, Lüge, Voreingenommenheit, Vertrauen]
+- id: narrator_level_time
+  psyper: [A, B, C]
+  note: Additional dimensions; diegetic level and narrating time do not determine participation.
+  en:
+    academic: [extradiegetic narrator, intradiegetic narrator, metadiegetic narration, embedded narrative,
+      narrative level, narrating I, experiencing I, retrospective narration, simultaneous narration, subsequent
+        narration]
+    craft: [frame narrator, framing story, story within a story, older narrator, retrospective first person,
+      present-tense narration, past-tense narration, narrator hindsight]
+    paraphrases: [older self tells the story of a younger self, narrator looks back on events, tell a
+        story within another story, a character narrates an embedded story, narrator knows now what they
+        did not know then]
+    context: [frame, embedded, retrospective, hindsight, tense, memory, present, past]
+  de:
+    academic: [extradiegetischer Erzähler, intradiegetischer Erzähler, metadiegetische Erzählung, Erzählebene,
+      Rahmenerzählung, Binnenerzählung, erzählendes Ich, erlebendes Ich, retrospektives Erzählen, nachträgliches
+        Erzählen, gleichzeitiges Erzählen]
+    craft: [Rahmenerzähler, Geschichte in der Geschichte, rückblickende Ich-Erzählung, älteres Ich, erzählendes
+        Präsens, Erzählen im Präteritum, Rückschau des Erzählers]
+    paraphrases: [das ältere Ich erzählt vom jüngeren Ich, Erzähler blickt auf die Ereignisse zurück,
+      eine Geschichte in einer anderen Geschichte erzählen, Erzähler weiß heute mehr als damals]
+    context: [Rahmen, Binnenhandlung, Rückblick, Erinnerung, Zeitform, Vergangenheit, Gegenwart]
+- id: filter_words
+  psyper: ['4', '6', '8']
+  note: Craft advice especially useful for deep/close POV; plain perception verbs are not retrieval hits
+    alone.
+  en:
+    academic: [perception verbs, cognition verbs, mental state verbs, sensory mediation]
+    craft: [filter words, filtering words, filter verbs, distancing words, narrative filters, thought
+        tags, perception filters, remove filters]
+    paraphrases: [remove she saw and he heard, avoid phrases like she noticed, eliminate filter words,
+      write the perception directly, show the sensation instead of saying she felt, avoid unnecessary
+        thought tags, filtering through the character's perceptions, unnecessary perception tags, remove
+        the perception verb, avoid distancing phrases, describe what is seen rather than the act of seeing,
+      present the experience directly, eliminate unnecessary sensory filters]
+    context: [see, saw, hear, heard, feel, felt, notice, think, wonder, realize, realise]
+    evidence_overrides: {unnecessary perception tags: strong_paraphrase, describe what is seen rather than the act of seeing: strong_paraphrase,
+      eliminate unnecessary sensory filters: strong_paraphrase, present the experience directly: supporting,
+      filter words: strong_craft, filtering words: strong_craft, filter verbs: strong_craft, narrative filters: strong_craft,
+      perception filters: strong_craft, remove filters: strong_craft}
+  de:
+    academic: [Wahrnehmungsverben, Kognitionsverben, Verben der Wahrnehmung, Verben des Denkens]
+    craft: [Filterwörter, Filterverben, Distanzwörter, Wahrnehmungsfilter, Gedankenmarker, Denkverben,
+      Signalverben]
+    paraphrases: [Wörter wie sie sah streichen, Filterwörter vermeiden, Wahrnehmungen direkt schildern,
+      Empfindungen zeigen statt sie fühlte zu schreiben, Gedanken ohne dachte sie wiedergeben, Wahrnehmungen
+        durch die Figur vermitteln, überflüssige Wahrnehmungsmarker, das Wahrnehmungsverb weglassen, distanzierende
+        Formulierungen vermeiden, das Wahrgenommene unmittelbar beschreiben, Sinneseindrücke direkt vermitteln,
+      überflüssige Wahrnehmungsverben streichen]
+    context: [sehen, hören, fühlen, bemerken, denken, sich fragen, erkennen]
+    evidence_overrides: {überflüssige wahrnehmungsmarker: strong_paraphrase, das wahrnehmungsverb weglassen: strong_paraphrase,
+      überflüssige wahrnehmungsverben streichen: strong_paraphrase, das wahrgenommene unmittelbar beschreiben: strong_paraphrase,
+      filterwörter: strong_craft, filterverben: strong_craft, wahrnehmungsfilter: strong_craft, distanzwörter: strong_craft}
+- id: reader_effect
+  psyper: []
+  note: Related outcome dimension; require explicit connection to perspective, do not infer effects from
+    narrator type.
+  en:
+    academic: [reader identification, character identification, perspective taking, perspective-taking,
+      narrative empathy, narrative transportation, narrative engagement, reader alignment, reader allegiance,
+      narrative immersion]
+    craft: [reader immersion, emotional connection, intimacy with the character, reader involvement, reader
+        sympathy, emotional distance, reader attachment, emotional engagement]
+    paraphrases: [put the reader in the character's shoes, make readers identify with the protagonist,
+      help the reader relate to the character, make the reader feel what the character feels, connect
+        the reader to the character, create distance between reader and character]
+    context: [empathy, identification, sympathy, immersion, involvement, intimacy, engagement]
+  de:
+    academic: [Leseridentifikation, Figurenidentifikation, Perspektivübernahme, narrative Empathie, narrative
+        Transportation, narrative Immersion, Leserbeteiligung, emotionale Involviertheit]
+    craft: [Leserbindung, Leserempathie, emotionale Nähe, Einfühlung in die Figur, Identifikation mit
+        der Figur, Nähe zur Hauptfigur, emotionale Distanz]
+    paraphrases: [den Leser in die Lage der Figur versetzen, Leser mit der Hauptfigur identifizieren lassen,
+      den Leser mit der Figur mitfühlen lassen, eine emotionale Verbindung zur Figur schaffen, Distanz
+        zwischen Leser und Figur herstellen]
+    context: [Empathie, Identifikation, Einfühlung, Nähe, Immersion, Mitgefühl, Bindung]
+- id: speech_dialogue
+  psyper: ['7', '10', '11', '12', '13', '14']
+  note: 'Related signal: discussion of dialogue is not necessarily discussion of POV or mode.'
+  en:
+    academic: [direct discourse, indirect discourse, direct speech, indirect speech, speech representation,
+      dialogue attribution, speech reporting]
+    craft: [dialogue tags, speech tags, action beats, dialogue and narration, dialogue scene, reported
+        speech, dialogue-driven scene, dialogue attribution]
+    paraphrases: [let the characters speak for themselves, alternate dialogue with narrative summary,
+      identify who is speaking, avoid excessive dialogue tags, write dialogue from the viewpoint character's
+        perspective]
+    context: [dialogue, speech, quote, action beat, speaker, utterance]
+  de:
+    academic: [direkte Rede, indirekte Rede, Redewiedergabe, Figurenrede, Rededarstellung, Redebericht]
+    craft: [Dialoggestaltung, Redebegleitung, Redebegleitsatz, Dialogtag, Dialogszene, Dialog und Erzählen,
+      wörtliche Rede]
+    paraphrases: [die Figuren selbst sprechen lassen, Dialog mit Erzählbericht abwechseln, deutlich machen
+        wer spricht, Dialog aus Sicht der Perspektivfigur schreiben]
+    context: [Dialog, Rede, wörtlich, sprechen, Redebegleitsatz]
+- id: narrative_style_voice
+  psyper: [C]
+  note: Legacy extension; writer's voice and narrator's voice must be distinguished.
+  en:
+    academic: [narratorial style, narrator's diction, narrative style, narrative tone, authorial voice,
+      character voice, discourse style]
+    craft: [narrative voice, distinctive narrator voice, authentic voice, character-specific diction,
+      writer's voice, voice consistency, tone of narration]
+    paraphrases: [give the narrator a distinctive voice, develop the character's unique voice, make each
+        viewpoint sound different, choose words the character would use, keep the narrator's voice consistent]
+    context: [voice, diction, style, tone, language, authenticity, register]
+  de:
+    academic: [Erzählstil, Erzählerstil, Erzählton, narrative Stimme, Erzählerstimme, Figurenstimme, Autorenstimme]
+    craft: [unverwechselbare Stimme, individuelle Erzählstimme, eigene Stimme, Figurenidiom, Sprachfärbung,
+      stimmige Erzählerstimme]
+    paraphrases: [dem Erzähler eine eigene Stimme geben, die Stimme der Figur entwickeln, jede Perspektivfigur
+        anders klingen lassen, Wörter wählen die die Figur verwenden würde, die Erzählstimme beibehalten]
+    context: [Stimme, Stil, Ton, Sprache, Wortwahl, Idiom, Register]
+- id: choice_tradeoffs
+  psyper: [A, B, C, D, E, F, G]
+  note: Meta-discussion about selecting a perspective; multi-label discourse cue.
+  en:
+    academic: [narrative strategy, perspectival strategy, narrative technique, choice of focalization,
+      choice of narrative perspective]
+    craft: [choosing a POV, choosing point of view, advantages of first person, disadvantages of third
+        person, POV options, point-of-view choices, advantages of omniscience, limitations of limited
+        POV, changing narrative perspective]
+    paraphrases: [which point of view should you use, decide whose story you want to tell, choose the
+        narrator that suits your story, advantages and disadvantages of each perspective, experiment with
+        different points of view, rewrite the scene from another viewpoint]
+    context: [choose, decide, advantage, disadvantage, limitation, option, technique, strategy]
+  de:
+    academic: [Erzählstrategie, Perspektivstrategie, Erzähltechnik, Wahl der Erzählperspektive, Wahl der
+        Fokalisierung, narratologische Perspektivwahl]
+    craft: [Perspektive wählen, Vor- und Nachteile der Ich-Perspektive, Vor- und Nachteile der Er-Perspektive,
+      Erzählform wählen, Perspektiven ausprobieren, Perspektivenwahl, passende Erzählperspektive]
+    paraphrases: [welche Erzählperspektive soll man wählen, entscheiden wessen Geschichte erzählt wird,
+      den passenden Erzähler auswählen, Vor- und Nachteile der verschiedenen Perspektiven, die Szene aus
+        einer anderen Perspektive umschreiben]
+    context: [wählen, entscheiden, Vorteil, Nachteil, Möglichkeit, Technik, Strategie]
+discourse_functions:
+  recommendation:
+    en: [should, ought to, try to, consider, you might, it is best to, choose, make sure, remember to,
+      we recommend]
+    de: [sollte, sollte man, versuche, überlegen Sie, empfiehlt sich, am besten, achte darauf, stellen
+        Sie sicher, wählen Sie]
+  prohibition_warning:
+    en: [avoid, never, do not, don't, be careful, watch out for, common mistake, pitfall, break the rule,
+      problematic, confusing]
+    de: [vermeiden, niemals, nicht verwenden, Vorsicht, aufpassen, häufiger Fehler, Fallstrick, problematisch,
+      verwirrend]
+  definition_explanation:
+    en: [means, refers to, is defined as, is called, in other words, the difference between, in contrast,
+      for example]
+    de: [bedeutet, bezeichnet, wird definiert als, nennt man, mit anderen Worten, der Unterschied zwischen,
+      im Gegensatz, zum Beispiel]
+  exercise_example:
+    en: [exercise, writing exercise, try writing, rewrite, revision, example, passage, extract, compare
+        these versions, writing prompt]
+    de: [Übung, Schreibübung, Schreibaufgabe, schreiben Sie, umschreiben, überarbeiten, Beispiel, Textausschnitt,
+      vergleichen Sie, Schreibimpuls]
+  effect_or_rationale:
+    en: [allows the writer, allows the reader, creates, results in, helps, prevents, enables, because,
+      makes it possible]
+    de: [ermöglicht, erlaubt, erzeugt, führt dazu, hilft, verhindert, weil, damit, macht es möglich]
+historical_terminology:
+  en: [point of view, narrative method, narrative technique, narrative situation, point of vision, angle
+      of vision, central intelligence, centre of consciousness, selective omniscience, editorial omniscience,
+    reflector character, scenic method, panoramic method]
+  de: [Erzählsituation, Erzählform, Erzählhaltung, Erzählstandpunkt, Erzählerstandort, Erzählweise, Erzähltechnik,
+    auktoriales Erzählen, personales Erzählen, neutrales Erzählen, Reflektorfigur, Erzähloptik]
+ngram_pilot:
+  en: [narrative perspective, point of view, narrative voice, first-person narrator, third-person narrator,
+    first-person narration, third-person narration, heterodiegetic narrator, homodiegetic narrator, autodiegetic
+      narrator, witness narrator, omniscient narrator, limited omniscience, selective omniscience, zero
+      focalization, internal focalization, internal focalisation, external focalization, external focalisation,
+    fixed focalization, variable focalization, figural narration, authorial narration, reflector character,
+    free indirect discourse, free indirect speech, interior monologue, stream of consciousness, psychic
+      distance, narrative distance, deep POV, head hopping, unreliable narrator, narrative summary, dramatic
+      mode, scenic method]
+  de: [Erzählperspektive, Erzählsituation, Erzählhaltung, Erzählstandpunkt, Erzählstimme, Ich-Erzähler,
+    Ich-Erzählung, heterodiegetischer Erzähler, homodiegetischer Erzähler, autodiegetischer Erzähler,
+    Beobachter-Erzähler, auktorialer Erzähler, personaler Erzähler, neutraler Erzähler, Allwissenheit
+      des Erzählers, Nullfokalisierung, interne Fokalisierung, externe Fokalisierung, feste Fokalisierung,
+    fixe Fokalisierung, variable Fokalisierung, narratoriale Erzählhaltung, figurale Erzählhaltung, Reflektorfigur,
+    erlebte Rede, innerer Monolog, Bewusstseinsstrom, Innenperspektive, Außenperspektive, Erzähldistanz,
+    Perspektivwechsel, Multiperspektivität, unzuverlässiger Erzähler, Zeitraffung, Zeitdeckung, szenisches
+      Erzählen]
+example_regex:
+  en: {general_pov: '\bpoint[\s-]+of[\s-]+view\b|\bPOVs?\b|\bviewpoints?\b', grammatical_person: '\b(?:first|second|third)[\s-]+person\b',
+    focalization: '\bfocali[sz](?:ation|er|ed|ing)s?\b', focalization_zero: '\bomniscien(?:t|ce)\b', thought_representation: '\bfree[\s-]+indirect[\s-]+(?:discourse|speech|style|thought)\b',
+    switching_consistency: '\bhead[\s-]+hopping\b'}
+  de: {general_pov: '\b(?:erzählperspektiv|erzählstandpunkt|erzählsituation|erzählhaltung|erzählposition)\w*\b',
+    grammatical_first_person: '\bich[\s-]?(?:erzähl|perspektiv|form)\w*\b', voice_heterodiegetic: \bheterodiegetisch\w*\b,
+    voice_homodiegetic: \bhomodiegetisch\w*\b, voice_protagonist: \bautodiegetisch\w*\b, focalization: '\b(?:null[\s-]?)?fokalisier\w*\b',
+    focalization_internal: '\b(?:intern|inner)\w*\s+fokalisier\w*\b', focalization_external: '\b(?:extern|äußer)\w*\s+fokalisier\w*\b',
+    focalization_variable: '\b(?:variabl|wechselnd)\w*\s+fokalisier\w*\b', stance_figural: '\bfigural\w*\s+(?:erzählhalt|darstell|erzähl)\w*\b',
+    stance_narratorial: '\bnarratorial\w*\s+(?:erzählhalt|darstell|erzähl)\w*\b', thought_representation: \berlebt\w*\s+rede\b|\binner\w*\s+monolog\w*\b,
+    switching_consistency: '\bperspektiv(?:en)?(?:wechsel|sprung|bruch|fehler)\w*\b', grammatical_second_person: '\bdu[\s-]?(?:erzähl|perspektiv|form)\w*\b',
+    grammatical_third_person: '\b(?:er|sie)[\s-]?(?:perspektiv|form)\w*\b|\bdritte[\s-]+person\b', grammatical_person_generic: '\b(?:erste|zweite|dritte)[\s-]+person\b',
+    omniscient_de: '\ballwissen(?:d|de|der|des)?\w*\b|\bnullfokalisier\w*\b', auktorial: \bauktorial\w*\b,
+    personal_erzaehl: '\bpersonal\w*\s+(?:erzähl|perspektiv)\w*\b'}
+pilot_examples:
+- lang: en
+  text: Choose a first-person narrator who is not the main character.
+  expected: [grammatical_first_person, choice_tradeoffs]
+  review: [voice_eyewitness, voice_participant]
+- lang: en
+  text: From an economic point of view, the contract is advantageous.
+  expected: []
+  reason: Everyday sense of point of view.
+- lang: en
+  text: Stay inside one character's head for the entire scene.
+  expected: [focalization_fixed, focalization_internal]
+  review: [switching_consistency]
+- lang: de
+  text: Bei variabler Fokalisierung wechseln die begrenzten Wissenshorizonte der Figuren.
+  expected: [focalization_variable, focalization_general]
+- lang: de
+  text: Die Erzählerin ist eine Nebenfigur und wirkt am Geschehen mit.
+  expected: [voice_participant, voice_homodiegetic]
+- lang: de
+  text: Aus finanzieller Sicht hat die Entscheidung Vorteile.
+  expected: []
+  reason: Everyday meaning; no literary context.
+- lang: de
+  text: Szenisches Erzählen kann auch mit auktorialem Erzählen kombiniert werden.
+  expected: [mode_dramatic, stance_narratorial]
+  review: [focalization_zero]
+context_rules: ['General terms like perspective, voice, narrator, character, showing, exposition, camera
+    or scene need a narrative-specific phrase or a second independent contextual cue in the same window.',
+  'Do not treat personal pronouns, ordinary perception verbs, generic dialogue or a fictional example
+    as evidence that a manual discusses a concept.', 'For reader_effect, speech_dialogue and narrative_style_voice,
+    require explicit relation to narrative perspective or a PsyPer-related concept.', Use contrast pairs
+    and negated phrases as retrieval evidence; do not infer a passage endorses a technique., 'Use curated
+    high-precision exact terms for Ngram, not every lexical or semantic expansion.', Keep lexical and
+    semantic retrieval evidence separate; semantic similarity does not establish that a concept is discussed.]
+built: '2026-11-22'
+changelog_note: 'v0.3: explicit evidence_overrides; corpus-driven paraphrases for low-coverage concepts;
+  expanded DE person/perspective terminology. Provisional additions require human confirmation before
+  treating as validated linguistic evidence.'

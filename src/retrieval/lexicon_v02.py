@@ -1,4 +1,4 @@
-"""Load PsyPer bilingual lexicon v0.2 draft for retrieval."""
+"""Load PsyPer bilingual lexicon (v0.2 / v0.3) for retrieval."""
 from __future__ import annotations
 
 import hashlib
@@ -11,6 +11,7 @@ import yaml
 from src.common.paths import CONFIG
 
 LEXICON_PATH = CONFIG / "pov_lexicon_psyper_en_de_v0.2.yml"
+LEXICON_PATH_V03 = CONFIG / "pov_lexicon_psyper_en_de_v0.3.yml"
 
 # Ultra-ambiguous craft/context singles never used as solo high cues.
 AMBIGUOUS_SOLO = {
@@ -29,6 +30,16 @@ AMBIGUOUS_SOLO = {
     },
 }
 
+# Explicit evidence tiers independent of vocabulary origin.
+EVIDENCE_TIERS = (
+    "strong_academic",
+    "strong_craft",
+    "strong_paraphrase",
+    "supporting",
+    "context_only",
+    "ambiguous_demoted",
+)
+
 
 @dataclass
 class ConceptTerms:
@@ -37,9 +48,15 @@ class ConceptTerms:
     craft: list[str] = field(default_factory=list)
     paraphrases: list[str] = field(default_factory=list)
     context: list[str] = field(default_factory=list)
+    psyper: list[str] = field(default_factory=list)
+    # casefolded term → explicit evidence tier override
+    evidence_overrides: dict[str, str] = field(default_factory=dict)
 
     def bm25_query_terms(self) -> list[str]:
         return list(self.academic) + list(self.craft) + list(self.paraphrases)
+
+    def psyper_tags_joined(self) -> str:
+        return ";".join(self.psyper)
 
 
 @dataclass
@@ -59,20 +76,38 @@ def file_sha256(path: Path) -> str:
     return h.hexdigest()
 
 
+def _as_str_list(values) -> list[str]:
+    out: list[str] = []
+    for v in values or []:
+        s = str(v).strip()
+        if s:
+            out.append(s)
+    return out
+
+
 def load_lexicon(path: Path | None = None) -> LexiconV02:
     path = path or LEXICON_PATH
     raw = yaml.safe_load(path.read_text(encoding="utf-8"))
     concepts: dict[str, dict[str, ConceptTerms]] = {"en": {}, "de": {}}
     for item in raw.get("concepts") or []:
         cid = item["id"]
+        psyper = _as_str_list(item.get("psyper"))
         for lang in ("en", "de"):
             block = item.get(lang) or {}
+            overrides_raw = block.get("evidence_overrides") or {}
+            overrides = {
+                str(k).casefold().strip(): str(v).strip()
+                for k, v in overrides_raw.items()
+                if str(k).strip() and str(v).strip() in EVIDENCE_TIERS
+            }
             concepts[lang][cid] = ConceptTerms(
                 concept_id=cid,
                 academic=list(block.get("academic") or []),
                 craft=list(block.get("craft") or []),
                 paraphrases=list(block.get("paraphrases") or []),
                 context=list(block.get("context") or []),
+                psyper=list(psyper),
+                evidence_overrides=overrides,
             )
     regexes: dict[str, dict[str, re.Pattern]] = {"en": {}, "de": {}}
     for lang, pats in (raw.get("example_regex") or {}).items():
@@ -101,15 +136,15 @@ def iter_literal_terms(lex: LexiconV02, lang: str) -> list[tuple[str, str, str]]
 
 
 def classify_tier(lang: str, tier: str, term: str) -> str:
-    """Return evidence class: high | supporting | demoted | context_only.
+    """Legacy class: high | supporting | demoted | context_only.
 
     Corpus frequency is NOT used here — rarity does not imply quality.
+    Prefer ``resolve_evidence_tier`` for v0.3 explicit tiers.
     """
     t = term.casefold().strip()
     if tier == "context":
         return "context_only"
     if tier == "academic":
-        # Bare general singles demoted even if listed under academic by mistake
         if t in AMBIGUOUS_SOLO.get(lang, set()):
             return "demoted"
         return "high"
@@ -118,8 +153,35 @@ def classify_tier(lang: str, tier: str, term: str) -> str:
     if tier == "craft":
         if t in AMBIGUOUS_SOLO.get(lang, set()):
             return "demoted"
-        # short single-token craft → demoted for solo / supporting use
         if " " not in t and "-" not in t and len(t) < 8:
             return "demoted"
         return "supporting"
     return "demoted"
+
+
+def resolve_evidence_tier(
+    lang: str,
+    vocab_origin: str,
+    term: str,
+    overrides: dict[str, str] | None = None,
+) -> str:
+    """Return explicit evidence tier independent of vocabulary origin."""
+    key = term.casefold().strip()
+    overrides = overrides or {}
+    if key in overrides:
+        return overrides[key]
+
+    if vocab_origin == "context":
+        return "context_only"
+    if key in AMBIGUOUS_SOLO.get(lang, set()):
+        return "ambiguous_demoted"
+    if vocab_origin == "academic":
+        return "strong_academic"
+    if vocab_origin == "craft":
+        # short single-token craft → demoted unless overridden
+        if " " not in key and "-" not in key and len(key) < 8:
+            return "ambiguous_demoted"
+        return "supporting"
+    if vocab_origin == "paraphrase":
+        return "supporting"
+    return "ambiguous_demoted"

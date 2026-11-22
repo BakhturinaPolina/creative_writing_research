@@ -171,3 +171,49 @@ def phrase_in_text(phrase: str, text: str, lang: str) -> bool:
 def cluster_independent_cues(spans: list[MatchSpan]) -> list[MatchSpan]:
     """Collapse overlapping evidence spans into independent cues."""
     return _dedupe_overlapping(spans)
+
+
+def normalize_prefilter_needle(phrase: str) -> str:
+    """Space-folded normalized needle used by cheap prefilters."""
+    return normalize_text(phrase).replace("-", " ").strip()
+
+
+def expand_prefilter_needles(phrase: str, lang: str, *, min_len: int = 3) -> list[str]:
+    """All variant needles for one dictionary phrase (shared with detailed matcher)."""
+    out: list[str] = []
+    seen: set[str] = set()
+    for variant in expand_phrase_variants(phrase, lang):
+        n = normalize_prefilter_needle(variant)
+        if len(n) < min_len or n in seen:
+            continue
+        seen.add(n)
+        out.append(n)
+    return out
+
+
+def build_concept_prefilter_needles(
+    academic: list[str],
+    craft: list[str],
+    paraphrases: list[str],
+    lang: str,
+    *,
+    min_len: int = 3,
+) -> list[str]:
+    """Union of variant needles for a concept's literal buckets."""
+    seen: set[str] = set()
+    out: list[str] = []
+    for term in list(academic) + list(craft) + list(paraphrases):
+        for n in expand_prefilter_needles(term, lang, min_len=min_len):
+            if n not in seen:
+                seen.add(n)
+                out.append(n)
+    return out
+
+
+def haystack_for_prefilter(text: str) -> str:
+    """Normalized haystack aligned with ``normalize_prefilter_needle``."""
+    return normalize_text(text).replace("-", " ")
+
+
+def prefilter_hits_any(hay: str, needles: list[str]) -> bool:
+    return any(n in hay for n in needles)

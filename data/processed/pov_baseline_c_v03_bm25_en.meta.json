@@ -1,0 +1,52 @@
+{
+  "built": "2026-11-22 02:25",
+  "git_commit": "377a73e0ce7d573448e1b458fe857427eefe046e",
+  "git_commit_short": "",
+  "software": {
+    "python": "3.14.4",
+    "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.43",
+    "pandas": "3.0.6",
+    "yaml": "6.0.3",
+    "numpy": "2.5.3",
+    "rank_bm25": "not_installed"
+  },
+  "peak_rss_mb": 201.0,
+  "book_stats_hashes": {
+    "en": "b9d1942199d90323007f42d7fd4f0616d884e09a9c1dce02381096e60b5999eb",
+    "de": "382a44f0305208d58a6eeabbdb401b17516b5849a617425d7e500b87501008d3"
+  },
+  "baseline": "C",
+  "lang": "en",
+  "lexicon_version": "0.3-draft",
+  "lexicon_sha256": "b93f7c22d057c3377c96bfe6fdfd6c04843a85464c2067db761c247afe3202c6",
+  "lexicon_path": "/home/bakhturina/code/github/creative-writing-corpus/config/pov_lexicon_psyper_en_de_v0.3.yml",
+  "regex_map_version": "0.3",
+  "regex_map_sha256": "83499df1b6d239f000eb9d5c01120d5a8adad6596867378e8c9aae7a63009600",
+  "stem_validated": "pov_baseline_c_v03_bm25_en",
+  "n_paragraphs_indexed": 315302,
+  "n_candidate_rows": 5756,
+  "n_bm25_only_rows": 2812,
+  "n_unique_passages": 4204,
+  "n_concepts_with_hits": 36,
+  "top_k": 500,
+  "bm25_only_k": 100,
+  "score_floor": 2.0,
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "bm25_epsilon": 0.25,
+  "bm25_backend": "streaming_okapi",
+  "peak_strategy": "two_pass_query_vocab_df_topk_heap",
+  "expected_books": 442,
+  "processed_books": 442,
+  "skipped_missing": [],
+  "skipped_unreadable": [],
+  "stores_book_text": false,
+  "passage_sidecar": false,
+  "shared_variant_prefilter": true,
+  "query_construction": {
+    "dedupe_expressions": true,
+    "dedupe_tokens": true,
+    "drop_stopwords": true,
+    "allow_repeated_token_weighting": false
+  }
+}

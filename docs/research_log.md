@@ -42,6 +42,23 @@ Status values: `provisional` (open for revision), `frozen` (changes need a new D
 
 ## Entries
 
+## 2026-11-22 | Week 16 | Phase: Retrieval
+**Goal:** PsyPer retrieval v0.3 — shared prefilter/variants, PsyPer tag metadata, evidence tiers, lexicon expansion, reservoir eval sample, full bilingual re-run, passage manifest.
+**Done:**
+- Preserved all v0.2 outputs/configs. Added `config/pov_lexicon_psyper_en_de_v0.3.yml`, `config/regex_concept_map_v03.yml`, `docs/retrieval_v03_changelog.md`.
+- Shared `build_concept_prefilter_needles` / variant expansion; explicit `evidence_overrides`; output fields `retrieval_concept_id`, `psyper_related_tags`, `human_validated_psyper_tags`.
+- Reservoir sampling for non-retrieved eval strata (`src/retrieval/sampling.py`); v0.3 eval sample excludes 60 lexicon-dev holdout books.
+- Tests: **127 passed** (`tests/retrieval/` — prior 103 + v0.3 regressions).
+- Intermediate **algo-fix** (v0.2 vocab + fixed matcher): EN 10,630 / DE 1,050 assignments (vs v0.2 10,611 / 1,034).
+- **B v0.3 lexical:** EN 10,643 / 7,380 / 36 concepts; DE 1,380 / 941 / **32** concepts (was 31). Peak RSS B≈131–151 MB.
+- **C v0.3 BM25:** EN 5,756 validated + 2,812 only; DE 1,339 + 3,195. Peak RSS C≈160–201 MB. Runtime ≈4 min DE / ≈24 min EN per heavy stage.
+- DE zero-hit remaining: `focalization_fixed`, `voice_eyewitness`, `voice_homodiegetic`, `voice_participant`. Large DE gains on `focalization_zero` / `stance_narratorial` / `stance_figural` are mostly vocabulary/regex — **provisional**, need human FP review.
+- Passage manifests: EN 315,302 / DE 42,623 paragraphs. Eval sample v0.3: 247 passages (EN 130 / DE 117), seed 20261122.
+**Data/outputs:** `pov_baseline_b_v02_algo_fix_*`, `pov_baseline_b_v03_lexical_*`, `pov_baseline_c_v03_*`, `passage_manifest_{en,de}.csv`, `retrieval_comparative_report_v03.md`, `retrieval_coverage_audit_v03.csv`, `manual_eval_sample_v03*.csv`.
+**Decisions:** Lexical baseline remains **unvalidated**. Do not interpret EN–DE gaps as cultural without coverage audit. Provisional lexicon additions require confirmation.
+**Problems / open questions:** Four DE voice/focalization concepts still zero lexically; broad DE `allwissen*` / `auktorial*` regex gains need FP audit; eval sample slightly under 260 after book holdout.
+**Next:** Manual relevance coding of `manual_eval_sample_v03`; semantic retrieval / RRF on passage manifest.
+
 ## 2026-11-21 | Week 15–16 | Phase: Retrieval
 **Goal:** Fix concept-specific regex leakage; unify evidence tiers; ship baselines A/B/C; bilingual regression tests; full-corpus re-run.
 **Done:**

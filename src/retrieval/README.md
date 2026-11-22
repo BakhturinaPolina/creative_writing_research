@@ -2,7 +2,7 @@
 
 Find candidate POV passages with the bilingual PsyPer lexicon, then (later) sentence embeddings / hybrid retrieval.
 
-High recall matters more than precision at this stage. Book-level `corpus_stats` still uses lexicon **v0.1** (`config/pov_lexicon.yml`); this package uses the additive **v0.2-draft** search lexicon plus an explicit regex→concept map.
+High recall matters more than precision at this stage. Book-level `corpus_stats` still uses lexicon **v0.1** (`config/pov_lexicon.yml`); passage retrieval uses additive **v0.2** / **v0.3** search lexicons plus explicit regex→concept maps.
 
 **Lexical baselines are not manually validated.** Do not treat candidate counts as concept prevalence.
 
@@ -11,32 +11,47 @@ High recall matters more than precision at this stage. Book-level `corpus_stats`
 | File | Role |
 |---|---|
 | [`config/pov_lexicon.yml`](../../config/pov_lexicon.yml) | v0.1 — Baseline A + book-level POV density |
-| [`config/pov_lexicon_psyper_en_de_v0.2.yml`](../../config/pov_lexicon_psyper_en_de_v0.2.yml) | v0.2-draft — PsyPer retrieval cues |
-| [`config/regex_concept_map_v01.yml`](../../config/regex_concept_map_v01.yml) | Explicit regex → permitted concept IDs + roles |
+| [`config/pov_lexicon_psyper_en_de_v0.2.yml`](../../config/pov_lexicon_psyper_en_de_v0.2.yml) | v0.2-draft — frozen PsyPer retrieval cues |
+| [`config/pov_lexicon_psyper_en_de_v0.3.yml`](../../config/pov_lexicon_psyper_en_de_v0.3.yml) | v0.3-draft — expanded cues + `evidence_overrides` |
+| [`config/regex_concept_map_v01.yml`](../../config/regex_concept_map_v01.yml) | Regex map for v0.2 |
+| [`config/regex_concept_map_v03.yml`](../../config/regex_concept_map_v03.yml) | Regex map for v0.3 (+ DE person/omniscience) |
+| [`docs/retrieval_v03_changelog.md`](../../docs/retrieval_v03_changelog.md) | Algorithm vs vocabulary change log |
 
-## Three retrieval baselines
+## Retrieval baselines
 
 | Baseline | Method | Output stem |
 |---|---|---|
 | **A** | v0.1 keyword (dimensions) | `pov_baseline_a_v01_{lang}.csv` |
-| **B** | v0.2 lexical + concept-specific evidence (uncapped) | `pov_baseline_b_v02_lexical_{lang}.csv` |
-| **C** | streaming BM25 top-k + literal gate | `pov_baseline_c_bm25_{lang}.csv` |
-| C′ | BM25-only exploratory (`bm25_only_unvalidated`) | `pov_baseline_c_bm25_only_unvalidated_{lang}.csv` |
+| **B v0.2** | v0.2 lexical (frozen prior run) | `pov_baseline_b_v02_lexical_{lang}.csv` |
+| **B algo-fix** | v0.2 vocab + shared variant prefilter | `pov_baseline_b_v02_algo_fix_{lang}.csv` |
+| **B v0.3** | v0.3 lexical + evidence tiers (uncapped) | `pov_baseline_b_v03_lexical_{lang}.csv` |
+| **C v0.3** | streaming BM25 top-k + literal gate | `pov_baseline_c_v03_bm25_{lang}.csv` |
+| C′ v0.3 | BM25-only exploratory | `pov_baseline_c_v03_bm25_only_unvalidated_{lang}.csv` |
 
-Also: compact `pov_baseline_c_bm25_top50_{lang}.csv` and legacy alias `pov_passage_candidates_{lang}.csv`.
+Also: compact `pov_baseline_c_v03_bm25_top50_{lang}.csv`. Legacy v0.2 C stems remain under `pov_baseline_c_bm25_*`.
 
-## Evidence tiers (shared by audit, B/C, tests)
+## Evidence tiers (v0.3)
 
-| Tier | Qualifies alone? |
+Explicit strength is independent of vocabulary origin (`academic` / `craft` / `paraphrase` / `regex` / `context`). Origin is retained as `vocab_origin` on matched spans.
+
+| Evidence tier | Qualifies alone? |
 |---|---|
-| Academic / high | Yes (unless weak POV surface) |
-| Supporting craft | Only with another independent cue (or weak POV + one) |
-| Ambiguous / demoted | Never |
-| Context-only | Never |
-| Paraphrase | Counts as supporting if matched |
-| Regex | Only for mapped concepts; `context_only` / `supporting_insufficient` roles respected |
+| `strong_academic` / `strong_craft` / `strong_paraphrase` | Yes (unless weak POV surface) |
+| `supporting` | Needs another independent cue (or weak POV + one) |
+| `context_only` | Never |
+| `ambiguous_demoted` | Never |
 
-Grammatical person never validates diegesis, focalization, or filter words by itself.
+Overrides live under each language block as `evidence_overrides`. Grammatical person never validates diegesis, focalization, or filter words by itself.
+
+Output metadata (v0.3 writers):
+
+- `retrieval_concept_id` — research concept ID
+- `psyper_related_tags` — string PsyPer codes from the lexicon (e.g. `2.2.1`)
+- `human_validated_psyper_tags` — empty until manual review
+
+## Shared matching
+
+Prefilter, detailed matching, and needle construction share `expand_phrase_variants` / `build_concept_prefilter_needles` so morphological and orthographic variants are not dropped before evidence collection.
 
 ## Memory model
 
@@ -57,37 +72,45 @@ Streaming only: one book JSON resident; BM25 uses two corpus passes and top-k he
 # Regression tests (required before full runs)
 .venv/bin/python -m pytest tests/retrieval -q
 
-# Keyword research
-.venv/bin/python -m src.retrieval.term_audit --lang all
+# v0.3 pipeline (algo-fix → B v0.3 → C v0.3 → report → eval → manifest)
+.venv/bin/python -m src.retrieval.run_all --lang all --pipeline v03
 
-# Baselines
-.venv/bin/python -m src.retrieval.keyword_baselines --baseline all --lang all
-.venv/bin/python -m src.retrieval.bm25_passages --lang all --top-k 500
-
-# Report + manual eval sample
-.venv/bin/python -m src.retrieval.report
-.venv/bin/python -m src.retrieval.eval_sample
-
-# Or orchestrate (tests → A/B/C → report → sample)
-.venv/bin/python -m src.retrieval.run_all --lang all --with-passages
+# Individual steps
+.venv/bin/python -m src.retrieval.keyword_baselines --baseline b --lang all --lexicon-version v02_algo_fix
+.venv/bin/python -m src.retrieval.keyword_baselines --baseline b --lang all --lexicon-version v03
+.venv/bin/python -m src.retrieval.bm25_passages --lang all --lexicon-version v03 --top-k 500
+.venv/bin/python -m src.retrieval.report --version v03
+.venv/bin/python -m src.retrieval.eval_sample --version v03
+.venv/bin/python -m src.retrieval.passage_manifest --lang all
+.venv/bin/python -m src.retrieval.dev_sample   # BM25-only lexicon-expansion holdout
 ```
 
 Optional `--with-passages` writes gitignored sidecars under `data/interim/retrieval/*_passages.csv`.
 
+## Evaluation sample (v0.3)
+
+`manual_eval_sample_v03.csv` uses mutually exclusive strata and **reservoir sampling** over the full non-retrieved corpus (no early stop at 5,000 paragraphs). Annotator view: `manual_eval_sample_v03_annotator.csv` hides method/rank/predicted concept. Review fields stay empty (no gold labels). Stratified candidate samples do **not** estimate absolute corpus-wide recall.
+
 ## Hugging Face Jobs (CPU) fallback
 
-If local RAM is insufficient, run the same CLIs on a CPU Job with private storage for restricted fulltexts. Mount or sync `data/interim/fulltext/json/` and `data/processed/{en,de}_book_stats.csv`, then execute `python -m src.retrieval.run_all --lang all`. Do not publish passage sidecars.
+If local RAM is insufficient, run the same CLIs on a CPU Job with private storage for restricted fulltexts. Do not launch paid jobs without approval. Do not publish passage sidecars.
 
 ## Outputs
 
 | Path | Content |
 |---|---|
 | `data/processed/pov_baseline_*_{lang}.csv` | pointers + scores + evidence — **no book text** |
+| `data/processed/passage_manifest_{lang}.csv` | all eligible passages for future embeddings |
 | `data/interim/retrieval/*_passages.csv` | full passages (gitignored) |
-| `data/interim/retrieval/retrieval_comparative_report.md` | comparative stats |
-| `data/interim/retrieval/manual_eval_sample.csv` | stratified review sheet (empty gold fields) |
-| `tests/retrieval/test_evidence_regression.py` | ≥60 bilingual concept-specific cases |
+| `data/interim/retrieval/retrieval_comparative_report_v03.md` | v0.2 vs v0.3 comparative stats |
+| `data/interim/retrieval/retrieval_coverage_audit_v03.csv` | EN/DE lexicon coverage audit |
+| `data/interim/retrieval/manual_eval_sample_v03.csv` | stratified review sheet (empty gold fields) |
+| `tests/retrieval/` | bilingual regressions (v0.2 + v0.3) |
+
+## Future semantic retrieval
+
+Stable `passage_id` (`book_id:c{chapter}:p{para}`) joins lexical, BM25, and future embedding results. The passage manifest includes every eligible paragraph (including zero lexical hits). Planned comparison protocol: A · B v0.2 · B v0.3 · BM25 · dense · RRF · cross-encoder rerank — after manual judgments.
 
 ## Compatibility
 
-Passage IDs (`book_id:c{chapter}:p{para}`) are stable across baselines for later RRF / embedding fusion. Keep lexical and semantic evidence columns separate when hybrid retrieval is added.
+Do not overwrite frozen v0.2 outputs when iterating on v0.3. Keep lexical and semantic evidence columns separate when hybrid retrieval is added.
