@@ -697,13 +697,139 @@ def build_report_v03(log) -> Path:
     return report_path
 
 
+def _assignment_keys(df: pd.DataFrame) -> set[tuple[str, str]]:
+    if df.empty:
+        return set()
+    df = df.copy()
+    if "passage_id" not in df.columns and "book_id" in df.columns:
+        df["passage_id"] = (
+            df["book_id"]
+            + ":c"
+            + df["chapter_idx"].astype(str)
+            + ":p"
+            + df["para_idx"].astype(str)
+        )
+    cid = (
+        "retrieval_concept_id"
+        if "retrieval_concept_id" in df.columns
+        and df["retrieval_concept_id"].astype(str).str.len().gt(0).any()
+        else "concept_id"
+    )
+    return set(zip(df["passage_id"].astype(str), df[cid].astype(str)))
+
+
+def build_set_algebra_v04(log) -> Path:
+    """Named set algebra L, Bq, B, B\\L, L\\B, L∩B at assignment and passage level.
+
+    Exploratory pool B is reconstructed as Bq ∪ B_only_file, which equals the
+    full exploratory heap after the historical B\\Bq export (pairs in both heaps
+    appear in Bq). Genuinely-new BM25 assignments are B\\L.
+    """
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    rows = []
+    md = [
+        "# Retrieval set algebra (v0.4)",
+        "",
+        "Canonical assignment key: `(passage_id, retrieval_concept_id)`.",
+        "",
+        "- **L** — lexical candidates (B v0.3)",
+        "- **Bq** — BM25 with lexical qualification (C v0.3)",
+        "- **B** — exploratory BM25 pool (reconstructed as Bq ∪ BM25-only file)",
+        "- **B\\\\L** — genuinely new BM25 assignments (not in lexical baseline)",
+        "- **L\\\\B** — lexical assignments absent from exploratory BM25",
+        "- **L∩B** — shared assignments",
+        "",
+        "A candidate is **not** exclusively BM25-retrieved if the same "
+        "passage–concept pair is already in L.",
+        "",
+        "Estimates refer to the analysis-set retrieval candidate pools, "
+        "not absolute corpus-wide prevalence.",
+        "",
+    ]
+    for lang in ("en", "de"):
+        Ldf = _read(DATA_PROCESSED / f"pov_baseline_b_v03_lexical_{lang}.csv")
+        Bqdf = _read(DATA_PROCESSED / f"pov_baseline_c_v03_bm25_{lang}.csv")
+        Bonlydf = _read(
+            DATA_PROCESSED / f"pov_baseline_c_v03_bm25_only_unvalidated_{lang}.csv"
+        )
+        L = _assignment_keys(Ldf)
+        Bq = _assignment_keys(Bqdf)
+        Bonly = _assignment_keys(Bonlydf)
+        B = Bq | Bonly  # reconstruct full exploratory ∪ qualified
+        B_minus_L = B - L
+        L_minus_B = L - B
+        inter = L & B
+
+        Lp = {p for p, _ in L}
+        Bp = {p for p, _ in B}
+        Bq_p = {p for p, _ in Bq}
+        new_assign_passages = {p for p, _ in B_minus_L}
+        genuinely_new_passages = new_assign_passages - Lp
+        new_concept_on_known = new_assign_passages & Lp
+
+        row = {
+            "language": lang,
+            "unit": "assignment",
+            "n_L": len(L),
+            "n_Bq": len(Bq),
+            "n_B": len(B),
+            "n_B_minus_L": len(B_minus_L),
+            "n_L_minus_B": len(L_minus_B),
+            "n_L_intersect_B": len(inter),
+            "n_Bonly_file": len(Bonly),
+            "n_Bonly_intersect_L": len(Bonly & L),
+            "n_passages_L": len(Lp),
+            "n_passages_Bq": len(Bq_p),
+            "n_passages_B": len(Bp),
+            "n_passages_genuinely_new": len(genuinely_new_passages),
+            "n_passages_new_concept_on_lexical": len(new_concept_on_known),
+            "assignment_key": "(passage_id, retrieval_concept_id)",
+            "B_definition": "Bq ∪ bm25_only_file (exploratory independent of lexical gate)",
+            "genuinely_new_definition": "B \\\\ L",
+        }
+        rows.append(row)
+        md.append(f"## {lang}")
+        md.append("")
+        md.append(
+            f"- Assignments: |L|={len(L)}, |Bq|={len(Bq)}, |B|={len(B)}, "
+            f"|B\\\\L|={len(B_minus_L)}, |L\\\\B|={len(L_minus_B)}, |L∩B|={len(inter)}"
+        )
+        md.append(
+            f"- BM25-only file ∩ L (should be 0 if file stores B\\\\L or B\\\\Bq "
+            f"with Bq⊆L): {len(Bonly & L)}"
+        )
+        md.append(
+            f"- Passages: L={len(Lp)}, B={len(Bp)}; genuinely new passages="
+            f"{len(genuinely_new_passages)}; new concept-assignments on "
+            f"already-lexical passages={len(new_concept_on_known)}"
+        )
+        md.append("")
+
+    out = OUT_DIR / "retrieval_set_algebra_v04.csv"
+    pd.DataFrame(rows).to_csv(out, index=False)
+    report = OUT_DIR / "retrieval_set_algebra_v04.md"
+    report.write_text("\n".join(md) + "\n", encoding="utf-8")
+    write_json(
+        OUT_DIR / "retrieval_set_algebra_v04.meta.json",
+        base_run_meta(kind="set_algebra_v04", n_languages=len(rows)),
+    )
+    log.info(f"wrote {out} and {report}")
+    return out
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--version", choices=["v02", "v03"], default="v03")
+    parser.add_argument(
+        "--version", choices=["v02", "v03", "v04", "set_algebra"], default="v03"
+    )
     args = parser.parse_args()
     log = setup_logger(__file__)
     if args.version == "v03":
         build_report_v03(log)
+    elif args.version in ("v04", "set_algebra"):
+        if args.version == "v04":
+            build_report_v03(log)
+        build_set_algebra_v04(log)
     else:
         build_report(log)
     log.info("Log finished.")

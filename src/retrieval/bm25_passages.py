@@ -350,13 +350,50 @@ def retrieve_lang(
         return rows
 
     validated = _flush(heaps)
-    exploratory = _flush(only_heaps)
+    exploratory_raw = _flush(only_heaps)
 
-    # Drop BM25-only rows that already appear as validated for same passage+concept
-    validated_keys = {(r["passage_id"], r["concept_id"]) for r in validated}
-    exploratory = [
-        r for r in exploratory if (r["passage_id"], r["concept_id"]) not in validated_keys
-    ]
+    def _akey(r: dict) -> tuple[str, str]:
+        cid = r.get("retrieval_concept_id") or r.get("concept_id") or ""
+        return (r["passage_id"], str(cid))
+
+    # Bq keys (lexically qualified BM25)
+    validated_keys = {_akey(r) for r in validated}
+
+    # Lexical baseline L for the same language (canonical genuinely-new = B \\ L)
+    lexical_keys: set[tuple[str, str]] = set()
+    for lex_stem in (
+        f"pov_baseline_b_v03_lexical_{lang}",
+        f"pov_baseline_b_v02_lexical_{lang}",
+    ):
+        lex_path = DATA_PROCESSED / f"{lex_stem}.csv"
+        if not lex_path.is_file():
+            continue
+        ldf = pd.read_csv(lex_path, dtype=str).fillna("")
+        if ldf.empty:
+            break
+        if "passage_id" not in ldf.columns and "book_id" in ldf.columns:
+            ldf["passage_id"] = (
+                ldf["book_id"]
+                + ":c"
+                + ldf["chapter_idx"].astype(str)
+                + ":p"
+                + ldf["para_idx"].astype(str)
+            )
+        cid_col = (
+            "retrieval_concept_id"
+            if "retrieval_concept_id" in ldf.columns
+            else "concept_id"
+        )
+        lexical_keys = set(zip(ldf["passage_id"], ldf[cid_col].astype(str)))
+        break
+
+    # Full exploratory pool B (independent of lexical gate); retain for meta.
+    exploratory_B_keys = {_akey(r) for r in exploratory_raw}
+    # Genuinely new BM25 assignments: B \\ L (also drop Bq for backwards-compatible stem)
+    drop_keys = lexical_keys | validated_keys
+    exploratory = [r for r in exploratory_raw if _akey(r) not in drop_keys]
+    n_dropped_in_L = len(exploratory_B_keys & lexical_keys)
+    n_dropped_in_Bq = len(exploratory_B_keys & validated_keys)
 
     df_val = pd.DataFrame(validated)
     df_only = pd.DataFrame(exploratory)
@@ -417,8 +454,15 @@ def retrieve_lang(
         n_paragraphs_indexed=n_docs,
         n_candidate_rows=len(df_val),
         n_bm25_only_rows=len(df_only),
+        n_exploratory_B_raw=len(exploratory_raw),
         n_unique_passages=int(df_val.groupby("passage_id").ngroups) if len(df_val) else 0,
         n_concepts_with_hits=int(df_val["concept_id"].nunique()) if len(df_val) else 0,
+        assignment_key="(passage_id, retrieval_concept_id)",
+        genuinely_new_definition="B_exploratory \\\\ L_lexical",
+        n_exploratory_also_in_L=n_dropped_in_L,
+        n_exploratory_also_in_Bq=n_dropped_in_Bq,
+        n_lexical_keys_loaded=len(lexical_keys),
+        exploratory_independent_of_lexical_gate=True,
         top_k=top_k,
         bm25_only_k=bm25_only_k,
         score_floor=score_floor,
