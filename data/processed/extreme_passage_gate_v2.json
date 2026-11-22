@@ -1,0 +1,26 @@
+{
+  "n_extreme_passages": 56,
+  "n_recoverable_collapsed": 0,
+  "resegment_gate_fires": false,
+  "decision": "Retain v0.3 retrieval execution; keep S3 sensitivity (drop extremes)",
+  "lexical_assignments_total": 12023,
+  "lexical_assignments_in_extreme_passages": 294,
+  "pct_lexical_assignments_in_extreme": 2.445313149796224,
+  "eligible_words": {
+    "en": 34218544.0,
+    "de": 4619105.0
+  },
+  "extreme_words": {
+    "en": 2673090.0,
+    "de": 233861.0
+  },
+  "pct_eligible_words_in_extreme": {
+    "en": 7.811816890864789,
+    "de": 5.062907208214578
+  },
+  "classification_counts": {
+    "ocr_artifact_collapsed": 27,
+    "concatenated_or_unsegmented_chapter": 19,
+    "oversized_paragraph_in_multi_para_chapter": 10
+  }
+}
