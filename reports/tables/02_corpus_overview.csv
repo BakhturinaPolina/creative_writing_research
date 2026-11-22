@@ -1,0 +1,3 @@
+language,language_label,listed_books,analysis_set_books,excluded_books,n_authors,eligible_words,body_words,eligible_paragraphs
+en,English,503,442,61,408,34218544.0,34581264.0,315302
+de,German,78,67,11,56,4619105.0,4665385.0,42623

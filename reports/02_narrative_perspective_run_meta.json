@@ -1,0 +1,73 @@
+{
+  "source_commit": "124f0683c6ad7b26a81cd20ca24ccf2c5be9cdbd",
+  "working_tree_dirty": true,
+  "corpus_snapshot_id": "corpus_snapshot_analysis_v1_candidate_20261122",
+  "lexicon_version": "0.3-draft",
+  "retrieval_algorithm_version": "v0.3",
+  "retrieval_execution_id": "v03_lexical_bm25_20261122",
+  "analysis_version": "v2",
+  "evaluation_infrastructure_version": "v0.5",
+  "braw_available": false,
+  "resegment_gate": {
+    "n_extreme_passages": 56,
+    "n_recoverable_collapsed": 0,
+    "resegment_gate_fires": false,
+    "decision": "Retain v0.3 retrieval execution; keep S3 sensitivity (drop extremes)",
+    "lexical_assignments_total": 12023,
+    "lexical_assignments_in_extreme_passages": 294,
+    "pct_lexical_assignments_in_extreme": 2.445313149796224,
+    "eligible_words": {
+      "en": 34218544.0,
+      "de": 4619105.0
+    },
+    "extreme_words": {
+      "en": 2673090.0,
+      "de": 233861.0
+    },
+    "pct_eligible_words_in_extreme": {
+      "en": 7.811816890864789,
+      "de": 5.062907208214578
+    },
+    "classification_counts": {
+      "ocr_artifact_collapsed": 27,
+      "concatenated_or_unsegmented_chapter": 19,
+      "oversized_paragraph_in_multi_para_chapter": 10
+    }
+  },
+  "bootstrap_seed": 20261122,
+  "bootstrap_iterations": 1000,
+  "execution_timestamp": "2026-11-22T23:06:51.843689+00:00",
+  "input_file_checksums": {
+    "data/processed/corpus_manifest_en_v1_candidate.csv": "1080c7d39b522c50ab061ccdf6fe76b98a87d7d7ee6b4b44de879aefa8777af8",
+    "data/processed/corpus_manifest_de_v1_candidate.csv": "48925bd271070123c4faea536e34b69fa9fc6eb9ac863cbda88e497a1f341965",
+    "data/processed/passage_manifest_en_v1_candidate.csv": "352e03a7dc35349a7c739ab58d2351d68b3a68d56f867c8937c82dd22e4c940a",
+    "data/processed/passage_manifest_de_v1_candidate.csv": "8715410717409f9217b58039eb2723c3a012d83a850f98604d27bcf8fee0032b",
+    "data/processed/pov_baseline_b_v03_lexical_en.csv": "a493eeffefd36d26b242f770690781067e66d2a777e4e7a6bcd1c80f9236f95c",
+    "data/processed/pov_baseline_b_v03_lexical_de.csv": "c602a043c0ee7e2ca2e8d77159bc38e0cb0928718375433c1de34506a1d29aec",
+    "data/processed/pov_baseline_c_v03_bm25_en.csv": "5d4efacf080e1539a07092c5b877b696c5a51011f53fc7277afd4efb96ab3de1",
+    "data/processed/pov_baseline_c_v03_bm25_de.csv": "50c82b87d75ab17cd22b106952d5347329100085f9e3d4d7135c056a719ca5f8",
+    "data/processed/pov_baseline_c_v03_bm25_only_unvalidated_en.csv": "b71762a5169fc915d7aa0e78eb91b7a75ecdeaad763c4a5405d1167565ff7823",
+    "data/processed/pov_baseline_c_v03_bm25_only_unvalidated_de.csv": "dd80337ad9ce0808afe3024434d1ffbea2627bc2978f8cc4ba8fb4b18521c3fb",
+    "config/pov_lexicon_psyper_en_de_v0.3.yml": "b93f7c22d057c3377c96bfe6fdfd6c04843a85464c2067db761c247afe3202c6",
+    "config/concept_families_v05.yml": "6ffa78699660b5b0f8e083bbc2047ddcfe6ed3a81a6e3a1f4385d631924c4d79",
+    "src/analysis/analysis_v2.py": "2dfbc5f1958787b4dbadab937d3a01abea1d62c1d8a0f6f4138bcc1f297c50ef",
+    "src/analysis/run_np_v2.py": "749700b932c129e5cb34eb9f21dfc70ad28d9a714f7743e2da711edad646c12e"
+  },
+  "software_versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.5.3"
+  },
+  "validation": {
+    "n_analysis_books_en": 442,
+    "n_analysis_books_de": 67,
+    "n_concepts": 36,
+    "n_freq_rows": 72,
+    "n_lexical_assignments": 12023,
+    "n_lexical_passages": 8321,
+    "n_missing_passage_keys": 0,
+    "n_duplicate_assignments": 0
+  },
+  "n_concepts": 36,
+  "primary_denominator": "eligible_passage_word_count",
+  "supplementary_denominator": "cleaned_body_word_count"
+}

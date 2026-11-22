@@ -1,0 +1,3 @@
+language,language_label,retrieved_passages,assignments,books_with_matches,pct_books_with_matches,pct_eligible_paragraphs,passages_per_10k_eligible_words,assignments_per_10k_eligible_words,avg_concepts_per_retrieved_passage,concepts_nonzero,n_concepts_configured,eligible_words,eligible_paragraphs,n_analysis_books
+en,English,7380,10643,407,92.08144796380091,2.340613126462883,2.1567253124504653,3.1103018293238893,1.442140921409214,36,36,34218544.0,315302.0,442
+de,German,941,1380,67,100.0,2.2077282218520518,2.0371911874703,2.9875917520818427,1.4665249734325185,32,36,4619105.0,42623.0,67

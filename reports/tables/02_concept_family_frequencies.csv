@@ -1,0 +1,15 @@
+concept_family,concept_family_label,language,language_label,n_assignments,n_unique_passages,eligible_words,frequency_per_10000_eligible_words,note,method,version
+perspective_and_person,Narrative perspective and grammatical person,en,English,6798,5178,34218544.0,1.5132145891420747,numerator = unique passages in family (deduplicated); passages may belong to several families,lexical,v03
+perspective_and_person,Narrative perspective and grammatical person,de,German,619,494,4619105.0,1.0694712503829205,numerator = unique passages in family (deduplicated); passages may belong to several families,lexical,v03
+narrator_participation,Narrator participation,en,English,92,89,34218544.0,0.02600928899838637,numerator = unique passages in family (deduplicated); passages may belong to several families,lexical,v03
+narrator_participation,Narrator participation,de,German,7,7,4619105.0,0.015154450916357174,numerator = unique passages in family (deduplicated); passages may belong to several families,lexical,v03
+narratorial_figural_stance,Narratorial and figural stance,en,English,34,34,34218544.0,0.009936132875788053,numerator = unique passages in family (deduplicated); passages may belong to several families,lexical,v03
+narratorial_figural_stance,Narratorial and figural stance,de,German,178,155,4619105.0,0.3355628417193374,numerator = unique passages in family (deduplicated); passages may belong to several families,lexical,v03
+focalization,Focalization,en,English,1273,1157,34218544.0,0.3381207569790229,numerator = unique passages in family (deduplicated); passages may belong to several families,lexical,v03
+focalization,Focalization,de,German,161,155,4619105.0,0.3355628417193374,numerator = unique passages in family (deduplicated); passages may belong to several families,lexical,v03
+mode_of_presentation,Mode of presentation,en,English,888,850,34218544.0,0.24840332189470132,numerator = unique passages in family (deduplicated); passages may belong to several families,lexical,v03
+mode_of_presentation,Mode of presentation,de,German,82,79,4619105.0,0.1710288031988881,numerator = unique passages in family (deduplicated); passages may belong to several families,lexical,v03
+consciousness_and_techniques,Consciousness and writing techniques,en,English,1047,989,34218544.0,0.2890245710045407,numerator = unique passages in family (deduplicated); passages may belong to several families,lexical,v03
+consciousness_and_techniques,Consciousness and writing techniques,de,German,245,222,4619105.0,0.48061258620447034,numerator = unique passages in family (deduplicated); passages may belong to several families,lexical,v03
+functions_and_reader_effects,Narrative functions and reader effects,en,English,511,491,34218544.0,0.14348944829446864,numerator = unique passages in family (deduplicated); passages may belong to several families,lexical,v03
+functions_and_reader_effects,Narrative functions and reader effects,de,German,88,86,4619105.0,0.18618325411524525,numerator = unique passages in family (deduplicated); passages may belong to several families,lexical,v03

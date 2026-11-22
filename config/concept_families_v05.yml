@@ -105,3 +105,21 @@ sensitivity_s4_exclusions:
   note: >
     Applied only in sensitivity scenario S4. Primary analysis retains these
     assignments. Not a claim that they are false positives.
+
+# Sensitivity S7: ambiguous German Stanzel stance vocabulary (auktorial/personal).
+# Applied only in sensitivity scenario S7; primary analysis retains these rows.
+sensitivity_s7_stance_exclusions:
+  description: >
+    Exclude DE stance_narratorial / stance_figural assignments whose matched
+    terms or regex indicate broad auktorial / personal Erzähl* cues.
+  language: de
+  concept_ids:
+    - stance_narratorial
+    - stance_figural
+  exclude_if_matched_terms_regex: 'auktorial|personales?\s+erzäh|personale\s+erzähl'
+  exclude_if_matched_regex_contains:
+    - auktorial
+    - personal
+  note: >
+    Separates Stanzel stance-vocabulary sensitivity from allwissen* / zero-focalization
+    sensitivity (S4). Not a claim that excluded rows are false positives.

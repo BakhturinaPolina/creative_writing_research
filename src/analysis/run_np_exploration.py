@@ -69,12 +69,32 @@ def save_fig(fig, name: str):
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument(
+        "--edition",
+        choices=("v1", "v2"),
+        default="v1",
+        help="v1 writes reports/01_*; v2 delegates to run_np_v2 (reports/02_*).",
+    )
+    parser.add_argument(
         "--from-stage",
         type=int,
         default=0,
         help="Skip stages before this number (0=all). Use 11 to resume after heatmap.",
     )
+    parser.add_argument("--skip-bootstrap", action="store_true")
+    parser.add_argument("--bootstrap-iters", type=int, default=1000)
     args = parser.parse_args()
+    if args.edition == "v2":
+        from src.analysis.run_np_v2 import main as main_v2
+        import sys
+
+        # Rebuild argv for the v2 runner.
+        sys.argv = [sys.argv[0]]
+        if args.skip_bootstrap:
+            sys.argv.append("--skip-bootstrap")
+        if args.bootstrap_iters != 1000:
+            sys.argv.extend(["--bootstrap-iters", str(args.bootstrap_iters)])
+        main_v2()
+        return
     log = setup_logger(__file__)
     _style()
     TABLES.mkdir(parents=True, exist_ok=True)

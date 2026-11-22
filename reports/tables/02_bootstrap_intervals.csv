@@ -1,0 +1,19 @@
+concept_id,language,estimate_type,point_mean,ci_low,ci_high,n_iter,seed,note
+focalization_zero,en,frequency_per_10k_eligible,0.29606370278172206,0.23752104044821315,0.3656604495468724,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+focalization_zero,de,frequency_per_10k_eligible,0.28890107748331567,0.18509939521562166,0.4210277613094398,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+focalization_zero,en_over_de,frequency_ratio,1.0707585342761456,0.6692889224886754,1.6775696984667878,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+stance_narratorial,en,frequency_per_10k_eligible,0.004686986706820468,0.0017537586304600848,0.008460469922924175,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+stance_narratorial,de,frequency_per_10k_eligible,0.2243945893525999,0.13407025503925202,0.3141749310529215,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+stance_narratorial,en_over_de,frequency_ratio,0.02199298831638534,0.007435281617231916,0.04856333384993621,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+stance_figural,en,frequency_per_10k_eligible,0.005283214655303423,0.001188476381686762,0.010768841163373023,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+stance_figural,de,frequency_per_10k_eligible,0.16189333743959405,0.06867181496726923,0.2861792136442589,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+stance_figural,en_over_de,frequency_ratio,0.036961578153007706,0.006972575151800921,0.09325111644864362,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+grammatical_third_person,en,frequency_per_10k_eligible,0.5945351673719694,0.5047576925171394,0.685724368908744,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+grammatical_third_person,de,frequency_per_10k_eligible,0.19507670588408224,0.13202490417412943,0.27731813470921973,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+grammatical_third_person,en_over_de,frequency_ratio,3.1660716963554227,2.0197487091536046,4.718765275295495,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+filter_words,en,frequency_per_10k_eligible,0.003133743877535046,0.0,0.00834113406699685,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+filter_words,de,frequency_per_10k_eligible,0.004442259845399017,0.0,0.011495273088704435,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+filter_words,en_over_de,frequency_ratio,0.8272575734970293,0.0,3.320533515913382,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+reader_effect,en,frequency_per_10k_eligible,0.0216549158565515,0.01390714168251604,0.029827254185382002,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+reader_effect,de,frequency_per_10k_eligible,0.006379848249522345,0.0,0.015288330426770077,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias
+reader_effect,en_over_de,frequency_ratio,4.344778460793435,1.2986727176356752,11.641233277821504,1000,20261122,Book-level stratified bootstrap; does not capture dictionary bias

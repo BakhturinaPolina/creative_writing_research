@@ -1,0 +1,397 @@
+scenario,scenario_description,concept_id,freq_en_per_10k,freq_de_per_10k,frequency_ratio_en_over_de,method,version
+S1,Complete analysis-set corpus,perspective_general,0.3702670692242195,0.47195289996655193,0.784542417793091,lexical,v03
+S1,Complete analysis-set corpus,voice_general,0.12800077057632844,0.11474084265241859,1.115564149760324,lexical,v03
+S1,Complete analysis-set corpus,grammatical_first_person,0.7335203975949415,0.5347356251914602,1.3717440227258229,lexical,v03
+S1,Complete analysis-set corpus,grammatical_second_person,0.16131603963044133,0.025979058713755155,6.209464376976414,lexical,v03
+S1,Complete analysis-set corpus,grammatical_third_person,0.5935378197272215,0.19267801879368404,3.0804646188664133,lexical,v03
+S1,Complete analysis-set corpus,voice_heterodiegetic,0.0029223920222906036,0.002164921559479596,1.3498835602122639,lexical,v03
+S1,Complete analysis-set corpus,voice_homodiegetic,0.005260305640123087,0.0,inf,lexical,v03
+S1,Complete analysis-set corpus,voice_eyewitness,0.012274046493620535,0.0,inf,lexical,v03
+S1,Complete analysis-set corpus,voice_participant,0.0008767176066871811,0.0,inf,lexical,v03
+S1,Complete analysis-set corpus,voice_protagonist,0.005552544842352147,0.012989529356877577,0.4274631274005502,lexical,v03
+S1,Complete analysis-set corpus,stance_narratorial,0.004675827235664965,0.2229869206263984,0.02096906501300604,lexical,v03
+S1,Complete analysis-set corpus,stance_figural,0.005260305640123087,0.16236911696096973,0.032397205445094335,lexical,v03
+S1,Complete analysis-set corpus,focalization_general,0.020164504953805167,0.006494764678438789,3.104732188488207,lexical,v03
+S1,Complete analysis-set corpus,focalization_zero,0.2969150294647253,0.2879345674107863,1.0311892459967367,lexical,v03
+S1,Complete analysis-set corpus,focalization_internal,0.028931681020676975,0.008659686237918384,3.340961811525353,lexical,v03
+S1,Complete analysis-set corpus,focalization_external,0.010228372078017113,0.002164921559479596,4.724592460742924,lexical,v03
+S1,Complete analysis-set corpus,focalization_fixed,0.004091348831206845,0.0,inf,lexical,v03
+S1,Complete analysis-set corpus,focalization_variable,0.0073059800557265095,0.03247382339219394,0.22498059336871065,lexical,v03
+S1,Complete analysis-set corpus,pov_subject,0.0023379136178324827,0.002164921559479596,1.079906848169811,lexical,v03
+S1,Complete analysis-set corpus,pov_object,0.0008767176066871811,0.002164921559479596,0.4049650680636792,lexical,v03
+S1,Complete analysis-set corpus,mode_narrative,0.1437816874966977,0.03247382339219394,4.427618077496225,lexical,v03
+S1,Complete analysis-set corpus,mode_dramatic,0.044420358738817174,0.07144241146282668,0.6217645489462548,lexical,v03
+S1,Complete analysis-set corpus,mode_balance,0.01607315612259832,0.03247382339219394,0.49495730541116334,lexical,v03
+S1,Complete analysis-set corpus,consciousness_access,0.06195471087256079,0.06927748990334708,0.8942978586406247,lexical,v03
+S1,Complete analysis-set corpus,thought_representation,0.11017417924035576,0.13639005824721456,0.8077874638095611,lexical,v03
+S1,Complete analysis-set corpus,distance_depth,0.044712597941046234,0.023814137154275557,1.877565315567967,lexical,v03
+S1,Complete analysis-set corpus,switching_consistency,0.017534352133743623,0.20350262659108206,0.08616278043908067,lexical,v03
+S1,Complete analysis-set corpus,multiple_focalization_same_event,0.0011689568089162414,0.006494764678438789,0.1799844746949685,lexical,v03
+S1,Complete analysis-set corpus,information_control,0.04968066437894026,0.04546335274907152,1.0927628820765944,lexical,v03
+S1,Complete analysis-set corpus,reliability,0.04032900990761033,0.006494764678438789,6.209464376976414,lexical,v03
+S1,Complete analysis-set corpus,narrator_level_time,0.00847493686464275,0.09742147017658181,0.08699249610256812,lexical,v03
+S1,Complete analysis-set corpus,filter_words,0.0029223920222906036,0.004329843118959192,0.6749417801061319,lexical,v03
+S1,Complete analysis-set corpus,reader_effect,0.021625700964950464,0.006494764678438789,3.329712781856917,lexical,v03
+S1,Complete analysis-set corpus,speech_dialogue,0.055233209221292406,0.04113350963011233,1.342778909895357,lexical,v03
+S1,Complete analysis-set corpus,narrative_style_voice,0.06867621252382919,0.09309162705762263,0.7377270619764699,lexical,v03
+S1,Complete analysis-set corpus,choice_tradeoffs,0.029223920222906038,0.03463874495167354,0.843677225132665,lexical,v03
+S2,Exclude contrast materials,perspective_general,0.3867293693737189,0.6111726000072976,0.6327662093639362,lexical,v03
+S2,Exclude contrast materials,voice_general,0.12562546393668575,0.13987034627032682,0.8981565234269883,lexical,v03
+S2,Exclude contrast materials,grammatical_first_person,0.7583713668530809,0.6659044746348167,1.1388590942702004,lexical,v03
+S2,Exclude contrast materials,grammatical_second_person,0.16596109083792554,0.036487916418346124,4.5483849758678,lexical,v03
+S2,Exclude contrast materials,grammatical_third_person,0.6093450812026987,0.24325277612230747,2.5049871615702344,lexical,v03
+S2,Exclude contrast materials,voice_heterodiegetic,0.002463244390915407,0.0,inf,lexical,v03
+S2,Exclude contrast materials,voice_homodiegetic,0.004926488781830814,0.0,inf,lexical,v03
+S2,Exclude contrast materials,voice_eyewitness,0.01262412750344146,0.0,inf,lexical,v03
+S2,Exclude contrast materials,voice_participant,0.0009237166465932776,0.0,inf,lexical,v03
+S2,Exclude contrast materials,voice_protagonist,0.005850205428424091,0.006081319403057687,0.9619960802392008,lexical,v03
+S2,Exclude contrast materials,stance_narratorial,0.004618583232966388,0.2736593731375959,0.016877124214722823,lexical,v03
+S2,Exclude contrast materials,stance_figural,0.005542299879559665,0.22804947761466327,0.02430305886920086,lexical,v03
+S2,Exclude contrast materials,focalization_general,0.012932033052305886,0.0,inf,lexical,v03
+S2,Exclude contrast materials,focalization_zero,0.3066739266689682,0.2949439910482978,1.0397700444039546,lexical,v03
+S2,Exclude contrast materials,focalization_internal,0.027403593848933903,0.012162638806115374,2.253096082665497,lexical,v03
+S2,Exclude contrast materials,focalization_external,0.009545072014797202,0.0,inf,lexical,v03
+S2,Exclude contrast materials,focalization_fixed,0.004310677684101962,0.0,inf,lexical,v03
+S2,Exclude contrast materials,focalization_variable,0.007697638721610646,0.04256923582140382,0.18082633087203018,lexical,v03
+S2,Exclude contrast materials,pov_subject,0.0018474332931865552,0.0,inf,lexical,v03
+S2,Exclude contrast materials,pov_object,0.0006158110977288518,0.0,inf,lexical,v03
+S2,Exclude contrast materials,mode_narrative,0.14810256900378882,0.015203298507644217,9.741476096738012,lexical,v03
+S2,Exclude contrast materials,mode_dramatic,0.039411910254646514,0.05473187462751919,0.720090633161507,lexical,v03
+S2,Exclude contrast materials,mode_balance,0.01631899408981457,0.04256923582140382,0.38335182144870394,lexical,v03
+S2,Exclude contrast materials,consciousness_access,0.06158110977288517,0.08817913134433647,0.69836376060922,lexical,v03
+S2,Exclude contrast materials,thought_representation,0.11392505307983757,0.18243958209173064,0.6244535959447443,lexical,v03
+S2,Exclude contrast materials,distance_depth,0.0452621156830706,0.03344725671681728,1.353238505216866,lexical,v03
+S2,Exclude contrast materials,switching_consistency,0.018474332931865553,0.22804947761466327,0.08101019623066955,lexical,v03
+S2,Exclude contrast materials,multiple_focalization_same_event,0.0009237166465932776,0.009121979104586531,0.10126274528833693,lexical,v03
+S2,Exclude contrast materials,information_control,0.0511123211114947,0.06385385373210571,0.8004578913268539,lexical,v03
+S2,Exclude contrast materials,reliability,0.04033562690123979,0.009121979104586531,4.421806544257379,lexical,v03
+S2,Exclude contrast materials,narrator_level_time,0.00523439433069524,0.030406597015288434,0.1721466669901728,lexical,v03
+S2,Exclude contrast materials,filter_words,0.0027711499397798326,0.006081319403057687,0.45568235379751615,lexical,v03
+S2,Exclude contrast materials,reader_effect,0.022477105067103084,0.009121979104586531,2.4640601353495315,lexical,v03
+S2,Exclude contrast materials,speech_dialogue,0.05388347105127453,0.05169121492599034,1.042410613262292,lexical,v03
+S2,Exclude contrast materials,narrative_style_voice,0.06835503184790255,0.12162638806115374,0.5620082363502701,lexical,v03
+S2,Exclude contrast materials,choice_tradeoffs,0.028019404946662753,0.04256923582140382,0.6582078443741899,lexical,v03
+S3,Exclude extreme-length passages,perspective_general,0.39657061204444866,0.48343946197748633,0.820310800492569,lexical,v03
+S3,Exclude extreme-length passages,voice_general,0.1359942386627246,0.11173836621177749,1.2170773859801653,lexical,v03
+S3,Exclude extreme-length passages,grammatical_first_person,0.7864841634550576,0.5541310814175904,1.4193106826692636,lexical,v03
+S3,Exclude extreme-length passages,grammatical_second_person,0.17023055049389998,0.020523373385836683,8.29447222411191,lexical,v03
+S3,Exclude extreme-length passages,grammatical_third_person,0.6359077919753509,0.19611223457577273,3.2425707317594834,lexical,v03
+S3,Exclude extreme-length passages,voice_heterodiegetic,0.0031700288732569833,0.0022803748206485204,1.3901350096276945,lexical,v03
+S3,Exclude extreme-length passages,voice_homodiegetic,0.005706051971862571,0.0,inf,lexical,v03
+S3,Exclude extreme-length passages,voice_eyewitness,0.012997118380353632,0.0,inf,lexical,v03
+S3,Exclude extreme-length passages,voice_participant,0.0009510086619770949,0.0,inf,lexical,v03
+S3,Exclude extreme-length passages,voice_protagonist,0.006023054859188268,0.013682248923891123,0.4402094197154366,lexical,v03
+S3,Exclude extreme-length passages,stance_narratorial,0.004438040422559777,0.22803748206485203,0.01946189013478773,lexical,v03
+S3,Exclude extreme-length passages,stance_figural,0.005706051971862571,0.16418698708669346,0.03475337524069237,lexical,v03
+S3,Exclude extreme-length passages,focalization_general,0.020605187676170394,0.006841124461945561,3.011959187526672,lexical,v03
+S3,Exclude extreme-length passages,focalization_zero,0.31668588443837264,0.2896076022223621,1.0934999012740685,lexical,v03
+S3,Exclude extreme-length passages,focalization_internal,0.02821325697198715,0.006841124461945561,4.124067195228827,lexical,v03
+S3,Exclude extreme-length passages,focalization_external,0.00982708950709665,0.0022803748206485204,4.309418529845854,lexical,v03
+S3,Exclude extreme-length passages,focalization_fixed,0.0038040346479083797,0.0,inf,lexical,v03
+S3,Exclude extreme-length passages,focalization_variable,0.007608069295816759,0.029644872668430765,0.2566403094697282,lexical,v03
+S3,Exclude extreme-length passages,pov_subject,0.0019020173239541898,0.0022803748206485204,0.8340810057766167,lexical,v03
+S3,Exclude extreme-length passages,pov_object,0.0006340057746513967,0.0022803748206485204,0.278027001925539,lexical,v03
+S3,Exclude extreme-length passages,mode_narrative,0.1512103772543581,0.029644872668430765,5.100726150710849,lexical,v03
+S3,Exclude extreme-length passages,mode_dramatic,0.045965418662226254,0.07069161944010413,0.6502244399871474,lexical,v03
+S3,Exclude extreme-length passages,mode_balance,0.01711815591558771,0.034205622309727804,0.5004486034659701,lexical,v03
+S3,Exclude extreme-length passages,consciousness_access,0.06340057746513968,0.06385049497815858,0.9929535783054962,lexical,v03
+S3,Exclude extreme-length passages,thought_representation,0.11760807119783408,0.1345421144182627,0.8741357433421606,lexical,v03
+S3,Exclude extreme-length passages,distance_depth,0.046916427324203355,0.022803748206485206,2.057399814248988,lexical,v03
+S3,Exclude extreme-length passages,switching_consistency,0.018386167464890503,0.20751410867901535,0.08860201160264428,lexical,v03
+S3,Exclude extreme-length passages,multiple_focalization_same_event,0.0012680115493027934,0.006841124461945561,0.18535133461702596,lexical,v03
+S3,Exclude extreme-length passages,information_control,0.05008645619746034,0.04788787123361893,1.0459111024817893,lexical,v03
+S3,Exclude extreme-length passages,reliability,0.042795389788969275,0.006841124461945561,6.255607543324626,lexical,v03
+S3,Exclude extreme-length passages,narrator_level_time,0.008559077957793855,0.09577574246723786,0.08936582204749466,lexical,v03
+S3,Exclude extreme-length passages,filter_words,0.0031700288732569833,0.004560749641297041,0.6950675048138473,lexical,v03
+S3,Exclude extreme-length passages,reader_effect,0.02123919345082179,0.006841124461945561,3.1046348548351848,lexical,v03
+S3,Exclude extreme-length passages,speech_dialogue,0.0570605197186257,0.03876637195102485,1.4719076572528529,lexical,v03
+S3,Exclude extreme-length passages,narrative_style_voice,0.07164265253560782,0.09349536764658933,0.766269541892339,lexical,v03
+S3,Exclude extreme-length passages,choice_tradeoffs,0.029798271408615642,0.03192524748907929,0.9333763636071664,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,perspective_general,0.3702670692242195,0.47195289996655193,0.784542417793091,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,voice_general,0.12800077057632844,0.11474084265241859,1.115564149760324,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,grammatical_first_person,0.7335203975949415,0.5347356251914602,1.3717440227258229,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,grammatical_second_person,0.16131603963044133,0.025979058713755155,6.209464376976414,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,grammatical_third_person,0.5935378197272215,0.19267801879368404,3.0804646188664133,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,voice_heterodiegetic,0.0029223920222906036,0.002164921559479596,1.3498835602122639,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,voice_homodiegetic,0.005260305640123087,0.0,inf,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,voice_eyewitness,0.012274046493620535,0.0,inf,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,voice_participant,0.0008767176066871811,0.0,inf,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,voice_protagonist,0.005552544842352147,0.012989529356877577,0.4274631274005502,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,stance_narratorial,0.004675827235664965,0.2229869206263984,0.02096906501300604,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,stance_figural,0.005260305640123087,0.16236911696096973,0.032397205445094335,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,focalization_general,0.020164504953805167,0.006494764678438789,3.104732188488207,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,focalization_zero,0.2969150294647253,0.002164921559479596,137.148169717566,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,focalization_internal,0.028931681020676975,0.008659686237918384,3.340961811525353,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,focalization_external,0.010228372078017113,0.002164921559479596,4.724592460742924,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,focalization_fixed,0.004091348831206845,0.0,inf,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,focalization_variable,0.0073059800557265095,0.03247382339219394,0.22498059336871065,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,pov_subject,0.0023379136178324827,0.002164921559479596,1.079906848169811,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,pov_object,0.0008767176066871811,0.002164921559479596,0.4049650680636792,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,mode_narrative,0.1437816874966977,0.03247382339219394,4.427618077496225,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,mode_dramatic,0.044420358738817174,0.07144241146282668,0.6217645489462548,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,mode_balance,0.01607315612259832,0.03247382339219394,0.49495730541116334,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,consciousness_access,0.06195471087256079,0.06927748990334708,0.8942978586406247,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,thought_representation,0.11017417924035576,0.13639005824721456,0.8077874638095611,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,distance_depth,0.044712597941046234,0.023814137154275557,1.877565315567967,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,switching_consistency,0.017534352133743623,0.20350262659108206,0.08616278043908067,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,multiple_focalization_same_event,0.0011689568089162414,0.006494764678438789,0.1799844746949685,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,information_control,0.04968066437894026,0.04546335274907152,1.0927628820765944,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,reliability,0.04032900990761033,0.006494764678438789,6.209464376976414,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,narrator_level_time,0.00847493686464275,0.09742147017658181,0.08699249610256812,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,filter_words,0.0029223920222906036,0.004329843118959192,0.6749417801061319,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,reader_effect,0.021625700964950464,0.006494764678438789,3.329712781856917,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,speech_dialogue,0.055233209221292406,0.04113350963011233,1.342778909895357,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,narrative_style_voice,0.06867621252382919,0.09309162705762263,0.7377270619764699,lexical,v03
+S4,Conservative DE allwissen/focalization_zero exclusions,choice_tradeoffs,0.029223920222906038,0.03463874495167354,0.843677225132665,lexical,v03
+S5,Exclude possible_duplicate books,perspective_general,0.38794582057710647,0.42072964527032786,0.9220786434667396,lexical,v03
+S5,Exclude possible_duplicate books,voice_general,0.10904082365530368,0.10916228634040939,0.9988873200701665,lexical,v03
+S5,Exclude possible_duplicate books,grammatical_first_person,0.7528859182442789,0.4912302885318423,1.5326536979111287,lexical,v03
+S5,Exclude possible_duplicate books,grammatical_second_person,0.16293094170460118,0.027290571585102348,5.970228259841343,lexical,v03
+S5,Exclude possible_duplicate books,grammatical_third_person,0.6113849650037257,0.17966292960192382,3.4029555588254143,lexical,v03
+S5,Exclude possible_duplicate books,voice_heterodiegetic,0.0018908813350630696,0.0022742142987585293,0.8314437808676529,lexical,v03
+S5,Exclude possible_duplicate books,voice_homodiegetic,0.004727203337657674,0.0,inf,lexical,v03
+S5,Exclude possible_duplicate books,voice_eyewitness,0.012921022456264308,0.0,inf,lexical,v03
+S5,Exclude possible_duplicate books,voice_participant,0.0009454406675315348,0.0,inf,lexical,v03
+S5,Exclude possible_duplicate books,voice_protagonist,0.0028363220025946043,0.013645285792551174,0.20786094521691326,lexical,v03
+S5,Exclude possible_duplicate books,stance_narratorial,0.004727203337657674,0.20467928688826764,0.023095660579657024,lexical,v03
+S5,Exclude possible_duplicate books,stance_figural,0.005042350226834852,0.12280757213296058,0.041058952141612495,lexical,v03
+S5,Exclude possible_duplicate books,focalization_general,0.014181610012973021,0.006822642896275587,2.0786094521691325,lexical,v03
+S5,Exclude possible_duplicate books,focalization_zero,0.30537733561268576,0.2638088586559894,1.1575704362941892,lexical,v03
+S5,Exclude possible_duplicate books,focalization_internal,0.028048073136768863,0.009096857195034117,3.083270687384213,lexical,v03
+S5,Exclude possible_duplicate books,focalization_external,0.009769553564492528,0.0022742142987585293,4.295792867816208,lexical,v03
+S5,Exclude possible_duplicate books,focalization_fixed,0.004096909559303317,0.0,inf,lexical,v03
+S5,Exclude possible_duplicate books,focalization_variable,0.007563525340252278,0.03411321448137794,0.22171834156470743,lexical,v03
+S5,Exclude possible_duplicate books,pov_subject,0.0018908813350630696,0.0022742142987585293,0.8314437808676529,lexical,v03
+S5,Exclude possible_duplicate books,pov_object,0.0006302937783543565,0.0022742142987585293,0.2771479269558843,lexical,v03
+S5,Exclude possible_duplicate books,mode_narrative,0.13834948434878128,0.03411321448137794,4.055597997787774,lexical,v03
+S5,Exclude possible_duplicate books,mode_dramatic,0.03907821425797011,0.07277485756027294,0.536974108477026,lexical,v03
+S5,Exclude possible_duplicate books,mode_balance,0.015127050680504557,0.031839000182619405,0.4751107319243732,lexical,v03
+S5,Exclude possible_duplicate books,consciousness_access,0.060823349611195406,0.07277485756027294,0.8357742172263386,lexical,v03
+S5,Exclude possible_duplicate books,thought_representation,0.11282258632542982,0.12735600073047762,0.8858835522339875,lexical,v03
+S5,Exclude possible_duplicate books,distance_depth,0.04380541759562778,0.025016357286343823,1.751070993039451,lexical,v03
+S5,Exclude possible_duplicate books,switching_consistency,0.018908813350630695,0.2115019297845432,0.08940255708254333,lexical,v03
+S5,Exclude possible_duplicate books,multiple_focalization_same_event,0.0009454406675315348,0.006822642896275587,0.13857396347794218,lexical,v03
+S5,Exclude possible_duplicate books,information_control,0.028048073136768863,0.04775850027392911,0.5872896547398501,lexical,v03
+S5,Exclude possible_duplicate books,reliability,0.040969095593033175,0.004548428597517059,9.00730762606624,lexical,v03
+S5,Exclude possible_duplicate books,narrator_level_time,0.004096909559303317,0.10233964344413382,0.04003247833807218,lexical,v03
+S5,Exclude possible_duplicate books,filter_words,0.003151468891771783,0.0022742142987585293,1.3857396347794215,lexical,v03
+S5,Exclude possible_duplicate books,reader_effect,0.019539107128985055,0.004548428597517059,4.295792867816208,lexical,v03
+S5,Exclude possible_duplicate books,speech_dialogue,0.05325982427094312,0.038661643078895,1.3775882251630718,lexical,v03
+S5,Exclude possible_duplicate books,narrative_style_voice,0.06397481850296718,0.08869435765158264,0.7212952457954425,lexical,v03
+S5,Exclude possible_duplicate books,choice_tradeoffs,0.028048073136768863,0.03411321448137794,0.82220551663579,lexical,v03
+S6,High-confidence lexical evidence only,perspective_general,0.3699748300219904,0.42648954721748045,0.8674886229587441,lexical,v03
+S6,High-confidence lexical evidence only,voice_general,0.12390942174512158,0.1104109995334594,1.122256136333333,lexical,v03
+S6,High-confidence lexical evidence only,grammatical_first_person,0.7332281583927125,0.5347356251914602,1.371197511162984,lexical,v03
+S6,High-confidence lexical evidence only,grammatical_second_person,0.16131603963044133,0.025979058713755155,6.209464376976414,lexical,v03
+S6,High-confidence lexical evidence only,grammatical_third_person,0.5935378197272215,0.19267801879368404,3.0804646188664133,lexical,v03
+S6,High-confidence lexical evidence only,voice_heterodiegetic,0.0020456744156034227,0.002164921559479596,0.9449184921485848,lexical,v03
+S6,High-confidence lexical evidence only,voice_homodiegetic,0.004968066437894027,0.0,inf,lexical,v03
+S6,High-confidence lexical evidence only,voice_eyewitness,0.011981807291391476,0.0,inf,lexical,v03
+S6,High-confidence lexical evidence only,voice_participant,0.0008767176066871811,0.0,inf,lexical,v03
+S6,High-confidence lexical evidence only,voice_protagonist,0.005552544842352147,0.012989529356877577,0.4274631274005502,lexical,v03
+S6,High-confidence lexical evidence only,stance_narratorial,0.0011689568089162414,0.2229869206263984,0.00524226625325151,lexical,v03
+S6,High-confidence lexical evidence only,stance_figural,0.0005844784044581207,0.16020419540149014,0.003648333946519631,lexical,v03
+S6,High-confidence lexical evidence only,focalization_general,0.018411069740430802,0.006494764678438789,2.834755476445754,lexical,v03
+S6,High-confidence lexical evidence only,focalization_zero,0.2969150294647253,0.2879345674107863,1.0311892459967367,lexical,v03
+S6,High-confidence lexical evidence only,focalization_internal,0.005260305640123087,0.0,inf,lexical,v03
+S6,High-confidence lexical evidence only,focalization_external,0.0023379136178324827,0.0,inf,lexical,v03
+S6,High-confidence lexical evidence only,focalization_fixed,0.0,0.0,,lexical,v03
+S6,High-confidence lexical evidence only,focalization_variable,0.0,0.006494764678438789,0.0,lexical,v03
+S6,High-confidence lexical evidence only,pov_subject,0.0017534352133743623,0.002164921559479596,0.8099301361273584,lexical,v03
+S6,High-confidence lexical evidence only,pov_object,0.0008767176066871811,0.002164921559479596,0.4049650680636792,lexical,v03
+S6,High-confidence lexical evidence only,mode_narrative,0.07481323577063945,0.01731937247583677,4.319627392679244,lexical,v03
+S6,High-confidence lexical evidence only,mode_dramatic,0.028639441818447915,0.06927748990334708,0.4134018403150058,lexical,v03
+S6,High-confidence lexical evidence only,mode_balance,0.01607315612259832,0.03247382339219394,0.49495730541116334,lexical,v03
+S6,High-confidence lexical evidence only,consciousness_access,0.02308689697609577,0.038968588070632734,0.592448895870938,lexical,v03
+S6,High-confidence lexical evidence only,thought_representation,0.09556221912890273,0.13639005824721456,0.7006538479196988,lexical,v03
+S6,High-confidence lexical evidence only,distance_depth,0.035945421874174426,0.015154450916357174,2.3719382558015494,lexical,v03
+S6,High-confidence lexical evidence only,switching_consistency,0.01665763452705644,0.20350262659108206,0.08185464141712663,lexical,v03
+S6,High-confidence lexical evidence only,multiple_focalization_same_event,0.0011689568089162414,0.006494764678438789,0.1799844746949685,lexical,v03
+S6,High-confidence lexical evidence only,information_control,0.04120572751429751,0.04546335274907152,0.9063503904282343,lexical,v03
+S6,High-confidence lexical evidence only,reliability,0.04032900990761033,0.006494764678438789,6.209464376976414,lexical,v03
+S6,High-confidence lexical evidence only,narrator_level_time,0.004968066437894027,0.09742147017658181,0.050995601163574426,lexical,v03
+S6,High-confidence lexical evidence only,filter_words,0.0029223920222906036,0.004329843118959192,0.6749417801061319,lexical,v03
+S6,High-confidence lexical evidence only,reader_effect,0.018411069740430802,0.006494764678438789,2.834755476445754,lexical,v03
+S6,High-confidence lexical evidence only,speech_dialogue,0.044712597941046234,0.030308901832714348,1.4752298908034025,lexical,v03
+S6,High-confidence lexical evidence only,narrative_style_voice,0.04880394677225308,0.08443194081970425,0.5780270629626874,lexical,v03
+S6,High-confidence lexical evidence only,choice_tradeoffs,0.029223920222906038,0.03463874495167354,0.843677225132665,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),perspective_general,0.3702670692242195,0.47195289996655193,0.784542417793091,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),voice_general,0.12800077057632844,0.11474084265241859,1.115564149760324,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),grammatical_first_person,0.7335203975949415,0.5347356251914602,1.3717440227258229,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),grammatical_second_person,0.16131603963044133,0.025979058713755155,6.209464376976414,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),grammatical_third_person,0.5935378197272215,0.19267801879368404,3.0804646188664133,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),voice_heterodiegetic,0.0029223920222906036,0.002164921559479596,1.3498835602122639,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),voice_homodiegetic,0.005260305640123087,0.0,inf,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),voice_eyewitness,0.012274046493620535,0.0,inf,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),voice_participant,0.0008767176066871811,0.0,inf,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),voice_protagonist,0.005552544842352147,0.012989529356877577,0.4274631274005502,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),stance_narratorial,0.004675827235664965,0.0,inf,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),stance_figural,0.005260305640123087,0.002164921559479596,2.4297904083820754,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),focalization_general,0.020164504953805167,0.006494764678438789,3.104732188488207,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),focalization_zero,0.2969150294647253,0.2879345674107863,1.0311892459967367,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),focalization_internal,0.028931681020676975,0.008659686237918384,3.340961811525353,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),focalization_external,0.010228372078017113,0.002164921559479596,4.724592460742924,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),focalization_fixed,0.004091348831206845,0.0,inf,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),focalization_variable,0.0073059800557265095,0.03247382339219394,0.22498059336871065,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),pov_subject,0.0023379136178324827,0.002164921559479596,1.079906848169811,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),pov_object,0.0008767176066871811,0.002164921559479596,0.4049650680636792,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),mode_narrative,0.1437816874966977,0.03247382339219394,4.427618077496225,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),mode_dramatic,0.044420358738817174,0.07144241146282668,0.6217645489462548,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),mode_balance,0.01607315612259832,0.03247382339219394,0.49495730541116334,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),consciousness_access,0.06195471087256079,0.06927748990334708,0.8942978586406247,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),thought_representation,0.11017417924035576,0.13639005824721456,0.8077874638095611,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),distance_depth,0.044712597941046234,0.023814137154275557,1.877565315567967,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),switching_consistency,0.017534352133743623,0.20350262659108206,0.08616278043908067,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),multiple_focalization_same_event,0.0011689568089162414,0.006494764678438789,0.1799844746949685,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),information_control,0.04968066437894026,0.04546335274907152,1.0927628820765944,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),reliability,0.04032900990761033,0.006494764678438789,6.209464376976414,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),narrator_level_time,0.00847493686464275,0.09742147017658181,0.08699249610256812,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),filter_words,0.0029223920222906036,0.004329843118959192,0.6749417801061319,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),reader_effect,0.021625700964950464,0.006494764678438789,3.329712781856917,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),speech_dialogue,0.055233209221292406,0.04113350963011233,1.342778909895357,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),narrative_style_voice,0.06867621252382919,0.09309162705762263,0.7377270619764699,lexical,v03
+S7,Exclude ambiguous German stance triggers (auktorial/personal),choice_tradeoffs,0.029223920222906038,0.03463874495167354,0.843677225132665,lexical,v03
+S8,Drop five most productive books per concept,perspective_general,0.21126116563274272,0.3389655690880834,0.6232525804939336,lexical,v03
+S8,Drop five most productive books per concept,voice_general,0.09792340947234504,0.035723284579782244,2.7411647787775157,lexical,v03
+S8,Drop five most productive books per concept,grammatical_first_person,0.6674426008262525,0.379135133887687,1.7604345816812963,lexical,v03
+S8,Drop five most productive books per concept,grammatical_second_person,0.13569232859551864,0.00463101464604692,29.300777252204753,lexical,v03
+S8,Drop five most productive books per concept,grammatical_third_person,0.5316413090326157,0.12259698128509929,4.336495919065771,lexical,v03
+S8,Drop five most productive books per concept,voice_heterodiegetic,0.001182748163258632,0.0,inf,lexical,v03
+S8,Drop five most productive books per concept,voice_homodiegetic,0.0032559664401027085,0.0,inf,lexical,v03
+S8,Drop five most productive books per concept,voice_eyewitness,0.0056549078215798005,0.0,inf,lexical,v03
+S8,Drop five most productive books per concept,voice_participant,0.0,0.0,,lexical,v03
+S8,Drop five most productive books per concept,voice_protagonist,0.0005941321959583444,0.0,inf,lexical,v03
+S8,Drop five most productive books per concept,stance_narratorial,0.0017745296261713782,0.13423652139478456,0.013219424995024664,lexical,v03
+S8,Drop five most productive books per concept,stance_figural,0.0005896719604761754,0.05336126060642057,0.011050562782342226,lexical,v03
+S8,Drop five most productive books per concept,focalization_general,0.005027751264605137,0.0,inf,lexical,v03
+S8,Drop five most productive books per concept,focalization_zero,0.24928000714028262,0.174396889534588,1.429383332498273,lexical,v03
+S8,Drop five most productive books per concept,focalization_internal,0.01792183909611563,0.0,inf,lexical,v03
+S8,Drop five most productive books per concept,focalization_external,0.005924562837616768,0.0,inf,lexical,v03
+S8,Drop five most productive books per concept,focalization_fixed,0.0008872071909444063,0.0,inf,lexical,v03
+S8,Drop five most productive books per concept,focalization_variable,0.0017728051512517465,0.011769064590038757,0.15063262995023707,lexical,v03
+S8,Drop five most productive books per concept,pov_subject,0.0005901351300272764,0.0,inf,lexical,v03
+S8,Drop five most productive books per concept,pov_object,0.0,0.0,,lexical,v03
+S8,Drop five most productive books per concept,mode_narrative,0.09903377137591325,0.007538400612721202,13.137239112603247,lexical,v03
+S8,Drop five most productive books per concept,mode_dramatic,0.0292123810923306,0.02594452824002934,1.1259553776452698,lexical,v03
+S8,Drop five most productive books per concept,mode_balance,0.008655949784984716,0.006960765182995036,1.2435342318587288,lexical,v03
+S8,Drop five most productive books per concept,consciousness_access,0.0433879418298159,0.0438366783795195,0.9897634454458746,lexical,v03
+S8,Drop five most productive books per concept,thought_representation,0.06281604693994294,0.05651369821402585,1.111518957794076,lexical,v03
+S8,Drop five most productive books per concept,distance_depth,0.029278082338839682,0.0023260000753624025,12.587309282128038,lexical,v03
+S8,Drop five most productive books per concept,switching_consistency,0.006204882929666795,0.07089930636030342,0.08751683546992942,lexical,v03
+S8,Drop five most productive books per concept,multiple_focalization_same_event,0.0,0.0,,lexical,v03
+S8,Drop five most productive books per concept,information_control,0.023029067584349423,0.0,inf,lexical,v03
+S8,Drop five most productive books per concept,reliability,0.031520027766170876,0.0,inf,lexical,v03
+S8,Drop five most productive books per concept,narrator_level_time,0.0029691089745534894,0.022586285256250192,0.1314562771552645,lexical,v03
+S8,Drop five most productive books per concept,filter_words,0.0,0.0,,lexical,v03
+S8,Drop five most productive books per concept,reader_effect,0.01505037493287459,0.0,inf,lexical,v03
+S8,Drop five most productive books per concept,speech_dialogue,0.04376265600382111,0.014451305603204722,3.0282838938868126,lexical,v03
+S8,Drop five most productive books per concept,narrative_style_voice,0.05513403870320591,0.040660382006680734,1.355964601959398,lexical,v03
+S8,Drop five most productive books per concept,choice_tradeoffs,0.01984542075950084,0.01374151747577485,1.4441942670805217,lexical,v03
+S9,Fiction manuals only,perspective_general,0.5348959080507684,0.7898333782639746,0.677226264134912,lexical,v03
+S9,Fiction manuals only,voice_general,0.14198405572633083,0.19391118867558657,0.7322117753806882,lexical,v03
+S9,Fiction manuals only,grammatical_first_person,0.9220033807385948,0.870235578446535,1.05948711311536,lexical,v03
+S9,Fiction manuals only,grammatical_second_person,0.1942234724558299,0.033106788310466005,5.866575477949043,lexical,v03
+S9,Fiction manuals only,grammatical_third_person,0.7554623342419867,0.26958384767093746,2.80232788710742,lexical,v03
+S9,Fiction manuals only,voice_heterodiegetic,0.0026789444476666194,0.0,inf,lexical,v03
+S9,Fiction manuals only,voice_homodiegetic,0.006697361119166549,0.0,inf,lexical,v03
+S9,Fiction manuals only,voice_eyewitness,0.016073666685999716,0.0,inf,lexical,v03
+S9,Fiction manuals only,voice_participant,0.0013394722238333097,0.0,inf,lexical,v03
+S9,Fiction manuals only,voice_protagonist,0.005357888895333239,0.009459082374418858,0.566427977181287,lexical,v03
+S9,Fiction manuals only,stance_narratorial,0.006250870377888778,0.3830928361639637,0.016316855309749006,lexical,v03
+S9,Fiction manuals only,stance_figural,0.007590342601722088,0.32633834191745054,0.02325911983594657,lexical,v03
+S9,Fiction manuals only,focalization_general,0.016966648168555254,0.0,inf,lexical,v03
+S9,Fiction manuals only,focalization_zero,0.405413593080215,0.40674054210001087,0.9967376032569933,lexical,v03
+S9,Fiction manuals only,focalization_internal,0.034379787078388284,0.004729541187209429,7.269159040493183,lexical,v03
+S9,Fiction manuals only,focalization_external,0.012055250014499787,0.0,inf,lexical,v03
+S9,Fiction manuals only,focalization_fixed,0.006250870377888778,0.0,inf,lexical,v03
+S9,Fiction manuals only,focalization_variable,0.011162268531944247,0.018918164748837715,0.5900291428971739,lexical,v03
+S9,Fiction manuals only,pov_subject,0.0022324537063888495,0.0,inf,lexical,v03
+S9,Fiction manuals only,pov_object,0.0008929814825555397,0.0,inf,lexical,v03
+S9,Fiction manuals only,mode_narrative,0.15314632425827507,0.018918164748837715,8.095199840549226,lexical,v03
+S9,Fiction manuals only,mode_dramatic,0.039291185232443744,0.07094311780814143,0.5538406887994806,lexical,v03
+S9,Fiction manuals only,mode_balance,0.019199101874944103,0.056754494246513146,0.33828337526104635,lexical,v03
+S9,Fiction manuals only,consciousness_access,0.06875957415677657,0.07094311780814143,0.9692212053990912,lexical,v03
+S9,Fiction manuals only,thought_representation,0.15716474092977498,0.2412066005476809,0.6515772809405652,lexical,v03
+S9,Fiction manuals only,distance_depth,0.0607227408137767,0.03783632949767543,1.604879268680313,lexical,v03
+S9,Fiction manuals only,switching_consistency,0.023664009287721804,0.17026348273953942,0.1389846425491121,lexical,v03
+S9,Fiction manuals only,multiple_focalization_same_event,0.0013394722238333097,0.014188623561628286,0.09440466286354783,lexical,v03
+S9,Fiction manuals only,information_control,0.038844694491165975,0.09459082374418858,0.410660283456433,lexical,v03
+S9,Fiction manuals only,reliability,0.05313239821205462,0.014188623561628286,3.7447182935873977,lexical,v03
+S9,Fiction manuals only,narrator_level_time,0.006250870377888778,0.033106788310466005,0.18880932572709563,lexical,v03
+S9,Fiction manuals only,filter_words,0.004018416671499929,0.009459082374418858,0.42482098288596526,lexical,v03
+S9,Fiction manuals only,reader_effect,0.02544997225283288,0.009459082374418858,2.690532891611113,lexical,v03
+S9,Fiction manuals only,speech_dialogue,0.05759730562483231,0.06148403543372258,0.9367847314921284,lexical,v03
+S9,Fiction manuals only,narrative_style_voice,0.07858237046488749,0.16553394155233,0.4747205903995548,lexical,v03
+S9,Fiction manuals only,choice_tradeoffs,0.027682425959221733,0.056754494246513146,0.4877574247949971,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),perspective_general,0.3867293693737189,0.6111726000072976,0.6327662093639362,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),voice_general,0.12562546393668575,0.13987034627032682,0.8981565234269883,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),grammatical_first_person,0.7583713668530809,0.6659044746348167,1.1388590942702004,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),grammatical_second_person,0.16596109083792554,0.036487916418346124,4.5483849758678,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),grammatical_third_person,0.6093450812026987,0.24325277612230747,2.5049871615702344,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),voice_heterodiegetic,0.002463244390915407,0.0,inf,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),voice_homodiegetic,0.004926488781830814,0.0,inf,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),voice_eyewitness,0.01262412750344146,0.0,inf,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),voice_participant,0.0009237166465932776,0.0,inf,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),voice_protagonist,0.005850205428424091,0.006081319403057687,0.9619960802392008,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),stance_narratorial,0.004618583232966388,0.2736593731375959,0.016877124214722823,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),stance_figural,0.005542299879559665,0.22804947761466327,0.02430305886920086,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),focalization_general,0.012932033052305886,0.0,inf,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),focalization_zero,0.3066739266689682,0.2949439910482978,1.0397700444039546,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),focalization_internal,0.027403593848933903,0.012162638806115374,2.253096082665497,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),focalization_external,0.009545072014797202,0.0,inf,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),focalization_fixed,0.004310677684101962,0.0,inf,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),focalization_variable,0.007697638721610646,0.04256923582140382,0.18082633087203018,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),pov_subject,0.0018474332931865552,0.0,inf,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),pov_object,0.0006158110977288518,0.0,inf,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),mode_narrative,0.14810256900378882,0.015203298507644217,9.741476096738012,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),mode_dramatic,0.039411910254646514,0.05473187462751919,0.720090633161507,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),mode_balance,0.01631899408981457,0.04256923582140382,0.38335182144870394,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),consciousness_access,0.06158110977288517,0.08817913134433647,0.69836376060922,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),thought_representation,0.11392505307983757,0.18243958209173064,0.6244535959447443,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),distance_depth,0.0452621156830706,0.03344725671681728,1.353238505216866,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),switching_consistency,0.018474332931865553,0.22804947761466327,0.08101019623066955,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),multiple_focalization_same_event,0.0009237166465932776,0.009121979104586531,0.10126274528833693,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),information_control,0.0511123211114947,0.06385385373210571,0.8004578913268539,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),reliability,0.04033562690123979,0.009121979104586531,4.421806544257379,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),narrator_level_time,0.00523439433069524,0.030406597015288434,0.1721466669901728,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),filter_words,0.0027711499397798326,0.006081319403057687,0.45568235379751615,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),reader_effect,0.022477105067103084,0.009121979104586531,2.4640601353495315,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),speech_dialogue,0.05388347105127453,0.05169121492599034,1.042410613262292,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),narrative_style_voice,0.06835503184790255,0.12162638806115374,0.5620082363502701,lexical,v03
+S10,Fiction manuals + pedagogy (exclude contrast),choice_tradeoffs,0.028019404946662753,0.04256923582140382,0.6582078443741899,lexical,v03
+S11,Body-word denominator (supplementary),perspective_general,0.3663833687513562,0.46727118983749466,0.7840915012945164,lexical,v03
+S11,Body-word denominator (supplementary),voice_general,0.12665818114687769,0.11360262872195971,1.1149229782074075,lexical,v03
+S11,Body-word denominator (supplementary),grammatical_first_person,0.7258265631932945,0.529431118760831,1.3709556115479955,lexical,v03
+S11,Body-word denominator (supplementary),grammatical_second_person,0.15962400911661298,0.025721349899311633,6.205895481437579,lexical,v03
+S11,Body-word denominator (supplementary),grammatical_third_person,0.5873122509344945,0.19076667841989461,3.0786941189056476,lexical,v03
+S11,Body-word denominator (supplementary),voice_heterodiegetic,0.0028917392955908144,0.002143445824942636,1.3491077133559952,lexical,v03
+S11,Body-word denominator (supplementary),voice_homodiegetic,0.005205130732063467,0.0,inf,lexical,v03
+S11,Body-word denominator (supplementary),voice_eyewitness,0.012145305041481421,0.0,inf,lexical,v03
+S11,Body-word denominator (supplementary),voice_participant,0.0008675217886772445,0.0,inf,lexical,v03
+S11,Body-word denominator (supplementary),voice_protagonist,0.005494304661622549,0.012860674949655817,0.42721744256273186,lexical,v03
+S11,Body-word denominator (supplementary),stance_narratorial,0.004626782872945303,0.22077491996909152,0.02095701302300575,lexical,v03
+S11,Body-word denominator (supplementary),stance_figural,0.005205130732063467,0.16075843687069769,0.032378585120543896,lexical,v03
+S11,Body-word denominator (supplementary),focalization_general,0.019953001139576623,0.006430337474827908,3.1029477407187893,lexical,v03
+S11,Body-word denominator (supplementary),focalization_zero,0.29380071243202677,0.2850782947173706,1.0305965689997678,lexical,v03
+S11,Body-word denominator (supplementary),focalization_internal,0.028628219026349065,0.008573783299770543,3.339041590556089,lexical,v03
+S11,Body-word denominator (supplementary),focalization_external,0.010121087534567851,0.002143445824942636,4.7218769967459835,lexical,v03
+S11,Body-word denominator (supplementary),focalization_fixed,0.00404843501382714,0.0,inf,lexical,v03
+S11,Body-word denominator (supplementary),focalization_variable,0.007229348238977037,0.03215168737413954,0.2248512855593326,lexical,v03
+S11,Body-word denominator (supplementary),pov_subject,0.0023133914364726516,0.002143445824942636,1.0792861706847963,lexical,v03
+S11,Body-word denominator (supplementary),pov_object,0.0008675217886772445,0.002143445824942636,0.40473231400679865,lexical,v03
+S11,Body-word denominator (supplementary),mode_narrative,0.1422735733430681,0.03215168737413954,4.425073299807665,lexical,v03
+S11,Body-word denominator (supplementary),mode_dramatic,0.04395443729298039,0.070733712223107,0.6214071891821554,lexical,v03
+S11,Body-word denominator (supplementary),mode_balance,0.015904566125749482,0.03215168737413954,0.4946728282305317,lexical,v03
+S11,Body-word denominator (supplementary),consciousness_access,0.061304873066525274,0.06859026639816435,0.893783860098347,lexical,v03
+S11,Body-word denominator (supplementary),thought_representation,0.1090185714437737,0.13503708697138606,0.8073231871987464,lexical,v03
+S11,Body-word denominator (supplementary),distance_depth,0.04424361122253946,0.023577904074368997,1.8764861831224295,lexical,v03
+S11,Body-word denominator (supplementary),switching_consistency,0.01735043577354489,0.2014839075446078,0.08611325829931885,lexical,v03
+S11,Body-word denominator (supplementary),multiple_focalization_same_event,0.0011566957182363258,0.006430337474827908,0.179881028447466,lexical,v03
+S11,Body-word denominator (supplementary),information_control,0.04915956802504385,0.04501236232379535,1.092134815573901,lexical,v03
+S11,Body-word denominator (supplementary),reliability,0.039906002279153245,0.006430337474827908,6.205895481437579,lexical,v03
+S11,Body-word denominator (supplementary),narrator_level_time,0.008386043957213363,0.09645506212241862,0.08694249708294192,lexical,v03
+S11,Body-word denominator (supplementary),filter_words,0.0028917392955908144,0.004286891649885272,0.6745538566779976,lexical,v03
+S11,Body-word denominator (supplementary),reader_effect,0.02139887078737203,0.006430337474827908,3.3277990262781216,lexical,v03
+S11,Body-word denominator (supplementary),speech_dialogue,0.054653872686666397,0.04072547067391008,1.3420071464435954,lexical,v03
+S11,Body-word denominator (supplementary),narrative_style_voice,0.06795587344638414,0.09216817047253335,0.7373030526480439,lexical,v03
+S11,Body-word denominator (supplementary),choice_tradeoffs,0.028917392955908148,0.03429513319908217,0.8431923208474972,lexical,v03
