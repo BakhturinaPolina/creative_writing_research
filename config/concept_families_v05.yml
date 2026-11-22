@@ -1,0 +1,107 @@
+# Analytical grouping of the 36 retrieval concepts for accessible overview.
+# Family membership is a research convenience — not an official PsyPer taxonomy.
+# Ambiguous memberships are documented; no conceptual remaps of Genette/Stanzel.
+version: "0.5"
+note: >
+  When computing family-level frequencies, deduplicate passages within each family.
+  Do not sum component-concept frequencies.
+
+families:
+  - id: perspective_and_person
+    label: Narrative perspective and grammatical person
+    concepts:
+      - perspective_general
+      - voice_general
+      - grammatical_first_person
+      - grammatical_second_person
+      - grammatical_third_person
+    ambiguity_notes: >
+      Grammatical person is evidence of narrative setup, not sufficient for
+      narrator participation (homo-/heterodiegetic status).
+
+  - id: narrator_participation
+    label: Narrator participation
+    concepts:
+      - voice_heterodiegetic
+      - voice_homodiegetic
+      - voice_eyewitness
+      - voice_participant
+      - voice_protagonist
+    ambiguity_notes: >
+      Participation categories interact with person and reliability; low DE
+      lexical coverage for several voice_* concepts.
+
+  - id: narratorial_figural_stance
+    label: Narratorial and figural stance
+    concepts:
+      - stance_narratorial
+      - stance_figural
+    ambiguity_notes: >
+      Stanzel auktorial/personal cues may overlap with Genette focalization
+      vocabulary; do not equate automatically.
+
+  - id: focalization
+    label: Focalization
+    concepts:
+      - focalization_general
+      - focalization_zero
+      - focalization_internal
+      - focalization_external
+      - focalization_fixed
+      - focalization_variable
+      - multiple_focalization_same_event
+      - pov_subject
+      - pov_object
+    ambiguity_notes: >
+      Omniscience / Allwissenheit and Wissensvorsprung may also relate to
+      information_control or reader_effect.
+
+  - id: mode_of_presentation
+    label: Mode of presentation
+    concepts:
+      - mode_narrative
+      - mode_dramatic
+      - mode_balance
+      - speech_dialogue
+    ambiguity_notes: >
+      Showing/telling and dialogue advice may appear without explicit POV labels.
+
+  - id: consciousness_and_techniques
+    label: Consciousness and writing techniques
+    concepts:
+      - consciousness_access
+      - thought_representation
+      - distance_depth
+      - filter_words
+      - narrative_style_voice
+      - switching_consistency
+    ambiguity_notes: >
+      Filter-word terminology is craft-specific and historically uneven.
+
+  - id: functions_and_reader_effects
+    label: Narrative functions and reader effects
+    concepts:
+      - information_control
+      - reliability
+      - narrator_level_time
+      - reader_effect
+      - choice_tradeoffs
+    ambiguity_notes: >
+      Reader-effect and information-control discussions may use Wissensvorsprung
+      or dramatic-irony vocabulary without Genette labels.
+
+# Sensitivity S4: conservative exclusion of specified ambiguous German rules/assignments.
+sensitivity_s4_exclusions:
+  description: >
+    Exclude DE lexical assignments whose matched_regex or matched_terms indicate
+    broad allwissen* / auktorial–focalization overlap cues listed below.
+  language: de
+  exclude_if_matched_regex_contains:
+    - omniscient_de
+  exclude_if_matched_terms_contains:
+    - allwissen
+  exclude_concept_ids_when_trigger_overlap:
+    - focalization_zero
+  note: >
+    Applied only in sensitivity scenario S4. Primary analysis retains these
+    assignments. Not a claim that they are false positives.

@@ -4,6 +4,7 @@ requests
 lxml
 pyyaml
 matplotlib
+seaborn
 rapidfuzz
 unidecode
 python-dotenv
