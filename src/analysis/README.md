@@ -14,6 +14,7 @@ python -m src.analysis.corpus_stats --spotcheck 40 # print 40 random matches in 
 - `corpus_stats.py`: one row per `primary` / `comparison` file with quality flags, `in_analysis_set`, `primary_group` (fiction_manual / pedagogy_genre_craft / contrast), and exploratory POV term counts.
 - `plots.py`: shared figure style and one function per figure (English notebook).
 - Notebook: [`notebooks/04_corpus_descriptive_stats_en.ipynb`](../../notebooks/04_corpus_descriptive_stats_en.ipynb). It reads the English table and the manifest.
+- Bilingual retrieval exploration: [`notebooks/05_narrative_perspective_exploration.ipynb`](../../notebooks/05_narrative_perspective_exploration.ipynb) + HTML/tables/figures under [`reports/`](../../reports/). Helpers: `narrative_perspective.py`; regenerate artefacts with `python -m src.analysis.run_np_exploration`.
 
 ## Outputs
 

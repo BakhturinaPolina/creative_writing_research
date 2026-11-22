@@ -22,6 +22,16 @@ Rules:
 
 ---
 
+## 2026-11-22 | Phase: Retrieval / Analysis
+**Goal:** Finalize lexical IR methodology (v0.5) and ship the first bilingual exploratory notebook on narrative perspective in EN/DE creative writing manuals.
+**Done:** Exclusive evaluation strata + prob sample v05 (n=250); provenance v05; German heuristic audit clarified; BM25 L/Bq/Braw/Bnew/U terminology; corpus QC table; concept families + helpers; executed notebook 05 + HTML/tables/figures under `reports/`.
+**Data/outputs:** `manual_eval_sample_prob_v05.*`, `eval_passage_membership_v05.csv`, `lexicon_term_provenance_v05.csv`, `german_audit_review_v05.csv`, `retrieval_set_algebra_v05.*`, `corpus_quality_v1_candidate.csv`, `notebooks/05_narrative_perspective_exploration.ipynb`, `reports/01_narrative_perspective_exploration.html`.
+**Decisions:** No lexicon remaps pending human audit; no semantic retrieval yet; sampling weights only within exclusive independent-eval strata.
+**Problems / open questions:** Manual eval labels outstanding; historical Braw not fully reconstructable; work_id/year missingness; Genette/Stanzel overlap.
+**Next:** Human audit of German priority terms; annotate prob_v05; extreme-paragraph policy before embeddings.
+
+---
+
 ## Decision register
 
 | ID | Date | Decision | Evidence / reason | Status |

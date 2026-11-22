@@ -16,6 +16,8 @@ High recall matters more than precision at this stage. Book-level `corpus_stats`
 | [`config/regex_concept_map_v01.yml`](../../config/regex_concept_map_v01.yml) | Regex map for v0.2 |
 | [`config/regex_concept_map_v03.yml`](../../config/regex_concept_map_v03.yml) | Regex map for v0.3 (+ DE person/omniscience) |
 | [`docs/retrieval_v03_changelog.md`](../../docs/retrieval_v03_changelog.md) | Algorithm vs vocabulary change log |
+| [`docs/retrieval_v05_changelog.md`](../../docs/retrieval_v05_changelog.md) | Exclusive sampling, provenance, BM25 terminology, analysis notebook |
+| [`config/concept_families_v05.yml`](../../config/concept_families_v05.yml) | Analytical concept-family grouping for reporting |
 
 ## Retrieval baselines
 
@@ -81,7 +83,12 @@ Streaming only: one book JSON resident; BM25 uses two corpus passes and top-k he
 .venv/bin/python -m src.retrieval.bm25_passages --lang all --lexicon-version v03 --top-k 500
 .venv/bin/python -m src.retrieval.report --version v03
 .venv/bin/python -m src.retrieval.report --version set_algebra
-.venv/bin/python -m src.retrieval.eval_sample --version v04
+.venv/bin/python -m src.retrieval.report --version v05
+.venv/bin/python -m src.retrieval.eval_sample --version v05 --skip-passages
+.venv/bin/python -m src.retrieval.lexicon_provenance
+.venv/bin/python -m src.retrieval.german_audit_v05
+.venv/bin/python -m src.retrieval.corpus_qc
+.venv/bin/python -m src.analysis.run_np_exploration
 .venv/bin/python -m src.retrieval.passage_manifest --lang all
 .venv/bin/python -m src.retrieval.corpus_snapshot --lang all
 .venv/bin/python -m src.retrieval.dev_sample   # BM25-only lexicon-expansion holdout
@@ -97,20 +104,24 @@ Optional `--with-passages` writes gitignored sidecars under `data/interim/retrie
 | Sample | Role |
 |---|---|
 | `manual_eval_sample_v03.*` | **Frozen** 247-passage sample (do not overwrite) |
-| `manual_eval_sample_prob_v04.*` | Design A — probability-based; records `N_h`, `n_h`, `π_h`, weights |
+| `manual_eval_sample_prob_v04.*` | Design A v0.4 — probability-based (populations not fully exclusive) |
 | `manual_eval_sample_diversity_v04.*` | Design B — book-diversity diagnostic; **no** probability weights |
-| `manual_eval_sample_v03_v04_reconciliation.csv` | Passage overlap across samples |
+| `manual_eval_sample_prob_v05.*` | Design A v0.5 — **exclusive** populations before SRS; π=`n/N`, w=`N/n` |
+| `eval_passage_membership_v05.csv` | Passage-level membership + exclusive `primary_stratum` |
+| `manual_eval_sample_v04_v05_reconciliation.csv` | Overlap + content-hash transfer safety |
 
-Design A estimates refer to stratum populations inside the **independent evaluation population** (analysis set minus lexicon-dev held-out books). Design B is qualitative only. Annotator CSVs hide method/rank/predicted concept. Review fields stay empty until human coding.
+Design A estimates refer to stratum populations inside the **independent evaluation population** (analysis set minus lexicon-dev held-out books). Design B is qualitative only. Annotator CSVs hide method/rank/predicted concept. Review fields stay empty until human coding. Do not transfer annotations by chapter/paragraph coordinates alone.
 
 ```bash
-.venv/bin/python -m src.retrieval.eval_sample --version v04
+.venv/bin/python -m src.retrieval.eval_sample --version v05 --skip-passages
 ```
 
-## BM25 set algebra (v0.4)
+## BM25 set algebra (v0.4 / v0.5)
 
-Canonical key: `(passage_id, retrieval_concept_id)`. Report: `retrieval_set_algebra_v04.md`.
-Genuinely new BM25 assignments are **`B \ L`**, not merely “absent from qualified BM25”.
+Canonical key: `(passage_id, retrieval_concept_id)`.
+
+- v0.4 report: `retrieval_set_algebra_v04.md` (`L`, `Bq`, reconstructed `B`)
+- v0.5 report: `retrieval_set_algebra_v05.md` — terminology `L`, `Bq`, `Braw`, `Bnew`, `U`; historical stand-in **`B_combined`** = Bq ∪ bm25_only_file (**not** an independent top-K ranking). Top-K configs differ (qualified 500 vs exploratory 100). Future runs must export complete `Braw` before subtracting `L`.
 
 ## Corpus snapshot (candidate)
 
